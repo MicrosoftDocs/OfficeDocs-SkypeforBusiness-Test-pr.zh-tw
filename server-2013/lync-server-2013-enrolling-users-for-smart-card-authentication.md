@@ -1,0 +1,116 @@
+﻿---
+title: 針對智慧卡驗證註冊使用者
+TOCTitle: 針對智慧卡驗證註冊使用者
+ms:assetid: a6445a83-a94b-423f-ba2a-12b5f84c5d75
+ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Dn308570(v=OCS.15)
+ms:contentKeyID: 56269139
+ms.date: 08/10/2015
+mtps_version: v=OCS.15
+ms.translationtype: HT
+---
+
+# 針對智慧卡驗證註冊使用者
+
+ 
+
+_**上次修改主題的時間：** 2013-07-03_
+
+一般而言，有兩種方法可針對智慧卡驗證註冊使用者。較簡單的方法是讓使用者透過網頁註冊直接針對智慧卡驗證進行註冊，而較複雜的方法是使用註冊代理。此主題著重於智慧卡憑證自我註冊。
+
+如需更多有關以註冊代理身分代表使用者註冊的資訊，請參閱＜代表其他使用者註冊憑證＞，網址為：<http://technet.microsoft.com/zh-tw/library/cc770802.aspx>。
+
+## 針對智慧卡驗證註冊使用者
+
+1.  使用啟用 Lync 之使用者的認證登入 Windows 8 工作站。
+
+2.  啟動 Internet Explorer。
+
+3.  瀏覽到 **\[憑證授權單位網頁註冊\]** 頁面 (例如 https://MyCA.contoso.com/certsrv)。
+    
+    <table>
+    <thead>
+    <tr class="header">
+    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>如果您使用的是 Internet Explorer 10，您可能需要使用相容模式檢視此網站。</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+4.  在 **\[歡迎\]** 頁面上，選取 **\[要求憑證\]**。
+
+5.  接著，選取 **\[進階要求\]**。
+
+6.  選取 **\[向這個 CA 建立並提交一個要求\]**。
+
+7.  選取 **\[憑證範本\]** 區段下的 **\[智慧卡使用者\]**，並以下列值完成進階憑證要求：
+    
+      - 針對 **\[金鑰選項\]**，確認下列設定：
+        
+          - 選取 **\[建立新的金鑰組\]** 選項按鈕。
+        
+          - 在 **\[CSP\]** 項目上，選取 **\[Microsoft 基礎智慧卡加密編譯提供者\]**。
+        
+          - 在 **\[金鑰使用方式\]** 項目上，選取 **\[Exchange\]** (此為唯一可用選項)。
+        
+          - 在 **\[金鑰大小\]** 項目上，輸入 **2048**。
+        
+          - 確認已選取 **\[自動金鑰容器名稱\]**。
+        
+          - 保留其他方塊不加以選取。
+    
+      - 在 **\[其他選項\]** 下，確認下列值：
+        
+          - 在 **\[要求格式\]** 項目上，選取 **\[CMC\]**。
+        
+          - 在 **\[雜湊演算法\]** 項目上，選取 **\[sha1\]**。
+        
+          - 在 **\[易記名稱\]** 項目上，輸入**智慧卡憑證**。
+
+8.  如果您使用的是實體智慧卡讀卡機，請將智慧卡插入裝置。
+
+9.  按一下 **\[送出\]** 以送出憑證要求。
+
+10. 收到提示時，輸入用以建立虛擬智慧卡的 PIN。
+    
+    <table>
+    <thead>
+    <tr class="header">
+    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>預設的虛擬智慧卡 PIN 值為 ‘12345678’。</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+11. 當您看到憑證已核發的通知時，請按一下 **\[安裝這個憑證\]** 以完成註冊程序。
+    
+    <table>
+    <colgroup>
+    <col style="width: 100%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>如果您的憑證要求失敗，並出現「這個 Web 瀏覽器不支援產生憑證要求」錯誤訊息，有三種方式可能可以解決問題：
+    <ol>
+    <li><p>在 Internet Explorer 中啟用相容性檢視</p></li>
+    <li><p>在 Internet Explorer 中啟用 [開啟內部網路設定] 選項</p></li>
+    <li><p>在 Internet Explorer 選項功能表中的 [安全性] 標籤下選取 [將所有區域重設為預設等級] 設定。</p></li>
+    </ol></td>
+    </tr>
+    </tbody>
+    </table>
+
