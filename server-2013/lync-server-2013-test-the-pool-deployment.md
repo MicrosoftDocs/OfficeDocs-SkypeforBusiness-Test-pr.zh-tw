@@ -1,0 +1,105 @@
+﻿---
+title: Lync Server 2013：測試集區部署
+TOCTitle: 測試集區部署
+ms:assetid: ffd80617-155a-4041-bbeb-74503e7938dd
+ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Gg413092(v=OCS.15)
+ms:contentKeyID: 49292927
+ms.date: 08/24/2015
+mtps_version: v=OCS.15
+ms.translationtype: HT
+---
+
+# 在 Lync Server 2013 中測試集區部署
+
+ 
+
+_**上次修改主題的時間：** 2013-09-25_
+
+下列程序描述如何測試 前端集區 的部署。
+
+## 若要測試集區部署
+
+1.  使用 \[Active Directory 電腦和使用者\] 將 Lync Server 2013 部署 (安裝 Lync Server 2013 控制台所在) 中系統管理員角色的 Active Directory 使用者物件新增至 \[CS系統管理員\] 群組。
+    
+    <table>
+    <thead>
+    <tr class="header">
+    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>如果您未將適當的使用者和群組加入至 CsAdministors 群組，則會在開啟 Lync Server 控制台時收到錯誤，表示「未授權: 存取被拒，因為角色型存取控制 (RBAC) 授權失敗」。</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+2.  如果使用者物件目前為登入狀態，請先登出再登入，以登錄新的群組指派。
+    
+    <table>
+    <thead>
+    <tr class="header">
+    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>使用者帳戶不可以是執行 Lync Server 2013 之任何伺服器的本機系統管理員。</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+3.  使用系統管理帳戶登入安裝 Lync Server 控制台所在的電腦。
+
+4.  啟動 Lync Server 控制台，然後在提示時提供認證。 Lync Server 控制台會顯示部署資訊。
+
+5.  在左導覽列中，按一下 \[拓撲\] ，然後確認服務狀態顯示帶有綠色箭頭的電腦，且每個已部署且上線的 Lync Server 伺服器角色旁，出現複寫狀態的綠色核取記號。
+
+6.  在左導覽列中，按一下 \[使用者\] ，然後按一下 \[啟用使用者\] 。
+
+7.  在 \[新增 Lync Server 使用者\] 頁面上，按一下 \[新增\] 。
+
+8.  若要定義您要尋找之物件的搜尋參數，可以在 \[從 Active Directory 選取\] 頁面上選取 \[搜尋\] ，然後選擇性地按一下 \[新增篩選\] 。您也可以選取 \[LDAP 搜尋\] ，然後輸入 LDAP 運算式以篩選或限制將傳回的物件。決定您的 \[搜尋\] 選項之後，按一下 \[尋找\] 。
+
+9.  在 \[搜尋結果\] 窗格中，選取此搜尋工作階段的所有物件，然後按一下 \[確定\] 。
+
+10. 在 \[新增 Lync Server 使用者\] 頁面上，您所選取的一或多個物件會在 \[使用者\] 顯示中。在 \[將使用者指派至集區\] 清單中，選取物件所在的伺服器。
+    
+    以下是幾個設定物件的選項。
+    
+      - **產生使用者的 SIP URI**
+    
+      - **電話語音**
+    
+      - **線路 URI**
+    
+      - **會議原則**
+    
+      - **用戶端版本原則**
+    
+      - **PIN 原則**
+    
+      - **外部存取原則**
+    
+      - **封存原則**
+    
+      - **位置原則**
+    
+      - **用戶端原則**
+    
+    為達成測試基本功能的目的，請針對 \[產生使用者的 SIP URI\] 設定選取您偏好的選項 (設定中的其他選項將使用預設設定)，然後按一下 \[啟用\] 。
+
+11. 摘要頁面便會顯示，其中的 \[已啟用\] 欄會出現核取記號，指出物件現在已準備好供使用。\[SIP 位址\] 欄會顯示使用者登入設定所需的位址。
+
+12. 將一個使用者登入已加入網域的電腦，並將另一個使用者登入網域中的其他電腦。
+
+13. 在這兩部用戶端電腦上安裝 Lync 2013，然後確認兩位使用者都能夠登入 Lync Server 2013 並且傳送立即訊息給對方。
+
+## 請參閱
+
+#### 概念
+
+[在 Lync Server 2013 中部署用戶端和裝置](lync-server-2013-deploying-clients-and-devices.md)
+
