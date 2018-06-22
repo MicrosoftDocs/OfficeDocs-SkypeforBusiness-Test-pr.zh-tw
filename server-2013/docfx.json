@@ -47,8 +47,11 @@
                                          "breadcrumb_path":  "/office/lync-server-2013/breadcrumb/toc.json",
                                          "extendBreadcrumb":  true,
                                          "ROBOTS":  "INDEX,FOLLOW",
-                                         "ms.prod":  "lync-2013",
-                                         "ms.topic":  "conceptual"
+                                         "ms.topic":  "conceptual",
+                                         "author":  "SerdarSoysal",
+                                         "ms.author":  "SerdarSoysal",
+                                         "ms.prod":  "lync-server-2013",
+                                         "ms.technology": "server-general"
                                      },
                   "fileMetadata":  {
 
