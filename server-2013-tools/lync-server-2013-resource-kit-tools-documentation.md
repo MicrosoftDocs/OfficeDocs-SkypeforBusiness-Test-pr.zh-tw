@@ -102,9 +102,9 @@ ABSConfig 乃是圖形化使用者介面應用程式，能夠讓系統管理員�
 ## 輸出
 
 ABSConfig 會將通訊錄服務設定儲存於資料庫中。
-
+```C++
     Path: %ProgramFiles%\Microsoft Lync Server 2013\Reskit
-
+```
 ## 用途
 
 使用 ABSConfig 即可快速簡便地自訂 Lync Server 2013 通訊錄服務。
@@ -459,7 +459,7 @@ CPS 工具的用途在於提供對 CPS 資料庫的命令列存取權限。系�
 ## 需求
 
 若是這項工具與 CPS 在相同的電腦上執行，則不受任何需求限制。若是這項工具執行於遠端電腦，則 Lync Server 2013 所採用的 SQL Server 資料庫必須設為允許遠端存取。Call Parkometer 必須以 SQL Server 資料庫連接字串加以設定，才可連線至集區的 SQL Server。此 SQL Server 資料庫連接字串定義於設定檔 **parkometer.exe.config**。這個設定檔必須與 parkometer.exe 位於相同的目錄。下列 XML 檔則為 parkometer.exe.config 範例。必須加以設定的參數為使用者名稱 (例如 mydomain\\Administrator)、密碼 (例如 mypassword) 以及主機名稱 (例如 myserver)。
-
+```XML
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -470,7 +470,7 @@ CPS 工具的用途在於提供對 CPS 資料庫的命令列存取權限。系�
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
-
+```
 ## 範例
 
 部署的軌道範圍：–o 參數會列出針對此集區所設定的所有軌道範圍，如下所示
@@ -512,7 +512,7 @@ CleanupStorageServiceData Resource Kit 工具可用於將孤立的資料從 Lync
 ## 範例
 
 C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportStorageServiceData.exe
-
+```C++
     Description:
     This tool will remove orphaned data from the Storage Service database
     for a pool. You are required to run this tool on a machine inside the
@@ -568,7 +568,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportSt
     Writing log: M:\Dev\Server\ResKit\StorageService\CleanupStorageServiceData.Log_20121009_151040
     Tool has finished execution.  Errors encountered: 0
     C:\Program Files\Microsoft Lync Server 2013\ResKit\StorageService>
-
+```
 ## DBAnalyze
 
 ## 說明
@@ -644,14 +644,14 @@ DBAnalyze 乃是有助於系統管理員收集 Lync Server 2013 資料庫相關�
 ## 範例
 
 以下為有效的 Dbanalyze.exe 命令範例：
-
+```C++
     dbanalyze.exe /report:diag
     dbanalyze.exe /report:user /user:usera@domainb.com
     dbanalyze.exe /report:conf /user:bob@example.com /conf:1W9J71SKSX2X
     dbanalyze.exe /report:resolve /pstnid:12345
     dbanalyze.exe /report:mcus
     dbanalyze.exe /report:disk
-
+```
 ## 總結
 
 DBAnalyzer 可讓系統管理員快速簡便地分析 Lync Server 2013 資料庫。
@@ -693,7 +693,7 @@ ImportStorageServiceData Resource Kit 工具可將已從存放服務 (LYSS) 清�
 
 
 ## 範例
-
+```C++
     >  C:\StorageService>ImportStorageServiceData.exe
     Description:
     This tool will re-import Storage Service (LYSS) flushed queue data back in.  For a pool: you are required to run this tool on a machine inside the pool which has the Lync Server Management Shell installed.  Additionally, all front end machines need to have Windows Powershell Remoting enabled before executing this tool by executing Enable-PSRemoting.  Also, please ensure that all Storage Service instance DB Size are at the 'Normal' level (verify this by viewing Eventlog events). Otherwise re-importing may cause data to be flushed out again if any Storage Service instance DB size level goes above 'Normal'.
@@ -850,7 +850,7 @@ ImportStorageServiceData Resource Kit 工具可將已從存放服務 (LYSS) 清�
     Log20120910_1609SS
     Tool has finished execution.
     >  C:\StorageService>
-
+```
 ## LCSSync
 
 LCSSync 工具可協助在多樹系環境中部署 Lync Server 2013 通訊軟體。這項工具可用於將來自不同使用者樹系的使用者與群組同步化為 Lync Server 2013 安裝所在中央樹系的 Active Directory 網域服務連絡人物件。
@@ -878,7 +878,7 @@ LookupUserConsole 工具會顯示特定使用者的內部 Lync Server 路由資�
 ## 範例
 
 C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\>LookupUserConsole.exe
-
+```C++
     > sip:john.doe@vdomain.com
     
       Execution time (ms):                            171.094
@@ -914,7 +914,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\>LookupUserConsole.exe
       Exeuction result:                               UserDoesNotExist
     
     > exit
-
+```
 ## MsTurnPing
 
 MSTurnPing 工具可讓 Microsoft Lync Server 2013 通訊軟體系統管理員檢查下列伺服器狀態：執行 Audio/Video Edge 與 Audio/Video 驗證服務的伺服器，以及在拓撲中執行頻寬原則服務的伺服器。
@@ -1204,9 +1204,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 **針對 SEFAUtil 工具建立新信任的應用程式**
 
 1.  執行 SEFAUTil 工具的電腦必須屬於信任的應用程式集區。如有需要，可透過 Lync Server 管理命令介面而利用下列 Cmdlet 將集區新增為新信任的應用程式集區：
-    
+    ```C++
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
-    
+    ```
     <table>
     <thead>
     <tr class="header">
@@ -1222,9 +1222,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 
 2.  在拓撲中必須針對 SEFAUtil 工具定義信任的應用程式。為了將 SEFAUtil 定義為新信任的應用程式，請使用 Lync Server 管理命令介面並執行下列 Cmdlet：
-    
+    ```C++
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
-    
+    ```
     <table>
     <thead>
     <tr class="header">
@@ -1240,15 +1240,15 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 
 3.  拓撲變更需要加以啟用。若要啟用拓撲變更，可透過 Lync Server 管理命令介面執行下列 Cmdlet 而完成：
-    
+    ```C++
         Enable-CsToplogy
-
+    ```
 4.  如有需要，在用於執行 SEFAUtil 工具的伺服器上安裝 Lync Server 2013 Resource Kit 工具 (該伺服器必須屬於信任的應用程式集區)。
 
 5.  確認 SEFAUtil 正確執行。為執行這項操作，請以系統管理員權限透過 Windows 命令提示字元執行這項工具，以顯示使用者在部署中的來電轉接設定。依預設，這項工具會位於：“…\\Program Files\\Microsoft Lync Server 2013\\Reskit”。為顯示使用者的來電轉接設定，請使用下列命令：
-    
+    ```C++
         SEFAUtil.exe <user SIP address> /server:<Lync Server/Pool FQDN>
-    
+    ```
     畫面應會顯示使用者的來電轉接設定。
 
 ## 群組來電接聽
@@ -1276,85 +1276,85 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:20
     Call Forward No Answer to: voicemail
-
+```
 ## 設定來電轉接/沒有接聽的目的號碼
 
 此範例會設定來電轉接/沒有接聽的目的號碼以及響鈴延遲。在此，並未提供 /server 參數；SEFAUtil 會嘗試自動探索 Lync Server。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablefwdnoanswer /callanswerwaittime:30 /setfwddestination:+1425555 0126@contoso.com;user=phone
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: sip:+14255550126@contoso.com;user=phone
-
+```
 ## 立即啟用來電轉接
 
 此範例會立即啟用來電轉接至其他使用者的功能。
-
+```C++
     SEFAUtil.exe sip:katarina@contoso.com /enablefwdimmediate /setfwddestination:anders@contoso.com
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     Forward immediate to: sip:anders@contoso.com
-
+```
 ## 立即停用來電轉接
 
 此範例會立即停用來電轉接的功能。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com katarina@contoso.com  /disablefwdimmediate
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 新增使用者為代理人並設定代理人同時響鈴
 
 此範例會將使用者新增為代理人並設定代理人同時響鈴。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /adddelegate:joe@contoso.com /simulringdelegates
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simultaneously Ringing Delegates: sip:joe@contoso.com
-
+```
 ## 變更代理人的同時響鈴規則
 
 此範例會將在上個範例中所設定的同時響鈴規則變更為延遲響鈴規則。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /delayringdelegates:10
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     Delay Ringing Delegates (delay:10 seconds): sip:joe@contoso.com
-
+```
 ## 移除代理人
 
 此範例會移除代理人。
@@ -1372,37 +1372,37 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 </tbody>
 </table>
 
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 新增代理人並設定來電轉接至代理人的規則
 
 此範例會新增代理人並設定來電轉接至代理人的規格。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /adddelegate:anders@contoso.com /fwdtodelegates
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Forwarding calls to Delegates: sip:anders@contoso.com
-
+```
 ## 啟用同時響鈴並設定目的號碼
 
 此範例會啟用同時響鈴並設定同時響鈴的目的號碼。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /setsimulringdestination:+14255550126 /enablesimulring
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1418,20 +1418,21 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: True
     Simul_Ringing to: sip:+14255550126@contoso.com;user=phone
-
+```
 ## 停用同時響鈴
 
 此範例會停用同時響鈴。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablesimulring
-
+```
 **輸出**
+```C++
 
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
@@ -1439,13 +1440,13 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 新增小組通話的小組成員並設定同時響鈴至小組通話成員群組
 
 此範例會將小組成員新增至使用者的小組通話群組並啟用同時響鈴功能至小組通話群組。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /addteammember:anders@contoso.com /simulringteam
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1461,18 +1462,18 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Team ringing enabled. Team: sip:anders@contoso.com
-
+```
 ## 移除小組通話群組中的成員
 
 此範例會從使用者的小組通話群組中移除小組成員。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removeteammember:anders@contoso.com
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1488,32 +1489,32 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 設定小組通話群組的延遲響鈴功能
 
 此範例會變更延遲響鈴至小組通話群組的時間設定。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /delayringteam:5
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Delay Ringing Team (delay:5 seconds). Team: sip:anders@contoso.com
-
+```
 ## 啟用小組通話
 
 此範例會啟用特定使用者的小組通話功能。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /simulringteam
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1533,36 +1534,36 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 ## 停用小組通話
 
 此範例會停用特定使用者的小組通話功能。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disableteamcall
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 ## 啟用群組來電接聽並將接聽群組指派給使用者
 
 此範例會將接聽群組指派給使用者並啟用群組來電接聽。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablegrouppickup:199
-
+```
 **輸出**
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Group Pickup Orbit: sip:199;phone-context=user-default@ contoso.com;user=phone
-
+```
 ## 停用群組來電接聽
 
 此範例會停用特定使用者的群組來電接聽功能。
-
+```C++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablegrouppickup
-
+```
 <table>
 <thead>
 <tr class="header">
@@ -1576,11 +1577,11 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 </tbody>
 </table>
 
-
+```C++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
-
+```
 ## SYSPrep.ps1
 
 ## 說明
@@ -1659,9 +1660,9 @@ SYSPrep.ps1 乃是 Windows PowerShell 指令碼，會將下列 Lync Server 2013 
 ## 範例
 
 若要執行 SYSPrep.ps1 指令碼並安裝 Lync Server 2013 先決條件，請透過提升權限的命令提示字元執行下列命令：
-
+```C++
     ./SysPrep.PS1 -SetupFolder D:\Setup
-
+```
 ## Unassigned Number Announcements Migration
 
 Unassigned Number Announcements Migration 工具可讓 Lync 系統管理員將宣告應用程式所處理之未指派的號碼設定從來源 Lync Server 或集區移至目的地 Lync Server 或集區。
@@ -1729,15 +1730,15 @@ Move-CsAnnouncementConfiguration 指令碼需要下表中所述的兩個參數�
 ## 將未指派的號碼宣告設定從 Lync Server 2010 集區移至 Lync Server 2013 集區
 
 此範例會將未指派的號碼宣告從來源集區 (Lync Server 2010) 移至目的地集區 (Lync Server 2013)。
-
+```C++
     Move-CsAnnouncementConfiguration.ps1 -Source LS2010Pool.contoso.com -Destination LS2013Pool.contoso.com
-
+```
 ## 將未指派的號碼宣告設定從 Lync Server 2013 集區移至 Lync Server 2010 集區
 
 此範例會將未指派的號碼宣告從來源集區 (Lync Server 2013) 移至目的地集區 (Lync Server 2010)。
-
+```C++
     Move-CsAnnouncementConfiguration.ps1 -Source LS2013Pool.contoso.com -Destination LS2010Pool.contoso.com
-
+```
 ## Web Conf Data
 
 針對召集人的 Web 會議，Web Conf Data 工具可讓 Lync Server 2013 通訊軟體系統管理員更能控管相關聯的資料。使用案例包括根據時間戳記準則而刪除特定使用者的會議資料。
@@ -1791,13 +1792,13 @@ Move-CsAnnouncementConfiguration 指令碼需要下表中所述的兩個參數�
 下表說明參數資訊，部分參數用於範例中。
 
 ![Web Conf Data 工具參數。](images/JJ945604.a733c1c6-5dfc-4874-a74f-bfdee81c1401(OCS.15).jpg "Web Conf Data 工具參數。")
-
+```C++
     WebConfDataTool.exe /User:user0@contoso.com /Action:query ""/ExpirationDate:08/09/2010 12:00:00""
-
+```
 上述範例顯示查詢命令的運作方式。該類命令的輸出會列出將受到這項工具影響的所有會議內容資料夾。
-
+```C++
     WebConfDataTool.exe /User:user0@contoso.com /Action:delete
-
+```
 上述為刪除命令的範例。刪除命令會將所有非使用中的會議資料夾從該使用者中移除。
 
 ## 總結
