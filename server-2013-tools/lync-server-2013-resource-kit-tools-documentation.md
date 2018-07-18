@@ -237,7 +237,7 @@ Bandwidth Utilization Analyzer 提供下列兩個應用程式 (工具)：
 
   - **WanLinkLogCollector.exe**   此工具可讓其使用者輸入所需資訊。
 
-  - **BandwidthUtilizationAnalyzer.xlsm **  Microsoft Excel 試算表軟體報告可透過 WanLinkLogCollector.exe 自動啟動。此應用程式可讓使用者將篩選條件套用至報告中，如後文中所述。
+  - **BandwidthUtilizationAnalyzer.xlsm**  Microsoft Excel 試算表軟體報告可透過 WanLinkLogCollector.exe 自動啟動。此應用程式可讓使用者將篩選條件套用至報告中，如後文中所述。
 
 ## 使用 Bandwidth Utilization Analyzer 的程序
 
@@ -273,7 +273,7 @@ WanLinkLogCollector.exe 的使用步驟有三：
 
 2.  **指定檔案目錄**   提供檔案位置資訊
 
-3.  **收集記錄並啟動報告檢視器 **  執行命令以產生報告
+3.  **收集記錄並啟動報告檢視器**  執行命令以產生報告
 
 ## 步驟 1 - 記錄時間範圍
 
@@ -291,7 +291,7 @@ WanLinkLogCollector.exe 的使用步驟有三：
 
   - **伺服器記錄檔位置** 儲存頻寬原則伺服器記錄的資料夾位置，通常為 \<fileserver\>\\\<choice of FE\>\\AppServerFiles\\PDP。
 
-  - **暫時檔案儲存位置 ** 產生報告時儲存中繼檔案的暫時檔案位置。
+  - **暫時檔案儲存位置** 產生報告時儲存中繼檔案的暫時檔案位置。
 
 ![頻寬使用量分析中的檔案目錄](images/JJ945604.d66daeac-1669-45e3-932d-3f6782840c2a(OCS.15).jpg "頻寬使用量分析中的檔案目錄")
 
@@ -664,7 +664,7 @@ ImportStorageServiceData Resource Kit 工具可將已從存放服務 (LYSS) 清�
 
 根據佇列項目狀態或資料庫大小從存放服務清除資料的作業可能為自動 (定期) 作業。這項作業亦可透過手動叫用集區容錯移轉 Cmdlet 或由集區容錯移轉 Cmdlet 所叫用的 StorageServiceFullFlush Cmdlet 而執行。請注意，若是位於前端的任何存放服務 (LYSS ) 資料庫超過一般大小，最好不要重新匯入資料，因為如此可能導致有更多資料遭到匯出。再者，任何可能引發錯誤而導致存放服務佇列增長的問題應先加以解決 (例如 Exchange 端點錯誤、網路問題或其他問題)。
 
-**案例 1：**集區容錯移轉期間，檔案可能會從各個前端的存放服務中清除。容錯移轉完成後，應執行這項工具以重新匯入資料。
+**案例 1：** 集區容錯移轉期間，檔案可能會從各個前端的存放服務中清除。容錯移轉完成後，應執行這項工具以重新匯入資料。
 
 **案例 2：** 資料會每天自動清除或因為存放服務資料庫超過特定大小閾值 (例如 60%、80%、90% 滿) 而清除。這些自動清除的資料應由系統管理員定期重新匯入。在上述情況下，若是未部署監視的 SCOM 套件，即會發生從 Lync Server 存放服務清除資料的相關存放服務事件。事件識別碼有 32075 (完整清除作業已開始)、32076 (完整清除已完成)、32082 (維護層級清除已開始)、32083 (維護層級清除完成)、32089 (由於資料庫填滿而發生清除)。請注意，這些事件識別碼所對應的是 RTM 版本。當系統管理員看到這些事件，代表有檔案遭到清除。請利用這項工具定期匯入這些資料，例如每週一次。
 
@@ -1003,11 +1003,11 @@ Network Configuration Viewer (NetworkConfigurationViewer.exe) 可讓系統管理
 
 ## 範例
 
-**以圖形格式從 Lync Server 2013 部署中載入並檢視 CAC 網路拓撲：**Lync Server 2013 系統管理員若要在任何 Lync Server 2013 電腦上載入並檢視 CAC 網路拓撲設定，可利用 **\[下載網路設定\]** 選項加以執行，如下圖所示。若是這項工具部署於無法連線至 Lync 設定存放區的電腦，將無法下載或檢視這類設定。
+**以圖形格式從 Lync Server 2013 部署中載入並檢視 CAC 網路拓撲：** Lync Server 2013 系統管理員若要在任何 Lync Server 2013 電腦上載入並檢視 CAC 網路拓撲設定，可利用 **\[下載網路設定\]** 選項加以執行，如下圖所示。若是這項工具部署於無法連線至 Lync 設定存放區的電腦，將無法下載或檢視這類設定。
 
 ![下載網路設定。](images/JJ945604.8d126d3f-2545-4f13-a244-974f09614982(OCS.15).jpg "下載網路設定。")
 
-**以圖形格式從頻寬原則伺服器記錄檔中載入並檢視 CAC 網路拓撲：**Lync Server 2013 頻寬原則伺服器會透過記錄機制而將 CAC 網路拓撲儲存於 Lync Server 2013 檔案共用區位置下。Lync Server 系統管理員若要以圖形格式檢視這類檔案，可利用 **\[開啟網路設定\]** 選項加以執行，如下所示。
+**以圖形格式從頻寬原則伺服器記錄檔中載入並檢視 CAC 網路拓撲：** Lync Server 2013 頻寬原則伺服器會透過記錄機制而將 CAC 網路拓撲儲存於 Lync Server 2013 檔案共用區位置下。Lync Server 系統管理員若要以圖形格式檢視這類檔案，可利用 **\[開啟網路設定\]** 選項加以執行，如下所示。
 
 ![開啟 Bandwidth Policy Server 記錄檔。](images/JJ945604.3e503e92-aacb-4921-a8d2-23f860fe2df6(OCS.15).jpg "開啟 Bandwidth Policy Server 記錄檔。")
 
@@ -1019,7 +1019,7 @@ Network Configuration Viewer (NetworkConfigurationViewer.exe) 可讓系統管理
 
 ![將網路設定儲存為圖片。](images/JJ945604.145a6fb9-58b1-46b1-bbd5-a661ceba07b4(OCS.15).jpg "將網路設定儲存為圖片。")
 
-**檢視 CAC 網路拓撲設定資料：**Lync Server 2013 系統管理員若要以文字格式檢視相關的網路設定資料，例如網路地區、網路網站、頻寬設定檔，以及站台子網路 IP 位址，可利用 \[檢視網路設定資料\] 選項加以執行，如下所示。
+**檢視 CAC 網路拓撲設定資料：** Lync Server 2013 系統管理員若要以文字格式檢視相關的網路設定資料，例如網路地區、網路網站、頻寬設定檔，以及站台子網路 IP 位址，可利用 \[檢視網路設定資料\] 選項加以執行，如下所示。
 
 ![檢視網路設定資料。](images/JJ945604.b72a4c21-a042-4d91-bf96-fcb396af0679(OCS.15).jpg "檢視網路設定資料。")
 
@@ -1031,7 +1031,7 @@ Network Configuration Viewer (NetworkConfigurationViewer.exe) 可讓系統管理
 
 ![為 CAC 網路拓撲定義自訂連接器](images/JJ945604.b20bea67-c8e1-453e-b1dd-e2aa17b62566(OCS.15).jpg "為 CAC 網路拓撲定義自訂連接器")
 
-**檢視 CAC 網路拓撲的網站資訊、地區資訊，以及佈建的頻寬原則：**Lync Server 2013 系統管理員若要檢視相關的 CAC 網路地區資訊、網站資訊，以及 CAC 頻寬佈建資訊，可利用以下所示的選項。(例如說，在網路地區或網路網站物件中按一下 **\[資訊\]**。)
+**檢視 CAC 網路拓撲的網站資訊、地區資訊，以及佈建的頻寬原則：** Lync Server 2013 系統管理員若要檢視相關的 CAC 網路地區資訊、網站資訊，以及 CAC 頻寬佈建資訊，可利用以下所示的選項。(例如說，在網路地區或網路網站物件中按一下 **\[資訊\]**。)
 
 ![為您的網路定義自訂連接器。](images/JJ945604.26262c75-4342-41c3-bc98-1793aa6a7713(OCS.15).jpg "為您的網路定義自訂連接器。")
 
@@ -1061,7 +1061,7 @@ Response Group Agent Live 工具建置於回應群組服務與 Microsoft Lync 20
 
 以下為專員在 Response Group Agent Live 中所能使用的三個主要功能：
 
-  - **登入/登出：**相對於 \[專員群組\] 頁面 (可從 Lync 2013 中存取)，Response Group Agent Live 僅供專員同時登入或登出所有專員群組。這項應用程式提供專員三種快速登入或登出的方式：
+  - **登入/登出：** 相對於 \[專員群組\] 頁面 (可從 Lync 2013 中存取)，Response Group Agent Live 僅供專員同時登入或登出所有專員群組。這項應用程式提供專員三種快速登入或登出的方式：
     
       - 按一下應用程式中的 \[登入/登出\] (綠色與紅色) 按鈕。
     
@@ -1069,9 +1069,9 @@ Response Group Agent Live 工具建置於回應群組服務與 Microsoft Lync 20
     
       - 使用可供設定的鍵盤快速鍵。
 
-  - **群組成員資格：**選取專員群組後，Response Group Agent Live 即會在右側窗格中顯示群組專員清單。若是 Lync 2013 與這個應用程式執行於相同的電腦，Response Group Agent Live 中即會顯示目前狀態資訊以及連絡人卡片。專員可直接從該處傳送 IM 或致電給其他專員。
+  - **群組成員資格：** 選取專員群組後，Response Group Agent Live 即會在右側窗格中顯示群組專員清單。若是 Lync 2013 與這個應用程式執行於相同的電腦，Response Group Agent Live 中即會顯示目前狀態資訊以及連絡人卡片。專員可直接從該處傳送 IM 或致電給其他專員。
 
-  - **即時統計資料：**Response Group Agent Live 可提供所有專員群組的即時統計資料。更新頻率為一分鐘。當回應群組接聽通話後，具有目前佇列通話數的群組名稱旁即會新增視覺指示器。另外，將游標停留於群組上方亦可顯示最長等候時間。
+  - **即時統計資料：** Response Group Agent Live 可提供所有專員群組的即時統計資料。更新頻率為一分鐘。當回應群組接聽通話後，具有目前佇列通話數的群組名稱旁即會新增視覺指示器。另外，將游標停留於群組上方亦可顯示最長等候時間。
 
 ## 需求
 
@@ -1605,7 +1605,7 @@ SYSPrep.ps1 乃是 Windows PowerShell 指令碼，會將下列 Lync Server 2013 
 
 ## 需求
 
-執行 SYSPrep.ps1 指令碼前，您必須將先決條件檔案複製至 Windows Server 2008 作業系統 機器的本機資料夾 (例如 **D:\\Setup)**。這個資料夾必須另外包含 Lync Server 2013 檔案的複本，特別是 **Setup.exe。**先決條件檔案可從下列位置進行下載：
+執行 SYSPrep.ps1 指令碼前，您必須將先決條件檔案複製至 Windows Server 2008 作業系統 機器的本機資料夾 (例如 **D:\\Setup)**。這個資料夾必須另外包含 Lync Server 2013 檔案的複本，特別是 **Setup.exe。** 先決條件檔案可從下列位置進行下載：
 
 
 <table>
@@ -1704,11 +1704,11 @@ Unassigned Number Announcements Migration 工具為 Windows PowerShell 指令碼
 
 Unassigned Number Announcements Migration 指令碼可用於下列三個使用案例：
 
-  - **移轉組態設定至新版的 Lync Server：**Contoso 目前正在移轉至 Lync Server 2013，在移轉程序期間，Lync Server 系統管理員要將宣告應用程式所處理之未指派的號碼設定從 Lync Server 2010 部署移至新的 Lync Server 2013 部署。為了移動組態設定，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具。
+  - **移轉組態設定至新版的 Lync Server：** Contoso 目前正在移轉至 Lync Server 2013，在移轉程序期間，Lync Server 系統管理員要將宣告應用程式所處理之未指派的號碼設定從 Lync Server 2010 部署移至新的 Lync Server 2013 部署。為了移動組態設定，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具。
 
-  - **從 Lync Server 2013 回復至 Lync Server 2010 的部署：**由於非預期的因素，Contoso 需要將移轉作業回復至新的 Lync Server 2013 部署。為了盡可能減少服務中斷情形，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具從 Lync Server 2013 部署的設定回復至 Lync Server 2010 部署。
+  - **從 Lync Server 2013 回復至 Lync Server 2010 的部署：** 由於非預期的因素，Contoso 需要將移轉作業回復至新的 Lync Server 2013 部署。為了盡可能減少服務中斷情形，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具從 Lync Server 2013 部署的設定回復至 Lync Server 2010 部署。
 
-  - **在 Lync 部署之間移動資料：**Contoso 目前正以較新的伺服器取代單一集區中的所有伺服器。Contoso 的策略在於部署新版的 Lync Server 2013 集區，將所有資料從舊集區移至新集區，接著取代舊集區運作。新集區部署完成後，會使用 Unassigned Number Announcements Migration 工具將設定從舊集區移至新集區。
+  - **在 Lync 部署之間移動資料：** Contoso 目前正以較新的伺服器取代單一集區中的所有伺服器。Contoso 的策略在於部署新版的 Lync Server 2013 集區，將所有資料從舊集區移至新集區，接著取代舊集區運作。新集區部署完成後，會使用 Unassigned Number Announcements Migration 工具將設定從舊集區移至新集區。
 
 ## 需求
 
