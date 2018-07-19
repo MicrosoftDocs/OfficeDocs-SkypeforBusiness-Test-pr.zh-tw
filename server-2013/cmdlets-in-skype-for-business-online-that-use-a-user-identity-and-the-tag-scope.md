@@ -51,7 +51,7 @@ Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
 
 下列 Cmdlet 同時使用使用者身分識別與標記範圍：
 
-  - [Grant-CsClientPolicy](grant-csclientpolicy.md)
+  - [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)
 
   - [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
 
@@ -61,7 +61,7 @@ Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
 
   - [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
 
-  - [Grant-CsVoicePolicy](grant-csvoicepolicy.md)
+  - [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy)
 
 ## 請參閱
 

@@ -31,5 +31,5 @@ Set-CsWebServiceConfiguration Cmdlet 可讓系統管理員重新定義 Web 服�
 
 #### 其他資源
 
-[Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)
+[Set-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServiceConfiguration)
 

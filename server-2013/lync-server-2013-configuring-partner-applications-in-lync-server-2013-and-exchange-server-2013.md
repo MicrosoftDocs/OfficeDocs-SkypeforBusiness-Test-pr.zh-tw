@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2014-11-05_
 
     https://autodiscover.litwareinc.com/autodiscover/metadata/json/1
 
-Lync Server 中是使用 [New-CsPartnerApplication](new-cspartnerapplication.md) Cmdlet 來設定夥伴應用程式。除了指定中繼資料 URI 之外，您也應該將應用程式信任層級設定為「完全信任」；這樣可以讓 Exchange 同時代表自己和領域中的任何授權使用者。例如：
+Lync Server 中是使用 [New-CsPartnerApplication](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsPartnerApplication) Cmdlet 來設定夥伴應用程式。除了指定中繼資料 URI 之外，您也應該將應用程式信任層級設定為「完全信任」；這樣可以讓 Exchange 同時代表自己和領域中的任何授權使用者。例如：
 
     New-CsPartnerApplication -Identity Exchange -ApplicationTrustLevel Full -MetadataUrl "https://autodiscover.litwareinc.com/autodiscover/metadata/json/1"
 

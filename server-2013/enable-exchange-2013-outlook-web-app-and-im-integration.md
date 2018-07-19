@@ -25,7 +25,7 @@ _**上次修改主題的時間：** 2012-10-19_
     
         Get-CsSite
     
-    其會傳回建立集區所在之 siteName 的 siteID。如需詳細資訊，請參閱 Lync Server 2013 管理命令介面移轉文件 [Get-CsSite](get-cssite.md)＞。
+    其會傳回建立集區所在之 siteName 的 siteID。如需詳細資訊，請參閱 Lync Server 2013 管理命令介面移轉文件 [Get-CsSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsSite)＞。
 
 3.  執行下列 Cmdlet：
     

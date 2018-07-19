@@ -30,7 +30,7 @@ _**上次修改主題的時間：** 2013-02-20_
     
         Get-CsCommonAreaPhone | Grant-CsVoicePolicy  -PolicyName "RedmondVoicePolicy"
 
-如需詳細資訊，請參閱＜[Grant-CsVoicePolicy](grant-csvoicepolicy.md)＞的說明主題。
+如需詳細資訊，請參閱＜[Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy)＞的說明主題。
 
 ## 請參閱
 

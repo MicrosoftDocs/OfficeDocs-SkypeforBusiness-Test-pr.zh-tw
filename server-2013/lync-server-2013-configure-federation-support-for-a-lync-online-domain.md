@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2012-11-01_
 
 與 Microsoft Lync Online 2010 客戶同盟需要完成下列步驟：
 
-  - 設定 Lync Online 2010 客戶的網域支援 (例如，contoso.onmicrosoft.com)。如同本文件的＜[與 Lync Online 客戶同盟的先決條件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)＞一節所述，您應該已經為組織啟用同盟。啟用同盟需要指定同盟網域用來控制存取的方法。如果您將組織設定成使用探索，則可選擇是否將網域新增至組織的允許清單中。如果您未啟用網域探索，則必須將 Lync Online 客戶的網域名稱新增至您的允許網域清單中。您可以使用 Lync Server 控制台或執行 **New-CSAllowedDomain** Cmdlet，來新增網域名稱。如需使用 Lync Server 控制台的詳細資訊 (包括啟用網域探索)，請參閱作業文件中的＜[在 Lync Server 2013 中管理組織的 SIP 同盟提供者](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)＞。如需使用 **New-CSAllowedDomain** Cmdlet 來新增網域的詳細資訊，請參閱作業文件中的＜[New-CsAllowedDomain](new-csalloweddomain.md)＞。
+  - 設定 Lync Online 2010 客戶的網域支援 (例如，contoso.onmicrosoft.com)。如同本文件的＜[與 Lync Online 客戶同盟的先決條件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)＞一節所述，您應該已經為組織啟用同盟。啟用同盟需要指定同盟網域用來控制存取的方法。如果您將組織設定成使用探索，則可選擇是否將網域新增至組織的允許清單中。如果您未啟用網域探索，則必須將 Lync Online 客戶的網域名稱新增至您的允許網域清單中。您可以使用 Lync Server 控制台或執行 **New-CSAllowedDomain** Cmdlet，來新增網域名稱。如需使用 Lync Server 控制台的詳細資訊 (包括啟用網域探索)，請參閱作業文件中的＜[在 Lync Server 2013 中管理組織的 SIP 同盟提供者](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)＞。如需使用 **New-CSAllowedDomain** Cmdlet 來新增網域的詳細資訊，請參閱作業文件中的＜[New-CsAllowedDomain](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAllowedDomain)＞。
     
     <table>
     <thead>

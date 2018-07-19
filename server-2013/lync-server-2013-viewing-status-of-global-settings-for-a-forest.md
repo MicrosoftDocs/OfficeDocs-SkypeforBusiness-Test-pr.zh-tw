@@ -440,7 +440,7 @@ If EntryExitAnnouncementsEnabledByDefault is set to False, that means the confer
 [Get-CsSipDomain](get-cssipdomain.md)  
 [Get-CsMeetingConfiguration](get-csmeetingconfiguration.md)  
 [Get-CsService](get-csservice.md)  
-[Get-CsAccessEdgeConfiguration](get-csaccessedgeconfiguration.md)  
+[Get-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAccessEdgeConfiguration)  
 [Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
 [Get-CsArchivingConfiguration](get-csarchivingconfiguration.md)  
 [Get-CsCdrConfiguration](get-cscdrconfiguration.md)  

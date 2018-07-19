@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2015-06-22_
 
-若要傳回您的組織已與之訂立契約之所有音訊會議提供者的相關資訊，您可以直接呼叫 [Get-CsAudioConferencingProvider](get-csaudioconferencingprovider.md) Cmdlet 而不加入任何參數：
+若要傳回您的組織已與之訂立契約之所有音訊會議提供者的相關資訊，您可以直接呼叫 [Get-CsAudioConferencingProvider](https://docs.microsoft.com/powershell/module/skype/Get-CsAudioConferencingProvider) Cmdlet 而不加入任何參數：
 
     Get-CsAudioConferencingProvider
 
@@ -25,7 +25,7 @@ _**上次修改主題的時間：** 2015-06-22_
 
 僅有一個 商務用 Skype Online Cmdlet 接受音訊會議提供者識別碼：
 
-  - [Get-CsAudioConferencingProvider](get-csaudioconferencingprovider.md)
+  - [Get-CsAudioConferencingProvider](https://docs.microsoft.com/powershell/module/skype/Get-CsAudioConferencingProvider)
 
 ## 請參閱
 

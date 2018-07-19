@@ -35,11 +35,11 @@ _**上次修改主題的時間：** 2015-06-22_
 
 下列 Cmdlet 接受使用者的身分識別：
 
-  - [Disable-CsMeetingRoom](disable-csmeetingroom.md)
+  - [Disable-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsMeetingRoom)
 
   - [Enable-CsMeetingRoom](enable-csmeetingroom.md)
 
-  - [Get-CsExUmContact](get-csexumcontact.md)
+  - [Get-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact)
 
   - [Get-CsMeetingRoom](get-csmeetingroom.md)
 
@@ -57,7 +57,7 @@ _**上次修改主題的時間：** 2015-06-22_
 
   - [Set-CsMeetingRoom](set-csmeetingroom.md)
 
-  - [Set-CsUserAcp](set-csuseracp.md)
+  - [Set-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUserAcp)
 
 請注意，您無需在呼叫 **Get-Cs** Cmdlet 時指定使用者的身分識別。在此情況下，Cmdlet 會傳回指定項目的所有執行個體。例如，下列命令會傳回已啟用 商務用 Skype Online 之所有使用者的相關資訊：
 

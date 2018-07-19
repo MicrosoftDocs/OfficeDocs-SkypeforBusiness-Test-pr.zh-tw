@@ -25,7 +25,7 @@ _**上次修改主題的時間：** 2014-02-05_
 </thead>
 <tbody>
 <tr class="odd">
-<td>針對任何特定範圍 (網站、全域、集區或電腦)，您可在任何特定時間執行最多兩個案例。若要判斷哪些案例目前正在執行，請使用 Windows PowerShell 和 <a href="get-csclsscenario.md">Get-CsClsScenario</a>。透過使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>， 您可動態進行變更執行中的案例。您可在記錄工作階段期間修改執行中的案例，以便調整或微調您正在收集的資料及資料提供者的來源。</td>
+<td>針對任何特定範圍 (網站、全域、集區或電腦)，您可在任何特定時間執行最多兩個案例。若要判斷哪些案例目前正在執行，請使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。透過使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>， 您可動態進行變更執行中的案例。您可在記錄工作階段期間修改執行中的案例，以便調整或微調您正在收集的資料及資料提供者的來源。</td>
 </tr>
 </tbody>
 </table>

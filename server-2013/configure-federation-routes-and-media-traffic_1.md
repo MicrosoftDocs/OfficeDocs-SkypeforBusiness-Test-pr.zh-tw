@@ -248,7 +248,7 @@ _**上次修改主題的時間：** 2012-10-16_
     
         Set-CsAccessEdgeConfiguration
     
-    如需這些 Cmdlet 的詳細資訊，請參閱下列主題： [Get-CsAccessEdgeConfiguration](get-csaccessedgeconfiguration.md) 與 [Set-CsAccessEdgeConfiguration](set-csaccessedgeconfiguration.md)。
+    如需這些 Cmdlet 的詳細資訊，請參閱下列主題： [Get-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAccessEdgeConfiguration) 與 [Set-CsAccessEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAccessEdgeConfiguration)。
 
 4.  讓 Lync Server 2013 Edge Server 上線並測試同盟與外部存取前，請先等待複寫完成。
 

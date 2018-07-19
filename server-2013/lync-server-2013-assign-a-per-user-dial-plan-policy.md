@@ -69,7 +69,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者撥號對應表指派給多個使用者
 
-  - 此命令會將個別使用者撥號對應表 RedmondDialPlan 指派給在 Redmond 市工作的所有使用者。如需此命令中使用的 LdapFilter 參數的詳細資訊，請參閱 [Get-CsUser](get-csuser.md) Cmdlet 的文件。
+  - 此命令會將個別使用者撥號對應表 RedmondDialPlan 指派給在 Redmond 市工作的所有使用者。如需此命令中使用的 LdapFilter 參數的詳細資訊，請參閱 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 的文件。
     
         Get-CsUser -LdapFilter "l=Redmond" | Grant-CsDialPlan -PolicyName "RedmondDialPlan"
 

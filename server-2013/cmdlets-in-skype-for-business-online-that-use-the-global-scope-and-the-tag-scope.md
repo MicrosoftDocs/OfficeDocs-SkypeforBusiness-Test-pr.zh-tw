@@ -48,7 +48,7 @@ Get-CsExternalAccessPolicy –Identity &quot;tag:RedmondAccessPolicy&quot;</td>
 
 下列 Cmdlet 可在全域範圍與個別使用者 (tag) 範圍中運作：
 
-  - [Get-CsClientPolicy](get-csclientpolicy.md)
+  - [Get-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClientPolicy)
 
   - [Get-CsConferencingPolicy](get-csconferencingpolicy.md)
 

@@ -71,7 +71,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 指派每個使用者外部存取原則給多位使用者
 
-  - 此命令可將個別使用者外部存取原則 USAExternalAccessPolicy，指派給所有具有 Active Directory 中之 UnitedStates OUto 帳戶的使用者。如需有關此項命令之 OU 參數的詳細資訊，請參閱文件以了解 [Get-CsUser](get-csuser.md) Cmdlet。
+  - 此命令可將個別使用者外部存取原則 USAExternalAccessPolicy，指派給所有具有 Active Directory 中之 UnitedStates OUto 帳戶的使用者。如需有關此項命令之 OU 參數的詳細資訊，請參閱文件以了解 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet。
     
         Get-CsUser -OU "ou=UnitedStates,dc=litwareinc,dc=com" | Grant-CsExternalAccessPolicy -PolicyName "USAExternalAccessPolicy"
 

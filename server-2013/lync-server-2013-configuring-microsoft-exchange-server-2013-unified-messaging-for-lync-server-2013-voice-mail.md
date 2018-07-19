@@ -61,7 +61,7 @@ Microsoft Lync Server 2013 可讓您將語音留言儲存在 Microsoft Exchange 
 
 在上一個命令中，Extensions 參數代表使用者的電話分機號碼。在此範例中，使用者的分機號碼為 100。
 
-啟用 kenmyer@litwareinc.com 的信箱後，該使用者應該就能使用 Exchange 整合通訊。您可從 Lync Server 管理命令介面執行 [Test-CsExUMConnectivity](test-csexumconnectivity.md) Cmdlet，以驗證使用者是否能連線至 Exchange UM：
+啟用 kenmyer@litwareinc.com 的信箱後，該使用者應該就能使用 Exchange 整合通訊。您可從 Lync Server 管理命令介面執行 [Test-CsExUMConnectivity](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExUMConnectivity) Cmdlet，以驗證使用者是否能連線至 Exchange UM：
 
     $credential = Get-Credential "litwareinc\kenmyer"
     

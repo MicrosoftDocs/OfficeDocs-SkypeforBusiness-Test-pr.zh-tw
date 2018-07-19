@@ -127,7 +127,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者位置原則指派給多位使用者
 
-  - 此命令會將個別使用者位置原則 AccountingDepartmentLocationPolicy 指派給所有在 Accounting 部門工作的使用者。如需此命令中所使用之 LdapFilter 參數的詳細資訊，請參閱適用於 [Get-CsUser](get-csuser.md) Cmdlet 的文件。
+  - 此命令會將個別使用者位置原則 AccountingDepartmentLocationPolicy 指派給所有在 Accounting 部門工作的使用者。如需此命令中所使用之 LdapFilter 參數的詳細資訊，請參閱適用於 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 的文件。
     
         Get-CsUser -LdapFilter "Department=Accounting" | Grant-CsLocationPolicy -PolicyName "AccountingDepartmentLocationPolicy"
 

@@ -69,7 +69,7 @@ Microsoft Lync Server 2013 提供將近 550 個 Cmdlet，專門設計來讓系�
 <td><p><a href="lync-server-2013-persistent-chat-server-cmdlets.md">Persistent Chat Server Cmdlet</a></p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-federation-and-external-access-cmdlets.md">Lync Server 2013 中的同盟和外部存取 Cmdlet</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/skype/">Lync Server 2013 中的同盟和外部存取 Cmdlet</a></p></td>
 <td><p><a href="lync-server-2013-centralized-logging-cmdlets.md">Centralized Logging Cmdlet</a></p></td>
 </tr>
 <tr class="even">

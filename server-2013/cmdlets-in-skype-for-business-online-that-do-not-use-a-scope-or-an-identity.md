@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2015-06-22_
 
 修改允許清單與封鎖清單 (決定您的使用者可與哪些外部組織進行通訊的清單) 時所使用的 Cmdlet 並不會使用範圍或身分識別。事實上，**New-CsEdgeAllowAllKnownDomains** Cmdlet 也沒有任何參數。不使用範圍也不使用身分識別的 Cmdlet 包括：
 
-  - [New-CsEdgeAllowAllKnownDomains](new-csedgeallowallknowndomains.md)
+  - [New-CsEdgeAllowAllKnownDomains](https://docs.microsoft.com/powershell/module/skype/New-CsEdgeAllowAllKnownDomains)
 
   - [New-CsEdgeAllowList](new-csedgeallowlist.md)
 

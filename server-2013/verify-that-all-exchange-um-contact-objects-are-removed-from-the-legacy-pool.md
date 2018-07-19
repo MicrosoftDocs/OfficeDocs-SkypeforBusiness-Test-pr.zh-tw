@@ -25,5 +25,5 @@ _**上次修改主題的時間：** 2012-09-26_
 
   - 在指定之組織單位 (OU) 容器中建立連絡人物件的網域權限。
 
-如需有關使用 **Get-CsExumContact** Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件中的 [Get-CsExUmContact](get-csexumcontact.md)。
+如需有關使用 **Get-CsExumContact** Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件中的 [Get-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact)。
 

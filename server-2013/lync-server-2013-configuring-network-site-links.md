@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2012-11-01_
     
     此範例會建立名為 Reno\_Portland 的新網路網站連結，設定 Reno 與 Portland 這兩個網路網站間的頻寬限制。網路網站與頻寬原則設定檔在執行此命令前即必須存在。
 
-如需參數說明的詳細資訊，請參閱 Lync Server 管理命令介面文件中的 [New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md)。若要擷取可套用至網路網站連結之頻寬原則設定檔的清單，請呼叫 **Get-CsNetworkBandwidthPolicyProfile** Cmdlet。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中的 [Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)。
+如需參數說明的詳細資訊，請參閱 Lync Server 管理命令介面文件中的 [New-CsNetworkInterSitePolicy](new-csnetworkintersitepolicy.md)。若要擷取可套用至網路網站連結之頻寬原則設定檔的清單，請呼叫 **Get-CsNetworkBandwidthPolicyProfile** Cmdlet。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中的 [Get-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile)。
 
 ## 若要修改網路網站連結
 
@@ -67,5 +67,5 @@ _**上次修改主題的時間：** 2012-11-01_
 [Set-CsNetworkInterSitePolicy](set-csnetworkintersitepolicy.md)  
 [Remove-CsNetworkInterSitePolicy](remove-csnetworkintersitepolicy.md)  
 [Get-CsNetworkInterSitePolicy](get-csnetworkintersitepolicy.md)  
-[Get-CsNetworkBandwidthPolicyProfile](get-csnetworkbandwidthpolicyprofile.md)
+[Get-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile)
 

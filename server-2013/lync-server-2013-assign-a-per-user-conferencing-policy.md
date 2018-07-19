@@ -127,7 +127,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者會議原則指派給多位使用者
 
-  - 此命令可將個別使用者會議原則 HRConferencingPolicy，指派給所有任職於人力資源部門的使用者。如需有關用於此項命令之 LdapFilter 參數的詳細資訊，請參閱文件以了解 [Get-CsUser](get-csuser.md) Cmdlet。
+  - 此命令可將個別使用者會議原則 HRConferencingPolicy，指派給所有任職於人力資源部門的使用者。如需有關用於此項命令之 LdapFilter 參數的詳細資訊，請參閱文件以了解 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet。
     
         Get-CsUser -LdapFilter "Department=Human Resources" | Grant-CsConferencingPolicy -PolicyName "HRConferencingPolicy"
 

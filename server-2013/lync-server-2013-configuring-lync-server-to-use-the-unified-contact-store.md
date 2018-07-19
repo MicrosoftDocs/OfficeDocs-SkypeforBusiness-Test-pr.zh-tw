@@ -53,7 +53,7 @@ _**上次修改主題的時間：** 2014-02-07_
 
 指派原則之後，Lync Server 會開始將使用者的連絡人移轉至整合連絡人存放區。完成移轉後，使用者的連絡人就會儲存在 Exchange，而非 Lync Server 中。如果使用者碰巧在移轉正在完成時登入 Lync 2013，就會顯示訊息方塊並要求使用者登出 Lync，然後重新登入以完成程序。尚未獲指派此個別使用者原則的使用者不會將其連絡人移轉至統一連絡人存放區。這是因為這些使用者受全域原則管理，而全域原則中已停用對於統一連絡人存放區的使用。
 
-您可以從Lync Server 管理命令介面內部執行 [Test-CsUnifiedContactStore](test-csunifiedcontactstore.md) Cmdlet 以確認使用者的連絡人是否已成功移轉至整合連絡人存放區。
+您可以從Lync Server 管理命令介面內部執行 [Test-CsUnifiedContactStore](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUnifiedContactStore) Cmdlet 以確認使用者的連絡人是否已成功移轉至整合連絡人存放區。
 
     Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 

@@ -85,7 +85,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsNetworkSubnet -SubnetID <Subnet IP address> -MaskBits <Subnet bitmask> -NetworkSiteID <site ID>
 
-如需詳細資訊，請參閱＜[New-CsNetworkSubnet](new-csnetworksubnet.md)＞。
+如需詳細資訊，請參閱＜[New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)＞。
 
 就此範例而言，下表和 Windows PowerShell 命令說明有關將子網路指派給此案例中定義之網站 (Delhi 與 Hyderabad)。表中只包括位置基礎路由的特有設定，做為說明之用。
 

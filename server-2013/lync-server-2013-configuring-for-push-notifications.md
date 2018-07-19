@@ -147,6 +147,6 @@ _**上次修改主題的時間：** 2013-02-12_
 
 #### 其他資源
 
-[Test-CsFederatedPartner](test-csfederatedpartner.md)  
+[Test-CsFederatedPartner](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsFederatedPartner)  
 [Test-CsMcxPushNotification](test-csmcxpushnotification.md)
 

@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2014-04-22_
 
 ## 召集人原則設定
 
-下表列出可套用至會議召集人的所有會議原則設定。如需會議原則設定的最新清單，請參閱 [Set-CsClientPolicy](set-csclientpolicy.md) Cmdlet 的說明主題。
+下表列出可套用至會議召集人的所有會議原則設定。如需會議原則設定的最新清單，請參閱 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) Cmdlet 的說明主題。
 
 ### 召集人原則設定
 

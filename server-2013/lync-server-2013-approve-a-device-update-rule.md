@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsDeviceUpdateRule | Where-Object {$_.Brand -eq "Microsoft"} | Approve-CsDeviceUpdateRule
 
-如需詳細資訊，請參閱＜[Approve-CsDeviceUpdateRule](approve-csdeviceupdaterule.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Approve-CsDeviceUpdateRule](https://docs.microsoft.com/en-us/powershell/module/skype/Approve-CsDeviceUpdateRule)＞ Cmdlet 的說明主題。
 
 ## 請參閱
 

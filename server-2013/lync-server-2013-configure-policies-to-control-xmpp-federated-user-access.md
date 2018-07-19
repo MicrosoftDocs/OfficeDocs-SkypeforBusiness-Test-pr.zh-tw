@@ -133,7 +133,7 @@ _**上次修改主題的時間：** 2012-11-01_
 #### 其他資源
 
 [在 Lync Server 2013 中管理 XMPP 同盟夥伴](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
-[Set-CsExternalAccessPolicy](set-csexternalaccesspolicy.md)  
+[Set-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy)  
 [New-CsExternalAccessPolicy](new-csexternalaccesspolicy.md)  
 [Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
 [Remove-CsExternalAccessPolicy](remove-csexternalaccesspolicy.md)  

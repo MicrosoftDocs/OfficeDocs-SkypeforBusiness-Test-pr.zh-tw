@@ -121,7 +121,7 @@ Lync 2010 引進一項功能，可在您的 Lync 設定檔案包含相片，其�
 
 ## Lync 2010 用戶端如何取得相片
 
-在 Lync 2010 中，使用者相片是由伺服器上的通訊錄服務所管理。Lync 用戶端會先在伺服器上查詢「通訊錄 Web 查詢 (ABWQ)」服務 (透過 Distribution List Expansion Web 服務公開) 來取得使用者相片。用戶端接收影像檔案，然後將檔案複製到使用者的快取，以避免在每次需要顯示影像時下載該影像。查詢傳回的屬性值也會儲存在使用者的快取通訊錄服務項目中。通訊錄服務每 24 小時會刪除所有快取的影像，這意味若要在伺服器的快取中更新新的使用者影像，最長可能耗費 24 小時。您可以使用 [Update-CsAddressBook](update-csaddressbook.md) Cmdlet 來強制更新快取。
+在 Lync 2010 中，使用者相片是由伺服器上的通訊錄服務所管理。Lync 用戶端會先在伺服器上查詢「通訊錄 Web 查詢 (ABWQ)」服務 (透過 Distribution List Expansion Web 服務公開) 來取得使用者相片。用戶端接收影像檔案，然後將檔案複製到使用者的快取，以避免在每次需要顯示影像時下載該影像。查詢傳回的屬性值也會儲存在使用者的快取通訊錄服務項目中。通訊錄服務每 24 小時會刪除所有快取的影像，這意味若要在伺服器的快取中更新新的使用者影像，最長可能耗費 24 小時。您可以使用 [Update-CsAddressBook](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsAddressBook) Cmdlet 來強制更新快取。
 
 「目前狀態」中包含的使用者相片也具備相關的雜湊值，可讓 Lync 用戶端用來判斷是否有較新的影像可用。系統會將「目前狀態」中使用的影像檔案變更自動通知用戶端。
 
@@ -191,7 +191,7 @@ Lync 2013 針對使用者相片引進了高解析度影像支援。而且，Lync
 
 設定用戶端原則來啟用 \[從網站顯示圖片\] 選項後，即可在 Lync 2013 中使用該選項。用戶端版本必須比 15.0.4535.1002 更新 (與[Lync 累計更新：2013 年 11 月](http://go.microsoft.com/fwlink/p/?linkid=509908) 一起安裝)。使用者可能需要登出再重新登入，才能在用戶端中看到變更。
 
-您可以在 Lync Server 管理命令介面 中執行 [Set-CsClientPolicy](set-csclientpolicy.md) 原則，設定用戶端原則來啟用 \[從網站顯示圖片\] 設定。下列 Cmdlet 範例示範如何為部署中的所有使用者全域設定原則：
+您可以在 Lync Server 管理命令介面 中執行 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) 原則，設定用戶端原則來啟用 \[從網站顯示圖片\] 設定。下列 Cmdlet 範例示範如何為部署中的所有使用者全域設定原則：
 
     $pe=New-CsClientPolicyEntry -Name EnablePresencePhotoOptions -Value True
 

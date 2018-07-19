@@ -89,7 +89,7 @@ _**上次修改主題的時間：** 2013-09-11_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>全域外部存取原則即適用於 回應群組應用程式。您可以使用 Lync Server 控制台或是使用 Set-CsExternalAccessPolicy Cmdlet，將 EnableOutsideAccess 參數設定為 True，來設定回應群組同盟的全域原則。請記住，除非另外指派網站或使用者原則，否則所有使用者都會套用全域原則設定。因此，在為回應群組變更此設定之前，請確定同盟設定符合您的組織需求。如需如何將原則套用至使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理外部使用存取原則</a>＞。如需同盟設定的詳細資訊，請參閱＜ <a href="set-csexternalaccesspolicy.md">Set-CsExternalAccessPolicy</a>＞。</td>
+    <td>全域外部存取原則即適用於 回應群組應用程式。您可以使用 Lync Server 控制台或是使用 Set-CsExternalAccessPolicy Cmdlet，將 EnableOutsideAccess 參數設定為 True，來設定回應群組同盟的全域原則。請記住，除非另外指派網站或使用者原則，否則所有使用者都會套用全域原則設定。因此，在為回應群組變更此設定之前，請確定同盟設定符合您的組織需求。如需如何將原則套用至使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理外部使用存取原則</a>＞。如需同盟設定的詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy">Set-CsExternalAccessPolicy</a>＞。</td>
     </tr>
     </tbody>
     </table>

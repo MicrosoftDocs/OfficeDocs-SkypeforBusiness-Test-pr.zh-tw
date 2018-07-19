@@ -171,7 +171,7 @@ _**上次修改主題的時間：** 2015-03-09_
     </tbody>
     </table>
     
-    如需您可設定之原則設定的說明，以及如何管理原則的詳細資訊，請參閱＜ [New-CsMobilityPolicy](new-csmobilitypolicy.md)＞、＜ [Set-CsMobilityPolicy](set-csmobilitypolicy.md)＞、＜ [Get-CsMobilityPolicy](get-csmobilitypolicy.md)＞、＜ [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)＞和＜ [Remove-CsMobilityPolicy](remove-csmobilitypolicy.md)＞。
+    如需您可設定之原則設定的說明，以及如何管理原則的詳細資訊，請參閱＜ [New-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy)＞、＜ [Set-CsMobilityPolicy](set-csmobilitypolicy.md)＞、＜ [Get-CsMobilityPolicy](get-csmobilitypolicy.md)＞、＜ [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)＞和＜ [Remove-CsMobilityPolicy](remove-csmobilitypolicy.md)＞。
 
   - **您是否要讓未啟用 Enterprise Voice 的使用者能夠使用 \[按一下加入\] 加入會議？**
     

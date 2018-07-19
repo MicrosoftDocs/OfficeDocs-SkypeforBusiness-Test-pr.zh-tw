@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2012-10-19_
 
 如需使用網路地區連結的詳細資訊，請參閱 Lync Server 管理命令介面文件中的下列 Cmdlet：
 
-  - [New-CsNetworkRegionLink](new-csnetworkregionlink.md)
+  - [New-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegionLink)
 
   - [Get-CsNetworkRegionLink](get-csnetworkregionlink.md)
 
