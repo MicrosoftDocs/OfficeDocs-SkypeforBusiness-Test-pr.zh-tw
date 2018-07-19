@@ -67,7 +67,7 @@ _**上次修改主題的時間：** 2015-06-22_
 
 如您所見，Ken Myer 可與公用 IM 提供者進行通訊，因為指派給他的個別使用者原則中的設定會覆寫全域原則中的設定。Pilar Ackerman 無法與公用 IM 提供者進行通訊，因為她受全域原則管理，而全域原則禁止該類通訊。
 
-個別使用者原則必須由 Office 365 支援人員為您建立。在原則建立後，您可以使用適當的 **Grant-Cs** Cmdlet (例如 [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)) 將原則指派給使用者。個別使用者原則相當容易識別，因為原則 Identity 一律會以 tag 前置詞作為開頭。例如：
+個別使用者原則必須由 Office 365 支援人員為您建立。在原則建立後，您可以使用適當的 **Grant-Cs** Cmdlet (例如 [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)) 將原則指派給使用者。個別使用者原則相當容易識別，因為原則 Identity 一律會以 tag 前置詞作為開頭。例如：
 
     Identity : tag:AllowPublicIMCommunication
 

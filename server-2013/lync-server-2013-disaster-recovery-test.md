@@ -97,7 +97,7 @@ _**上次修改主題的時間：** 2015-01-26_
 
 #### 其他資源
 
-[Import-CsConfiguration](import-csconfiguration.md)  
+[Import-CsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Import-CsConfiguration)  
 [備份及還原 Lync Server 2013](lync-server-2013-backing-up-and-restoring-lync-server.md)  
 [管理 Lync Server 2013 災害復原、高可用性及備份服務](lync-server-2013-managing-lync-server-disaster-recovery-high-availability-and-backup-service.md)
 

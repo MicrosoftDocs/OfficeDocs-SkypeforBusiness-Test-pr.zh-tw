@@ -53,7 +53,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsDeviceUpdateRule -Filter "service:WebServer:atl-cs-001.litwareinc.com*" | Remove-CsDeviceUpdateRule
 
-如需詳細資訊，請參閱＜[Remove-CsDeviceUpdateRule](remove-csdeviceupdaterule.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Remove-CsDeviceUpdateRule](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsDeviceUpdateRule)＞ Cmdlet 的說明主題。
 
 ## 請參閱
 

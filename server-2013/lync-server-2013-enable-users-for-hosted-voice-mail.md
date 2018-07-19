@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2012-09-24_
 
 如需詳細資訊，請參閱規劃文件中的＜ [Lync Server 2013 中的主控 Exchange 使用者管理](lync-server-2013-hosted-exchange-user-management.md)＞。
 
-如需 [Set-CsUser](set-csuser.md) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
+如需 [Set-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUser) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
 
 <table>
 <thead>

@@ -44,5 +44,5 @@ _**上次修改主題的時間：** 2014-06-18_
 #### 其他資源
 
 [Get-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsHostingProvider)  
-[Set-CsHostingProvider](set-cshostingprovider.md)
+[Set-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsHostingProvider)
 

@@ -31,9 +31,9 @@ _**上次修改主題的時間：** 2012-10-30_
 
 ## 通話駐留 災難復原考量
 
-您可定義僅有一組 通話駐留應用程式 組態設定，每個集區一個自訂保留音樂音訊檔案。這些設定包含逾時臨界值、保留音樂、接聽通話次數上限以及逾時 URI。若要檢視這些組態設定，請執行 **Get-CsCpsConfiguration** Cmdlet。如需 **Get-CsCpsConfiguration** Cmdlet 的詳細資訊，請參閱 [Get-CsCpsConfiguration](get-cscpsconfiguration.md)。
+您可定義僅有一組 通話駐留應用程式 組態設定，每個集區一個自訂保留音樂音訊檔案。這些設定包含逾時臨界值、保留音樂、接聽通話次數上限以及逾時 URI。若要檢視這些組態設定，請執行 **Get-CsCpsConfiguration** Cmdlet。如需 **Get-CsCpsConfiguration** Cmdlet 的詳細資訊，請參閱 [Get-CsCpsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCpsConfiguration)。
 
 災難復原期間， 通話駐留 會使用備份集區中的 通話駐留應用程式，因此不會備份主集區中的設定值。如果主集區無法復原，且您要部署新集區來取代主集區，則主集區的設定值會遺失，您也必須設定 通話駐留 設定值以及任何新集區中的自訂保留音樂音訊檔案。
 
-如果您以不同的完整網域名稱 (FQDN) 部署新集區，以取代主集區，您必須重新指派與主集區至新集區 FQDN 相關聯的所有 通話駐留 軌道範圍。若要將軌道範圍重新指派新集區，可使用 Lync Server 控制台 或 **Set-CsCallParkOrbit** Cmdlet。如需 **Set-CsCallParkOrbit** Cmdlet 的詳細資訊，請參閱 [Set-CsCallParkOrbit](set-cscallparkorbit.md)。
+如果您以不同的完整網域名稱 (FQDN) 部署新集區，以取代主集區，您必須重新指派與主集區至新集區 FQDN 相關聯的所有 通話駐留 軌道範圍。若要將軌道範圍重新指派新集區，可使用 Lync Server 控制台 或 **Set-CsCallParkOrbit** Cmdlet。如需 **Set-CsCallParkOrbit** Cmdlet 的詳細資訊，請參閱 [Set-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkOrbit)。
 

@@ -89,7 +89,7 @@ Grant-CsUserServicesPolicy –識別 &quot;Ken Myer&quot; –PolicyName $Null</t
 
 在處理整合連絡人存放區時，須牢記「防止 Ken 的連絡人移轉至整合連絡人存放區」這個術語。單單將新的使用者服務原則指派給 Ken 並不會將其連絡人從整合連絡人存放區移出。當使用者登入 Lync Server 2013 時，系統會檢查使用者的使用者服務原則，以決定是否應將其連絡人保存於整合連絡人存放區中。如果結果為肯定 (也就是說，如果 UcsAllowed 屬性設為 $True)，那些連絡人就會移轉至整合連絡人存放區 (假設那些連絡人尚未存放在整合連絡人存放區)。如果結果為否定，Lync Server 就會忽略使用者的連絡人並移至下一個工作。這表示無論 UcsAllowed 屬性的值為何，Lync Server 皆不會從整合連絡人存放區之外移動使用者的連絡人。
 
-這也表示，在將新的使用者服務原則指派給使用者後，接著您必須執行 [Invoke-CsUcsRollback](invoke-csucsrollback.md) Cmdlet 才能將使用者的連絡人移出 Exchange 2013 ，然後再移回 Lync Server 2013。例如，在將新的使用者服務原則指派給 Ken Myer 之後，您就可以使用下列命令將其連絡人移出整合連絡人存放區：
+這也表示，在將新的使用者服務原則指派給使用者後，接著您必須執行 [Invoke-CsUcsRollback](https://docs.microsoft.com/en-us/powershell/module/skype/Invoke-CsUcsRollback) Cmdlet 才能將使用者的連絡人移出 Exchange 2013 ，然後再移回 Lync Server 2013。例如，在將新的使用者服務原則指派給 Ken Myer 之後，您就可以使用下列命令將其連絡人移出整合連絡人存放區：
 
     Invoke-CsUcsRollback -Identity "Ken Myer"
 

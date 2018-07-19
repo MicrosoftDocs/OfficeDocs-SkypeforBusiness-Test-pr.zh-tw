@@ -55,5 +55,5 @@ Move-CsUser : HostedMigration 錯誤: 錯誤=(510)，描述=(為針對共用 sip
 
 #### 其他資源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

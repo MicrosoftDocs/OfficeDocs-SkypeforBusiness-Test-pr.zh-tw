@@ -25,7 +25,7 @@ A/V Edge 服務可讓內部使用者 (即已登入您組織網路的使用者) �
 
   - 若個別伺服器裡未進行任何服務設定，且該伺服器所處的網站無任何網站設定，才會使用全域範圍的設定。
 
-任何設定都可以使用 Set-CsAVEdgeConfiguration Cmdlet 修改。如需詳細資訊，請參閱 [New-CsAVEdgeConfiguration](new-csavedgeconfiguration.md) 和 [Set-CsAVEdgeConfiguration](set-csavedgeconfiguration.md) Cmdlet 的說明主題。
+任何設定都可以使用 Set-CsAVEdgeConfiguration Cmdlet 修改。如需詳細資訊，請參閱 [New-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAVEdgeConfiguration) 和 [Set-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAVEdgeConfiguration) Cmdlet 的說明主題。
 
 ## 在網站範圍內建立新的 A/V Edge 組態設定
 
@@ -61,6 +61,6 @@ A/V Edge 服務可讓內部使用者 (即已登入您組織網路的使用者) �
 #### 其他資源
 
 [Lync Server 2013 中的音訊/視訊 (A/V) Edge Server](lync-server-2013-audio-video-a-v-edge-servers.md)  
-[New-CsAVEdgeConfiguration](new-csavedgeconfiguration.md)  
-[Set-CsAVEdgeConfiguration](set-csavedgeconfiguration.md)
+[New-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAVEdgeConfiguration)  
+[Set-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAVEdgeConfiguration)
 

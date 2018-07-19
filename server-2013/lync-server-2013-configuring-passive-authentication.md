@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2013-07-11_
 
 3.  從 Lync Server 管理命令介面 命令列執行下列命令，為每個將啟用被動式驗證的 Director、Enterprise 集區和 Standard Edition 伺服器建立新的 Web 服務組態：
     
-        New-CsWebServiceConfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
+        new-cswebserviceconfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
     
     <table>
     <thead>

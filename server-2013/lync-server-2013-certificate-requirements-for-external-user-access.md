@@ -23,7 +23,7 @@ Microsoft Lync Server 2013  通訊軟體支援針對 Access 和 Web Conferencin
 
   - 如果憑證將於 Edge 集區上使用，則必須建立為可匯出，並且於 Edge 集區中的每一部 Edge Server 上使用相同憑證。可匯出的私密金鑰需求是用於 A/V 驗證服務，此服務必須在集區的所有 Edge Server 中使用相同的私密金鑰。
 
-  - 如果您想要音訊/視訊服務的上線時間達到最長，請檢閱實作低耦合 A/V Edge 服務 憑證的憑證需求 (也就是說，來自其他外部邊緣憑證用途的個別 A/V Edge 服務 憑證)。如需詳細資訊，請參閱＜ [在 Lync Server 2013 中會影響 Edge Server 規劃的變更](lync-server-2013-changes-in-lync-server-that-affect-edge-server-planning.md), [在 Lync Server 2013 中規劃 Edge Server 憑證](lync-server-2013-plan-for-edge-server-certificates.md)＞與＜ [於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md)＞。
+  - 如果您想要音訊/視訊服務的上線時間達到最長，請檢閱實作低耦合 A/V Edge 服務 憑證的憑證需求 (也就是說，來自其他外部邊緣憑證用途的個別 A/V Edge 服務 憑證)。如需詳細資訊，請參閱＜ [在 Lync Server 2013 中會影響 Edge Server 規劃的變更](lync-server-2013-changes-in-lync-server-that-affect-edge-server-planning.md), [在 Lync Server 2013 中規劃 Edge Server 憑證](lync-server-2013-plan-for-edge-server-certificates.md)＞與＜ [於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)＞。
 
   - 憑證的主體名稱是 Access Edge Service 外部介面完整網域名稱 (FQDN) 或硬體負載平衡器 VIP (例如，access.contoso.com)。
     

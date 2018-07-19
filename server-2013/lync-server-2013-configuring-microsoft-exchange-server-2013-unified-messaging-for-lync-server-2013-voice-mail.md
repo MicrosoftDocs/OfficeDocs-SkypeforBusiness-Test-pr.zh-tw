@@ -67,7 +67,7 @@ Microsoft Lync Server 2013 可讓您將語音留言儲存在 Microsoft Exchange 
     
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-若您還有第二個啟用了整合通訊的使用者，您可使用 [Test-CsExUMVoiceMail](test-csexumvoicemail.md) Cmdlet 來驗證第二個使用者是否能語音留言給第一個使用者。
+若您還有第二個啟用了整合通訊的使用者，您可使用 [Test-CsExUMVoiceMail](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExUMVoiceMail) Cmdlet 來驗證第二個使用者是否能語音留言給第一個使用者。
 
     $credential = Get-Credential "litwareinc\pilar"
     

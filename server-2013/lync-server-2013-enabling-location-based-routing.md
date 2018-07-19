@@ -31,7 +31,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsVoiceRoutingPolicy -Identity <voice routing policy ID> -Name <voice routing policy name> -PstnUsages <usages>
 
-如需詳細資訊，請參閱＜[New-CsVoiceRoutingPolicy](new-csvoiceroutingpolicy.md)＞。
+如需詳細資訊，請參閱＜[New-CsVoiceRoutingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoiceRoutingPolicy)＞。
 
 就此範例而言，下表和 Windows PowerShell 命令說明了此案例中定義的兩種語音路由原則及關聯的 PSTN 使用方式。表中只包括位置基礎路由的特有設定，做為說明之用。
 
@@ -123,7 +123,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsTrunkConfiguration -Identity < trunk configuration ID>
 
-如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](new-cstrunkconfiguration.md)＞。
+如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)＞。
 
 就此範例而言，下列 Windows PowerShell 命令說明了如何為此案例中定義之部署的每個主幹建立主幹組態。
 
@@ -132,23 +132,23 @@ _**上次修改主題的時間：** 2015-03-09_
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 3 DEL-PBX>"
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 4 HYD-PBX>"
 
-為每個主幹設定主幹組態後，您可以使用 Lync ServerWindows PowerShell 命令 Set-CsTrunkConfiguration 對必須執行路由限制的主幹啟用位置基礎路由。對將通話路由傳送到 (將通話路由傳送到 PSTN 之) PSTN 閘道的主幹啟用位置基礎路由，並與閘道所在的網站相關聯。
+為每個主幹設定主幹組態後，您可以使用 Lync ServerWindows PowerShell 命令 set-cstrunkconfiguration 對必須執行路由限制的主幹啟用位置基礎路由。對將通話路由傳送到 (將通話路由傳送到 PSTN 之) PSTN 閘道的主幹啟用位置基礎路由，並與閘道所在的網站相關聯。
 
-    Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
+    set-cstrunkconfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
-如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](new-cstrunkconfiguration.md)＞。
+如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)＞。
 
 在此範例中，會為已與 Delhi 和 Hyderabad 之 PSTN 閘道建立關聯的每個主幹啟用位置基礎路由。
 
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
 
   
 
 請勿為不會將通話路由傳送到 PSTN 的主幹啟用位置基礎路由；然而，您必須仍將主幹與系統所在之網站建立關聯，因為需要為連線到透過此主幹連接之端點的 PSTN 通話執行位置基礎路由限制。就此範例而言，並未為已與 Delhi 和 Hyderabad 之 PBX 系統建立關聯的每個主幹啟用位置基礎路由：
 
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
-    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
+    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
 
   
 連接到不會將通話路由傳送到 PSTN (亦即 PBX) 之系統的端點，會和已啟用位置基礎路由的 Lync 使用者端點具有類似限制。也就是說，不論位於何處，這些使用者都將能夠撥打電話給 Lync 使用者以及接聽來自對方的電話。而不論與系統建立關聯的網站為何，這些使用者也將能夠撥打電話給其他不會將通話路由傳送到 PSTN 網路 (亦即連接到不同 PBX 的端點) 的系統，以及接聽來自對方的電話。所有涉及 PSTN 的撥入通話、撥出通話、通話轉接和來電轉接都將受到強制位置基礎路由限制。此類通話僅能使用已定義為此類系統本機之 PSTN 閘道。
@@ -201,7 +201,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Set-CsVoicePolicy -Identity <voice policy ID> -PreventPSTNTollBypass <$true|$false>
 
-如需詳細資訊，請參閱＜[New-CsVoicePolicy](new-csvoicepolicy.md)＞。
+如需詳細資訊，請參閱＜[New-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoicePolicy)＞。
 
 就此範例而言，下表和 Windows PowerShell 命令說明如何對此案例中定義之 Delhi 和 Hyderabad 語音原則禁止 PSTN 免話費機制。表中只包括位置基礎路由的特有設定，做為說明之用。
 
@@ -249,7 +249,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Set-CsRoutingConfiguration -EnableLocationBasedRouting $true
 
-如需詳細資訊，請參閱＜[Set-CsRoutingConfiguration](set-csroutingconfiguration.md)＞。
+如需詳細資訊，請參閱＜[Set-CsRoutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRoutingConfiguration)＞。
 
 <table>
 <thead>

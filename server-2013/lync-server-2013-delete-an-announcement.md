@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2012-11-01_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如需選項的詳細資訊，請參閱＜<a href="get-csannouncement.md">Get-CsAnnouncement</a>＞及＜<a href="remove-csannouncement.md">Remove-CsAnnouncement</a>＞。</td>
+    <td>如需選項的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAnnouncement">Get-CsAnnouncement</a>＞及＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAnnouncement">Remove-CsAnnouncement</a>＞。</td>
     </tr>
     </tbody>
     </table>
@@ -57,6 +57,6 @@ _**上次修改主題的時間：** 2012-11-01_
 
 #### 其他資源
 
-[Remove-CsAnnouncement](remove-csannouncement.md)  
-[Get-CsAnnouncement](get-csannouncement.md)
+[Remove-CsAnnouncement](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAnnouncement)  
+[Get-CsAnnouncement](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAnnouncement)
 

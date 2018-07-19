@@ -166,6 +166,6 @@ A/V 驗證服務是專用來核發 Token，以供用戶端和其他 A/V 取用�
 #### 其他資源
 
 [針對 Lync Server 2013 設定 Edge 憑證](lync-server-2013-set-up-edge-certificates.md)  
-[Set-CsCertificate](set-cscertificate.md)  
-[Remove-CsCertificate](remove-cscertificate.md)
+[Set-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)  
+[Remove-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCertificate)
 

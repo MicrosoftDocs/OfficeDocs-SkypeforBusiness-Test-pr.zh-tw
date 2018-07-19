@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2013-02-23_
         NetworkRegionID1          : Pacific Northwest
         NetworkRegionID2          : Northeast
 
-如需詳細資訊，請參閱適用於 [Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱適用於 [Get-CsNetworkInterRegionRoute](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkInterRegionRoute) Cmdlet 的說明主題。
 
 ## 請參閱
 

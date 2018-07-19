@@ -74,7 +74,7 @@ _**上次修改主題的時間：** 2012-09-21_
 </thead>
 <tbody>
 <tr class="odd">
-<td>使用 <strong>Set-CsPstnGateway</strong> Cmdlet 修改 PSTN 閘道的屬性。如需詳細資訊，請參閱＜ Lync Server 管理命令介面 說明＞中的＜ <a href="set-cspstngateway.md">Set-CsPstnGateway</a>＞。</td>
+<td>使用 <strong>Set-CsPstnGateway</strong> Cmdlet 修改 PSTN 閘道的屬性。如需詳細資訊，請參閱＜ Lync Server 管理命令介面 說明＞中的＜ <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPstnGateway">Set-CsPstnGateway</a>＞。</td>
 </tr>
 </tbody>
 </table>

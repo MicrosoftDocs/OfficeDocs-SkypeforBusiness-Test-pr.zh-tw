@@ -68,5 +68,5 @@ SIP 主幹組態設定定義了中繼伺服器與服務提供者的公用交換�
         ForwardPAI                                : False
         EnableFastFailoverTimer                   : True
 
-如需詳細資訊，請參閱 [Get-CsTrunkConfiguration](get-cstrunkconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTrunkConfiguration) Cmdlet 的說明主題。
 

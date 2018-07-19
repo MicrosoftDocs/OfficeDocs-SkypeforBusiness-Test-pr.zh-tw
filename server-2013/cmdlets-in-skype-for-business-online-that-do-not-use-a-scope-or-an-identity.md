@@ -19,9 +19,9 @@ _**上次修改主題的時間：** 2015-06-22_
 
   - [New-CsEdgeAllowAllKnownDomains](https://docs.microsoft.com/powershell/module/skype/New-CsEdgeAllowAllKnownDomains)
 
-  - [New-CsEdgeAllowList](new-csedgeallowlist.md)
+  - [New-CsEdgeAllowList](https://docs.microsoft.com/powershell/module/skype/New-CsEdgeAllowList)
 
-  - [New-CsEdgeDomainPattern](new-csedgedomainpattern.md)
+  - [New-CsEdgeDomainPattern](https://docs.microsoft.com/powershell/module/skype/New-CsEdgeDomainPattern)
 
 請注意，使用 **New-CsEdgeAllowList** Cmdlet 與 **New-CsEdgeDomainPattern** Cmdlet 時必須加上 Domain 參數，例如：
 

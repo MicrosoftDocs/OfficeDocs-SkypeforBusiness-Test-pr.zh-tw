@@ -85,7 +85,7 @@ _**上次修改主題的時間：** 2012-10-01_
 </thead>
 <tbody>
 <tr class="odd">
-<td>您的裝載 Exchange UM 服務的承租人系統管理員，將會為 Destination 和 Organization 屬性設定提供必要值。若要設定您的原則，必須執行 New-CsHostedVoicemailPolicy Cmdlet，或使用 Set-CsHostedVoicemailPolicy Cmdlet 來修改現有的原則 (例如，全域原則)。</td>
+<td>您的裝載 Exchange UM 服務的承租人系統管理員，將會為 Destination 和 Organization 屬性設定提供必要值。若要設定您的原則，必須執行 New-CsHostedVoicemailPolicy Cmdlet，或使用 set-cshostedvoicemailpolicy Cmdlet 來修改現有的原則 (例如，全域原則)。</td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +95,7 @@ _**上次修改主題的時間：** 2012-10-01_
 
   - New-CsHostedVoicemailPolicy
 
-  - Set-CsHostedVoicemailPolicy
+  - set-cshostedvoicemailpolicy
 
   - Get-CsHostedVoicemailPolicy
 

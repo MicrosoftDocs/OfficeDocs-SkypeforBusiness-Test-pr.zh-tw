@@ -15,17 +15,17 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-09-24_
 
-*全域*裝載語音信箱原則會隨 Lync Server 2013 一起安裝。您可以修改該原則以符合您的需求，但無法將它重新命名或刪除。若要修改全域原則，請使用 Set-CsHostedVoicemailPolicy Cmdlet，將參數設為適合您的特定部署的值。
+*全域*裝載語音信箱原則會隨 Lync Server 2013 一起安裝。您可以修改該原則以符合您的需求，但無法將它重新命名或刪除。若要修改全域原則，請使用 set-cshostedvoicemailpolicy Cmdlet，將參數設為適合您的特定部署的值。
 
-如需[Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
+如需[set-cshostedvoicemailpolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsHostedVoicemailPolicy) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
 
 ## 修改全域裝載語音信箱原則
 
 1.  啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。
 
-2.  執行 Set-CsHostedVoicemailPolicy Cmdlet，為您的環境設定全域原則參數。例如，執行：
+2.  執行 set-cshostedvoicemailpolicy Cmdlet，為您的環境設定全域原則參數。例如，執行：
     
-        Set-CsHostedVoicemailPolicy -Destination ExUM.fabrikam.com -Organization "corp1.litwareinc.com"
+        set-cshostedvoicemailpolicy -Destination ExUM.fabrikam.com -Organization "corp1.litwareinc.com"
     
     此命令不會指定原則的 Identity 參數，因此，Windows PowerShell 命令列介面會在全域裝載語音信箱原則上設定下列值：
     
@@ -48,5 +48,5 @@ _**上次修改主題的時間：** 2012-09-24_
     
         $a = Get-CsHostedVoicemailPolicy
         $a.Organization += ",corp3.litwareinc.com"
-        Set-CsHostedVoicemailPolicy -Organization $a.Organization
+        set-cshostedvoicemailpolicy -Organization $a.Organization
 

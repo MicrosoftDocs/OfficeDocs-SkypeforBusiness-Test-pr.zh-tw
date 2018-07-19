@@ -431,7 +431,7 @@ _**上次修改主題的時間：** 2013-09-11_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</a>＞。</td>
+    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>＞。</td>
     </tr>
     </tbody>
     </table>
@@ -441,7 +441,7 @@ _**上次修改主題的時間：** 2013-09-11_
     
         $qid = (Get-CsRgsQueue -Name "Help Desk").Identity
     
-    如需建立佇列的詳細資訊，請參閱＜ [New-CsRgsQueue](new-csrgsqueue.md)＞。
+    如需建立佇列的詳細資訊，請參閱＜ [New-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsQueue)＞。
 
 5.  定義於營業時間開啟工作流程時要採取的預設動作，然後以變數的形式儲存。在命令列中執行：
     
@@ -466,7 +466,7 @@ _**上次修改主題的時間：** 2013-09-11_
 
 6.  如果您想要定義營業時間與假日，您必須先加以建立，然後才能建立或修改工作流程。如需詳細資訊，請參閱＜ [(選用) 在 Lync Server 2013 中定義回應群組營業時間](lync-server-2013-optional-define-response-group-business-hours.md)＞及＜ [(選用) 在 Lync Server 2013 中定義回應群組假日集](lync-server-2013-optional-define-response-group-holiday-sets.md)＞。
 
-7.  如果您想要針對下班時間或假日的來電提供提示，請使用 **New-CsRgsPrompt** Cmdlet 來定義提示，然後使用 **New-CsRgsCallAction** 定義要在提示後採取的動作。如需詳細資訊，請參閱＜ [New-CsRgsPrompt](new-csrgsprompt.md)＞及＜ [New-CsRgsCallAction](new-csrgscallaction.md)＞。
+7.  如果您想要針對下班時間或假日的來電提供提示，請使用 **New-CsRgsPrompt** Cmdlet 來定義提示，然後使用 **New-CsRgsCallAction** 定義要在提示後採取的動作。如需詳細資訊，請參閱＜ [New-CsRgsPrompt](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsPrompt)＞及＜ [New-CsRgsCallAction](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction)＞。
 
 8.  擷取 Lync Server 回應群組服務的服務名稱，然後指派給一個變數。在命令中執行：
     
@@ -501,7 +501,7 @@ _**上次修改主題的時間：** 2013-09-11_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如需其他選用參數的詳細資訊，請參閱＜ <a href="new-csrgsworkflow.md">New-CsRgsWorkflow</a>＞及＜ <a href="set-csrgsworkflow.md">Set-CsRgsWorkflow</a>＞。</td>
+    <td>如需其他選用參數的詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow">New-CsRgsWorkflow</a>＞及＜ <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow">Set-CsRgsWorkflow</a>＞。</td>
     </tr>
     </tbody>
     </table>
@@ -519,8 +519,8 @@ _**上次修改主題的時間：** 2013-09-11_
 
 #### 其他資源
 
-[New-CsRgsWorkflow](new-csrgsworkflow.md)  
-[Set-CsRgsWorkflow](set-csrgsworkflow.md)  
-[New-CsRgsPrompt](new-csrgsprompt.md)  
-[New-CsRgsCallAction](new-csrgscallaction.md)
+[New-CsRgsWorkflow](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsWorkflow)  
+[Set-CsRgsWorkflow](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsWorkflow)  
+[New-CsRgsPrompt](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsPrompt)  
+[New-CsRgsCallAction](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction)
 

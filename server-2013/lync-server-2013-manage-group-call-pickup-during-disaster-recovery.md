@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 在容錯移轉至備份集區的程序完成後，通話駐留範圍表中的群組來電接聽號碼範圍必須重新導向至備份集區。而在容錯回復至主要集區的程序完成後，號碼範圍就必須重新導向回到主要集區。若要重新導向群組來電接聽範圍，請使用 **Set-CsCallParkOrbit** Cmdlet。
 
-如果您部署具備不同完整網域名稱 (FQDN) 的新集區以取代主要集區，則必須將所有原先與主要集區相關聯之群組來電接聽號碼範圍重新指派給新集區的 FQDN。若要將號碼範圍重新指派給新集區，可使用 **Set-CsCallParkOrbit** Cmdlet。如需 **Set-CsCallParkOrbit** Cmdlet 的詳細資訊，請參閱＜[Set-CsCallParkOrbit](set-cscallparkorbit.md)＞。
+如果您部署具備不同完整網域名稱 (FQDN) 的新集區以取代主要集區，則必須將所有原先與主要集區相關聯之群組來電接聽號碼範圍重新指派給新集區的 FQDN。若要將號碼範圍重新指派給新集區，可使用 **Set-CsCallParkOrbit** Cmdlet。如需 **Set-CsCallParkOrbit** Cmdlet 的詳細資訊，請參閱＜[Set-CsCallParkOrbit](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkOrbit)＞。
 
 ## 集區失敗期間的群組來電接聽體驗
 

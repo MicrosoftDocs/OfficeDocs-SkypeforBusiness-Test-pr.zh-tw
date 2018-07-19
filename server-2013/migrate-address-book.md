@@ -91,7 +91,7 @@ _**上次修改主題的時間：** 2012-10-09_
     
       - 如果您的部署包含 Lync Server 2013 與 Lync Server 2010 或 Office Communications Server 2007 R2 的組合，請執行下列 Cmdlet 並將其指派給拓撲中的每一個 Lync Server 2013 集區：
         
-            New-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
+            new-csaddressbookconfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
 
 3.  等候 中央管理存放區複寫在所有集區上發生。
 

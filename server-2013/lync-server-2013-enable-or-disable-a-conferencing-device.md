@@ -44,5 +44,5 @@ _**上次修改主題的時間：** 2013-02-20_
     
         Disable-CsMeetingRoom -Identity "sip:RedmondMeetingRoom@litwareinc.com"
 
-如需詳細資訊，請參閱＜[Enable-CsMeetingRoom](enable-csmeetingroom.md)＞ Cmdlet 和＜[Disable-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsMeetingRoom)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Enable-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Enable-CsMeetingRoom)＞ Cmdlet 和＜[Disable-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsMeetingRoom)＞ Cmdlet 的說明主題。
 

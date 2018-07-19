@@ -25,7 +25,7 @@ _**上次修改主題的時間：** 2014-02-05_
 </thead>
 <tbody>
 <tr class="odd">
-<td>針對任何特定範圍 (網站、全域、集區或電腦)，您可在任何特定時間執行最多兩個案例。若要判斷哪些案例目前正在執行，請使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。透過使用 Windows PowerShell 和 <a href="set-csclsscenario.md">Set-CsClsScenario</a>， 您可動態進行變更執行中的案例。您可在記錄工作階段期間修改執行中的案例，以便調整或微調您正在收集的資料及資料提供者的來源。</td>
+<td>針對任何特定範圍 (網站、全域、集區或電腦)，您可在任何特定時間執行最多兩個案例。若要判斷哪些案例目前正在執行，請使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。透過使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsScenario">Set-CsClsScenario</a>， 您可動態進行變更執行中的案例。您可在記錄工作階段期間修改執行中的案例，以便調整或微調您正在收集的資料及資料提供者的來源。</td>
 </tr>
 </tbody>
 </table>
@@ -67,7 +67,7 @@ _**上次修改主題的時間：** 2014-02-05_
 
 1.  啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。
 
-2.  若要針對記錄工作階段建立新案例，請使用 [New-CsClsProvider](new-csclsprovider.md) 並定義案例名稱 (亦即唯一識別案例的方式)。從 WPP (亦即 Windows 軟體追蹤前置處理器，此為預設)、EventLog (亦即 Windows 事件記錄格式) 或 IISLog (亦即以 IIS 記錄檔案格式為依據的 ASCII 格式檔案) 中選擇記錄格式類型。接著定義層次 (如同在本主題中的「記錄層次」下所定義) 和旗標 (如同在本主題中的「旗標」下所定義)。
+2.  若要針對記錄工作階段建立新案例，請使用 [New-CsClsProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsProvider) 並定義案例名稱 (亦即唯一識別案例的方式)。從 WPP (亦即 Windows 軟體追蹤前置處理器，此為預設)、EventLog (亦即 Windows 事件記錄格式) 或 IISLog (亦即以 IIS 記錄檔案格式為依據的 ASCII 格式檔案) 中選擇記錄格式類型。接著定義層次 (如同在本主題中的「記錄層次」下所定義) 和旗標 (如同在本主題中的「旗標」下所定義)。
     
     針對此範例案例，我們使用 LyssProvider 當作範例提供者變數。
     

@@ -126,7 +126,7 @@ Here are some common reasons why **Test-CsUcwaConference** might fail:
 
 #### 其他資源
 
-[Test-CsASConference](test-csasconference.md)  
-[Test-CsDataConference](test-csdataconference.md)  
-[Test-CsAVConference](test-csavconference.md)
+[Test-CsASConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsASConference)  
+[Test-CsDataConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsDataConference)  
+[Test-CsAVConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAVConference)
 

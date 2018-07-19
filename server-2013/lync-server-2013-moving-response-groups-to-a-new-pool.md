@@ -67,7 +67,7 @@ Lync Server 2013 引進的新 Cmdlet 支援在集區之間移動回應群組，�
     </thead>
     <tbody>
     <tr class="odd">
-    <td>應用程式層級設定包含預設的保留音樂設定、預設的保留音樂音訊檔、代理人回電寬限期及來電內容設定。若要檢視這些組態設定，請執行 <strong>Get-CsRgsConfiguration</strong> Cmdlet。如需此 Cmdlet 的詳細資訊，請參閱＜<a href="get-csrgsconfiguration.md">Get-CsRgsConfiguration</a>＞。</td>
+    <td>應用程式層級設定包含預設的保留音樂設定、預設的保留音樂音訊檔、代理人回電寬限期及來電內容設定。若要檢視這些組態設定，請執行 <strong>Get-CsRgsConfiguration</strong> Cmdlet。如需此 Cmdlet 的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration">Get-CsRgsConfiguration</a>＞。</td>
     </tr>
     </tbody>
     </table>

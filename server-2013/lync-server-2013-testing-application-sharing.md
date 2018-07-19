@@ -118,6 +118,6 @@ Here are some common reasons why **Test-CsASConference** might fail:
 
 #### 其他資源
 
-[Get-CsConferencingPolicy](get-csconferencingpolicy.md)  
-[Test-CsDataConference](test-csdataconference.md)
+[Get-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsConferencingPolicy)  
+[Test-CsDataConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsDataConference)
 

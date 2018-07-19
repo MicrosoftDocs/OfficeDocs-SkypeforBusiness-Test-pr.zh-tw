@@ -67,5 +67,5 @@ _**上次修改主題的時間：** 2012-11-01_
 #### 其他資源
 
 [在 Lync Server 2013 中設定通話許可控制](lync-server-2013-configure-call-admission-control.md)  
-[Remove-CsNetworkBandwidthPolicyProfile](remove-csnetworkbandwidthpolicyprofile.md)
+[Remove-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkBandwidthPolicyProfile)
 

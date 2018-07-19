@@ -56,5 +56,5 @@ _**上次修改主題的時間：** 2013-02-23_
         Enabled           : True
         CompareOp         : LEQ
 
-如需詳細資訊，請參閱 [Get-CsClientVersionPolicyRule](get-csclientversionpolicyrule.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsClientVersionPolicyRule](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClientVersionPolicyRule) Cmdlet 的說明主題。
 

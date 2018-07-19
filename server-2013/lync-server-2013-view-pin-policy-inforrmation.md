@@ -49,7 +49,7 @@ _**上次修改主題的時間：** 2013-02-23_
         PINLifetime          : 0
         MaximumLogonAttempts :
 
-如需詳細資訊，請參閱＜[Get-CsPinPolicy](get-cspinpolicy.md)＞Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Get-CsPinPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPinPolicy)＞Cmdlet 的說明主題。
 
 ## 請參閱
 

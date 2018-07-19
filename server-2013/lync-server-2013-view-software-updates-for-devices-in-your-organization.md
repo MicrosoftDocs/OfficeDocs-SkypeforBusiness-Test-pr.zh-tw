@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-11-01_
 
-在 Lync Server 2013 中，您可以使用裝置更新 Web 服務檢視及管理組織裝置的軟體更新。Microsoft 技術支援網站 ([http://go.microsoft.com/fwlink/?linkid=204091\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=204091%26clcid=0x404)) 會以 .cab (封包) 檔案的形式從提供這些更新。請在下載 .cab 檔案之後執行 **Import-CSdeviceUpdate** Cmdlet，以從 .cab 檔案匯入裝置更新規則。如需 **Import-CSdeviceUpdate** Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件中的＜[Import-CsDeviceUpdate](import-csdeviceupdate.md)＞。
+在 Lync Server 2013 中，您可以使用裝置更新 Web 服務檢視及管理組織裝置的軟體更新。Microsoft 技術支援網站 ([http://go.microsoft.com/fwlink/?linkid=204091\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=204091%26clcid=0x404)) 會以 .cab (封包) 檔案的形式從提供這些更新。請在下載 .cab 檔案之後執行 **Import-CSdeviceUpdate** Cmdlet，以從 .cab 檔案匯入裝置更新規則。如需 **Import-CSdeviceUpdate** Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件中的＜[Import-CsDeviceUpdate](https://docs.microsoft.com/en-us/powershell/module/skype/Import-CsDeviceUpdate)＞。
 
 <table>
 <thead>

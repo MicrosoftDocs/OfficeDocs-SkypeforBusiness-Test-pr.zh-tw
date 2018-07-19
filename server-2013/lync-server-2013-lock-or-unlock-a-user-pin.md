@@ -115,5 +115,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Unlock-CsClientPin -Identity "Ken Myer"
 
-如需詳細資訊，請參閱 [Lock-CsClientPin](lock-csclientpin.md) 及 [Unlock-CsClientPin](unlock-csclientpin.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Lock-CsClientPin](https://docs.microsoft.com/en-us/powershell/module/skype/Lock-CsClientPin) 及 [Unlock-CsClientPin](https://docs.microsoft.com/en-us/powershell/module/skype/Unlock-CsClientPin) Cmdlet 的說明主題。
 

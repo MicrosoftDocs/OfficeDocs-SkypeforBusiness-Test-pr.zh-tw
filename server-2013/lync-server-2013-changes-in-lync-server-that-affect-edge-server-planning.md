@@ -63,7 +63,7 @@ Edge Server 引進完全整合的 XMPP Proxy (部署於 Edge Server) 及 XMPP �
 
 伺服器對伺服器驗證由全域憑證管理，並適用於部署中的所有伺服器。該憑證負責驗證 Lync Server 2013 中的伺服器，以及對 Exchange 2013 和 Microsoft SharePoint Server 2013 進行驗證。如需伺服器對伺服器驗證如何運作的詳細資訊，請參閱＜ [在 Lync Server 2013 中管理伺服器對伺服器驗證 (Oauth) 與夥伴應用程式](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)＞。Audio/Video 驗證程序和伺服器對伺服器驗證程序之間一個非常重要的差別是，驗證的存留期 (或權杖)。對於 Audio/Video 驗證，驗證在 8 小時後過期。伺服器對伺服器驗證則有 24 小時的存留期。您必須針對每個憑證類型加以規劃。
 
-Lync Server 2013 的新功能是能夠在目前的憑證過期之前，籌備好取代的 Audio/Video 驗證憑證和伺服器對伺服器驗證憑證。新的憑證會接著用於產生新的權杖或新的驗證要求，但會保留舊的憑證用於驗證目前的工作階段和驗證。這將幾乎可以有效地完全避免因為權杖和憑證過期造成的失敗。如需此功能及如何設定的詳細資訊，請參閱＜ [於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md)＞。
+Lync Server 2013 的新功能是能夠在目前的憑證過期之前，籌備好取代的 Audio/Video 驗證憑證和伺服器對伺服器驗證憑證。新的憑證會接著用於產生新的權杖或新的驗證要求，但會保留舊的憑證用於驗證目前的工作階段和驗證。這將幾乎可以有效地完全避免因為權杖和憑證過期造成的失敗。如需此功能及如何設定的詳細資訊，請參閱＜ [於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)＞。
 
 ## 降低對 Cookie 為主親和性的依賴
 

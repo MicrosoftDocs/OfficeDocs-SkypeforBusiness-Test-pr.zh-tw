@@ -118,7 +118,7 @@ _**上次修改主題的時間：** 2014-06-10_
     
         Set-CsClientPin -Identity "Ken Myer" -Pin 121989
 
-如需詳細資訊，請參閱 [Set-CsClientPin](set-csclientpin.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsClientPin](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPin) Cmdlet 的說明主題。
 
 ## 請參閱
 

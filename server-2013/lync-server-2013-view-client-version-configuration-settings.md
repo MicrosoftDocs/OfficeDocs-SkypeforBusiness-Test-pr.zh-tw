@@ -58,5 +58,5 @@ _**上次修改主題的時間：** 2013-02-23_
         DefaultURL    :
         Enabled       : True
 
-如需詳細資訊，請參閱＜[Get-CsClientVersionConfiguration](get-csclientversionconfiguration.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Get-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClientVersionConfiguration)＞ Cmdlet 的說明主題。
 

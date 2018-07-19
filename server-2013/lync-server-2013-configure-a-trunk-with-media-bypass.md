@@ -120,7 +120,7 @@ _**上次修改主題的時間：** 2014-02-07_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如果在選取 [啟用媒體旁路] 選項的情況下停用此選項，另需其他設定。如果主幹對等不支援接收中繼伺服器的 SIP REFER 要求且媒體旁路已啟用，您還必須執行 <strong>Set-CsTrunkConfiguration</strong> Cmdlet 停用作用中通話和保留通話的 RTCP，以支援適當的媒體旁路狀況。如需詳細資訊，請參閱 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 管理命令介面</a>文件。<br />
+    <td>如果在選取 [啟用媒體旁路] 選項的情況下停用此選項，另需其他設定。如果主幹對等不支援接收中繼伺服器的 SIP REFER 要求且媒體旁路已啟用，您還必須執行 <strong>set-cstrunkconfiguration</strong> Cmdlet 停用作用中通話和保留通話的 RTCP，以支援適當的媒體旁路狀況。如需詳細資訊，請參閱 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 管理命令介面</a>文件。<br />
     或者，如果您要讓轉接的電話受到媒體旁路處理，且閘道並不支援 SIP REFER 要求，也可以選取 [啟用使用協力廠商通話控制進行轉接] 。</td>
     </tr>
     </tbody>

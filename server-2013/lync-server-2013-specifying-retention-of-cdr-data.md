@@ -67,7 +67,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsCdrConfiguration | Set-CsCdrConfiguration-EnablePurging -KeepCallDetailForDays 20 -KeepErrorReportForDays 20
 
-如需詳細資訊，請參閱 [Set-CsCdrConfiguration](set-cscdrconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCdrConfiguration) Cmdlet 的說明主題。
 
 ## 請參閱
 

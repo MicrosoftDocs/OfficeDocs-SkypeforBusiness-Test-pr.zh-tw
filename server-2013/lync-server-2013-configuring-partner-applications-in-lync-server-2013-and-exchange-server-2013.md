@@ -49,7 +49,7 @@ Lync Server 中是使用 [New-CsPartnerApplication](https://docs.microsoft.com/e
 
 或者，您也可以複製及修改在 Lync Server 2013 伺服器對伺服器驗證文件中找到的指令碼，來建立夥伴應用程式。如需詳細資訊，請參閱＜[在 Lync Server 2013 中管理伺服器對伺服器驗證 (Oauth) 與夥伴應用程式](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)＞一文。
 
-如果您已成功為 Lync Server 和 Exchange 設定夥伴應用程式，表示您也已成功設定這兩項產品之間的伺服器對伺服器驗證。Lync Server 2013 包含名為 [Test-CsExStorageConnectivity](test-csexstorageconnectivity.md) 的 Windows PowerShell Cmdlet，可以讓您確認伺服器對伺服器驗證是否已正確設定，以及 Lync Server 存放服務是否可以連線至 Exchange 2013。此 Cmdlet 完成此動作的方式是連線至 Exchange 2013 使用者的信箱，在該使用者的 \[交談記錄\] 資料夾中寫入一個項目，然後 (選擇性地) 刪除該項目。
+如果您已成功為 Lync Server 和 Exchange 設定夥伴應用程式，表示您也已成功設定這兩項產品之間的伺服器對伺服器驗證。Lync Server 2013 包含名為 [Test-CsExStorageConnectivity](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExStorageConnectivity) 的 Windows PowerShell Cmdlet，可以讓您確認伺服器對伺服器驗證是否已正確設定，以及 Lync Server 存放服務是否可以連線至 Exchange 2013。此 Cmdlet 完成此動作的方式是連線至 Exchange 2013 使用者的信箱，在該使用者的 \[交談記錄\] 資料夾中寫入一個項目，然後 (選擇性地) 刪除該項目。
 
 若要測試 Lync Server 2013 和 Exchange 2013 的整合，請從 Lync Server 管理命令介面執行如下的命令：
 

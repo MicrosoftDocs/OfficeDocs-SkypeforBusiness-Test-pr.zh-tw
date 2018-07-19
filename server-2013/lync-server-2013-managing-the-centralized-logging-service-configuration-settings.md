@@ -30,9 +30,9 @@ _**上次修改主題的時間：** 2012-11-01_
 <tr class="odd">
 <td>並非所有列出的 集中記錄服務Windows PowerShell Cmdlet 均適用於 Lync Server 2013 的內部部署。雖然看起來似乎可行，但下列 Cmdlet 並非針對與 Lync Server 2013 內部部署共用而設計：
 <ul>
-<li><p><strong>CsClsRegion Cmdlet：</strong> <a href="get-csclsregion.md">Get-CsClsRegion</a>、<a href="set-csclsregion.md">Set-CsClsRegion</a>、<a href="new-csclsregion.md">New-CsClsRegion</a> 及 <a href="remove-csclsregion.md">Remove-CsClsRegion</a>。</p></li>
-<li><p><strong>CsClsSearchTerm Cmdlet：</strong> <a href="get-csclssearchterm.md">Get-CsClsSearchTerm</a> 與 <a href="set-csclssearchterm.md">Set-CsClsSearchTerm</a>。</p></li>
-<li><p><strong>CsClsSecurityGroup Cmdlet：</strong> <a href="get-csclssecuritygroup.md">Get-CsClsSecurityGroup</a>、<a href="set-csclssecuritygroup.md">Set-CsClsSecurityGroup</a>、<a href="new-csclssecuritygroup.md">New-CsClsSecurityGroup</a> 及 <a href="remove-csclssecuritygroup.md">Remove-CsClsSecurityGroup</a>。</p></li>
+<li><p><strong>CsClsRegion Cmdlet：</strong> <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsRegion">Get-CsClsRegion</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsRegion">Set-CsClsRegion</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsRegion">New-CsClsRegion</a> 及 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsRegion">Remove-CsClsRegion</a>。</p></li>
+<li><p><strong>CsClsSearchTerm Cmdlet：</strong> <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsSearchTerm">Get-CsClsSearchTerm</a> 與 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsSearchTerm">Set-CsClsSearchTerm</a>。</p></li>
+<li><p><strong>CsClsSecurityGroup Cmdlet：</strong> <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsSecurityGroup">Get-CsClsSecurityGroup</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsSecurityGroup">Set-CsClsSecurityGroup</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsSecurityGroup">New-CsClsSecurityGroup</a> 及 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsClsSecurityGroup">Remove-CsClsSecurityGroup</a>。</p></li>
 </ul>
 這些 Cmdlet 中定義的設定，不會妨礙或引發任何反作用，但它們是針對與 Microsoft Office 365 共用而設計，因此在內部部署中不會產生預期的結果。這並不表示這些 Cmdlet 在內部部署中毫無用處，只是本文件並未探討其用途的進階主題。</td>
 </tr>

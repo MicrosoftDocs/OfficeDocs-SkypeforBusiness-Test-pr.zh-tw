@@ -27,7 +27,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 您可以使用 Windows Server 命令列介面或 Lync Server 管理命令介面發出命令。命令會在您登入的電腦上執行，並傳送給本機的 ClsAgent 或傳送給位於部署中的其餘電腦與集區。
 
-ClsAgent 會維護一份索引檔案來指出其在本機電腦上的所有 .CACHE 檔案。ClsAgent 會配置這些檔案，讓這些檔案平均分散在 CacheFileLocalFolders 選項所定義的各磁碟區，且確保絕對不會耗用每個磁碟區超過 80% 的空間 (您可以使用 **Set-CsClsConfiguration** Cmdlet 來設定本機快取位置與百分比)。ClsAgent 也負責從本機中清理掉所快取的老舊事件追蹤記錄 (.etl) 檔案。兩週之後 (您可以使用 **Set-CsClsConfiguration** Cmdlet 設定此時間範圍)，這些檔案會複製到檔案共用並自本機電腦中刪除。如需詳細資訊，請參閱 [Set-CsClsConfiguration](set-csclsconfiguration.md)。收到搜尋要求時，系統會使用搜尋條件來選取快取的 .etl 檔案集，以根據代理程式所維護之索引中的值來執行搜尋。
+ClsAgent 會維護一份索引檔案來指出其在本機電腦上的所有 .CACHE 檔案。ClsAgent 會配置這些檔案，讓這些檔案平均分散在 CacheFileLocalFolders 選項所定義的各磁碟區，且確保絕對不會耗用每個磁碟區超過 80% 的空間 (您可以使用 **Set-CsClsConfiguration** Cmdlet 來設定本機快取位置與百分比)。ClsAgent 也負責從本機中清理掉所快取的老舊事件追蹤記錄 (.etl) 檔案。兩週之後 (您可以使用 **Set-CsClsConfiguration** Cmdlet 設定此時間範圍)，這些檔案會複製到檔案共用並自本機電腦中刪除。如需詳細資訊，請參閱 [Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)。收到搜尋要求時，系統會使用搜尋條件來選取快取的 .etl 檔案集，以根據代理程式所維護之索引中的值來執行搜尋。
 
 <table>
 <thead>

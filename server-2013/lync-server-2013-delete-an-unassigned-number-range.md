@@ -53,7 +53,7 @@ _**上次修改主題的時間：** 2012-11-01_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如需關於其他選項的詳細資訊，請參閱＜<a href="remove-cscallparkorbit.md">Remove-CsCallParkOrbit</a>＞。</td>
+    <td>如需關於其他選項的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</a>＞。</td>
     </tr>
     </tbody>
     </table>
@@ -67,6 +67,6 @@ _**上次修改主題的時間：** 2012-11-01_
 
 #### 其他資源
 
-[Remove-CsUnassignedNumber](remove-csunassignednumber.md)  
-[Get-CsUnassignedNumber](get-csunassignednumber.md)
+[Remove-CsUnassignedNumber](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsUnassignedNumber)  
+[Get-CsUnassignedNumber](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUnassignedNumber)
 

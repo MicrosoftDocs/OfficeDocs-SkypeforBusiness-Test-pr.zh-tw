@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 請注意，您也可以「刪除」全域設定。但是，全域設定將不會實際移除，而是將該集合中的所有屬性重設為預設值。例如，預設會在 CDR 組態設定的集合中啟用清除功能。假設您修改全域設定來停用清除功能。如果您稍後刪除全域設定，所有的內容都將重設為其預設值。在此情況下，這表示將再次啟用清除功能。
 
-您可以使用 Lync Server 控制台或 [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md) Cmdlet 來移除 CDR 組態設定。
+您可以使用 Lync Server 控制台或 [Remove-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCdrConfiguration) Cmdlet 來移除 CDR 組態設定。
 
 ## 使用 Lync Server 控制台移除 CDR 組態設定
 
@@ -55,5 +55,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsCdrConfiguration | Where-Object {$_.EnableCDR -eq $False} | Remove-CsCdrConfiguration
 
-如需詳細資訊，請參閱適用於 [Remove-CsCdrConfiguration](remove-cscdrconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱適用於 [Remove-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCdrConfiguration) Cmdlet 的說明主題。
 

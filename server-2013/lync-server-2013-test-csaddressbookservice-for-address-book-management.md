@@ -29,5 +29,5 @@ Lync Server 2013 包含一些可起始綜合命令的 Cmdlet，用於確認特�
 
 #### 其他資源
 
-[Test-CsAddressBookService](test-csaddressbookservice.md)
+[Test-CsAddressBookService](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAddressBookService)
 

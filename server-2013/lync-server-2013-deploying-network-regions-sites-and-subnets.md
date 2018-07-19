@@ -29,7 +29,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsNetworkRegion -NetworkRegionID <region ID> -CentralSite <site ID>
 
-如需詳細資訊，請參閱＜[New-CsNetworkRegion](new-csnetworkregion.md)＞。
+如需詳細資訊，請參閱＜[New-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegion)＞。
 
 就此範例而言，下列 Windows PowerShell 命令說明了此案例中定義的網路區域 1 (India)。
 
@@ -42,7 +42,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsNetworkSite -NetworkSiteID <site ID> -NetworkRegionID <region ID>
 
-如需詳細資訊，請參閱＜[New-CsNetworkSite](new-csnetworksite.md)＞。
+如需詳細資訊，請參閱＜[New-CsNetworkSite](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSite)＞。
 
 就此範例而言，下表和 Lync ServerWindows PowerShell 命令說明了此案例中定義的網站。表中只包括位置基礎路由的特有設定，做為說明之用。
 

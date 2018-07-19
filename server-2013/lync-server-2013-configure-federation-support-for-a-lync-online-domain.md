@@ -73,5 +73,5 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - **IsLocal** 會指出裝載提供者使用的 Proxy 伺服器是否包含在您的 Lync Server 拓撲內。
     
-    如需有關使用此 Cmdlet 的詳細資訊，請參閱作業文件中的＜[New-CsHostingProvider](new-cshostingprovider.md)＞。
+    如需有關使用此 Cmdlet 的詳細資訊，請參閱作業文件中的＜[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)＞。
 

@@ -101,7 +101,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsDeviceUpdateRule | Where-Object {$_.Brand -eq "Microsoft"} | Reset-CsDeviceUpdateRule
 
-如需詳細資訊，請參閱＜[Reset-CsDeviceUpdateRule](reset-csdeviceupdaterule.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Reset-CsDeviceUpdateRule](https://docs.microsoft.com/en-us/powershell/module/skype/Reset-CsDeviceUpdateRule)＞ Cmdlet 的說明主題。
 
 ## 請參閱
 

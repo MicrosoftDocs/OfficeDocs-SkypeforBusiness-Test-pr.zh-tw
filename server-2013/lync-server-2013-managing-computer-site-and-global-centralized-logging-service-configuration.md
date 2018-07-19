@@ -40,7 +40,7 @@ _**上次修改主題的時間：** 2014-02-04_
 </table>
 
 
-單一電腦範圍可以在使用 –Computers 參數來執行 [Search-CsClsLogging](search-csclslogging.md)、[Show-CsClsLogging](show-csclslogging.md)、[Start-CsClsLogging](start-csclslogging.md)、[Stop-CsClsLogging](stop-csclslogging.md)、[Sync-CsClsLogging](sync-csclslogging.md) 及 [Update-CsClsLogging](update-csclslogging.md) 命令時進行定義。–Computers 參數會接受適用於目標電腦的完整網域名稱 (FQDN) 清單 (以逗號分隔)。
+單一電腦範圍可以在使用 –Computers 參數來執行 [Search-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging)、[Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)、[Start-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Start-CsClsLogging)、[Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)、[Sync-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Sync-CsClsLogging) 及 [Update-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsClsLogging) 命令時進行定義。–Computers 參數會接受適用於目標電腦的完整網域名稱 (FQDN) 清單 (以逗號分隔)。
 
 <table>
 <thead>
@@ -66,7 +66,7 @@ _**上次修改主題的時間：** 2014-02-04_
 </thead>
 <tbody>
 <tr class="odd">
-<td>顯示的命令可能包含其他小節中所涵蓋的參數和概念。範例命令可以用來示範如何使用 <strong>–Identity</strong> 參數來定義範圍，而包含其他參數能讓範例更完整且可指定範圍。如需關於 <strong>Set-CsClsConfiguration</strong> Cmdlet 的詳細資訊，請參閱作業文件中的 <a href="set-csclsconfiguration.md">Set-CsClsConfiguration</a>。</td>
+<td>顯示的命令可能包含其他小節中所涵蓋的參數和概念。範例命令可以用來示範如何使用 <strong>–Identity</strong> 參數來定義範圍，而包含其他參數能讓範例更完整且可指定範圍。如需關於 <strong>Set-CsClsConfiguration</strong> Cmdlet 的詳細資訊，請參閱作業文件中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。</td>
 </tr>
 </tbody>
 </table>
@@ -168,7 +168,7 @@ _**上次修改主題的時間：** 2014-02-04_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>New-CsClsConfiguration 讓使用者可以存取大量的選用組態設定。如需關於設定選項的詳細資訊，請參閱 <a href="get-csclsconfiguration.md">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">瞭解集中式記錄服務組態設定</a>。</td>
+    <td>New-CsClsConfiguration 讓使用者可以存取大量的選用組態設定。如需關於設定選項的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">瞭解集中式記錄服務組態設定</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -216,8 +216,8 @@ _**上次修改主題的時間：** 2014-02-04_
 #### 其他資源
 
 [使用 PowerShell 管理集中式記錄服務組態設定](lync-server-2013-managing-the-centralized-logging-service-configuration-settings.md)  
-[Set-CsClsConfiguration](set-csclsconfiguration.md)  
-[Get-CsClsConfiguration](get-csclsconfiguration.md)  
-[New-CsClsConfiguration](new-csclsconfiguration.md)  
-[Remove-CsClsConfiguration](remove-csclsconfiguration.md)
+[Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)  
+[Get-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration)  
+[New-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsConfiguration)  
+[Remove-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsClsConfiguration)
 

@@ -45,7 +45,7 @@ Edge 的憑證建立作業已在 Lync Server 2013 中簡化。
 </thead>
 <tbody>
 <tr class="odd">
-<td>由 Lync Server 2013 引入，在目前憑證到期前先進行「音訊/視訊驗證」憑證，必須要另行規劃。您會需要兩個憑證，一個指派至 Access Edge Service 與 Web Conferencing Edge Service，另一個指派至 A/V Edge 服務；而非一個憑證適用於多個外部 Edge 介面。如需詳細資訊，請參閱 <a href="lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md">於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證</a></td>
+<td>由 Lync Server 2013 引入，在目前憑證到期前先進行「音訊/視訊驗證」憑證，必須要另行規劃。您會需要兩個憑證，一個指派至 Access Edge Service 與 Web Conferencing Edge Service，另一個指派至 A/V Edge 服務；而非一個憑證適用於多個外部 Edge 介面。如需詳細資訊，請參閱 <a href="lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate">於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證</a></td>
 </tr>
 </tbody>
 </table>
@@ -95,7 +95,7 @@ Edge 的憑證建立作業已在 Lync Server 2013 中簡化。
 
 #### 工作
 
-[於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md)  
+[於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)  
 
 #### 概念
 

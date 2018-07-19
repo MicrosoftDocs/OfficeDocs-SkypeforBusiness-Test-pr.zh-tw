@@ -31,5 +31,5 @@ Remove-CsAddressBookConfiguration 會名符其實地依據定義的 Site Identit
 
 #### 其他資源
 
-[Remove-CsAddressBookConfiguration](remove-csaddressbookconfiguration.md)
+[Remove-CsAddressBookConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAddressBookConfiguration)
 

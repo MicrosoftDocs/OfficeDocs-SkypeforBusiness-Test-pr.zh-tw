@@ -72,7 +72,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 ## 僅啟用匯出封存資料的清除
 
-  - 若要限制只清除已匯出至資料檔案 (藉由使用 [Export-CsArchivingData](export-csarchivingdata.md) Cmdlet) 的封存記錄，您也必須將 PurgeExportedArchivesOnly 屬性設為 True ($True)。例如：
+  - 若要限制只清除已匯出至資料檔案 (藉由使用 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData) Cmdlet) 的封存記錄，您也必須將 PurgeExportedArchivesOnly 屬性設為 True ($True)。例如：
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $True -PurgeExportedArchivesOnly $True
     
@@ -84,7 +84,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $False
 
-如需包含清除封存資料之其他選項的詳細資訊，請參閱說明主題中的 [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md) Cmdlet。
+如需包含清除封存資料之其他選項的詳細資訊，請參閱說明主題中的 [Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration) Cmdlet。
 
 ## 請參閱
 

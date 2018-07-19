@@ -104,5 +104,5 @@ If you see any matches (that is, if you see one or more voice routes that share 
 
 #### 其他資源
 
-[Test-CsVoicePolicy](test-csvoicepolicy.md)
+[Test-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsVoicePolicy)
 
