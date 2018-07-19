@@ -92,5 +92,5 @@ _**上次修改主題的時間：** 2015-06-22_
 #### 概念
 
 [身分識別、範圍，以及租用戶](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Lync Online Cmdlet](the-skype-for-business-online-cmdlets.md)
+[Lync Online Cmdlet](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 

@@ -317,7 +317,7 @@
           - name: DNS 摘要 - SIP、XMPP 同盟和公用立即訊息
             href: lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md
           - name: DNS 摘要 - Public Instant Messaging 連線
-            href: jj618375(v=ocs.15).md
+            href: 
           - name: DNS 摘要 - 可延伸的訊息和顯示狀態通訊協定 (XMPP) 同盟
             href: lync-server-2013-dns-summary-extensible-messaging-and-presence-protocol-xmpp-federation.md
       - name: 連接埠需求
@@ -1280,7 +1280,7 @@
         - name: 適用於 Lync Server 2013 的 Windows 更新
           href: lync-server-2013-windows-update-for-lync-server.md
         - name: Protecting the Edge Server Against DoS and Password Brute-Force Attacks in Lync Server
-          href: dn879446(v=ocs.15).md
+          href: 
       - name: 在 Lync Server 2013  中部署 SQL Server 非標準連接埠和別名
         href: deploying-a-sql-server-nonstandard-port-and-alias-in-lync-server-2013.md
   - name: 部署
@@ -2559,12 +2559,12 @@
     - name: 混合式部署概觀
       href: lync-server-2013-overview-of-hybrid-deployments.md
     - name: 規劃混合式部署
-      href: jj205406(v=ocs.15).md
+      href: 
       items:
       - name: 規劃混合式 Lync Server 部署
-        href: jj205403(v=ocs.15).md
+        href: 
       - name: 支援的混合式組態
-        href: jj945633(v=ocs.15).md
+        href: 
     - name: 設定混合式部署
       href: lync-server-2013-configuring-hybrid-deployments.md
       items:
@@ -4838,9 +4838,9 @@
       - name: Lync Server 2013 中的網域準備所進行的變更
         href: lync-server-2013-changes-made-by-domain-preparation.md
       - name: Lync Server 2013 中 Grant-CsSetupPermission 進行的變更
-        href: lync-server-2013-changes-made-by-https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsSetupPermission
+        href: lync-server-2013-changes-made-by-grant-cssetuppermission.md
       - name: Lync Server 2013 中 Grant-CsOUPermission 進行的變更
-        href: lync-server-2013-changes-made-by-https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsOUPermission
+        href: lync-server-2013-changes-made-by-grant-csoupermission.md
   - name: Lync Server 管理命令介面
     href: https://docs.microsoft.com/en-us/powershell/module/skype/
   - name: 字彙
