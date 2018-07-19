@@ -93,7 +93,7 @@ _**上次修改主題的時間：** 2015-01-26_
 #### 概念
 
 [在 Lync Server 2013 中規劃高可用性和災害復原](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)  
-[Backup and High Availability Cmdlet](lync-server-2013-backup-and-high-availability-cmdlets.md)  
+[Backup and High Availability Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps)  
 
 #### 其他資源
 
