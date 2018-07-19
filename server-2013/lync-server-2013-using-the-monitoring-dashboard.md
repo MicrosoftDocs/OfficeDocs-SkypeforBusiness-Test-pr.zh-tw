@@ -23,7 +23,7 @@ _**上次修改主題的時間：** 2014-02-05_
 
   - 當月總計和過去六個月的趨勢總計 (僅供系統使用狀況之用)。
 
-請注意，您可以使用 [Get-CsReportingConfiguration](get-csreportingconfiguration.md) Cmdlet 傳回用於存取 Lync Server 2013 監視報告的 URL：
+請注意，您可以使用 [Get-CsReportingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsReportingConfiguration) Cmdlet 傳回用於存取 Lync Server 2013 監視報告的 URL：
 
     Get-CsReportingConfiguration
 

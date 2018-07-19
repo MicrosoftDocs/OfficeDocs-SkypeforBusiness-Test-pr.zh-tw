@@ -38,11 +38,11 @@ _**上次修改主題的時間：** 2013-02-20_
     
         Get-CsCommonAreaPhone | Where-Object {$_.LineUri  -match "^tel:\+1425"} | Remove-CsCommonAreaPhone
 
-如需詳細資訊，請參閱＜[Remove-CsCommonAreaPhone](remove-cscommonareaphone.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Remove-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsCommonAreaPhone)＞ Cmdlet 的說明主題。
 
 ## 請參閱
 
 #### 其他資源
 
-[Get-CsCommonAreaPhone](get-cscommonareaphone.md)
+[Get-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCommonAreaPhone)
 

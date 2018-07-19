@@ -157,9 +157,9 @@ Lync Server 2013 封存原則包含下列項目：
 
 使用 Lync Server 2013 管理命令介面，您可以使用 Cmdlet，來實作 Lync Server 2013 控制台中所沒有的選項。這些選項包括下列各項：
 
-  - **封存重複的訊息**。如需詳細資訊，請參閱作業文件中的 [New-CsArchivingConfiguration](new-csarchivingconfiguration.md) 和 [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md)。
+  - **封存重複的訊息**。如需詳細資訊，請參閱作業文件中的 [New-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsArchivingConfiguration) 和 [Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration)。
 
-  - **匯出封存的資料**。如需詳細資訊，請參閱 [Export-CsArchivingData](export-csarchivingdata.md)
+  - **匯出封存的資料**。如需詳細資訊，請參閱 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)
 
 ## 如何存取封存的資料？
 

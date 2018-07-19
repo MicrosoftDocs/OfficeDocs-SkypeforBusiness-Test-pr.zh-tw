@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2015-06-22_
 
-許多用於管理 商務用 Skype Online 的 Windows PowerShell Cmdlet 會要求您明確指出所要管理的項目。例如，執行 [Set-CsUserAcp](set-csuseracp.md) Cmdlet 時，您必須表明所要管理的使用者。其中的道理在於，除非您明確告知該 Cmdlet 所要管理的使用者帳戶為何，否則 **Set-CsUserAcp** Cmdlet 將不清楚應修改哪位使用者的音訊會議資訊。基於此因素，每當執行 **Set-CsUserAcp** Cmdlet 時，您將需要加上 Identity 參數，並且後接所要修改之使用者帳戶的身分識別：
+許多用於管理 商務用 Skype Online 的 Windows PowerShell Cmdlet 會要求您明確指出所要管理的項目。例如，執行 [Set-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUserAcp) Cmdlet 時，您必須表明所要管理的使用者。其中的道理在於，除非您明確告知該 Cmdlet 所要管理的使用者帳戶為何，否則 **Set-CsUserAcp** Cmdlet 將不清楚應修改哪位使用者的音訊會議資訊。基於此因素，每當執行 **Set-CsUserAcp** Cmdlet 時，您將需要加上 Identity 參數，並且後接所要修改之使用者帳戶的身分識別：
 
     Set-CsUserAcp -Identity "Ken Myer" -TollNumber "14255551298" -ParticipantPassCode 13761 -Domain "fabrikam.com" -Name "Fabrikam ACP"
 
@@ -67,7 +67,7 @@ _**上次修改主題的時間：** 2015-06-22_
 
 如您所見，Ken Myer 可與公用 IM 提供者進行通訊，因為指派給他的個別使用者原則中的設定會覆寫全域原則中的設定。Pilar Ackerman 無法與公用 IM 提供者進行通訊，因為她受全域原則管理，而全域原則禁止該類通訊。
 
-個別使用者原則必須由 Office 365 支援人員為您建立。在原則建立後，您可以使用適當的 **Grant-Cs** Cmdlet (例如 [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)) 將原則指派給使用者。個別使用者原則相當容易識別，因為原則 Identity 一律會以 tag 前置詞作為開頭。例如：
+個別使用者原則必須由 Office 365 支援人員為您建立。在原則建立後，您可以使用適當的 **Grant-Cs** Cmdlet (例如 [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)) 將原則指派給使用者。個別使用者原則相當容易識別，因為原則 Identity 一律會以 tag 前置詞作為開頭。例如：
 
     Identity : tag:AllowPublicIMCommunication
 

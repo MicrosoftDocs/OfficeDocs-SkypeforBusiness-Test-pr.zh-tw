@@ -50,5 +50,5 @@ _**上次修改主題的時間：** 2013-02-20_
         LogFlushInterval       : 00:05:00
         LogCleanUpTimeOfDay    :
 
-如需此 Cmdlet 的詳細資訊，請參閱說明主題 [Get-CsDeviceUpdateConfiguration](get-csdeviceupdateconfiguration.md)。
+如需此 Cmdlet 的詳細資訊，請參閱說明主題 [Get-CsDeviceUpdateConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsDeviceUpdateConfiguration)。
 

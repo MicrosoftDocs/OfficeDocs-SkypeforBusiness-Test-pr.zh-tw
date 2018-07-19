@@ -98,6 +98,6 @@ Here are some common reasons why **Test-CsInterTrunkRouting** might fail:
 
 #### 其他資源
 
-[Get-CsTrunk](get-cstrunk.md)  
-[Get-CsTrunkConfiguration](get-cstrunkconfiguration.md)
+[Get-CsTrunk](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTrunk)  
+[Get-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTrunkConfiguration)
 

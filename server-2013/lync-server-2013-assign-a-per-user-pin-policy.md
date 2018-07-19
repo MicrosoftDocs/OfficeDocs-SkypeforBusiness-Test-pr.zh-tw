@@ -125,7 +125,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將每一使用者 PIN 原則指派給多位使用者
 
-  - 下列命令會將每一使用者 PIN 原則 RedmondUsersPinPolicy 指派給在 Redmond 城市工作的所有使用者。如需此命令中使用之 LdapFilter 參數的詳細資訊，請參閱＜[Get-CsUser](get-csuser.md)＞。
+  - 下列命令會將每一使用者 PIN 原則 RedmondUsersPinPolicy 指派給在 Redmond 城市工作的所有使用者。如需此命令中使用之 LdapFilter 參數的詳細資訊，請參閱＜[Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)＞。
     
         Get-CsUser -LdapFilter "l=Redmond" | Grant-CsPinPolicy -PolicyName "RedmondUsersPinPolicy"
 
@@ -135,7 +135,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱＜[Grant-CsPinPolicy](grant-cspinpolicy.md)＞。
+如需詳細資訊，請參閱＜[Grant-CsPinPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPinPolicy)＞。
 
 ## 請參閱
 

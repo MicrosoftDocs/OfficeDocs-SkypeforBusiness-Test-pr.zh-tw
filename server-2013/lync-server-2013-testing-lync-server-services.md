@@ -44,7 +44,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 Test-CsComputer verifies the status of all the Lync Server 2013 services that are running on the local computer. (Test-CsComputer can only be run locally, it cannot be run from a remote instance of Windows PowerShell.) The cmdlet also checks whether the appropriate firewall ports are opened on the computer, and determines whether the Active Directory groups that were created when you installed Lync Server 2013 were added to the corresponding local groups. For example, Test-CsComputer will verify that the Active Directory group RTCUniversalUserAdmins was added to the Administrators group.
 
-For more information, see the Help documentation for the [Test-CsComputer](test-cscomputer.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsComputer](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsComputer) cmdlet.
 
 ## Running the test
 
@@ -54,7 +54,7 @@ The following sample command runs Test-CsComputer and saves the output to a file
 
     Test-CsComputer -Report "C:\Logs\ComputerTest.html" -Verbose
 
-For more information, see the Help documentation for the [Test-CsComputer](test-cscomputer.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsComputer](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsComputer) cmdlet.
 
 ## Determining success or failure
 

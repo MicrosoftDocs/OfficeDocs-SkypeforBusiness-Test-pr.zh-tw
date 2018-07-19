@@ -42,7 +42,7 @@ Exchange 整合通訊 (UM) 綜合交易會驗證測試使用者能否連線至�
 
 ## 常設聊天室綜合交易
 
-若要使用常設聊天室綜合交易，系統管理員必須先建立通道，並賦予測試使用者使用權限。您可使用 [Test-CsPersistentChatMessage](test-cspersistentchatmessage.md) Cmdlet 以正確設定這些測試使用者：
+若要使用常設聊天室綜合交易，系統管理員必須先建立通道，並賦予測試使用者使用權限。您可使用 [Test-CsPersistentChatMessage](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsPersistentChatMessage) Cmdlet 以正確設定這些測試使用者：
 
     $cred1 = Get-Credential "litwareinc\kenmyer"
     $cred2 = Get-Credential "litwareinc\pilar"
@@ -61,7 +61,7 @@ Test-CsPersistentChatMessage 建立的聊天室僅可由系統管理員刪除。
 
 ## PSTN 對等通話綜合交易
 
-[Test-CsPstnPeerToPeerCall](test-cspstnpeertopeercall.md) 綜合交易會驗證透過公用交換電話網路 (PSTN) 進行和接受通話的能力。
+[Test-CsPstnPeerToPeerCall](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsPstnPeerToPeerCall) 綜合交易會驗證透過公用交換電話網路 (PSTN) 進行和接受通話的能力。
 
 若要執行此綜合交易，系統管理員必須進行下列設定：
 

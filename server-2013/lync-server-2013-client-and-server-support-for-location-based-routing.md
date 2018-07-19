@@ -149,7 +149,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>若要為 Lync Mobile 2013 用戶端停用 VoIP，請為所有啟用了位置基礎路由的使用者指派已停用 IP 音訊/視訊設定的行動原則。如需有關行動原則的詳細資訊，請參閱＜ <a href="new-csmobilitypolicy.md">New-CsMobilityPolicy</a>＞。</td>
+<td>若要為 Lync Mobile 2013 用戶端停用 VoIP，請為所有啟用了位置基礎路由的使用者指派已停用 IP 音訊/視訊設定的行動原則。如需有關行動原則的詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy">New-CsMobilityPolicy</a>＞。</td>
 </tr>
 </tbody>
 </table>

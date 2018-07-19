@@ -100,5 +100,5 @@ When testing voice routes, “failure” is a relative term. In this case, it do
 
 #### 其他資源
 
-[Test-CsVoiceRoute](test-csvoiceroute.md)
+[Test-CsVoiceRoute](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsVoiceRoute)
 

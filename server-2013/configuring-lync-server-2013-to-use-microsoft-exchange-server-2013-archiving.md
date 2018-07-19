@@ -25,7 +25,7 @@ Microsoft Lync Server 2013 可提供系統管理員選項，以將立即訊息�
 </thead>
 <tbody>
 <tr class="odd">
-<td>若要完全停用 Lync 交談的封存，您必須同時停用 Lync 交談記錄。如需詳細資訊，請參閱下列主題：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理內部與外部通訊的封存</a>、<a href="new-csclientpolicy.md">New-CsClientPolicy</a> 和 <a href="set-csclientpolicy.md">Set-CsClientPolicy</a>。</td>
+<td>若要完全停用 Lync 交談的封存，您必須同時停用 Lync 交談記錄。如需詳細資訊，請參閱下列主題：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理內部與外部通訊的封存</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy">New-CsClientPolicy</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy">Set-CsClientPolicy</a>。</td>
 </tr>
 </tbody>
 </table>

@@ -128,5 +128,5 @@ Here are some common reasons why **Test-CsWebScheduler** might fail:
 
 #### 其他資源
 
-[Set-CsWebServer](set-cswebserver.md)
+[Set-CsWebServer](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServer)
 

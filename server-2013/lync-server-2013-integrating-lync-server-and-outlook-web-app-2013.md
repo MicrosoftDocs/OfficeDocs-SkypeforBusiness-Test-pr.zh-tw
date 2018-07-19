@@ -41,7 +41,7 @@ Lync Server 2013 可以自動探索任何裝載 SipName UN 撥號對應表的 Ex
 </thead>
 <tbody>
 <tr class="odd">
-<td>這是因為現在 Lync Server 拓撲對同一部電腦將會有兩個項目︰自動探索的項目和手動新增的項目。如果要解決這個問題，使得 Outlook Web App 能再次運作，則可使用 Windows PowerShell 移除伺服器的信任集區和信任應用程式項目。如需詳細資訊，請參閱＜<a href="remove-cstrustedapplicationpool.md">Remove-CsTrustedApplicationPool</a>＞和＜<a href="remove-cstrustedapplication.md">Remove-CsTrustedApplication</a>＞ Cmdlet 的說明主題。</td>
+<td>這是因為現在 Lync Server 拓撲對同一部電腦將會有兩個項目︰自動探索的項目和手動新增的項目。如果要解決這個問題，使得 Outlook Web App 能再次運作，則可使用 Windows PowerShell 移除伺服器的信任集區和信任應用程式項目。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplicationPool">Remove-CsTrustedApplicationPool</a>＞和＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplication">Remove-CsTrustedApplication</a>＞ Cmdlet 的說明主題。</td>
 </tr>
 </tbody>
 </table>

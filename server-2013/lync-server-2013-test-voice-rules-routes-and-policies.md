@@ -122,5 +122,5 @@ This additional information can provide hints as to the steps that you can take 
 
 #### 其他資源
 
-[Test-CsVoiceUser](test-csvoiceuser.md)
+[Test-CsVoiceUser](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsVoiceUser)
 

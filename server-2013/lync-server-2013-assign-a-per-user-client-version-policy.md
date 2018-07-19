@@ -125,7 +125,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 指派每個使用者用戶端版本原則給多位使用者
 
-  - 此命令會將每個使用者用戶端版本原則 RedmondClientVersionPolicy 指派給目前指派語音原則 RedmondVoicePolicy 的所有使用者。如需此命令中所用 Filter 參數的詳細資訊，請參閱 [Get-CsUser](get-csuser.md) Cmdlet 的文件。
+  - 此命令會將每個使用者用戶端版本原則 RedmondClientVersionPolicy 指派給目前指派語音原則 RedmondVoicePolicy 的所有使用者。如需此命令中所用 Filter 參數的詳細資訊，請參閱 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 的文件。
     
         Get-CsUser -Filter {VoicePolicy -eq "RedmondVoicePolicy"} | Grant-CsClientVersionPolicy -PolicyName "RedmondClientVersionPolicy"
 
@@ -135,7 +135,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsClientVersionPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱 [Grant-CsClientVersionPolicy](grant-csclientversionpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Grant-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientVersionPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2015-06-22_
 
     Set-CsTenantPublicProvider -Tenant "bf19b7db-6960-41e5-a139-2aa373474354" -Provider "WindowsLive"
 
-所幸您無需在每次執行這些 Cmdlet 時都要輸入租用戶識別碼 (例如 bf19b7db-6960-41e5-a139-2aa373474354)；您可以改為執行 [Get-CsTenant](get-cstenant.md) Cmdlet，將租用戶識別碼儲存為變數，然後在呼叫其他 Cmdlet 時使用該變數。例如：
+所幸您無需在每次執行這些 Cmdlet 時都要輸入租用戶識別碼 (例如 bf19b7db-6960-41e5-a139-2aa373474354)；您可以改為執行 [Get-CsTenant](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTenant) Cmdlet，將租用戶識別碼儲存為變數，然後在呼叫其他 Cmdlet 時使用該變數。例如：
 
     $x = (Get-CsTenant).TenantId
     Set-CsTenantPublicProvider -Tenant $x -Provider "WindowsLive"
@@ -34,17 +34,17 @@ _**上次修改主題的時間：** 2015-06-22_
 
 下列 Cmdlet 接受租用戶身分識別。然而，在這些案例中，參數為選用性質；您無需在呼叫 Cmdlet 時輸入參數，而是由 Windows PowerShell 根據您目前所連線的 商務用 Skype Online 以有效率的方式為您輸入租用戶身分識別：
 
-  - [Get-CsTenant](get-cstenant.md)
+  - [Get-CsTenant](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTenant)
 
-  - [Set-CsTenantFederationConfiguration](set-cstenantfederationconfiguration.md)
+  - [Set-CsTenantFederationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsTenantFederationConfiguration)
 
-  - [Set-CsTenantHybridConfiguration](set-cstenanthybridconfiguration.md)
+  - [Set-CsTenantHybridConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsTenantHybridConfiguration)
 
-  - [Get-CsTenantFederationConfiguration](get-cstenantfederationconfiguration.md)
+  - [Get-CsTenantFederationConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsTenantFederationConfiguration)
 
-  - [Get-CsTenantHybridConfiguration](get-cstenanthybridconfiguration.md)
+  - [Get-CsTenantHybridConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTenantHybridConfiguration)
 
-  - [Get-CsTenantLicensingConfiguration](get-cstenantlicensingconfiguration.md)
+  - [Get-CsTenantLicensingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTenantLicensingConfiguration)
 
 例如，使用下列命令可呼叫 **Get-CsTenantFederationConfiguration** Cmdlet：
 
@@ -59,5 +59,5 @@ _**上次修改主題的時間：** 2015-06-22_
 #### 概念
 
 [身分識別、範圍，以及租用戶](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Lync Online Cmdlet](the-skype-for-business-online-cmdlets.md)
+[Lync Online Cmdlet](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 

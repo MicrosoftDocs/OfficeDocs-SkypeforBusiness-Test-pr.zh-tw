@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2013-02-20_
 
-若要為您的所有公共區域電話建立 Active Directory 網域服務 連絡人物件，請使用 **New-CsCommonAreaPhone** Cmdlet。此 Cmdlet 可用於建立搭配公用區電話使用的新連絡人物件，或是讓現有的連絡人物件與新的公用區電話產生關聯。若要修改與公共區域電話相關聯的連絡人物件屬性，請使用 **Set-CsCommonAreaPhone** Cmdlet。**Set-CsCommonAreaPhone** 的選用參數可讓您變更項目，例如連絡人的 Active Directory 顯示名稱或與電話相關聯的線路統一資源識別元 (URI)，以及可啟用和停用與 Lync Server 搭配使用的帳戶。如需所有可用修改的詳細資訊，請參閱＜[Set-CsCommonAreaPhone](set-cscommonareaphone.md)＞的＜參數＞一節。如需 **New-CsCommonAreaPhone** 參數的詳細資訊，請參閱＜[New-CsCommonAreaPhone](new-cscommonareaphone.md)＞。
+若要為您的所有公共區域電話建立 Active Directory 網域服務 連絡人物件，請使用 **New-CsCommonAreaPhone** Cmdlet。此 Cmdlet 可用於建立搭配公用區電話使用的新連絡人物件，或是讓現有的連絡人物件與新的公用區電話產生關聯。若要修改與公共區域電話相關聯的連絡人物件屬性，請使用 **Set-CsCommonAreaPhone** Cmdlet。**Set-CsCommonAreaPhone** 的選用參數可讓您變更項目，例如連絡人的 Active Directory 顯示名稱或與電話相關聯的線路統一資源識別元 (URI)，以及可啟用和停用與 Lync Server 搭配使用的帳戶。如需所有可用修改的詳細資訊，請參閱＜[Set-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCommonAreaPhone)＞的＜參數＞一節。如需 **New-CsCommonAreaPhone** 參數的詳細資訊，請參閱＜[New-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCommonAreaPhone)＞。
 
 您可以從 Lync Server 2013 管理命令介面或 Windows PowerShell 遠端工作階段執行這兩個 Cmdlet。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
 
@@ -40,5 +40,5 @@ _**上次修改主題的時間：** 2013-02-20_
     
         Set-CsCommonAreaPhone -Identity "Lobby" -SipAddress "sip:lobby@litwareinc.com"
 
-如需詳細資訊，請參閱＜[New-CsCommonAreaPhone](new-cscommonareaphone.md)＞ Cmdlet 和＜[Set-CsCommonAreaPhone](set-cscommonareaphone.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[New-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCommonAreaPhone)＞ Cmdlet 和＜[Set-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCommonAreaPhone)＞ Cmdlet 的說明主題。
 

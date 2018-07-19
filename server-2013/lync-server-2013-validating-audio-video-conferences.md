@@ -50,7 +50,7 @@ The Test-CsAVConference cmdlet checks whether two test users can participate in 
 
 Note that Test-CsAVConference does not conduct an actual A/V conference between the two test users. Instead, the cmdlet verifies that the two users can make all the connections necessary to conduct such a conference.
 
-Further examples for this command can be found at [Test-CsAVConference](test-csavconference.md).
+Further examples for this command can be found at [Test-CsAVConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAVConference).
 
 ## Running the test
 
@@ -64,7 +64,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsAVConference -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsAVConference](test-csavconference.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsAVConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAVConference) cmdlet.
 
 ## Determining Success or Failure
 

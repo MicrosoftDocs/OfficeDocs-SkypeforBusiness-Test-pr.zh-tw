@@ -33,9 +33,9 @@ _**上次修改主題的時間：** 2014-05-08_
     
         Import-PSSession $CSSession -AllowClobber
     
-    如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱[使用 Windows PowerShell 連線至 Lync Online](connecting-to-skype-for-business-online-by-using-windows-powershell.md)。
+    如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱[使用 Windows PowerShell 連線至 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
     
-    如需有關使用 商務用 Skype Online PowerShell 模組的詳細資訊，請參閱[使用 Windows PowerShell 管理 Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md)。
+    如需有關使用 商務用 Skype Online PowerShell 模組的詳細資訊，請參閱[使用 Windows PowerShell 管理 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
   - 您必須針對共用 SIP 位址空間設定您的 Lync Online。若要執行此操作，首先啟動 Lync Online 與遠端 Powershell 工作階段，然後執行下列 Cmdlet：
     

@@ -50,7 +50,7 @@ To test the push notification service, call the Test-CsMcxPushNotification cmdle
 
     Test-CsMcxPushNotification -AccessEdgeFqdn "atl-edge-001.litwareinc.com"
 
-For more information, see the help topic for the [Test-CsMcxPushNotification](test-csmcxpushnotification.md) cmdlet.
+For more information, see the help topic for the [Test-CsMcxPushNotification](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsMcxPushNotification) cmdlet.
 
 ## Determining success or failure
 
@@ -96,7 +96,7 @@ If the PushNotificationProxyUri property is set to anything other than sip:push.
 
     Get-CsMcxConfiguration | Set-CsMcxConfiguration -PushNotificationProxyUri "sip:push.lync.com"
 
-For more information, see the help topic for the [Set-CsMcxConfiguration](set-csmcxconfiguration.md) cmdlet.
+For more information, see the help topic for the [Set-CsMcxConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMcxConfiguration) cmdlet.
 
 If the URI is configured correctly, your next step should be to verify that you have a DNS SRV record that resolves to your SIP domain and your Edge server. For more information about how to configure these records, see the help topic DNS Requirements for Mobility. Note that the following error message usually indicates a problem with DNS records:
 
@@ -125,5 +125,5 @@ If http: or https: appear in the results, you must remove them from the blocked 
     Set-CsImFilterConfiguration -Identity site:Redmond -Prefixes @{remove="http:"}
     Set-CsImFilterConfiguration -Identity site:Redmond -Prefixes @{remove="https:"}
 
-For more information, see the help topic for the [Set-CsImFilterConfiguration](set-csimfilterconfiguration.md)cmdlet.
+For more information, see the help topic for the [Set-CsImFilterConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsImFilterConfiguration)cmdlet.
 

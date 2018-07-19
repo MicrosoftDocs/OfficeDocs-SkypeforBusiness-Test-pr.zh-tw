@@ -57,7 +57,7 @@ _**上次修改主題的時間：** 2013-02-21_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>AlwaysOn 案例沒有預設期間。此案例會一直執行，直到您使用 <strong>Stop-CsClsLogging</strong> Cmdlet 明確加以停止。如需詳細資訊，請參閱＜<a href="stop-csclslogging.md">Stop-CsClsLogging</a>＞。其他所有案例的預設期間為 4 小時。</td>
+    <td>AlwaysOn 案例沒有預設期間。此案例會一直執行，直到您使用 <strong>Stop-CsClsLogging</strong> Cmdlet 明確加以停止。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging">Stop-CsClsLogging</a>＞。其他所有案例的預設期間為 4 小時。</td>
     </tr>
     </tbody>
     </table>
@@ -92,7 +92,7 @@ _**上次修改主題的時間：** 2013-02-21_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>在任何時候，最多可以在任何指定的電腦上執行兩個案例。如果命令的範圍為全域，部署中的所有電腦都會執行這些案例。若要啟動第三個案例，您必須從要執行新案例的電腦、集區、網站或全域範圍停止記錄。如果已啟動全域範圍，您可以在一或多部電腦和集區上停止記錄一或兩個案例。如需管理執行案例的詳細資訊，請參閱＜<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">將 Stop 用於集中式記錄服務</a>＞及＜<a href="stop-csclslogging.md">Stop-CsClsLogging</a>＞。</td>
+    <td>在任何時候，最多可以在任何指定的電腦上執行兩個案例。如果命令的範圍為全域，部署中的所有電腦都會執行這些案例。若要啟動第三個案例，您必須從要執行新案例的電腦、集區、網站或全域範圍停止記錄。如果已啟動全域範圍，您可以在一或多部電腦和集區上停止記錄一或兩個案例。如需管理執行案例的詳細資訊，請參閱＜<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">將 Stop 用於集中式記錄服務</a>＞及＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging">Stop-CsClsLogging</a>＞。</td>
     </tr>
     </tbody>
     </table>

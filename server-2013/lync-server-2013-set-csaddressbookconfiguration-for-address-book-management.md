@@ -19,7 +19,7 @@ _**上次修改主題的時間：** 2012-11-01_
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsAddressBookConfiguration"}
 
-Set-CsAddressBookConfiguration 類似於 New-CsAddressBookConfiguration Cmdlet，但前者是用來修改現有設定。
+Set-CsAddressBookConfiguration 類似於 new-csaddressbookconfiguration Cmdlet，但前者是用來修改現有設定。
 
 例如：
 
@@ -31,5 +31,5 @@ Set-CsAddressBookConfiguration 類似於 New-CsAddressBookConfiguration Cmdlet�
 
 #### 其他資源
 
-[Set-CsAddressBookConfiguration](set-csaddressbookconfiguration.md)
+[Set-CsAddressBookConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAddressBookConfiguration)
 

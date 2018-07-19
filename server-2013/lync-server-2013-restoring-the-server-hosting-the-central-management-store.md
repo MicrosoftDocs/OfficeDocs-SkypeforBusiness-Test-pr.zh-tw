@@ -202,7 +202,7 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
     </thead>
     <tbody>
     <tr class="odd">
-    <td>除了執行拓撲產生器之外，您也可以使用 <strong>Install-CsDatabase</strong> Cmdlet 建立每一個資料庫，並且使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 設定鏡像資料庫。如需詳細資訊，請參閱＜<a href="install-csdatabase.md">Install-CsDatabase</a>＞和＜<a href="install-csmirrordatabase.md">Install-CsMirrorDatabase</a>＞。</td>
+    <td>除了執行拓撲產生器之外，您也可以使用 <strong>Install-CsDatabase</strong> Cmdlet 建立每一個資料庫，並且使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 設定鏡像資料庫。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsDatabase">Install-CsDatabase</a>＞和＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsMirrorDatabase">Install-CsMirrorDatabase</a>＞。</td>
     </tr>
     </tbody>
     </table>

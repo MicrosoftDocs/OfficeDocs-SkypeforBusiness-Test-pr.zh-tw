@@ -59,7 +59,7 @@ Lync Phone Edition 裝置可為了安全目的加以鎖定。若您強制執行�
     
         Get-CsUCPhoneConfiguration | Set-CsUCPhoneConfiguration  -EnforcePhoneLock $True
 
-如需詳細資訊，請參閱＜[Set-CsUCPhoneConfiguration](set-csucphoneconfiguration.md)＞Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Set-CsUCPhoneConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUCPhoneConfiguration)＞Cmdlet 的說明主題。
 
 ## 請參閱
 

@@ -33,7 +33,7 @@ _**上次修改主題的時間：** 2014-05-22_
     
         Invoke-CsManagementServerFailover -BackupSqlServerFqdn <Pool B BE FQDN> -BackupSqlInstanceName <Pool B BE instance name> [-BackupMirrorSqlServerFqdn <Pool B Mirror BE FQDN> -BackupMirrorSqlInstanceName <Pool B Mirror BE Instance name>] -Force -Verbose
     
-    執行此作業後，建議您對額外的恢復功能將 CMS 從集區 B 移至其他現有的配對集區。如需詳細資訊，請參閱＜ [Move-CsManagementServer](move-csmanagementserver.md)＞。
+    執行此作業後，建議您對額外的恢復功能將 CMS 從集區 B 移至其他現有的配對集區。如需詳細資訊，請參閱＜ [Move-CsManagementServer](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsManagementServer)＞。
 
 3.  如果集區 A 包含 CMS，請將 LIS 設定從集區 A 匯入集區 B 的 LIS 資料庫 (Lis.mdf)。只有在已定期備份 LIS 資料時，才會發生作用。若要匯入 LIS 設定，請執行下列 Cmdlet：
     

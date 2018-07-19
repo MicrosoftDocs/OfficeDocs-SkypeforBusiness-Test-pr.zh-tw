@@ -119,7 +119,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者常設聊天原則指派到多位使用者
 
-  - 此命令可將個別使用者常設聊天原則 RedmondUsersPersistentChatPolicy 指派到 IT 部門的所有員工。如需詳細了解本命令所用的 LdapFilter 參數，請參閱＜[Get-CsUser](get-csuser.md)＞Cmdlet 的文件。
+  - 此命令可將個別使用者常設聊天原則 RedmondUsersPersistentChatPolicy 指派到 IT 部門的所有員工。如需詳細了解本命令所用的 LdapFilter 參數，請參閱＜[Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)＞Cmdlet 的文件。
     
         Get-CsUser -LdapFilter "Department=IT" | Grant-CsPersistentChatPolicy -PolicyName "RedmondUsersPersistentChatPolicy"
 
@@ -129,7 +129,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsPersistentChatPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱＜[Grant-CsPersistentChatPolicy](grant-cspersistentchatpolicy.md)＞Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Grant-CsPersistentChatPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPersistentChatPolicy)＞Cmdlet 的說明主題。
 
 ## 請參閱
 

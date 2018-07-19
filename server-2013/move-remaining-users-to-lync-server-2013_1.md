@@ -83,5 +83,5 @@ _**上次修改主題的時間：** 2012-09-26_
 
 3.  在 Lync Server 2013 控制台中，允許匿名參與者的會議原則應選取 **\[允許參與者邀請匿名使用者\]** ，且來自 Lync Server 管理命令介面 中的 **Get-CsConferencingPolicy** Cmdlet 輸出之 **AllowAnonymousParticipantsInMeeting\]** 應設為 **True** 。
 
-4.  如需有關使用 Lync Server 管理命令介面設定會議原則的詳細資訊，請參閱＜Lync Server 管理命令介面＞文件中的 [Set-CsConferencingPolicy](set-csconferencingpolicy.md)。
+4.  如需有關使用 Lync Server 管理命令介面設定會議原則的詳細資訊，請參閱＜Lync Server 管理命令介面＞文件中的 [Set-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsConferencingPolicy)。
 

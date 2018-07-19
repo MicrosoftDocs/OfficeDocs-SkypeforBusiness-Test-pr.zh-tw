@@ -25,13 +25,13 @@ _**上次修改主題的時間：** 2012-10-19_
     
         Get-CsSite
     
-    其會傳回建立集區所在之 siteName 的 siteID。如需詳細資訊，請參閱 Lync Server 2013 管理命令介面移轉文件 [Get-CsSite](get-cssite.md)＞。
+    其會傳回建立集區所在之 siteName 的 siteID。如需詳細資訊，請參閱 Lync Server 2013 管理命令介面移轉文件 [Get-CsSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsSite)＞。
 
 3.  執行下列 Cmdlet：
     
         New-CsTrustedApplicationPool -Identity <E14 CAS FQDN> -ThrottleAsServer $true -TreatAsAuthenticated $true -ComputerFQDN <E14 CAS FQDN> -Site <Site> -Registrar <Pool FQDN in the site> -RequiresReplication $false
     
-    如需詳細資訊，請參閱 Lync Server 2013 管理命令介面移轉文件 [New-CsTrustedApplicationPool](new-cstrustedapplicationpool.md)＞。
+    如需詳細資訊，請參閱 Lync Server 2013 管理命令介面移轉文件 [New-CsTrustedApplicationPool](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrustedApplicationPool)＞。
     
     Exchange Server FQDN 應設定為 Exchange OWA 憑證主體名稱 (SN)，或主體別名 (SAN)。
     
@@ -69,7 +69,7 @@ _**上次修改主題的時間：** 2012-10-19_
     
         New-CsTrustedApplication -ApplicationId <AppID String> -TrustedApplicationPoolFqdn <E14 CAS FQDN> -Port <available port number>
     
-    如需詳細資訊，請參閱＜ Lync Server 2013 管理命令介面＞移轉文件 [New-CsTrustedApplication](new-cstrustedapplication.md)＞主題。
+    如需詳細資訊，請參閱＜ Lync Server 2013 管理命令介面＞移轉文件 [New-CsTrustedApplication](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrustedApplication)＞主題。
 
 3.  執行 **\[Enable-CsTopology\]** 。
 

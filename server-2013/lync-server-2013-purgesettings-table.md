@@ -19,7 +19,7 @@ PurgeSettings 表格包含用於指定是否 (及何時) 會自動從 CDR 資料
 
     Get-CsCdrConfiguration
 
-系統管理員應將 PurgeSettings 表格視為唯讀狀態：只能使用 [New-CsCdrConfiguration](new-cscdrconfiguration.md) 或 [Set-CsCdrConfiguration](set-cscdrconfiguration.md) Cmdlet 變更詳細通話記錄清除設定。
+系統管理員應將 PurgeSettings 表格視為唯讀狀態：只能使用 [New-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsCdrConfiguration) 或 [Set-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCdrConfiguration) Cmdlet 變更詳細通話記錄清除設定。
 
 本表已從 Microsoft Lync Server 2013 引進使用。
 

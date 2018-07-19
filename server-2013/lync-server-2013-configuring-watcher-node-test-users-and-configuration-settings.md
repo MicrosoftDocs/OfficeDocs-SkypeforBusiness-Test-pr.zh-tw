@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2013-07-29_
 
 設定將作為監看員節點的電腦之後您必須進行下列動作：
 
-1.  建立監看員節點使用的測試帳戶。如果您使用 Negotiate 驗證方法，您也必須使用 [Set-CsTestUserCredential](set-cstestusercredential.md) Cmdlet 來啟用要在監看員節點上使用的這些測試帳戶。
+1.  建立監看員節點使用的測試帳戶。如果您使用 Negotiate 驗證方法，您也必須使用 [Set-CsTestUserCredential](https://docs.microsoft.com/en-us/powershell/module/skype/) Cmdlet 來啟用要在監看員節點上使用的這些測試帳戶。
 
 2.  更新監看員節點設定。
 

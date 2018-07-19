@@ -67,5 +67,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         New-CsTestDevice -Identity "site:Redmond/WindowsPhone" -IdentifierType "SerialNumber" -Identifier "01ABC5419JKR55T"
 
-如需詳細資訊，請參閱 [New-CsTestDevice](new-cstestdevice.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [New-CsTestDevice](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTestDevice) Cmdlet 的說明主題。
 

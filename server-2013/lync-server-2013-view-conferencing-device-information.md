@@ -31,7 +31,7 @@ _**上次修改主題的時間：** 2013-02-20_
 </table>
 
 
-如果您使用不含任何參數的 **Get-CsMeetingRoom** Cmdlet，其會傳回所有會議裝置的相關資訊。選用的參數則提供讓您篩選資訊的各種方法。如需詳細資訊，請參閱＜[Get-CsMeetingRoom](get-csmeetingroom.md)＞的＜參數＞一節。
+如果您使用不含任何參數的 **Get-CsMeetingRoom** Cmdlet，其會傳回所有會議裝置的相關資訊。選用的參數則提供讓您篩選資訊的各種方法。如需詳細資訊，請參閱＜[Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom)＞的＜參數＞一節。
 
 
 ## 檢視所有會議裝置的相關資訊
@@ -66,5 +66,5 @@ _**上次修改主題的時間：** 2013-02-20_
     
         Get-CsMeetingRoom -Identity "Room 1219"
 
-如需詳細資訊，請參閱 [Get-CsMeetingRoom](get-csmeetingroom.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom) Cmdlet 的說明主題。
 

@@ -31,5 +31,5 @@ Set-CsClientPolicy Cmdlet 類似於 New-CsClientPolicy，可讓您修改已經�
 
 #### 其他資源
 
-[Set-CsClientPolicy](set-csclientpolicy.md)
+[Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy)
 

@@ -22,58 +22,58 @@ _**上次修改主題的時間：** 2013-02-18_
 適用於使用者和使用者帳戶的管理工作大多可從 Lync Server 控制台執行。用來處理音訊會議提供者的 Cmdlet 是主要的例外狀況。您可以從 Lync Server 管理命令介面或指令碼內部使用 Cmdlet 執行使用者管理工作。您可以利用指令碼來自動執行某些工作。以下是與管理使用者和使用者帳戶直接相關的 Cmdlet 清單：
 
   -   
-    [Get-CsAdContact](get-csadcontact.md)
+    [Get-CsAdContact](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAdContact)
 
   -   
-    [Get-CsAdUser](get-csaduser.md)
+    [Get-CsAdUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAdUser)
 
-  - [Get-CsClientAccessLicense](get-csclientaccesslicense.md)
+  - [Get-CsClientAccessLicense](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClientAccessLicense)
 
-  - [Get-CsEffectivePolicy](get-cseffectivepolicy.md)
+  - [Get-CsEffectivePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsEffectivePolicy)
 
-  - [Invoke-CsUcsRollback](invoke-csucsrollback.md)
+  - [Invoke-CsUcsRollback](https://docs.microsoft.com/en-us/powershell/module/skype/Invoke-CsUcsRollback)
 
-  - [Test-CsUnifiedContactStore](test-csunifiedcontactstore.md)
-
-  -   
-    [Disable-CsUser](disable-csuser.md)
+  - [Test-CsUnifiedContactStore](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUnifiedContactStore)
 
   -   
-    [Enable-CsUser](enable-csuser.md)
+    [Disable-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Disable-CsUser)
 
   -   
-    [Get-CsUser](get-csuser.md)
+    [Enable-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Enable-CsUser)
 
   -   
-    [Move-CsUser](move-csuser.md)
+    [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)
 
   -   
-    [Set-CsUser](set-csuser.md)
+    [Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsUser)
 
   -   
-    [Get-CsUserAcp](get-csuseracp.md)
+    [Set-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUser)
 
   -   
-    [Remove-CsUserAcp](remove-csuseracp.md)
+    [Get-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUserAcp)
 
   -   
-    [Set-CsUserAcp](set-csuseracp.md)
+    [Remove-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsUserAcp)
 
   -   
-    [Test-CsAudioConferencingProvider](test-csaudioconferencingprovider.md)
+    [Set-CsUserAcp](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUserAcp)
 
   -   
-    [Get-CsUserPoolInfo](get-csuserpoolinfo.md)
+    [Test-CsAudioConferencingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAudioConferencingProvider)
 
-  - [Get-CsUserServicesPolicy](get-csuserservicespolicy.md)
+  -   
+    [Get-CsUserPoolInfo](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUserPoolInfo)
 
-  - [Grant-CsUserServicesPolicy](grant-csuserservicespolicy.md)
+  - [Get-CsUserServicesPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUserServicesPolicy)
 
-  - [New-CsUserServicesPolicy](new-csuserservicespolicy.md)
+  - [Grant-CsUserServicesPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsUserServicesPolicy)
 
-  - [Remove-CsUserServicesPolicy](remove-csuserservicespolicy.md)
+  - [New-CsUserServicesPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsUserServicesPolicy)
 
-  - [Set-CsUserServicesPolicy](set-csuserservicespolicy.md)
+  - [Remove-CsUserServicesPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsUserServicesPolicy)
+
+  - [Set-CsUserServicesPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUserServicesPolicy)
 
 ## 請參閱
 

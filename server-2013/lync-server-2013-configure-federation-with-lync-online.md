@@ -47,13 +47,13 @@ Move-CsUser : HostedMigration 錯誤: 錯誤=(510)，描述=(為針對共用 sip
 
     Import-PSSession $CSSession -AllowClobber
 
-如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱 [使用 Windows PowerShell 連線至 Lync Online](connecting-to-skype-for-business-online-by-using-windows-powershell.md)。
+如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱 [使用 Windows PowerShell 連線至 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
-如需有關使用 商務用 Skype Online PowerShell 模組的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md)。
+如需有關使用 商務用 Skype Online PowerShell 模組的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
 ## 請參閱
 
 #### 其他資源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

@@ -91,7 +91,7 @@ Windows 7 與 Windows Server 2008 R2 中的 BranchCache 功能可能會干擾 
 
 ## 驗證 Lync Web App 部署
 
-您可使用 Test-CsUcwaConference Cmdlet 來驗證某組測試使用者是否可使用 Unified Communications Web API (UCWA) 參與會議。如需關於此 Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面 文件中的 [Test-CsUcwaConference](test-csucwaconference.md)。
+您可使用 Test-CsUcwaConference Cmdlet 來驗證某組測試使用者是否可使用 Unified Communications Web API (UCWA) 參與會議。如需關於此 Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面 文件中的 [Test-CsUcwaConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUcwaConference)。
 
 ## 疑難排解 Windows Server 2008 R2 上的外掛程式安裝
 

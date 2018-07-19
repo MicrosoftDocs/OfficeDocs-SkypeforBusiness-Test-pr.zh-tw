@@ -147,7 +147,7 @@ _**上次修改主題的時間：** 2013-02-23_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</a>＞。</td>
+    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>＞。</td>
     </tr>
     </tbody>
     </table>
@@ -165,7 +165,7 @@ _**上次修改主題的時間：** 2013-02-23_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如需可行動作及其語法的詳細資訊，請參閱 <a href="new-csrgscallaction.md">New-CsRgsCallAction</a>。</td>
+    <td>如需可行動作及其語法的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction">New-CsRgsCallAction</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -190,7 +190,7 @@ _**上次修改主題的時間：** 2013-02-23_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</a>＞。</td>
+    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>＞。</td>
     </tr>
     </tbody>
     </table>
@@ -208,7 +208,7 @@ _**上次修改主題的時間：** 2013-02-23_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如需可行動作及其語法的詳細資訊，請參閱 <a href="new-csrgscallaction.md">New-CsRgsCallAction</a>。</td>
+    <td>如需可行動作及其語法的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction">New-CsRgsCallAction</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -233,7 +233,7 @@ _**上次修改主題的時間：** 2013-02-23_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>如需建立代理人群組的詳細資訊，請參閱 <a href="new-csrgsagentgroup.md">New-CsRgsAgentGroup</a>。</td>
+    <td>如需建立代理人群組的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsAgentGroup">New-CsRgsAgentGroup</a>。</td>
     </tr>
     </tbody>
     </table>
@@ -255,11 +255,11 @@ _**上次修改主題的時間：** 2013-02-23_
 
 #### 其他資源
 
-[New-CsRgsQueue](new-csrgsqueue.md)  
-[Set-CsRgsQueue](set-csrgsqueue.md)  
-[New-CsRgsPrompt](new-csrgsprompt.md)  
-[New-CsRgsCallAction](new-csrgscallaction.md)  
-[Get-CsRgsQueue](get-csrgsqueue.md)  
-[Import-CsRgsAudioFile](import-csrgsaudiofile.md)  
-[Remove-CsRgsQueue](remove-csrgsqueue.md)
+[New-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsQueue)  
+[Set-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsQueue)  
+[New-CsRgsPrompt](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsPrompt)  
+[New-CsRgsCallAction](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction)  
+[Get-CsRgsQueue](https://docs.microsoft.com/powershell/module/skype/Get-CsRgsQueue)  
+[Import-CsRgsAudioFile](https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile)  
+[Remove-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsRgsQueue)
 

@@ -106,7 +106,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $False -ArchiveExternal $False
 
-如需詳細資訊，請參閱 [Set-CsArchivingPolicy](set-csarchivingpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

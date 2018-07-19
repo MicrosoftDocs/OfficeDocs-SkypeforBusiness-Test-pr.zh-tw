@@ -278,7 +278,7 @@ Address Book Server 啟動時會在 AbAttribute 資料表中填入如下表中�
 </thead>
 <tbody>
 <tr class="odd">
-<td>如需篩選通訊錄的詳細資訊，請參閱<a href="lync-server-2013-address-book-server-cmdlets.md">Address Book Server Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">篩選 Lync 2013 通訊錄</a> (英文)</td>
+<td>如需篩選通訊錄的詳細資訊，請參閱<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">Address Book Server Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">篩選 Lync 2013 通訊錄</a> (英文)</td>
 </tr>
 </tbody>
 </table>

@@ -54,5 +54,5 @@ _**上次修改主題的時間：** 2013-02-23_
         HostingProvider    :
         Regions            : {US}
 
-如需詳細資訊，請參閱 [Get-CsDialInConferencingAccessNumber](get-csdialinconferencingaccessnumber.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsDialInConferencingAccessNumber) Cmdlet 的說明主題。
 

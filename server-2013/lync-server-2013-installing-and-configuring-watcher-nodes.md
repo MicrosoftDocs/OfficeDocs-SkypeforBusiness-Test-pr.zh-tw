@@ -146,7 +146,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </thead>
 <tbody>
 <tr class="odd">
-<td>系統管理員也不需要使用或安裝 Operations Manager，就可以手動執行綜合交易。如需有關各個 Test-Cs Cmdlet 的詳細資訊，請參閱＜<a href="lync-server-2013-cmdlets-index.md">Lync Server 2013 Cmdlet 索引</a>＞。</td>
+<td>系統管理員也不需要使用或安裝 Operations Manager，就可以手動執行綜合交易。如需有關各個 Test-Cs Cmdlet 的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps">Lync Server 2013 Cmdlet 索引</a>＞。</td>
 </tr>
 </tbody>
 </table>

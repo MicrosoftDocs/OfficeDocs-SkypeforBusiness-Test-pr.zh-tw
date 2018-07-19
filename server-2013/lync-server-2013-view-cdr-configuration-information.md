@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 詳細通話記錄 (CDR) 讓您能夠追蹤點對點即時訊息工作階段、Voice over Internet Protocol (VoIP) 電話通話，以及會議通話之類的使用狀況。這個使用狀況資料包含有關通話者雙方身分、通話時間以及通話時間長度的資訊。
 
-當您安裝 Microsoft Lync Server 2013 時，系統將為您建立一個 CDR 組態設定的單一全域集合。系統管理員也可以選擇建立自訂的設定集合，以套用於個別網站。藉由使用 Lync Server 控制台或 [Get-CsCdrConfiguration](get-cscdrconfiguration.md) Cmdlet，您可以檢視組織所使用的 CDR 組態設定。
+當您安裝 Microsoft Lync Server 2013 時，系統將為您建立一個 CDR 組態設定的單一全域集合。系統管理員也可以選擇建立自訂的設定集合，以套用於個別網站。藉由使用 Lync Server 控制台或 [Get-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCdrConfiguration) Cmdlet，您可以檢視組織所使用的 CDR 組態設定。
 
 ## 使用 Lync Server 控制台檢視 CDR 組態資訊。
 
@@ -44,5 +44,5 @@ _**上次修改主題的時間：** 2013-02-23_
         KeepErrorReportForDays : 60
         PurgeHourOfDay         : 2
 
-如需詳細資訊，請參閱 [Get-CsCdrConfiguration](get-cscdrconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCdrConfiguration) Cmdlet 的說明主題。
 

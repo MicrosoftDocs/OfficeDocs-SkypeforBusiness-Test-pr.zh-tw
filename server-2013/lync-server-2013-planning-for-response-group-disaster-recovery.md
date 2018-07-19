@@ -87,7 +87,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-針對每個集區，只能各定義一組應用程式層級 回應群組組態設定。這些設定包括預設等候音樂組態、預設等候音樂音訊檔案、代理回電寬限期，以及呼叫內容組態。若要檢視這些組態設定，請執行 **Get-CsRgsConfiguration** Cmdlet。如需 **Get-CsRgsConfiguration** Cmdlet 的詳細資訊，請參閱＜ [Get-CsRgsConfiguration](get-csrgsconfiguration.md)＞。
+針對每個集區，只能各定義一組應用程式層級 回應群組組態設定。這些設定包括預設等候音樂組態、預設等候音樂音訊檔案、代理回電寬限期，以及呼叫內容組態。若要檢視這些組態設定，請執行 **Get-CsRgsConfiguration** Cmdlet。如需 **Get-CsRgsConfiguration** Cmdlet 的詳細資訊，請參閱＜ [Get-CsRgsConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration)＞。
 
 您可以使用 **Import-CsRgsConfiguration** Cmdlet 搭配 –ReplaceExistingSettings 參數，將這些應用程式層級設定從一個集區轉移到另一個集區，但是這麼做會覆寫目的集區中的設定。
 

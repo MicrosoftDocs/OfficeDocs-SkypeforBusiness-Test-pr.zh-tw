@@ -47,5 +47,5 @@ Update-CsAddressBook Cmdlet 會取代 Office Communications Server 中的 **abse
 
 #### 其他資源
 
-[Update-CsAddressBook](update-csaddressbook.md)
+[Update-CsAddressBook](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsAddressBook)
 

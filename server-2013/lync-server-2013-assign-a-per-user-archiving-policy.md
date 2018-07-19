@@ -125,7 +125,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者封存原則指派給多個使用者
 
-  - 此命令會將個別使用者封存原則 RedmondArchivingPolicy 指派給在登錄器集區 atl-cs-001.litwareinc.com 上具有帳戶的所有使用者。如需此命令中使用的 Filter 參數的詳細資訊，請參閱 [Get-CsUser](get-csuser.md) Cmdlet 的文件。
+  - 此命令會將個別使用者封存原則 RedmondArchivingPolicy 指派給在登錄器集區 atl-cs-001.litwareinc.com 上具有帳戶的所有使用者。如需此命令中使用的 Filter 參數的詳細資訊，請參閱 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 的文件。
     
         Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.litwareinc.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
 
@@ -135,7 +135,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsarchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱 [Grant-CsArchivingPolicy](grant-csarchivingpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Grant-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsArchivingPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

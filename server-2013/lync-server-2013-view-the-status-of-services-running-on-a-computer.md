@@ -55,7 +55,7 @@ _**上次修改主題的時間：** 2013-02-22_
         {ConferencingServer}                      Running
         {MediationServer}                         Running
 
-如需詳細資訊，請參閱[Get-CsWindowsService](get-cswindowsservice.md)。
+如需詳細資訊，請參閱[Get-CsWindowsService](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsWindowsService)。
 
 ## 請參閱
 

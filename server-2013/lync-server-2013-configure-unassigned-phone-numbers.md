@@ -27,7 +27,7 @@ Lync Server 可讓您設定如何處理撥打至組織內有效，但未指派�
 </thead>
 <tbody>
 <tr class="odd">
-<td>您必須先定義一個或多個宣告或設定 Exchange UM 自動語音應答，才能設定未指派號碼表。如需建立宣告的詳細資訊，請參閱＜<a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中建立宣告</a>＞。若要查看是否已進行 Exchange UM 設定，請執行 <strong>Get-CsExUmContact</strong> Cmdlet。如需詳細資訊，請參閱＜<a href="get-csexumcontact.md">Get-CsExUmContact</a>＞。</td>
+<td>您必須先定義一個或多個宣告或設定 Exchange UM 自動語音應答，才能設定未指派號碼表。如需建立宣告的詳細資訊，請參閱＜<a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中建立宣告</a>＞。若要查看是否已進行 Exchange UM 設定，請執行 <strong>Get-CsExUmContact</strong> Cmdlet。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExUmContact">Get-CsExUmContact</a>＞。</td>
 </tr>
 </tbody>
 </table>

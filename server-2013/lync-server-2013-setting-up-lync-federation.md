@@ -143,7 +143,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 2.  定義和設定任何必要的 DNS 主機 (適用於 IPv6 的 A 或 AAAA) 和 DNS SRV 記錄
 
-3.  使用 Lync Server 控制台或使用 Lync Server 管理命令介面和適當的 Cmdlet 來定義和設定任何原則。如需關於 Lync Server 管理命令介面 Cmdlet 的詳細資訊，請參閱＜ [Lync Server 2013 中的同盟和外部存取 Cmdlet](lync-server-2013-federation-and-external-access-cmdlets.md)＞。
+3.  使用 Lync Server 控制台或使用 Lync Server 管理命令介面和適當的 Cmdlet 來定義和設定任何原則。如需關於 Lync Server 管理命令介面 Cmdlet 的詳細資訊，請參閱＜ [Lync Server 2013 中的同盟和外部存取 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)＞。
     
     <table>
     <thead>

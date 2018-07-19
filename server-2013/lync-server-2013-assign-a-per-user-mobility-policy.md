@@ -119,7 +119,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將每一使用者行動性原則指派給多位使用者
 
-  - 下列命令會將每一使用者行動性原則 RedmondMobilityPolicy 指派給目前獲指派 NorthAmericaMobilityPolicy 原則的所有使用者。如需此命令中使用之 Filter 參數的詳細資訊，請參閱＜[Get-CsUser](get-csuser.md)＞。
+  - 下列命令會將每一使用者行動性原則 RedmondMobilityPolicy 指派給目前獲指派 NorthAmericaMobilityPolicy 原則的所有使用者。如需此命令中使用之 Filter 參數的詳細資訊，請參閱＜[Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)＞。
     
         Get-CsUser -Filter {MobilityPolicy -eq "NorthAmericaMobilityPolicy"} | Grant-CsMobilityPolicy -PolicyName "RedmondMobilityPolicy"
 
@@ -129,7 +129,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsMobilityPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱＜[Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)＞。
+如需詳細資訊，請參閱＜[Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)＞。
 
 ## 請參閱
 

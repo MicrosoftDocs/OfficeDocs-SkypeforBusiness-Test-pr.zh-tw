@@ -59,5 +59,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsService -WebServer | Foreach-Object {Clear-CsDeviceUpdateLog -Identity $_.Identity -DaysBack 10}
 
-如需詳細資訊，請參閱＜[Clear-CsDeviceUpdateLog](clear-csdeviceupdatelog.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Clear-CsDeviceUpdateLog](https://docs.microsoft.com/en-us/powershell/module/skype/Clear-CsDeviceUpdateLog)＞ Cmdlet 的說明主題。
 
