@@ -672,7 +672,7 @@
             - name: 連接埠摘要 - Public Instant Messaging 連線
               href: lync-server-2013-port-summary-public-instant-messaging-connectivity.md
             - name: DNS 摘要 - Public Instant Messaging 連線
-              href: jj618375(v=ocs.15).md
+              href: 
           - name: 規劃 Lync Server 2013 中的可延伸的訊息和顯示狀態通訊協定 (XMPP) 同盟
             href: lync-server-2013-planning-for-extensible-messaging-and-presence-protocol-xmpp-federation.md
             items:
