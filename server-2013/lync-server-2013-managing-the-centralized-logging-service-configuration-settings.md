@@ -55,5 +55,5 @@ _**上次修改主題的時間：** 2012-11-01_
 #### 概念
 
 [集中式記錄服務概觀](lync-server-2013-overview-of-the-centralized-logging-service.md)  
-[Centralized Logging Cmdlet](lync-server-2013-centralized-logging-cmdlets.md)
+[Centralized Logging Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)
 
