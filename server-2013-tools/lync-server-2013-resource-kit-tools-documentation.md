@@ -460,6 +460,7 @@ CPS 工具的用途在於提供對 CPS 資料庫的命令列存取權限。系�
 
 若是這項工具與 CPS 在相同的電腦上執行，則不受任何需求限制。若是這項工具執行於遠端電腦，則 Lync Server 2013 所採用的 SQL Server 資料庫必須設為允許遠端存取。Call Parkometer 必須以 SQL Server 資料庫連接字串加以設定，才可連線至集區的 SQL Server。此 SQL Server 資料庫連接字串定義於設定檔 **parkometer.exe.config**。這個設定檔必須與 parkometer.exe 位於相同的目錄。下列 XML 檔則為 parkometer.exe.config 範例。必須加以設定的參數為使用者名稱 (例如 mydomain\\Administrator)、密碼 (例如 mypassword) 以及主機名稱 (例如 myserver)。
 
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -470,6 +471,7 @@ CPS 工具的用途在於提供對 CPS 資料庫的命令列存取權限。系�
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
+```
 
 ## 範例
 
