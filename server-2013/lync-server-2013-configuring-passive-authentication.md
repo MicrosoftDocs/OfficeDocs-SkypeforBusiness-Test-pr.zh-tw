@@ -81,11 +81,14 @@ _**上次修改主題的時間：** 2013-07-11_
 
 1.  從 Lync Server 管理命令介面 命令列執行下列命令，為每個將啟用被動式驗證且具備累計更新 (2013 年 7 月) 的 Lync Server 2013 Edge 集區、Enterprise 集區和 Standard Edition 伺服器建立新的 Proxy 組態：
     
-        New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com" 
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
-    
-        New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com" 
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
+    New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com" 
+    -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
+    ```
+    New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com" 
+    -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
 
 2.  執行下列命令，確認所有其他 Proxy 驗證類型都已成功停用：
     

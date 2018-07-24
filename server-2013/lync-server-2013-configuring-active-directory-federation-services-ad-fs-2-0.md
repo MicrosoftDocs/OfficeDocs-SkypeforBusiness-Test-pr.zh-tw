@@ -53,16 +53,23 @@ _**上次修改主題的時間：** 2013-07-03_
 
 8.  執行下列命令，使用 Windows PowerShell 為信賴憑證者信任建立並指派發行授權規則：
     
-        $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
-    
-        Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth 
-        -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+      ```
+      $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.microsoft.com/authorization/claims/permit", Value = "true");'
+      ```
+      ```
+      Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth 
+      -IssuanceAuthorizationRules $IssuanceAuthorizationRules
+      ```
+
 
 9.  執行下列命令，使用 Windows PowerShell 為信賴憑證者信任建立並指派發行轉換規則：
     
-        $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
-    
-        Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth -IssuanceTransformRules $IssuanceTransformRules
+      ```
+      $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
+      ```
+      ```
+      Set-ADFSRelyingPartyTrust -TargetName LyncPool01-PassiveAuth -IssuanceTransformRules $IssuanceTransformRules
+      ```
 
 10. 從 AD FS 2.0 管理主控台，在信賴憑證者信任上按一下滑鼠右鍵並選取 **\[編輯宣告規則\]**。
 

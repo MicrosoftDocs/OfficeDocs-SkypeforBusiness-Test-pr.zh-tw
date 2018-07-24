@@ -41,15 +41,21 @@ _**上次修改主題的時間：** 2012-01-16_
 
 3.  在命令提示字元中執行下列命令：
     
-        Remove-CsKerberosAccountAssignment -Identity "site:SiteName"
-    
-        Enable-CsTopology
-    
+    ```
+    Remove-CsKerberosAccountAssignment -Identity "site:SiteName"
+    ```
+    ```
+    Enable-CsTopology
+    ```
+
     例如：
     
-        Remove-CsKerberosAccountAssignment -Identity "site:Redmond"
-    
-        Enable-CsTopology
+    ```
+    Remove-CsKerberosAccountAssignment -Identity "site:Redmond"
+    ```
+    ```
+    Enable-CsTopology
+    ```
     
     <table>
     <thead>

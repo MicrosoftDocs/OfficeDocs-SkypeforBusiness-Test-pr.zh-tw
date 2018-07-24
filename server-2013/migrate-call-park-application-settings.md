@@ -17,9 +17,12 @@ _**上次修改主題的時間：** 2012-10-19_
 
 將通話駐留應用程式從 Lync Server 2010 移轉至 Lync Server 2013 的作業包括：搭配任何已上傳至 Lync Server 2010 的自訂等候音樂檔案來佈建 Lync Server 2013 集區、還原服務層級設定並將所有通話駐留軌道重新鎖定至 Lync Server 2013 集區。若您已在 Lync Server 2010 集區中設定自訂的等候音樂檔案，就必須將這些檔案複製到新的 Lync Server 2013 集區。此外，建議您將任何通話駐留自訂等候音樂檔案從 Lync Server 2010 備份至其他目的地，以確保通話駐留用的任何已上傳自訂等候音樂檔案都有個別的備份複本。通話駐留應用程式的自訂等候音樂檔案會儲存在集區的檔案存放區中。若要將音訊檔從 Lync Server 2010 集區檔案存放區複製到 Lync Server 2013 檔案存放區，請使用 **Xcopy** 命令，搭配下列參數：
 
-    Xcopy <Source: Lync Server 2010 Pool CPS File Store Path> <Destination: Lync Server 2013 Pool CPS File Store Path>
-
-    Example usage:  Xcopy "<Lync Server 2010 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Lync Server 2013 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\" 
+```
+Xcopy <Source: Lync Server 2010 Pool CPS File Store Path> <Destination: Lync Server 2013 Pool CPS File Store Path>
+```
+```
+Example usage:  Xcopy "<Lync Server 2010 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Lync Server 2013 File Store Path>\OcsFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\" 
+```
 
 將所有自訂音訊檔複製到 Lync Server 2013 檔案存放區之後，就必須設定 Lync Server 2013 集區的通話駐留應用程式設定，並將與 Lync Server 2010 集區相關聯的通話駐留軌道重新指派至 Lync Server 2013 集區。
 

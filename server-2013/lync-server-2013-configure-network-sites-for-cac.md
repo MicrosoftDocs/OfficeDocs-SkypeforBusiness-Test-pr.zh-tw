@@ -55,11 +55,15 @@ _**上次修改主題的時間：** 2012-09-05_
 
 2.  執行 **New-CsNetworkSite** Cmdlet 建立網站，並且將適當的頻寬原則設定檔套用至每一個網站。例如，執行：
     
-        New-CsNetworkSite -NetworkSiteID Reno -Description "NA:Branch office for sales force" -NetworkRegionID NorthAmerica -BWPolicyProfileID 10MB_Link
-    
-        New-CsNetworkSite -NetworkSiteID Portland -Description "NA:Branch office for marketing force" -NetworkRegionID NorthAmerica -BWPolicyProfileID 5MB_Link
-    
-        New-CsNetworkSite -NetworkSiteID Albuquerque -Description "NA:Branch office for SouthWest sales" -NetworkRegionID EMEA -BWPolicyProfileID 10MB_Link
+    ```
+    New-CsNetworkSite -NetworkSiteID Reno -Description "NA:Branch office for sales force" -NetworkRegionID NorthAmerica -BWPolicyProfileID 10MB_Link
+    ```
+    ```
+    New-CsNetworkSite -NetworkSiteID Portland -Description "NA:Branch office for marketing force" -NetworkRegionID NorthAmerica -BWPolicyProfileID 5MB_Link
+    ```
+    ```
+    New-CsNetworkSite -NetworkSiteID Albuquerque -Description "NA:Branch office for SouthWest sales" -NetworkRegionID EMEA -BWPolicyProfileID 10MB_Link
+    ```
 
 3.  若要完成建立整個範例拓撲的網站，請針對 EMEA 和 APAC 地區中受頻寬限制的網站重複步驟 2。
 

@@ -89,55 +89,81 @@ Lync Server 2013「自動探索」服務最初是 Microsoft Lync Server 2010 所
 
 **AccessLocation=”External”** 定義表示要求為外部使用者所提出。
 
-    <SipServerInternalAccess fqdn="pool01.contoso.com" port="5061"/>
-
-    <SipServerExternalAccess fqdn="sip.contoso.com" port="5061"/>
+  ```
+  <SipServerInternalAccess fqdn="pool01.contoso.com" port="5061"/>
+  ```
+  ```
+  <SipServerExternalAccess fqdn="sip.contoso.com" port="5061"/>
+  ```
 
 目前不使用 SipServerInternalAccess 和 SipServerExternalAccess。這些項目保留供未來使用。
 
-    <SipClientInternalAccess fqdn=" pool01.contoso.com" port="443"/>
-
-    <SipClientExternalAccess fqdn="sip.contoso.com " port="443"/>
+  ```
+  <SipClientInternalAccess fqdn=" pool01.contoso.com" port="443"/>
+  ```
+  ```
+  <SipClientExternalAccess fqdn="sip.contoso.com " port="443"/>
+  ```
 
 SipClientInternalAccess 和 SipClientExternalAccess 說明內部或外部用戶端將會用以存取已定義 SIP 伺服器的完整網域名稱和連接埠。Lync 桌面用戶端和 Lync Windows 市集應用程式可使用這些項目，根據其位置 (內部或外部) 尋找 Director 或 前端伺服器。
 
-    <Link token="Internal/Autodiscover" href="https://webinternal.contoso.net/Autodiscover/AutodiscoverService.svc/root"/>
-
-    <Link token ="External/Autodiscover" href="https://webexternal.contoso.com/Autodiscover/AutodiscoverService.svc/root"/>
+  ```
+  <Link token="Internal/Autodiscover" href="https://webinternal.contoso.net/Autodiscover/AutodiscoverService.svc/root"/>
+  ```
+  ```
+  <Link token ="External/Autodiscover" href="https://webexternal.contoso.com/Autodiscover/AutodiscoverService.svc/root"/>
+  ```
 
 `Autodiscover` 參考包含「自動探索」服務的服務進入點。Token 屬性包含服務名稱，而 HREF 是一種 URL，針對可找到服務的用戶端進行定義。外部網路上的用戶端使用 `External/Autodiscover`。「自動探索」服務會安裝成為部署處理程序的一部分，目前不使用 `Internal/Autodiscover`，並加以保留供未來使用。
 
-    <Link token="Internal/AuthBroker" href="https://webinternal.contoso.net/Reach/sip.svc"/>
-
-    <Link token="External/AuthBroker" href="https://webexternal.contoso.com/Reach/sip.svc"/>
+  ```
+  <Link token="Internal/AuthBroker" href="https://webinternal.contoso.net/Reach/sip.svc"/>
+  ```
+  ```
+  <Link token="External/AuthBroker" href="https://webexternal.contoso.com/Reach/sip.svc"/>
+  ```
 
 `AuthBroker` 參考包含內部和外部驗證 Broker 服務的服務進入點，在此範例中為 sip.svc。Token 屬性包含服務名稱，HREF 是一種，針對可找到服務的用戶端進行定義。內部網路上的用戶端使用 `Internal/AuthBroker`，外部網路上的用戶端使用 `External/AuthBroker`。AuthBroker 服務會安裝成為內部 Lync Server 2013 部署 Web 服務部署處理程序的一部分。
 
-    <Link token="Internal/WebScheduler" href="https://webinternal.contoso.net/Scheduler"/>
-
-    <Link token="External/WebScheduler" href="https://webexternal.contoso.com/Scheduler"/>
+  ```
+  <Link token="Internal/WebScheduler" href="https://webinternal.contoso.net/Scheduler"/>
+  ```
+  ```
+  <Link token="External/WebScheduler" href="https://webexternal.contoso.com/Scheduler"/>
+  ```
 
 `WebScheduler` Token 會參照供用戶端存取 Lync Server 會議之 Web 式排程的 URL。目前，僅使用 `External/WebScheduler`。WebScheduler 會於內部 Lync Server 2013 部署 Web 服務部署處理程序中安裝。
 
-    <Link token="Internal/Mcx" href="https://webexternal.contoso.net/Mcx/McxService.svc"/>
-
-    <Link token="External/Mcx" href="https://webexternal.contoso.com/Mcx/McxService.svc"/>
+  ```
+  <Link token="Internal/Mcx" href="https://webexternal.contoso.net/Mcx/McxService.svc"/>
+  ```
+  ```
+  <Link token="External/Mcx" href="https://webexternal.contoso.com/Mcx/McxService.svc"/>
+  ```
 
 `Internal/Mcx` 和 `External/Mcx` 是 Mobility Services 的位置，由 Lync Server 2010 累計更新：2011 年 11 月引進。這些參考可繼續用於所有受支援裝置上的 Lync 2010 Mobile。Mcx 服務會安裝成為內部 Lync Server 2013 部署 Web 服務部署處理程序的一部分。
 
-    <Link token="Internal/Ucwa" href="https://webinternal.contoso.net/ucwa/v1/applications"/>
-
-    <Link token="External/Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
-
-    <Link token="Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
+  ```
+  <Link token="Internal/Ucwa" href="https://webinternal.contoso.net/ucwa/v1/applications"/>
+  ```
+  ```
+  <Link token="External/Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
+  ```
+  ```
+  <Link token="Ucwa" href="https://webexternal.contoso.com/ucwa/v1/applications"/>
+  ```
 
 **Internal/Ucwa**、**External/Ucwa** 和 **Ucwa** 為用戶端提供存取整合通訊 Web 應用程式開發介面 (UCWA API，或簡稱為 UCWA) 的方式。`Internal/Ucwa` 和 `External/Ucwa` 虛擬目錄是為日後增強功能所保留的存取點，目前並不使用。可在所有受支援裝置上的 Microsoft Lync Mobile (Lync Server 2013 所引進) 使用 `Ucwa` 虛擬目錄。UCWA 服務會安裝成為內部 Lync Server 2013 部署 Web 服務部署處理程序的一部分。
 
-    <Link token="Internal/XFrame" href="https://webinternal.contoso.net/Autodiscover/XFrame/XFrame.html"/>
-
-    <Link token="External/XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
-
-    <Link token="XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
+  ```
+  <Link token="Internal/XFrame" href="https://webinternal.contoso.net/Autodiscover/XFrame/XFrame.html"/>
+  ```
+  ```
+  <Link token="External/XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
+  ```
+  ```
+  <Link token="XFrame" href="https://webexternal.contoso.com/Autodiscover/XFrame/XFrame.html"/>
+  ```
 
 `Internal/XFrame`、**External/XFrame** 和 **XFrame** 可讓 UCWA 伺服器應用程式進行存取。XFrame 會安裝成為內部 Lync Server 2013 部署 Web 服務部署處理程序的一部分。
 

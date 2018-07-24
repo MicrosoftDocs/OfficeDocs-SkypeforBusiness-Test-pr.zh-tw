@@ -39,9 +39,12 @@ _**上次修改主題的時間：** 2014-12-12_
 
 2.  在命令提示字元中輸入下列命令：
     
-        Set-CsMediaConfiguration -EncryptionLevel SupportEncryption
-    
-        Set-CsExternalAccessPolicy Global -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
+    ```
+    Set-CsMediaConfiguration -EncryptionLevel SupportEncryption
+    ```
+    ```
+    Set-CsExternalAccessPolicy Global -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
+    ```
     
     <table>
     <thead>

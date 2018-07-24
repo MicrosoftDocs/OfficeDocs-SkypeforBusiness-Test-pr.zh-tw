@@ -65,11 +65,15 @@ _**上次修改主題的時間：** 2014-02-05_
 
 3.  使用 **Install-CsDatabase** Cmdlet 安裝 中央管理存放區。
     
-        Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
-        -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
-        -Report <path to report file>
+      ```
+      Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn <fully qualified domain name of SQL Server> 
+      -SqlInstanceName <named instance> -DatabasePaths <logfile path>,<database file path> 
+      -Report <path to report file>
+      ```
     
-        Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
+      ```
+      Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
+      ```
     
     <table>
     <thead>
@@ -117,11 +121,15 @@ _**上次修改主題的時間：** 2014-02-05_
 
 4.  使用 **Install-CsDatabase** Cmdlet，安裝 拓撲產生器設定的資料庫。
     
-        Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
-         -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
+      ```
+      Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn <fully qualified domain name of SQL Server> 
+       -DatabasePaths <logfile path>,<database file path> -Report <path to report file>
+      ```
     
-        Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
-        -Report "C:\Logs\InstallDatabases.html"
+      ```
+      Install-CsDatabase -ConfiguredDatabases -SqlServerFqdn sqlbe.contoso.net 
+       -Report "C:\Logs\InstallDatabases.html"
+      ```
     
     <table>
     <thead>

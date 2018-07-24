@@ -37,9 +37,12 @@ Update-CsAddressBook Cmdlet 會取代 Office Communications Server 中的 **abse
 
 例如：
 
-    Update-CsAddressBook
-
-    Update-CsAddressBook -Fqdn atl-abs-001.contoso.com
+```
+Update-CsAddressBook
+```
+```
+Update-CsAddressBook -Fqdn atl-abs-001.contoso.com
+```
 
 如需完整命令的詳細說明，請參閱主要 Lync Server Windows PowerShell RTCCmdlets 參考中的下列項目。
 

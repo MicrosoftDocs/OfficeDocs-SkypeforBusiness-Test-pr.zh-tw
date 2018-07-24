@@ -101,9 +101,12 @@ _**上次修改主題的時間：** 2013-10-28_
 
 17. 在收到、匯入並指派公用憑證後，您必須停止再重新啟動 Edge Server 服務。若要執行此動作，請在 Lync Server 管理主控台輸入下列命令：
     
-        Stop-CsWindowsService
-    
-        Start-CsWindowsService
+    ```
+    Stop-CsWindowsService
+    ```    
+    ```
+    Start-CsWindowsService
+    ```
 
 ## 設定新的 Lync Server 2013 XMPP 閘道
 

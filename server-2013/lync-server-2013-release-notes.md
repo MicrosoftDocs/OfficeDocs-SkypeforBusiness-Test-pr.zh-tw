@@ -90,9 +90,12 @@ Lync Server Storage Service 使用 Windows Fabric 進行複寫。如果已在主
 
 若要解決此問題，請在變更部署的 IP 位址設定後重新啟動 Lync Server 服務。若要這麼做，請在 Lync Server 管理命令介面中執行下列 Cmdlet：
 
-    Stop-CsWindowsService -graceful
-
-    Start-CsWindowsService
+  ```
+  Stop-CsWindowsService -graceful
+  ```
+  ```
+  Start-CsWindowsService
+  ```
 
 ## Lync Server 2013 管理組件已不再提供電話撥入式會議綜合交易 Cmdlet (3212342)
 
@@ -346,9 +349,12 @@ Lync Server 2013 Address Book Server 會在執行每日維護時每天產生一�
 
 1.  啟動 Windows PowerShell 並執行下列 Cmdlet：
     
-        New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
-    
-        $a="HKU:\.Default\Control Panel\International"
+    ```
+    New-PSDrive -Name HKU -PSProvider Registry -Root HKEY_USERS
+    ```
+    ```
+    $a="HKU:\.Default\Control Panel\International"
+    ```
 
 2.  若要檢視目前的值，請執行下列 Cmdlet：
     

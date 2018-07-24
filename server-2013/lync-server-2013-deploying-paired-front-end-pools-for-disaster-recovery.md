@@ -51,15 +51,21 @@ _**上次修改主題的時間：** 2013-02-21_
 
 10. 使用下列 Cmdlet，強制兩個集區的使用者及會議資料互相進行同步處理：
     
-        Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
-    
-        Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
+      ```
+      Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
+      ```    
+      ```
+      Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
+      ```
     
     同步處理資料可能需要花費一些時間。您可以使用下列 Cmdlet 檢查狀態。確保雙向中的狀態處於穩定狀態。
     
-        Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
-    
-        Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
+      ```
+      Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
+      ```    
+      ```
+      Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
+      ```
 
 <table>
 <thead>
