@@ -73,41 +73,29 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
 
 ## 本節內容
 
-  -   
-    [Lync Server 2013 的企業語音先決條件](lync-server-2013-enterprise-voice-prerequisites.md)
+   [Lync Server 2013 的企業語音先決條件](lync-server-2013-enterprise-voice-prerequisites.md)
 
-  -   
-    [在 Lync Server 2013 中部署中繼伺服器並定義對等項目](lync-server-2013-deploying-mediation-servers-and-defining-peers.md)
+   [在 Lync Server 2013 中部署中繼伺服器並定義對等項目](lync-server-2013-deploying-mediation-servers-and-defining-peers.md)
 
-  -   
-    [在 Lync Server 2013 中設定主幹](lync-server-2013-configuring-trunks.md)
+   [在 Lync Server 2013 中設定主幹](lync-server-2013-configuring-trunks.md)
 
-  -   
-    [在 Lync Server 2013 中設定撥號對應表](lync-server-2013-configuring-dial-plans.md)
+   [在 Lync Server 2013 中設定撥號對應表](lync-server-2013-configuring-dial-plans.md)
 
-  -   
-    [在 Lync Server 2013 中設定語音原則、PSTN 使用方式記錄和語音路由](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
+   [在 Lync Server 2013 中設定語音原則、PSTN 使用方式記錄和語音路由](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)
 
-  -   
-    [在 Lync Server 2013 中匯出和匯入語音路由組態](lync-server-2013-exporting-and-importing-voice-routing-configuration.md)
+   [在 Lync Server 2013 中匯出和匯入語音路由組態](lync-server-2013-exporting-and-importing-voice-routing-configuration.md)
 
-  -   
-    [在 Lync Server 2013 中測試語音路由](lync-server-2013-test-voice-routing.md)
+   [在 Lync Server 2013 中測試語音路由](lync-server-2013-test-voice-routing.md)
 
-  -   
-    [在 Lync Server 2013 中發佈擱置變更至語音路由設定](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)
+   [在 Lync Server 2013 中發佈擱置變更至語音路由設定](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)
 
-  -   
-    [部署內部部署的 Exchange UM，以提供 Lync Server 2013 語音信箱](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)
+   [部署內部部署的 Exchange UM，以提供 Lync Server 2013 語音信箱](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)
 
-  -   
-    [在主控 Exchange UM 上提供 Lync Server 2013 使用者語音信箱](lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um.md)
+   [在主控 Exchange UM 上提供 Lync Server 2013 使用者語音信箱](lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um.md)
 
-  -   
-    [設定內部部署 Lync Server 2013 與 Exchange Online 整合](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)
+   [設定內部部署 Lync Server 2013 與 Exchange Online 整合](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)
 
-  -   
-    [在 Lync Server 2013 中部署進階 Enterprise Voice 功能](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
+   [在 Lync Server 2013 中部署進階 Enterprise Voice 功能](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
     
       - [關於 Lync Server 2013 中的網路區域、網站和子網路](lync-server-2013-about-network-regions-sites-and-subnets.md)
     
@@ -123,8 +111,7 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
     
       - [在 Lync Server 2013 中設定媒體旁路](lync-server-2013-configure-media-bypass.md)
 
-  -   
-    [在 Lync Server 2013 中為使用者啟用企業語音](lync-server-2013-enable-users-for-enterprise-voice.md)
+   [在 Lync Server 2013 中為使用者啟用企業語音](lync-server-2013-enable-users-for-enterprise-voice.md)
 
 ## 請參閱
 

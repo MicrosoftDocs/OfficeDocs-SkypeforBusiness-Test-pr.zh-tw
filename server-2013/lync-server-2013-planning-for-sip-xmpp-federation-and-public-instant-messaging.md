@@ -57,8 +57,7 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
 
   - 判斷您的同盟網域探索需求：
     
-      -   
-        如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> **\[同盟及外部存取\]** \> **\[SIP 同盟網域\]** 。請建立 **\[新增\]** 原則或 **\[編輯\]** 現有的原則，以依 FQDN 來允許或封鎖網域。
+       如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> **\[同盟及外部存取\]** \> **\[SIP 同盟網域\]** 。請建立 **\[新增\]** 原則或 **\[編輯\]** 現有的原則，以依 FQDN 來允許或封鎖網域。
         
         <table>
         <thead>
@@ -86,8 +85,7 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
         </tbody>
         </table>
     
-      -   
-        若是探索到的協力廠商同盟 (合作夥伴可以探索您的 Edge Server)，您需在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中建立一筆指向連接埠 5061 的 SRV 記錄以及您 Edge Server 的主機 (A) 記錄
+       若是探索到的協力廠商同盟 (合作夥伴可以探索您的 Edge Server)，您需在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中建立一筆指向連接埠 5061 的 SRV 記錄以及您 Edge Server 的主機 (A) 記錄
         
         <table>
         <thead>
@@ -202,14 +200,11 @@ XMPP 的部署與設定涵蓋於＜[在 Lync Server 2013 中部署外部使用�
 
 下列主題包含為支援之同盟案例類型定義憑證、防火牆連接埠和 DNS 項目的指引。
 
-  -   
-    [憑證摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+   [憑證摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
-  -   
-    [連接埠摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+   [連接埠摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
-  -   
-    [DNS 摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+   [DNS 摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
 ## 請參閱
 

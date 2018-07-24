@@ -19,14 +19,11 @@ Lync Server 2013 部署之用戶端與裝置的軟體支援包括支援的作�
 
 ## 本章節內容
 
-  -   
-    [Lync Server 2013 中的 Lync 用戶端軟體支援](lync-server-2013-lync-client-software-support.md)
+   [Lync Server 2013 中的 Lync 用戶端軟體支援](lync-server-2013-lync-client-software-support.md)
 
-  -   
-    [Lync Server 2013 中的公用立即訊息連線的支援](lync-server-2013-support-for-public-instant-messenger-connectivity.md)
+   [Lync Server 2013 中的公用立即訊息連線的支援](lync-server-2013-support-for-public-instant-messenger-connectivity.md)
 
-  -   
-    [Lync 中使用者相片的顯示方式](how-user-photos-are-displayed-in-lync.md)
+   [Lync 中使用者相片的顯示方式](how-user-photos-are-displayed-in-lync.md)
 
 <table>
 <colgroup>

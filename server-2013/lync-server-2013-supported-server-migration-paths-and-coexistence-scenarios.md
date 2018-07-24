@@ -29,8 +29,7 @@ Lync Server 2013 支援從下列任一版本進行移轉：
 
 Lync Server 2013 僅支援下列移轉方法：
 
-  -   
-    **並存移轉。**在並存移轉中， Lync Server 2013 會以現有的 Microsoft Lync Server 2010 或 Office Communications Server 2007 R2 部署為基礎進行部署，然後再將作業轉換到新伺服器，並將使用者移至 Lync Server 2013。此方法在移轉期間需要額外的伺服器平台 (包括軟硬體)，且新設定中的系統名稱和集區名稱會不相同。若有需要復原為先前的版本，您可以將作業切換回先前的伺服器。
+   **並存移轉。**在並存移轉中， Lync Server 2013 會以現有的 Microsoft Lync Server 2010 或 Office Communications Server 2007 R2 部署為基礎進行部署，然後再將作業轉換到新伺服器，並將使用者移至 Lync Server 2013。此方法在移轉期間需要額外的伺服器平台 (包括軟硬體)，且新設定中的系統名稱和集區名稱會不相同。若有需要復原為先前的版本，您可以將作業切換回先前的伺服器。
 
 Active Directory 網域服務 樹系間的移轉不受支援。
 
