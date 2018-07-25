@@ -17,11 +17,9 @@ _**上次修改主題的時間：** 2013-01-30_
 
 如果您已選擇要啟用 Web 會議，則需規劃下列事項：
 
-  -   
-    存取檔案存放區，以用來儲存 Web 會議內容。
+   存取檔案存放區，以用來儲存 Web 會議內容。
 
-  -   
-    與 Office Web Apps Server 整合，在會議期間共用 PowerPoint 檔案時所需。
+   與 Office Web Apps Server 整合，在會議期間共用 PowerPoint 檔案時所需。
 
 ## 檔案存放區
 

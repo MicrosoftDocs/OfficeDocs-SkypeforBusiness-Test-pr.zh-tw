@@ -97,9 +97,12 @@ _**上次修改主題的時間：** 2012-12-03_
 
 22. 在收到、匯入並指派公用憑證後，您必須停止再重新啟動 Edge Server 服務。若要執行此動作，請在 Lync Server 管理主控台輸入下列命令：
     
-        Stop-CsWindowsService
-    
-        Start-CsWindowsService
+    ```
+    Stop-CsWindowsService
+    ```
+    ```
+    Start-CsWindowsService
+    ```
 
 23. 如要設定 DNS 用於 XMPP 同盟，請在外部 DNS 新增下列 SRV 記錄：\_xmpp-server.\_tcp.\<網域名稱\>。SRV 記錄會解析為 Edge Server 的 Access Edge FQDN (連接埠值為 5269)。此外，還需要設定 "A" 主機記錄 (例如 xmpp.contoso.com)，將其指向 Access Edge Server 的 IP 位址。
     
@@ -119,23 +122,33 @@ _**上次修改主題的時間：** 2012-12-03_
 
 24. 如要設定新的外部存取原則來啟用所有的使用者，請在前端開啟 Lync Server 管理命令介面命令並輸入下列命令：
     
-        New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
-    
-        New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAcces $true -EnablePublicCloudAccess $true
-    
-        Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
+    ```
+    New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
+    ```
+    ```
+    New-CsExternalAccessPolicy -Identity FedPic -EnableFederationAcces $true -EnablePublicCloudAccess $true
+    ```
+    ```
+    Get-CsUser | Grant-CsExternalAccessPolicy -PolicyName FedPic
+    ```
     
     如要啟用外部使用者的 XMPP 存取，請輸入下列命令：
     
-        Set-CsExternalAccessPolicy -Identity <name of the policy being used> EnableXmppAccess $true
-    
-        Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
+    ```
+    Set-CsExternalAccessPolicy -Identity <name of the policy being used> EnableXmppAccess $true
+    ```
+    ```
+    Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
+    ```
 
 25. 在部署 XMPP Proxy 的 Edge Server 上，開啟命令提示字元或 Windows PowerShell™ 命令列介面，並輸入下列命令：
     
-        Netstat -ano | findstr 5269
-    
-        Netstat -ano | findstr 23456
+    ```
+    Netstat -ano | findstr 5269
+    ```
+    ```
+    Netstat -ano | findstr 23456
+    ```
     
     **netstat –ano** 命令是網路統計資料命令，參數 **–ano** 會要求 netstat 顯示所有連線及聆聽連接埠 (位址和連接埠以數字格式顯示)，並顯示與每個連線相關的擁有處理程序識別碼。字元 **|** 定義下一個命令 **findstr** 或搜尋字串的管道。傳遞到 findstr 作為參數的數字 5269 和 23456 會指示 findstr 搜尋 netstat 的輸出中是否有字串 5269 和 23456。如果 XMPP 正確設定，命令的結果應該會在 Edge Server 的外部 (連接埠 5269) 及內部 (連接埠 23456) 介面聆聽並建立連線。
     

@@ -17,14 +17,11 @@ _**上次修改主題的時間：** 2012-09-08_
 
 如果您的組織需要支援少於 15,000 個 Access Edge Service 用戶端連線、1,000 個作用中 Lync Server Web 會議服務用戶端連線及 500 個並行 A/V Edge 工作階段，則 Edge Server 是否提供高可用性就不太重要，此拓撲的優點是可提供較低的硬體成本和較簡單的部署。如果您需要更大容量或需要高可用性，您應部署經過調整的合併 Edge Server 拓撲。
 
-  -   
-    [Lync Server 2013 中的調整式合併 Edge (使用 NAT 透過私人 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
+   [Lync Server 2013 中的調整式合併 Edge (使用 NAT 透過私人 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
 
-  -   
-    [Lync Server 2013 中的調整式合併 Edge (透過公用 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
+   [Lync Server 2013 中的調整式合併 Edge (透過公用 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
 
-  -   
-    [Lync Server 2013 中含硬體負載平衡器的調整式合併 Edge](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
+   [Lync Server 2013 中含硬體負載平衡器的調整式合併 Edge](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
 <table>
 <thead>

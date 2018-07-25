@@ -9,8 +9,7 @@ mtps_version: v=OCS.15
 ms.translationtype: HT
 ---
 
-# 將 Microsoft SIP Processing Language (MSPL) 應用程式標示為 或
-
+# 將 Microsoft SIP Processing Language (MSPL) 應用程式標示為 [關鍵] 或
  
 
 _**上次修改主題的時間：** 2012-11-01_

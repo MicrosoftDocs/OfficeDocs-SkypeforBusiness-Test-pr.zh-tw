@@ -25,13 +25,18 @@ _**上次修改主題的時間：** 2014-05-08_
     
     安裝模組後，您可以在 Lync Server 管理命令介面中輸入下列 Cmdlet 以建立遠端工作階段：
     
-        Import-Module LyncOnlineConnector
-    
-        $cred = Get-Credential
-    
-        $CSSession = New-CsOnlineSession -Credential $cred
-    
-        Import-PSSession $CSSession -AllowClobber
+      ```
+      Import-Module LyncOnlineConnector
+      ```    
+      ```
+      $cred = Get-Credential
+      ```    
+      ```
+      $CSSession = New-CsOnlineSession -Credential $cred
+      ```    
+      ```
+      Import-PSSession $CSSession -AllowClobber
+      ```
     
     如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱[使用 Windows PowerShell 連線至 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
     

@@ -57,11 +57,9 @@ _**上次修改主題的時間：** 2012-09-21_
     
       - 執行下列其中一個作業系統：
         
-          -   
-            64 位元版本的 Windows Server 2008 Standard 作業系統
+           64 位元版本的 Windows Server 2008 Standard 作業系統
         
-          -   
-            64 位元版本的 Windows Server 2008 Enterprise 作業系統
+           64 位元版本的 Windows Server 2008 Enterprise 作業系統
 
   - 如果公用交換電話網路 (PSTN) 或專用交換機 (PBX) 連線是藉由分時多工 (TDM) 連線而建立，則可以部署一個或多個 PSTN 閘道 (如果連線是藉由 SIP 主幹建立，則不需要 PSTN 閘道)。
 

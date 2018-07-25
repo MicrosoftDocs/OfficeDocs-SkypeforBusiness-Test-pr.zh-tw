@@ -37,9 +37,12 @@ _**上次修改主題的時間：** 2012-10-04_
 
 2.  在命令列輸入下列命令：
     
-        New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
-    
-        New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
+    ```
+    New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
+    ```
+    ```
+    New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
+    ```
     
     <table>
     <thead>

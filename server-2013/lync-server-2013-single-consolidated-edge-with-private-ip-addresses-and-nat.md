@@ -17,14 +17,11 @@ _**上次修改主題的時間：** 2012-09-08_
 
 如果您的組織需要支援少於 15,000 個 Access Edge Service 用戶端連線、1,000 個使用中 Lync Server Web 會議服務用戶端連線，以及 500 個並行 A/V Edge 工作階段，而且不需顧慮 Edge Server 的高可用性，則此拓撲能提供低硬體成本和簡單部署的優勢。如果您需要較大的容量或是高可用性，則必須部署調整式合併 Edge Server 拓撲。如需詳細資訊，請參閱下列其中一項：
 
-  -   
-    [Lync Server 2013 中的調整式合併 Edge (使用 NAT 透過私人 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
+   [Lync Server 2013 中的調整式合併 Edge (使用 NAT 透過私人 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
 
-  -   
-    [Lync Server 2013 中的調整式合併 Edge (透過公用 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
+   [Lync Server 2013 中的調整式合併 Edge (透過公用 IP 位址進行 DNS 負載平衡)](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
 
-  -   
-    [Lync Server 2013 中含硬體負載平衡器的調整式合併 Edge](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
+   [Lync Server 2013 中含硬體負載平衡器的調整式合併 Edge](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
 下圖未顯示 Director，以及 Edge Server 與 前端集區或伺服器之間內部網路所部署的選用伺服器角色。如需 Director 拓撲的詳細資訊，請參閱＜ [Lync Server 2013 中 Director 的必要元件](lync-server-2013-components-required-for-the-director.md)＞。此圖代表一個反向 Proxy 伺服器。
 

@@ -33,14 +33,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
 公用立即訊息連線是一種特別類型的同盟，可讓 Lync Server 用戶端使用 Lync 2013 存取設定的公用立即訊息合作夥伴。目前的公用立即訊息連線合作夥伴包含：
 
-  -   
-    America Online
+   America Online
 
-  -   
-    Windows Live
+   Windows Live
 
-  -   
-    Yahoo\!
+   Yahoo\!
 
 公用立即訊息連線組態可讓 Lync 使用者透過下列方式存取公用立即訊息連線使用者：
 
