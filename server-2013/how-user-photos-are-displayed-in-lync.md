@@ -193,13 +193,18 @@ Lync 2013 針對使用者相片引進了高解析度影像支援。而且，Lync
 
 您可以在 Lync Server 管理命令介面 中執行 [Set-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy) 原則，設定用戶端原則來啟用 \[從網站顯示圖片\] 設定。下列 Cmdlet 範例示範如何為部署中的所有使用者全域設定原則：
 
-    $pe=New-CsClientPolicyEntry -Name EnablePresencePhotoOptions -Value True
-
-    $po=Get-CsClientPolicy -Identity Global
-
-    $po.PolicyEntry.Add($pe)
-
-    Set-CsClientPolicy -Instance $po
+  ```
+  $pe=New-CsClientPolicyEntry -Name EnablePresencePhotoOptions -Value True
+  ```
+  ```
+  $po=Get-CsClientPolicy -Identity Global
+  ```
+  ```
+  $po.PolicyEntry.Add($pe)
+  ```
+  ```
+  Set-CsClientPolicy -Instance $po
+  ```
 
 將影像上傳到使用者的信箱時，Exchange 會自動建立解析度較低的影像版本，以便在用戶端應用程式中使用。AD DS 中的使用者相片也會更新。
 

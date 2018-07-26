@@ -103,9 +103,12 @@ _**上次修改主題的時間：** 2014-04-22_
 
 23. 接收、匯入和指派公用憑證之後，您必須停止並重新啟動 Edge Server 服務。 啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。。在 Lync Server 管理命令介面 中輸入：
     
-        Stop-CsWindowsService
-    
-        Start-CsWindowsService
+    ```
+    Stop-CsWindowsService
+    ```
+    ```
+    Start-CsWindowsService
+    ```
 
 24. 若要設定 DNS 以用於 XMPP 同盟，您可以將下列 SRV 記錄新增至外部 DNS:\_xmpp-server.\_tcp.*\<domain name\>* SRV 記錄將解析至 Edge Server 的 Access Edge FQDN，且連接埠值為 5269
 

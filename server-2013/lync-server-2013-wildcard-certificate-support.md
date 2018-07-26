@@ -33,26 +33,19 @@ Lync Server 2013 使用憑證來提供通訊加密以及伺服器身分識別驗
 
 不支援將萬用字元項目做為任何角色的主體名稱 (又稱為一般名稱或 CN)。在 SAN 中使用萬用字元項目時，支援下列伺服器角色：
 
-  -   
-    **反向 Proxy。**   簡單 URL (Meet 和 Dial-in) 發行憑證支援萬用字元 SAN 項目。
+   **反向 Proxy。**   簡單 URL (Meet 和 Dial-in) 發行憑證支援萬用字元 SAN 項目。
 
-  -   
-    **反向 Proxy。**   發行憑證上的 LyncDiscover SAN 項目支援萬用字元 SAN 項目。 .
+   **反向 Proxy。**   發行憑證上的 LyncDiscover SAN 項目支援萬用字元 SAN 項目。 .
 
-  -   
-    **Director。**   簡單 URL (Meet 和 Dial-in) 和 Director Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
+   **Director。**   簡單 URL (Meet 和 Dial-in) 和 Director Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
 
-  -   
-    **前端伺服器 ( Standard Edition) 及 前端集區 ( Enterprise Edition)。**簡單 URL (Meet 和 Dial-in) 和前端 Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
+   **前端伺服器 ( Standard Edition) 及 前端集區 ( Enterprise Edition)。**簡單 URL (Meet 和 Dial-in) 和前端 Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
 
-  -   
-    **Exchange 整合通訊 (UM)。**   伺服器部署為獨立伺服器時，不使用 SAN 項目。
+   **Exchange 整合通訊 (UM)。**   伺服器部署為獨立伺服器時，不使用 SAN 項目。
 
-  -   
-    **Microsoft Exchange Server Client Access Server。**   內部和外部用戶端支援 SAN 中的萬用字元項目。
+   **Microsoft Exchange Server Client Access Server。**   內部和外部用戶端支援 SAN 中的萬用字元項目。
 
-  -   
-    **相同伺服器上的 Exchange 整合通訊 (UM) 和 Microsoft Exchange Server Client Access Server。**   支援萬用字元 SAN 項目。
+   **相同伺服器上的 Exchange 整合通訊 (UM) 和 Microsoft Exchange Server Client Access Server。**   支援萬用字元 SAN 項目。
 
 本主題中未介紹的伺服器角色：
 

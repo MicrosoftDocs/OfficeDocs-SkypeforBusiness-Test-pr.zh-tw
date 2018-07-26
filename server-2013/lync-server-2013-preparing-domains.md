@@ -23,9 +23,12 @@ _**上次修改主題的時間：** 2012-10-29_
 
 如果您的組織使用組織單位 (OU) 而非三個內建的容器 (也就是使用者、電腦和網域控制站)，您必須將讀取權限授與 Authenticated Users 群組。執行網域準備工作時，必須要有容器的讀取存取權。如果 Authenticated Users 群組不具有 OU 的讀取存取權，請依照以下程式碼範例的說明執行 **Grant-CsOuPermission** Cmdlet，以便授與每個 OU 的讀取權限。
 
-    Grant-CsOuPermission -ObjectType <User | Computer | InetOrgPerson | Contact | AppContact | Device> -OU <DN of the OU > 
-
-    Grant-CsOuPermission -ObjectType "user","contact",inetOrgPerson" -OU "ou=Redmond,dc=contoso,dc=net"
+  ```
+  Grant-CsOuPermission -ObjectType <User | Computer | InetOrgPerson | Contact | AppContact | Device> -OU <DN of the OU > 
+  ```
+  ```
+  Grant-CsOuPermission -ObjectType "user","contact",inetOrgPerson" -OU "ou=Redmond,dc=contoso,dc=net"
+  ```
 
 如需 **Grant-CsOuPermission** Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
 

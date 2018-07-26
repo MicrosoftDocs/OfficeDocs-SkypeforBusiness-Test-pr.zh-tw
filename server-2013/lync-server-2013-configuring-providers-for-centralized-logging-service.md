@@ -152,9 +152,12 @@ _**上次修改主題的時間：** 2014-03-19_
 
 2.  所提供的 Cmdlet 可讓您新增現有的提供者以及建立新的提供者。若要移除提供者，您必須針對 **Set-CsClsScenario** 的 Provider 參數使用 Replace 指示詞。完全移除提供者的唯一方式，是以相同名稱之重新定義的提供者來加以取代，並使用 Update 指示詞。例如，我們的提供者 LyssProvider 使用 WPP 定義為記錄類型，等級設為 Debug，旗標組為 TF\_CONNECTION 和 TF\_DIAG。您需將旗標變更為“All”。若要變更提供者，請輸入下列項目：
     
-        $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "All"
-    
-        Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Replace=$LyssProvider}
+    ```
+    $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Debug" -Flags "All"
+    ```
+    ```
+    Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Replace=$LyssProvider}
+    ```
 
 3.  若要完全移除某案例和與其相關的提供者，請輸入下列項目：
     

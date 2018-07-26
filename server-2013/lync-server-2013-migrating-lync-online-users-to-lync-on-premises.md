@@ -40,9 +40,12 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - 在您的內部部署中，於 Lync Server 管理命令介面輸入下列 Cmdlet，以建立 Lync Online 的主機服務提供者：
         
-            Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
-        
-            New-CSHostingProvider -Identity LyncOnline -Name LyncOnlin -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
+        ```
+        Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
+        ```
+        ```
+        New-CSHostingProvider -Identity LyncOnline -Name LyncOnlin -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
+        ```
 
 2.  確認您在內部部署的 Edge Server 上有憑證鏈結可讓您連線至 Lync Online (如下表所示)。您可以在下列位置中下載此鏈結： [https://corp.sts.microsoft.com/Onboard/ADFS\_Onboarding\_Pack/corp\_sts\_certs.zip](https://corp.sts.microsoft.com/onboard/adfs_onboarding_pack/corp_sts_certs.zip)。
     
@@ -107,9 +110,12 @@ _**上次修改主題的時間：** 2015-03-09_
     
     若要移動單一使用者，請輸入：
     
-        $cred = Get-Credential
-    
-        Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
+    ```
+    $cred = Get-Credential
+    ```
+    ```
+    Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
+    ```
     
     若要移動多位使用者，請使用 **Get-CsUSer** Cmdlet 搭配 –Filter 參數，以選取具有特定屬性的使用者。舉例來說，若要選取所有 Lync Online 使用者，請使用下列篩選：{Hosting Provider –eq “sipfed.online.lync.om”}。接著，您可以將傳回的使用者結果輸送至 **Move-CsUSer** Cmdlet，如下所示。
     

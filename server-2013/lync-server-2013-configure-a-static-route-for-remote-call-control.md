@@ -85,9 +85,12 @@ _**上次修改主題的時間：** 2012-09-22_
 
 4.  若要將新建立的靜態路由保存在 中央管理存放區中，請視需要執行下列其中一項：
     
-        Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
-    
-        Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
+    ```
+    Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
+    ```
+    ```
+    Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
+    ```
 
 ## 請參閱
 

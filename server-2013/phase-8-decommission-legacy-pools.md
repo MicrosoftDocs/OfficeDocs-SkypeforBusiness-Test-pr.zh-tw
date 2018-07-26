@@ -35,24 +35,17 @@ _**上次修改主題的時間：** 2014-06-04_
 
 ## 本章節內容
 
-  -   
-    [更新 DNS SRV 記錄](update-dns-srv-records.md)
+   [更新 DNS SRV 記錄](update-dns-srv-records.md)
 
-  -   
-    [將 Lync Server 2010 中央管理伺服器移至 Lync Server 2013](move-the-lync-server-2010-central-management-server-to-lync-server-2013.md)
+   [將 Lync Server 2010 中央管理伺服器移至 Lync Server 2013](move-the-lync-server-2010-central-management-server-to-lync-server-2013.md)
 
-  -   
-    [移動會議目錄](move-lync-server-2010-conference-directories-to-lync-server-2013.md)
+   [移動會議目錄](move-lync-server-2010-conference-directories-to-lync-server-2013.md)
 
-  -   
-    [移除封存伺服器關聯](remove-the-archiving-server-association.md)
+   [移除封存伺服器關聯](remove-the-archiving-server-association.md)
 
-  -   
-    [移除監控伺服器關聯](remove-the-monitoring-server-association.md)
+   [移除監控伺服器關聯](remove-the-monitoring-server-association.md)
 
-  -   
-    [移除 Enterprise Edition 前端伺服器或 Standard Edition 前端伺服器](remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server.md)
+   [移除 Enterprise Edition 前端伺服器或 Standard Edition 前端伺服器](remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server.md)
 
-  -   
-    [移除後端伺服器上的 SQL Server 執行個體與資料庫](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
+   [移除後端伺服器上的 SQL Server 執行個體與資料庫](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
 

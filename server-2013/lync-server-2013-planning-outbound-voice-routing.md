@@ -59,17 +59,13 @@ _**上次修改主題的時間：** 2015-03-09_
 
 本節提供設定下列撥出電話路由伺服器設定的指導方針：
 
-  -   
-    [Lync Server 2013 中的撥號對應表和正規化規則](lync-server-2013-dial-plans-and-normalization-rules.md)
+   [Lync Server 2013 中的撥號對應表和正規化規則](lync-server-2013-dial-plans-and-normalization-rules.md)
 
-  -   
-    [Lync Server 2013 中的語音原則](lync-server-2013-voice-policies.md)
+   [Lync Server 2013 中的語音原則](lync-server-2013-voice-policies.md)
 
-  -   
-    [Lync Server 2013 中的 PSTN 使用方式記錄](lync-server-2013-pstn-usage-records.md)
+   [Lync Server 2013 中的 PSTN 使用方式記錄](lync-server-2013-pstn-usage-records.md)
 
-  -   
-    [Lync Server 2013 中的語音路由](lync-server-2013-voice-routes.md)
+   [Lync Server 2013 中的語音路由](lync-server-2013-voice-routes.md)
 
 ## 請參閱
 

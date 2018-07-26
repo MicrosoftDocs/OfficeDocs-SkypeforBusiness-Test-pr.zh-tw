@@ -150,13 +150,17 @@ Lync Server 支援下列三種簡單 URL：Meet、Dial-In 和 Admin。您必須�
 
 如要如此設定，請建立兩個 GeoDNS 位址。每個位址都包含兩個 DNS A 或 CNAME 記錄，這兩個記錄會解析為針對災害復原目的而配對的兩個集區。一個 GeoDNS 位址用於內部存取，並解析為該兩個集區的內部 Web FQDN 或負載平衡器 IP 位址。另一個 GeoDNS 位址用於外部存取，並解析為該兩個集區的外部 Web FQDN 或負載平衡器 IP 位址。下列範例針對 Meet 簡單 URL，並使用集區的 FQDN。
 
-    Meet-int.geolb.contoso.com
-         Pool1InternalWebFQDN.contoso.com
-         Pool2InternalWebFQDN.contoso.com
+  ```
+  Meet-int.geolb.contoso.com
+       Pool1InternalWebFQDN.contoso.com
+       Pool2InternalWebFQDN.contoso.com
+  ```     
 
-    Meet-ext.geolb.contoso.com
-         Pool1ExternalWebFQDN.contoso.com
-         Pool2ExternalWebFQDN.contoso.com
+  ```
+  Meet-ext.geolb.contoso.com
+       Pool1ExternalWebFQDN.contoso.com
+       Pool2ExternalWebFQDN.contoso.com
+  ```     
 
 然後建立 CNAME 記錄，其中會將 Meet 簡單 URL (例如 meet.contoso.com) 解析為兩個 GeoDNS 位址。
 
