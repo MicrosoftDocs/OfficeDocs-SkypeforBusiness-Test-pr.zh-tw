@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2013-01-30_
 
   - **CsAdministrator：**此系統管理員角色可以執行 CsVoiceAdministrator 、CsServerAdministrator 和 CsUserAdministrator 的所有工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需管理權限的詳細資訊，請參閱規劃文件中的＜<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需管理權限的詳細資訊，請參閱規劃文件中的＜<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>＞。
+
 
 
 ## 請參閱

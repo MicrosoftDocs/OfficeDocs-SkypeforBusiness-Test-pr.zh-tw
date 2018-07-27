@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 如果您要建立新的語音原則，請依照下列步驟執行。如果您要編輯語音原則，請參閱＜[在 Lync Server 2013 中修改語音原則和設定 PSTN 使用方式記錄](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md)＞中的程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每一個語音原則都必須至少有一個相關聯的公用交換電話網路 (PSTN) 使用方式記錄。若要查看 Enterprise Voice 部署中所有可用 PSTN 使用方式記錄的清單，請參閱＜<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中檢視 PSTN 使用方式記錄</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每一個語音原則都必須至少有一個相關聯的公用交換電話網路 (PSTN) 使用方式記錄。若要查看 Enterprise Voice 部署中所有可用 PSTN 使用方式記錄的清單，請參閱＜<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中檢視 PSTN 使用方式記錄</a>＞。
+
 
 
 ## 若要建立語音原則
@@ -47,18 +38,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 5.  如果語音原則範圍是 \[使用者\]，請在 **\[名稱\]** 欄位中輸入原則的描述性名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果語音原則範圍是 [站台]，則 <strong>[新語音原則]</strong> 的 <strong>[名稱]</strong> 欄位中會預先填入網站名稱，而且無法變更。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果語音原則範圍是 [站台]，則 <strong>[新語音原則]</strong> 的 <strong>[名稱]</strong> 欄位中會預先填入網站名稱，而且無法變更。
+    
 
 
 6.  (選用) 為語音原則輸入其他描述性資訊。
@@ -67,18 +49,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - **\[語音信箱逸出\]** 可避免來電在設定了同步響鈴，且電話已關機、沒電或不在服務範圍內時，立即路由到使用者的行動電話語音信箱系統。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此功能只可透過 Lync Server 管理命令介面 設定</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 此功能只可透過 Lync Server 管理命令介面 設定
+        
     
       - **\[來電轉接\]** 可讓使用者將來電轉接到其他電話與用戶端裝置。Lync Server 2013 針對來電轉接提供多種設定選項。例如若某公司不想讓來電向外轉接到 PSTN，管理員可套用特殊語音原則來部署此限制。預設為啟用。
     
@@ -96,18 +69,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - **頻寬原則覆寫**可讓系統管理員覆寫對於特定使用者之通話許可控制原則的決定。預設為停用。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只會針對打給使用者的來電，而不會針對使用者撥出的電話覆寫此原則。工作階段建立完畢後，便可準確地記錄頻寬使用量。為順利做出適宜的通話許可控制決策，請勿頻繁使用此設定，能不用就不用。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只會針對打給使用者的來電，而不會針對使用者撥出的電話覆寫此原則。工作階段建立完畢後，便可準確地記錄頻寬使用量。為順利做出適宜的通話許可控制決策，請勿頻繁使用此設定，能不用就不用。
+        
     
       - **\[惡意來電追蹤\]** 可讓使用者使用用戶端 UI 來回報惡意來電 (如炸彈威脅)，此舉會在詳細通話記錄 (CDR) 中將通話標上旗標。預設為停用。
 
@@ -123,18 +87,9 @@ _**上次修改主題的時間：** 2012-11-01_
         
         2.  在 **\[名稱\]** 欄位中，輸入記錄的唯一描述性名稱。例如，您可能會想要針對 Redmond 的全職員工建立一個名為 **Redmond** 的 PSTN 使用方式記錄，並針對臨時員工建立另一個名為 **RedmondTemps** 的 PSTN 使用方式記錄。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>在 Enterprise Voice 部署內，PSTN 使用方式記錄名稱必須是唯一的。儲存記錄之後，就無法編輯 <strong>[名稱]</strong> 欄位。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+            > 在 Enterprise Voice 部署內，PSTN 使用方式記錄名稱必須是唯一的。儲存記錄之後，就無法編輯 <strong>[名稱]</strong> 欄位。
+            
         
         3.  使用下列任何一種方法來關聯及設定此 PSTN 使用方式記錄的路由：
             
@@ -166,18 +121,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 9.  排列 PSTN 使用方式記錄，以獲得最佳效能。若要變更清單中某筆記錄的位置，請反白顯示記錄名稱，然後按一下向上或向下箭頭。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>PSTN 使用方式記錄列在語音原則中的順序十分重要。Lync Server 會從上到下周遊清單。建議您依使用頻率來組織清單，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > PSTN 使用方式記錄列在語音原則中的順序十分重要。Lync Server 會從上到下周遊清單。建議您依使用頻率來組織清單，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。
+    
 
 
 10. 若要為此語音原則對應及設定來電轉接與同時響鈴的 PSTN 使用方式記錄，請執行下列任何一項動作：
@@ -198,18 +144,9 @@ _**上次修改主題的時間：** 2012-11-01_
             
             2.  在 \[名稱\] 欄位中，輸入記錄的唯一描述性名稱。
                 
-                <table>
-                <thead>
-                <tr class="header">
-                <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="odd">
-                <td>在 Enterprise Voice 部署內，PSTN 使用方式記錄名稱必須是唯一的。儲存記錄之後，就無法編輯 [名稱] 欄位。</td>
-                </tr>
-                </tbody>
-                </table>
+                > [!NOTE]  
+                > 在 Enterprise Voice 部署內，PSTN 使用方式記錄名稱必須是唯一的。儲存記錄之後，就無法編輯 [名稱] 欄位。
+                
             
             3.  使用下列任何一種方法來關聯及設定此 PSTN 使用方式記錄的路由：
                 
@@ -241,36 +178,18 @@ _**上次修改主題的時間：** 2012-11-01_
 
 11. (選用) 輸入號碼來測試語音原則，然後按一下 **\[執行\]**。測試結果會顯示於 **\[要測試的轉譯號碼\]** 底下。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以儲存尚未通過測試的語音原則，稍後再加以重新設定。如需詳細資訊，請參閱＜<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以儲存尚未通過測試的語音原則，稍後再加以重新設定。如需詳細資訊，請參閱＜<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>＞。
+    
 
 
 12. 按一下 \[確定\]。
 
 13. 在 **\[語音原則\]** 頁面上，依序按一下 **\[認可\]** 和 **\[全部認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只要建立或修改語音原則，就必須執行 <strong>[全部認可]</strong> 命令來發行設定變更。如需詳細資訊，請參閱操作文件中的＜<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只要建立或修改語音原則，就必須執行 <strong>[全部認可]</strong> 命令來發行設定變更。如需詳細資訊，請參閱操作文件中的＜<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>＞。
+    
 
 
 14. (選用) 語音信箱逸出會偵測到來電已由使用者的行動電話語音信箱立即接聽，並中斷與行動電話語音信箱通話。這樣來電可持續在使用者的其他端點響鈴，讓使用者有時間接聽來電。有關如何設定語音信箱原則的詳細資訊，請參閱＜[在 Lync Server 2013 中設定語音信箱逸出功能](lync-server-2013-configuring-voice-mail-escape.md)＞。

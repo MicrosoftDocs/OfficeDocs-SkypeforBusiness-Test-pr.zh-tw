@@ -47,16 +47,7 @@ SIP 主幹帶來的成本節省相當可觀：
 
   - E9-1-1 緊急通話可讓接聽 911 通話的當局人員從來電者的電話號碼判斷其位置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請連絡 ITSP 並索取他們支援的服務清單，查看可為您的組織啟用哪些服務。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 請連絡 ITSP 並索取他們支援的服務清單，查看可為您的組織啟用哪些服務。
+
 

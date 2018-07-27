@@ -21,18 +21,9 @@ Microsoft Lync Server 2013 監視基礎結構有了重大變革，首先就是�
 
   - 降低 Lync Server 安裝及管理的複雜性。因為監視服務會自動組合在各前端伺服器上，所以您不再需要安裝、設定及管理監控伺服器角色。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 中也棄用了封存伺服器角色。就像監視服務一樣，Lync Server 2013 封存服務現在也是組合在各前端伺服器上。這很值得注意，因為監視和封存經常共用相同的 SQL Server 資料庫執行個體。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 中也棄用了封存伺服器角色。就像監視服務一樣，Lync Server 2013 封存服務現在也是組合在各前端伺服器上。這很值得注意，因為監視和封存經常共用相同的 SQL Server 資料庫執行個體。
+
 
 
 如您所預期，這些變更對於安裝及管理監視服務的方式有著重大影響。例如，由於監控伺服器角色已不存在，所以監控伺服器節點已從 Lync Server 拓撲產生器中移除；這也表示您不會再使用拓撲產生器的 \[新增監控伺服器精靈\] 來新增監控伺服器至拓撲 (該精靈已不存在)。反之，您通常會藉由完成下列兩個步驟，在拓撲中實作監視服務：
@@ -43,34 +34,16 @@ Microsoft Lync Server 2013 監視基礎結構有了重大變革，首先就是�
 
 雖然在您建立新集區的同時啟用監視通常會比較容易，但也可能會建立停用監視的新集區。如果您這麼做，可以在稍後使用拓撲產生器來啟用服務：拓撲產生器有提供一種方法，可為集區啟用或停用監視，或是將集區與不同的監控存放區建立關聯。請記得，雖然已經沒有監控伺服器角色了，您還是需要建立一或多個監控存放區：用來儲存監視服務所收集之資料的後端資料庫。這些後端資料庫可以用 Microsoft SQL Server 2008 R2 或 Microsoft SQL Server 2012 來建立。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果已為集區啟用監視，您可以停用收集監視資料的程序，而不需變更拓撲：Lync Server 管理命令介面有提供一種方法，可讓您停用 (之後再重新啟用) 詳細通話記錄 (CDR) 和經驗品質 (QoE) 資料收集。如需詳細資訊，請參閱本文件中的＜設定詳細通話記錄和經驗品質設定＞一節。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果已為集區啟用監視，您可以停用收集監視資料的程序，而不需變更拓撲：Lync Server 管理命令介面有提供一種方法，可讓您停用 (之後再重新啟用) 詳細通話記錄 (CDR) 和經驗品質 (QoE) 資料收集。如需詳細資訊，請參閱本文件中的＜設定詳細通話記錄和經驗品質設定＞一節。
+
 
 
 針對 Lync Server 2013 中的監視作業，另一項重要的增強功能就是 Lync Server 監視報告現在可支援 IPv6：使用 \[IP 位址\] 欄位的報告將會依據下列條件顯示 IPv4 或 IPv6 位址：1) 所使用的 SQL 查詢；以及 2) IPv6 位址是否儲存在監控資料庫中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>確保 SQL Server Agent 服務的 [啟動類型] 為 [自動]，而且 SQL Server Agent 服務是針對存放監控資料庫的 SQL 執行個體執行，以便預設監控 SQL Server 維護工作可以在 SQL Server Agent 服務的控制下依其排程執行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 確保 SQL Server Agent 服務的 [啟動類型] 為 [自動]，而且 SQL Server Agent 服務是針對存放監控資料庫的 SQL 執行個體執行，以便預設監控 SQL Server 維護工作可以在 SQL Server Agent 服務的控制下依其排程執行。
+
 
 
 本文件將帶領您完成為 Lync Server 2013 安裝及設定監視作業和監視報告的程序。文件中提供逐步指示，將可協助您：

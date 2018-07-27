@@ -32,18 +32,9 @@ _**上次修改主題的時間：** 2013-02-20_
     
         New-CsClientPolicy -Identity "NewCommonAreaPhonePolicy" - EnableHotdesking $True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立此原則之後，您必須將其指派給適合的公用區電話。如需詳細資訊，請參閱＜<a href="lync-server-2013-assign-policies-to-a-common-area-phone.md">指派原則給公共區域電話</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建立此原則之後，您必須將其指派給適合的公用區電話。如需詳細資訊，請參閱＜<a href="lync-server-2013-assign-policies-to-a-common-area-phone.md">指派原則給公共區域電話</a>＞。
+
 
 
 ## 停用公用辦公室

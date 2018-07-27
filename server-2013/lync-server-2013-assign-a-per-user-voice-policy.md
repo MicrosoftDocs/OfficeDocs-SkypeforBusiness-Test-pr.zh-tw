@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 5.  在 \[語音原則\] 底下的 \[編輯 Lync Server 使用者\] 中，選取想要套用的使用者原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[&lt;自動&gt;] 設定會套用預設伺服器或全域原則設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > [&lt;自動&gt;] 設定會套用預設伺服器或全域原則設定。
+    
 
 
 ## 使用 Lync Server 管理命令介面指派使用者專屬的語音原則

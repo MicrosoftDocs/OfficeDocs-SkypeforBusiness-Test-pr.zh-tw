@@ -67,18 +67,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 7.  將 常設聊天室伺服器 設為動態伺服器。從 Lync Server 命令殼層使用 **Set-CsPersistentChatActiveServer** Cmdlet 設定動態伺服器的清單。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所有作用中的伺服器必須位於與新主要資料庫相同的資料中心，或位於具有低延遲/高頻寬資料庫連線的資料中心內。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 所有作用中的伺服器必須位於與新主要資料庫相同的資料中心，或位於具有低延遲/高頻寬資料庫連線的資料中心內。
+    
     
     此時從 常設聊天室伺服器 主要資料庫到 常設聊天室伺服器 備份資料庫的容錯移轉即可成功完成。
 

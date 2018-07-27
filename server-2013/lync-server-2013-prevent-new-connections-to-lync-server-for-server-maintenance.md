@@ -35,18 +35,9 @@ Lync Server 讓您將伺服器離線 (例如，為了套用軟體或硬體升級
 
 除了防止執行 Lync Server 的伺服器上的所有服務進行新的連線，您還可以防止個別 Lync Server 服務進行新的連線。例如，當您需要套用無須讓整部伺服器關機的 Lync Server 更新時，這個方法就很有用。請注意，當您要防止某個服務進行連線，必須選取已經顯示在 Windows 服務清單中的分組服務項目。例如，Lync Server 前端服務與監控的資料收集代理程式等，都是個別的 Lync Server 服務，不過在 Windows 服務清單裡，這些服務都會整合並顯示為 Lync Server 前端服務。您可以防止 Lync Server 前端服務進行新的連線，不過您無法防止這兩個基礎 Lync Server 服務個別進行新的連線。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>設定伺服器防止新連線、接著重新啟動伺服器後，依預設伺服器會在啟動後立即開始接受新連線。若要避免這種情形，請在重新啟動伺服器前，將伺服器設為僅能手動暫停和繼續。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 設定伺服器防止新連線、接著重新啟動伺服器後，依預設伺服器會在啟動後立即開始接受新連線。若要避免這種情形，請在重新啟動伺服器前，將伺服器設為僅能手動暫停和繼續。
+
 
 
 ## 防止新連線連入 Lync Server：
@@ -61,18 +52,9 @@ Lync Server 讓您將伺服器離線 (例如，為了套用軟體或硬體升級
 
 5.  (選用，但建議) 按一下 **\[啟動類型\]** 旁的 **\[手動\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>設定伺服器防止新連線、接著重新啟動伺服器後，依預設伺服器會在啟動後立即開始接受新連線。若要避免這種情形，請在重新啟動伺服器前，將伺服器設為僅能手動暫停和繼續。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 設定伺服器防止新連線、接著重新啟動伺服器後，依預設伺服器會在啟動後立即開始接受新連線。若要避免這種情形，請在重新啟動伺服器前，將伺服器設為僅能手動暫停和繼續。
+    
 
 
 6.  完成時，請按一下 **\[確定\]**。

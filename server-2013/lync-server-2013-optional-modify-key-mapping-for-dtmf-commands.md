@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-30_
 
 電話撥入式會議使用者可以按電話鍵盤上的按鍵，以執行複頻式訊號 (DTMF) 命令。DTMF 命令可讓撥電話參與會議的使用者使用其電話鍵盤來控制會議設定 (例如自行設定靜音和解除靜音，或鎖定和解除鎖定會議)。您可以使用 Cmdlet 來修改 DTMF 命令所用的按鍵。這是選用步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需這些 Cmdlet 及可用 DTMF 選項的詳細資訊，請參閱 Lync Server 管理命令介面文件或 Lync Server 管理命令介面命令列說明。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需這些 Cmdlet 及可用 DTMF 選項的詳細資訊，請參閱 Lync Server 管理命令介面文件或 Lync Server 管理命令介面命令列說明。
+
 
 
 ## 若要修改 DTMF 命令的按鍵對應

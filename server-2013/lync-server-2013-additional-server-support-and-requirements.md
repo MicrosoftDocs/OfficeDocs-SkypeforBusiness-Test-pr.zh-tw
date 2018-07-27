@@ -51,18 +51,9 @@ _**上次修改主題的時間：** 2013-12-09_
 
   - Microsoft Visual C++ 2012 可轉散發套件
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您安裝 Lync Server 2013 時，已自動安裝 Microsoft Visual C++ 2012 可轉散發套件。請勿安裝及使用任何其他版本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您安裝 Lync Server 2013 時，已自動安裝 Microsoft Visual C++ 2012 可轉散發套件。請勿安裝及使用任何其他版本。
+    
 
 
   - URL Rewrite Module Version 2.0 可轉散發套件

@@ -41,18 +41,9 @@ _**上次修改主題的時間：** 2012-10-15_
 
 11. 按一下 **\[認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建立新的頻寬原則設定檔並不會自動強制頻寬限制。您必須先讓原則設定檔與網站產生關聯。如需有關如何讓原則設定檔與網站產生關聯的詳細資訊，請參閱＜<a href="lync-server-2013-creating-or-modifying-network-sites.md">建立或修改網站</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 建立新的頻寬原則設定檔並不會自動強制頻寬限制。您必須先讓原則設定檔與網站產生關聯。如需有關如何讓原則設定檔與網站產生關聯的詳細資訊，請參閱＜<a href="lync-server-2013-creating-or-modifying-network-sites.md">建立或修改網站</a>＞。
+    
 
 
 ## 若要修改頻寬原則設定檔
@@ -71,18 +62,9 @@ _**上次修改主題的時間：** 2012-10-15_
 
 7.  按一下 **\[認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您修改頻寬原則設定檔時，將會立即更新與此頻寬原則設定檔關聯的所有網路網站的頻寬限制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您修改頻寬原則設定檔時，將會立即更新與此頻寬原則設定檔關聯的所有網路網站的頻寬限制。
+    
 
 
 ## 請參閱

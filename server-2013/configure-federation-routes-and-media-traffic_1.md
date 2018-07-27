@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 請使用下列程序，將 Office Communications Server 2007 R2 Edge Server 與 Director 的同盟路由與媒體流量路由轉換至 Lync Server 2013 Edge Server，以利進行單一網站部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要變更同盟路由與媒體流量路由，您需要排程 Lync Server 2013 及 Office Communications Server 2007 R2 Edge Server 的維護停機時間。因此，整個轉換程序也意味著在中斷期間，無法使用同盟存取。您應將停機時間排程在預計會有最少使用者活動的時間，也應對您的使用者提供充分的通知。請仔細規劃這項中斷，並在組織內設定合理的期望。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 若要變更同盟路由與媒體流量路由，您需要排程 Lync Server 2013 及 Office Communications Server 2007 R2 Edge Server 的維護停機時間。因此，整個轉換程序也意味著在中斷期間，無法使用同盟存取。您應將停機時間排程在預計會有最少使用者活動的時間，也應對您的使用者提供充分的通知。請仔細規劃這項中斷，並在組織內設定合理的期望。
+
 
 
 <table>
@@ -54,18 +45,9 @@ _**上次修改主題的時間：** 2012-10-16_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若 XMPP 同盟是透過 Lync Server 2013 Edge Server 路由，除非所有使用者皆已移至 Lync Server 2013、已設定 XMPP 原則與憑證、已在 Lync Server 2013 設定 XMPP 同盟協力廠商，且已更新 DNS 項目，否則舊版 Office Communications Server 2007 R2 使用者將無法與 XMPP 同盟協力廠商通訊。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 若 XMPP 同盟是透過 Lync Server 2013 Edge Server 路由，除非所有使用者皆已移至 Lync Server 2013、已設定 XMPP 原則與憑證、已在 Lync Server 2013 設定 XMPP 同盟協力廠商，且已更新 DNS 項目，否則舊版 Office Communications Server 2007 R2 使用者將無法與 XMPP 同盟協力廠商通訊。
+
 
 
 若要在新增或移除伺服器角色時順利發行、啟用或停用拓撲，您應該以 RTCUniversalServerAdmins 和 Domain Admins 群組成員的使用者身分登入。此外也可委派正確的使用者權限來新增伺服器角色。如需詳細資訊，請參閱 Standard Edition Server 或 Enterprise Edition Server 部署文件中的＜ [在 Lync Server 2013 中委派設定權限](lync-server-2013-delegate-setup-permissions.md)＞。若要進行其他設定變更，則僅需要 RTCUniversalServerAdmins 群組的成員資格。
@@ -106,18 +88,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 5.  在 \[指定外部 Edge\] 中，清除 \[此 Edge 集區是用於同盟和公用 IM 連線\] 核取方塊。這樣就會移除與 BackCompatSite 的同盟關聯。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步驟非常重要。您必須清除這個選項，以移除舊版的同盟關聯。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 此步驟非常重要。您必須清除這個選項，以移除舊版的同盟關聯。
+    
 
 
 6.  按 \[下一步\] 並接受精靈剩餘頁面的預設值。
@@ -164,18 +137,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 2.  展開節點，再以滑鼠右鍵按一下所列出的 \[ Edge Server\]，然後按一下 \[編輯屬性\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您僅可為單一 Edge 集區啟用同盟。如果您有多個 Edge 集區，請選取一個來做為同盟 Edge 集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您僅可為單一 Edge 集區啟用同盟。如果您有多個 Edge 集區，請選取一個來做為同盟 Edge 集區。
+    
 
 
 3.  選取 \[一般\] 頁面的 \[啟用此 Edge 集區的同盟 (連接埠 5061)\] 核取方塊。
@@ -258,18 +222,9 @@ _**上次修改主題的時間：** 2012-10-16_
 
 2.  將外部防火牆的路由規則或硬體負載平衡設定，更新成將外部存取 (通常是連接埠 443) 及同盟 (通常是連接埠 5061) 的 SIP 流量傳送至 Lync Server 2013  Edge Server，不是傳送至舊版 Edge Server。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您沒有硬體負載平衡器，您必須更新同盟的 DNS A 記錄，才能解析新的 Lync Server Access Edge Server。要在盡量不中斷服務的情況下完成此工作，請降低外部 Lync Server Access Edge FQDN 的 TTL 值，這樣 DNS 更新並指向新的 Lync Server Access Edge Server 時，同盟與遠端存取才能快速更新。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您沒有硬體負載平衡器，您必須更新同盟的 DNS A 記錄，才能解析新的 Lync Server Access Edge Server。要在盡量不中斷服務的情況下完成此工作，請降低外部 Lync Server Access Edge FQDN 的 TTL 值，這樣 DNS 更新並指向新的 Lync Server Access Edge Server 時，同盟與遠端存取才能快速更新。
+    
 
 
 3.  接下來，停止每部 Edge Server 電腦的 \[Lync Server Server Access Edge\] 。

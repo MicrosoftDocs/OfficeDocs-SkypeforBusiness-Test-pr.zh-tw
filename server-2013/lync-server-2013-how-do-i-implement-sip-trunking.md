@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-03-18_
 
 每個 中繼伺服器都有內部網路介面與外部網路介面。內部介面會連線至 前端伺服器。外部介面常被稱為閘道介面，因為過去人們都用其來將 中繼伺服器連線至公用交換電話網路 (PSTN) 閘道或 IP-PBX。若要實作 SIP 主幹，您必須將 中繼伺服器的外部介面連線至 ITSP 的外部 Edge 元件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ITSP 的外部 Edge 元件可以是工作階段界限控制器 (SBC)、路由器或閘道。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> ITSP 的外部 Edge 元件可以是工作階段界限控制器 (SBC)、路由器或閘道。
+
 
 
 如需 中繼伺服器的詳細資訊，請參閱＜ [Lync Server 2013 中的中繼伺服器元件](lync-server-2013-mediation-server-component.md)＞。
@@ -57,18 +48,9 @@ _**上次修改主題的時間：** 2013-03-18_
 
 在考量應部署集中式或分散式 SIP 主幹時，必須進行成本效益分析。在某些情況下，即便並非必要，選擇分散式部署模型可能較有利。在完全集中式部署中，所有 分支網站流量都會透過 WAN 連結進行路由。與其為 WAN 連結所需的頻寬支付高額費用，您可能寧可使用分散式 SIP 主幹。例如，您可能會將 Standard Edition 伺服器部署在與 中央網站同盟的 分支網站上，或是使用小型閘道部署 Survivable Branch Appliance 或 Survivable Branch 伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需分散式 SIP 主幹的詳細資訊，請參閱＜ <a href="lync-server-2013-branch-site-sip-trunking.md">Lync Server 2013 中的分支網站 SIP 主幹連線</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需分散式 SIP 主幹的詳細資訊，請參閱＜ <a href="lync-server-2013-branch-site-sip-trunking.md">Lync Server 2013 中的分支網站 SIP 主幹連線</a>＞。
+
 
 
 ## 支援的 SIP 主幹連線類型
@@ -97,18 +79,9 @@ Lync Server 支援 SIP 主幹使用下列連線類型：
 
 SIP 主幹最大頻寬 = 同時通話數上限 x (64 kbps + 標頭大小)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>標頭大小上限為 20 個位元組。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 標頭大小上限為 20 個位元組。
+
 
 
 ## 轉碼器支援
@@ -125,16 +98,7 @@ SIP 主幹連線之服務提供者端的實作方式，會根據 ITSP 而不同�
 
 如需 Microsoft 認證 SIP 主幹提供者的詳細資訊，請連絡 Microsoft 代表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用 Microsoft 認證服務提供者，以確定 ITSP 支援所有周遊 SIP 主幹的功能 (例如，設定和管理工作階段，以及支援所有延伸的 VoIP 服務)。Microsoft 技術支援未延伸至使用非認證提供者的設定。如果您目前使用未獲得 SIP 主幹認證的網際網路服務提供者，則可以選擇繼續使用該提供者做為 ISP，並使用 Microsoft 認證的提供者進行 SIP 主幹作業。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您必須使用 Microsoft 認證服務提供者，以確定 ITSP 支援所有周遊 SIP 主幹的功能 (例如，設定和管理工作階段，以及支援所有延伸的 VoIP 服務)。Microsoft 技術支援未延伸至使用非認證提供者的設定。如果您目前使用未獲得 SIP 主幹認證的網際網路服務提供者，則可以選擇繼續使用該提供者做為 ISP，並使用 Microsoft 認證的提供者進行 SIP 主幹作業。
+
 

@@ -53,18 +53,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
 ![中繼伺服器通訊協定圖表](images/Gg398399.c3d39ba0-e323-4a58-8f07-4e80d3278af2(OCS.15).jpg "中繼伺服器通訊協定圖表")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在 PSTN 閘道與 中繼伺服器之間的網路上使用 TCP 或 RTP/RTCP (而非 SRTP 或 SRTCP)，建議您採取相關措施以協助確保網路的安全性及隱私。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您在 PSTN 閘道與 中繼伺服器之間的網路上使用 TCP 或 RTP/RTCP (而非 SRTP 或 SRTCP)，建議您採取相關措施以協助確保網路的安全性及隱私。
+
 
 
 ## 本節內容

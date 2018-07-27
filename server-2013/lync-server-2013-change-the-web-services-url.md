@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-07_
 
 當您設定前端集區和 Standard Edition Server 時，可以選擇設定外部 Web 伺服器陣列完整網域名稱 (FQDN) 和相關聯的連接埠。如果您在執行 Lync Server 部署精靈時未設定此 URL，則需要手動設定這些設定。系統管理員通常不需要修改這些設定，因為這些是建議值和預設連接埠。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列螢幕擷取畫面是在設定 Standard Edition Server 時擷取的，因此 [覆寫 FQDN] 選項已停用。該選項會在設定前端集區中的 Enterprise Edition Server 時啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下列螢幕擷取畫面是在設定 Standard Edition Server 時擷取的，因此 [覆寫 FQDN] 選項已停用。該選項會在設定前端集區中的 Enterprise Edition Server 時啟用。
+
 
 
 ![編輯 Web 服務集區設定](images/Gg520992.fbdf5cc9-479a-463f-bb1d-53575ecdfc9d(OCS.15).jpg "編輯 Web 服務集區設定")

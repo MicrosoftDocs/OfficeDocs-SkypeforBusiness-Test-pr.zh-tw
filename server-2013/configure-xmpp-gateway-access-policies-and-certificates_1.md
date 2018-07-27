@@ -23,18 +23,9 @@ XMPP 同盟會根據「可延伸訊息與目前狀態通訊協定」(XMPP) 定�
 
 設定原則以支援可延伸訊息與目前狀態通訊協定 (XMPP) 同盟夥伴時，原則會套用至 XMPP 同盟網域，但不會套用至工作階段初始通訊協定 (SIP) 即使訊息 (IM) 服務提供者 (例如 Windows Live) 的使用者或 SIP 同盟網域。您要為每個 XMPP 同盟網域設定想讓使用者新增連絡人並可相互通訊的 XMPP 同盟夥伴。一旦實施原則，就必須設定 XMPP 閘道憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要開始 XMPP 閘道移轉，您必須部署 Lync Server 2013 XMPP 閘道，並設定存取原則，以啟用 Lync Server 2013 XMPP 閘道的使用者。執行這些步驟前，必須先將所有使用者移至 Lync Server 2013 部署。如需詳細資訊，請參閱 <a href="configure-xmpp-gateway-on-lync-server-2013_1.md">在 Lync Server 2013 設定 XMPP 閘道</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要開始 XMPP 閘道移轉，您必須部署 Lync Server 2013 XMPP 閘道，並設定存取原則，以啟用 Lync Server 2013 XMPP 閘道的使用者。執行這些步驟前，必須先將所有使用者移至 Lync Server 2013 部署。如需詳細資訊，請參閱 <a href="configure-xmpp-gateway-on-lync-server-2013_1.md">在 Lync Server 2013 設定 XMPP 閘道</a>。
+
 
 
 ## 設定外部存取原則以啟用 Lync Server 2013 XMPP 閘道的使用者

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-10_
 
 語音原則範圍可以是「網站」 (定義網站的預設功能及權限) 或 *「使用者」* (定義要根據個別使用者或群組指派的功能及權限)。未指派給語音原則的使用者會自動指派給全域原則 (其為與產品一起安裝的預設語音原則)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-voice-policies.md">Lync Server 2013 中的語音原則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-voice-policies.md">Lync Server 2013 中的語音原則</a>＞。
+
 
 
 ## 本章節內容

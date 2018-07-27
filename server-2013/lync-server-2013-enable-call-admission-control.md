@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 5.  在 **\[編輯通用設定\]** 頁面上，選取 **\[啟用通話許可控制台\]** 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您要在整個部署中停用通話許可控制，請清除此核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您要在整個部署中停用通話許可控制，請清除此核取方塊。
+    
 
 
 6.  按一下 \[認可\]。

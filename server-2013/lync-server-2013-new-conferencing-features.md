@@ -39,18 +39,9 @@ Lync Server 2013 引進數種可增強會議的新功能，如下列清單所述
     
     使用者在視訊會議中，最多可同時觀看五位會議參與者的視訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>會議參與者為 75 人以下時，可採用「圖庫檢視」。會議參與者超出 75 人時，會恢復為單一檢視。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 會議參與者為 75 人以下時，可採用「圖庫檢視」。會議參與者超出 75 人時，會恢復為單一檢視。
+    
 
 
   - **HD 視訊**

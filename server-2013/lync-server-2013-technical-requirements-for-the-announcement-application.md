@@ -41,18 +41,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
   - **連接埠 5071**   用於 SIP 偵聽要求
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此連接埠是預設值，您可使用 <strong>Set-CsApplicationServer</strong> Cmdlet 變更。如需此 Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面 文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此連接埠是預設值，您可使用 <strong>Set-CsApplicationServer</strong> Cmdlet 變更。如需此 Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面 文件。
+
 
 
 ## 音訊檔需求

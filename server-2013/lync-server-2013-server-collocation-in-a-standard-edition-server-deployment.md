@@ -53,32 +53,14 @@ _**上次修改主題的時間：** 2013-01-20_
 
 您可以如本節後面所述，將檔案共用與資料庫組合在一起。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，您可以選擇為部署中的某些或所有使用者，整合監控和封存存放區與 Exchange 2013 存放區。您無法在與 Exchange 存放區所在的相同伺服器上，部署任何執行 Lync Server 或元件的伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，您可以選擇為部署中的某些或所有使用者，整合監控和封存存放區與 Exchange 2013 存放區。您無法在與 Exchange 存放區所在的相同伺服器上，部署任何執行 Lync Server 或元件的伺服器。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然支援資料庫的組合，但是資料庫大小可能會快速增加。例如，當您考慮將封存資料庫與其他資料庫組合在一起時，請注意，如果您要封存較多使用者的訊息，封存資料庫所需的磁碟空間可能會變得極大。因此，不建議組合多個資料庫，特別是將封存資料庫、 常設聊天室資料庫及 常設聊天室規範資料庫，與 Enterprise Pool 的後端資料庫組合在一起。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 雖然支援資料庫的組合，但是資料庫大小可能會快速增加。例如，當您考慮將封存資料庫與其他資料庫組合在一起時，請注意，如果您要封存較多使用者的訊息，封存資料庫所需的磁碟空間可能會變得極大。因此，不建議組合多個資料庫，特別是將封存資料庫、 常設聊天室資料庫及 常設聊天室規範資料庫，與 Enterprise Pool 的後端資料庫組合在一起。
+
 
 
 ## 檔案共用
@@ -97,18 +79,9 @@ _**上次修改主題的時間：** 2013-01-20_
 
 單一檔案共用可以用於多個前端集區、Standard Edition Server (全部在同一個網站中)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，監控和封存使用 Lync Server 檔案共用作為 Standard Edition Server。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，監控和封存使用 Lync Server 檔案共用作為 Standard Edition Server。
+
 
 
 ## 其他元件

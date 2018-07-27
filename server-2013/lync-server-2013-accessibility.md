@@ -110,18 +110,9 @@ Lync Server 2013 說明中的每個圖表，包含螢幕擷取畫面、圖表、
 
 下列章節提供讓殘障人士更容易使用 Windows 之功能、產品及服務的資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此章節中的資訊僅適用於在美國中授權 Microsoft 產品的使用者。若您是在美國以外的地區取得此產品，可使用軟體套件隨附的子公司資訊卡，或造訪 Microsoft Accessibility 網站 (網址為 <a href="http://go.microsoft.com/fwlink/?linkid=18139%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=18139&amp;clcid=0x404</a>) 以取得 Microsoft 支援服務的電話號碼及地址清單。您可以連絡子公司，以查明您的地區是否有提供本章節中所述的產品及服務類型。您可以在 Microsoft 產品網站的 Accessibility 中，深入了解 Microsoft 產品中包含的協助工具功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此章節中的資訊僅適用於在美國中授權 Microsoft 產品的使用者。若您是在美國以外的地區取得此產品，可使用軟體套件隨附的子公司資訊卡，或造訪 Microsoft Accessibility 網站 (網址為 <a href="http://go.microsoft.com/fwlink/?linkid=18139%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=18139&amp;clcid=0x404</a>) 以取得 Microsoft 支援服務的電話號碼及地址清單。您可以連絡子公司，以查明您的地區是否有提供本章節中所述的產品及服務類型。您可以在 Microsoft 產品網站的 Accessibility 中，深入了解 Microsoft 產品中包含的協助工具功能。
+
 
 
 ## Windows 的協助工具功能

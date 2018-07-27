@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 如需有關網路網台的詳細資訊，請參閱＜[Lync Server 2013 的 Lync Server 網站](lync-server-2013-sites.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您為其他語音功能建立網站，接著想使用相同的網站設定 E9-1-1，則可修改網站供 E9-1-1 使用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您為其他語音功能建立網站，接著想使用相同的網站設定 E9-1-1，則可修改網站供 E9-1-1 使用。
+
 
 
 ## 本章節內容

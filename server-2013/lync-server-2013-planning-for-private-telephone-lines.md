@@ -59,49 +59,22 @@ Lync Server 2013 引進在主要電話線之外再提供第二條私人電話線
 
   - 使用者可以像使用主要電話線一樣，將私人電話線的電話轉向 (即在接聽之前就將電話轉到其他目的地，例如行動電話或住家電話)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>將撥給私人線路的來電轉到替代電話號碼時，私人電話線的電話號碼會讓替代電話號碼看到，且可顯示在該號碼的記錄中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 將撥給私人線路的來電轉到替代電話號碼時，私人電話線的電話號碼會讓替代電話號碼看到，且可顯示在該號碼的記錄中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>從會議撥給私人電話線上的電話在來電系統通知中將沒有 <em>private-line</em> 指示。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!NOTE]  
+    > 從會議撥給私人電話線上的電話在來電系統通知中將沒有 <em>private-line</em> 指示。
+    
 
 
 ## 管理私人電話線
 
 除了建立和管理私人電話線時要注意的技術層面，您還需要建立私人電話線的管理程序。其中包括制定原則來決定組織中誰有資格擁有私人線路、建立和維護人員及其電話線的清單，甚至是建立高階主管私人電話目錄、安排使用者訓練，以及相關工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>私人電話線會儲存在 Active Directory 中，作為使用者物件的 msRTCSIP-PrivateLine 屬性。根據預設，「已驗證使用者」群組的任何成員都有此屬性的讀取存取權。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 私人電話線會儲存在 Active Directory 中，作為使用者物件的 msRTCSIP-PrivateLine 屬性。根據預設，「已驗證使用者」群組的任何成員都有此屬性的讀取存取權。
+
 
 
 ## 指派電話號碼

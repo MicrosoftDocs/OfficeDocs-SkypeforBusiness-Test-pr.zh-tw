@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果您已經部署一或多部 Edge Server，就可以直接新增同盟案例功能。如果您尚未設定 Edge Server，則必須先進行設定。如需詳細資訊，請參閱規劃文件中的＜ [在 Lync Server 2013 中規劃外部使用者存取](lync-server-2013-planning-for-external-user-access.md)＞和部署文件中的＜ [在 Lync Server 2013 中部署外部使用者存取](lync-server-2013-deploying-external-user-access.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要設定任何 XMPP 同盟、Lync 同盟或 Public Instant Messaging Connectivity 的組合，您可以同時部署它們，或者一次部署一個。如果您透過拓撲產生器和 Lync Server 管理命令介面設定選項，接著在設定一個、兩個或三個同盟類型的選項之後，於 Edge Server 上執行部署精靈，則您可以減少必要的步驟數。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您想要設定任何 XMPP 同盟、Lync 同盟或 Public Instant Messaging Connectivity 的組合，您可以同時部署它們，或者一次部署一個。如果您透過拓撲產生器和 Lync Server 管理命令介面設定選項，接著在設定一個、兩個或三個同盟類型的選項之後，於 Edge Server 上執行部署精靈，則您可以減少必要的步驟數。
+
 
 
 ## 在拓撲產生器和部署精靈中設定 Lync 同盟
@@ -43,18 +34,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 5.  在 \[安裝 Lync Server 元件\] 上，按 \[下一步\]。摘要畫面將顯示它們執行的動作。部署完成之後，按一下 \[檢視記錄\] 以檢視可用的記錄檔。按一下 \[完成\] 以完成部署。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以選取此選項，但是只能將組織中的一個 Edge 集區或 Edge Server 發行到外部，以進行同盟。所有由同盟使用者 (包括公用立即訊息 (IM) 使用者) 進行的存取都會通過相同的 Edge 集區或單一 Edge Server。例如，如果您的部署範圍包括分別部署在紐約與倫敦的一個 Edge 集區或單一 Edge Server，而您針對紐約的 Edge 集區或單一 Edge Server 啟用了同盟支援，則同盟使用者的訊號流量會通過紐約的 Edge 集區或單一 Edge Server。儘管位於倫敦的內部使用者在致電倫敦的同盟使用者時，使用了倫敦集區或 Edge Server 以傳送音訊/視訊流量，與倫敦的使用者進行通訊時也適用這種情況。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您可以選取此選項，但是只能將組織中的一個 Edge 集區或 Edge Server 發行到外部，以進行同盟。所有由同盟使用者 (包括公用立即訊息 (IM) 使用者) 進行的存取都會通過相同的 Edge 集區或單一 Edge Server。例如，如果您的部署範圍包括分別部署在紐約與倫敦的一個 Edge 集區或單一 Edge Server，而您針對紐約的 Edge 集區或單一 Edge Server 啟用了同盟支援，則同盟使用者的訊號流量會通過紐約的 Edge 集區或單一 Edge Server。儘管位於倫敦的內部使用者在致電倫敦的同盟使用者時，使用了倫敦集區或 Edge Server 以傳送音訊/視訊流量，與倫敦的使用者進行通訊時也適用這種情況。
+    
 
 
 ## 設定與協力廠商的同盟

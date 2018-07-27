@@ -37,16 +37,7 @@ _**上次修改主題的時間：** 2014-01-15_
 
   - 是否有法規需求？如果您公司所在的國家/地區要求資料須保留在國內，您可能需要部署多個 Persistent Chat Server 集區，每個都位於指定的地理區域。聊天室、類別或增益集都不能跨越集區， 僅能屬於一個 Persistent Chat Server 集區。您可以為每個 Persistent Chat Server 集區 管理一組類別、增益集和聊天室。您可以設定使用者，使其能使用 AllowedMembers 範圍或聊天室的成員資格範圍類別 (根據您設計類別的方式而定)，存取一或多個集區中的聊天室。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>擁有多個 Persistent Chat Server 集區 不會為您提供更大的範圍 (在您的所有 Persistent Chat Server 集區上，仍然只有 80,000 位使用者可以同時連線)。支援多個 Persistent Chat Server 集區 的主要原因是要支持法規考量。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 擁有多個 Persistent Chat Server 集區 不會為您提供更大的範圍 (在您的所有 Persistent Chat Server 集區上，仍然只有 80,000 位使用者可以同時連線)。支援多個 Persistent Chat Server 集區 的主要原因是要支持法規考量。
+    
 

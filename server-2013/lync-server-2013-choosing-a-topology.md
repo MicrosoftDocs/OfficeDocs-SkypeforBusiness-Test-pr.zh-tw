@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 選擇拓撲後，可以使用下列其中一個支援的拓撲選項：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您已經使用過 Microsoft Lync Server 2010，您會發現此處的指導方針除了少數特別註明之處，大部分都沒有變更。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若您已經使用過 Microsoft Lync Server 2010，您會發現此處的指導方針除了少數特別註明之處，大部分都沒有變更。
+
 
 
   - [Lync Server 2013 中的單一合併 Edge (利用私人 IP 位址及 NAT)](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md)
@@ -41,18 +32,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - [Lync Server 2013 中含硬體負載平衡器的調整式合併 Edge](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>內部 Edge 介面和外部 Edge 介面必須使用相同類型的負載平衡。您不能在一個 Edge 介面上使用 DNS 負載平衡，而在另一個 Edge 介面上使用硬體負載平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 內部 Edge 介面和外部 Edge 介面必須使用相同類型的負載平衡。您不能在一個 Edge 介面上使用 DNS 負載平衡，而在另一個 Edge 介面上使用硬體負載平衡。
+
 
 
 下表摘要列出受支援 Microsoft Lync Server 2013 拓撲可用的功能。欄標題表示某特定 Edge 設定選項可用的功能。以調整式 Edge (DNS 負載平衡) 選項為例，您可以看到它支援高可用性，可使用指派給 Edge 外部介面之無法經路由傳送的私人 IP 位址 (搭配 NAT) 或可路由公用 IP 位址，由於不需要硬體負載平衡器因此可以降低成本。
@@ -137,18 +119,9 @@ DNS 負載平衡支援的 Edge 容錯移轉案例為 Lync 至 Lync 點對點工�
 <li><p>可路由公用 IP 位址</p></li>
 <li><p>無法經路由傳送的私人 IP 位址 (如果使用對稱式網路位址轉譯 (NAT))</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您使用公用 IP 位址或私人 IP 位址且搭配 NAT，則仍會根據您在 拓撲產生器中所做的設定選擇，使用相同的 IP 位址數目。您可設定 Edge Server 讓每項服務使用單一 IP 位址搭配明確的連接埠，或者讓每項服務使用明確的 IP 位址，但使用相同的連接埠 (預設為 TCP 443)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若您使用公用 IP 位址或私人 IP 位址且搭配 NAT，則仍會根據您在 拓撲產生器中所做的設定選擇，使用相同的 IP 位址數目。您可設定 Edge Server 讓每項服務使用單一 IP 位址搭配明確的連接埠，或者讓每項服務使用明確的 IP 位址，但使用相同的連接埠 (預設為 TCP 443)。
+
 
 </div></li>
 </ul>
@@ -255,18 +228,9 @@ Lync Server 2013 支援將 Access、Web 會議和 A/V Edge 外部介面放在路
 
   - **高可用性**   如果您需要高可用性，請在單一集區中至少部署兩部 Edge Server。單一 Edge 集區可支援最多 12 部 Edge Server。如果您需要更多容量，則可部署多個 Edge 集區。一般而言，10% 的使用者人數需要外部存取。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>拓撲產生器可讓您在單一 Edge 集區中設定最多 12 部 Edge Server。單一集區中 Edge Server 的最大數量為 12 ，這數字是經過測試且受支援的。因此， 拓撲產生器允許大於 12 的數字不應構成暗示在單一 Edge 集區中可支援超過 12 部 Edge Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 拓撲產生器可讓您在單一 Edge 集區中設定最多 12 部 Edge Server。單一集區中 Edge Server 的最大數量為 12 ，這數字是經過測試且受支援的。因此， 拓撲產生器允許大於 12 的數字不應構成暗示在單一 Edge 集區中可支援超過 12 部 Edge Server。
+    
 
 
   - **硬體負載平衡**   在 Edge 外部介面使用可公開路由的 IP 位址時，即可支援在對 Lync Server 2013Edge Server 進行負載平衡時使用硬體負載平衡。例如，此方法會用於下列任一應用程式需要容錯移轉的情況時：
@@ -277,31 +241,13 @@ Lync Server 2013 支援將 Access、Web 會議和 A/V Edge 外部介面放在路
     
       - 外部存取至 Exchange 2007 Unified Messaging (UM) 或 Exchange 2010 UM
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange UM 可支援 Exchange 2010 SP1 和更新版本的 DNS 負載平衡。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > Exchange UM 可支援 Exchange 2010 SP1 和更新版本的 DNS 負載平衡。
+        
     
     這三種應用程式都能繼續運作，但不會感知 DNS 負載平衡，只會連接至集區中第一個 Edge Server。如果該伺服器無法使用，連線就會失敗。例如，如果在集區中部署多個 Edge Server 用來處理同盟流量負載，實際上只有一個 Access Proxy 會收到流量，而其他伺服器都閒置中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要與使用 Lync Server 2010 和 Microsoft Office 365 的公司建立同盟，建議使用 DNS 負載平衡。需注意，如果同盟協力廠商大多使用 Office Communications Server 2007 或 Office Communications Server 2007 R2，則會嚴重影響效能。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您要與使用 Lync Server 2010 和 Microsoft Office 365 的公司建立同盟，建議使用 DNS 負載平衡。需注意，如果同盟協力廠商大多使用 Office Communications Server 2007 或 Office Communications Server 2007 R2，則會嚴重影響效能。
+
 

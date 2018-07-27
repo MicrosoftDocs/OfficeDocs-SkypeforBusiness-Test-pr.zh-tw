@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-10-06_
 
 2.  從 **\[開始\]** 功能表中，選取 Lync Server 控制台或開啟瀏覽器視窗，然後輸入 Admin URL。如需各種 Lync Server 控制台啟動方法的詳細資訊，請參閱＜ [開啟 Lync Server 系統管理工具](lync-server-2013-open-lync-server-administrative-tools.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您也可以使用 Windows PowerShell Cmdlet。如需詳細資訊，請參閱部署移轉文件 <a href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">使用 Windows PowerShell Cmdlet 設定常設聊天室伺服器</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您也可以使用 Windows PowerShell Cmdlet。如需詳細資訊，請參閱部署移轉文件 <a href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">使用 Windows PowerShell Cmdlet 設定常設聊天室伺服器</a>＞。
+    
 
 
 3.  在左導覽列中，按一下 **\[ 常設聊天室\]** ，然後按一下 **\[類別\]** 。
@@ -57,18 +48,9 @@ _**上次修改主題的時間：** 2012-10-06_
     
     4.  如果要控制屬於此類別的聊天室中的檔案上傳，請選取或清除 **\[啟用檔案上傳\]** 核取方塊。如果選取，此類別的聊天室就可以啟用或停用檔案上傳；如果清除，則不允許此類別的聊天室有檔案上傳。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>這個設定在伺服器上是強制執行的，因為自訂應用程式或是使用 Office Communications Server 2007 R2群組聊天伺服器或 Lync Server 2010 群組聊天的舊版 群組聊天用戶端可以在聊天室中張貼檔案。由於 Lync 2013 用戶端沒有檔案上傳/下載功能，因此如果是單純的 Lync 2013 部署或 Lync 2013 用戶端，就不可能在 常設聊天室伺服器 聊天室中張貼檔案。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 這個設定在伺服器上是強制執行的，因為自訂應用程式或是使用 Office Communications Server 2007 R2群組聊天伺服器或 Lync Server 2010 群組聊天的舊版 群組聊天用戶端可以在聊天室中張貼檔案。由於 Lync 2013 用戶端沒有檔案上傳/下載功能，因此如果是單純的 Lync 2013 部署或 Lync 2013 用戶端，就不可能在 常設聊天室伺服器 聊天室中張貼檔案。
+        
     
     5.  如果要控制交談記錄，請選取或清除 **\[啟用交談記錄\]** 核取方塊。如果選取，聊天內容會持續存在；如果清除，聊天訊息就不會存在。如果啟用規範，將會依規範儲存聊天內容，但是使用者無法存取較早的訊息。這個選項可用於指派給不需要保存交談記錄的即時、臨時共同作業的聊天室。
 

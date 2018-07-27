@@ -15,18 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-09-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您執行 [憑證精靈] 時，請確定您用來登入的帳戶，是具有您要使用之憑證範本類型適當權限的群組成員。根據預設， Lync Server 憑證要求會使用 Web 伺服器憑證範本。如果您要以 RTCUniversalServerAdmins 群組成員的帳戶使用此範本來要求憑證，請確定群組具有使用該範本所需的註冊權限。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 當您執行 [憑證精靈] 時，請確定您用來登入的帳戶，是具有您要使用之憑證範本類型適當權限的群組成員。根據預設， Lync Server 憑證要求會使用 Web 伺服器憑證範本。如果您要以 RTCUniversalServerAdmins 群組成員的帳戶使用此範本來要求憑證，請確定群組具有使用該範本所需的註冊權限。
+
 
 
 每一台 Edge Server 都需要在周邊網路與網際網路之間的介面上放置一個公用憑證，而該憑證的主體替代名稱必須包含 Access Edge Service 的外部名稱與 Web Conferencing Edge Service 完整網域名稱 (FQDN)。
@@ -59,19 +50,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 1.  在 Edge Server 的 \[部署精靈\] 中，按一下 \[步驟 3: 要求、安裝或指派憑證\] 旁邊的 \[再執行一次\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的組織想要支援與 AOL 的公用立即訊息 (IM) 連線能力，則您無法使用 Lync Server 部署精靈要求憑證。這時請執行本主題稍後「若要為 Edge Server 的外部介面建立憑證要求以支援對 AOL 的公用 IM 連線能力」中的步驟。<br />
-    如果您在集區中的單一位置有多部 Edge Server，則可以在任何一部 Edge Server 上執行「 Lync Server 2013 憑證精靈」。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的組織想要支援與 AOL 的公用立即訊息 (IM) 連線能力，則您無法使用 Lync Server 部署精靈要求憑證。這時請執行本主題稍後「若要為 Edge Server 的外部介面建立憑證要求以支援對 AOL 的公用 IM 連線能力」中的步驟。<br />
+    > 如果您在集區中的單一位置有多部 Edge Server，則可以在任何一部 Edge Server 上執行「 Lync Server 2013 憑證精靈」。
 
 
 2.  在 \[可用憑證工作\] 頁面上，按一下 \[建立新憑證要求\] 。
@@ -126,18 +107,9 @@ _**上次修改主題的時間：** 2012-09-08_
     
     Lync Server 2013 中所提供的預設範本憑證名稱為 Web Server。如果您需要使用不同於預設範本的其他範本，請僅指定 *\<template name\>*。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的組織想要對 AOL 支援公用 IM 連線能力，您必須使用 Windows PowerShell (而非憑證精靈) 以要求要指定給 Access Edge Service 之外部邊緣的憑證。這是因為憑證精靈用來要求憑證的 Lync Server 2013 Web 伺服器範本不支援用戶端 EKU 組態。在您使用 Windows PowerShell 建立憑證之前，CA 管理員必須建立並部署支援用戶端 EKU 的新範本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的組織想要對 AOL 支援公用 IM 連線能力，您必須使用 Windows PowerShell (而非憑證精靈) 以要求要指定給 Access Edge Service 之外部邊緣的憑證。這是因為憑證精靈用來要求憑證的 Lync Server 2013 Web 伺服器範本不支援用戶端 EKU 組態。在您使用 Windows PowerShell 建立憑證之前，CA 管理員必須建立並部署支援用戶端 EKU 的新範本。
+    
 
 
 ## 若要將要求送出到公用憑證授權單位
@@ -190,36 +162,18 @@ _**上次修改主題的時間：** 2012-09-08_
 
 6.  按兩下 \[憑證 (本機電腦)\] ，展開憑證存放區，按兩下 \[個人\] ，然後按兩下 \[憑證\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果本機電腦的憑證個人存放區中沒有憑證，則匯入的憑證就沒有關聯的私密金鑰。請檢閱要求和匯入步驟。如果問題仍持續存在，請與您的憑證授權單位管理員或提供者連絡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果本機電腦的憑證個人存放區中沒有憑證，則匯入的憑證就沒有關聯的私密金鑰。請檢閱要求和匯入步驟。如果問題仍持續存在，請與您的憑證授權單位管理員或提供者連絡。
+    
 
 
 7.  在 \[本機電腦的憑證個人存放區\] 中，在您匯出的憑證上按一下滑鼠右鍵，按一下 \[所有工作\] ，然後按一下 \[匯出\] 。
 
 8.  在憑證匯出精靈中，按 \[下一步\] ，選取 \[是，匯出私密金鑰\] ，然後按 \[下一步\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 [是，匯出私密金鑰] 選項無法使用，則與該憑證關聯的私密金鑰就不會標示為可匯出。您需要重新申請憑證，確定憑證標示為允許匯出私密金鑰，才能繼續匯出。請與您的憑證授權單位管理員或提供者連絡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 [是，匯出私密金鑰] 選項無法使用，則與該憑證關聯的私密金鑰就不會標示為可匯出。您需要重新申請憑證，確定憑證標示為允許匯出私密金鑰，才能繼續匯出。請與您的憑證授權單位管理員或提供者連絡。
+    
 
 
 9.  在 \[匯出檔案格式\] 對話方塊中，選取 \[個人資訊交換 – PKCS\#12 (.PFX)\] ，然後選取下列項目：
@@ -266,18 +220,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 5.  在 **\[憑證存放區\]** 頁面上，選取您為 Edge Server 外部介面要求與匯入的公用憑證。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您所要求與匯入的憑證不在清單中，可用的疑難排解方法之一就是確認憑證的主體名稱與主體別名符合憑證的所有需求，同時，如果您是手動匯入憑證與憑證鏈結 (而非使用先前的步驟進行)，表示該憑證位於正確的憑證存放區 (電腦憑證存放區，而非使用者或服務憑證存放區)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您所要求與匯入的憑證不在清單中，可用的疑難排解方法之一就是確認憑證的主體名稱與主體別名符合憑證的所有需求，同時，如果您是手動匯入憑證與憑證鏈結 (而非使用先前的步驟進行)，表示該憑證位於正確的憑證存放區 (電腦憑證存放區，而非使用者或服務憑證存放區)。
+    
 
 
 6.  在 **\[憑證指派摘要\]** 頁面上，檢閱您的設定，然後按 **\[下一步\]** 指派憑證。

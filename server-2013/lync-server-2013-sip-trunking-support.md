@@ -45,18 +45,9 @@ _**上次修改主題的時間：** 2012-10-03_
 
 在考量應部署集中式或分散式 SIP 主幹時，必須進行成本效益分析。在某些情況下，即便並非必要，選擇分散式部署模式可能較有利。在完全集中式部署中，所有分支網站流量都是透過 WAN 連結路由傳送。與其為 WAN 連結所需的頻寬支付高額費用，您可能寧可使用分散式 SIP 主幹。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需使用分散式 SIP 主幹之可能理由和方式的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-branch-site-sip-trunking.md">Lync Server 2013 中的分支網站 SIP 主幹連線</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需使用分散式 SIP 主幹之可能理由和方式的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-branch-site-sip-trunking.md">Lync Server 2013 中的分支網站 SIP 主幹連線</a>＞。
+
 
 
 ## 支援的 SIP 主幹連線類型

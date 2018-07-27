@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2012-06-14_
     
       - **使用所有已設定的 IP 位址**。如果您想允許使用電腦上定義的所有 IP 位址，請選取此選項。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>這是 IP 版本 6 (IPv6) 設定的建議選項。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 這是 IP 版本 6 (IPv6) 設定的建議選項。
+        
     
       - **限制服務使用選取的 IP 位址**。選取此選項指定要在新伺服器上使用的位址。如果您選取此選項，您必須輸入 \[主要 IP 位址\] 值。
     

@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2013-10-07_
 
   - **使用者原則**   您可以建立和設定一或多個使用者原則，以對特定使用者限制遠端使用者存取支援。使用者原則中的設定優先於全域與網站原則，但僅限指派該使用者原則的特定使用者。例如，如果您在全域原則和網站原則中啟用了遠端使用者存取，您可以指定使用者原則以停用遠端使用者存取，然後將該使用者原則指派給特定使用者。如果您建立使用者原則，必須將其套用至一或多位使用者，該原則才能生效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>套用到某原則層級的 Lync Server 原則設定，可能會覆寫套用到其他原則層級的設定。Lync Server 原則的優先順序是使用者原則 (影響力最大) 會覆寫網站原則，網站原則則會覆寫全域原則 (影響力最小)。亦即，愈接近原則所影響之物件的原則設定，對物件的影響力愈大。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 套用到某原則層級的 Lync Server 原則設定，可能會覆寫套用到其他原則層級的設定。Lync Server 原則的優先順序是使用者原則 (影響力最大) 會覆寫網站原則，網站原則則會覆寫全域原則 (影響力最小)。亦即，愈接近原則所影響之物件的原則設定，對物件的影響力愈大。
+
 
 
 這些選項包含下列外部存取類型：
@@ -45,18 +36,9 @@ _**上次修改主題的時間：** 2013-10-07_
     
     做為選項，如果您先選取 **\[啟用與同盟使用者的通訊\]** ，則可選取 **\[啟用與 XMPP 同盟協力廠商的通訊\]** 。XMPP 同盟是與使用 Extensible Messaging and Presence Protocol (XMPP) 的組織同盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您啟用 XMPP 同盟，也必須在 拓撲產生器的 Edge 集區設定區段中選取以部署 <strong>[XMPP同盟]</strong> 。針對 XMPP 同盟進行設定，會在 Edge Server 上部署 XMPP Proxy 且在 前端伺服器上部署 XMPP 閘道。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您啟用 XMPP 同盟，也必須在 拓撲產生器的 Edge 集區設定區段中選取以部署 <strong>[XMPP同盟]</strong> 。針對 XMPP 同盟進行設定，會在 Edge Server 上部署 XMPP Proxy 且在 前端伺服器上部署 XMPP 閘道。
+    
 
 
   - **啟用與遠端使用者的通訊**    如果您想要讓位於防火牆外部的組織內使用者 (例如在家工作與出差的使用者) 連線至 Lync Server，可啟用此選項。
@@ -84,18 +66,9 @@ _**上次修改主題的時間：** 2013-10-07_
     </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了啟用外部使用者存取支援，您還必須設定相關原則以控制組織外部使用者存取的使用，接著再為使用者提供任何類型的外部使用者存取。如需有關建立、設定及套用外部使用者存取原則的詳細資訊，請參閱＜ <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了啟用外部使用者存取支援，您還必須設定相關原則以控制組織外部使用者存取的使用，接著再為使用者提供任何類型的外部使用者存取。如需有關建立、設定及套用外部使用者存取原則的詳細資訊，請參閱＜ <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>＞。
+
 
 
 **使用 Windows PowerShell Cmdlet 檢視外部存取原則**

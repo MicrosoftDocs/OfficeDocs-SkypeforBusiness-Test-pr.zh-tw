@@ -62,18 +62,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
     此命令將會停止 pool01.contoso.net 上使用 UserReplicatior 案例的記錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在此記錄工作階段期間，使用 UserReplicator 案例來建立的記錄並不會刪除。您還是可以使用該記錄來執行使用 Search-CsClsLogging 命令的搜尋作業。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging">Search-CsClsLogging</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在此記錄工作階段期間，使用 UserReplicator 案例來建立的記錄並不會刪除。您還是可以使用該記錄來執行使用 Search-CsClsLogging 命令的搜尋作業。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging">Search-CsClsLogging</a>＞。
+    
 
 
 Stop-CsClsLogging Cmdlet 與 Start-CsClsLogging 搭配使用時，會結束記錄工作階段 (由案例定義)，並保留記錄工作階段所建立的記錄。您隨時都可以在給定的電腦上執行兩個案例。用一個案例停止另一個案例來收集資訊的方法，是在大部分工作量疑難排解期間都可以執行的常用工作。

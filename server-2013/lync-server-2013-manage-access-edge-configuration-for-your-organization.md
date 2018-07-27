@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
   - **讓匿名使用者能夠存取會議**    如果您想讓內部使用者邀請外部匿名使用者加入其召開的會議，請啟用這個選項。啟用此設定只會允許匿名使用者加入會議。若要設定會議體驗和選項，以定義使用者可在會議中執行的工作及執行方式，並加入匿名使用者，請參閱＜ [建立或修改使用者站台或群組的會議使用者經驗](https://technet.microsoft.com/zh-tw/library/gg429715\(v=ocs.15\))＞及＜ [Lync Server 2013 中的會議原則設定參考](lync-server-2013-conferencing-policy-settings-reference.md)＞中的詳細資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了啟用外部使用者存取支援，您還可以設定相關原則以控制組織遠端使用者存取，接著才將任何類型的外部使用者存取功能提供給使用者。如需建立、設定與套用外部使用者存取相關原則的詳細資訊，請參閱＜ <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理外部使用存取原則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了啟用外部使用者存取支援，您還可以設定相關原則以控制組織遠端使用者存取，接著才將任何類型的外部使用者存取功能提供給使用者。如需建立、設定與套用外部使用者存取相關原則的詳細資訊，請參閱＜ <a href="lync-server-2013-manage-external-access-policy-for-your-organization.md">在 Lync Server 2013 中管理外部使用存取原則</a>＞。
+
 
 
 **使用 Windows PowerShell Cmdlet 檢視 Access Edge 設定資訊**

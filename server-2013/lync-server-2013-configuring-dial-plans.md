@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 Lync Server 2013 撥號對應表是具名的正規化規則集，這些規則會為具名位置、個別使用者或連絡人物件轉譯電話號碼，以達成電話授權與通話路由的目的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的撥號對應表和正規化規則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的撥號對應表和正規化規則</a>＞。
+
 
 
 ## 本章節內容

@@ -142,7 +142,7 @@ Lync Server 2013 會在每個 前端伺服器的資料庫上儲存有關會議�
     
       - 如果您的部署包含 Lync Server 2013 與 Lync Server 2010 或 Office Communications Server 2007 R2 的組合，請執行下列 Cmdlet 並將其指派給拓撲中的每一個 Lync Server 2013 集區：
         
-            new-csaddressbookconfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
+            New-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
 
 3.  等待所有集區發生 CMS 複寫。
 
@@ -509,18 +509,9 @@ Lync Server 2013 Address Book Server 會在執行每日維護時每天產生一�
 
 ## 在某些情況下，在設為使用 IPv4 和 IPv6 雙重堆疊的電腦上執行的 Lync 用戶端可能不支援依賴電腦 IP 子網路的功能，例如 E911、媒體旁路、通話許可控制和位置基礎路由 (3335508)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關
+
 
 
 **問題：**
@@ -577,18 +568,9 @@ Lync Server 2013 Address Book Server 會在執行每日維護時每天產生一�
 
 ## 來電者可能會在與受話方建立通話期間聽到一秒的等候音樂 (3334097)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關
+
 
 
 **問題：**
@@ -673,18 +655,9 @@ Lync Server 2013回應群組代理人只能透過 Lync Server 2010 Agent Console
 
 ## 規劃工具限制 (3331056 和 3331059)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關
+
 
 
 **問題：**
@@ -775,18 +748,9 @@ Lync Server 2013回應群組代理人只能透過 Lync Server 2010 Agent Console
 
 3.  發行拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您變更後端資料庫鏡像關係時，您必須重新啟動集區中的所有 前端伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 當您變更後端資料庫鏡像關係時，您必須重新啟動集區中的所有 前端伺服器。
+
 
 
 ## 當系統管理員嘗試移除具有前端集區 (內含相關聯的見證存放區) 的部署時， 拓撲產生器會傳回驗證錯誤 (3199266)
@@ -849,18 +813,9 @@ Lync Server 2013回應群組代理人只能透過 Lync Server 2010 Agent Console
 
 ## 部分語言通訊錄中的索引無法如預期般運作 (3336047)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關
+
 
 
 如果某個使用者的內容包含索引欄位，且該欄位僅含有無法編制索引的字元，則該使用者不會顯示在通訊錄搜尋結果中。
@@ -911,18 +866,9 @@ Lync Server 2013回應群組代理人只能透過 Lync Server 2010 Agent Console
 
 ## 在部分 Web 瀏覽器中使用 Lync Web Scheduler、Dial-In、Join Launcher、Persistent Chat Room Management 和 OCTab 時，對阿澤里文和烏茲別克文地區設定僅提供有限的支援 (3336748)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節所包含的資訊與 Lync Server 2013 ：2013 年 2 月的累計更新相關
+
 
 
 **問題：**

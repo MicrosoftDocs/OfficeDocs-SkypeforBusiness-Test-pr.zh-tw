@@ -73,76 +73,31 @@ _**上次修改主題的時間：** 2015-03-09_
 
 3.  若要驗證左側窗格中匯入的會議原則，請依序按一下 **\[會議\]** 、 **\[會議原則\]** ，然後驗證您 Office Communications Server 2007 R2 環境的所有會議原則都包含在清單中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>舊版 Office Communications Server 的 <strong>[會議]</strong> (Meeting) 原則，目前在 Lync Server 2013 中改稱為會議原則 (conferencing policy) 。此外，舊版 Office Communications Server 的 <strong>[匿名參與者]</strong> 設定，在 Lync Server 2013 中則為會議原則中的設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 舊版 Office Communications Server 的 <strong>[會議]</strong> (Meeting) 原則，目前在 Lync Server 2013 中改稱為會議原則 (conferencing policy) 。此外，舊版 Office Communications Server 的 <strong>[匿名參與者]</strong> 設定，在 Lync Server 2013 中則為會議原則中的設定。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Office Communications Server 2007 R2 環境中，會議原則若未設為 <strong>[使用個別使用者]</strong> ，將只會匯入全域原則設定。在此情況下，將不會匯入其他的會議原則。</td>
-    </tr>
-    </tbody>
-    </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Office Communications Server 2007 R2 會議原則中的 <strong>[匿名參與者]</strong> 若是設為 <strong>[依個別使用者強制執行]</strong> ，會在移轉時建立兩個會議原則，其中一個是設為 <strong>[True]</strong> 的 <strong>AllowAnonymousParticipantsInMeetings</strong> ，而另一個則是設為 <strong>[False]</strong> 的 <strong>AllowAnonymousParticipantsInMeetings</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Office Communications Server 2007 R2 環境中，會議原則若未設為 <strong>[使用個別使用者]</strong> ，將只會匯入全域原則設定。在此情況下，將不會匯入其他的會議原則。
+    
+    
+    > [!NOTE]  
+    > Office Communications Server 2007 R2 會議原則中的 <strong>[匿名參與者]</strong> 若是設為 <strong>[依個別使用者強制執行]</strong> ，會在移轉時建立兩個會議原則，其中一個是設為 <strong>[True]</strong> 的 <strong>AllowAnonymousParticipantsInMeetings</strong> ，而另一個則是設為 <strong>[False]</strong> 的 <strong>AllowAnonymousParticipantsInMeetings</strong> 。
+    
 
 
 4.  若要驗證匯入的撥號對應表，請依序按一下 **\[語音路由\]** 與 **\[撥號對應表\]** ，然後驗證您 Office Communicator 2007 R2 環境的所有撥號對應表都包含在清單中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Lync Server 2013 中， <strong>位置設定檔</strong> 現在稱為 <strong>撥號對應表</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在 Lync Server 2013 中， <strong>位置設定檔</strong> 現在稱為 <strong>撥號對應表</strong> 。
+    
 
 
 5.  若要驗證匯入的語音原則，請依序按一下 **\[語音路由\]** 與 **\[語音原則\]** ，然後驗證您 Office Communicator 2007 R2 環境的所有語音原則都包含在清單中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 Office Communications Server 2007 R2 環境中的語音原則未設為 <strong>[使用個別使用者]</strong> ，將只會匯入全域原則設定。在此情況下，將不會匯入其他的語音原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 Office Communications Server 2007 R2 環境中的語音原則未設為 <strong>[使用個別使用者]</strong> ，將只會匯入全域原則設定。在此情況下，將不會匯入其他的語音原則。
+    
 
 
 6.  若要驗證匯入的語音路由，請依序按一下 **\[語音路由\]** 及 **\[路由\]** ，然後驗證您 Office Communicator 2007 R2 環境中的所有語音路由都包含在清單中。

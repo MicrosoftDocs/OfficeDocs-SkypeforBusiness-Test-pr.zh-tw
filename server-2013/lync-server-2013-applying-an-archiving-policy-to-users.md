@@ -46,18 +46,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 5.  在 **\[封存原則\]** 下的 **\[編輯 Lync Server 使用者\]** 中，選取想要套用的封存使用者原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>[&lt;自動&gt;]</strong> 設定套用預設伺服器安裝設定。伺服器會自動套用這些設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>[&lt;自動&gt;]</strong> 設定套用預設伺服器安裝設定。伺服器會自動套用這些設定。
+    
 
 
 6.  按一下 **\[認可\]**。

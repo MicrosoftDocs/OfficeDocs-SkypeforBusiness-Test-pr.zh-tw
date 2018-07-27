@@ -31,18 +31,9 @@ Lync Server 2013、 常設聊天室伺服器 是 Lync Server 2013 基礎結構�
 
 若需受支援並存設定的詳細資料，請參閱 [Lync Server 2013 中支援的伺服器組合](lync-server-2013-supported-server-collocation.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們不支援 常設聊天室伺服器Standard Edition 的高可用性。效能與比例將受到限制。此外，我們只支援新 常設聊天室伺服器Standard Edition 伺服器。我們不支援從 Lync Server 2010, 群組聊天伺服器 升級到 Lync Server 2013常設聊天室伺服器Standard Edition。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 我們不支援 常設聊天室伺服器Standard Edition 的高可用性。效能與比例將受到限制。此外，我們只支援新 常設聊天室伺服器Standard Edition 伺服器。我們不支援從 Lync Server 2010, 群組聊天伺服器 升級到 Lync Server 2013常設聊天室伺服器Standard Edition。
+
 
 
 若貴公司需要規範支援，您可以在 常設聊天室伺服器前端伺服器 安裝 常設聊天室伺服器 規範服務。必須要有個別資料庫才能使用規範。
@@ -59,18 +50,9 @@ Lync Server 2013、 常設聊天室伺服器 是 Lync Server 2013 基礎結構�
 
 常設聊天室伺服器在虛擬伺服器中也受支援。若虛擬伺服器符合實體伺服器的規格，則可讓多達 20,000 個使用者同時使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>常設聊天室伺服器 必須安裝在 NTFS 檔案系統上，以強制檔案系統安全性。 常設聊天室伺服器 不支援 FAT32 檔案系統。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 常設聊天室伺服器 必須安裝在 NTFS 檔案系統上，以強制檔案系統安全性。 常設聊天室伺服器 不支援 FAT32 檔案系統。
+
 
 
 ## 本節內容

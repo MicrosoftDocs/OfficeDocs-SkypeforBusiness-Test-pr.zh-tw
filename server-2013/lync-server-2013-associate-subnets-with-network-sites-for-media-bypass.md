@@ -15,18 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-09-12_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假定您已經設定好媒體旁路全域設定，以及媒體旁路的網路區域與網路網站。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主題假定您已經設定好媒體旁路全域設定，以及媒體旁路的網路區域與網路網站。
+
 
 
 網路中的每個子網路都必須與特定網路網站關聯。這是因為我們需要子網路資訊來判斷端點所在的網路網站。一旦知道工作階段中的雙方位置，媒體旁路就能判斷出要將媒體傳送到何處以便處理。

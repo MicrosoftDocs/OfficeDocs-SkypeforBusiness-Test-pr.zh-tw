@@ -36,18 +36,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
   - 已啟用頻寬管理的通話許可控制 (CAC)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需有關通話許可控制和媒體旁路的考量詳細資訊，請參閱規劃文件中＜<a href="lync-server-2013-media-bypass-and-mediation-server.md">Lync Server 2013 中的媒體旁路和中繼伺服器</a>＞的＜PSTN 連線的通話許可控制＞一節。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需有關通話許可控制和媒體旁路的考量詳細資訊，請參閱規劃文件中＜<a href="lync-server-2013-media-bypass-and-mediation-server.md">Lync Server 2013 中的媒體旁路和中繼伺服器</a>＞的＜PSTN 連線的通話許可控制＞一節。
+    
 
 
 若已啟用通話許可控制與媒體旁路進階 Enterprise Voice 功能，則網路地區和網路網站資訊會由這兩項功能共用。因此，如果您已經設定通話許可控制，則不需要使用下列程序特別針對媒體旁路來編輯網站與地區資訊。如果您尚未設定通話許可控制的網路地區和網站，而想要變更媒體旁路設定，請遵循此程序中的步驟。
@@ -70,36 +61,18 @@ _**上次修改主題的時間：** 2012-09-21_
 
 6.  如有必要，請選取 **\[啟用非對應網站的旁路\]** 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一或多個與相同區域關聯的大型網站沒有頻寬限制 (例如，大型中央網站)，但也有一些與相同區域關聯的分支網站具有頻寬限制，請選取此核取方塊。當您啟用非對應網站的旁路時，設定作業比較精簡，因為您只需指定與分支網站關聯的子網路，而不需指定與所有網站關聯的所有子網路。如果已啟用通話許可控制，則建議您不要選取此核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您有一或多個與相同區域關聯的大型網站沒有頻寬限制 (例如，大型中央網站)，但也有一些與相同區域關聯的分支網站具有頻寬限制，請選取此核取方塊。當您啟用非對應網站的旁路時，設定作業比較精簡，因為您只需指定與分支網站關聯的子網路，而不需指定與所有網站關聯的所有子網路。如果已啟用通話許可控制，則建議您不要選取此核取方塊。
+    
 
 
 7.  按一下 **\[認可\]**。
 
 接著，如＜[將子網路與媒體旁路的網站關聯](lync-server-2013-associate-subnets-with-network-sites-for-media-bypass.md)＞中所述，將子網路新增至網路網站 (＜[在 Lync Server 2013 中建立子網路與網路站台的關聯](lync-server-2013-associate-a-subnet-with-a-network-site.md)＞說明讓子網路與網路網站產生關聯的實際程序)。在您讓所有子網路與網路網站產生關聯之後，媒體旁路部署便已完成。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您尚未建立網路地區和網路網站，您必須先予以建立，才能繼續進行媒體旁路部署。如需詳細資訊，請參閱＜<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中建立或修改網路地區</a>＞及＜<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中建立或修改網站</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您尚未建立網路地區和網路網站，您必須先予以建立，才能繼續進行媒體旁路部署。如需詳細資訊，請參閱＜<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中建立或修改網路地區</a>＞及＜<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中建立或修改網站</a>＞。
+
 
 
 ## 請參閱

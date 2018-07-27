@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-09-22_
 
 1.  建立代表 ITSP 的網路網站。讓此網路網站與適當的網路地區相關聯，並為此網路網站的音訊與視訊功能配置零的頻寬。如需詳細資訊，請參閱部署文件中的＜ [在 Lync Server 2013 中設定 CAC 的網站](lync-server-2013-configure-network-sites-for-cac.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對 ITSP 而言，此網路網站組態沒有作用。頻寬原則值實際是在步驟 2 套用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 對 ITSP 而言，此網路網站組態沒有作用。頻寬原則值實際是在步驟 2 套用。
+    
 
 
 2.  針對您在步驟 1 建立的網站使用相關的參數值，建立 SIP 主幹的網站間連結。例如，您可以使用企業中網路網站的名稱作為 NetworkSiteID1 參數的值，並以 ITSP 網路網站作為 NetworkSiteID2 參數的值。如需詳細資訊，請參閱部署文件中的＜ [在 Lync Server 2013 中建立網路站間原則](lync-server-2013-create-network-intersite-policies.md)＞。另請參閱 Lync Server 管理命令介面文件中有關 New-CsNetworkInterSitePolicy Cmdlet 的部分。

@@ -19,18 +19,9 @@ Microsoft Lync Server 2013 使用憑證來手動驗證其他伺服器，並加�
 
 公用憑證授權單位 (CA) 會要求指派到 Edge Server 外部介面的憑證。下文列出已針對 整合通訊 目的成功供應憑證的公用 CA： <http://support.microsoft.com/kb/929395> 要求憑證時，您可使用 Lync Server 部署精靈產生的憑證要求，或是手動或依公用 CA 提供之程序建立要求。指派憑證時，憑證會指派到 Access Edge Service 介面、 Web Conferencing Edge Service 介面，以及音訊/視訊驗證服務。音訊/視訊驗證服務不應與 A/V Edge 服務 混淆，後者不使用憑證加密音訊與視訊串流。內部 Edge Server 介面可使用內部 (到貴公司) CA 的憑證，或是公用 CA 的憑證。內部介面憑證只使用 SN，不需要或使用 SAN 項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表顯示主體替代名稱清單中的第二個 SIP (sip.fabrikam.com) 項目供您參考。您必須為組織中的每個 SIP 網域新增憑證主體替代名稱清單所列的對應 FQDN。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下表顯示主體替代名稱清單中的第二個 SIP (sip.fabrikam.com) 項目供您參考。您必須為組織中的每個 SIP 網域新增憑證主體替代名稱清單所列的對應 FQDN。
+
 
 
 ## 使用公用 IP 位址之單一合併式 Edge 的必要憑證

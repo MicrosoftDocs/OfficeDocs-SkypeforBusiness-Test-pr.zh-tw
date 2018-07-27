@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 您可以使用登錄器設定 Proxy 伺服器驗證通訊協定。如需可用通訊協定的相關資訊，請參閱＜[建立登錄器組態設定](lync-server-2013-create-registrar-configuration-settings.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當伺服器支援遠端與企業用戶端的驗證時，我們建議您同時啟用 Kerberos 和 NTLM。Edge Server 和內部伺服器將進行通訊，以確認只提供 NTLM 驗證給遠端用戶端。如果只在這些伺服器上啟用 Kerberos，則伺服器將無法驗證遠端使用者。如果企業使用者也對伺服器進行驗證，則會使用 Kerberos。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 當伺服器支援遠端與企業用戶端的驗證時，我們建議您同時啟用 Kerberos 和 NTLM。Edge Server 和內部伺服器將進行通訊，以確認只提供 NTLM 驗證給遠端用戶端。如果只在這些伺服器上啟用 Kerberos，則伺服器將無法驗證遠端使用者。如果企業使用者也對伺服器進行驗證，則會使用 Kerberos。
+
 
 
 請依照下列步驟來修改現有的登錄器。

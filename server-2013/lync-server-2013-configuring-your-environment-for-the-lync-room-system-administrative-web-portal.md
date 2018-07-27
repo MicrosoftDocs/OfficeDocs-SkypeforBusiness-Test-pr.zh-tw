@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-05-22_
 
 若要使用 Lync Room System (LRS) Administrative Web Portal，您將需要安裝和設定下列先決條件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是使用 Kerberos 和 NTLM 驗證設定伺服器，並在未加入網域的電腦上執行 LRS，Kerberos 驗證將失敗，且使用者將無法在系統管理入口網站中看到 LRS 的狀態。若要解決此問題，請使用 NTLM 驗證，或同時使用 NTLM 和 TLS-DSK 驗證 (不含 Kerberos) 來設定伺服器，或在網域中加入 LRS 電腦。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 若是使用 Kerberos 和 NTLM 驗證設定伺服器，並在未加入網域的電腦上執行 LRS，Kerberos 驗證將失敗，且使用者將無法在系統管理入口網站中看到 LRS 的狀態。若要解決此問題，請使用 NTLM 驗證，或同時使用 NTLM 和 TLS-DSK 驗證 (不含 Kerberos) 來設定伺服器，或在網域中加入 LRS 電腦。
+
 
 
 1.  安裝 Lync Server 2013 累計更新：Lync Server 拓撲，2013 年 7 月。

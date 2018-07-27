@@ -46,18 +46,9 @@ By default, only domain administrators can enable a Lync Server topology and mak
 
 The Test-CsSetupPermission cmdlet verifies that the required permissions that are needed to install Lync Server or one of its components are configured on the specified Active Directory container. If the permissions are not assigned, you can then run the Grant-CsSetupPermission cmdlet to give members of the RTCUniversalServerAdmins group the right to install and enable Lync Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>For a detailed list of permissions assigned by Grant-CsSetupPermission, see the blog post <a href="http://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission and Grant-CsOUPermission</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> For a detailed list of permissions assigned by Grant-CsSetupPermission, see the blog post <a href="http://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission and Grant-CsOUPermission</a>.
+
 
 
 ## Running the test

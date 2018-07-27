@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-09-24_
 
 如需 [Set-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsUser) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您可以為 Lync Server 2013 使用者啟用裝載的語音信箱之前，必須部署套用至其使用者帳戶的裝載語音信箱原則。如需詳細資訊，請參閱<a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您可以為 Lync Server 2013 使用者啟用裝載的語音信箱之前，必須部署套用至其使用者帳戶的裝載語音信箱原則。如需詳細資訊，請參閱<a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>。
+
 
 
 ## 若要啟用使用者的裝載語音信箱
@@ -57,16 +48,7 @@ _**上次修改主題的時間：** 2012-09-24_
         
           - 使用者的 Active Directory 網域服務顯示名稱 (例如，Ken Myer)。如果使用顯示名稱做為 Identity 值，您可以使用星號 (\*) 萬用字元。例如，若 Identity 為 "\* Smith"，則會傳回所有顯示名稱結尾為字串值 " Smith" 的使用者。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>使用者的 Active Directory SAM 帳戶名稱無法當做 Identity 值使用，因為 SAM 帳戶名稱在樹系中不一定是唯一的。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 使用者的 Active Directory SAM 帳戶名稱無法當做 Identity 值使用，因為 SAM 帳戶名稱在樹系中不一定是唯一的。
+        
 

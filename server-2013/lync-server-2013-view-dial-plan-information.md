@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 4.  在 \[撥號對應表\] 頁面上，按兩下撥號對應表名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您一次僅可檢視一個撥號對應表。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您一次僅可檢視一個撥號對應表。
+    
 
 
 ## 使用 Windows PowerShell Cmdlet 來檢視撥號對應表

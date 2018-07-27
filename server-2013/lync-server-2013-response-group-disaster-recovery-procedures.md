@@ -99,18 +99,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
         Get-CsRgsWorkflow -Identity "service:ApplicationServer:<backup pool FQDN>" -ShowAll
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須使用 –ShowAll 參數或 –Owner 參數。如果您不使用這兩個參數，您匯入到備份集區的回應群組將不會列在 Cmdlet 傳回的結果中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須使用 –ShowAll 參數或 –Owner 參數。如果您不使用這兩個參數，您匯入到備份集區的回應群組將不會列在 Cmdlet 傳回的結果中。
+    
 
 
 5.  撥打電話到匯入的回應群組，並確認該通來電可被正確處理，以確認匯入順利。
@@ -119,18 +110,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 7.  如常管理與修改匯入的回應群組。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當回應群組位於備份集區時，您必須使用 Lync Server 管理命令介面來進行管理。您無法使用 Lync Server 控制台來管理您已匯入備份集區的回應群組。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 當回應群組位於備份集區時，您必須使用 Lync Server 管理命令介面來進行管理。您無法使用 Lync Server 控制台來管理您已匯入備份集區的回應群組。
+    
 
 
 8.  還原主要集區且容錯回復完成後，將之前匯入備份集區的主要集區回應群組匯出。在命令列中輸入：
@@ -145,18 +127,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:primary.contoso.com" -OverwriteOwner -FileName "C:\RgsExportPrimaryUpdated.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在復原期間重建集區，不管使用相同或不同的完整網域名稱 (FQDN)，您都必須使用 –OverwriteOwner 參數。根據一般規則，在您將回應群組匯入回主要集區時，一律可使用 –OverwriteOwner 參數。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您在復原期間重建集區，不管使用相同或不同的完整網域名稱 (FQDN)，您都必須使用 –OverwriteOwner 參數。根據一般規則，在您將回應群組匯入回主要集區時，一律可使用 –OverwriteOwner 參數。
+    
     
     如果您部署新的集區 (使用相同或不同的 FQDN) 來取代主要集區，且您想在新集區中使用來自備份集區的應用程式層級設定，請使用 –ReplaceExistingSettings 參數。請在命令列中輸入：
     
@@ -166,18 +139,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:newprimary.contoso.com" -OverwriteOwner -FileName "C:\RgsExportPrimaryUpdated.zip" -ReplaceExistingSettings
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您不想以來自備份集區的設定取代新集區的應用程式層級設定與預設的等候音樂音訊檔，新集區將使用預設的應用程式層級設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您不想以來自備份集區的設定取代新集區的應用程式層級設定與預設的等候音樂音訊檔，新集區將使用預設的應用程式層級設定。
+    
 
 
 10. 顯示匯入的回應群組設定，以確認匯入回主要集區的作業順利。請執行下列動作：
@@ -232,16 +196,7 @@ _**上次修改主題的時間：** 2012-11-01_
     
         Export-CsRgsConfiguration -Source "service:ApplicationServer:backup.contoso.com" -Owner "service:ApplicationServer:primary.contoso.com" -FileName "C:\RgsExportPrimaryUpdated.zip" -RemoveExportedConfiguration
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步驟會使用匯出的設定來建立新檔案，然後將它從備份集區中移除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此步驟會使用匯出的設定來建立新檔案，然後將它從備份集區中移除。
+    
 

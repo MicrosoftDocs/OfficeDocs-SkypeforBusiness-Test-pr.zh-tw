@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 當您設定支援可延伸訊息和目前狀態通訊協定 (XMPP) 同盟協力廠商的原則時，這些原則會套用至 XMPP 同盟網域的使用者，但不會套用至工作階段初始通訊協定 (SIP) 立即訊息 (IM) 服務提供者 (例如 Windows Live) 或 SIP 同盟網域的使用者。請針對您要讓使用者新增連絡人或進行通訊的每個 XMPP 同盟網域，各設定一個 **XMPP 同盟協力廠商**。XMPP 同盟協力廠商原則只能用在單一範圍，雖然不是定義為全域原則，但作用是全域原則。若要為 XMPP 同盟協力廠商定義全域、網站或使用者原則，請先針對您需要的範圍建立及設定外部存取原則，以設定原則範圍。如需您可以為外部存取和同盟設定之原則類型的詳細資訊，請參閱操作文件中的＜ [管理 Lync Server 2013 的同盟與外部存取](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有 <strong>同盟和外部存取</strong>原則都是透過頻內佈建來套用。您套用至使用者、屬於網站或是全域範圍的原則，都會在登入期間傳送至用戶端。您可以設定原則來控制 XMPP 同盟協力廠商存取，即使您尚未為組織啟用 XMPP 同盟也一樣。不過，您必須已經為組織部署、啟用及設定 XMPP 協力廠商同盟，您設定的原則才會生效。如需部署及設定 XMPP 協力廠商同盟的詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">在 Lync Server 2013 中設定 SIP 同盟、XMPP 同盟及 Public Instant Messaging</a>＞。此外，如果您在外部存取原則中指定使用者原則，以控制 XMPP 同盟協力廠商，該原則只會套用至已啟用 Lync Server 2013 並設定為使用該原則的使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有 <strong>同盟和外部存取</strong>原則都是透過頻內佈建來套用。您套用至使用者、屬於網站或是全域範圍的原則，都會在登入期間傳送至用戶端。您可以設定原則來控制 XMPP 同盟協力廠商存取，即使您尚未為組織啟用 XMPP 同盟也一樣。不過，您必須已經為組織部署、啟用及設定 XMPP 協力廠商同盟，您設定的原則才會生效。如需部署及設定 XMPP 協力廠商同盟的詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-configuring-sip-federation-xmpp-federation-and-public-instant-messaging.md">在 Lync Server 2013 中設定 SIP 同盟、XMPP 同盟及 Public Instant Messaging</a>＞。此外，如果您在外部存取原則中指定使用者原則，以控制 XMPP 同盟協力廠商，該原則只會套用至已啟用 Lync Server 2013 並設定為使用該原則的使用者。
+
 
 
 ## 為 XMPP 同盟協力廠商編輯全域原則

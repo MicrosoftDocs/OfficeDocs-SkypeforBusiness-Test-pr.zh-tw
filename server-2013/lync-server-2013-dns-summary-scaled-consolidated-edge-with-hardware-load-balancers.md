@@ -41,19 +41,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     三個公開 IP 位址會被指派到這個網路介面卡，例如 131.107.155.10 用於 Access Edge Service，131.107.155.20 用於 Web Conferencing Edge Service，131.107.155.30 用於 A/V Edge 服務。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>指派至 Edge Server 實際外部網路介面的 IP 位址視您選擇的硬體負載平衡而訂。請參閱硬體負載平衡器的文件，以了解實際 IP 位址需求。<br />
-    上述的三個 Edge Service 介面確實能夠使用單一 IP 位址 (但不建議這樣做)。這樣做，雖能節省 IP 位址，但每個服務都要有不同的連接埠號碼。預設連接埠號碼為 443/TCP，其可確保大部分遠端防火牆均允許流量通過。將連接埠值變更為 (例如) 5061/TCP 以用於 Access Edge Service、444/TCP 以用於 Web Conferencing Edge Service 以及 443/TCP 以用於 A/V Edge 服務，可能會對遠端使用者造成問題，因為其防火牆不允許來自 5061/TCP 與 444/TCP 的流量通過。此外，由於能夠根據 IP 位址進行篩選，這三個不同的 IP 位址可讓疑難排解變得更輕鬆。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 指派至 Edge Server 實際外部網路介面的 IP 位址視您選擇的硬體負載平衡而訂。請參閱硬體負載平衡器的文件，以了解實際 IP 位址需求。<br />
+    > 上述的三個 Edge Service 介面確實能夠使用單一 IP 位址 (但不建議這樣做)。這樣做，雖能節省 IP 位址，但每個服務都要有不同的連接埠號碼。預設連接埠號碼為 443/TCP，其可確保大部分遠端防火牆均允許流量通過。將連接埠值變更為 (例如) 5061/TCP 以用於 Access Edge Service、444/TCP 以用於 Web Conferencing Edge Service 以及 443/TCP 以用於 A/V Edge 服務，可能會對遠端使用者造成問題，因為其防火牆不允許來自 5061/TCP 與 444/TCP 的流量通過。此外，由於能夠根據 IP 位址進行篩選，這三個不同的 IP 位址可讓疑難排解變得更輕鬆。
     
     Access Edge Service IP 位址為主要位址，且其預設閘道將設為整合式路由器 (131.107.155.1)。
     

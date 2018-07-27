@@ -108,18 +108,9 @@ _**上次修改主題的時間：** 2015-05-04_
 
 集區啟動後的後續時間，必須要有 85% 的伺服器啟動 (如先前表格所示)。若無法啟動此數目的伺服器 (但有足夠的伺服器可啟動，讓您不至於面臨仲裁遺失的狀態)，您可以使用 **Reset-CsPoolRegistrarState –ResetType QuorumLossRecovery** cmdlet，讓集區從此路由群組層級仲裁遺失中復原並有所進展。若需更多如何使用 cmdlet 的相關資訊，請參閱[Reset-CsPoolRegistrarState](https://docs.microsoft.com/en-us/powershell/module/skype/Reset-CsPoolRegistrarState)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於 Lync Server 使用主要 SQL 資料庫作為見證，因此如果您關閉主要資料庫並切換至鏡像複本，然後關閉足夠的 前端伺服器，則根據先前的表格，執行的伺服器會不足，而整個集區將會關閉。如需詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/?linkid=393672">資料庫鏡像見證</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由於 Lync Server 使用主要 SQL 資料庫作為見證，因此如果您關閉主要資料庫並切換至鏡像複本，然後關閉足夠的 前端伺服器，則根據先前的表格，執行的伺服器會不足，而整個集區將會關閉。如需詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/?linkid=393672">資料庫鏡像見證</a>。
+
 
 
 ## 集區層級仲裁遺失

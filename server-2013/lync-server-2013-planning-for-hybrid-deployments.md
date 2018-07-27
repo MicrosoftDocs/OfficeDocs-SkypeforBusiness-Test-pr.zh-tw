@@ -65,34 +65,16 @@ Lync 用戶端支援的功能與內部部署及線上環境的可用功能有些
 
   - 具有 Lync Server 2013 內部部署的 Microsoft Office Communications Server 2007 R2。 Lync Server 2013 同盟 Edge Server 與下一個同盟躍點伺服器 Edge Server 必須執行 Lync Server 2013，且必須部署一個「中央管理存放區」。 Edge Server 與集區必須為內部部署。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>雖然支援此拓撲，但部分功能可能會受限。例如，Microsoft Lync Online 使用者與內部部署 Office Communications Server 2007 R2 使用者之間的目前狀態資訊可能無法依預期運作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 雖然支援此拓撲，但部分功能可能會受限。例如，Microsoft Lync Online 使用者與內部部署 Office Communications Server 2007 R2 使用者之間的目前狀態資訊可能無法依預期運作。
+    
 
 
   - 套用了 Lync Server 2010 累計更新 (2013 年 3 月) 且內部部署有 Lync Server 2013 系統管理工具的 Microsoft Lync Server 2010。同盟 Edge Server 與來自同盟的下一個躍點伺服器 Edge Server 必須執行套用 2013 年 3 月 (或之後) 累計更新的 Microsoft Lync Server 2010 或 Lync Server 2013。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 系統管理工具應安裝於另一個可連線到現有 Lync Server 2010 部署的伺服器上。用於將使用者從內部部署移至 Lync Online 的 Move-CsUser Cmdlet，必須從連線到內部部署的 Lync Server 2013 系統管理工具執行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 2013 系統管理工具應安裝於另一個可連線到現有 Lync Server 2010 部署的伺服器上。用於將使用者從內部部署移至 Lync Online 的 Move-CsUser Cmdlet，必須從連線到內部部署的 Lync Server 2013 系統管理工具執行。
+    
 
 
   - 所有伺服器皆執行 Lync Server 2013 的 Lync Server 2013 部署。
@@ -228,18 +210,9 @@ Lync 用戶端支援的功能與內部部署及線上環境的可用功能有些
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要透過執行 Office Communications Server 2007 的合作夥伴進行同盟，那麼您必須開啟連入/連出 RTP/UDP 和 RTP/TCP 連接埠 50000-59999。如需 A/V 防火牆要求條件的詳細資訊，請參閱＜ <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求</a>＞。如需連接埠與通訊協定的詳細資訊，請參閱＜ <a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的連接埠摘要 - 調整式合併 Edge (利用硬體負載平衡器)</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您需要透過執行 Office Communications Server 2007 的合作夥伴進行同盟，那麼您必須開啟連入/連出 RTP/UDP 和 RTP/TCP 連接埠 50000-59999。如需 A/V 防火牆要求條件的詳細資訊，請參閱＜ <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求</a>＞。如需連接埠與通訊協定的詳細資訊，請參閱＜ <a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的連接埠摘要 - 調整式合併 Edge (利用硬體負載平衡器)</a>＞。
+
 
 
 ## 使用者帳戶和資料
@@ -248,18 +221,9 @@ Lync 用戶端支援的功能與內部部署及線上環境的可用功能有些
 
 當您使用 AD FS 與 Dirsync 在 Lync 內部部署與 Lync Online 部署之間同步使用者帳戶時，您需要替組織中位於內部部署與線上 Lync 部署的所有 Lync 使用者同步處理 AD 帳戶，即使使用者並未移至 Lync Online 亦然。如果您並未同步處理所有使用者，組織中的內部部署使用者與線上使用者可能無法如預期般正常通訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用 Office 365 線上入口網站建立使用者，那麼該使用者帳戶將不會與內部部署 Active Directory 進行同步處理，且該使用者將不會存在於內部部署 Active Directory。如果您已在 Lync Online 中建立使用者，並且想要設定與內部部署 Lync Server 的混合部署，請參閱<a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">將使用者從 Lync Online 移至 Lync Server 2013 的 Lync 內部部署</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果使用 Office 365 線上入口網站建立使用者，那麼該使用者帳戶將不會與內部部署 Active Directory 進行同步處理，且該使用者將不會存在於內部部署 Active Directory。如果您已在 Lync Online 中建立使用者，並且想要設定與內部部署 Lync Server 的混合部署，請參閱<a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">將使用者從 Lync Online 移至 Lync Server 2013 的 Lync 內部部署</a>。
+
 
 
 規劃混合式部署時，您也必須考量下列使用者相關議題。

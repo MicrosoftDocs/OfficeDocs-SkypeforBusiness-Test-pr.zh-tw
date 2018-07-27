@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 同樣的，系統管理員可以使用 System Center Operations Manager 來執行特定動作，例如當指定的事件發生時發出即時通知、執行綜合交易以主動測試系統等。Lync Server 中會使用綜合交易來確認使用者可以順利完成一般工作，例如登入系統、交換立即訊息，或撥打給位於公用交換電話網路 (PSTN) 的電話。例如，定期執行這些測試，可以讓您察覺使用者登入 Lync Server 時可能遇到的問題，讓您有機會及早修正問題，以免未來支援團隊會接到許多使用者無法連線的求助來電。透過以 System Center Operations Manager 執行這些綜合交易，系統管理員在每天 24 小時持續監控其 Lync Server 部署的例行工作中，只要在收到通知時進行回應，而不太需要做什麼其他動作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於 Lync Server 2013，System Center Operations Manager 的管理組件也能偵測可能對 Lync Server 造成不利影響的「外部」問題。例如，系統管理員可以在 Internet Information Services (IIS) 離線、Lync Server 電腦上的系統資源低於指定值，或 Lync Server 電腦遇到硬體故障時收到通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 對於 Lync Server 2013，System Center Operations Manager 的管理組件也能偵測可能對 Lync Server 造成不利影響的「外部」問題。例如，系統管理員可以在 Internet Information Services (IIS) 離線、Lync Server 電腦上的系統資源低於指定值，或 Lync Server 電腦遇到硬體故障時收到通知。
+
 
 
 Lync Server 2013 中的運作情況設定是以 System Center Operations Manager 以及 Lync Server 管理組件的使用為基礎。這些管理組件包含一些新功能和增強功能，包括：

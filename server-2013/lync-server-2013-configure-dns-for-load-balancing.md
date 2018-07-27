@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 網域名稱系統 (DNS) 負載平衡可以平衡 Lync Server 2013 的特有網路流量，例如 SIP 流量和媒體流量。前端集區、Edge 集區、Director 集區和獨立中繼集區支援 DNS 負載平衡。設定為使用 DNS 負載平衡的集區必須定義兩個完整網域名稱 (FQDN)：一般集區 FQDN，供 DNS 負載平衡使用 (例如 pool1.contoso.com) 和解析為集區中伺服器的實體 IP；以及供集區 Web 服務使用的另一個 FQDN (例如 web1.contoso.net)，會解析為集區的虛擬 IP 位址。如需 DNS 負載平衡的詳細資訊，請參閱規劃文件中的＜ [Lync Server 2013 中的 DNS 負載平衡](lync-server-2013-dns-load-balancing.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>用戶端到伺服器的 HTTPS 流量仍需要硬體負載平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 用戶端到伺服器的 HTTPS 流量仍需要硬體負載平衡。
+
 
 
 您必須先進行下列步驟，才能使用 DNS 負載平衡：
@@ -55,18 +46,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 3.  啟用 IP 位址隨機化，或針對 Windows Server DNS 啟用循環配置資源。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>預設應啟用循環配置資源。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 預設應啟用循環配置資源。
+    
 
 
 ## 覆寫內部 Web 服務 FQDN
@@ -148,18 +130,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     ![DNS 循環配置資源對話方塊](images/Gg398251.e7bf6125-8d78-4460-8401-0a8e7e21d305(OCS.15).jpg "DNS 循環配置資源對話方塊")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設應啟用此功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 預設應啟用此功能。
+
 
 
 ## 請參閱

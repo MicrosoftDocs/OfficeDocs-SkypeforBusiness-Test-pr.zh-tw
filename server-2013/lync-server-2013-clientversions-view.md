@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ClientVersions 檢視會存放已參與資料庫中所記錄之工作階段的各種用戶端類型與版本的相關資訊。檢視中的每筆記錄代表一個用戶端版本。此檢視已於 Microsoft Lync Server 2013 引進使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>特定欄可能有多筆記錄。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 特定欄可能有多筆記錄。
+
 
 
 

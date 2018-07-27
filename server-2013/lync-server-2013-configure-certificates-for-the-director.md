@@ -15,18 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-09-08_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您執行 [憑證精靈] 時，請確定您用來登入的帳戶，是具有您要使用之憑證範本類型適當權限的群組成員。根據預設， Lync Server 2013 憑證要求會使用 Web 伺服器憑證範本。如果您要以 RTCUniversalServerAdmins 群組成員的帳戶使用此範本來要求憑證，請確定群組具有使用該範本所需的註冊權限。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 當您執行 [憑證精靈] 時，請確定您用來登入的帳戶，是具有您要使用之憑證範本類型適當權限的群組成員。根據預設， Lync Server 2013 憑證要求會使用 Web 伺服器憑證範本。如果您要以 RTCUniversalServerAdmins 群組成員的帳戶使用此範本來要求憑證，請確定群組具有使用該範本所需的註冊權限。
+
 
 
 每個 Director 都需要預設憑證、Web 內部憑證以及 Web 外部憑證。如需 Director 憑證需求的詳細資訊，請參閱規劃文件中的＜ [Lync Server 2013 中內部伺服器的憑證需求](lync-server-2013-certificate-requirements-for-internal-servers.md)＞。
@@ -57,18 +48,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 11. 在 **\[主體名稱 / 主體替代名稱\]** 頁面上，按 **\[下一步\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>主體替代名稱清單應該包含您安裝 Director 的電腦名稱 (若是單一 Director) 或 Director 集區名稱，以及為組織設定的簡單 URL 名稱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 主體替代名稱清單應該包含您安裝 Director 的電腦名稱 (若是單一 Director) 或 Director 集區名稱，以及為組織設定的簡單 URL 名稱。
+    
 
 
 12. 在「主體別名 (SAN) 上的 SIP 網域設定」 頁面上，為您要 Director 處理的所有網域選取 \[設定的 SIP 網域\] ，然後按 **\[下一步\]** 。
@@ -83,18 +65,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 17. 在 **\[憑證指派\]** 頁面上，按 **\[下一步\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您要檢視憑證，請按兩下清單中的憑證。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您要檢視憑證，請按兩下清單中的憑證。
+    
 
 
 18. 在 **\[憑證指派摘要\]** 頁面上，按 **\[下一步\]** 。

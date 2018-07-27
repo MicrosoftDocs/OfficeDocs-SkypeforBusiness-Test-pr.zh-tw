@@ -31,36 +31,18 @@ _**上次修改主題的時間：** 2015-03-09_
 
 我們現在也針對新的 Lync Server 2013 部署，在 Standard Edition 伺服器上支援 常設聊天室伺服器。但是，效能與範圍將受到影響，因為沒有適用於這個新部署的高可用性，我們預期您主要會基於概念證明、評估等目的來使用此支援。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需其他有關這兩種拓撲的詳細資訊，請參閱此文件集中的 <a href="lync-server-2013-planning-for-persistent-chat-server.md">在 Lync Server 2013 中規劃常設聊天室伺服器</a> 和＜部署＞文件中的 <a href="lync-server-2013-deploying-persistent-chat-server.md">在 Lync Server 2013 中部署常設聊天室伺服器</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需其他有關這兩種拓撲的詳細資訊，請參閱此文件集中的 <a href="lync-server-2013-planning-for-persistent-chat-server.md">在 Lync Server 2013 中規劃常設聊天室伺服器</a> 和＜部署＞文件中的 <a href="lync-server-2013-deploying-persistent-chat-server.md">在 Lync Server 2013 中部署常設聊天室伺服器</a>。
+
 
 
 ## 單一伺服器拓撲
 
 常設聊天室伺服器 的最基本組態和最簡單部署為單一 常設聊天室伺服器前端伺服器拓撲。此部署需要一部執行 常設聊天室伺服器 的伺服器 (如果已啟用規範，則可選擇性地執行 Compliance Service)、一部裝載這兩個 SQL Server 資料庫的伺服器，而且如果需要規範，則需要使用 SQL Server 資料庫來儲存規範資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將其他伺服器新增至 Persistent Chat Server 集區，其會啟動為 拓撲產生器中的單一伺服器部署。建議使用多伺服器集區拓撲，即使您使用單一伺服器也一樣，如此一來，您日後將能視需要新增多部伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您可以將其他伺服器新增至 Persistent Chat Server 集區，其會啟動為 拓撲產生器中的單一伺服器部署。建議使用多伺服器集區拓撲，即使您使用單一伺服器也一樣，如此一來，您日後將能視需要新增多部伺服器。
+
 
 
 下圖會針對含規範的單一 常設聊天室伺服器前端伺服器顯示拓撲的所有必要和選項元件。
@@ -359,18 +341,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 針對每個聊天室，上述容量規劃表格會指定與聊天室相關聯的存取控制項目數 (包括直接指派給聊天室的項目)。您可以使用存取控制清單 (ACL)，控制對個別聊天室的存取。您也可以在類別層級控制存取。在 ACL 中，個別存取控制項目可以是使用者群組 (例如，安全性群組、通訊群組清單或單一使用者)。您可以定義聊天室管理員、簡報者和成員的存取控制項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在規劃聊天室的管理策略時，請記住，允許的存取控制項目總數是 2 百萬個。如果存取控制項目總計超過 2 百萬個，伺服器效能可能會大幅下降。為了避免此問題，請盡可能確定存取控制項目是使用者群組，而非個別使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在規劃聊天室的管理策略時，請記住，允許的存取控制項目總數是 2 百萬個。如果存取控制項目總計超過 2 百萬個，伺服器效能可能會大幅下降。為了避免此問題，請盡可能確定存取控制項目是使用者群組，而非個別使用者。
+
 
 
 ## 邀請式聊天室存取的容量管理規劃
@@ -379,18 +352,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 下表中的範例資料假設在 50% 的聊天室上，其 **\[聊天室設定\]** 頁面上的 **\[邀請\]** 選項都是設定為 **\[是\]** 。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果伺服器產生的邀請總計超過 1 百萬個，則伺服器效能可能會大幅下降。為了避免此問題，請務必減少設為傳送邀請的聊天室，或是限制可加入已設為傳送邀請之聊天室的使用者數目。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果伺服器產生的邀請總計超過 1 百萬個，則伺服器效能可能會大幅下降。為了避免此問題，請務必減少設為傳送邀請的聊天室，或是限制可加入已設為傳送邀請之聊天室的使用者數目。
+
 
 
 ### 邀請式聊天室存取範例

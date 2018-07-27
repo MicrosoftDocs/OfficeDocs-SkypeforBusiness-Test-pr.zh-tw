@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-10-28_
 
 移轉 XMPP 閘道的最後幾個步驟，是設定 Lync Server 2013 Edge Server 的憑證、部署 Lync Server 2013 XMPP 閘道，以及更新 XMPP 閘道的 DNS 記錄。這些步驟應同時執行，以降低 XMPP 閘道的停機時間。在執行這些步驟前，必須先將所有使用者都移至 Microsoft Lync Server 2013 部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對位於 Survivable Branch Appliance 的使用者不支援 XMPP 同盟。這適用於查看目前狀態資訊與交換 IM 訊息。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 對位於 Survivable Branch Appliance 的使用者不支援 XMPP 同盟。這適用於查看目前狀態資訊與交換 IM 訊息。
+
 
 
 ## 在 Lync Server 2013 Edge Server 上設定 XMPP 閘道憑證

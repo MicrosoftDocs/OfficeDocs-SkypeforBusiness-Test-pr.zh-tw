@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2012-10-07_
 
 使用者連絡人移轉之後 (當使用者使用 Lync 2013 登入時會自動發生)，使用者就可存取和管理 Lync 2013、 Outlook 2013 或 Outlook Web Access 的 Lync。使用者無須登入 Lync 即可管理 Outlook 或 Outlook Web Access 的連絡人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用者在移轉之後從 Lync 2010 登入，連絡人和群組皆可使用且處於最新狀態，但是使用者無法管理 (即新增、刪除、移動、標記、取消標記或修改) 那些連絡人。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果使用者在移轉之後從 Lync 2010 登入，連絡人和群組皆可使用且處於最新狀態，但是使用者無法管理 (即新增、刪除、移動、標記、取消標記或修改) 那些連絡人。
+
 
 
 ## 本章節內容

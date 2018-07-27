@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 如需這類集區的詳細資訊，請參閱＜ [Lync Server 2013 中外部使用者存取的部署檢查表](lync-server-2013-deployment-checklist-for-external-user-access.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您先前使用 拓撲產生器定義完整的拓撲，包括 Edge 拓撲，則您可以略過本節的＜ <a href="lync-server-2013-define-your-edge-topology.md">在 Lync Server 2013 中定義 Edge 拓撲</a>＞與＜ <a href="lync-server-2013-publish-your-topology.md">在 Lync Server 2013 中發行拓撲</a>＞工作，不過您還是需要完成＜ <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">匯出 Lync Server 2013 拓撲並將拓撲複製到 Edge 安裝的外部媒體</a>＞工作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您先前使用 拓撲產生器定義完整的拓撲，包括 Edge 拓撲，則您可以略過本節的＜ <a href="lync-server-2013-define-your-edge-topology.md">在 Lync Server 2013 中定義 Edge 拓撲</a>＞與＜ <a href="lync-server-2013-publish-your-topology.md">在 Lync Server 2013 中發行拓撲</a>＞工作，不過您還是需要完成＜ <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">匯出 Lync Server 2013 拓撲並將拓撲複製到 Edge 安裝的外部媒體</a>＞工作。
+
 
 
 ## 本章節內容

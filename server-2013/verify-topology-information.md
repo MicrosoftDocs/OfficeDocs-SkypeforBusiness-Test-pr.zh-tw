@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-09-26_
 
 3.  確認所合併之集區與伺服器的 FQDN 均會顯示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[BackCompatSite] 中將不會出現任何在前端伺服器或 Standard Edition 伺服器上組合之伺服器角色的資訊。只有 Office Communications Server 2007 R2 與 Lync Server 2013 之間交互操作所需的伺服器角色才會出現。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > [BackCompatSite] 中將不會出現任何在前端伺服器或 Standard Edition 伺服器上組合之伺服器角色的資訊。只有 Office Communications Server 2007 R2 與 Lync Server 2013 之間交互操作所需的伺服器角色才會出現。
+    
 
 
 ![拓撲產生器的 \[BackCompatSite\] 對話方塊](images/JJ205243.62751c76-f018-4c6d-bb48-c61ef8974d31(OCS.15).jpg "拓撲產生器的 [BackCompatSite] 對話方塊")
@@ -55,18 +46,9 @@ _**上次修改主題的時間：** 2012-09-26_
 
 如需合併後集區的詳細資料，可使用 **Get-CsPool** Cmdlet。除了拓撲產生器和 Lync Server 2013 控制台所提供的資訊之外，此 Cmdlet 還會顯示在 Lync Server 2013 集區上執行的服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您在執行拓撲產生器的 [合併精靈] 之後發行拓撲時，會將會議目錄合併到 Lync Server 2013。您可以執行 <strong>Get-CsConferenceDirectory</strong> Cmdlet 驗證會議目錄。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 當您在執行拓撲產生器的 [合併精靈] 之後發行拓撲時，會將會議目錄合併到 Lync Server 2013。您可以執行 <strong>Get-CsConferenceDirectory</strong> Cmdlet 驗證會議目錄。
+
 
 
 ## 檢視合併後集區中的服務

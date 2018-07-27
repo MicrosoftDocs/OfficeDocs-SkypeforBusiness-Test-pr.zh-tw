@@ -69,18 +69,9 @@ Lync Server 2013 支援包含唯讀網域控制站或唯讀通用類別目錄伺
 
 Lync Server 不支援單一標籤的網域。例如，根網域名稱為 **contoso.local** 的樹系是受支援的，名為 **local** 的根網域則不受支援。如需詳細資訊，請參閱 Microsoft 知識庫文章 300684＜為具有單一標籤 DNS 名稱之網域設定 Windows 的相關資訊＞，網址為 <http://go.microsoft.com/fwlink/?linkid=143752>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 不支援重新命名的網域。如果您需要重新命名已部署 Lync Server 的網域，您必須先解除安裝 Lync Server，然後重新命名網域，接著重新安裝 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 不支援重新命名的網域。如果您需要重新命名已部署 Lync Server 的網域，您必須先解除安裝 Lync Server，然後重新命名網域，接著重新安裝 Lync Server。
+
 
 
 ## 鎖定的 AD DS 環境

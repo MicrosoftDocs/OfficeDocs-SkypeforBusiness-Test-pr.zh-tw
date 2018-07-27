@@ -41,32 +41,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 請注意，當您使用憑證精靈要求憑證時，會自動設定伺服器增強金鑰使用方法 (EKU)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個憑證易記名稱在電腦存放區中都必須是唯一的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每個憑證易記名稱在電腦存放區中都必須是唯一的。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在您的 DNS 中設定 sipinternal.contoso.com 或 sipexternal.contoso.com，則必須將其新增至憑證的主體替代名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您已在您的 DNS 中設定 sipinternal.contoso.com 或 sipexternal.contoso.com，則必須將其新增至憑證的主體替代名稱。
+
 
 
 ### Standard Edition Server 的憑證

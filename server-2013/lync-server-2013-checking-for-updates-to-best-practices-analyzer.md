@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-02_
 
 當您啟動 Best Practices Analyzer 時，此工具會提供您搜尋工具之最新更新的選項。若有可用的更新，則可以下載更新。如果選擇不下載更新，或者 Best Practices Analyzer 無法存取網際網路，則可以繼續使用電腦上現有的版本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果需要 Proxy 驗證以存取網際網路，Best Practices Analyzer 將無法存取新的更新以供您下載。不過，您可以從 Microsoft 下載中心手動下載 RtcBPA.msi 的最新版本，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=266539%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=266539&amp;clcid=0x404</a>。下載此檔案之後，您可以將其複製到要更新 Best Practices Analyzer 的電腦上，然後使用 .msi 檔案在該電腦上安裝工具的新版本。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果需要 Proxy 驗證以存取網際網路，Best Practices Analyzer 將無法存取新的更新以供您下載。不過，您可以從 Microsoft 下載中心手動下載 RtcBPA.msi 的最新版本，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=266539%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=266539&amp;clcid=0x404</a>。下載此檔案之後，您可以將其複製到要更新 Best Practices Analyzer 的電腦上，然後使用 .msi 檔案在該電腦上安裝工具的新版本。
+
 
 
 若要更新 Best Practices Analyzer 規則，您必須以系統管理員身分在本機電腦上執行此工具。如果您使用非系統管理員群組成員的帳戶登入，並偵測到更新，請關閉 Best Practices Analyzer，然後使用下列程序啟動程式。

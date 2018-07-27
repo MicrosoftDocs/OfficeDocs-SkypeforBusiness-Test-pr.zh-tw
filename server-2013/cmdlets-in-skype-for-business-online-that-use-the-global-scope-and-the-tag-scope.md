@@ -62,18 +62,9 @@ Get-CsExternalAccessPolicy –Identity &quot;tag:RedmondAccessPolicy&quot;</td>
 
   - [Get-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsVoicePolicy)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然名稱為撥號對應表，但就功能而言，撥號對應表實屬原則。之所以採用「撥號對應表」而非撥號原則之類的詞彙，是為了要保留先前版本的 Lync Server 所採用的術語。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然名稱為撥號對應表，但就功能而言，撥號對應表實屬原則。之所以採用「撥號對應表」而非撥號原則之類的詞彙，是為了要保留先前版本的 Lync Server 所採用的術語。
+
 
 
 ## 請參閱

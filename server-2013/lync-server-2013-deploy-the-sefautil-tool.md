@@ -17,34 +17,16 @@ _**上次修改主題的時間：** 2013-01-30_
 
 若要部署及管理群組來電接聽，您必須使用 SEFAUtil Resource Kit 工具。該項工具是 Lync Server 2013 Resource Kit 工具的組件。在您可安裝 SEFAUtil 之前，您的拓撲內必須先有信任的應用程式集區，並指定 SEFAUtil 為信任的應用程式，然後啟用該拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您計劃執行 SEFAUtil 工具，則必須先在電腦安裝 Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您計劃執行 SEFAUtil 工具，則必須先在電腦安裝 Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK。
+
 
 
 您可以在部署內的任何 前端集區 執行 SEFAUtil。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需執行 SEFAUtil 的詳細資訊，請參閱 Technet 部落格文章＜如何執行 SEFAutil？＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=278940" class="uri">http://go.microsoft.com/fwlink/?linkid=278940</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需執行 SEFAUtil 的詳細資訊，請參閱 Technet 部落格文章＜如何執行 SEFAutil？＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=278940" class="uri">http://go.microsoft.com/fwlink/?linkid=278940</a>。
+
 
 
 ## 部署 SEFAUtil
@@ -61,18 +43,9 @@ _**上次修改主題的時間：** 2013-01-30_
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>視需要，您可以使用不同的連接埠。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 視需要，您可以使用不同的連接埠。
+    
 
 
 5.  使用您的變更啟用該拓撲。請在命令列執行：
@@ -85,18 +58,9 @@ _**上次修改主題的時間：** 2013-01-30_
     
     1.  以系統管理員權限從 Windows 命令提示字元執行工具，以在您的部署中顯示使用者的電話轉接設定。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>該項工具位於 \Program Files\Microsoft Lync Server 2013\Reskit。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 該項工具位於 \Program Files\Microsoft Lync Server 2013\Reskit。
+        
     
     2.  顯示使用者電話轉接設定。請在命令列執行：
         

@@ -73,18 +73,9 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\Lync\\CustomCommands
 <td><p>DWORD</p></td>
 <td><p>0 = 可執行檔 (預設)</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 ApplicationInstallPath。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 需要 ApplicationInstallPath。
+
 
 </div>
 <p>1 = 通訊協定</p></td>
@@ -94,18 +85,9 @@ HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Office\\15.0\\Lync\\CustomCommands
 <td><p>REG_SZ</p></td>
 <td><p>可執行檔的完整路徑。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 ApplicationType 為 0 (可執行檔)，則必須指定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果 ApplicationType 為 0 (可執行檔)，則必須指定。
+
 
 </div></td>
 </tr>

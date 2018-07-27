@@ -59,18 +59,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 9.  遵循開啟之精靈的指引。如需有關精靈項目的詳細資訊，請參閱 [在 Lync Server 2013 中定義 Survivable Branch Appliance 或 Survivable Branch Server](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2010 Survivable Branch Appliance 僅可與 Lync Server 2010 監控儲存區相關聯。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2010 Survivable Branch Appliance 僅可與 Lync Server 2010 監控儲存區相關聯。
+    
 
 
 10. 如果您不在此網站使用 Survivable Branch Appliance 或 Survivable Branch Server，請清除 \[當這個精靈關閉時，開啟新的 Survivable Branch Appliance 精靈\] 核取方塊，然後按一下 \[完成\] 。

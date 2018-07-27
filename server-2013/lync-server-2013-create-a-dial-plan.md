@@ -33,35 +33,16 @@ _**上次修改主題的時間：** 2013-10-24_
     
       - **\[使用者撥號對應表\]** 可套用至指定的使用者或群組。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>選取撥號對應表範圍之後，就無法更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 選取撥號對應表範圍之後，就無法更改。
+    
 
 
 5.  如果您要建立使用者撥號對應表，請在 **\[新的撥號對應表\]** 對話方塊的 **\[名稱\]** 欄位中輸入描述性名稱。此名稱儲存之後，就無法更改。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若為網站撥號對應表， <strong>[名稱]</strong> 欄位會預先填入網站名稱，而且無法更改。<br />
-    若為集區撥號對應表， <strong>[名稱]</strong> 欄位會預先填入 PSTN 閘道或登錄器名稱，而且無法更改。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若為網站撥號對應表， <strong>[名稱]</strong> 欄位會預先填入網站名稱，而且無法更改。<br />
+    > 若為集區撥號對應表， <strong>[名稱]</strong> 欄位會預先填入 PSTN 閘道或登錄器名稱，而且無法更改。
 
 
 6.  **\[簡單名稱\]** 欄位會預先填入出現在 **\[名稱\]** 欄位中的相同名稱。您可以選擇性地編輯此欄位來指定更為描述性的名稱，以便反映套用撥號對應表的網站、服務或使用者。
@@ -86,34 +67,16 @@ _**上次修改主題的時間：** 2013-10-24_
 
 8.  (選用) 如果要使用此撥號對應表作為電話撥入式會議存取號碼的地區，請指定 **\[電話撥入式會議地區\]** 。如果不想將此撥號對應表用於電話撥入式會議存取號碼，請將此欄位保留為空。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>需要使用電話撥入式會議地區，將電話撥入式會議存取號碼與一個或多個撥號對應表關聯。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 需要使用電話撥入式會議地區，將電話撥入式會議存取號碼與一個或多個撥號對應表關聯。
+    
 
 
 9.  (選用) 在 **\[外部存取首碼\]** 欄位中，指定只有在使用者需要撥打一個或多個額外的前置數字 (例如 9) 來撥打外線的值。您最多可以輸入四個字元的首碼值 (\#、\* 和 0-9)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果指定了外部存取首碼，則不需要建立新的正規化規則來容納首碼。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果指定了外部存取首碼，則不需要建立新的正規化規則來容納首碼。
+    
 
 
 10. 針對撥號對應表建立關聯及設定正規化規則，如下所述：
@@ -128,69 +91,32 @@ _**上次修改主題的時間：** 2013-10-24_
     
       - 若要從撥號對應表移除正規化規則，請反白顯示該規則名稱並按一下 **\[移除\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每個撥號對應表至少必須具有一個關聯的正規化規則。如需如何判斷撥號對應表需要的所有正規化規則的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的撥號對應表和正規化規則</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 每個撥號對應表至少必須具有一個關聯的正規化規則。如需如何判斷撥號對應表需要的所有正規化規則的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-dial-plans-and-normalization-rules.md">Lync Server 2013 中的撥號對應表和正規化規則</a>。
+    
 
 
 11. 確認撥號對應表的正規化規則按照正確的順序排列。若要變更規則在清單中的位置，請反白規則名稱，然後按向上或向下箭頭。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 會由上而下周遊正規化規則清單，並使用符合撥打號碼的第一個規則。如果設定撥號對應表，以便撥打的號碼可以符合多個正規化規則，請確定較嚴格的規則排在較不嚴格的規則上面。<br />
-    預設的 [全部保留] 正規化規則 <strong>^(\d{11})$</strong> 符合任何 11 位數號碼。例如，如果您加入符合 11 位數數字且開頭為 1425 的正規化規則，務必確定 [全部保留] 是依照較嚴格的 <strong>^(1425\d{7})$</strong> 規則排序。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 會由上而下周遊正規化規則清單，並使用符合撥打號碼的第一個規則。如果設定撥號對應表，以便撥打的號碼可以符合多個正規化規則，請確定較嚴格的規則排在較不嚴格的規則上面。<br />
+    > 預設的 [全部保留] 正規化規則 <strong>^(\d{11})$</strong> 符合任何 11 位數號碼。例如，如果您加入符合 11 位數數字且開頭為 1425 的正規化規則，務必確定 [全部保留] 是依照較嚴格的 <strong>^(1425\d{7})$</strong> 規則排序。
 
 
 12. (選用) 輸入一個測試撥號對應表的號碼，然後按一下 **\[前往\]** 。測試結果將顯示在 **\[輸入測試號碼\]** 下。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以儲存尚未通過測試的撥號對應表，並於日後重新設定。如需詳細資訊，請參閱 <a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以儲存尚未通過測試的撥號對應表，並於日後重新設定。如需詳細資訊，請參閱 <a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>。
+    
 
 
 13. 按一下 \[確定\] 。
 
 14. 在 \[撥號對應表\] 頁面上，依序按一下 \[認可\] 和 \[全部認可\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只要您建立撥號對應表，就必須執行 <strong>[全部認可]</strong> 命令發佈組態變更。如需詳細資訊，請參閱操作文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只要您建立撥號對應表，就必須執行 <strong>[全部認可]</strong> 命令發佈組態變更。如需詳細資訊，請參閱操作文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。
+    
 
 
 ## 請參閱

@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-10-20_
 
 網路中的每個子網路都必須與特定網路網站關聯，這是因為在初始新的工作階段時，會使用子網路資訊來確定端點所在的網站。當已知工作階段中每一方的位置時，進階 企業語音功能可套用該資訊，以決定如何處理撥號設定或路由。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您的部署中，Audio/Video Edge Server 的所有已設定公用 IP 位址都必須新增至網路組態設定。這些 IP 位址會新增為遮罩值 32 的子網路。相關聯的網站應該對應至適當的已設定網站。例如，對應至中央網站 Chicago 中 A/V Edge Server 的公用 IP 位址會是 NetworkSiteID Chicago。如需公用 IP 位址的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您的部署中，Audio/Video Edge Server 的所有已設定公用 IP 位址都必須新增至網路組態設定。這些 IP 位址會新增為遮罩值 32 的子網路。相關聯的網站應該對應至適當的已設定網站。例如，對應至中央網站 Chicago 中 A/V Edge Server 的公用 IP 位址會是 NetworkSiteID Chicago。如需公用 IP 位址的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求</a>＞。
+
 
 
 <table>
@@ -135,18 +126,9 @@ _**上次修改主題的時間：** 2014-10-20_
 
 7.  按一下 **\[網站 ID\]** ，然後選取您要新增此子網路之網站的網站 ID。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您尚未建立網站，此清單將是空的。如需相關程序的詳細資訊，請參閱 <a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中建立或修改網站</a>。您也可以執行 <strong>Get-CsNetworkSite</strong> Cmdlet 來擷取部署的網站 ID。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您尚未建立網站，此清單將是空的。如需相關程序的詳細資訊，請參閱 <a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中建立或修改網站</a>。您也可以執行 <strong>Get-CsNetworkSite</strong> Cmdlet 來擷取部署的網站 ID。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
+    
 
 
 8.  或者，按一下 **\[描述\]** ，然後輸入描述此子網路的其他資訊。

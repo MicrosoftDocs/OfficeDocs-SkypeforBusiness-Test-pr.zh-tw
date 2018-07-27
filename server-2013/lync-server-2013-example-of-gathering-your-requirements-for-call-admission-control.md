@@ -47,18 +47,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     ![三個網路地區的網路拓撲範例](images/Gg425827.08937347-250f-488f-ba5f-c256e6afcd8b(OCS.15).jpg "三個網路地區的網路拓撲範例")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Multiprotocol Label Switching (MPLS) 網路應呈現為每個地理位置皆有其對應網站的網路地區。如需詳細資訊，請參閱規劃文件中的 ＜ <a href="lync-server-2013-call-admission-control-on-an-mpls-network.md">使用 Lync Server 2013 在 MPLS 網路上進行通話許可控制</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Multiprotocol Label Switching (MPLS) 網路應呈現為每個地理位置皆有其對應網站的網路地區。如需詳細資訊，請參閱規劃文件中的 ＜ <a href="lync-server-2013-call-admission-control-on-an-mpls-network.md">使用 Lync Server 2013 在 MPLS 網路上進行通話許可控制</a>＞。
+    
     
     先前的範例網路拓撲中有三個網路地區，每個地區都有一個負責管理 CAC 的 Lync Server 中央網站。網路地區會依據地理位置鄰近性選出適當的中央網站。由於媒體流量最大之處是在網路地區內，因此若能位於鄰近之處，此中央網站將保有獨立運作性，且在其他中央網站無法使用時仍能持續運作。
     
@@ -95,18 +86,9 @@ _**上次修改主題的時間：** 2015-03-09_
     </tbody>
     </table>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>根據您的 Lync Server 拓撲，相同的中央網站可指派給多個網路地區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 根據您的 Lync Server 拓撲，相同的中央網站可指派給多個網路地區。
+    
 
 
 3.  對於各個網路地區，識別 WAN 連線的頻寬不受限制的所有網站 (辦公室或地點)。由於這些網站的頻寬不受限制，因此您無須對其套用 CAC 頻寬原則。
@@ -276,19 +258,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 6.  為您網路中的每個子網路指定其關聯的網站。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>網路中的每個子網路都必須與一個網站相關聯，即使該網站的頻寬不受限亦然。這是因為「通話許可控制」會使用子網路資訊來判斷端點所在的網站。確認工作階段中雙方的所在位置後，「通話許可控制」即可判斷是否有足夠的頻寬可建立通話。在透過沒有頻寬限制的連結建立工作階段時，將會產生通知。<br />
-    如果您部署了 Audio/Video Edge Server，則每個 Edge Server 的公用 IP 位址都必須與 Edge Server 部署所在的網站相關聯。A/V Edge Server 的每個公用 IP 位址，都必須在您的網路組態設定中新增為具有子網路遮罩 32 的子網路。例如，若您在「芝加哥」中部署了 A/V Edge Server，則應為這些伺服器的每個外部 IP 位址建立具有子網路遮罩 32 的子網路，並建立網站「芝加哥」與這些子網路的關聯。如需公用 IP 位址的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 網路中的每個子網路都必須與一個網站相關聯，即使該網站的頻寬不受限亦然。這是因為「通話許可控制」會使用子網路資訊來判斷端點所在的網站。確認工作階段中雙方的所在位置後，「通話許可控制」即可判斷是否有足夠的頻寬可建立通話。在透過沒有頻寬限制的連結建立工作階段時，將會產生通知。<br />
+    > 如果您部署了 Audio/Video Edge Server，則每個 Edge Server 的公用 IP 位址都必須與 Edge Server 部署所在的網站相關聯。A/V Edge Server 的每個公用 IP 位址，都必須在您的網路組態設定中新增為具有子網路遮罩 32 的子網路。例如，若您在「芝加哥」中部署了 A/V Edge Server，則應為這些伺服器的每個外部 IP 位址建立具有子網路遮罩 32 的子網路，並建立網站「芝加哥」與這些子網路的關聯。如需公用 IP 位址的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求</a>＞。
     
     <table>
     <colgroup>
@@ -473,18 +445,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 8.  定義每一組網路地區之間的路由。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>「北美地區」與 APAC 兩個地區間的路由需要兩個連結，因為並沒有直接連接這兩者的地區連結。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 「北美地區」與 APAC 兩個地區間的路由需要兩個連結，因為並沒有直接連接這兩者的地區連結。
+    
     
     ### 地區路由
     
@@ -584,16 +547,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 在收集必要資訊後，您即可使用 Lync Server 管理命令介面或 Lync Server 控制台執行 CAC 部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然使用 Lync Server 控制台可執行大部分的網路設定工作，但若要建立子網路與網站間連結，則必須使用 Lync Server 管理命令介面。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中有關 <strong>New-CsNetworkSubnet</strong> Cmdlet 與 <strong>New-CsNetworkIntersitePolicy</strong> Cmdlet 的內容。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然使用 Lync Server 控制台可執行大部分的網路設定工作，但若要建立子網路與網站間連結，則必須使用 Lync Server 管理命令介面。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中有關 <strong>New-CsNetworkSubnet</strong> Cmdlet 與 <strong>New-CsNetworkIntersitePolicy</strong> Cmdlet 的內容。
+
 

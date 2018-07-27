@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-09-30_
 
 您可以在中央網站或分支網站中部署 PSTN 閘道。在分支網站，PSTN 閘道可以是獨立閘道或是 Survivable Branch Appliance 的元件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>電話撥入式會議不使用媒體旁路，因為 A/V 會議伺服器不支援媒體旁路。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 電話撥入式會議不使用媒體旁路，因為 A/V 會議伺服器不支援媒體旁路。
+
 
 
 如需針對電話撥入式會議來規劃中繼伺服器和 PSTN 閘道組態的詳細資訊，請參閱規劃文件中的[Lync Server 2013 中之中繼伺服器的元件和拓撲](lync-server-2013-components-and-topologies-for-mediation-server.md)。

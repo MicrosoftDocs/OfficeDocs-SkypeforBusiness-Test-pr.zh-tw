@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2013-07-03_
 
 3.  瀏覽到 **\[憑證授權單位網頁註冊\]** 頁面 (例如 https://MyCA.contoso.com/certsrv)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用的是 Internet Explorer 10，您可能需要使用相容模式檢視此網站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您使用的是 Internet Explorer 10，您可能需要使用相容模式檢視此網站。
+    
 
 
 4.  在 **\[歡迎\]** 頁面上，選取 **\[要求憑證\]**。
@@ -77,18 +68,9 @@ _**上次修改主題的時間：** 2013-07-03_
 
 10. 收到提示時，輸入用以建立虛擬智慧卡的 PIN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>預設的虛擬智慧卡 PIN 值為 ‘12345678’。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 預設的虛擬智慧卡 PIN 值為 ‘12345678’。
+    
 
 
 11. 當您看到憑證已核發的通知時，請按一下 **\[安裝這個憑證\]** 以完成註冊程序。

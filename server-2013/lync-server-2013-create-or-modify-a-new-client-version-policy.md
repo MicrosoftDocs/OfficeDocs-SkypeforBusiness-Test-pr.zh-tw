@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 3.  在左導覽列，按一下 \[用戶端\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>已預設選取 [用戶端版本原則] 索引標籤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 已預設選取 [用戶端版本原則] 索引標籤。
+    
 
 
 4.  在「用戶端版本原則」頁面上，執行下列其中一項動作：

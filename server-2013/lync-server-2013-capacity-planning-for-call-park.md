@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 下表說明可供您作為容量規劃需求之基礎的 通話駐留使用者模型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請記住，針對災害復原處理能力規劃，已配對集區的每個集區都應能夠在兩個集區中處理 通話駐留服務的工作負載。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 請記住，針對災害復原處理能力規劃，已配對集區的每個集區都應能夠在兩個集區中處理 通話駐留服務的工作負載。
+
 
 
 ### 通話駐留使用者模型

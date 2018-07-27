@@ -48,50 +48,23 @@ _**上次修改主題的時間：** 2015-03-09_
 <p>webcon.contoso.com</p>
 <p>contoso.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援 contoso.com XMPP 命名空間</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支援 contoso.com XMPP 命名空間
+
 
 </div>
 <p>sip.fabrikam.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援 fabrikam.com SIP 命名空間</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支援 fabrikam.com SIP 命名空間
+
 
 </div>
 <p>fabrikam.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援 fabrikam.com XMPP 命名空間</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支援 fabrikam.com XMPP 命名空間
+
 
 </div></td>
 <td><p>若要部署與 AOL 的公用 IM 連線，憑證必須來自公用 CA，且必須具有伺服器 EKU 和用戶端 EKU。憑證會指派給下列項目的外部 Edge Server 介面：</p>
@@ -101,18 +74,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>A/V Edge 服務</p></li>
 </ul>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>技術上來說，憑證並不會指派給 A/V Edge。安全通訊和驗證是採用媒體轉送驗證服務 (MRAS) 方式管理。MRAS 會使用指派給 Edge Server 內部介面的憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 技術上來說，憑證並不會指派給 A/V Edge。安全通訊和驗證是採用媒體轉送驗證服務 (MRAS) 方式管理。MRAS 會使用指派給 Edge Server 內部介面的憑證。
+
 
 </div>
 <p>請注意，SAN 會自動根據您在拓撲產生器所下的定義新增到憑證。您可視需要為其他必須支援的 SIP 網域及其他項目新增 SAN 項目。主體名稱會複寫到 SAN 中，必須要出現才會正確運作。</p></td>

@@ -47,18 +47,9 @@ _**上次修改主題的時間：** 2012-10-20_
     New-CsNetworkInterRegionRoute -Identity EMEA_APAC_Route -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -NetworkRegionLinkIDs "EMEA-APAC-LINK"
     ```
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 North America/APAC 網路區間路由之間沒有直接的網路地區連結，因此需要用到兩個網路地區連結。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 North America/APAC 網路區間路由之間沒有直接的網路地區連結，因此需要用到兩個網路地區連結。
+    
 
 
 ## 使用 Lync Server 控制台建立網路區間路由
@@ -79,18 +70,9 @@ _**上次修改主題的時間：** 2012-10-20_
 
 8.  按一下 **\[網路地區連結\]** 欄位旁邊的 **\[新增\]**，接著新增將用於網路區間路由的網路地區連結。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您即將為尚未擁有直接網路地區連結的兩個網路地區建立路由，請新增所有必要的連結以便完成該路由。例如，由於 North America/APAC 網路區間路由之間沒有直接的網路地區連結，因此需要用到兩個網路地區連結。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您即將為尚未擁有直接網路地區連結的兩個網路地區建立路由，請新增所有必要的連結以便完成該路由。例如，由於 North America/APAC 網路區間路由之間沒有直接的網路地區連結，因此需要用到兩個網路地區連結。
+    
 
 
 9.  按一下 **\[認可\]**。

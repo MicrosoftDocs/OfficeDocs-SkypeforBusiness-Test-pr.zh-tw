@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 6.  在服務清單中，按一下所需的服務，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>回應群組設定工具網頁隨即開啟。連線至 <strong>https://<em>&lt;webPoolFqdn&gt;</em>/RgsConfig</strong>，也可以直接從網頁瀏覽器開啟回應群組設定工具網頁。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 回應群組設定工具網頁隨即開啟。連線至 <strong>https://<em>&lt;webPoolFqdn&gt;</em>/RgsConfig</strong>，也可以直接從網頁瀏覽器開啟回應群組設定工具網頁。
+    
 
 
 7.  在 **\[管理現有的工作流程\]** 下，找出您要刪除的工作流程，然後按一下 **\[執行\]** 下的 **\[刪除\]**。

@@ -27,18 +27,9 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
 
 4.  在 拓撲產生器中開啟拓撲設計，如部署文件中的 [在 Lync Server 2013 中定義和設定拓撲](lync-server-2013-defining-and-configuring-the-topology.md) 所述。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>拓撲產生器的安裝屬於內部集區的部署程序。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安裝 Lync Server 2013 系統管理工具</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 拓撲產生器的安裝屬於內部集區的部署程序。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安裝 Lync Server 2013 系統管理工具</a>。
+    
 
 
 此外，您必須已在對應您選擇部署之參考拓撲的中央網站和分支網站部署 Lync Server Enterprise Edition。除非您已至少針對一個內部集區定義、發行且安裝檔案，否則無法部署 企業語音元件，而且您必須使用 拓撲產生器定義和發行內部集區。
@@ -47,18 +38,9 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
 
 若要檢視顯示及說明範例通話許可控制部署的參考拓撲，包括網路地區、網站及子網路，請參閱 [範例：在 Lync Server 2013 中收集通話許可控制服務需求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在中央網站部署 企業語音，請繼續閱讀本節中的主題。若要在分支網站部署 企業語音，請跳至部署文件中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支網站</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 若要在中央網站部署 企業語音，請繼續閱讀本節中的主題。若要在分支網站部署 企業語音，請跳至部署文件中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支網站</a>。
+
 
 
 本章節包括中繼伺服器配置於每一部前端伺服器或 Standard Edition Server 上 (建議方式) 的部署程序，以及採用獨立中繼伺服器集區的部署程序。

@@ -55,18 +55,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 常設聊天室伺服器 使用 常設聊天室資料庫來儲存交談記錄、設定和使用者佈建資料。該伺服器也可選擇使用 常設聊天室規範資料庫來儲存規範資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>常設聊天室資料庫 (MGC) 和規範資料庫 (Mgccomp) 可位於相同的 SQL Server 執行個體或不同的 SQL Server 上。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 常設聊天室資料庫 (MGC) 和規範資料庫 (Mgccomp) 可位於相同的 SQL Server 執行個體或不同的 SQL Server 上。
+
 
 
 若要準備資料庫伺服器平台，請確定每部電腦都符合硬體需求，然後安裝必要軟體。

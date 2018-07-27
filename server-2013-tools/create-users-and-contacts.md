@@ -33,32 +33,14 @@ Here is a list of terms and definitions that you might find useful as you read t
 
 You must use the Lync Server User Provisioning Tool to create users and contacts for load simulation. The Lync Server User Provisioning Tool is installed with the Lync Server Stress and Performance Tool package. Be sure that the package installer (CapacityPlanningTool.msi) has been run on the Front End Server or the Standard Edition server. Start the Lync Server User Provisioning Tool by running the file UserProvisioningTool.exe (located at %InstalledDirectory%LyncStressAndPerfTool\\LyncStress) on the Front End Server or on the Standard Edition server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>You must be logged on as a member of the Domain Admins security group in order to run UserProvisioningTool.exe. It is necessary to run from this context because UserProvisioningTool.exe will be creating and configuring new Active Directory Domain Services users.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> You must be logged on as a member of the Domain Admins security group in order to run UserProvisioningTool.exe. It is necessary to run from this context because UserProvisioningTool.exe will be creating and configuring new Active Directory Domain Services users.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>When you create a significant number of users (10,000 or more), run UserProvisioningTool.exe from a high-end computer. Note that the domain controller will also experience high load while the users are being created.</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> When you create a significant number of users (10,000 or more), run UserProvisioningTool.exe from a high-end computer. Note that the domain controller will also experience high load while the users are being created.
+
 
 
 When the Lync Server User Provisioning Tool opens, click **Configuration** and select **Load Configuration**. To begin configuring users and contacts, load the default file that is included in the package, SampleData.xml. This will prepopulate the fields with example data that you'll need to revise for your system. If you have a preconfigured XML file that already contains customized settings, load that file instead. Fill in the fields in the Lync Server User Provisioning Tool, as described in the following sections.
@@ -145,36 +127,18 @@ To configure users’ contacts, follow these steps.
 
 6.  In Federated / Cross Pool User SIP Domain, specify the SIP Domain Name of the federated users.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>None of the users should be signed in when creating contacts.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > None of the users should be signed in when creating contacts.
+    
 
 
 7.  In User Creation tab, verify that the parameters are correct. The range of users for which contacts will be created is obtained from the User Creation tab.
 
 8.  Click Create Contacts to begin the contact creation. This process can take several minutes. After it completes, a dialog box will appear with the message, "Operation Completed Successfully." You can validate the contacts that were created by logging on as a user that was created from the User Creation tab.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>After the contacts are created, this tool will restart all the Front End Servers in the target pool. It may take longer (up to 2 hours) for the Front End Servers to start, depending on how many contacts were created by this operation.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > After the contacts are created, this tool will restart all the Front End Servers in the target pool. It may take longer (up to 2 hours) for the Front End Servers to start, depending on how many contacts were created by this operation.
+    
 
 
 ## Distribution List

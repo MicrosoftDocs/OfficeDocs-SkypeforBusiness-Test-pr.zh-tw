@@ -39,18 +39,9 @@ _**上次修改主題的時間：** 2012-10-21_
     
       - 若要指定用於 Active Directory 網域服務、Edge Server 或 Exchange Server 的不同憑證，請按一下 \[顯示進階登入選項\]，選取需要個別憑證的每個核取方塊，為所選取的每個核取方塊指定憑證，然後按一下 \[連線到 Active Directory 伺服器\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在開始掃描之前，Best Practices Analyzer 會執行網路及權限檢查，以確保所指定的帳戶憑證有效，而且 Best Practices Analyzer 可以連線到 Active Directory 網域服務。如果該工具是在工作群組伺服器上執行，也會確認它可以連線到周邊網路中的 Edge Server (如果 Edge Server 包含在掃描中)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在開始掃描之前，Best Practices Analyzer 會執行網路及權限檢查，以確保所指定的帳戶憑證有效，而且 Best Practices Analyzer 可以連線到 Active Directory 網域服務。如果該工具是在工作群組伺服器上執行，也會確認它可以連線到周邊網路中的 Edge Server (如果 Edge Server 包含在掃描中)。
+    
 
 
 5.  在「啟動新的最佳作法掃描」頁面上，選取您要包含在掃描中的選項，指定網路速度，然後按一下 \[開始掃描\]。
@@ -65,16 +56,7 @@ _**上次修改主題的時間：** 2012-10-21_
     
       - 若要檢視其他報告，請按一下 \[其他報告\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需 Best Practices Analyzer 報告及其識別之問題的詳細資訊，請參閱＜<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">檢視和使用最佳做法分析程式建立的報表</a>＞及＜<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解決由最佳做法分析程式所識別的問題</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需 Best Practices Analyzer 報告及其識別之問題的詳細資訊，請參閱＜<a href="lync-server-2013-viewing-and-working-with-reports-created-by-best-practices-analyzer.md">檢視和使用最佳做法分析程式建立的報表</a>＞及＜<a href="lync-server-2013-analyzing-and-resolving-issues-identified-by-best-practices-analyzer.md">分析和解決由最佳做法分析程式所識別的問題</a>＞。
+    
 

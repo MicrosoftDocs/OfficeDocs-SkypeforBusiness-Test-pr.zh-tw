@@ -29,18 +29,9 @@ Lync Server 2013 拓撲中各伺服器的網路介面卡都必須支援每秒至
 
   - 如果您正在使用 DNS 負載平衡來部署單一 Edge Server 或 Edge 集區，可以設定外部防火牆以作為 NAT。內部防火牆不可設定為 NAT。如需這些需求的詳細資訊，請參閱規劃文件中的＜[決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有 Edge 集區且正在使用硬體負載平衡器，您必須在每個 Edge Server 上使用公用 IP 位址，而且不能針對 NAT 裝置上的伺服器或集區使用 NAT (例如，防火牆，或者會有 NAT 輸入或輸出流量的其他基礎結構裝置)。如需詳細資訊，請參閱＜外部使用者存取規劃＞文件中的＜<a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的連接埠摘要 - 調整式合併 Edge (利用硬體負載平衡器)</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您有 Edge 集區且正在使用硬體負載平衡器，您必須在每個 Edge Server 上使用公用 IP 位址，而且不能針對 NAT 裝置上的伺服器或集區使用 NAT (例如，防火牆，或者會有 NAT 輸入或輸出流量的其他基礎結構裝置)。如需詳細資訊，請參閱＜外部使用者存取規劃＞文件中的＜<a href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Lync Server 2013 中的連接埠摘要 - 調整式合併 Edge (利用硬體負載平衡器)</a>＞。
+    
 
 
   - 如果您的組織使用的是服務品質 (QoS) 基礎結構，則媒體子系統將會設計成配合此現有基礎結構運作。

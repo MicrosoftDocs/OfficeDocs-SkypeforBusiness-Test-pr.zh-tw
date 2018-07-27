@@ -35,18 +35,9 @@ _**上次修改主題的時間：** 2013-07-03_
 
 6.  從 TPM 管理主控台，確認您的 TPM 規格版本至少為 1.2。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果出現對話方塊，指出找不到相容的信賴平台模組 (TPM)，請確認電腦是否具有相容的 TPM 模組，且模組已於系統 BIOS 中啟用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果出現對話方塊，指出找不到相容的信賴平台模組 (TPM)，請確認電腦是否具有相容的 TPM 模組，且模組已於系統 BIOS 中啟用。
+    
 
 
 7.  關閉 TPM 管理主控台
@@ -55,18 +46,9 @@ _**上次修改主題的時間：** 2013-07-03_
     
         TpmVscMgr create /name MyVSC /pin default /adminkey random /generate
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要在建立虛擬智慧卡時提供自訂的 PIN 值，請改為使用 /pin 提示。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要在建立虛擬智慧卡時提供自訂的 PIN 值，請改為使用 /pin 提示。
+    
 
 
 9.  從命令提示字元使用下列命令，開啟電腦管理主控台：

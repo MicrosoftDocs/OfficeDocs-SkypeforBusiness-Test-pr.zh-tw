@@ -31,18 +31,9 @@ Lync Server 具有三項進階的 企業語音功能：通話許可控制 (CAC)�
 
 網路地區是一種網路中樞或網路骨幹，只有在通話許可控制 (CAC)、E9-1-1 和媒體旁路的組態中才會使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>網路地區與 Lync Server 電話撥入式會議地區不同，後者是將電話撥入式會議存取號碼與一或多個 Lync Server 撥號對應表建立關聯時所需要的項目。如需電話撥入式會議地區的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-dial-in-conferencing-requirements.md">Lync Server 2013 中的電話撥入式會議需求</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 網路地區與 Lync Server 電話撥入式會議地區不同，後者是將電話撥入式會議存取號碼與一或多個 Lync Server 撥號對應表建立關聯時所需要的項目。如需電話撥入式會議地區的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-dial-in-conferencing-requirements.md">Lync Server 2013 中的電話撥入式會議需求</a>＞。
+
 
 
 若要使用 CAC，每個網路地區都必須有一個相關聯的 Lync Server 中央網站，用以管理該地區內的媒體流量 (亦即，此網站會根據您所設定關於可否建立即時音訊或視訊工作階段的原則，來進行決策)。 Lync Server 中央網站並不代表地理位置，而是以一個或多個集區的形式設定的伺服器邏輯群組。如需中央網站的詳細資訊，請參閱規劃文件中的 [Lync Server 2013 中的參考拓撲](lync-server-2013-reference-topologies.md)＞。另請參閱支援文件中的＜ [Lync Server 2013 中支援的拓撲](lync-server-2013-supported-topologies.md)＞。
@@ -57,18 +48,9 @@ Lync Server 具有三項進階的 企業語音功能：通話許可控制 (CAC)�
 
 網路網站代表地理位置，例如分公司、地區辦事處或總公司。每個網路網站都必須與某個網路地區相關聯。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有進階 企業語音功能才會使用網路網站。網路網站與您在 Lync Server 拓撲中設定的分支網站並不相同。如需分支網站的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-reference-topologies.md">Lync Server 2013 中的參考拓撲</a>＞。另請參閱支援文件中的＜ <a href="lync-server-2013-supported-topologies.md">Lync Server 2013 中支援的拓撲</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有進階 企業語音功能才會使用網路網站。網路網站與您在 Lync Server 拓撲中設定的分支網站並不相同。如需分支網站的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-reference-topologies.md">Lync Server 2013 中的參考拓撲</a>＞。另請參閱支援文件中的＜ <a href="lync-server-2013-supported-topologies.md">Lync Server 2013 中支援的拓撲</a>＞。
+
 
 
 若要設定網路網站並指定其相關聯的網路地區，您可以使用 Lync Server 控制台的 \[網路設定\] 區段，或執行 Lync Server 管理命令介面**New-CsNetworkSite** 或 **Set-CsNetworkSite** Cmdlet。如需相關指示，請參閱部署文件中的＜ [在 Lync Server 2013 中建立或修改網站](lync-server-2013-create-or-modify-a-network-site.md)＞，或參閱 Lync Server 管理命令介面文件。

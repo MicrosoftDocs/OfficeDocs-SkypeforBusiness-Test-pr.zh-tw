@@ -45,18 +45,9 @@ _**上次修改主題的時間：** 2013-02-16_
 
 Mobility Service (Mcx) 使用的總記憶體 (MB) = 164 + (400 + 134) / 1024 \* \[Currently Active Session Count with Active Presence Subscriptions\] + 400 / 1024 \* (\[Currently Active Session Count\] – \[Currently Active Session Count with Active Presence Subscriptions\])
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Lync Server 2010 Capacity Calculator 試算表已預先填入可讓規劃人員確定伺服器需求 (包括 CPU、記憶體和硬碟) 的所有公式。您可下載該試算表和相關文件，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=212657" class="uri">http://go.microsoft.com/fwlink/?linkid=212657</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft Lync Server 2010 Capacity Calculator 試算表已預先填入可讓規劃人員確定伺服器需求 (包括 CPU、記憶體和硬碟) 的所有公式。您可下載該試算表和相關文件，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=212657" class="uri">http://go.microsoft.com/fwlink/?linkid=212657</a>。
+
 
 
 前端伺服器需要足夠的可用記憶體，才能在容錯移轉的狀況中支援 Mobility Service。您可以使用 \[Memory\\Available Mbytes\] 計數器來監控前端伺服器上目前可用的記憶體，或是使用上述方程式來規劃您預期 Mobility Service 會使用的記憶體數量。

@@ -47,18 +47,9 @@ _**上次修改主題的時間：** 2012-11-01_
         
           - **免責聲明**   此選項與 **\[必要\]** 相同，唯使用者無法直接關閉提示而不輸入位置資訊。使用者仍可完成緊急通話，但必須輸入資訊才可完成其他通話。此外，會向使用者顯示免責聲明文字，此聲明會警告使用者拒絕輸入位置資訊的後果。若要設定免責聲明文字，您必須使用 Lync Server 管理命令介面來執行 **Set-CsLocationPolicy** Cmdlet 或 **New-CsLocationPolicy** Cmdlet，並搭配 EnhancedEmergencyServiceDisclaimer 參數。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中的＜[Set-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsLocationPolicy)＞或＜[New-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsLocationPolicy)＞。
             
-            <table>
-            <thead>
-            <tr class="header">
-            <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="odd">
-            <td>在 Lync Server 2013 中，您可以使用位置原則，針對不同的地區設定或不同的使用者組，設定不同的免責聲明，不像在 Lync Server 2010 中，您只能為整個組織指定全域免責聲明。</td>
-            </tr>
-            </tbody>
-            </table>
+            > [!NOTE]  
+            > 在 Lync Server 2013 中，您可以使用位置原則，針對不同的地區設定或不同的使用者組，設定不同的免責聲明，不像在 Lync Server 2010 中，您只能為整個組織指定全域免責聲明。
+            
     
       - **位置僅限用於緊急服務**   Lync 可以針對各種原因來使用位置資訊 (例如，為了通知組員您目前的位置)。選取此核取方塊可確保位置資訊僅供緊急通話之用。
     
@@ -68,18 +59,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - **緊急撥號遮罩**   一個要在撥號時轉譯成緊急撥號值的號碼。例如，若您在此欄位中輸入值 212，而緊急撥號欄位的值為 911，當使用者撥打 212 時，通話將會轉接至 911。如此即可撥打替代的緊急電話號碼，而且依然可以讓電話轉接到緊急服務 (例如，若某個國家或地區的緊急電話號碼不同，來自該國家或地區的人會嘗試撥打該國家或地區的緊急電話號碼，而非所在國家或地區的緊急電話號碼)。您可以使用分號分隔多個值，藉此定義多組緊急撥話遮罩。例如 212;414。字串的長度上限為 100 個字元。每個字元必須是 0 到 9 的數字。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>確保指定的撥號遮罩值與通話保留範圍中的數字不同。通話保留路由優先於緊急撥號字串轉換。若要檢視現有的通話駐留範圍，請按一下左導覽列中的 [語音功能]，然後按一下 [通話駐留]。如需詳細資訊，請參閱＜<a href="lync-server-2013-configure-phone-number-extensions-for-parking-calls.md">設定保留通話的電話分機號碼</a>＞。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 確保指定的撥號遮罩值與通話保留範圍中的數字不同。通話保留路由優先於緊急撥號字串轉換。若要檢視現有的通話駐留範圍，請按一下左導覽列中的 [語音功能]，然後按一下 [通話駐留]。如需詳細資訊，請參閱＜<a href="lync-server-2013-configure-phone-number-extensions-for-parking-calls.md">設定保留通話的電話分機號碼</a>＞。
+        
     
       - **通知 URI**   撥打緊急電話時所通知的一或多個 SIP 統一資源識別項 (URI)。例如，每次有人撥打緊急電話時，就會透過立即訊息通知公司的安全部門。如果可以使用來電者的位置，通知中會包含該位置的資訊。可以使用逗號分隔的清單包含多個 SIP URI。例如 "sip:security@litwareinc.com","sip:kmyer@litwareinc.com"。可支援通訊群組清單。字串長度必須為 1 到 256 個字元，且開頭必須為首碼 "sip:"。在您按一下 \[通知 URI\] 欄位之前會顯示範例。
     
@@ -93,19 +75,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 6.  按一下 \[認可\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您建立使用者原則時，該原則並不會自動套用至任何使用者或網路網站。若要將原則套用至使用者，請按一下左導覽列中的 [使用者]。尋找要套用原則的使用者。在 [編輯] 功能表上，按一下 [顯示詳細資料]。在 [編輯 Lync Server 使用者] 頁面上，從 [位置原則] 下拉式清單中選取新的位置原則，然後按一下 [認可]。<br />
-    若要將原則套用至網路網站，請按一下左導覽列中的 [網路設定]，然後按一下 [站台]。尋找要套用原則的網路網站。在 [編輯] 功能表上，按一下 [顯示詳細資料]。在 [編輯站台] 中，從 [位置原則] 下拉式清單中選取新的位置原則，然後按一下 [認可]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 當您建立使用者原則時，該原則並不會自動套用至任何使用者或網路網站。若要將原則套用至使用者，請按一下左導覽列中的 [使用者]。尋找要套用原則的使用者。在 [編輯] 功能表上，按一下 [顯示詳細資料]。在 [編輯 Lync Server 使用者] 頁面上，從 [位置原則] 下拉式清單中選取新的位置原則，然後按一下 [認可]。<br />
+    > 若要將原則套用至網路網站，請按一下左導覽列中的 [網路設定]，然後按一下 [站台]。尋找要套用原則的網路網站。在 [編輯] 功能表上，按一下 [顯示詳細資料]。在 [編輯站台] 中，從 [位置原則] 下拉式清單中選取新的位置原則，然後按一下 [認可]。
 
 
 ## 在 Lync Server 控制台中修改位置原則

@@ -80,18 +80,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398321.security(OCS.15).gif" title="security" alt="security" />安全性 附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在 Windows Server 2008 作業系統上使用 IIS 7.0， Lync Server 安裝程式會停用 IIS 中的核心模式驗證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您在 Windows Server 2008 作業系統上使用 IIS 7.0， Lync Server 安裝程式會停用 IIS 中的核心模式驗證。
+
 
 
 ## 本章節內容

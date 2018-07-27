@@ -81,18 +81,9 @@ Lync Server 控制台會自動安裝於每一部 Lync Server 前端伺服器或 
 
 Lync Server 記錄工具可以在產品執行時，從產品擷取記錄和追蹤資訊，進而協助進行疑難排解。您可以使用這個工具，在任何 Lync Server 伺服器角色上執行偵錯工作階段。如需記錄工具的詳細資訊，請參閱 TechNet Library 的＜Lync Server 2010 記錄工具＞文件，網址為 <http://go.microsoft.com/fwlink/?linkid=199265>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在所有情況下的各種 Lync Server 記錄工具之間的所有記錄集合建議使用 集中記錄服務。 Lync Server 記錄工具仍會正常運作，但如果 集中記錄服務正在執行中，則該工具會干擾或大部分呈現無效。您應該僅使用 集中記錄服務或 Lync Server 記錄工具，但絕對不要同時使用兩種工具。如需 集中記錄服務以及為何應該單獨使用的詳細資訊，請參閱＜ <a href="lync-server-2013-using-the-centralized-logging-service.md">使用集中式記錄服務</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在所有情況下的各種 Lync Server 記錄工具之間的所有記錄集合建議使用 集中記錄服務。 Lync Server 記錄工具仍會正常運作，但如果 集中記錄服務正在執行中，則該工具會干擾或大部分呈現無效。您應該僅使用 集中記錄服務或 Lync Server 記錄工具，但絕對不要同時使用兩種工具。如需 集中記錄服務以及為何應該單獨使用的詳細資訊，請參閱＜ <a href="lync-server-2013-using-the-centralized-logging-service.md">使用集中式記錄服務</a>＞。
+
 
 
 ## 本節內容

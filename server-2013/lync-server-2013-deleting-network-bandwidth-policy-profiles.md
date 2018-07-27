@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 4.  在 **\[頻寬原則\]** 頁面上，按一下您要刪除的頻寬原則設定檔。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以一次刪除一個以上的設定檔。若要這麼做，請按住 CTRL 鍵並同時選取多個設定檔。或者，若要選取所有設定檔，請按一下 <strong>[編輯]</strong> 功能表上的 <strong>[全選]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以一次刪除一個以上的設定檔。若要這麼做，請按住 CTRL 鍵並同時選取多個設定檔。或者，若要選取所有設定檔，請按一下 <strong>[編輯]</strong> 功能表上的 <strong>[全選]</strong>。
+    
 
 
 5.  在 **\[編輯\]** 功能表上，按一下 **\[刪除\]**。

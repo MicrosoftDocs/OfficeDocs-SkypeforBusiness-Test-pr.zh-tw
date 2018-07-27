@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-10_
 
 您可以指定自己的音樂檔案用於等候音樂，而不使用 Lync Server 2013 隨附的預設音樂檔案。如要自訂等候音樂，請使用 **Set-CsCallParkServiceMusicOnHoldFile** Cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您自訂等候音樂並想將相同的音樂用於多個網站，則需在每個執行通話駐留應用程式的網站設定該音樂檔案。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您自訂等候音樂並想將相同的音樂用於多個網站，則需在每個執行通話駐留應用程式的網站設定該音樂檔案。
+
 
 
 ## 自訂音樂檔案

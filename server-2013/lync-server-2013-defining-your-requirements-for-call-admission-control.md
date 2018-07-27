@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 4.  判斷每個 WAN 連結的頻寬限制。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>頻寬限制指的是進行 WAN 連結時， 企業語音與音訊/視訊流量所分配到的頻寬大小。因此，若有某個 WAN 連結有「頻寬限制」，代表該 WAN 連結的頻寬限制低於透過該連結傳送的預期尖峰流量。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 頻寬限制指的是進行 WAN 連結時， 企業語音與音訊/視訊流量所分配到的頻寬大小。因此，若有某個 WAN 連結有「頻寬限制」，代表該 WAN 連結的頻寬限制低於透過該連結傳送的預期尖峰流量。
+    
 
 
 5.  識別指派給每個網路網站的 IP 子網路。
@@ -47,18 +38,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ![Litware Inc. 網路拓撲範例](images/Gg398334.477f3b52-2973-4026-9bc0-b1c6bf9f4803(OCS.15).jpg "Litware Inc. 網路拓撲範例")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有網站都與網路地區有關聯。例如，波特蘭、雷諾與阿布奎基都包含在北美洲地區內。本圖只顯示已套用 CAC 原則且具有頻寬限制的 WAN 連結。包含芝加哥、紐約與底特律的網站會顯示在北美洲地區內，而且由於這幾個網站沒有頻寬限制，因此不需要 CAC 原則。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有網站都與網路地區有關聯。例如，波特蘭、雷諾與阿布奎基都包含在北美洲地區內。本圖只顯示已套用 CAC 原則且具有頻寬限制的 WAN 連結。包含芝加哥、紐約與底特律的網站會顯示在北美洲地區內，而且由於這幾個網站沒有頻寬限制，因此不需要 CAC 原則。
+
 
 
 以下各節將說明此範例拓撲的各個元件。如需有關此拓撲的詳細規劃內容 (包含頻寬限制)，請參閱＜ [範例：在 Lync Server 2013 中收集通話許可控制服務需求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)＞。
@@ -75,18 +57,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 CAC 要求每個網路地區必須具有一個 Lync Server 中央網站。中央網站係以與該網路地區內所有其他網站相較之下，具有最佳網路連線和最高頻寬作為選擇依據。先前的範例網路拓撲顯示三個網路地區，每一個都具備中央網站以負責管理 CAC 決策。下表顯示先前範例中適當的關聯關係。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>中央網站不一定會對應至網站。不過，在本文件的範例中，某些中央網站名稱 (包括芝加哥、倫敦與北京) 則與某些網站名稱相同。即便某個中央網站與網站共用相同名稱，中央網站仍舊是 Lync Server 拓撲的重要元素。網站是 Lync Server 拓撲所屬之整體網路的一環。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 中央網站不一定會對應至網站。不過，在本文件的範例中，某些中央網站名稱 (包括芝加哥、倫敦與北京) 則與某些網站名稱相同。即便某個中央網站與網站共用相同名稱，中央網站仍舊是 Lync Server 拓撲的重要元素。網站是 Lync Server 拓撲所屬之整體網路的一環。
+
 
 
 ### 網路地區、中央網站與網路網站
@@ -161,32 +134,14 @@ CAC 頻寬原則可定義下列任一或所有項目：
 
   - 分配給單一視訊通話 (工作階段) 的最大頻寬。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有的 CAC 頻寬值都代表最大的 <em>單向</em> 頻寬限制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有的 CAC 頻寬值都代表最大的 <em>單向</em> 頻寬限制。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 語音原則功能讓您得以針對使用者的來電 (而非針對使用者所撥出的電話) 覆寫頻寬原則檢查設定。工作階段建立完畢後，便可準確地計算頻寬使用量。為順利做出適宜的通話許可控制決策，請勿頻繁使用此設定，能不用就不用。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中建立語音原則和設定 PSTN 使用方式記錄</a>＞或＜ <a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改語音原則和設定 PSTN 使用方式記錄</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lync Server 2013 語音原則功能讓您得以針對使用者的來電 (而非針對使用者所撥出的電話) 覆寫頻寬原則檢查設定。工作階段建立完畢後，便可準確地計算頻寬使用量。為順利做出適宜的通話許可控制決策，請勿頻繁使用此設定，能不用就不用。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中建立語音原則和設定 PSTN 使用方式記錄</a>＞或＜ <a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改語音原則和設定 PSTN 使用方式記錄</a>。
+
 
 
 若要最佳化個別工作階段的頻寬使用，請斟酌要使用的音訊與視訊轉碼器類型。具體地說，請避免分配過少的頻寬給預期將頻繁使用的轉碼器。相反地，如果您想要防止媒體使用會消耗大量頻寬的轉碼器，請儘可能將每個工作階段的最大頻寬設為最小值以抑制此類用途。對音訊而言，並非每一種情況都有可用的轉碼器。例如：
@@ -254,18 +209,9 @@ CAC 頻寬原則可定義下列任一或所有項目：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>頻寬需求需考量下列各項的負荷：Ethernet II、IP、使用者資料包通訊協定 (UDP)、RTP (即時傳輸通訊協定) 與 SRTP (安全即時傳輸通訊協定)。這些需求同時包含 10 kbps 的 RTCP 負荷。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 頻寬需求需考量下列各項的負荷：Ethernet II、IP、使用者資料包通訊協定 (UDP)、RTP (即時傳輸通訊協定) 與 SRTP (安全即時傳輸通訊協定)。這些需求同時包含 10 kbps 的 RTCP 負荷。
+
 
 
 雖然 G.722.1 與 Siren 轉碼器很相近，但其位元速率卻不相同。

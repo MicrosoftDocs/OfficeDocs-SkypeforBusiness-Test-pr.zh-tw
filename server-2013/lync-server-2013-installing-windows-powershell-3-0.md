@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2014-06-27_
 
 此時，對於執行 Windows Server 2012 或 Windows Server 2012 R2 的系統，您無需執行任何操作，並可直接移至下個部署階段，因為 PowerShell 3.0 已包含在這些作業系統中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>然而，如果是執行 Windows Server 2008 R2 SP1 的系統，您必須先安裝 PowerShell 3.0，然後才能安裝 Lync Server 2013，否則將無法運作。若要安裝 PowerShell 3.0，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=329800">Windows Management Framework 3.0</a>，直接連結至 PowerShell 3.0 下載頁面，並取得如何成功安裝的相關資訊。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 然而，如果是執行 Windows Server 2008 R2 SP1 的系統，您必須先安裝 PowerShell 3.0，然後才能安裝 Lync Server 2013，否則將無法運作。若要安裝 PowerShell 3.0，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=329800">Windows Management Framework 3.0</a>，直接連結至 PowerShell 3.0 下載頁面，並取得如何成功安裝的相關資訊。
+
 
 
 完成安裝後，或是在繼續部署 Lync Server 前想要檢查並確認伺服器已有安裝 PowerShell 3.0，可直接執行下列操作：

@@ -39,18 +39,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>設定範圍表中的通話駐留範圍</p></td>
 <td><p>使用 Lync Server 控制台或 <strong>New-CSCallParkOrbit</strong> Cmdlet，在通話駐留軌道範圍表中建立駐留範圍，並將其關聯至裝載 通話駐留應用程式的 應用程式服務。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了能與現有撥號對應表密切整合，駐留範圍通常設定為虛擬分機的區塊。不支援將直接向內撥號 (DID) 號碼指派為通話駐留範圍表中的範圍號碼。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 為了能與現有撥號對應表密切整合，駐留範圍通常設定為虛擬分機的區塊。不支援將直接向內撥號 (DID) 號碼指派為通話駐留範圍表中的範圍號碼。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>
@@ -86,33 +77,15 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>設定語音原則，為使用者啟用 通話駐留</p></td>
 <td><p>使用 Lync Server 控制台或 <strong>Set-CSVoicePolicy</strong> Cmdlet 搭配 <strong>EnableCallPark</strong> 選項，可在語音原則中為使用者啟用 通話駐留。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，所有使用者的 通話駐留都是停用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 根據預設，所有使用者的 通話駐留都是停用。
+
 
 </div>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您有多個語音原則，請務必為每個語音原則設定 EnableCallPark 屬性，而非只是設定預設原則。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您有多個語音原則，請務必為每個語音原則設定 EnableCallPark 屬性，而非只是設定預設原則。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>

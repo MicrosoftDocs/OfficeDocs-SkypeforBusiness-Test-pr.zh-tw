@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果您的部署包含 Lync Server 2013  Edge Server 或 Edge 集區的安裝，則可能的通訊類型範圍會因為外部使用者具有多種存取選擇而大幅擴展，以與其他 SIP 同盟網域的成員、SIP 同盟提供者以及 XMPP 同盟使用者進行通訊。完成 Edge Server 或 Edge 集區的設定後，您要啟用您所要提供的外部使用者存取類型，並設定外部存取的原則。在 Lync Server 2013 中，您可以依工作需求，使用 Lync Server 控制台與 Lync Server 管理命令介面啟用及設定外部使用者存取和原則。如需這些管理工具的詳細資訊，請參閱作業文件中的＜ [Lync Server 2013 系統管理工具](lync-server-2013-lync-server-administrative-tools.md)＞、＜ [Lync Server 管理命令介面](lync-server-2013-lync-server-management-shell.md)＞以及＜ [安裝 Lync Server 2013 系統管理工具](lync-server-2013-install-lync-server-administrative-tools.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您設計外部使用者存取的組態和原則時，必須知道原則的優先順序以及原則的套用方式。 套用到某原則層級的 Lync Server 原則設定，可能會覆寫套用到其他原則層級的設定。Lync Server 原則的優先順序是使用者原則 (影響力最大) 會覆寫網站原則，網站原則則會覆寫全域原則 (影響力最小)。亦即，愈接近原則所影響之物件的原則設定，對物件的影響力愈大。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 當您設計外部使用者存取的組態和原則時，必須知道原則的優先順序以及原則的套用方式。 套用到某原則層級的 Lync Server 原則設定，可能會覆寫套用到其他原則層級的設定。Lync Server 原則的優先順序是使用者原則 (影響力最大) 會覆寫網站原則，網站原則則會覆寫全域原則 (影響力最小)。亦即，愈接近原則所影響之物件的原則設定，對物件的影響力愈大。
+
 
 
 根據預設，沒有原則是設定為支援外部使用者存取 (包括遠端使用者存取、同盟網域使用者存取)，即使您已為組織啟用外部使用者存取也一樣。若要控制外部使用者存取的使用，您必須設定一個或多個原則，並在每個原則指定支援的外部使用者存取類型。這包括下列外部存取原則：
@@ -174,18 +165,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p></p></td>
 <td><p><a href="lync-server-2013-assign-conferencing-policies-to-support-anonymous-users.md">在 Lync Server 2013 中指派會議原則以支援匿名使用者</a></p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也必須考慮會議原則的下列組態設定：＜ <a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中建立或修改會議原則</a>＞及＜ <a href="lync-server-2013-conferencing-policy-settings-reference.md">Lync Server 2013 中的會議原則設定參考</a>＞</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您也必須考慮會議原則的下列組態設定：＜ <a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中建立或修改會議原則</a>＞及＜ <a href="lync-server-2013-conferencing-policy-settings-reference.md">Lync Server 2013 中的會議原則設定參考</a>＞
+
 
 </div></td>
 <td><p></p></td>

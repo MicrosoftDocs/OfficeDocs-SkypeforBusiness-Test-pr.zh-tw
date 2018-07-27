@@ -23,32 +23,14 @@ Lync Server 2013「自動探索」服務最初是 Microsoft Lync Server 2010 所
 
 了解「自動探索」回應文件最好的方式包括 Web 服務如何透過此文件將功能傳遞給用戶端，仔細分析和定義 Lync Web 服務「自動探索」回應文件典型回應中的每一行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在後續的詳細資訊中，使用者已經過主伺服器驗證 (回應驗證要求)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在後續的詳細資訊中，使用者已經過主伺服器驗證 (回應驗證要求)。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 自動探索 Web 服務定義於 <strong>Microsoft Developer Network</strong> (MSDN) 程式庫<strong>開放性規格</strong>一節中的 <strong>Microsoft Office 通訊協定</strong>。如需詳細資訊，請參閱完整的規格文件＜Lync 自動探索 Web 服務通訊協定＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=273839" class="uri">http://go.microsoft.com/fwlink/?linkid=273839</a>。如需驗證的詳細資訊，請參閱＜OC 驗證 Web 服務通訊協定＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=279015" class="uri">http://go.microsoft.com/fwlink/?linkid=279015</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lync 自動探索 Web 服務定義於 <strong>Microsoft Developer Network</strong> (MSDN) 程式庫<strong>開放性規格</strong>一節中的 <strong>Microsoft Office 通訊協定</strong>。如需詳細資訊，請參閱完整的規格文件＜Lync 自動探索 Web 服務通訊協定＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=273839" class="uri">http://go.microsoft.com/fwlink/?linkid=273839</a>。如需驗證的詳細資訊，請參閱＜OC 驗證 Web 服務通訊協定＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=279015" class="uri">http://go.microsoft.com/fwlink/?linkid=279015</a>。
+
 
 
 ## Lync Server Web 服務自動探索回應

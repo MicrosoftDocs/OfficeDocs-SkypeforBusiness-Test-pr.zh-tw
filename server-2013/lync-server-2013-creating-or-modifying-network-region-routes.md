@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2012-10-08_
 
 5.  在 **\[新的地區路由\]** 的 **\[名稱\]** 欄位中，輸入一個值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此值在您的 Microsoft Lync Server 2013 部署中必須是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此值在您的 Microsoft Lync Server 2013 部署中必須是唯一的。
+    
 
 
 6.  從 **\[網路地區 \#1\]** 下拉式清單中，選取要以此路由相連的兩個地區中的其中一個地區。
@@ -49,18 +40,9 @@ _**上次修改主題的時間：** 2012-10-08_
 
 8.  使用 **\[網路地區連結\]** 清單方塊，將地區連結新增至路由。按一下 **\[新增\]** 按鈕以顯示 **\[地區連結\]** 頁面。按一下要新增至此路由的地區連結，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要新增更多連結，請繼續按 <strong>[新增]</strong> 按鈕；若要移除連結，請選取連結，然後按一下 <strong>[移除]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要新增更多連結，請繼續按 <strong>[新增]</strong> 按鈕；若要移除連結，請選取連結，然後按一下 <strong>[移除]</strong>。
+    
 
 
 9.  按一下 **\[認可\]**。

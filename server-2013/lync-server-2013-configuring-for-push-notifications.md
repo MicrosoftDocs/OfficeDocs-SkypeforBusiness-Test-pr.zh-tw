@@ -39,18 +39,9 @@ _**上次修改主題的時間：** 2013-02-12_
 
   - 如果您的環境具有 Office Communications Server 2007 R2Edge Server，您必須設定與 push.lync.com 的直接 SIP 同盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Push.lync.com 是推入通知服務的 Microsoft Office 365 網域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Push.lync.com 是推入通知服務的 Microsoft Office 365 網域。
+    
 
 
   - 若要啟用推入通知，您必須執行 **Set-CsPushNotificationConfiguration** Cmdlet。預設會關閉推入通知。
@@ -71,18 +62,9 @@ _**上次修改主題的時間：** 2013-02-12_
     
         New-CsHostingProvider -Identity "LyncOnline" -Enabled $True -ProxyFqdn "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您只能與一個裝載提供者有一個同盟關係。換句話說，如果您已設定同盟關係為 sipfed.online.lync.com 的裝載提供者，請勿針對此關係新增其他裝載提供者，即使裝載提供者的身分識別不是 LyncOnline 亦然。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您只能與一個裝載提供者有一個同盟關係。換句話說，如果您已設定同盟關係為 sipfed.online.lync.com 的裝載提供者，請勿針對此關係新增其他裝載提供者，即使裝載提供者的身分識別不是 LyncOnline 亦然。
+    
 
 
 4.  設定組織與 Lync Online 推入通知服務之間的裝載提供者同盟。在命令列中輸入：

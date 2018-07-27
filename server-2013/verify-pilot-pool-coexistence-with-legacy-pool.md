@@ -35,18 +35,9 @@ _**上次修改主題的時間：** 2012-09-29_
 
 ![\[選取 URL\] 對話方塊](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "[選取 URL] 對話方塊")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 上，您必須先將 Silverlight 升級為 Silverlight 版本 5 才能使用 Lync Server 控制台。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在 Lync Server 2013 上，您必須先將 Silverlight 升級為 Silverlight 版本 5 才能使用 Lync Server 控制台。
+
 
 
 現在此拓撲包含 Lync Server 2010 與 Lync Server 2013 伺服器角色。

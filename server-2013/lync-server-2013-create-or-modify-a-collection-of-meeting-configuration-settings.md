@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2013-02-23_
     
       - 若要自訂出現在會議邀請上的標誌，請在 \[標誌 URL\] 中輸入標誌的位置。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>標誌必須是 GIF 或 JPG 影像，大小為 188 x 30 像素。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 標誌必須是 GIF 或 JPG 影像，大小為 188 x 30 像素。
+        
     
       - 若要自訂出現在會議邀請上的說明文字，請在 \[說明 URL\] 中輸入說明文字的位置。
     

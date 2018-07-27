@@ -47,18 +47,9 @@ _**上次修改主題的時間：** 2013-03-26_
         Xcopy  <Source: Pool A CPS File Store Path>  <Destination>
         Example: Xcopy  "<Pool A File Store Path>\LyncFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Destination:  Backup location 1>"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>「通話駐留」應用程式每一個集區僅可以儲存一組設定與一個自訂等候音樂音訊檔。這些設定可透過 <strong>Get-CsCpsConfiguration</strong> Cmdlet 存取。因為「通話駐留」的災害復原機制仰賴備份集區的「通話駐留」應用程式，如果發生災害，則不會備份或保留主要集區的設定。如果遺失主要集區，則無法復原這些設定，當部署新的集區以取代主要集區時，需要設定「通話駐留」設定與任何自訂等候音樂音訊檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 「通話駐留」應用程式每一個集區僅可以儲存一組設定與一個自訂等候音樂音訊檔。這些設定可透過 <strong>Get-CsCpsConfiguration</strong> Cmdlet 存取。因為「通話駐留」的災害復原機制仰賴備份集區的「通話駐留」應用程式，如果發生災害，則不會備份或保留主要集區的設定。如果遺失主要集區，則無法復原這些設定，當部署新的集區以取代主要集區時，需要設定「通話駐留」設定與任何自訂等候音樂音訊檔。
+    
 
 
   - 如果您將任何宣告設定為「未指派號碼語音功能」的一部分，建議您將初始組態期間所使用的任何原始音訊檔副本保留在其他位置。如果不這麼做，您可以在要匯入音訊檔之伺服器或集區的檔案存放區中，取得已設定音訊檔的副本。這些檔案未備份為 Lync Server 2013 災害復原程序的一部分，且如果上傳至集區的檔案毀壞、受損或遭到清除，就會遺失。若要從伺服器或集區的檔案存放區中複製用於設定「未指派號碼語音功能」的所有音訊檔，請使用：

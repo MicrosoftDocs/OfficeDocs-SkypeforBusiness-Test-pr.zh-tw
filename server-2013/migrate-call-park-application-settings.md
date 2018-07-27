@@ -34,18 +34,9 @@ Example usage:  Xcopy "<Lync Server 2010 File Store Path>\OcsFileStore\coX-Appli
 
 2.  在命令列輸入下列命令：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您的 Lync Server 2013 通話駐留應用程式設定和舊版的 Lync Server 2010 設定相同，則可不用執行此步驟。若 Lync Server 2013 和 Lync Server 2010 環境的通話駐留應用程式設定不同，請使用下列的 Cmdlet 做為範本來更新這些變更。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若您的 Lync Server 2013 通話駐留應用程式設定和舊版的 Lync Server 2010 設定相同，則可不用執行此步驟。若 Lync Server 2013 和 Lync Server 2010 環境的通話駐留應用程式設定不同，請使用下列的 Cmdlet 做為範本來更新這些變更。
+    
     
         Set-CsCpsConfiguration -Identity "<LS2013 Call Park Service ID>" -CallPickupTimeoutThreshold "<LS2010 CPS TimeSpan>" -EnableMusicOnHold "<LS2010 CPS value>" -MaxCallPickupAttempts "<LS2010 CPS pickup attempts>" -OnTimeoutURI "<LS2010 CPS timeout URI>"
 

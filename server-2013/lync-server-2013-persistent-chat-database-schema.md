@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-09-18_
 
 常設聊天室資料庫是指對應至 Lync Server 2013 後端伺服器角色 **PersistentChatStore** (對應至 MGC 資料庫) 和 **PersistentChatComplianceStore** (對應至 Mgccomp 資料庫) 的資料庫。發行此結構描述的目標是讓您能夠建立查詢，並深入了解建立關於交談使用方式、作用中聊天室、前幾名的張貼者等實用報告的資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們保留發展此結構描述的權利。Microsoft 不保證會維持此發行的結構描述之完整回溯相容性。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 我們保留發展此結構描述的權利。Microsoft 不保證會維持此發行的結構描述之完整回溯相容性。
+
 
 
 請遵循以下最佳做法：

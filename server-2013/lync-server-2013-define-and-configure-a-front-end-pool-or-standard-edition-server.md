@@ -117,18 +117,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - **監控**   監控伺服器可讓您收集網路和端點上描述媒體品質的數值資料，還有與 VoIP 通話、IM 訊息、A/V 交談、會議、應用程式共用和檔案傳輸相關的使用資訊，以及通話錯誤及通話失敗之疑難排解資訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您想在部署中啟用 CAC，每個中央網站中只能針對一個集區啟用 CAC。如果您是部署語音功能或 A/V 會議，則建議使用 CAC。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您想在部署中啟用 CAC，每個中央網站中只能針對一個集區啟用 CAC。如果您是部署語音功能或 A/V 會議，則建議使用 CAC。
+    
     
     下表說明可用的功能 (上方) 以及提供給使用者使用的功能 (左側)。表中的選項代表您應該為組織選取並啟用的功能。
     
@@ -191,18 +182,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - 如果您想要將 中繼伺服器部署為獨立伺服器，請清除適當的核取方塊。在完整部署 前端伺服器之後，您將使用不同的部署步驟來部署 中繼伺服器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建議您盡可能組合中繼伺服器。如需組合的或獨立中繼伺服器支援的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-components-and-topologies-for-mediation-server.md">Lync Server 2013 中之中繼伺服器的元件和拓撲</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 建議您盡可能組合中繼伺服器。如需組合的或獨立中繼伺服器支援的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-components-and-topologies-for-mediation-server.md">Lync Server 2013 中之中繼伺服器的元件和拓撲</a>＞。
+    
 
 
 6.  \[建立伺服器角色與此前端集區的關聯\] 頁面可讓您定義伺服器角色，並建立伺服器角色與 前端集區 的關聯。以下是可用的角色：
@@ -239,34 +221,16 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - 若要定義新的檔案共用，請選取 **\[定義新的檔案共用\]** ，並在 **\[檔案伺服器 FQDN\]** 方塊中輸入要在其上設置檔案共用的現有檔案伺服器的 FQDN，然後在 **\[檔案共用\]** 方塊中輸入檔案共用名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 的檔案共用不能位在 前端伺服器上。請注意，在此範例中，檔案共用已位在 SQL Server 型後端伺服器上。這個位置可能不符合貴組織的最佳需求，使用檔案伺服器可能會更適合。您不需要先建立檔案共用，就能定義檔案共用。在您發行拓撲之前，必須先在定義檔案共用的位置上加以建立。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 2013 的檔案共用不能位在 前端伺服器上。請注意，在此範例中，檔案共用已位在 SQL Server 型後端伺服器上。這個位置可能不符合貴組織的最佳需求，使用檔案伺服器可能會更適合。您不需要先建立檔案共用，就能定義檔案共用。在您發行拓撲之前，必須先在定義檔案共用的位置上加以建立。
+    
 
 
 9.  在 **\[指定 Web 服務 URL\]** 頁面上，執行下列其中一項或兩項：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基礎 URL 是 URL 的 Web 服務識別 (去除 https://)。例如，如果集區的 Web 服務的完整 URL 為 https://pool01.contoso.net，則基底 URL 是 pool01.contoso.net。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 基礎 URL 是 URL 的 Web 服務識別 (去除 https://)。例如，如果集區的 Web 服務的完整 URL 為 https://pool01.contoso.net，則基底 URL 是 pool01.contoso.net。
+    
     
     <table>
     <thead>
@@ -298,18 +262,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     2.  (選用) 在 **\[外部基底 URL\]** 中輸入外部基底 URL。輸入外部基底 URL 的目的，是為了與內部網域命名區分。例如，您的內部網域為 contoso.net，而外部網域名稱為 contoso.com。這時您可以使用 contoso.com 網域名稱來定義 URL。在反向 Proxy 的情況中，這種作法也很重要。外部基底 URL 網域名稱會與反向 Proxy 的 FQDN 的網域名稱相同。要啟用立即訊息和顯示狀態功能，必須要能透過 HTTP 存取 前端集區。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要使用 DNS 負載平衡，您必須建立適當的 DNS 記錄。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configure-dns-for-load-balancing.md">在 Lync Server 2013 中設定 DNS 負載平衡</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要使用 DNS 負載平衡，您必須建立適當的 DNS 記錄。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configure-dns-for-load-balancing.md">在 Lync Server 2013 中設定 DNS 負載平衡</a>＞。
+    
 
 
 10. 如果您已在 **\[選取功能\]** 頁面上選取 **\[會議\]** ，請在 **\[選取 Office Web Apps Server\]** 頁面中選取 **\[建立集區與 Office Web Apps Server 的關聯\]** ，然後按一下 **\[新增\]** (或從下拉式清單中選取現有 Office Web Apps Server)。
@@ -320,18 +275,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     如果 Office Web Apps Server 部署於內部防火牆外，請選取 **\[Office Web Apps Server 部署於外部網路 (即周邊/網際網路)\]** 選項。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需詳細資訊，請參閱＜<a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">設定 Office Web Apps Server 與 Lync Server 2013 的整合</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需詳細資訊，請參閱＜<a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">設定 Office Web Apps Server 與 Lync Server 2013 的整合</a>＞。
+    
 
 
 12. 請在 **\[定義封存 SQL 存放區\]** 頁面選取現有執行個體或 SQL Server，或定義新的執行個體以儲存與封存資料相關聯的資料。

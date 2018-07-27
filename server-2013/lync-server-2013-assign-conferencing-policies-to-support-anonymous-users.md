@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 使用本節中的程序，將已建立的會議原則套用至一或多個使用者或使用者群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了設定及套用原則以讓使用者邀請匿名使用者之外，您還必須啟用組織的匿名使用者支援。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configure-policies-to-control-public-user-access.md">在 Lync Server 2013 中設定原則以控制公用使用者存取</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了設定及套用原則以讓使用者邀請匿名使用者之外，您還必須啟用組織的匿名使用者支援。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configure-policies-to-control-public-user-access.md">在 Lync Server 2013 中設定原則以控制公用使用者存取</a>＞。
+
 
 
 ## 為會議的匿名參與設定使用者原則
@@ -55,18 +46,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 8.  在 **\[會議原則\]** 的 **\[編輯 Lync Server 使用者\]** 中，選取含有想要套用至此使用者之匿名使用者存取設定的使用者原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>[&lt;自動&gt;]</strong> 設定套用預設伺服器安裝設定，而且是由伺服器自動套用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>[&lt;自動&gt;]</strong> 設定套用預設伺服器安裝設定，而且是由伺服器自動套用。
+    
 
 
 若要允許使用者邀請匿名使用者加入會議，您也必須在組織中啟用匿名使用者的支援。如需詳細資訊，請參閱部署文件或作業文件中的＜ [在 Lync Server 2013 中設定原則以控制公用使用者存取](lync-server-2013-configure-policies-to-control-public-user-access.md)＞。

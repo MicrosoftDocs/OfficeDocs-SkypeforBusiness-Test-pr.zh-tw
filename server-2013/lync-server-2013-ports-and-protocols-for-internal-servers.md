@@ -17,34 +17,16 @@ _**上次修改主題的時間：** 2015-03-09_
 
 本節摘要說明在 Lync Server 部署中伺服器、負載平衡器和用戶端所使用的連接埠與通訊協定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 和 Communicator 用戶端在用於一對一通訊時，通常稱為對等通訊。技術上而言，兩個用戶端是在一對一的交談中進行通訊，以立即訊息多點控制設備 (IMMCU) 做為中介。IMMCU 是 前端伺服器 的元件。將 IMMCU 置於所需的通訊工作流程，可讓詳細通話記錄及 前端伺服器 啟用的其他功能得以使用。通訊是從用戶端上的動態來源連接埠，通向 前端伺服器 連接埠 TLS/TCP/5061 (假設使用建議的傳輸層安全性)。依照預設，對等通訊 (以及多方 IM) 只有在 Lync Server 和 IMMCU 啟用且可以使用的狀態下才能進行。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Lync 和 Communicator 用戶端在用於一對一通訊時，通常稱為對等通訊。技術上而言，兩個用戶端是在一對一的交談中進行通訊，以立即訊息多點控制設備 (IMMCU) 做為中介。IMMCU 是 前端伺服器 的元件。將 IMMCU 置於所需的通訊工作流程，可讓詳細通話記錄及 前端伺服器 啟用的其他功能得以使用。通訊是從用戶端上的動態來源連接埠，通向 前端伺服器 連接埠 TLS/TCP/5061 (假設使用建議的傳輸層安全性)。依照預設，對等通訊 (以及多方 IM) 只有在 Lync Server 和 IMMCU 啟用且可以使用的狀態下才能進行。
+
 
 
 ## 連接埠和通訊協定詳細資訊
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows 防火牆必須在執行中，您才能啟動伺服器上的 Lync Server 服務，因為 Lync Server 在這種情況下才能開啟防火牆的必要連接埠。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows 防火牆必須在執行中，您才能啟動伺服器上的 Lync Server 服務，因為 Lync Server 在這種情況下才能開啟防火牆的必要連接埠。
+
 
 
 如需有關 Edge 元件的防火牆組態的詳細資訊，請參閱[決定 Lync Server 2013 的外部 A/V 防火牆和連接埠需求](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)。
@@ -446,18 +428,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>某些遠端通話控制案例需要前端伺服器或 Director 與 PBX 之間有 TCP 連線。儘管 Lync Server 不再使用 TCP 連接埠 5060，但在遠端通話控制部署期間您將建立受信任伺服器設定，它將 RCC 線路伺服器 FQDN 關聯至前端伺服器或 Director 用來連接到 PBX 系統的 TCP 連接埠。如需詳細資訊，請參閱 Lync Server 管理命令介面 文件中的 <strong>CsTrustedApplicationComputer</strong> Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 某些遠端通話控制案例需要前端伺服器或 Director 與 PBX 之間有 TCP 連線。儘管 Lync Server 不再使用 TCP 連接埠 5060，但在遠端通話控制部署期間您將建立受信任伺服器設定，它將 RCC 線路伺服器 FQDN 關聯至前端伺服器或 Director 用來連接到 PBX 系統的 TCP 連接埠。如需詳細資訊，請參閱 Lync Server 管理命令介面 文件中的 <strong>CsTrustedApplicationComputer</strong> Cmdlet。
+
 
 
 對於只使用硬體負載平衡 (不是 DNS 負載平衡) 的集區，下表將顯示需要開啟硬體負載平衡器的連接埠。
@@ -753,30 +726,12 @@ _**上次修改主題的時間：** 2015-03-09_
 
 **\*** 若要為這些媒體類型設定特定連接埠，請使用 CsConferencingConfiguration Cmdlet (ClientMediaPortRangeEnabled、ClientMediaPort 以及 ClientMediaPortRange 參數)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 用戶端的設定程式將自動在用戶端電腦上建立所需的作業系統防火牆例外狀況。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 用戶端的設定程式將自動在用戶端電腦上建立所需的作業系統防火牆例外狀況。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在用戶端必須周遊組織的防火牆 (例如，由其他組織主持的外部通訊或會議) 的情況下，需要有外部使用者存取要使用的連接埠。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在用戶端必須周遊組織的防火牆 (例如，由其他組織主持的外部通訊或會議) 的情況下，需要有外部使用者存取要使用的連接埠。
+
 

@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-12-17_
 
   - **群組接聽**︰讓語音使用者可接聽打給已指派來電接聽群組之其他語音使用者的來電。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>「群組接聽」是 Lync Server 2013 累計更新 (2013 年 2 月) 中的新功能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 「群組接聽」是 Lync Server 2013 累計更新 (2013 年 2 月) 中的新功能。
+    
 
 
   - **回應群組 ：**使用群組搜尋或互動語音回應 (IVR) 問題與回答，將來電路由傳送到代理人群組。

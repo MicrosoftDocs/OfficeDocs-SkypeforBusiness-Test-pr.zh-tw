@@ -43,18 +43,9 @@ Lync Server 2013 的封存儲存區包含下列項目：
 
 您必須先設定 SQL Server 平台才能部署和啟用封存功能。如果用來發佈拓撲的帳戶擁有適當的系統管理員權限，您可以在發佈拓撲時建立封存資料庫 (LcsLog)。您也可以稍後建立資料庫，這是安裝程序的一部分。如需 SQL Server 的詳細資訊，請參閱 SQL Server TechCenter，網址為：[http://go.microsoft.com/fwlink/?linkid=129045\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=129045%26clcid=0x404)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>確認 SQL Server Agent 服務的 [啟動類型] 為 [自動]，且 SQL Server Agent 服務正針對擁有封存資料庫的 SQL 執行個體執行中，以便預設封存 SQL Server 維護工作可在 SQL Server Agent 服務的控制下按其排程執行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 確認 SQL Server Agent 服務的 [啟動類型] 為 [自動]，且 SQL Server Agent 服務正針對擁有封存資料庫的 SQL 執行個體執行中，以便預設封存 SQL Server 維護工作可在 SQL Server Agent 服務的控制下按其排程執行。
+
 
 
 ## 設定檔案存放區

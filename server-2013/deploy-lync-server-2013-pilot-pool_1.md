@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-11-22_
 
 當您部署試驗集區時，會用到 \[定義新前端集區精靈\]。您在 Lync Server 2013 試驗集區中部署的功能和工作量應與 Office Communications Server 2007 R2 集區相同。如果您部署了封存伺服器、監控伺服器或 System Center Operations Manager 來封存或監視 Office Communications Server 2007 R2 環境，而且想要在整個移轉過程中持續進行封存或監視，則也需要在試驗環境中部署這些功能。您部署來封裝或監視 Office Communications Server 2007 R2 環境的版本不會在 Lync Server 2013 環境中擷取資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列程序討論在整個試驗集區部署程序中，您應考量的功能和設定。本節只著重在部署試驗集區時應該考量的要點。如需詳細步驟，請參閱《 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>部署指南》。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下列程序討論在整個試驗集區部署程序中，您應考量的功能和設定。本節只著重在部署試驗集區時應該考量的要點。如需詳細步驟，請參閱《 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>部署指南》。
+
 
 
 **部署 Lync Server 2013 試驗集區**

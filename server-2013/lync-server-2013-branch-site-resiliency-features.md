@@ -52,16 +52,7 @@ _**上次修改主題的時間：** 2014-02-10_
     
     如果已部署 E9-1-1，當中央網站的 SIP 主幹由於 WAN 連結失效而無法連接時， Survivable Branch Appliance 會將 E9-1-1 通話路由傳送至本地分支閘道。若要啟用這項功能，當 WAN 失敗時，分支網站使用者的語音原則應將通話路由傳送至本地閘道。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>XMPP 不支援 SBA (基本分公司)。位於 SBA 組態中的使用者將無法傳送 IM 或看見 XMPP 連絡人的存在。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> XMPP 不支援 SBA (基本分公司)。位於 SBA 組態中的使用者將無法傳送 IM 或看見 XMPP 連絡人的存在。
+
 

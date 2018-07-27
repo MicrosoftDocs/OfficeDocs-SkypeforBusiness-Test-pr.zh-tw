@@ -144,18 +144,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 下表是用戶端登入 Lync Server 2013 或 Lync Server 2010 時，對等工作階段中的功能可用性比較。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Web App 和 Lync 2010 Attendee 是僅限會議功能的用戶端，不包含在此表格中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Web App 和 Lync 2010 Attendee 是僅限會議功能的用戶端，不包含在此表格中。
+
 
 
 
@@ -411,18 +402,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - **Office Communicator 2007 R2 會議增益集**   提供 Office Live Meeting 會議及 Office Communicator 2007 R2 會議的排程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Live Meeting 會議不能排定在 Lync Server 2013 上。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Live Meeting 會議不能排定在 Lync Server 2013 上。
+
 
 
 

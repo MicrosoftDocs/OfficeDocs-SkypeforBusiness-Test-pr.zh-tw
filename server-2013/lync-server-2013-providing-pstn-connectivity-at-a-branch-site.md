@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-05_
 
 如果您沒有使用規劃工具，請使用本節主題中的程序 -- 首先新增分支網站，然後透過定義 IP/公用交換電話網路 (PSTN) 閘道和/或設定 SIP 主幹 (使用或未使用媒體旁路)，設定您的語音基礎結構。將專用交換機 (PBX) 連接至分支網站是另一個選擇。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想要提供分支網站恢復能力，必須在分支網站部署 Survivable Branch Appliance、 Survivable Branch 伺服器或 Standard Edition 伺服器。如需詳細資訊，請視需要參閱部署文件中的＜ <a href="lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md">使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server</a>＞或＜ <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您想要提供分支網站恢復能力，必須在分支網站部署 Survivable Branch Appliance、 Survivable Branch 伺服器或 Standard Edition 伺服器。如需詳細資訊，請視需要參閱部署文件中的＜ <a href="lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md">使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server</a>＞或＜ <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>＞。
+
 
 
 ## 本章節內容

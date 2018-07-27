@@ -35,17 +35,7 @@ _**上次修改主題的時間：** 2012-09-08_
     
       - 按一下 **\[完成\]** ，關閉精靈。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果這是全新安裝 Edge Server 或 Edge 集區，您必須從現有 前端伺服器、 前端集區或 Standard Edition 伺服器 匯出 Edge Server 組態。若要匯出組態，請參閱＜ <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">匯出 Lync Server 2013 拓撲並將拓撲複製到 Edge 安裝的外部媒體</a>＞。您將在 Edge Server 的設定和部署階段，透過 Lync Server 部署精靈從外部媒體或網路共用匯入組態檔案。<br />
-        Edge Server 可運作且本機組態管理存放區資料庫已複寫內部部署後，就會發行後續的 Lync Server 2013 組態更新並複寫至 Edge Server。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 如果這是全新安裝 Edge Server 或 Edge 集區，您必須從現有 前端伺服器、 前端集區或 Standard Edition 伺服器 匯出 Edge Server 組態。若要匯出組態，請參閱＜ <a href="lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md">匯出 Lync Server 2013 拓撲並將拓撲複製到 Edge 安裝的外部媒體</a>＞。您將在 Edge Server 的設定和部署階段，透過 Lync Server 部署精靈從外部媒體或網路共用匯入組態檔案。<br />
+        > Edge Server 可運作且本機組態管理存放區資料庫已複寫內部部署後，就會發行後續的 Lync Server 2013 組態更新並複寫至 Edge Server。
 

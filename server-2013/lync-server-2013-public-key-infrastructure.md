@@ -23,18 +23,9 @@ Microsoft Lync Server 2013 仰賴憑證來進行伺服器驗證，並且在用�
 
 每一個憑證都會連結到公開金鑰。憑證上所指定的伺服器擁有只有本身知道的對應私密金鑰。連接的用戶端或伺服器會使用公開金鑰加密資訊的任意片段，並將其傳送到伺服器。若伺服器能夠解密該資訊，並以純文字回傳，則連接的實體便能確定該伺服器擁有憑證的私密金鑰，因此確實是憑證上署名的伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>並非所有公用 CA 都符合 Lync Server 2013 憑證的需求。建議您參閱通過認證之公用 CA 廠商的清單，以取得您所需要的公用憑證。如需詳細資訊，請參閱＜整合通訊憑證合作夥伴＞(英文)：<a href="http://go.microsoft.com/fwlink/p/?linkid=140898">http://go.microsoft.com/fwlink/p/?LinkId=140898</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 並非所有公用 CA 都符合 Lync Server 2013 憑證的需求。建議您參閱通過認證之公用 CA 廠商的清單，以取得您所需要的公用憑證。如需詳細資訊，請參閱＜整合通訊憑證合作夥伴＞(英文)：<a href="http://go.microsoft.com/fwlink/p/?linkid=140898">http://go.microsoft.com/fwlink/p/?LinkId=140898</a>。
+
 
 
 ## CRL 發佈點
@@ -45,16 +36,7 @@ Lync Server 2013 要求所有伺服器憑證應包含一或多個憑證撤銷清
 
 Lync Server 2013 要求所有伺服器憑證支援增強金鑰使用方法 (EKU)，以進行伺服器驗證。設定伺服器驗證的 EKU 欄位，即表示憑證可以用於驗證伺服器。EKU 是 MTLS 的必要項目。EKU 中可能會有一個以上的項目，讓憑證可以供多種用途使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對 Live Communications Server 2003 和 Live Communications Server 2005 的輸出 MTLS 連線，用戶端驗證 EKU 是必要項目，但目前已不再需要。然而，以公開 IM 連線連線至 AOL 的 Edge Server 仍須具備此 EKU。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 針對 Live Communications Server 2003 和 Live Communications Server 2005 的輸出 MTLS 連線，用戶端驗證 EKU 是必要項目，但目前已不再需要。然而，以公開 IM 連線連線至 AOL 的 Edge Server 仍須具備此 EKU。
+
 

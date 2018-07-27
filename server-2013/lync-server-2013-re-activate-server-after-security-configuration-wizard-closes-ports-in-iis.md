@@ -25,16 +25,7 @@ _**上次修改主題的時間：** 2012-10-01_
 
 3.  在 **\[執行命令\]** 頁面上，當工作狀態顯示為完成後，按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您也可以使用 bootstrapper.exe 或 <strong>Enable-CsComputer</strong> 重新啟動伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您也可以使用 bootstrapper.exe 或 <strong>Enable-CsComputer</strong> 重新啟動伺服器。
+    
 

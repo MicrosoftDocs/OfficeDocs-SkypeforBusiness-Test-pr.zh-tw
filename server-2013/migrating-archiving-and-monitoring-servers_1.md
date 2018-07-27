@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-10-02_
 
   - 在舊版部署與 Lync Server 2013 部署共存期間， Office Communications Server 2007 R2 版的封存伺服器與監控伺服器會收集位於 Office Communications Server 2007 R2 集區上之使用者的資料。 Lync Server 2013 版的封存伺服器與監控伺服器則會收集位於 Lync Server 2013 集區上之使用者的資料。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您在移轉階段使用舊版 Edge Server 搭配新的 Lync Server 2013 試驗集區使用， Office Communications Server 2007 R2 版的封存伺服器將會繼續收集位於 Office Communications Server 2007 R2 集區上之使用者的資料，而 Lync Server 2013 版的封存取伺服器則會收集位於 Lync Server 2013 集區上之使用者的資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若您在移轉階段使用舊版 Edge Server 搭配新的 Lync Server 2013 試驗集區使用， Office Communications Server 2007 R2 版的封存伺服器將會繼續收集位於 Office Communications Server 2007 R2 集區上之使用者的資料，而 Lync Server 2013 版的封存取伺服器則會收集位於 Lync Server 2013 集區上之使用者的資料。
+    
 
 
   - 若要將第三方封存與監控解決方案，和封存伺服器及監控伺服器搭配使用，請洽詢相關廠商，了解整合第三方解決方案與 Lync Server 2013 的方法及時機。

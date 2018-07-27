@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 透過使用者登入 Lync Server 時提供的頻內佈建設定，用戶端可取得撥號對應表範圍層級。作為管理員，您可以使用 Lync Server 控制台 管理和指派撥號對應表範圍層級。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>服務層級公用交換電話網路 PSTN 閘道撥號對應表會套用到特定閘道中的來電。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 服務層級公用交換電話網路 PSTN 閘道撥號對應表會套用到特定閘道中的來電。
+
 
 
 撥號對應表範圍層級的定義如下：
@@ -93,18 +84,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果使用者需要撥一個或多個額外前置數 (例如 9) 來取得外部線路，則可以將外部存取首碼指定為最多四個字元 (\#、\* 和 0-9)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果指定了外部存取首碼，則不需要建立額外的正規化規則來容納首碼。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果指定了外部存取首碼，則不需要建立額外的正規化規則來容納首碼。
+
 
 
 ## 正規化規則
@@ -282,16 +264,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上一個表格中所示的正規化規則名稱不包含空格，不過這是選擇的問題。例如，表格中的名字也可以撰寫為「5 digit extension」或「5-digit Extension」，仍會有效。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 上一個表格中所示的正規化規則名稱不包含空格，不過這是選擇的問題。例如，表格中的名字也可以撰寫為「5 digit extension」或「5-digit Extension」，仍會有效。
+
 

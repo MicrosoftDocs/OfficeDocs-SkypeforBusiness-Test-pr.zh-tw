@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
   - 已經針對每一個要啟用 企業語音的使用者指定和正規化唯一的主要電話號碼，並將它複製到 **msRTCSIP-line** 屬性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 支援 E.164 號碼和非直接向內撥號 (DID) 號碼。非 DID 號碼可以用 <strong>&lt;E.164&gt;;ext=&lt;extension&gt;</strong> 格式或數字字串表示，條件是私人分機號碼在企業中是唯一的。例如，1001 這個私人號碼就可以用 <strong>+1425550100;ext=1001</strong> 或 <strong>1001</strong> 表示。以 <strong>1001</strong> 表示時，此私人號碼在整個企業中應該要是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 支援 E.164 號碼和非直接向內撥號 (DID) 號碼。非 DID 號碼可以用 <strong>&lt;E.164&gt;;ext=&lt;extension&gt;</strong> 格式或數字字串表示，條件是私人分機號碼在企業中是唯一的。例如，1001 這個私人號碼就可以用 <strong>+1425550100;ext=1001</strong> 或 <strong>1001</strong> 表示。以 <strong>1001</strong> 表示時，此私人號碼在整個企業中應該要是唯一的。
+    
 
 
   - 部署 企業語音的系統管理員應該是 RTCUniversalServerAdmins 群組的成員。

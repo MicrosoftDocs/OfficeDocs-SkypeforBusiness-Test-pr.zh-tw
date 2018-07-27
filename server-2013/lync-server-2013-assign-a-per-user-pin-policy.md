@@ -80,18 +80,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 7.  在 **\[指派原則\]** 中的 **\[PIN 原則\]** 下，執行下列其中一項：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 <strong>[指派原則]</strong> 對話方塊可以設定多個原則，因此對話方塊中的每個原則預設都是選取 <strong>[&lt;維持不變&gt;]</strong>。不變更此設定，即可繼續沿用先前指派給使用者的原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 <strong>[指派原則]</strong> 對話方塊可以設定多個原則，因此對話方塊中的每個原則預設都是選取 <strong>[&lt;維持不變&gt;]</strong>。不變更此設定，即可繼續沿用先前指派給使用者的原則。
+    
     
       - 允許 Lync Server 2013 自動選擇全域層級原則，或是網站層級原則 (如果已定義)。
     

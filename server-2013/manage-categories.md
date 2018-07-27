@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-06_
 
     New-CsPersistentChatCategory -Name Foo -PersistentChatPoolFqdn client.contoso1b118d91-b4c4-4b2f-b842-b451417ec2c6.com [other parameters]
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅有在具備一個以上的 Persistent Chat Server 集區時，才需要 PersistentChatPoolFqdn。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 僅有在具備一個以上的 Persistent Chat Server 集區時，才需要 PersistentChatPoolFqdn。
+
 
 
 若要變更現有的 常設聊天室伺服器 類別

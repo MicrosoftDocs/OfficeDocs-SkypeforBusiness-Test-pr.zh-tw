@@ -23,16 +23,7 @@ _**上次修改主題的時間：** 2013-02-21_
 
 2.  使用 **Update-CsAdminRole** Cmdlet 以更新 中央管理伺服器中儲存的角色型存取控制 (RBAC) 角色。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>除非發生錯誤，否則不會有任何輸出。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 除非發生錯誤，否則不會有任何輸出。
+    
 

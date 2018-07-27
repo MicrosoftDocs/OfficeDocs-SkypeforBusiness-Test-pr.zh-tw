@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2014-05-14_
 
 可以使用 Lync Server 控制台或 \[Active Directory 使用者和電腦\] 嵌入式管理單元來搜尋使用者。下列程序說明如何使用 Lync Server 控制台來搜尋使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在具有中央樹系拓撲的環境中，如果以使用者的電子郵件地址來搜尋使用者，搜尋結果可能會不正確。您可以改為指定 SIP 位址首碼 (例如 sip:name) 來進行搜尋、新增搜尋篩選並選取包含部分電子郵件位址的 SIP 位址，或使用 <strong>Get-CSUser</strong> Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在具有中央樹系拓撲的環境中，如果以使用者的電子郵件地址來搜尋使用者，搜尋結果可能會不正確。您可以改為指定 SIP 位址首碼 (例如 sip:name) 來進行搜尋、新增搜尋篩選並選取包含部分電子郵件位址的 SIP 位址，或使用 <strong>Get-CSUser</strong> Cmdlet。
+
 
 
 ## 若要搜尋一個或多個使用者

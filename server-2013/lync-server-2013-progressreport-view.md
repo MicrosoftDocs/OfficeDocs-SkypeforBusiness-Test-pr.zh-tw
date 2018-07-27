@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ProgressReport 檢視會儲存已完成工作階段的相關資訊。進度報告僅會寫入 Lync Server 2013 判斷為可能對診斷目的有所助益的通話與工作階段。此檢視已於 Microsoft Lync Server 2013 引進使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ErrorTime、ErrorReportSeq 及 ProgressReportSeq 欄位不一定和錯誤有關，而是有關指出通話或訊息狀態的訊息。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> ErrorTime、ErrorReportSeq 及 ProgressReportSeq 欄位不一定和錯誤有關，而是有關指出通話或訊息狀態的訊息。
+
 
 
 

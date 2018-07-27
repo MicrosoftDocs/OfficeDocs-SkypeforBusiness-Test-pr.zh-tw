@@ -41,34 +41,16 @@ _**上次修改主題的時間：** 2013-11-07_
 
   - **連接埠 5075**   用於 SIP 聆聽要求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此連接埠為預設設定，可使用 <strong>Set-CsApplicationServer</strong> Cmdlet 予以變更。如需此 Cmdlet 的詳細資訊，請參閱＜ Lync Server 管理命令介面＞文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此連接埠為預設設定，可使用 <strong>Set-CsApplicationServer</strong> Cmdlet 予以變更。如需此 Cmdlet 的詳細資訊，請參閱＜ Lync Server 管理命令介面＞文件。
+
 
 
 ## 音訊檔需求
 
 通話駐留應用程式僅支援 Windows Media 音訊 (.wma) 檔案作為等候音樂。您可以使用 Microsoft Expression Encoder 4 自訂檔案作為等候音樂。如要下載 Expression Encoder 4，請參閱 "Expression Encoder 4" (網址為 [http://go.microsoft.com/fwlink/p/?linkId=202843](http://go.microsoft.com/fwlink/p/?linkid=202843))。使用此工具可將檔案轉換成 .wma 格式。 通話駐留等候音樂檔案的建議格式為 Media Audio 9、44 kHz、16 位元、單聲道、CBR、32 kbps。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>轉換後的檔案只能以 16 kHz 音頻在電話中播放，即使檔案是以 44 kHz 音頻錄製也一樣。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 轉換後的檔案只能以 16 kHz 音頻在電話中播放，即使檔案是以 44 kHz 音頻錄製也一樣。
+
 

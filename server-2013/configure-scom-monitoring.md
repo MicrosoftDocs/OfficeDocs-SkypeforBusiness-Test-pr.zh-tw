@@ -44,18 +44,9 @@ _**上次修改主題的時間：** 2012-10-04_
     New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health\CentralDiscoveryCandidate"
     ```
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>編輯登錄時，如果登錄機碼已經存在，可能會顯示命令失敗的錯誤。如果您遇到這個問題，可以安心忽略錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 編輯登錄時，如果登錄機碼已經存在，可能會顯示命令失敗的錯誤。如果您遇到這個問題，可以安心忽略錯誤。
+    
 
 
 **設定主要的 System Center Operations Manager 管理伺服器以覆寫候選集中探索監看員節點。**

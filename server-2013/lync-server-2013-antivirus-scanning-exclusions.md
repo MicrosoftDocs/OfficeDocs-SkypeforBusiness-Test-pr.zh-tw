@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-02-26_
 
 若要確保掃毒程式不會干擾 Lync Server 2013 的運作，您必須針對會執行掃毒程式的各個 Lync Server 2013 伺服器或伺服器角色，排除特定處理序與目錄。您應排除下列處理序與目錄：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下方所列的資料夾與檔案位置為 Lync Server 2013 的預設位置。如您使用的任何位置並非預設值，請排除您為組織所指定的位置，而非本主題中指定的預設位置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下方所列的資料夾與檔案位置為 Lync Server 2013 的預設位置。如您使用的任何位置並非預設值，請排除您為組織所指定的位置，而非本主題中指定的預設位置。
+
 
 
   - Lync Server 2013 處理序：

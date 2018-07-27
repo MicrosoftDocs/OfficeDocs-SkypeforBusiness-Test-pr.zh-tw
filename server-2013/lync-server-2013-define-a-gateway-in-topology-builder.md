@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-04_
 
 遵循本主題的步驟，使用 拓撲產生器來定義可以與 中繼伺服器建立關聯的 *對等* ，為啟用 企業語音的使用者提供公用交換電話網路 (PSTN) 的連線。 中繼伺服器的對等可以是您設定 SIP 主幹來連線的網際網路電話語音服務提供者 (ITSP) 的 PSTN 閘道、IP-PBX 或工作階段邊界控制器 (SBC)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設您在至少一個具有組合或獨立 中繼伺服器的中央網站中已安裝至少一個內部 前端集區或 Standard Edition 伺服器，如部署移轉文件 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定義和設定前端集區或 Standard Edition Server</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>＞所述。本主題也假設您已確認基礎結構符合＜ <a href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的軟體先決條件</a>＞及＜ <a href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的安全性和組態先決條件</a>＞所述的先決條件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主題假設您在至少一個具有組合或獨立 中繼伺服器的中央網站中已安裝至少一個內部 前端集區或 Standard Edition 伺服器，如部署移轉文件 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定義和設定前端集區或 Standard Edition Server</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>＞所述。本主題也假設您已確認基礎結構符合＜ <a href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的軟體先決條件</a>＞及＜ <a href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的安全性和組態先決條件</a>＞所述的先決條件。
+
 
 
 ## 定義中繼伺服器的對等
@@ -43,18 +34,9 @@ _**上次修改主題的時間：** 2012-10-04_
     
     ![IP/PSTN 閘道](images/Gg425945.8017ba5e-41bc-48d4-97d9-fd306cd322b8(OCS.15).png "IP/PSTN 閘道")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您指定傳輸層安全性 (TLS) 作為傳輸類型，則必須指定 中繼伺服器對等的 FQDN，而非 IP 位址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您指定傳輸層安全性 (TLS) 作為傳輸類型，則必須指定 中繼伺服器對等的 FQDN，而非 IP 位址。
+    
 
 
 4.  定義您新的 PSTN 閘道的 IP 位址的聆聽模式 (IPv4 或 IPv6)，然後按一下 **\[下一步\]** 。
@@ -75,52 +57,25 @@ _**上次修改主題的時間：** 2012-10-04_
 
 7.  在 **\[SIP 傳輸通訊協定\]** 下，按一下對等使用的傳輸類型，然後按一下 **\[確定\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基於安全性理由，強烈建議您將對等部署至可使用 TLS 的 中繼伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 基於安全性理由，強烈建議您將對等部署至可使用 TLS 的 中繼伺服器。
+    
 
 
 8.  在 **\[關聯的 中繼伺服器\]** 下，選取 中繼伺服器集區，以建立與這個 PSTN 閘道的根主幹的關聯。
 
 9.  在 **\[關聯的 中繼伺服器連接埠\]** 下，輸入 中繼伺服器的聆聽連接埠，以用來聆聽來自閘道的 SIP 訊息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 Lync Server 2013 中支援多個主幹，因此可在 中繼伺服器上定義多個 SIP 訊號連接埠，用來與多個 PSTN 閘道進行通訊。定義主幹時， <strong>[關聯的 中繼伺服器連接埠]</strong> 必須在 中繼伺服器所允許的相關通訊協定的聆聽連接埠範圍之內。這個通訊埠範圍是根據 Lync Server 2013 和中繼集區來定義的。用滑鼠右鍵按一下需要的 中繼伺服器集區，然後選取 <strong>[編輯屬性]</strong> 。在 <strong>[聆聽連接埠]</strong> 欄位中指定連接埠範圍。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 Lync Server 2013 中支援多個主幹，因此可在 中繼伺服器上定義多個 SIP 訊號連接埠，用來與多個 PSTN 閘道進行通訊。定義主幹時， <strong>[關聯的 中繼伺服器連接埠]</strong> 必須在 中繼伺服器所允許的相關通訊協定的聆聽連接埠範圍之內。這個通訊埠範圍是根據 Lync Server 2013 和中繼集區來定義的。用滑鼠右鍵按一下需要的 中繼伺服器集區，然後選取 <strong>[編輯屬性]</strong> 。在 <strong>[聆聽連接埠]</strong> 欄位中指定連接埠範圍。
+    
 
 
 10. 按一下 \[完成\] 。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>繼續下一個步驟之前，請確定您定義的對等正在執行中，且使用您指定的 FQDN 或 IP 位址。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 繼續下一個步驟之前，請確定您定義的對等正在執行中，且使用您指定的 FQDN 或 IP 位址。
+
 
 
 接下來，若要將對等新增至拓撲，請遵循部署文件 [在 Lync Server 2013 中發行拓撲](lync-server-2013-publish-the-topology.md)中的程序。每次使用 拓撲產生器建立或修改拓撲時，必須發行拓撲，以便使用資料安裝執行 Lync Server 的伺服器所需的檔案。

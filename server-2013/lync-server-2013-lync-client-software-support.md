@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-07-06_
 
 本節摘要說明 Lync 2013 和 Lync 2013 的線上會議增益集的軟體支援。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 的線上會議增益集會隨著 Lync 2013 自動安裝，支援在 Outlook 訊息和共同作業用戶端內管理會議。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 2013 的線上會議增益集會隨著 Lync 2013 自動安裝，支援在 Outlook 訊息和共同作業用戶端內管理會議。
+
 
 
 ### Lync 2013 和 Lync 2013 的線上會議增益集的軟體需求
@@ -52,18 +43,9 @@ _**上次修改主題的時間：** 2015-07-06_
 <p>Windows 7 作業系統</p>
 <p>具有最新 Service Pack 的 Windows Server 2008 R2</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Vista 或 Windows XP (任何版本) 都不支援 Lync 2013 與 Lync 2013 的線上會議增益集。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows Vista 或 Windows XP (任何版本) 都不支援 Lync 2013 與 Lync 2013 的線上會議增益集。
+
 
 </div></td>
 </tr>
@@ -79,18 +61,9 @@ _**上次修改主題的時間：** 2015-07-06_
 <p>Internet Explorer 7 網際網路瀏覽器</p>
 <p>Mozilla Firefox 網頁瀏覽器</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用 Lync 搭配 Microsoft Exchange Online，而且您的組織已部署驗證的 HTTP Proxy，那麼需要使用 Internet Explorer 9 或 Internet Explorer 8。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您使用 Lync 搭配 Microsoft Exchange Online，而且您的組織已部署驗證的 HTTP Proxy，那麼需要使用 Internet Explorer 9 或 Internet Explorer 8。
+
 
 </div></td>
 </tr>

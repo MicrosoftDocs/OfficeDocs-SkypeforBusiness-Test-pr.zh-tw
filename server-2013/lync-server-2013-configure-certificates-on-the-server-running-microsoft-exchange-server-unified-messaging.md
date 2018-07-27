@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-26_
 
 如果您已依照規劃文件中[在 Lync Server 2013 中規劃 Exchange Unified Messaging 整合](lync-server-2013-planning-for-exchange-unified-messaging-integration.md) 所述的程序部署了 Exchange 整合通訊 (UM)，而您想要為組織中的 Enterprise Voice 使用者提供 Exchange UM 功能，可使用下列程序，在執行 Exchange UM 的伺服器上設定憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對內部憑證，執行 Lync Server 2013 的伺服器以及執行 Microsoft Exchange 的伺服器，都必須要有互相信任的信任根授權單位憑證。憑證授權單位 (CA) 可以是相同或不同的憑證授權單位，只要伺服器將憑證授權單位的根憑證登錄在其信任的根授權單位憑證存放區即可。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 針對內部憑證，執行 Lync Server 2013 的伺服器以及執行 Microsoft Exchange 的伺服器，都必須要有互相信任的信任根授權單位憑證。憑證授權單位 (CA) 可以是相同或不同的憑證授權單位，只要伺服器將憑證授權單位的根憑證登錄在其信任的根授權單位憑證存放區即可。
+
 
 
 您必須使用伺服器憑證設定 Exchange Server，以便連線至 Lync Server 2013：
@@ -51,18 +42,9 @@ _**上次修改主題的時間：** 2012-09-26_
 
 3.  在 **\[下載 CA 憑證、憑證鏈結或 CRL\]** 下，選取 **\[編碼方法為 Base 64\]**，然後按一下 **\[下載 CA 憑證\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您也可以在此步驟指定識別名編碼規則 (DER) 編碼。如果您選取 DER 編碼，此程序下一個步驟中以及<strong>「若要安裝 CA 憑證」</strong>步驟 10 中的檔案類型會是 .p7b，而非 .cer。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您也可以在此步驟指定識別名編碼規則 (DER) 編碼。如果您選取 DER 編碼，此程序下一個步驟中以及<strong>「若要安裝 CA 憑證」</strong>步驟 10 中的檔案類型會是 .p7b，而非 .cer。
+    
 
 
 4.  在 **\[檔案下載\]** 對話方塊中，按一下 **\[儲存\]**，然後將檔案儲存到伺服器的硬碟上 (視您在上一個步驟中選取的編碼而定，檔案的副檔名會是 .cer 或 .p7b)。
@@ -119,18 +101,9 @@ _**上次修改主題的時間：** 2012-09-26_
 
 6.  在 **\[離線範本識別資訊\]** 下的 **\[名稱\]** 方塊中，輸入 Exchange Server 的完整網域名稱 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須輸入 Exchange Server 的 FQDN，才能夠進行通訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須輸入 Exchange Server 的 FQDN，才能夠進行通訊。
+    
 
 
 7.  在 **\[金鑰選項\]** 下，按一下 **\[將憑證存放在本機電腦憑證存放區\]** 核取方塊。
@@ -155,18 +128,9 @@ _**上次修改主題的時間：** 2012-09-26_
     
     2.  ＜匯入 Exchange 憑證＞，網址為 [http://go.microsoft.com/fwlink/?linkid=195496\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=195496%26clcid=0x404)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對於憑證的 <strong>[主體名稱]</strong>，您必須輸入 Exchange Server 的 FQDN，才能夠進行通訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 對於憑證的 <strong>[主體名稱]</strong>，您必須輸入 Exchange Server 的 FQDN，才能夠進行通訊。
+    
 
 
 ## 若要在 Exchange Server 2007 (SP1) 上指派憑證
@@ -179,34 +143,16 @@ _**上次修改主題的時間：** 2012-09-26_
 
 4.  按兩下憑證以閱讀憑證的詳細資料，並且確認憑證有效。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可能需要幾分鐘，才會顯示憑證是有效的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可能需要幾分鐘，才會顯示憑證是有效的。
+    
 
 
 5.  重新啟動 Microsoft Exchange Unified Messaging 服務。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行 Exchange Server 2007 SP1 Unified Messaging 的伺服器會自動擷取正確的憑證。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 執行 Exchange Server 2007 SP1 Unified Messaging 的伺服器會自動擷取正確的憑證。
+    
 
 
 6.  開啟 \[事件檢視器\] 並尋找事件識別碼 1112，此事件識別碼會指定執行 Exchange Server 2007 SP1 Unified Messaging 之伺服器所擷取的憑證。

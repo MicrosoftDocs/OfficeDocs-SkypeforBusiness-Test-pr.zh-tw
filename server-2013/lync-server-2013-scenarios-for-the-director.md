@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
 Director 是執行 Microsoft Lync Server 2013  通訊軟體的伺服器，可驗證使用者要求，但不能裝載任何使用者帳戶。 Director 也可以裝載類似於 前端伺服器的 Web 服務，而且將會驗證 Web 票證要求和提供其他服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您部署 Director，您必須透過反向 Proxy 在外部發行 Director Web 服務，以及 前端伺服器的 Web 服務。下列主題說明可行 Director 拓撲的規劃程序。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您部署 Director，您必須透過反向 Proxy 在外部發行 Director Web 服務，以及 前端伺服器的 Web 服務。下列主題說明可行 Director 拓撲的規劃程序。
+
 
 
 ## 本章節內容

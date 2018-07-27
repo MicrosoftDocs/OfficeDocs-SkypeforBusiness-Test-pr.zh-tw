@@ -38,18 +38,9 @@ _**上次修改主題的時間：** 2012-09-21_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於 SIP 主幹，我們強烈建議您部署獨立 中繼伺服器。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">在 Lync Server 2013 中部署中繼伺服器並定義對等項目</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 對於 SIP 主幹，我們強烈建議您部署獨立 中繼伺服器。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">在 Lync Server 2013 中部署中繼伺服器並定義對等項目</a>。
+
 
 
 ## 保護用於 SIP 主幹的中繼伺服器

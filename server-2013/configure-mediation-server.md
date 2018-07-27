@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-09-28_
 
 若要在新增或移除伺服器角色時順利發行、啟用或停用拓撲，您應該以 RTCUniversalServerAdmins 和 Domain Admins 群組成員的使用者身分登入。您也可以委派適當的系統管理員權限與授權來新增伺服器角色。如需詳細資訊，請參閱 Standard Edition Server 或 Enterprise Edition Server 之部署文件中的委派設定權限。若要變更其他設定，只需具備 RTCUniversalServerAdmins 群組的成員資格即可。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需尋找能和 Lync Server 2013 搭配使用之完整 PSTN 閘道、IP-PBX 以及 SIP 主幹連線服務的詳細資訊，請參閱＜Microsoft Unified Communications 開啟互通性程式＞，網址為： <a href="http://go.microsoft.com/fwlink/?linkid=206015%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=206015&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需尋找能和 Lync Server 2013 搭配使用之完整 PSTN 閘道、IP-PBX 以及 SIP 主幹連線服務的詳細資訊，請參閱＜Microsoft Unified Communications 開啟互通性程式＞，網址為： <a href="http://go.microsoft.com/fwlink/?linkid=206015%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=206015&amp;clcid=0x404</a>。
+
 
 
 ## 使用拓撲產生器設定中繼伺服器
@@ -63,16 +54,7 @@ _**上次修改主題的時間：** 2012-09-28_
 
 11. 當 \[發行精靈\] 完成之後，按一下 \[完成\] ，以關閉精靈。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請務必完成下一個主題＜ <a href="change-voice-routes-to-use-the-new-lync-server-2013-mediation-server.md">變更語音路由以使用新的 Lync Server 2013 中繼伺服器</a>＞，以確認語音路由指向正確的中繼伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 請務必完成下一個主題＜ <a href="change-voice-routes-to-use-the-new-lync-server-2013-mediation-server.md">變更語音路由以使用新的 Lync Server 2013 中繼伺服器</a>＞，以確認語音路由指向正確的中繼伺服器。
+
 

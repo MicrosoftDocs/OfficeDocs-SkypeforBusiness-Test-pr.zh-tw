@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-01-30_
 
 使用下列程序為使用者停用群組來電接聽。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您為使用者停用群組來電接聽時，不會保留指派給使用者的來電接聽群組號碼。如果您後續想要為使用者重新啟用群組來電接聽，則必須以 /enablegrouppickup 參數重新指派來電接聽群組號碼。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 當您為使用者停用群組來電接聽時，不會保留指派給使用者的來電接聽群組號碼。如果您後續想要為使用者重新啟用群組來電接聽，則必須以 /enablegrouppickup 參數重新指派來電接聽群組號碼。
+
 
 
 ## 停用使用者的群組來電接聽

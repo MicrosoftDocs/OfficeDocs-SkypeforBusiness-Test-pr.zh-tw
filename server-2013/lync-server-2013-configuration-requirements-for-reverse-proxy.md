@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-03-05_
 
 Lync Server 2013 從接著會傳遞給裝載於 Director、Director 集區、前端伺服器或前端集區之外部 Web 服務的外部用戶端加入一些通訊需求。如果您將會議提供給使用者，反向 Proxy 也會負責發行 Office Web Apps Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不會指定您必須使用的特定反向 Proxy。Lync Server 2013 只會定義反向 Proxy 必須能夠執行的作業需求。您已在基礎結構中部署的反向 Proxy 通常可符合這些需求。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 不會指定您必須使用的特定反向 Proxy。Lync Server 2013 只會定義反向 Proxy 必須能夠執行的作業需求。您已在基礎結構中部署的反向 Proxy 通常可符合這些需求。
+
 
 
 ## 反向 Proxy 需求

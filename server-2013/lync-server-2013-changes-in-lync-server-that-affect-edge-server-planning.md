@@ -27,32 +27,14 @@ Lync Server 2013 支援所有 Edge Server 服務的 IPv6 定址。如果已透�
 
 Edge Server 引進完全整合的 XMPP Proxy (部署於 Edge Server) 及 XMPP 閘道 (部署於前端伺服器)。您可部署 XMPP 同盟作為選用元件。透過新增及設定 XMPP Proxy 和 XMPP 閘道，可讓 Microsoft Lync 2013 使用者新增以 XMPP 為基礎之協力廠商的連絡人，進行立即訊息 (IM) 和顯示狀態。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Edge Server 中的 XMPP 服務目前僅提供 Lync Server 用戶端及以 XMPP 為基礎的連絡人之間的 IM 和顯示狀態。此外，XMPP 僅裝載在單一網站。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Edge Server 中的 XMPP 服務目前僅提供 Lync Server 用戶端及以 XMPP 為基礎的連絡人之間的 IM 和顯示狀態。此外，XMPP 僅裝載在單一網站。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。
+
 
 
 ## 支援輪流 Audio/Video 驗證及伺服器對伺服器驗證憑證
@@ -93,18 +75,9 @@ Lync Server 2013 中的自動探索功能讓用戶端能夠找到通訊可用的
 
 由 Lync Server 2010 累計更新：2011 年 11 月引進， Lync Server 2013 中的行動性服務讓執行 Lync Mobile 的行動電話、使用支援的 Apple iOS、Android、Windows Phone 的平板裝置或是 Nokia 行動裝置，都可以執行如傳送和接收立即訊息、檢視連絡人以及檢視顯示狀態等活動。此外，行動裝置也支援部分 企業語音功能，例如按一下以加入會議、從公司撥號、單一號碼連絡、語音信箱以及未接來電通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動性服務使用前端伺服器中部署的反向 Proxy 和發佈的服務。Edge Server 不需要進行任何變更。最低需求為執行 Lync Server Access Edge Service 之伺服器的輸出 SIP/TCP/5061。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 行動性服務使用前端伺服器中部署的反向 Proxy 和發佈的服務。Edge Server 不需要進行任何變更。最低需求為執行 Lync Server Access Edge Service 之伺服器的輸出 SIP/TCP/5061。
+
 
 
 ## Director 角色為選用

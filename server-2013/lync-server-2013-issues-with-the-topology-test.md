@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
 除了完整驗證 Lync Server 的有效性以外， **Test-CsTopology** 也可檢查特定服務的有效性。如需關於使用 Cmdlet 測試特定服務的詳細資訊，請參閱＜Lync Server 管理命令介面＞文件中的＜[Test-CsTopology](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsTopology)＞。使用下列資訊有助於解決您拓撲的問題。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>端視 Edge Server 以及任何相關周邊網路設定而定，包括防火牆設定和周邊，Best Practices Analyzer 可能無法存取和掃描 Edge Server。如果將 Edge Server 包含在掃描內，而且報告指出存取 Edge Server 發生問題，請清除 [Edge Server] 核取方塊，並再次執行掃描，以避免問題出現在報告中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 端視 Edge Server 以及任何相關周邊網路設定而定，包括防火牆設定和周邊，Best Practices Analyzer 可能無法存取和掃描 Edge Server。如果將 Edge Server 包含在掃描內，而且報告指出存取 Edge Server 發生問題，請清除 [Edge Server] 核取方塊，並再次執行掃描，以避免問題出現在報告中。
+
 
 
 ## 解決拓撲的問題

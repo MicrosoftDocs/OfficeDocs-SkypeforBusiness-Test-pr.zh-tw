@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-06-20_
 
 除了伺服器平台的硬體和作業系統需求， Lync Server 2013 還需要您部署的伺服器上已安裝其他軟體。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需執行 Lync Server 的伺服器平台需求的詳細資訊，請參閱＜ <a href="lync-server-2013-server-hardware-platforms.md">Lync Server 2013 的伺服器硬體平台</a>＞及＜ <a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的伺服器及工具作業系統支援</a>＞。如需用戶端電腦和裝置的系統需求詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-clients-and-devices.md">規劃 Lync Server 2013 中的用戶端和裝置</a>＞。如需系統管理工具的軟體需求詳細資訊，請參閱＜ <a href="lync-server-2013-administrative-tools-software-requirements.md">Lync Server 2013 中的系統管理工具軟體需求</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需執行 Lync Server 的伺服器平台需求的詳細資訊，請參閱＜ <a href="lync-server-2013-server-hardware-platforms.md">Lync Server 2013 的伺服器硬體平台</a>＞及＜ <a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的伺服器及工具作業系統支援</a>＞。如需用戶端電腦和裝置的系統需求詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-clients-and-devices.md">規劃 Lync Server 2013 中的用戶端和裝置</a>＞。如需系統管理工具的軟體需求詳細資訊，請參閱＜ <a href="lync-server-2013-administrative-tools-software-requirements.md">Lync Server 2013 中的系統管理工具軟體需求</a>＞。
+
 
 
 ## 所有內部伺服器角色都需要的其他軟體

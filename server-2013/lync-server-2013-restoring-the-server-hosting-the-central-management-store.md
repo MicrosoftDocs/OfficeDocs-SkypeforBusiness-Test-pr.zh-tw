@@ -21,18 +21,9 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
 
 如果主控中央管理存放區的後端伺服器經過鏡像設定，且鏡像資料庫仍可運作，則建議您將此仍可運作的鏡像加以備份，然後使用此備份並遵循下列的還原程序，對主要資料庫和鏡像資料庫執行完整還原。這是必要的，因為後端還原需要修改及發行拓撲，而這只有在主控 CMS 的主要資料庫仍可操作時才可執行。此外，如果拓撲無法發行，則主要資料庫和鏡像資料庫角色無法互換。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果並未主控中央管理存放區的後端伺服器或 Standard Edition 伺服器失敗，請參閱＜<a href="lync-server-2013-restoring-an-enterprise-edition-back-end-server.md">還原 Enterprise Edition 後端伺服器</a>＞或＜<a href="lync-server-2013-restoring-a-standard-edition-server.md">還原 Standard Edition 伺服器</a>＞。如果主控中央管理存放區的後端伺服器經過鏡像設定，且只有鏡像失敗，請參閱＜<a href="lync-server-2013-restoring-a-mirrored-enterprise-edition-back-end-server-mirror.md">還原鏡像 Enterprise Edition 後端伺服器 - 鏡像</a>＞。如果是任何其他伺服器失敗，請參閱＜<a href="lync-server-2013-restoring-an-enterprise-edition-member-server.md">還原 Enterprise Edition 成員伺服器</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果並未主控中央管理存放區的後端伺服器或 Standard Edition 伺服器失敗，請參閱＜<a href="lync-server-2013-restoring-an-enterprise-edition-back-end-server.md">還原 Enterprise Edition 後端伺服器</a>＞或＜<a href="lync-server-2013-restoring-a-standard-edition-server.md">還原 Standard Edition 伺服器</a>＞。如果主控中央管理存放區的後端伺服器經過鏡像設定，且只有鏡像失敗，請參閱＜<a href="lync-server-2013-restoring-a-mirrored-enterprise-edition-back-end-server-mirror.md">還原鏡像 Enterprise Edition 後端伺服器 - 鏡像</a>＞。如果是任何其他伺服器失敗，請參閱＜<a href="lync-server-2013-restoring-an-enterprise-edition-member-server.md">還原 Enterprise Edition 成員伺服器</a>＞。
+
 
 
 <table>
@@ -53,36 +44,18 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
 
 1.  準備一部完整網域名稱 (FQDN) 與失敗電腦相同的乾淨或全新伺服器，然後安裝作業系統，再還原或重新註冊憑證。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>遵循貴組織的伺服器部署程序執行此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 遵循貴組織的伺服器部署程序執行此步驟。
+    
 
 
 2.  從 RTCUniversalServerAdmins 群組成員和本機系統管理員群組成員的使用者帳戶，登入所要還原的伺服器。
 
 3.  如果您要還原 Standard Edition 伺服器，請從 $Backup 將適當的檔案存放區複製到伺服器上的檔案存放區位置，以還原檔案存放區，然後共用資料夾。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>還原後之檔案存放區的路徑與檔案名稱應與檔案存放區備份完全相同，如此使用該檔案的元件才可存取使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 還原後之檔案存放區的路徑與檔案名稱應與檔案存放區備份完全相同，如此使用該檔案的元件才可存取使用。
+    
 
 
 4.  執行下列其中一項作業：
@@ -91,18 +64,9 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
     
       - 如果您要安裝 Enterprise 後端伺服器，請安裝 SQL Server 2012 或 SQL Server 2008 R2，並保留失敗之前的執行個體名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>依據您要還原的伺服器以及您的部署，伺服器可能包含多個組合或分開的資料庫。請遵循您原先用來部署伺服器的相同程序來安裝 SQL Server，包括 SQL Server 權限及登入。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 依據您要還原的伺服器以及您的部署，伺服器可能包含多個組合或分開的資料庫。請遵循您原先用來部署伺服器的相同程序來安裝 SQL Server，包括 SQL Server 權限及登入。
+        
 
 
 5.  從前端伺服器，啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。
@@ -123,18 +87,9 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
     
         Set-CsConfigurationStoreLocation -SqlServerFqdn Server01.contoso.com -SqlInstanceName cms -Verbose
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您遺失連線點，可以重新執行此 Cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您遺失連線點，可以重新執行此 Cmdlet。
+    
 
 
 8.  從 $Backup 匯入中央管理存放區資料。在命令列中輸入：
@@ -149,18 +104,9 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
     
         Enable-CsTopology
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>啟用拓撲之後，即可在資料庫中找到拓撲文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 啟用拓撲之後，即可在資料庫中找到拓撲文件。
+    
 
 
 10. 如果您要還原也有主控 CMS 的 Enterprise Edition後端伺服器，或如果需要重新建立 CMS 的鏡像，請遵循此步驟。否則，請跳至步驟 11。
@@ -177,18 +123,9 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
     
     5.  遵循 \[安裝資料庫精靈\] 中的步驟。如果您要還原的資料庫不是此伺服器上的中央管理存放區，請在「建立資料庫」頁面上，選取要重新建立的資料庫。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有獨立資料庫會顯示在「建立資料庫」頁面上。組合資料庫會在您執行 [Lync Server 部署精靈] 時建立。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只有獨立資料庫會顯示在「建立資料庫」頁面上。組合資料庫會在您執行 [Lync Server 部署精靈] 時建立。
+        
     
     6.  如果您要還原經過鏡像處理的後端伺服器，請繼續遵循精靈中的其餘步驟，直到出現 \[建立鏡像資料庫\] 提示。選取要安裝的資料庫，然後完成程序。
     

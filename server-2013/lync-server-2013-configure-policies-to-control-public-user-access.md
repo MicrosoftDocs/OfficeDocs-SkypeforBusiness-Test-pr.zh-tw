@@ -44,18 +44,9 @@ _**上次修改主題的時間：** 2013-10-07_
 
 在 IM 邀請方面，回應將視用戶端軟體而定。除非使用者設定的規則 (亦即，在使用者用戶端的 \[允許\] 和 \[封鎖\] 清單中) 明確封鎖外部傳送者，否則會接受要求。另外，如果使用者已選擇封鎖所有不在其 \[允許\] 清單內的 IM 使用者，IM 邀請也會遭到封鎖。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即便您並未對所屬組織啟用同盟關係，仍可設定原則來控制公用使用者存取。不過，只有當您為組織啟用同盟關係時，所設定的原則才會生效。如需啟用同盟關係的詳細資訊，請參閱部署或作業文件中的＜ <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>＞。此外，如果您指定使用者原則以控制公用使用者存取，則該原則僅適用已啟用 Lync Server 使用權限且設為使用該原則的使用者。如需指定可以登入 Lync Server 之公用使用者的詳細資訊，請參閱部署或作業文件裡的＜ <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中將外部使用者存取原則指派給擁有 Lync 功能的使用者</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即便您並未對所屬組織啟用同盟關係，仍可設定原則來控制公用使用者存取。不過，只有當您為組織啟用同盟關係時，所設定的原則才會生效。如需啟用同盟關係的詳細資訊，請參閱部署或作業文件中的＜ <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>＞。此外，如果您指定使用者原則以控制公用使用者存取，則該原則僅適用已啟用 Lync Server 使用權限且設為使用該原則的使用者。如需指定可以登入 Lync Server 之公用使用者的詳細資訊，請參閱部署或作業文件裡的＜ <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中將外部使用者存取原則指派給擁有 Lync 功能的使用者</a>＞。
+
 
 
 請使用下列步驟來設定原則，以支援一個或多個公用 IM 提供者的使用者存取。

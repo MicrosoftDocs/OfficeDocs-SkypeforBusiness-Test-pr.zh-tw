@@ -103,18 +103,9 @@ _**上次修改主題的時間：** 2014-04-22_
 <td><p>允許同盟和匿名參與者取得控制權</p></td>
 <td><p>允許外部和匿名參與者取得對其他使用者之共用應用程式的控制權。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若此設定設為 True，且 <strong>[允許參與者取得控制權]</strong> 設為 False，則會覆寫此設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若此設定設為 True，且 <strong>[允許參與者取得控制權]</strong> 設為 False，則會覆寫此設定。
+
 
 </div></td>
 </tr>

@@ -95,18 +95,9 @@ DNS 記錄可以是 CNAME 記錄或 A (主機) 記錄。
 <p>解析為 Access Edge Service 的主機 (A 或 AAAA) 記錄</p></td>
 <td><p>若要支援推播通知服務與 Apple 推播通知服務，您要為包含 Microsoft Lync Mobile 用戶端的每個 SIP 網域建立一筆 SRV 記錄。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此需求只適用於 Apple 或 Microsoft 行動裝置的 Microsoft Lync Mobile 用戶端。Andriod 與 Nokia Symbian 裝置不使用推播通知。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 此需求只適用於 Apple 或 Microsoft 行動裝置的 Microsoft Lync Mobile 用戶端。Andriod 與 Nokia Symbian 裝置不使用推播通知。
+
 
 </div></td>
 </tr>
@@ -114,16 +105,7 @@ DNS 記錄可以是 CNAME 記錄或 A (主機) 記錄。
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lyncdiscover 又稱為自動探索，其流量是通過反向 Proxy 傳輸。SRV 記錄會指向憑藉 Access Edge Service 解析的記錄。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lyncdiscover 又稱為自動探索，其流量是通過反向 Proxy 傳輸。SRV 記錄會指向憑藉 Access Edge Service 解析的記錄。
+
 

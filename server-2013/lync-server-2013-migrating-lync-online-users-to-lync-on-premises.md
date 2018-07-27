@@ -145,18 +145,9 @@ _**上次修改主題的時間：** 2015-03-09_
         
         `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>rtcxds 資料庫之交易記錄檔的預設大小上限為 16 GB。如果您要一次移動大量的使用者，特別是有啟用鏡像時，空間可能會不夠。若要因應此問題，請提高檔案大小或定期備份記錄檔。如需詳細資訊，請參閱 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > rtcxds 資料庫之交易記錄檔的預設大小上限為 16 GB。如果您要一次移動大量的使用者，特別是有啟用鏡像時，空間可能會不夠。若要因應此問題，請提高檔案大小或定期備份記錄檔。如需詳細資訊，請參閱 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。
+    
 
 
 8.  這是選擇性步驟：如果您需要與 Exchange 2013 Online 整合，必須使用額外的主機服務提供者。如需詳細資料，請參閱 [設定內部部署 Lync Server 2013 與 Exchange Online 整合](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)。

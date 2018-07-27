@@ -41,18 +41,9 @@ _**上次修改主題的時間：** 2014-07-02_
 
     New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $False -ProxyFqdn "exap.um.outlook.com" -IsLocal $False -VerificationLevel UseSourceVerification
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您正在使用中國的 21Vianet 所營運的 Office 365，請使用 21Vianet 所營運之服務的 FQDN (&quot;exap.um.partner.outlook.cn&quot;)，取代此範例中 <strong>ProxyFqdn</strong> 參數的值 (&quot;exap.um.outlook.com&quot;)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您正在使用中國的 21Vianet 所營運的 Office 365，請使用 21Vianet 所營運之服務的 FQDN (&quot;exap.um.partner.outlook.cn&quot;)，取代此範例中 <strong>ProxyFqdn</strong> 參數的值 (&quot;exap.um.outlook.com&quot;)。
+
 
 
   - **Identity** 可為所建立的裝載提供者指定唯一的字串值識別碼 (例如 "Exchange Online" )。您必須以雙引號括住內含空格的值。

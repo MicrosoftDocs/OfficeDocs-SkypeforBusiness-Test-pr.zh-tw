@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
   - **同盟使用者**   在受信任的客戶或合作夥伴組織那邊具有帳戶 (例如 Lync Server 2010、 Lync Server 2013 或 Office Communications Server 2007 R2) 的使用者。同盟使用者也可以是已定義之合作夥伴組織的成員，這些組織透過 Edge Server 上的 XMPP Proxy 以及 前端伺服器或集區上的 XMPP 閘道來使用可延伸傳訊和顯示狀態通訊協定 (XMPP)。已定義的信任關係 (稱為同盟) 與 Active Directory 網域服務 信任關係既無關也不相依。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的確切結束日期。如需詳細資訊，請參閱＜ <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的確切結束日期。如需詳細資訊，請參閱＜ <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>＞。
+    
 
 
   - **Public Instant Messaging Connectivity 使用者**   您的使用者透過公用立即訊息連線服務 (Windows Live、Yahoo\! 及 AOL) 建立的連絡人。
@@ -61,16 +52,7 @@ _**上次修改主題的時間：** 2013-11-07_
 
 **反向 Proxy**   反向 Proxy 是一種特殊伺服器的通稱，這種伺服器會公佈內部網路上的可用資源，並且幫用戶端從公佈的資源擷取資訊。 Lync Server 2013 使用反向 Proxy 來公佈數項功能，例如會議、會議加入位置、通訊錄、通訊群組清單展開、會議內容下載、裝置更新、行動服務等等。任何符合公佈必要資源位置相關需求的反向 Proxy 都可以使用。為了說明公佈規則的重要性，我們使用了 Microsoft Forefront Threat Management Gateway (TMG) 2010 作為範例，但並非一定要使用 Forefront TMG 2010。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 同時支援 IPv4 和 IPv6。 Windows Server 2008 R2、 Windows Server 2012 和 Windows Server 2012 R2 使用了可以同時使用 IPv4 和 IPv6 的雙重堆疊。這一點相當重要，因為部署在從 IPv4 移至 IPv6 時會有一段過渡時期。也許某些區域支援 IPv4，而在部署的其他區域卻使用 IPv6。在考量網際網路與內部部署時，這點尤其要注意。外部用戶端必須透過反向 Proxy 通訊才能使用行動、會議、通訊錄下載等服務。就目前而言，Forefront Threat Management Gateway 2010 和 Internet Security and Acceleration Server 2006 不論部署於何種作業系統版本，都不支援 IPv6 定址。這點在規劃與外部用戶端有關的 IPv6 和 IPv4 使用時必須注意。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Lync Server 2013 同時支援 IPv4 和 IPv6。 Windows Server 2008 R2、 Windows Server 2012 和 Windows Server 2012 R2 使用了可以同時使用 IPv4 和 IPv6 的雙重堆疊。這一點相當重要，因為部署在從 IPv4 移至 IPv6 時會有一段過渡時期。也許某些區域支援 IPv4，而在部署的其他區域卻使用 IPv6。在考量網際網路與內部部署時，這點尤其要注意。外部用戶端必須透過反向 Proxy 通訊才能使用行動、會議、通訊錄下載等服務。就目前而言，Forefront Threat Management Gateway 2010 和 Internet Security and Acceleration Server 2006 不論部署於何種作業系統版本，都不支援 IPv6 定址。這點在規劃與外部用戶端有關的 IPv6 和 IPv4 使用時必須注意。
+
 

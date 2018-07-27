@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## Unified Messaging 整合程序
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請務必洽詢組織的 Exchange 系統管理員，確認你們將執行的各項工作，以協助確保整合作業能夠順利完成。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 請務必洽詢組織的 Exchange 系統管理員，確認你們將執行的各項工作，以協助確保整合作業能夠順利完成。
+
 
 
 
@@ -150,34 +141,16 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>設定 Lync Server 2013 撥號對應表。</p></td>
 <td><p>如果要與 Exchange 2007 SP1 或最新的 Service Pack 或是 Exchange 2010 整合，請使用與 Exchange UM 撥號對應表完整網域名稱 (FQDN) 相符的名稱建立新的 企業語音撥號對應表。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須針對每個 UM 撥號對應表執行此動作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必須針對每個 UM 撥號對應表執行此動作。
+
 
 </div>
 <p>如果要與 Exchange 2010 SP1 整合，請確定您已設定適當的全域/網站層級或集區層級的 企業語音撥號對應表。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果要與 Exchange 2010 SP1 整合，則 Lync Server 撥號對應表與 Exchange UM SIP 撥號對應表的名稱不需相符。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果要與 Exchange 2010 SP1 整合，則 Lync Server 撥號對應表與 Exchange UM SIP 撥號對應表的名稱不需相符。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p></td>
@@ -193,33 +166,15 @@ _**上次修改主題的時間：** 2015-03-09_
 <p>這項工具在運作時會掃描 Active Directory 中的 Exchange UM 設定，並且讓 Lync Server 2013 系統管理員能夠檢視、建立及編輯連絡人物件。</p></td>
 <td><p>RTCUniversalServerAdmins <em>與</em> RTCUniversalUserAdmins</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用者必須同時屬於這兩個群組，ocsumutil.exe 才能順利執行。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 使用者必須同時屬於這兩個群組，ocsumutil.exe 才能順利執行。
+
 
 </div>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要建立連絡人物件，執行 ocsumutil.exe 的使用者對於新連絡人物件存放所在的 Active Directory 組織單位 (OU) 必須具備正確的權限。執行 <strong>Grant-CsOUPermission</strong> Cmdlet，即可授與此權限。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要建立連絡人物件，執行 ocsumutil.exe 的使用者對於新連絡人物件存放所在的 Active Directory 組織單位 (OU) 必須具備正確的權限。執行 <strong>Grant-CsOUPermission</strong> Cmdlet，即可授與此權限。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
+
 
 </div></td>
 <td><p><a href="lync-server-2013-configure-lync-server-2013-to-work-with-unified-messaging-on-microsoft-exchange-server.md">設定 Lync Server 2013 以搭配 Microsoft Exchange Server 上的 Unified Messaging 使用</a></p></td>

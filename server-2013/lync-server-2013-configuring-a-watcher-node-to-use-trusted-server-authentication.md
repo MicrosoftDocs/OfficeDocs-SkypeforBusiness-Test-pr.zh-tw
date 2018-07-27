@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
 若要設定受信任的伺服器驗證，首先必須建立信任的應用程式集區，以便管理監看員節點電腦。建立信任的應用程式集區後，必須在該監看員節點上設定綜合交易，當作是信任的應用程式來執行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>信任的應用程式係指取得信任狀態、並依附在 Lync Server 2013 上執行的應用程式，但不屬於產品內建的一部分。信任狀態表示每次執行應用程式時，其驗證不會受到質疑。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 信任的應用程式係指取得信任狀態、並依附在 Lync Server 2013 上執行的應用程式，但不屬於產品內建的一部分。信任狀態表示每次執行應用程式時，其驗證不會受到質疑。
+
 
 
 若要建立信任的應用程式集區，請開啟 Lync Server 2013 管理命令介面並執行與下列類似的命令：
@@ -76,18 +67,9 @@ Get-Help New-CsTrustedApplicationPool -Full | more</td>
 
 2.  在 Lync Server 部署精靈中，按一下 **\[安裝或更新 Lync Server 系統\]**，然後再按一下 **\[要求、安裝或指派憑證\]** 標題下方的 **\[執行\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 <strong>[執行]</strong> 按鈕停用，需先按一下 <strong>[安裝本機組態存放區]</strong> 下方的 <strong>[執行]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 <strong>[執行]</strong> 按鈕停用，需先按一下 <strong>[安裝本機組態存放區]</strong> 下方的 <strong>[執行]</strong>。
+    
 
 
 3.  執行下列其中一項作業：
@@ -108,18 +90,9 @@ Get-Help New-CsTrustedApplicationPool -Full | more</td>
     
         C:\Tools\Watchernode.msi Authentication=TrustedServer
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以從命令視窗執行 Watchernode.msi。若要開啟命令視窗，請按一下 <strong>[開始]</strong>、在 <strong>[命令提示字元]</strong> 上按滑鼠右鍵，然後按一下 <strong>[以系統管理員身分執行]</strong>。待命令視窗開啟後，鍵入以上同一個命令。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以從命令視窗執行 Watchernode.msi。若要開啟命令視窗，請按一下 <strong>[開始]</strong>、在 <strong>[命令提示字元]</strong> 上按滑鼠右鍵，然後按一下 <strong>[以系統管理員身分執行]</strong>。待命令視窗開啟後，鍵入以上同一個命令。
+    
 
 
 請注意，以上命令 Authentication=TrustedServer 的名稱/值對區分大小寫。必須確實鍵入顯示的內容。下列命令因未使用正確的大小寫字母而導致失敗：

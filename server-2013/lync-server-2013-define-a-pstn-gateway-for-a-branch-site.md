@@ -52,18 +52,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
 6.  在 **\[SIP 傳輸通訊協定\]** 清單中按一下閘道使用的傳輸通訊協定，然後按一下 \[確定\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基於安全性考量，我們強烈建議您使用支援傳輸層安全性 (TLS) 的 PSTN 閘道。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 基於安全性考量，我們強烈建議您使用支援傳輸層安全性 (TLS) 的 PSTN 閘道。
+    
 
 
 <table>

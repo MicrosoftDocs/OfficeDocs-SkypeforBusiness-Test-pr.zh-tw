@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2014-06-04_
 
 若需移除 Lync Server 2010 伺服器和伺服器角色的完整資訊，以及解除委任 Lync Server 2010 部署的逐步指引，請參閱「解除安裝 Microsoft Lync Server 2010 及移除伺服器角色」，網址為 [http://go.microsoft.com/fwlink/?linkid=246227\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=246227%26clcid=0x404)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需在解除委任舊版環境之前移轉和升級 Microsoft Unified Communications Managed API (UCMA) 應用程式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如需在解除委任舊版環境之前移轉和升級 Microsoft Unified Communications Managed API (UCMA) 應用程式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a>
+
 
 
 ## 本章節內容

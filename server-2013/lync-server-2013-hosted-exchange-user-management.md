@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 若要提供語音信箱服務給 Lync Server 2013 使用者，且該使用者的信箱位在裝載的 Exchange 服務上，則您必須為裝載的語音信箱啟用其使用者帳戶。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您可以為 Lync Server 2013 使用者啟用裝載的語音信箱之前，必須部署套用至對應使用者帳戶的裝載語音信箱原則。原則的範圍可以是全域、網站或個別使用者，只要適用於您要啟用的使用者即可。如需詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在您可以為 Lync Server 2013 使用者啟用裝載的語音信箱之前，必須部署套用至對應使用者帳戶的裝載語音信箱原則。原則的範圍可以是全域、網站或個別使用者，只要適用於您要啟用的使用者即可。如需詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>＞。
+
 
 
 ## msExchUCVoiceMailSettings 屬性

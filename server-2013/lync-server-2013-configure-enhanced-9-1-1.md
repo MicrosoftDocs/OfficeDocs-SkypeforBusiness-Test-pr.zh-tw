@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2013-02-24_
 
 如需有關規劃 E9-1-1 部署的詳細資訊，請參閱＜ [在 Lync Server 2013 中規劃緊急服務 (E9-1-1)](lync-server-2013-planning-for-emergency-services-e9-1-1.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 僅支援美國境內的 E9-1-1。若要部署 E9-1-1，您必須設定與合格的 E9-1-1 服務提供者的 SIP 連線，或者將緊急位置識別號碼 (ELIN) 閘道部署至以公用交換電話網路 (PSTN) 為基礎的 E9-1-1 服務提供者。如需詳細資訊，請參閱＜ <a href="lync-server-2013-enhanced-9-1-1-e9-1-1-and-mediation-server.md">Lync Server 2013 中的增強型 9-1-1 (E9-1-1) 和中繼伺服器</a>＞。如需設定主幹連線的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-a-trunk-with-media-bypass.md">在 Lync Server 2013 中設定含媒體旁路的主幹</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Lync Server 2013 僅支援美國境內的 E9-1-1。若要部署 E9-1-1，您必須設定與合格的 E9-1-1 服務提供者的 SIP 連線，或者將緊急位置識別號碼 (ELIN) 閘道部署至以公用交換電話網路 (PSTN) 為基礎的 E9-1-1 服務提供者。如需詳細資訊，請參閱＜ <a href="lync-server-2013-enhanced-9-1-1-e9-1-1-and-mediation-server.md">Lync Server 2013 中的增強型 9-1-1 (E9-1-1) 和中繼伺服器</a>＞。如需設定主幹連線的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-a-trunk-with-media-bypass.md">在 Lync Server 2013 中設定含媒體旁路的主幹</a>＞。
+
 
 
 ## 本章節內容

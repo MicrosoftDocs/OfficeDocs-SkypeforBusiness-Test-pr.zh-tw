@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 4.  在 **\[全域\]** 頁面上，按一下 **\[全域\]** 設定。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>任何 Microsoft Lync Server 2013 部署都只能設定一個網路，所以清單中絕不會有一個以上的網路設定。您無法重新命名 [全域] 設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 任何 Microsoft Lync Server 2013 部署都只能設定一個網路，所以清單中絕不會有一個以上的網路設定。您無法重新命名 [全域] 設定。
+    
 
 
 5.  在 **\[編輯\]** 功能表上，按一下 **\[顯示詳細資料\]**。

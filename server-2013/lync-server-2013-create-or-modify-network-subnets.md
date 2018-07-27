@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 6.  在 **\[遮罩\]** 欄位中，輸入 1 至 32 的數值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這個值是要套用至所建立之子網路的位元遮罩。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 這個值是要套用至所建立之子網路的位元遮罩。
+    
 
 
 7.  在 \[網路網站 ID\] 中，選取此子網路所屬的網站。

@@ -51,18 +51,9 @@ Lync Server 2013 可與 Lync Server 2010 部署或 Office Communications Server 
 
 拓撲產生器將顯示下列訊息以通知您此問題：「SQL Server \[伺服器的 FQDN\] 已經包含裝載角色「使用者存放區」的 SQL 執行個體。」
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您想部署對 Lync Server 2013 而言為全新的伺服器角色，則應先依照＜移轉＞與部署文件中的說明將您現有的部署升級，然後再依照規劃與部署文件中的說明部署新的伺服器角色。若您要移轉舊版的群組聊天，請先完成將所有其他元件從 Lync Server 2010 移轉至 Office Communications Server 2007 R2 的程序，才能在最後移轉舊版的群組聊天。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若您想部署對 Lync Server 2013 而言為全新的伺服器角色，則應先依照＜移轉＞與部署文件中的說明將您現有的部署升級，然後再依照規劃與部署文件中的說明部署新的伺服器角色。若您要移轉舊版的群組聊天，請先完成將所有其他元件從 Lync Server 2010 移轉至 Office Communications Server 2007 R2 的程序，才能在最後移轉舊版的群組聊天。
+
 
 
 如需特定共存需求，以及 Lync Server 2010 或 Office Communications Server 2007 R2 與 Lync Server 2013 元件之共存及移轉的其他詳細資訊，請參閱移轉文件中的＜ [從 Lync Server 2010 移轉到 Lync Server 2013](migration-from-lync-server-2010-to-lync-server-2013.md)＞及＜ [從 Office Communications Server 2007 R2 移轉至 Lync Server 2013](migration-from-office-communications-server-2007-r2-to-lync-server-2013.md)＞。如需用戶端的混合版本支援的詳細資訊，請參閱＜ [Lync Server 2013 中舊部署支援的用戶端](lync-server-2013-supported-clients-from-previous-deployments.md)＞。

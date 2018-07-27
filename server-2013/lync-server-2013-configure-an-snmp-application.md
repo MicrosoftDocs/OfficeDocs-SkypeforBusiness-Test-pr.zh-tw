@@ -21,18 +21,9 @@ Lync Server 2013 包含標準 Web 服務介面，可供您用來將位置資訊�
 
 如需詳細資訊，請參閱 [Set-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServiceConfiguration)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MAC 位址不適用於執行 Windows 8 的電腦。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> MAC 位址不適用於執行 Windows 8 的電腦。
+
 
 
 ## 若要設定 SNMP 應用程式 URL

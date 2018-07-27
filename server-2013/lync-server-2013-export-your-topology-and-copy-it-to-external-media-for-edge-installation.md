@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 在您發行拓撲之後， Lync Server 部署精靈會需要存取 中央管理存放區資料，才能在伺服器上開始進行部署程序。在內部網路中，資料可直接從伺服器取得，但是不在內部網域中的 Edge Server 無法存取資料。若要將拓撲設定資料提供給 Edge Server 部署，您必須先將拓撲資料匯出為檔案，並且將它複製到外部媒體 (例如可從 Edge Server 使用的 USB 磁碟機或網路共用)，然後才在 Edge Server 上執行 Lync Server 部署精靈。利用下列程序將拓撲設定資料提供給您要部署的 Edge Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Edge Server 上安裝 Lync Server 2013 之後，可使用內部網路中的系統管理工具管理 Edge Server，這樣就會自動將設定複寫至部署中的任何 Edge Server。唯一的例外狀況是指派和安裝憑證以及停止和啟動服務，這兩者必須在 Edge Server 進行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Edge Server 上安裝 Lync Server 2013 之後，可使用內部網路中的系統管理工具管理 Edge Server，這樣就會自動將設定複寫至部署中的任何 Edge Server。唯一的例外狀況是指派和安裝憑證以及停止和啟動服務，這兩者必須在 Edge Server 進行。
+
 
 
 ## 若要使用 Lync Server 管理命令介面將拓撲資料提供給 Edge Server

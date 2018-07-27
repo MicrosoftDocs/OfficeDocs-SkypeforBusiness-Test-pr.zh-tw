@@ -17,36 +17,18 @@ _**上次修改主題的時間：** 2013-10-01_
 
 常設聊天室伺服器 部署可以同時裝載許多 常設聊天室 聊天室。聊天室在伺服器上會組織成一組類別。每個聊天室各屬於一項類別，而且會繼承該類別中的一些設定。這樣的組織會建立一個有用的結構，可用於根據其商業用途來識別交談，並促進委派管理功能和簡化管理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然執行 常設聊天室 ( Lync 用戶端) 的電腦中，提供使用者許多聊天室的管理功能，但 常設聊天室 管理員 (身為 <strong>cspersistentchatadministrator</strong> 角色) 必須使用 Lync Server 控制台或 Windows PowerShell Cmdlet 來建立或管理類別。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然執行 常設聊天室 ( Lync 用戶端) 的電腦中，提供使用者許多聊天室的管理功能，但 常設聊天室 管理員 (身為 <strong>cspersistentchatadministrator</strong> 角色) 必須使用 Lync Server 控制台或 Windows PowerShell Cmdlet 來建立或管理類別。
+
 
 
 常設聊天室 管理員可使用 Lync Server 控制台或 Windows PowerShell Cmdlet 建立和管理類別，以及設計組織中的使用者存取聊天室的方式。
 
 能夠管理一或多個聊天室的 常設聊天室 聊天室管理員，可以使用 Lync 用戶端啟動聊天室管理 Web 應用程式，建立和管理聊天室 (或者使用者可建立自訂的解決方案以及要叫用的工作流程)。 常設聊天室 管理員也可以使用 Lync Server 控制台或 Windows PowerShell Cmdlet 來建立和管理聊天室。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>常設聊天室聊天室的名稱不可與常設聊天室類別相同。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 常設聊天室聊天室的名稱不可與常設聊天室類別相同。
+
 
 
 聊天室理員可以變更所有聊天室內容，變更聊天室類別除外。不可限制其無法進行下列動作：

@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 若您先前在 Lync Server 2010 環境中自訂了通訊錄正規化規則，便須將自訂規則移轉到試驗集區。若您未曾自訂通訊錄正規化規則，即無須對通訊錄服務執行任何移轉動作。 Lync Server 2013 的預設正規化規則與 Lync Server 2010 的預設規則相同。請遵照本節稍後的程序來移轉自訂的正規化規則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若組織使用遠端呼叫控制，而您也自訂了通訊錄正規化規則，您必須執行本主題中所述的程序，才能使用遠端呼叫控制。本程序需具備 RTCUniversalServerAdmins 群組成員資格，或同等的權限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若組織使用遠端呼叫控制，而您也自訂了通訊錄正規化規則，您必須執行本主題中所述的程序，才能使用遠端呼叫控制。本程序需具備 RTCUniversalServerAdmins 群組成員資格，或同等的權限。
+
 
 
 **UseNormalizationRules 設為 False**
@@ -53,18 +44,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 1.  在通訊錄共用資料夾的根目錄中尋找 Company\_Phone\_Number\_Normalization\_Rules.txt 檔案，並加以複製到 Lync Server 2013 試驗集區中通訊錄共用資料夾的根目錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>範例通訊錄正規化規則已安裝在您的 ABS Web 元件檔案目錄。路徑為 <strong>$installedDriveLetter:\Program Files\Microsoft Lync Server 2013\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt</strong>。可重新命名此檔案為  <strong>Company_Phone_Number_Normalization_Rules.txt</strong> 並複製到通訊錄共用資料夾的根目錄。例如，在 <strong>$serverX</strong> 中共用的通訊錄路徑類似於 <strong>\\$serverX \LyncFileShare\2-WebServices-1\ABFiles</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 範例通訊錄正規化規則已安裝在您的 ABS Web 元件檔案目錄。路徑為 <strong>$installedDriveLetter:\Program Files\Microsoft Lync Server 2013\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt</strong>。可重新命名此檔案為  <strong>Company_Phone_Number_Normalization_Rules.txt</strong> 並複製到通訊錄共用資料夾的根目錄。例如，在 <strong>$serverX</strong> 中共用的通訊錄路徑類似於 <strong>\\$serverX \LyncFileShare\2-WebServices-1\ABFiles</strong>。
+    
 
 
 2.  使用文字編輯器 (如筆記本) 開啟 Company\_Phone\_Number\_Normalization\_Rules.txt 檔案。
@@ -91,7 +73,7 @@ _**上次修改主題的時間：** 2012-10-09_
     
       - 如果您的部署包含 Lync Server 2013 與 Lync Server 2010 或 Office Communications Server 2007 R2 的組合，請執行下列 Cmdlet 並將其指派給拓撲中的每一個 Lync Server 2013 集區：
         
-            new-csaddressbookconfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
+            New-CsAddressBookConfiguration -identity <XdsIdentity> -UseNormalizationRules=$true -IgnoreGenericRules=$true
 
 3.  等候 中央管理存放區複寫在所有集區上發生。
 

@@ -19,18 +19,9 @@ Microsoft Lync Server 2013 使用憑證來手動驗證其他伺服器，並加�
 
 指派至 Edge Server 外部介面的憑證必須向公用憑證授權單位 (CA) 申請。下列文章列出已成功示範提供憑證作為 整合通訊 之用的公用 CA： [http://go.microsoft.com/fwlink/?linkid=3052\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=3052%26clcid=0x404)。申請憑證時，您可以使用 Lync Server 部署精靈所產生的憑證要求、使用 Lync Server 管理命令介面 Cmdlet 手動建立要求，或者透過公用 CA 所提供的程序進行。如需進行憑證管理之 Lync Server 管理命令介面 Cmdlet 的詳細資訊，請參閱＜ [憑證和驗證 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)＞。在指派憑證時，憑證會指派至 Access Edge Service 介面、 Web Conferencing Edge Service 介面以及 Audio/Video 驗證服務。Audio/Video 驗證服務不應與未使用憑證加密音訊及視訊資料流的 A/V Edge 服務 混淆。內部 Edge Server 介面可使用由內部 (發給您的組織) 的 CA 或公用 CA 核發的憑證。內部介面憑證僅可使用 SN，且不需要也不會使用 SAN 項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表顯示主體替代名稱清單中的第二個 SIP (sip.fabrikam.com) 項目供您參考。您必須為組織中的每個 SIP 網域新增憑證主體替代名稱清單所列的對應 FQDN。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下表顯示主體替代名稱清單中的第二個 SIP (sip.fabrikam.com) 項目供您參考。您必須為組織中的每個 SIP 網域新增憑證主體替代名稱清單所列的對應 FQDN。
+
 
 
 ## 具有使用 NAT 的私人 IP 位址之單一合併式 Edge 所需的憑證

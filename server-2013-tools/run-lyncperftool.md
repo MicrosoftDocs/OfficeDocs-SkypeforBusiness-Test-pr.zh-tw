@@ -43,36 +43,18 @@ LyncPerfTool.exe /file:IM_client0.xml /displayfile
 
 To end the process, press Ctrl+C.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Before running LyncPerfTool directly, you must register the performance counters. Enter the following command to register performance counters:</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Before running LyncPerfTool directly, you must register the performance counters. Enter the following command to register performance counters:
+
 
 
 ```Powershell
 regsvr32 /i /n /s LyncPerfToolPerf.dll
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Every instance of LyncPerfTool.exe that you start will immediately start signing in users, usually at a rate of one user per second. The peak user sign-in rate for the pool is about 12 per second. This means that you should not start more than 12 LyncPerfTool instances at the same time, while the users are still signing in. 1000 users will take about 20 minutes to fully sign in, at one per second.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Every instance of LyncPerfTool.exe that you start will immediately start signing in users, usually at a rate of one user per second. The peak user sign-in rate for the pool is about 12 per second. This means that you should not start more than 12 LyncPerfTool instances at the same time, while the users are still signing in. 1000 users will take about 20 minutes to fully sign in, at one per second.
+
 
 
 ## 請參閱

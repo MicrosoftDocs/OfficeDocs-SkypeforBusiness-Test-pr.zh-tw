@@ -42,18 +42,9 @@ _**上次修改主題的時間：** 2014-05-22_
 
 4.  將備份的 Lync Server 回應群組服務工作流程從集區 A 匯入集區 B。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>目前， <strong>Import-CsRgsConfiguration</strong> Cmdlet 要求集區 A 上的佇列與工作流程名稱與集區 B 上的佇列與工作流程名稱不同。如果名稱沒有任何不同，則在執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet 時會發生錯誤，而且必須先在集區 B 中重新命名佇列與工作流程，才可繼續執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 目前， <strong>Import-CsRgsConfiguration</strong> Cmdlet 要求集區 A 上的佇列與工作流程名稱與集區 B 上的佇列與工作流程名稱不同。如果名稱沒有任何不同，則在執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet 時會發生錯誤，而且必須先在集區 B 中重新命名佇列與工作流程，才可繼續執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet。
+    
     
     您有兩種選擇可將回應群組設定從集區 A 匯入集區 B。使用的方法取決於您是否想以集區 A 的應用程式層級設定覆寫集區 B 的應用程式層級設定。
     
@@ -95,18 +86,9 @@ _**上次修改主題的時間：** 2014-05-22_
         
             Set-CsUnassignedNumber -Identity "<Range Name>" -AnnouncementService "<Pool B FQDN>" -AnnouncementName "<New Announcement in pool B>"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對於使用 &quot;Exchange UM&quot; 做為所選取之宣告服務的未指派號碼範圍不需要此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 對於使用 &quot;Exchange UM&quot; 做為所選取之宣告服務的未指派號碼範圍不需要此步驟。
+    
 
 
 7.  執行下列 Cmdlet，在災害復原 (DR) 模式中將集區 A 容錯移轉至集區 B：
@@ -216,18 +198,9 @@ _**上次修改主題的時間：** 2014-05-22_
     
       - (選用) 如果集區 B 中不再使用這些宣告，請從集區 B 移除在集區 C 中重新建立的宣告。若要移除宣告，請使用 **Remove-CsAnnouncement** Cmdlet。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>對於使用 &quot;Exchange UM&quot; 做為宣告服務的未指派號碼範圍不需要此步驟。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 對於使用 &quot;Exchange UM&quot; 做為宣告服務的未指派號碼範圍不需要此步驟。
+        
 
 
 21. 執行下列 Cmdlet，在集區 B 中清除集區 A 的使用者資料：
@@ -299,18 +272,9 @@ _**上次修改主題的時間：** 2014-05-22_
             Update-CsUserData -FileName c:\logs\exportedUserDAta.xml -UserFilter $user - 
             }
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>位於與集區 A 相關聯之 SBA 的使用者會發生服務中斷，直到這些使用者移至集區 C 為止。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 位於與集區 A 相關聯之 SBA 的使用者會發生服務中斷，直到這些使用者移至集區 C 為止。
+        
 
 
 28. 在拓撲產生器中，對先前與集區 A 相關聯的每一個 SBA X，執行下列動作：

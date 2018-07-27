@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 本節中的主題將針對使用 Lync Server 2013 控制台 中的 \[使用者\] 頁面所能執行的工作，提供逐步程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法以 Lync Server 控制台 管理身為 Active Directory Domain Admins 群組成員的使用者。對於 Domain Admins 使用者，您僅能使用 Lync Server 控制台 執行唯讀搜尋作業。若要對 Domain Admins 使用者執行寫入作業 (例如對 Lync Server 控制台 啟用或停用、變更集區或原則指派、電話語音設定、SIP 位址)，您必須以 Domain Admins 使用者的身分登入，並使用 Windows PowerShell Cmdlet。如需使用 Windows PowerShell Cmdlet 來管理使用者的詳細資訊，請參閱 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 管理命令介面</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您無法以 Lync Server 控制台 管理身為 Active Directory Domain Admins 群組成員的使用者。對於 Domain Admins 使用者，您僅能使用 Lync Server 控制台 執行唯讀搜尋作業。若要對 Domain Admins 使用者執行寫入作業 (例如對 Lync Server 控制台 啟用或停用、變更集區或原則指派、電話語音設定、SIP 位址)，您必須以 Domain Admins 使用者的身分登入，並使用 Windows PowerShell Cmdlet。如需使用 Windows PowerShell Cmdlet 來管理使用者的詳細資訊，請參閱 <a href="lync-server-2013-lync-server-management-shell.md">Lync Server 管理命令介面</a>。
+
 
 
 當您進行任何需要搜尋某位使用者或篩選使用者搜尋結果的 Lync Server 2013 管理工作時，某些使用者屬性 (properties) 會以屬性 (attributes) 的型態存在於 Active Directory 網域服務 中，但它們在部署 Microsoft Exchange Server 之前並不會複製到通用類別目錄。 Microsoft Exchange (而非 Lync Server)，會標記出下列屬性，以待安裝後複製到通用類別目錄：

@@ -17,32 +17,14 @@ _**上次修改主題的時間：** 2013-01-30_
 
 您可使用下列程序在通話駐留範圍表中建立或修改來電接聽群組號碼範圍。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用 Lync Server 管理命令介面才能在通話駐留範圍表中建立、修改、移除及檢視群組來電接聽號碼範圍。Lync Server 控制台無法使用群組來電接聽號碼範圍。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必須使用 Lync Server 管理命令介面才能在通話駐留範圍表中建立、修改、移除及檢視群組來電接聽號碼範圍。Lync Server 控制台無法使用群組來電接聽號碼範圍。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>來電接聽群組號碼範圍必須指派為 GroupPickup 類型。只有指派給使用者的群組號碼為 GroupPickup 類型，使用者才可啟用於群組來電接聽。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 來電接聽群組號碼範圍必須指派為 GroupPickup 類型。只有指派給使用者的群組號碼為 GroupPickup 類型，使用者才可啟用於群組來電接聽。
+
 
 
 來電接聽群組號碼範圍必須符合下列規則︰
@@ -77,18 +59,9 @@ _**上次修改主題的時間：** 2013-01-30_
     
         Set-CsCallParkOrbit -Identity "Redmond call pickup" -Type GroupPickup
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在一開始指定錯誤的類型，且群組範圍尚未在使用中，才可使用此 Cmdlet 來變更指派給號碼範圍的類型。如果將號碼範圍從 CallPark 變更為 GroupPickup，或從 GroupPickup 變更為 CallPark，但號碼範圍已在使用中，則該號碼範圍的「通話駐留」或群組來電接聽將會停止運作。例如，如果將號碼範圍從 CallPark 變更為 GroupPickup，則通話駐留應用程式將無法使用該範圍範圍來駐留通話。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 只有在一開始指定錯誤的類型，且群組範圍尚未在使用中，才可使用此 Cmdlet 來變更指派給號碼範圍的類型。如果將號碼範圍從 CallPark 變更為 GroupPickup，或從 GroupPickup 變更為 CallPark，但號碼範圍已在使用中，則該號碼範圍的「通話駐留」或群組來電接聽將會停止運作。例如，如果將號碼範圍從 CallPark 變更為 GroupPickup，則通話駐留應用程式將無法使用該範圍範圍來駐留通話。
+    
 
 
 ## 請參閱

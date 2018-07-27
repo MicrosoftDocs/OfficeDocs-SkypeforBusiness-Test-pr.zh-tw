@@ -19,16 +19,7 @@ _**上次修改主題的時間：** 2012-09-19_
 
 開始掃描之前，應該確定 Lync Server 2013 環境中所有的元件都在執行並在線上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>取決於 Edge Server 的組態及任何的相關周邊網路設定 (包括防火牆設定及權限)，最佳做法分析程式有可能無法存取並掃描 Edge Server。如果將 Edge Server 涵蓋在掃描中，而報告指出存取 Edge Server 發生問題，最好將 Edge Server 從掃描選項中移除，然後再次執行掃描，報告就不會顯示這個問題。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 取決於 Edge Server 的組態及任何的相關周邊網路設定 (包括防火牆設定及權限)，最佳做法分析程式有可能無法存取並掃描 Edge Server。如果將 Edge Server 涵蓋在掃描中，而報告指出存取 Edge Server 發生問題，最好將 Edge Server 從掃描選項中移除，然後再次執行掃描，報告就不會顯示這個問題。
+
 

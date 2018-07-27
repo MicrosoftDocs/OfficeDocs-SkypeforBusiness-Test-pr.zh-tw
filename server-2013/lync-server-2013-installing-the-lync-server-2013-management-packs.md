@@ -19,18 +19,9 @@ System Center Operations Manager 本身具有的監控功能可監控小部分�
 
   - 元件與使用者管理套件 (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) 可追蹤的 Lync Server 問題包含事件記錄中所記錄的問題、效能計數器登錄的問題，或詳細通話記錄 (CDR) 或品質經驗 (QoE) 資料庫所記錄的問題。對於重大問題，可設定 System Center Operations Manager 立即透過電子郵件、立即訊息或短訊息服務 (SMS) 訊息通知系統管理員。SMS 是用來在行動裝置間傳送文字訊息的技術。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需關於設定 Operations Manager 通知的詳細資訊，請參閱 TechNet Library 中的「設定通知」，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x404</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需關於設定 Operations Manager 通知的詳細資訊，請參閱 TechNet Library 中的「設定通知」，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x404</a>。
+    
 
 
   - 主動監視套件 (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) 可主動測試主要的 Lync Server 元件，如登入系統、交換立即訊息或撥號至位於公開交換電話網路 (PSTN) 上的電話。這些測試是使用 Lync Server 綜合交易 Cmdlet 進行。例如：使用 **Test-CsIM** Cmdlet 來模擬一組測試使用者間的立即訊息交談。如果此模擬訊息交談失敗，則會產生警示。

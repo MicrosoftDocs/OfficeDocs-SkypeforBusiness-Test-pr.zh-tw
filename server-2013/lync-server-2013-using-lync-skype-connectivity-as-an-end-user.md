@@ -71,18 +71,9 @@ Lync-Skype 連線可讓 Skype 使用者與 Lync 使用者彼此互加為連絡�
 
 在各個案例中，Lync 使用者必須以下列格式輸入 Skype 使用者的電子郵件： **user(domain name)@msn.com**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用下列網域名稱的 Microsoft 帳戶無需執行此步驟： <strong>@live.com、@hotmail.com 或 @outlook.com</strong>。如需支援的自訂網域名稱的詳細資訊，請參閱＜ <a href="http://support.microsoft.com/kb/897567">支援的公用 IM 網域</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 使用下列網域名稱的 Microsoft 帳戶無需執行此步驟： <strong>@live.com、@hotmail.com 或 @outlook.com</strong>。如需支援的自訂網域名稱的詳細資訊，請參閱＜ <a href="http://support.microsoft.com/kb/897567">支援的公用 IM 網域</a>＞。
+
 
 
 **若要使用自動網域名稱將 Skype 連絡人新增至 Lync**
@@ -127,18 +118,9 @@ Lync-Skype 連線可讓 Skype 使用者與 Lync 使用者彼此互加為連絡�
     
     ![與 Lync 連絡人的 Skype 用戶端 IM 交談](images/Dn440175.86ca6f81-4db9-45ba-8511-1f7541aaf066(OCS.15).jpg "與 Lync 連絡人的 Skype 用戶端 IM 交談")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 系統管理員必須將 Lync 使用者的原則設定設為允許傳入要求。如果沒有，則 Lync 使用者將不會收到來自 Skype 使用者的連絡人要求。根據 Lync 使用者的原則設定而定，新增 Skype 使用者的要求將顯示在 Lync 用戶端的 [新增] 索引標籤中。若要開始與 Skype 使用者進行通訊，Lync 使用者必須將 Skype 使用者新增至 [我的最愛] 清單或連絡人清單。下方影像顯示 [新增] 索引標籤在 Lync 用戶端中的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 系統管理員必須將 Lync 使用者的原則設定設為允許傳入要求。如果沒有，則 Lync 使用者將不會收到來自 Skype 使用者的連絡人要求。根據 Lync 使用者的原則設定而定，新增 Skype 使用者的要求將顯示在 Lync 用戶端的 [新增] 索引標籤中。若要開始與 Skype 使用者進行通訊，Lync 使用者必須將 Skype 使用者新增至 [我的最愛] 清單或連絡人清單。下方影像顯示 [新增] 索引標籤在 Lync 用戶端中的位置。
+    
     
     ![Lync 用戶端的 \[新建連絡人\] 頁面](images/Dn440175.b1cf8570-1401-47d9-ab14-b04f0d7e8a7a(OCS.15).jpg "Lync 用戶端的 [新建連絡人] 頁面")
 

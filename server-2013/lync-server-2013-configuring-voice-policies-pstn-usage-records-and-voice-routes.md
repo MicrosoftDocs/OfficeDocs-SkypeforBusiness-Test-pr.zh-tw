@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-10_
 
 新 Enterprise Voice 部署的建議工作流程是：從設定包含適當 PSTN 使用方式記錄的語音原則開始，接著將適當路由關聯給每個 PSTN 使用方式記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以在「 <em>使用者</em> 」範圍建立語音原則，然後將其指派給個別使用者或群組。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您也可以在「 <em>使用者</em> 」範圍建立語音原則，然後將其指派給個別使用者或群組。
+
 
 
 如需執行每項工作的詳細步驟，請參閱本節程序。

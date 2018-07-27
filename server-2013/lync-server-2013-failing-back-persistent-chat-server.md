@@ -106,18 +106,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 6.  設定 常設聊天室伺服器 作用中的伺服器。在 Lync Server 管理命令介面使用 **Set-CsPersistentChatActiveServer** Cmdlet 來設定作用中伺服器的清單。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所有作用中的伺服器必須位於與新主要資料庫相同的資料中心，或位於具有低延遲/高頻寬資料庫連線的資料中心內。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 所有作用中的伺服器必須位於與新主要資料庫相同的資料中心，或位於具有低延遲/高頻寬資料庫連線的資料中心內。
+    
 
 
 若樣將集區還原至其正常狀態，請執行下列 Windows PowerShell 命令：

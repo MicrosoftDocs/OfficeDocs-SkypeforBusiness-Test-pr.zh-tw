@@ -71,16 +71,7 @@ _**上次修改主題的時間：** 2015-03-09_
     
         Set-CsConferencingConfiguration
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以建立特定網站的其他會議設定集。請搭配使用 <strong>New- CsConferencingConfiguration</strong> Cmdlet 與網站身分識別。當您建立網站的新會議設定時，網站設定的優先順序高於全域設定。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以建立特定網站的其他會議設定集。請搭配使用 <strong>New- CsConferencingConfiguration</strong> Cmdlet 與網站身分識別。當您建立網站的新會議設定時，網站設定的優先順序高於全域設定。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
+    
 

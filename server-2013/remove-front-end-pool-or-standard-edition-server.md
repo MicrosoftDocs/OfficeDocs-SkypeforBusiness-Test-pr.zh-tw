@@ -37,18 +37,9 @@ _**上次修改主題的時間：** 2012-10-04_
 
 4.  展開 \[SQL 存放區\] ，以滑鼠右鍵按一下與 Standard Edition 前端伺服器相關聯的 SQL Server 資料庫，再按一下 \[刪除\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須將組合的 SQL Server 資料庫定義從 Standard Edition 前端伺服器中移除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須將組合的 SQL Server 資料庫定義從 Standard Edition 前端伺服器中移除。
+    
 
 
 5.  發行拓撲，並檢查複寫狀態，然後視需要執行 Lync Server 部署精靈。

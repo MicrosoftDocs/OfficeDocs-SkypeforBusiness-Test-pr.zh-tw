@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
 SIP/CSTA 閘道必須設定作為信任的應用程式， Lync Server 才能套用靜態路由以將通話路由至該閘道。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您是從舊版的 Lync Server 部署移轉使用者，請確定已先移除所有為 SIP/CSTA 閘道建立的現有受信任應用程式項目 (舊稱為授權主機項目)，再執行本主題中的程序。如需詳細資訊，請參閱＜ <a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中移除舊版授權主機 (選用)</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您是從舊版的 Lync Server 部署移轉使用者，請確定已先移除所有為 SIP/CSTA 閘道建立的現有受信任應用程式項目 (舊稱為授權主機項目)，再執行本主題中的程序。如需詳細資訊，請參閱＜ <a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中移除舊版授權主機 (選用)</a>＞。
+
 
 
 ## 若要設定 SIP/CSTA 閘道的受信任應用程式項目

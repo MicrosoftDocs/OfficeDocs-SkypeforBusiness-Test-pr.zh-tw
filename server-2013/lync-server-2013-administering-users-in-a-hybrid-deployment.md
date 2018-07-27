@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2014-05-29_
 
 ## 將使用者移回內部部署
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節僅適用於針對 Lync 內部部署所建立並啟用後移至 Lync Online 的使用者。若要移動建立於 Lync Online (且尚未在內部部署中啟用 Lync) 的使用者，請參閱 <a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">將使用者從 Lync Online 移至 Lync Server 2013 的 Lync 內部部署</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 本節僅適用於針對 Lync 內部部署所建立並啟用後移至 Lync Online 的使用者。若要移動建立於 Lync Online (且尚未在內部部署中啟用 Lync) 的使用者，請參閱 <a href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">將使用者從 Lync Online 移至 Lync Server 2013 的 Lync 內部部署</a>。
+
 
 
   - 執行下列 Cmdlet，將使用者從 Lync Online 移回 Lync 內部部署：

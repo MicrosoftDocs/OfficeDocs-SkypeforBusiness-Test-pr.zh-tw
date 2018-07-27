@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 為 Lync Server 2013、 Standard Edition 或集區中的第一個 前端伺服器設定及安裝 前端伺服器之前，您會為 Internet Information Services (IIS) 安裝及設定伺服器角色和 Web 服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的組織要求您找到系統磁碟機以外之磁碟機上的 IIS 和所有 Web 服務，在一開始安裝 Lync Server 2013 系統管理工具時，您可以變更 [安裝程式] 對話方塊中的 Lync Server 2013 檔案的安裝位置路徑。安裝 IIS 前先安裝系統管理工具。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，其餘的 Lync Server 2013 檔案也會部署到此磁碟機。如需詳細資訊，請參閱＜ <a href="lync-server-2013-install-lync-server-administrative-tools.md">安裝 Lync Server 2013 系統管理工具</a>＞。如需安裝 IIS 時如何重新安置由 Windows 伺服器管理員部署的 INETPUB 的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=216888" class="uri">http://go.microsoft.com/fwlink/?linkid=216888</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您的組織要求您找到系統磁碟機以外之磁碟機上的 IIS 和所有 Web 服務，在一開始安裝 Lync Server 2013 系統管理工具時，您可以變更 [安裝程式] 對話方塊中的 Lync Server 2013 檔案的安裝位置路徑。安裝 IIS 前先安裝系統管理工具。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，其餘的 Lync Server 2013 檔案也會部署到此磁碟機。如需詳細資訊，請參閱＜ <a href="lync-server-2013-install-lync-server-administrative-tools.md">安裝 Lync Server 2013 系統管理工具</a>＞。如需安裝 IIS 時如何重新安置由 Windows 伺服器管理員部署的 INETPUB 的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=216888" class="uri">http://go.microsoft.com/fwlink/?linkid=216888</a>。
+
 
 
 下表指出所需的 IIS 7.5 角色服務。
@@ -129,34 +120,16 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Scripting-Tools, Web-Windows-Auth, Web-Asp-Net, Web-Log-Libraries, Web-Http-Tracing, Web-Stat-Compression, Web-Dyn-Compression, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Errors, Web-Http-Logging, Web-Net-Ext, Web-Client-Auth, Web-Filtering, Web-Mgmt-Console
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>匿名驗證預設會與 IIS 伺服器角色一起安裝。您可以在安裝 IIS 之後管理匿名驗證。如需詳細資訊，請參閱＜啟用匿名驗證 (IIS 7)＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=203935" class="uri">http://go.microsoft.com/fwlink/?linkid=203935</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 匿名驗證預設會與 IIS 伺服器角色一起安裝。您可以在安裝 IIS 之後管理匿名驗證。如需詳細資訊，請參閱＜啟用匿名驗證 (IIS 7)＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=203935" class="uri">http://go.microsoft.com/fwlink/?linkid=203935</a>。
+
 
 
 下表指出 Windows Server 2012 與 Windows Server 2012 R2 所需的 IIS 8.0 和 IIS 8.5 角色服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對 Windows Server 2012 與 Windows Server 2012 R2，Add-WindowsFeature Cmdlet 已由 Install-WindowsFeature Cmdlet 取代。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=392274">Install-WindowsFeature</a> (英文)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 針對 Windows Server 2012 與 Windows Server 2012 R2，Add-WindowsFeature Cmdlet 已由 Install-WindowsFeature Cmdlet 取代。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=392274">Install-WindowsFeature</a> (英文)。
+
 
 
 ### IIS 8.0 和 IIS 8.5 角色服務
@@ -335,18 +308,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Http-Errors, Web-Asp-Net, Web-Net-Ext, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Logging, Web-Log-Libraries, Web-Request-Monitor, Web-Http-Tracing, Web-Basic-Auth, Web-Windows-Auth, Web-Client-Auth, Web-Filtering, Web-Stat-Compression, Web-Dyn-Compression, NET-Framework-45-Core, NET-WCF-HTTP-Activation45, Web-Asp-Net45, Web-Mgmt-Tools, Web-Scripting-Tools, Web-Mgmt-Console, Web-Mgmt-Compat, Windows-Identity-Foundation, Server-Media-Foundation, BITS -Source D:\sources\sxs
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows Server 2012 的新項目是 –Source 參數，用於定義 Windows Server 2012 來源媒體的位置。您可將媒體定義為 DVD 光碟機 (例如 D:\Sources\Sxs)，或是已將媒體檔案複製到其上的網路共用 (例如 \\fileserver\windows2012\sources\Sxs)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Windows Server 2012 的新項目是 –Source 參數，用於定義 Windows Server 2012 來源媒體的位置。您可將媒體定義為 DVD 光碟機 (例如 D:\Sources\Sxs)，或是已將媒體檔案複製到其上的網路共用 (例如 \\fileserver\windows2012\sources\Sxs)。
+
 
 
 ## 請參閱

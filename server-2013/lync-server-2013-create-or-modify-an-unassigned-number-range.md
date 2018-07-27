@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 使用下列其中一個程序來設定 宣告應用程式的未指派號碼範圍。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先定義一個或多個宣告或設定 Exchange Unified Messaging (UM) 自動語音應答，才能設定未指派號碼表。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您必須先定義一個或多個宣告或設定 Exchange Unified Messaging (UM) 自動語音應答，才能設定未指派號碼表。
+
 
 
 ## 使用 Lync Server 控制台 設定未指派的電話號碼
@@ -43,18 +34,9 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - 若要建立新的號碼範圍，請按一下 \[新增\] 。在 \[名稱\] 中輸入此號碼範圍的識別名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您對資料庫認可新的未指派號碼範圍之後，就無法變更此名稱。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您對資料庫認可新的未指派號碼範圍之後，就無法變更此名稱。
+        
     
       - 若要修改現有號碼範圍，請在搜尋欄位中輸入號碼範圍的完整或部分名稱。在產生的號碼範圍清單中，依序按一下您要的名稱、\[編輯\] 和 \[顯示詳細資料\] 。
 
