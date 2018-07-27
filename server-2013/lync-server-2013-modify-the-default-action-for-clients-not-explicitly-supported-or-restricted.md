@@ -47,7 +47,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 ## 使用 Lync Server PowerShell Cmdlet 修改預設動作
 
-當使用者嘗試使用用戶端版本原則並未明確支援或限制的用戶端進行登入時所採取的預設動作，也可以使用 Windows PowerShell 命令列介面和 **set-csclientversionpolicy** Cmdlet 來管理。此 Cmdlet 可以從 Lync Server 2013 管理命令介面或從 Windows PowerShell 的遠端工作階段執行。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
+當使用者嘗試使用用戶端版本原則並未明確支援或限制的用戶端進行登入時所採取的預設動作，也可以使用 Windows PowerShell 命令列介面和 **Set-CsClientVersionPolicy** Cmdlet 來管理。此 Cmdlet 可以從 Lync Server 2013 管理命令介面或從 Windows PowerShell 的遠端工作階段執行。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
 
 ## 將預設動作設定為封鎖存取
 
@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Allow
 
-如需詳細資訊，請參閱 [set-csclientversionpolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 
