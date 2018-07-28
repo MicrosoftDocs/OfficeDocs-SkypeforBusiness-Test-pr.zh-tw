@@ -27,15 +27,21 @@ _**上次修改主題的時間：** 2012-01-16_
 
 3.  在命令提示字元中執行下列命令：
     
+    ```
         New-CsKerberosAccountAssignment -UserAccount "Domain\UserAccount" -Identity "site:SiteName"
-    
+    ```
+    ```    
         Enable-CsTopology
+    ```
     
     例如：
     
+    ```
         New-CsKerberosAccountAssignment -UserAccount "contoso\kerbauth" -Identity "site:redmond"
-    
+    ```
+    ```    
         Enable-CsTopology
+    ```
     
     > [!NOTE]  
     > 您必須使用 Domain\User 格式指定 UserAccount 參數。不支援以 User@Domain.extension 格式來指稱基於 Kerberos 驗證目的而建立的電腦物件。

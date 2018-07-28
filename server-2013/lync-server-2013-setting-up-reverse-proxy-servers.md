@@ -64,23 +64,23 @@ _**上次修改主題的時間：** 2014-05-08_
 
 若要順利將 Forefront Threat Management Gateway 2010 部署成您的反向 Proxy，您必須安裝及設定伺服器，並使用 Forefront Threat Management Gateway 2010 文件中定義的先決條件和硬體需求。請參閱下列主題集以在伺服器上適當設定硬體並安裝 Forefront Threat Management Gateway 2010，再繼續進行。
 
-   [Forefront Threat Management Gateway (TMG) 2010](http://technet.microsoft.com/zh-tw/library/ff355324.aspx)
+  [Forefront Threat Management Gateway (TMG) 2010](http://technet.microsoft.com/zh-tw/library/ff355324.aspx)
 
-   [Forefront TMG 2010 硬體建議事項](http://technet.microsoft.com/library/ff382651.aspx)
+  [Forefront TMG 2010 硬體建議事項](http://technet.microsoft.com/library/ff382651.aspx)
 
 若要將 IIS ARR 順利部署為您的反向 Proxy，請檢視下列主題以設定硬體和必要軟體。
 
-   若要在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS，請參閱＜ [在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS 7](http://go.microsoft.com/fwlink/?linkid=291296)＞(英文)
+  若要在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS，請參閱＜ [在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS 7](http://go.microsoft.com/fwlink/?linkid=291296)＞(英文)
 
-   若要在 Windows Server 2012 上安裝 IIS，請參閱＜ [在 Windows Server 2012 上安裝 IIS 8](http://go.microsoft.com/fwlink/?linkid=291297)＞(英文)
+  若要在 Windows Server 2012 上安裝 IIS，請參閱＜ [在 Windows Server 2012 上安裝 IIS 8](http://go.microsoft.com/fwlink/?linkid=291297)＞(英文)
 
-   如要在 Windows Server 2012 R2 上安裝 IIS，請參閱 [在 Windows Server 2012 R2 上安裝 IIS 8.5](http://go.microsoft.com/fwlink/?linkid=330687)
+  如要在 Windows Server 2012 R2 上安裝 IIS，請參閱 [在 Windows Server 2012 R2 上安裝 IIS 8.5](http://go.microsoft.com/fwlink/?linkid=330687)
 
-   若要下載 IIS Application Request Routing 延伸模組，請依照＜ [Application Request Routing v2.5 下載](http://go.microsoft.com/fwlink/?linkid=291298)＞(英文) 中的指示進行
+  若要下載 IIS Application Request Routing 延伸模組，請依照＜ [Application Request Routing v2.5 下載](http://go.microsoft.com/fwlink/?linkid=291298)＞(英文) 中的指示進行
 
-   若要安裝 ARR，請於＜ [安裝 Application Request Routing V2](http://go.microsoft.com/fwlink/?linkid=291299)＞(英文) 取得相關指示
+  若要安裝 ARR，請於＜ [安裝 Application Request Routing V2](http://go.microsoft.com/fwlink/?linkid=291299)＞(英文) 取得相關指示
     
-    > [!NOTE]  
-    > 目前發佈的指示適用於 ARR 2.0。在延伸模組安裝方面，兩個版本間並沒有差異。
+  > [!NOTE]  
+  > 目前發佈的指示適用於 ARR 2.0。在延伸模組安裝方面，兩個版本間並沒有差異。
     
 

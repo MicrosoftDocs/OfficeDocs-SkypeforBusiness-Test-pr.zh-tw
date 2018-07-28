@@ -59,27 +59,27 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
     
        如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> **\[同盟及外部存取\]** \> **\[SIP 同盟網域\]** 。請建立 **\[新增\]** 原則或 **\[編輯\]** 現有的原則，以依 FQDN 來允許或封鎖網域。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。</td>
-        </tr>
-        </tbody>
-        </table>
+      <table>
+      <thead>
+      <tr class="header">
+      <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="odd">
+      <td>手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。</td>
+      </tr>
+      </tbody>
+      </table>
         
-        > [!NOTE]  
-        > 若是 <strong>[新的 SIP 同盟網域]</strong>，您必須為 Microsoft Lync Online、Microsoft Office 365 提供 <strong>[網域名稱 (或 FQDN)]</strong>。若是 Microsoft Lync Server 2013、Lync Server 2010 及 Office Communications Server，您也必須提供 <strong>[Access Edge Service (FQDN)]</strong>
+      > [!NOTE]  
+      > 若是 <strong>[新的 SIP 同盟網域]</strong>，您必須為 Microsoft Lync Online、Microsoft Office 365 提供 <strong>[網域名稱 (或 FQDN)]</strong>。若是 Microsoft Lync Server 2013、Lync Server 2010 及 Office Communications Server，您也必須提供 <strong>[Access Edge Service (FQDN)]</strong>
         
     
-       若是探索到的協力廠商同盟 (合作夥伴可以探索您的 Edge Server)，您需在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中建立一筆指向連接埠 5061 的 SRV 記錄以及您 Edge Server 的主機 (A) 記錄
+      若是探索到的協力廠商同盟 (合作夥伴可以探索您的 Edge Server)，您需在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中建立一筆指向連接埠 5061 的 SRV 記錄以及您 Edge Server 的主機 (A) 記錄
         
-        > [!IMPORTANT]  
-        > 如果您正支援 Windows Phone、Apple iPhone、iPad 或其他 Apple 裝置上的 Microsoft Lync Mobile 用戶端，且使用 推播通知服務或 推播通知服務，您必須針對您每個有 Lync Mobile 用戶端的 SIP 網域來規劃 _sipfederationtls._tcp. <em>&lt;SIP 網域&gt;</em> SRV 記錄。Android 和 Nokia Symbian Lync Mobile 並不使用推入通知，因此不受此條件限制。
+      > [!IMPORTANT]  
+      > 如果您正支援 Windows Phone、Apple iPhone、iPad 或其他 Apple 裝置上的 Microsoft Lync Mobile 用戶端，且使用 推播通知服務或 推播通知服務，您必須針對您每個有 Lync Mobile 用戶端的 SIP 網域來規劃 _sipfederationtls._tcp. <em>&lt;SIP 網域&gt;</em> SRV 記錄。Android 和 Nokia Symbian Lync Mobile 並不使用推入通知，因此不受此條件限制。
         
 
 

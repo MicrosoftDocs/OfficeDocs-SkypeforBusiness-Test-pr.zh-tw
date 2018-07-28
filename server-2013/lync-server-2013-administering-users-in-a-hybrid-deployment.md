@@ -26,9 +26,12 @@ _**上次修改主題的時間：** 2014-05-29_
 
   - 執行下列 Cmdlet，將使用者從 Lync Online 移回 Lync 內部部署：
     
+    ```
         $cred=Get-Credential
-    
+    ```
+    ```    
         Move-CsUser -Identity username@contoso.com -Target localpool.contoso.com -Credential $cred -HostedMigrationOverrideUrl <URL>
+    ```
 
 專用於 **HostedMigrationOverrideUrl** 參數的 URL 格式必須是正在執行裝載移轉服務之集區的 URL，格式如下：
 

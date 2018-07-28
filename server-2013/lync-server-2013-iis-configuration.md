@@ -116,9 +116,12 @@ _**上次修改主題的時間：** 2015-03-09_
 
 在 Windows Server 2008 R2 SP1 x64 作業系統上，您可以使用 Windows PowerShell 2.0。您必須先匯入 ServerManager 模組，再安裝 IIS 7.5 角色和角色服務。
 
+```
     Import-Module ServerManager
-
+```
+```
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Scripting-Tools, Web-Windows-Auth, Web-Asp-Net, Web-Log-Libraries, Web-Http-Tracing, Web-Stat-Compression, Web-Dyn-Compression, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Errors, Web-Http-Logging, Web-Net-Ext, Web-Client-Auth, Web-Filtering, Web-Mgmt-Console
+```
 
 > [!NOTE]  
 > 匿名驗證預設會與 IIS 伺服器角色一起安裝。您可以在安裝 IIS 之後管理匿名驗證。如需詳細資訊，請參閱＜啟用匿名驗證 (IIS 7)＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=203935" class="uri">http://go.microsoft.com/fwlink/?linkid=203935</a>。
@@ -129,8 +132,6 @@ _**上次修改主題的時間：** 2015-03-09_
 
 > [!NOTE]  
 > 針對 Windows Server 2012 與 Windows Server 2012 R2，Add-WindowsFeature Cmdlet 已由 Install-WindowsFeature Cmdlet 取代。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=392274">Install-WindowsFeature</a> (英文)。
-
-
 
 ### IIS 8.0 和 IIS 8.5 角色服務
 
@@ -304,14 +305,15 @@ _**上次修改主題的時間：** 2015-03-09_
 
 在 Windows Server 2012 與 Windows Server 2012 R2 中，您可以使用 Windows PowerShell 3.0 來安裝 IIS 需求。使用 Windows PowerShell 3.0 的 ServerManager 模組，輸入：
 
+```
     Import-Module ServerManager
-
+```
+```
     Add-WindowsFeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Http-Errors, Web-Asp-Net, Web-Net-Ext, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Http-Logging, Web-Log-Libraries, Web-Request-Monitor, Web-Http-Tracing, Web-Basic-Auth, Web-Windows-Auth, Web-Client-Auth, Web-Filtering, Web-Stat-Compression, Web-Dyn-Compression, NET-Framework-45-Core, NET-WCF-HTTP-Activation45, Web-Asp-Net45, Web-Mgmt-Tools, Web-Scripting-Tools, Web-Mgmt-Console, Web-Mgmt-Compat, Windows-Identity-Foundation, Server-Media-Foundation, BITS -Source D:\sources\sxs
+```
 
 > [!IMPORTANT]  
 > Windows Server 2012 的新項目是 –Source 參數，用於定義 Windows Server 2012 來源媒體的位置。您可將媒體定義為 DVD 光碟機 (例如 D:\Sources\Sxs)，或是已將媒體檔案複製到其上的網路共用 (例如 \\fileserver\windows2012\sources\Sxs)。
-
-
 
 ## 請參閱
 
