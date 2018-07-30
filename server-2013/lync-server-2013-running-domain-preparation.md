@@ -71,18 +71,9 @@ _**上次修改主題的時間：** 2013-04-16_
     
         Get-CsAdDomain -Domain domain1.contoso.net -GlobalSettingsDomainController dc01.domain1.contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>GlobalSettingsDomainController 參數可讓您指出全域設定的儲存位置。如果您的設定儲存在 System 容器 (在升級部署期間，當全域設定尚未移轉到 [設定] 容器時的常見現象)，請在 Active Directory 樹系的根目錄中定義網域控制站。如果全域設定位於 [設定] 容器中 (在全新部署或升級部署期間，當設定已經移轉至 Configuration 容器時的常見現象)，您可以在樹系中定義任何網域控制站。如果您未指定此參數，則 Cmdlet 會認為設定儲存在 [設定] 容器中，並參考 AD DS 中的任何網域控制站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > GlobalSettingsDomainController 參數可讓您指出全域設定的儲存位置。如果您的設定儲存在 System 容器 (在升級部署期間，當全域設定尚未移轉到 [設定] 容器時的常見現象)，請在 Active Directory 樹系的根目錄中定義網域控制站。如果全域設定位於 [設定] 容器中 (在全新部署或升級部署期間，當設定已經移轉至 Configuration 容器時的常見現象)，您可以在樹系中定義任何網域控制站。如果您未指定此參數，則 Cmdlet 會認為設定儲存在 [設定] 容器中，並參考 AD DS 中的任何網域控制站。
+    
     
     如果不指定 **Domain** 參數，預設值為本機網域。
     

@@ -41,18 +41,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有 Edge Service 都會在每一部 Edge Server 上執行。不能將服務分割到兩個不同的 Edge Server。如果您部署 Edge 集區以提供延展性，所有 Edge Service 都將部署在集區的每一部 Edge Server 上。XMPP 同盟、 Office Communications Server 和 Lync Server 同盟、公用 IM 連線以及用戶端行動性都是額外的服務，其都可在您部署 Edge Server 或 Edge 集區之後才部署。Mobility Service 是一種使用反向 Proxy 的功能。安裝 Mobility Service 並不會新增功能至 Edge Server，但需要重新設定反向 Proxy。 <strong>「安裝目標」</strong>欄會列出這些功能，並可提供 <strong>「Edge Server 規劃章節」</strong>下方之關聯欄位中的規劃指導方針，以在安裝並設定 Edge Server 時同步規劃這些要部署的功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有 Edge Service 都會在每一部 Edge Server 上執行。不能將服務分割到兩個不同的 Edge Server。如果您部署 Edge 集區以提供延展性，所有 Edge Service 都將部署在集區的每一部 Edge Server 上。XMPP 同盟、 Office Communications Server 和 Lync Server 同盟、公用 IM 連線以及用戶端行動性都是額外的服務，其都可在您部署 Edge Server 或 Edge 集區之後才部署。Mobility Service 是一種使用反向 Proxy 的功能。安裝 Mobility Service 並不會新增功能至 Edge Server，但需要重新設定反向 Proxy。 <strong>「安裝目標」</strong>欄會列出這些功能，並可提供 <strong>「Edge Server 規劃章節」</strong>下方之關聯欄位中的規劃指導方針，以在安裝並設定 Edge Server 時同步規劃這些要部署的功能。
+
 
 
 ## 識別並對應您的部署目標

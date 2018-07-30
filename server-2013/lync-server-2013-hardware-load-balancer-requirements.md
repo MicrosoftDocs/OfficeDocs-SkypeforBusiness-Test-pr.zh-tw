@@ -23,46 +23,19 @@ Lync Server 2013 調整式合併 Edge 拓撲經過最佳化，可讓主要與其
 
   - 公用 IM 使用者的連線
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援在一個介面上使用 DNS 負載平衡，而在另一個介面上使用硬體負載平衡。您必須同時針對這兩個介面使用硬體負載平衡或 DNS 負載平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 不支援在一個介面上使用 DNS 負載平衡，而在另一個介面上使用硬體負載平衡。您必須同時針對這兩個介面使用硬體負載平衡或 DNS 負載平衡。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您使用硬體負載平衡器時，針對內部網路的連線所部署的負載平衡器必須經過設定，使其僅對流向執行 Access Edge Service 與 A/V Edge Service 之伺服器的流量執行負載平衡。對於流向內部 Web Conferencing Edge Service 或內部 XMPP Proxy 服務的流量，不可執行負載平衡。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在您使用硬體負載平衡器時，針對內部網路的連線所部署的負載平衡器必須經過設定，使其僅對流向執行 Access Edge Service 與 A/V Edge Service 之伺服器的流量執行負載平衡。對於流向內部 Web Conferencing Edge Service 或內部 XMPP Proxy 服務的流量，不可執行負載平衡。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支援 Direct Server Return (DSR) NAT。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> Lync Server 2013 不支援 Direct Server Return (DSR) NAT。
+
 
 
 若要判斷您的硬體負載平衡器是否支援 Lync Server 2013 所需要的功能，請參閱＜ Lync Server 2010 負載平衡器協力廠商＞，網址為 [http://go.microsoft.com/fwlink/?linkid=202452\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=202452%26clcid=0x404)。
@@ -85,18 +58,9 @@ Lync Server 2013 調整式合併 Edge 拓撲經過最佳化，可讓主要與其
 
 在 Lync Server 2013 中針對 Web 服務的 Cookie 型相似性需求已大幅減少。如果您正在部署 Lync Server 2013 且將不會保留任何 Lync Server 2010前端伺服器或 前端集區，則不需要 Cookie 型持續性。但是，如果您會暫時或永久保留任何的 Lync Server 2010前端伺服器或 前端集區，若已針對 Lync Server 2010 部署並設定 Cookie 型持續性，則仍需使用它。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>如果您決定使用 Cookie 型相似性 (即使您的部署不需要它)</strong>，則這樣做並不會產生任何負面影響。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>如果您決定使用 Cookie 型相似性 (即使您的部署不需要它)</strong>，則這樣做並不會產生任何負面影響。
+
 
 
 針對 **不使用** Cookie 型相似性的部署：
@@ -115,18 +79,9 @@ Lync Server 2013 調整式合併 Edge 拓撲經過最佳化，可讓主要與其
 
   - 無論該相同 TCP 連線上先前的 HTTP 回應是否已取得 Cookie，在傳入 HTTP 要求沒有 Cookie 的每個 HTTP 回應中，都「必須」設定硬體負載平衡器 Cookie。如果負載平衡器將 Cookie 插入最佳化成針對每個 TCP 連線只出現一次，則「絕不能」使用該最佳化
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>一般硬體負載平衡器設定會使用「來源-位址」相似性，以及 20 分鐘的 TCP 工作階段存留期，這適用於 Lync Server 和 Lync 2013 用戶端，因為工作階段狀態是透過用戶端使用方法及/或應用程式互動來維護。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 一般硬體負載平衡器設定會使用「來源-位址」相似性，以及 20 分鐘的 TCP 工作階段存留期，這適用於 Lync Server 和 Lync 2013 用戶端，因為工作階段狀態是透過用戶端使用方法及/或應用程式互動來維護。
+
 
 
 如果您正在部署行動裝置，硬體負載平衡器就必須能夠在 TCP 工作階段中負載平衡個別要求 (實際上，您必須能夠根據目標 IP 位址來負載平衡個別要求)。

@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2013-02-14_
 
   - **ASP.NET\\Requests Queued** (應該永遠為零)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果達到或超過這些值，應該重新造訪並重新計算容量規劃的正確 CPU 大小、核心數，以及主控 Web 服務的電腦記憶體。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果達到或超過這些值，應該重新造訪並重新計算容量規劃的正確 CPU 大小、核心數，以及主控 Web 服務的電腦記憶體。
+
 
 
 **對於 Mobility Service (Mcx)：**
@@ -59,18 +50,9 @@ _**上次修改主題的時間：** 2013-02-14_
 
   - **ASP.NET\\Requests Queued** (應該永遠為零)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果達到或超過這些值，應該重新造訪並重新計算容量規劃的正確 CPU 大小、核心數，以及主控 Web 服務的電腦記憶體。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果達到或超過這些值，應該重新造訪並重新計算容量規劃的正確 CPU 大小、核心數，以及主控 Web 服務的電腦記憶體。
+
 
 
 ## 請參閱

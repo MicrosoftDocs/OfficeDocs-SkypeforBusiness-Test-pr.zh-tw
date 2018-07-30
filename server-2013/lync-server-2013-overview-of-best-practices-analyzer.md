@@ -43,16 +43,7 @@ _**上次修改主題的時間：** 2012-09-19_
 
 在將收集到的資料與預先定義的規則比較過後，工具會報告問題。最佳做法分析程式會針對所報告的每項問題，提供在所掃描 Lync Server 2013 環境中發現的組態以及建議的組態等資訊。最佳做法分析程式也會提供特定問題的詳細資訊連結。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 最佳做法分析程式只會從 Lync Server 2013 元件收集組態資訊。您可以使用舊版此工具來掃描舊版環境。如需詳細資訊，請參閱<a href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">執行最佳做法分析程式的需求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 最佳做法分析程式只會從 Lync Server 2013 元件收集組態資訊。您可以使用舊版此工具來掃描舊版環境。如需詳細資訊，請參閱<a href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">執行最佳做法分析程式的需求</a>。
+
 

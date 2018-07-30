@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 案例會定義範圍 (亦即全域、網站、集區或電腦) 及在集中記錄服務中需使用的提供者。藉由使用案例，您可啟用或停用對提供者的追蹤作業 (例如 S4、SIPStack、IM 和目前狀態)。透過設定案例，您可針對處理特定問題條件的特定邏輯集合來為所有提供者進行分類。如果您發現需修改案例以滿足疑難排解和記錄需求，Lync Server 2013「偵錯工具」可提供名為 *ClsController.psm1* 的 Windows PowerShell 模組，其中包含名為 *Edit-CsClsScenario* 的功能。模組的目的在於編輯已命名案例的屬性。在本主題中會提供此模組運作方式的範例。Lync Server 2013「偵錯工具」可從下列連結下載：[http://go.microsoft.com/fwlink/?LinkId=285257](http://go.microsoft.com/fwlink/?linkid=285257)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對任何特定範圍 (網站、全域、集區或電腦)，您可在任何特定時間執行最多兩個案例。若要判斷哪些案例目前正在執行，請使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。透過使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsScenario">Set-CsClsScenario</a>， 您可動態進行變更執行中的案例。您可在記錄工作階段期間修改執行中的案例，以便調整或微調您正在收集的資料及資料提供者的來源。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 針對任何特定範圍 (網站、全域、集區或電腦)，您可在任何特定時間執行最多兩個案例。若要判斷哪些案例目前正在執行，請使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario">Get-CsClsScenario</a>。透過使用 Windows PowerShell 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsScenario">Set-CsClsScenario</a>， 您可動態進行變更執行中的案例。您可在記錄工作階段期間修改執行中的案例，以便調整或微調您正在收集的資料及資料提供者的來源。
+
 
 
 若要使用 Lync Server 管理命令介面執行集中記錄服務功能，您必須為 CsAdministrator 或 CsServerAdministrator 角色型存取控制 (RBAC) 安全性群組成員，或包含這兩個群組之一的自訂 RBAC 角色。此 Cmdlet 已指派給RBAC 角色清單，若要傳回所有這些 RBAC 角色清單 (包括您已自行建立的任何自訂 RBAC 角色)，請在 Lync Server 管理命令介面或 Windows PowerShell 提示時執行以下命令：
@@ -49,18 +40,9 @@ _**上次修改主題的時間：** 2014-02-05_
     
     您可以選擇使用–Name 和–Parent 參數。您需定義 Name 參數來唯一識別案例。如果您使用 Name，您也必須使用 Parent 來將案例新增至全域或網站。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用 Name 和 Parent 參數，您就無法使用<strong>–Identity</strong> 參數。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您使用 Name 和 Parent 參數，您就無法使用<strong>–Identity</strong> 參數。
+    
 
 
 ## 使用 New-CsClsScenario Cmdlet 建立新案例
@@ -91,18 +73,9 @@ _**上次修改主題的時間：** 2014-02-05_
     
         New-CsClsScenario -Identity "site:Redmond/CollectDataScenario" -Provider @{Add=$LyssProvider, $ABServerProvider,  $SIPStackProvider}
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如同在 Windows PowerShell 中所知的，使用 <code>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</code> 建立值的雜湊表格時，其所用慣例稱為<em>展開</em>。如需有關 Windows PowerShell 中展開的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=267760%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=267760&amp;clcid=0x404</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如同在 Windows PowerShell 中所知的，使用 <code>@{&lt;variable&gt;=&lt;value1&gt;, &lt;value2&gt;, &lt;value&gt;...}</code> 建立值的雜湊表格時，其所用慣例稱為<em>展開</em>。如需有關 Windows PowerShell 中展開的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=267760%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=267760&amp;clcid=0x404</a>。
+    
 
 
 ## 使用 Set-CsClsScenario Cmdlet 修改現有案例
@@ -147,18 +120,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 1.  啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>ClsController.psm1 模組可提供作為個別的 Web 下載項目。模組是 Lync Server 2013 偵錯工具的一部分。根據預設，偵錯工具會安裝於目錄 C:\Program Files\Lync Server 2013\Debugging Tools 中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > ClsController.psm1 模組可提供作為個別的 Web 下載項目。模組是 Lync Server 2013 偵錯工具的一部分。根據預設，偵錯工具會安裝於目錄 C:\Program Files\Lync Server 2013\Debugging Tools 中。
+    
 
 
 2.  在 Windows PowerShell 鍵入：

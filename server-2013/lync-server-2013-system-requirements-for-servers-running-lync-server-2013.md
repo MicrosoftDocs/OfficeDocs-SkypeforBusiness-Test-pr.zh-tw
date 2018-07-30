@@ -15,18 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2014-07-24_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需有關硬體需求的詳細資訊，請參閱＜ <a href="lync-server-2013-server-hardware-platforms.md">Lync Server 2013 的伺服器硬體平台</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需有關硬體需求的詳細資訊，請參閱＜ <a href="lync-server-2013-server-hardware-platforms.md">Lync Server 2013 的伺服器硬體平台</a>＞。
+
 
 
 Standard Edition 和 Enterprise Edition 伺服器具有相同的軟體需求。
@@ -35,18 +26,9 @@ Standard Edition 和 Enterprise Edition 伺服器具有相同的軟體需求。
 
 ## 作業系統安裝
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 僅提供 64 位元版本，因此需要 64 位元硬體和 64 位元版本的 Windows Server 作業系統。這個版本未提供 32 位元版本的 Lync Server 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Lync Server 2013 僅提供 64 位元版本，因此需要 64 位元硬體和 64 位元版本的 Windows Server 作業系統。這個版本未提供 32 位元版本的 Lync Server 2013。
+
 
 
 Standard Edition 和 Enterprise Edition 伺服器可以使用下列任何一項：
@@ -59,18 +41,9 @@ Standard Edition 和 Enterprise Edition 伺服器可以使用下列任何一項�
 
 在 Standard Edition Server 或 Enterprise Edition 前端伺服器上安裝作業系統軟體。套用所有更新，讓作業系統具備最新更新和必要更新層級，以符合您組織的標準。如需有關作業系統的詳細資訊，請參閱支援文件中的 [Lync Server 2013 中的伺服器及工具作業系統支援](lync-server-2013-server-and-tools-operating-system-support.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 Lync Server 2013 要在 Windows Server 2012 R2 上正常運作，您可能需要在 Windows Server 中變更登錄機碼的值。您可能必須進行此變更，憑證才能正常運作，用戶端也才能向 Survivable Branch Appliance 註冊。如需詳細資訊，請參閱 <a href="http://support.microsoft.com/kb/2901554" class="uri">http://support.microsoft.com/kb/2901554</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果 Lync Server 2013 要在 Windows Server 2012 R2 上正常運作，您可能需要在 Windows Server 中變更登錄機碼的值。您可能必須進行此變更，憑證才能正常運作，用戶端也才能向 Survivable Branch Appliance 註冊。如需詳細資訊，請參閱 <a href="http://support.microsoft.com/kb/2901554" class="uri">http://support.microsoft.com/kb/2901554</a>。
+
 
 
 ## Lync Server 2013 其他軟體
@@ -87,18 +60,9 @@ Standard Edition 和 Enterprise Edition 伺服器可以使用下列任何一項�
 
 Lync Server 2013 要求您在每部電腦安裝 Windows PowerShell 3.0，且電腦將參與您的 Lync Server 拓撲。如需如何安裝 Windows PowerShell 3.0 的詳細資訊，請參閱＜ [針對 Lync Server 2013 安裝 Windows PowerShell 3.0](lync-server-2013-installing-windows-powershell-3-0.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在具有 SP1 的 Windows Server 2008 R2 中，安裝 Microsoft .NET Framework 4.5 之前，無法安裝 Windows PowerShell 命令列介面 3.0。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在具有 SP1 的 Windows Server 2008 R2 中，安裝 Microsoft .NET Framework 4.5 之前，無法安裝 Windows PowerShell 命令列介面 3.0。
+
 
 
 ## Microsoft .NET Framework 4.5

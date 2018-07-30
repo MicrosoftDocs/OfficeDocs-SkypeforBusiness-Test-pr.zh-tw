@@ -51,7 +51,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><ol>
 <li><p>建立新的 PSTN 使用方式記錄。這個名稱與位置原則中用於 [PSTN 使用方式] 設定的名稱相同。</p></li>
 <li><p>建立或指派語音路由給在上一個步驟建立的 PSTN 使用方式記錄，然後使閘道屬性指向 E9-1-1 SIP 主幹或 ELIN 閘道。</p></li>
-<li><p>若為 SIP 主幹 E9-1-1 服務提供者，請使用 <strong>set-cstrunkconfiguration –EnablePIDFLOSupport</strong> Cmdlet 設定主幹來處理透過 SIP 傳遞 PIDF-LO 資料的 E9-1-1 通話。</p></li>
+<li><p>若為 SIP 主幹 E9-1-1 服務提供者，請使用 <strong>Set-CsTrunkConfiguration –EnablePIDFLOSupport</strong> Cmdlet 設定主幹來處理透過 SIP 傳遞 PIDF-LO 資料的 E9-1-1 通話。</p></li>
 <li><p>(選用) 若為 SIP 主幹 E9-1-1 服務提供者，請為 E9-1-1 服務提供者 SIP 主幹所未處理的通話，建立或指派本機 PSTN 路由。如果與 E9-1-1 服務提供者的連線無法使用，則會使用此路由。如果 E9-1-1 服務提供者支援的話，請指派主幹組態規則給會將 911 撥號字串轉譯成全國/地區緊急電話回應中心 (ECRC) 直接向內撥號 (DID) 號碼的閘道。</p></li>
 </ol></td>
 <td><p>CSVoiceAdmin</p></td>

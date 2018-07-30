@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 拓撲中的所有伺服器或集區均需部署 Lync Server 2013 累計更新 2。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是拓撲中的 Lync Server 或集區並未安裝 Lync Server 2013 累計更新 2 或更高版本，則無法保證能成功執行 Lync 會議的位置基礎路由。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是拓撲中的 Lync Server 或集區並未安裝 Lync Server 2013 累計更新 2 或更高版本，則無法保證能成功執行 Lync 會議的位置基礎路由。
+
 
 
   - Lync Server 2013 位置基礎路由是位置基礎路由會議應用程式的必要條件。如需設定 Lync Server 2013 位置基礎路由的進一步資訊，請參閱＜[設定位置基礎路由](lync-server-2013-configuring-location-based-routing.md)＞。

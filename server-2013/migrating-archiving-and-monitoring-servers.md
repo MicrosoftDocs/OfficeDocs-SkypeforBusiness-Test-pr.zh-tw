@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-10-02_
 
   - 在舊版與 Lync Server 2013 部署並存期間， Lync Server 2010 版本的存封伺服器和監控伺服器會收集位於 Lync Server 2010 集區之使用者的資料。 Lync Server 2013 中的存封和監控收集位於 Lync Server 2013 集區之使用者的資料。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>移轉階段期間，如果您仍使用具有新 Lync Server 2013 試驗集區的舊版 Edge Server， Lync Server 2010 版本的存封伺服器將持續收集位於 Lync Server 2010 集區之使用者的資料，而 Lync Server 2013 中的存封將收集位於 Lync Server 2013 集區中之使用者的資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 移轉階段期間，如果您仍使用具有新 Lync Server 2013 試驗集區的舊版 Edge Server， Lync Server 2010 版本的存封伺服器將持續收集位於 Lync Server 2010 集區之使用者的資料，而 Lync Server 2013 中的存封將收集位於 Lync Server 2013 集區中之使用者的資料。
+    
 
 
   - 如果您在 Lync Server 2013 中搭配存封和監控使用協力廠商的存封與監控解決方案；請諮詢您的廠商，以了解您整合 Lync Server 2013 協力廠商解決方案的時機和方法。

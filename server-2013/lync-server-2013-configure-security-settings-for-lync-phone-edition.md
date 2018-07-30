@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 6.  在 **\[編輯裝置設定\]** 的 **\[電話鎖定\]**下方，請選取或清除 **\[強制執行裝置鎖定\]** 核取方塊 (預設選取)，並指定最小 PIN 長度限制 (預設為 6 個字元) 和逾時期限 (預設為 10 分鐘)。建議您使用這些預設值或增加 PIN 長度及/或縮短逾時期限。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需詳細資訊，請參閱＜<a href="lync-server-2013-enforce-phone-locking.md">強制鎖定電話</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需詳細資訊，請參閱＜<a href="lync-server-2013-enforce-phone-locking.md">強制鎖定電話</a>＞。
+    
 
 
 ## 使用 Lync Server 管理命令介面 Cmdlet 設定 Lync Phone Edition 電話的安全性設定

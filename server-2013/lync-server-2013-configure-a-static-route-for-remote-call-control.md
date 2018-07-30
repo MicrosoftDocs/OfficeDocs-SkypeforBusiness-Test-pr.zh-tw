@@ -52,18 +52,9 @@ _**上次修改主題的時間：** 2012-09-22_
     
       - 若是傳輸控制通訊協定 (TCP) 連線，請在命令提示字元中輸入下列命令：
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您要指定完整網域名稱 (FQDN)，必須先設定網域名稱系統 (DNS) A 記錄。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您要指定完整網域名稱 (FQDN)，必須先設定網域名稱系統 (DNS) A 記錄。
+        
         
             $TCPRoute = New-CsStaticRoute -TCPRoute -Destination <gateway IP address or FQDN> -Port <gateway SIP listening port> -MatchUri <destination domain>
         

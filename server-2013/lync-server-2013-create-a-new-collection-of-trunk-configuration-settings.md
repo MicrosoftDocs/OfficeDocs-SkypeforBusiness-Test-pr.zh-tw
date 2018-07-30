@@ -145,18 +145,9 @@ SIP 主幹組態設定定義中繼伺服器與公用交換電話網路 (PSTN) �
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server CsTrunkConfiguration Cmdlet 支援 Lync Server 控制台中未顯示的其他屬性。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration">New-CsTrunkConfiguration</a> Cmdlet 的說明主題。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server CsTrunkConfiguration Cmdlet 支援 Lync Server 控制台中未顯示的其他屬性。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration">New-CsTrunkConfiguration</a> Cmdlet 的說明主題。
+
 
 
 ## 使用 Lync Server 控制台建立新的主幹組態設定

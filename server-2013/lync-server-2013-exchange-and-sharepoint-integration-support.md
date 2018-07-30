@@ -46,18 +46,9 @@ Lync Server 2013 支援兩種伺服器對伺服器驗證案例，包括下列項
 
   - 一對 Office 元件 (例如，Microsoft Exchange 365 和 Microsoft Lync Server 365 之間或 Microsoft Lync Server 365 和 Microsoft SharePoint 365 之間)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此 Lync Server 2013 版本不支援內部部署伺服器和 Office 365 元件之間的伺服器對伺服器驗證。除此之外，這表示您無法在 Lync Server 2013 和 Microsoft Exchange 365 之間的內部部署安裝設定伺服器對伺服器驗證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此 Lync Server 2013 版本不支援內部部署伺服器和 Office 365 元件之間的伺服器對伺服器驗證。除此之外，這表示您無法在 Lync Server 2013 和 Microsoft Exchange 365 之間的內部部署安裝設定伺服器對伺服器驗證。
+
 
 
 如需有關伺服器對伺服器驗證的詳細資訊，請參閱部署文件或作業文件中的 [在 Lync Server 2013 中管理伺服器對伺服器驗證 (Oauth) 與夥伴應用程式](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)。

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
 XMPP 的部署與設定涵蓋於[在 Lync Server 2013 中部署外部使用者存取](lync-server-2013-deploying-external-user-access.md)中。您可以藉由在防火牆上定義連接埠和通訊協定規則、設定憑證及新增 DNS 記錄，來規劃在組織中支援 XMPP。本節中的下列主題摘要說明您為部署成功規劃 XMPP 同盟所需的資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。
+
 
 
 ## 本章節內容

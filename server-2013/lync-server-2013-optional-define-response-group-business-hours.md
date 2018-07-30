@@ -33,32 +33,14 @@ _**上次修改主題的時間：** 2012-11-01_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果工作流程定義為受管理工作流程，指派為 CsResponseGroupManager 角色的任何使用者都可以針對其管理的工作流程設定和修改自訂營業時間。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果工作流程定義為受管理工作流程，指派為 CsResponseGroupManager 角色的任何使用者都可以針對其管理的工作流程設定和修改自訂營業時間。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於下列 Cmdlet 中的參數，請使用 24 小時制的標記法 (例如，20:00=8:00 P.M.)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 對於下列 Cmdlet 中的參數，請使用 24 小時制的標記法 (例如，20:00=8:00 P.M.)。
+
 
 
 ## 建立預先定義的營業時間集合
@@ -69,7 +51,7 @@ _**上次修改主題的時間：** 2012-11-01_
 
 3.  對於您要定義的每個唯一時間範圍，請執行：
     
-        $x = new-csrgstimerange [-Name <name of time range>] -OpenTime <time when business hours begin> -CloseTime <time when business hours end>
+        $x = New-CsRgsTimeRange [-Name <name of time range>] -OpenTime <time when business hours begin> -CloseTime <time when business hours end>
     
     若要使用您定義的範圍來建立營業時間集合，請執行：
     
@@ -91,6 +73,6 @@ _**上次修改主題的時間：** 2012-11-01_
 
 #### 其他資源
 
-[new-csrgstimerange](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsTimeRange)  
+[New-CsRgsTimeRange](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsTimeRange)  
 [New-CsRgsHoursOfBusiness](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsHoursOfBusiness)
 

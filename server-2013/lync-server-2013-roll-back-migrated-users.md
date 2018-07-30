@@ -59,18 +59,9 @@ _**上次修改主題的時間：** 2012-10-07_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您將 Exchange 信箱從 Exchange 2013 移至 Exchange 2010 前， Exchange 系統管理員必須確定 Lync Server 系統管理員已先將 Lync Server 使用者連絡人從 Exchange 2013 復原至 Lync Server。若要將統一的連絡人存放區連絡人復原至 Lync Server，請參閱本節稍後的＜若要將統一的連絡人存放區連絡人從 Exchange 2013 復原至 Lync Server 2013＞程序。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您將 Exchange 信箱從 Exchange 2013 移至 Exchange 2010 前， Exchange 系統管理員必須確定 Lync Server 系統管理員已先將 Lync Server 使用者連絡人從 Exchange 2013 復原至 Lync Server。若要將統一的連絡人存放區連絡人復原至 Lync Server，請參閱本節稍後的＜若要將統一的連絡人存放區連絡人從 Exchange 2013 復原至 Lync Server 2013＞程序。
+
 
 
 下列程序說明如何復原使用者連絡人。如果您使用 **Move-CsUser** Cmdlet 在 Lync Server 2013 和 Lync Server 2010 之間移動使用者，則可略過這些步驟，因為 **Move-CsUser** Cmdlet 在將使用者從 Lync Server 2013 移至 Lync Server 2010 時，會自動復原統一的連絡人存放區。 **Move-CsUser** 不會停用統一的連絡人存放區原則，所以如果使用者移回 Lync Server 2013，便會再次移轉統一的連絡人存放區。
@@ -89,18 +80,9 @@ _**上次修改主題的時間：** 2012-10-07_
 
 3.  將使用者從 Lync Server 2013 移至 Lync Server 2010 前，先在 Lync Server 上復原指定使用者的朋友清單。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果略過此步驟，將會遺失朋友清單。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果略過此步驟，將會遺失朋友清單。
+    
 
 
 4.  復原指定的使用者。在命令列中輸入：
@@ -111,18 +93,9 @@ _**上次修改主題的時間：** 2012-10-07_
     
         Invoke-CsUcsRollback -Identity "Ken Myer"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不建議使用 –Force 選項強制復原。如果使用此選項，使用者的連絡人將會遺失。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 不建議使用 –Force 選項強制復原。如果使用此選項，使用者的連絡人將會遺失。
+    
 
 
 ## 若要將統一的連絡人存放區連絡人從 Exchange 2013 復原至 Lync Server 2013
@@ -145,18 +118,9 @@ _**上次修改主題的時間：** 2012-10-07_
     
         Invoke-CsUcsRollback -Identity "Ken Myer"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須先復原 Lync Server 使用者，之後再移動 Exchange 2013 信箱。在 Lync Server 復原完成前，Exchange 系統管理員將無法復原 Exchange。不建議使用 –Force 選項強制復原。如果使用此選項，使用者的連絡人將會遺失。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須先復原 Lync Server 使用者，之後再移動 Exchange 2013 信箱。在 Lync Server 復原完成前，Exchange 系統管理員將無法復原 Exchange。不建議使用 –Force 選項強制復原。如果使用此選項，使用者的連絡人將會遺失。
+    
 
 
 4.  將使用者復原至 Lync Server 後，Exchange 系統管理員就能將 Exchange 使用者從 Exchange 2013 復原至 Exchange 2010。

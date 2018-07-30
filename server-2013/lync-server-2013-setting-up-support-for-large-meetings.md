@@ -75,18 +75,9 @@ _**上次修改主題的時間：** 2014-05-12_
 
   - 將 \[EnableMultiviewJoin\] 選項設定為 \[False\]。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中支援 1000 位使用者的大型會議時，需要在適用於會議排程器的會議原則中，將 [AllowLargeMeetings] 設定設為 True。將此設定設為 True 時，如果使用者加入這類會議，即會針對額外的大型會議，將 Lync 使用經驗最佳化。特別是在大型會議中，Lync 將不會顯示最初或更新的完整與會者清單，此為用戶端與 Lync Server 2013 的效能瓶頸。Lync 將改為僅顯示使用者的相關資訊和會議簡報者的清單。Lync 仍會正確顯示可在大型會議中的參與者總人數。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中支援 1000 位使用者的大型會議時，需要在適用於會議排程器的會議原則中，將 [AllowLargeMeetings] 設定設為 True。將此設定設為 True 時，如果使用者加入這類會議，即會針對額外的大型會議，將 Lync 使用經驗最佳化。特別是在大型會議中，Lync 將不會顯示最初或更新的完整與會者清單，此為用戶端與 Lync Server 2013 的效能瓶頸。Lync 將改為僅顯示使用者的相關資訊和會議簡報者的清單。Lync 仍會正確顯示可在大型會議中的參與者總人數。
+
 
 
 除了 \[最大會議大小\] 設定之外，此處指定的所有其他會議原則設定都是必要的，以停用大型會議中不需要的會議功能。

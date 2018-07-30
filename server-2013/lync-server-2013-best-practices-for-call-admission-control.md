@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-09-22_
 
   - 確認已針對目前和預期的媒體流量適當地佈建 WAN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>我們建議您在規劃頻寬限制時將緩衝計算在內。某些諸如競速情況等案例會影響使用的頻寬總數，並且導致超出頻寬限制的情況。例如，如果有兩通電話嘗試在媒體流量逼近頻寬限制時啟動，率先啟動的電話將迫使另一通電話遭到拒絕。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 我們建議您在規劃頻寬限制時將緩衝計算在內。某些諸如競速情況等案例會影響使用的頻寬總數，並且導致超出頻寬限制的情況。例如，如果有兩通電話嘗試在媒體流量逼近頻寬限制時啟動，率先啟動的電話將迫使另一通電話遭到拒絕。
+    
 
 
   - 監控網路使用量和詳細通話記錄，以便選擇最合適的 CAC 設定，以及在網路使用量變更時更新 CAC 設定。
@@ -39,16 +30,7 @@ _**上次修改主題的時間：** 2012-09-22_
 
   - 如果您想要將封鎖的通話重新路由傳送至 PSTN，請驗證 PSTN 功能和能力。如需詳細資訊，請參閱＜ [在 Lync Server 2013 中規劃撥出語音路由](lync-server-2013-planning-outbound-voice-routing.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>能力指的是需要為支援潛在 PSTN 重新路由而開啟的連接埠數量。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 能力指的是需要為支援潛在 PSTN 重新路由而開啟的連接埠數量。
+    
 

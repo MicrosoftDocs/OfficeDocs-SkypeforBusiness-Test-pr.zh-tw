@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-08-06_
 
 在此站上，如果您已部署配置在 前端集區 或 Standard Edition 伺服器 上的 中繼伺服器，則可以略過此主題，繼續進行 [在 Lync Server 2013 中設定主幹](lync-server-2013-configuring-trunks.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設您已定義和發佈獨立 中繼伺服器集區，如部署文件中的 <a href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">在 Lync Server 2013 的拓撲產生器中定義中繼伺服器</a>與 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>所述，而且您已確認 中繼伺服器集區 中的電腦符合 <a href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的軟體先決條件</a>與 <a href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的安全性和組態先決條件</a>中所述的先決條件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主題假設您已定義和發佈獨立 中繼伺服器集區，如部署文件中的 <a href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">在 Lync Server 2013 的拓撲產生器中定義中繼伺服器</a>與 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>所述，而且您已確認 中繼伺服器集區 中的電腦符合 <a href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的軟體先決條件</a>與 <a href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">Lync Server 2013 中 Enterprise Voice 的安全性和組態先決條件</a>中所述的先決條件。
+
 
 
 ## 若要安裝獨立中繼伺服器集區的檔案

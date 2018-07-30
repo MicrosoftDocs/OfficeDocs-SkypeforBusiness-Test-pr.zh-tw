@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您指定的名稱必須與伺服器上設定的電腦名稱相同。根據預設，未加入網域的電腦，其電腦名稱是簡稱，而不是 FQDN。拓撲產生器使用 FQDN，而不是簡稱。當您為執行 Lync Server、Edge Server 和集區的伺服器指派 FQDN 時，<strong>只能使用標準字元</strong> (包括 A–Z、a–z、0–9 與連字號)。請勿使用 Unicode 字元或底線。當 FQDN 必須指派給憑證的 SN 時，外部 DNS 與公用憑證授權單位 (CA) 通常不支援在 FQDN 中使用非標準字元。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您指定的名稱必須與伺服器上設定的電腦名稱相同。根據預設，未加入網域的電腦，其電腦名稱是簡稱，而不是 FQDN。拓撲產生器使用 FQDN，而不是簡稱。當您為執行 Lync Server、Edge Server 和集區的伺服器指派 FQDN 時，<strong>只能使用標準字元</strong> (包括 A–Z、a–z、0–9 與連字號)。請勿使用 Unicode 字元或底線。當 FQDN 必須指派給憑證的 SN 時，外部 DNS 與公用憑證授權單位 (CA) 通常不支援在 FQDN 中使用非標準字元。
+
 
 
 在部署拓撲後進行操作以前，請確保已建立下列 Active Directory 和 DNS 記錄 (如您的特定功能需求所規定)：
@@ -156,18 +147,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VIP = 硬體負載平衡器的虛擬 IP 位址</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> VIP = 硬體負載平衡器的虛擬 IP 位址
+
 
 
 ## 前端集區的 DNS SRV 記錄

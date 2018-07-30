@@ -41,18 +41,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     指派給此網路介面卡的私人 IP 位址三個，例如 10.45.16.10 適用於 Access Edge、10.45.16.20 適用於 Web Conferencing Edge、10.45.16.30 適用於 AV Edge
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對於所有三個 Edge 服務介面使用相同的 IP 位址，不過不建議這麼做。雖然這確實能夠節省 IP 位址，不過對於各個服務仍然需要不同的連接埠編號。預設的連接埠編號是 443/TCP，這能夠確保大多數遠端防火牆將允許流量。 例如，將連接埠值變更為 5061/TCP (Access Edge)、 444/TCP (Web Conferencing Edge) 和 443/TCP (AV Edge)，可能導致遠端使用者發生問題，以致其使用的防火牆埠不允許透過 5061/TCP 和 444/TCP 的流量。此外，由於能夠篩選 IP 位址，所以三個不同的 IP 位址比較容易進行疑難排解。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 對於所有三個 Edge 服務介面使用相同的 IP 位址，不過不建議這麼做。雖然這確實能夠節省 IP 位址，不過對於各個服務仍然需要不同的連接埠編號。預設的連接埠編號是 443/TCP，這能夠確保大多數遠端防火牆將允許流量。 例如，將連接埠值變更為 5061/TCP (Access Edge)、 444/TCP (Web Conferencing Edge) 和 443/TCP (AV Edge)，可能導致遠端使用者發生問題，以致其使用的防火牆埠不允許透過 5061/TCP 和 444/TCP 的流量。此外，由於能夠篩選 IP 位址，所以三個不同的 IP 位址比較容易進行疑難排解。
+    
     
     Access Edge IP 位址為主要位址，且其預設閘道將設為整合式路由器 (10.45.16.1)。
     
@@ -130,18 +121,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上表所列記錄內含 <em>.net</em> 延伸網址或 <em>.com</em> 延伸網址，以強調在您未使用 split-brain DNS 時這些項目應該歸屬的區域。如果您使用 split-brain DNS，則所有記錄將位於相同 <em>.com</em> 區域，唯一區別在於該記錄的版本 (內部或外部 DNS 區域)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-determine-dns-requirements.md">針對 Lync Server 2013 判定 DNS 需求</a>＞中的＜Split-Brain DNS＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 上表所列記錄內含 <em>.net</em> 延伸網址或 <em>.com</em> 延伸網址，以強調在您未使用 split-brain DNS 時這些項目應該歸屬的區域。如果您使用 split-brain DNS，則所有記錄將位於相同 <em>.com</em> 區域，唯一區別在於該記錄的版本 (內部或外部 DNS 區域)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-determine-dns-requirements.md">針對 Lync Server 2013 判定 DNS 需求</a>＞中的＜Split-Brain DNS＞。
+
 
 
 ## 同盟所需的記錄
@@ -169,18 +151,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP Access Edge 外部介面。DNS 自動探索其他可能同盟合作夥伴 (亦稱為「允許的 SIP 網域」，先前版本稱為增強型同盟) 的同盟所需。視需要針對所有含啟用 Lync 之使用者的 SIP 網域重複</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動性和推入通知結算需要此 SRV 記錄</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 行動性和推入通知結算需要此 SRV 記錄
+
 
 </div></td>
 </tr>

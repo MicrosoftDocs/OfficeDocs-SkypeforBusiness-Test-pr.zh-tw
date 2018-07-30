@@ -29,36 +29,18 @@ _**上次修改主題的時間：** 2012-10-10_
 
 4.  在 \[位置原則\] 頁面上，選取要刪除的位置原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以同時刪除一個以上的位置原則。若要這麼做，請按住 CTRL 鍵，然後選取一個以上的原則。或者，若要選取所有原則，請在 [編輯] 功能表上按一下 [全選]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以同時刪除一個以上的位置原則。若要這麼做，請按住 CTRL 鍵，然後選取一個以上的原則。或者，若要選取所有原則，請在 [編輯] 功能表上按一下 [全選]。
+    
 
 
 5.  在 \[編輯\] 功能表中，按一下 \[刪除\]。
 
 6.  按一下 \[確定\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您無法刪除全域位置原則。如果您嘗試刪除全域原則，則會出現警告訊息，且該原則將重設為預設值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您無法刪除全域位置原則。如果您嘗試刪除全域原則，則會出現警告訊息，且該原則將重設為預設值。
+    
 
 
 ## 請參閱

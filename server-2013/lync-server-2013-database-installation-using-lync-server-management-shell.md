@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 將伺服器系統管理員與 SQL Server 系統管理員之間角色和責任區分開來，可能會延遲實作速度。 Lync Server 2013 使用角色存取控制 (RBAC) 來減緩這些難處。在某些情況下，SQL Server 系統管理員必須管理落在 RBAC 範圍外之 SQL Server 架構伺服器上的資料庫安裝。 Lync Server 2013 管理命令介面提供一種方法，讓 SQL Server 系統管理員能夠執行專門設計的 Windows PowerShell Cmdlet，來以正確的資料與記錄檔設定資料庫。如需詳細資訊，請參閱 [Lync Server 2013 中 SQL Server 的部署權限](lync-server-2013-deployment-permissions-for-sql-server.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下程序假設至少已安裝 Lync Server 2013 OCSCore.msi、SQL Server Native Client (sqlncli.msi) Microsoft SQL Server 2012 Management Objects、CLR Types for Microsoft SQL Server 2012 和 Microsoft SQL Server 2012 ADOMD.NET。OCSCore.msi 位於安裝媒體的 \Setup\AMD64\Setup 目錄。其餘元件位於 \Setup\amd64。此外，為 Lync Server 2013 準備 Active Directory 的工作也已順利完成。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 以下程序假設至少已安裝 Lync Server 2013 OCSCore.msi、SQL Server Native Client (sqlncli.msi) Microsoft SQL Server 2012 Management Objects、CLR Types for Microsoft SQL Server 2012 和 Microsoft SQL Server 2012 ADOMD.NET。OCSCore.msi 位於安裝媒體的 \Setup\AMD64\Setup 目錄。其餘元件位於 \Setup\amd64。此外，為 Lync Server 2013 準備 Active Directory 的工作也已順利完成。
+
 
 
 **Install-CsDatabase** 是您用來安裝資料庫的 Windows PowerShell Cmdlet。 **Install-CsDatabase** Cmdlet 擁有大量的參數，不過本文中僅討論其中一小部分。如需有關可能參數的詳細資訊，請參閱 Lync Server 2013 管理命令介面 文件。
@@ -103,18 +94,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 2.  在任何電腦上使用系統管理認證登入，以便在 SQL Server 架構伺服器上建立資料庫。請參閱 [Lync Server 2013 中 SQL Server 的部署權限](lync-server-2013-deployment-permissions-for-sql-server.md)主題。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要能夠設定 SQL Server 資料庫，請確定用來執行這裡所述步驟的 SQL Server 系統管理員帳戶，同時也是執行 SQL Server 並存放 中央管理伺服器角色之伺服器上的 sysadmins 群組成員 (或同等權限)。對於檢查需要安裝或設定 SQL Server 資料庫的任何其他 Lync Server 2013 集區而言，這個特別重要。例如，如果您要部署第二個集區 (pool02)，但是 中央管理伺服器角色是存放於 pool01。 SQL Server sysadmin 群組 (或同等權限) 必須具有這兩個 SQL Server 資料庫的權限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 若要能夠設定 SQL Server 資料庫，請確定用來執行這裡所述步驟的 SQL Server 系統管理員帳戶，同時也是執行 SQL Server 並存放 中央管理伺服器角色之伺服器上的 sysadmins 群組成員 (或同等權限)。對於檢查需要安裝或設定 SQL Server 資料庫的任何其他 Lync Server 2013 集區而言，這個特別重要。例如，如果您要部署第二個集區 (pool02)，但是 中央管理伺服器角色是存放於 pool01。 SQL Server sysadmin 群組 (或同等權限) 必須具有這兩個 SQL Server 資料庫的權限。
+    
 
 
 3.  開啟 Lync Server 2013 管理命令介面 (如果尚未開啟)。
@@ -153,18 +135,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 2.  在任何電腦上使用系統管理認證登入，以便在 SQL Server 架構伺服器上建立資料庫。請參閱 [Lync Server 2013 中 SQL Server 的部署權限](lync-server-2013-deployment-permissions-for-sql-server.md)主題。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>為了能夠設定 SQL Server 資料庫，請確定用來執行此處所述步驟的 SQL Server 系統管理員帳戶同時也是執行 SQL Server 並存放中央管理伺服器角色之伺服器上的 sysadmins 群組成員 (或同等群組)。對於檢查需要安裝或設定 Lync Server 資料庫的任何其他 SQL Server 集區而言，這個特別重要。例如，如果您要部署第二個集區 (pool02)，但中央管理伺服器角色是存放於 pool01。SQL Server sysadmin 群組 (或同等群組) 必須具有這兩個 SQL Server 資料庫的權限。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 為了能夠設定 SQL Server 資料庫，請確定用來執行此處所述步驟的 SQL Server 系統管理員帳戶同時也是執行 SQL Server 並存放中央管理伺服器角色之伺服器上的 sysadmins 群組成員 (或同等群組)。對於檢查需要安裝或設定 Lync Server 資料庫的任何其他 SQL Server 集區而言，這個特別重要。例如，如果您要部署第二個集區 (pool02)，但中央管理伺服器角色是存放於 pool01。SQL Server sysadmin 群組 (或同等群組) 必須具有這兩個 SQL Server 資料庫的權限。
+    
 
 
 3.  開啟 Lync Server 管理命令介面 (如果尚未開啟)。

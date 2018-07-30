@@ -53,18 +53,9 @@ Microsoft 歡迎各位不吝提供任何意見。請將所有支援相關問題�
 
   - Windows 8 新式應用程式 ([http://go.microsoft.com/fwlink/?LinkId=322110](http://go.microsoft.com/fwlink/p/?linkid=322110))
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Office 365 Lync 使用者可使用兩種版本的 PCD。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Office 365 Lync 使用者可使用兩種版本的 PCD。
+
 
 
 若要使用舊版 PCD，請參閱下列資訊：
@@ -75,18 +66,9 @@ Microsoft 歡迎各位不吝提供任何意見。請將所有支援相關問題�
 
 ## Lync PCD 系統需求
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PCD 要求安裝與設定整合通訊 Web API (UCWA) 以支援 Lync Server 部署中的行動用戶端。UCWA 會隨 Lync Server 一併安裝。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> PCD 要求安裝與設定整合通訊 Web API (UCWA) 以支援 Lync Server 部署中的行動用戶端。UCWA 會隨 Lync Server 一併安裝。
+
 
 
 ## Windows 桌面應用程式需求

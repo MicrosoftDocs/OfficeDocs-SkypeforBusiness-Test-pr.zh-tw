@@ -29,18 +29,9 @@ Lync Server 2013 支援下列版本：
 
 您無法將 Exchange UM 與 Lync Server 2013 或 Lync Server 2013 資料庫組合在一起。您可以在個別的樹系中安裝 Exchange UM 和 Lync Server 2013。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>已部署 PBX 的 Enterprise Voice 部署可能不需要 Exchange UM，因為 PBX 可以繼續為所有使用者提供語音信箱和相關服務。如果您最後會撤銷 PBX (例如，如果您會針對公用交換電話網路 (PSTN) 連線部署 SIP 主幹)，則必須重新設定 Exchange UM，為先前使用 PBX 語音信箱系統的使用者提供語音信箱。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 已部署 PBX 的 Enterprise Voice 部署可能不需要 Exchange UM，因為 PBX 可以繼續為所有使用者提供語音信箱和相關服務。如果您最後會撤銷 PBX (例如，如果您會針對公用交換電話網路 (PSTN) 連線部署 SIP 主幹)，則必須重新設定 Exchange UM，為先前使用 PBX 語音信箱系統的使用者提供語音信箱。
+
 
 
 ## 本章節內容

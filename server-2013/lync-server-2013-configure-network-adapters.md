@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
 4.  在 **\[網際網路通訊協定 (TCP/IP) 內容\]** 頁面上，視需要設定網路介面卡所連接網路子網路的 IP 位址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果其他使用 HTTPS/TCP/443 的應用程式 (如用於發行 Outlook Web Access) 已使用反向 Proxy，則需要新增另一個 IP 位址以在 HTTPS/TCP/443 上發行 Lync Server 2013 Web 服務，而不干擾現有規則及 Web 接聽程式，或是需要將現有憑證取代為將新外部 FQDN 名稱新增至主體替代名稱的憑證。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果其他使用 HTTPS/TCP/443 的應用程式 (如用於發行 Outlook Web Access) 已使用反向 Proxy，則需要新增另一個 IP 位址以在 HTTPS/TCP/443 上發行 Lync Server 2013 Web 服務，而不干擾現有規則及 Web 接聽程式，或是需要將現有憑證取代為將新外部 FQDN 名稱新增至主體替代名稱的憑證。
+    
 
 
 5.  按一下 **\[確定\]** ，然後再按一下 **\[確定\]** 。

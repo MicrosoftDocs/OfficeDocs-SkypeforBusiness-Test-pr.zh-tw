@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
 7.  在 **\[編輯 Lync Server 使用者\]** 頁面的 **\[電話語音\]** 下，按一下 **\[企業語音\]** 以外的任何選項。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果要限制使用者使用 Lync 撥打音訊或視訊電話，在 <strong>[電話語音]</strong> 下按一下 <strong>[音訊/視訊已停用]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果要限制使用者使用 Lync 撥打音訊或視訊電話，在 <strong>[電話語音]</strong> 下按一下 <strong>[音訊/視訊已停用]</strong>。
+    
 
 
 8.  按一下 **\[認可\]**。

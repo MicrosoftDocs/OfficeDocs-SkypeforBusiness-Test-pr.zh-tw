@@ -27,18 +27,9 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
 
 4.  在 拓撲產生器中開啟拓撲設計，如部署文件中的 [在 Lync Server 2013 中定義和設定拓撲](lync-server-2013-defining-and-configuring-the-topology.md) 所述。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>拓撲產生器的安裝屬於內部集區的部署程序。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安裝 Lync Server 2013 系統管理工具</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 拓撲產生器的安裝屬於內部集區的部署程序。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-install-lync-server-administrative-tools.md">安裝 Lync Server 2013 系統管理工具</a>。
+    
 
 
 此外，您必須已在對應您選擇部署之參考拓撲的中央網站和分支網站部署 Lync Server Enterprise Edition。除非您已至少針對一個內部集區定義、發行且安裝檔案，否則無法部署 企業語音元件，而且您必須使用 拓撲產生器定義和發行內部集區。
@@ -47,18 +38,9 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
 
 若要檢視顯示及說明範例通話許可控制部署的參考拓撲，包括網路地區、網站及子網路，請參閱 [範例：在 Lync Server 2013 中收集通話許可控制服務需求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在中央網站部署 企業語音，請繼續閱讀本節中的主題。若要在分支網站部署 企業語音，請跳至部署文件中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支網站</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 若要在中央網站部署 企業語音，請繼續閱讀本節中的主題。若要在分支網站部署 企業語音，請跳至部署文件中的 <a href="lync-server-2013-deploying-branch-sites.md">在 Lync Server 2013 中部署分支網站</a>。
+
 
 
 本章節包括中繼伺服器配置於每一部前端伺服器或 Standard Edition Server 上 (建議方式) 的部署程序，以及採用獨立中繼伺服器集區的部署程序。
@@ -97,19 +79,19 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
 
    [在 Lync Server 2013 中部署進階 Enterprise Voice 功能](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
     
-      - [關於 Lync Server 2013 中的網路區域、網站和子網路](lync-server-2013-about-network-regions-sites-and-subnets.md)
+    - [關於 Lync Server 2013 中的網路區域、網站和子網路](lync-server-2013-about-network-regions-sites-and-subnets.md)
     
-      - [在 Lync Server 2013 中建立或修改網路地區](lync-server-2013-create-or-modify-a-network-region.md)
+    - [在 Lync Server 2013 中建立或修改網路地區](lync-server-2013-create-or-modify-a-network-region.md)
     
-      - [在 Lync Server 2013 中建立或修改網站](lync-server-2013-create-or-modify-a-network-site.md)
+    - [在 Lync Server 2013 中建立或修改網站](lync-server-2013-create-or-modify-a-network-site.md)
     
-      - [在 Lync Server 2013 中建立子網路與網路站台的關聯](lync-server-2013-associate-a-subnet-with-a-network-site.md)
+    - [在 Lync Server 2013 中建立子網路與網路站台的關聯](lync-server-2013-associate-a-subnet-with-a-network-site.md)
     
-      - [在 Lync Server 2013 中設定通話許可控制](lync-server-2013-configure-call-admission-control.md)
+    - [在 Lync Server 2013 中設定通話許可控制](lync-server-2013-configure-call-admission-control.md)
     
-      - [在 Lync Server 2013 中設定增強型 9-1-1](lync-server-2013-configure-enhanced-9-1-1.md)
+    - [在 Lync Server 2013 中設定增強型 9-1-1](lync-server-2013-configure-enhanced-9-1-1.md)
     
-      - [在 Lync Server 2013 中設定媒體旁路](lync-server-2013-configure-media-bypass.md)
+    - [在 Lync Server 2013 中設定媒體旁路](lync-server-2013-configure-media-bypass.md)
 
    [在 Lync Server 2013 中為使用者啟用企業語音](lync-server-2013-enable-users-for-enterprise-voice.md)
 

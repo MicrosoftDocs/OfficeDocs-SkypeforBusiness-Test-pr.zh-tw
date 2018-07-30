@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 如果您在組織中部署 Lync 2013，就可以與一或多個 Microsoft Lync Online 2010 客戶的網域同盟。若要讓您內部 Lync 2013 部署使用者與 Lync Online 2010 客戶使用者之間建立同盟，必須設定網域支援與 Lync Online 客戶的使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此文件只描述關於設定組織以支援與 Lync Online 2010 客戶之間建立同盟的程序，並沒有描述設定 Lync Online 2010 客戶支援同盟的程序。如需 Lync Online 服務的詳細資訊，請參閱 Lync Online，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=218941%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=218941&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此文件只描述關於設定組織以支援與 Lync Online 2010 客戶之間建立同盟的程序，並沒有描述設定 Lync Online 2010 客戶支援同盟的程序。如需 Lync Online 服務的詳細資訊，請參閱 Lync Online，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=218941%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=218941&amp;clcid=0x404</a>。
+
 
 
 ## 本章節內容

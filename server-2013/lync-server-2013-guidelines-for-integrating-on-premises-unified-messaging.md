@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-25_
 
 以下是部署 Enterprise Voice 時應納入考量的指導方針和最佳作法：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有在您也使用 UCMA 4 時， Exchange 整合通訊 (UM) 才支援 IPv6。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 只有在您也使用 UCMA 4 時， Exchange 整合通訊 (UM) 才支援 IPv6。
+
 
 
   - 部署 Lync Server 2013 Standard Edition Server 或 前端集區。如需安裝的詳細資訊，請參閱部署文件中的＜ [部署 Lync Server 2013](lync-server-2013-deploying-lync-server.md)＞。
@@ -37,19 +28,9 @@ _**上次修改主題的時間：** 2012-09-25_
 
   - 在每個要為使用者啟用 Exchange UM 的 Exchange 整合通訊 (UM) 樹系中部署 Exchange Mailbox、Hub Transport、Client Access 及 Unified Messaging Server 角色。如需關於安裝 Exchange Server 角色的詳細資訊，請參閱 Microsoft Exchange Server 2013 文件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當 Exchange 整合通訊 (UM) 安裝完成時，其設定為使用自我簽署憑證。<br />
-    但是，自我簽署憑證不會讓 Lync Server 2013 和 Exchange UM 互相信任，因此，這就是必須從這兩者都信任的憑證授權單位要求個別憑證的原因。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 當 Exchange 整合通訊 (UM) 安裝完成時，其設定為使用自我簽署憑證。<br />
+    > 但是，自我簽署憑證不會讓 Lync Server 2013 和 Exchange UM 互相信任，因此，這就是必須從這兩者都信任的憑證授權單位要求個別憑證的原因。
 
 
   - 如果 Lync Server 2013 和 Exchange UM 安裝在不同的樹系中，請將每一個 Exchange 樹系設定為信任 Lync Server 2013 樹系，以及將 Lync Server 2013 樹系設定為信任每個 Exchange 樹系。此外，請在 Lync Server 2013 樹系中的使用者物件上設定使用者的 Exchange UM 設定。這通常需要用到指令碼或 Identity Lifecycle Manager (ILM) 等跨樹系工具。
@@ -62,18 +43,9 @@ _**上次修改主題的時間：** 2012-09-25_
 
 ## 部署重複的 Exchange UM 伺服器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您至少針對每個為組織設定的 Exchange UM SIP URI 撥號對應表部署兩部執行 Exchange UM 服務的伺服器。在提供擴充的容量之餘，部署重複的伺服器還能提供高可用性。伺服器發生故障時，您可以設定 Lync Server 2013 以容錯移轉至另一部伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建議您至少針對每個為組織設定的 Exchange UM SIP URI 撥號對應表部署兩部執行 Exchange UM 服務的伺服器。在提供擴充的容量之餘，部署重複的伺服器還能提供高可用性。伺服器發生故障時，您可以設定 Lync Server 2013 以容錯移轉至另一部伺服器。
+
 
 
 以下範例設定可提供 Exchange UM 恢復能力。

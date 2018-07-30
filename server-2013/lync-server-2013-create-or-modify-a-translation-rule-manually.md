@@ -45,18 +45,9 @@ _**上次修改主題的時間：** 2012-08-06_
 
 10. 在 **\[主幹組態\]** 頁面上，按一下 **\[認可\]**，再按一下 **\[全部認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您建立或修改轉譯規則時，您都必須執行 [全部認可] 命令才能發行組態變更。如需詳細資訊，請參閱作業文件中的＜<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您建立或修改轉譯規則時，您都必須執行 [全部認可] 命令才能發行組態變更。如需詳細資訊，請參閱作業文件中的＜<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>＞。
+    
 
 
 ## 請參閱

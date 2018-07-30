@@ -23,18 +23,9 @@ Lync Server 2013 自動探索服務會在 Director 集區和前端集區伺服�
 
   - **發行在連接埠 443 上**   外部 Web 服務發行規則所使用之憑證上的主體替代名稱清單，必須針對組織內的每個 SIP 網域，各包含一個 `lyncdiscover.<sipdomain>` 項目。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需從您部署 Mobility 的 Lync Server 2010 上進行全新安裝或升級，可針對 Mobility 服務的自動探索使用連接埠 80，或利用適當的主體名稱及主體替代名稱重新發行憑證。請檢閱 Director 和前端伺服器上的憑證，以確認您所選擇的路徑。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如需從您部署 Mobility 的 Lync Server 2010 上進行全新安裝或升級，可針對 Mobility 服務的自動探索使用連接埠 80，或利用適當的主體名稱及主體替代名稱重新發行憑證。請檢閱 Director 和前端伺服器上的憑證，以確認您所選擇的路徑。
+    
 
 
 ### 反向 Proxy 伺服器的防火牆詳細資訊：外部介面

@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 3.  在左導覽列，按一下 \[用戶端\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>已預設選取 [用戶端版本原則] 索引標籤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 已預設選取 [用戶端版本原則] 索引標籤。
+    
 
 
 4.  在「用戶端版本原則」頁面上，執行下列其中一項動作：
@@ -49,7 +40,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 ## 使用 Windows PowerShell Cmdlet 建立或修改用戶端版本原則
 
-您可以使用 **New-CsClientVersionPolicy** Cmdlet 建立用戶端版本原則，或使用 **set-csclientversionpolicy** Cmdlet 進行修改。可從 Lync Server 2013 管理命令介面或 Windows PowerShell 遠端工作階段執行這些 Cmdlet。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
+您可以使用 **New-CsClientVersionPolicy** Cmdlet 建立用戶端版本原則，或使用 **Set-CsClientVersionPolicy** Cmdlet 進行修改。可從 Lync Server 2013 管理命令介面或 Windows PowerShell 遠端工作階段執行這些 Cmdlet。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
 
 ## 建立新的網站範圍用戶端版本原則
 
@@ -63,5 +54,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         New-CsClientVersionPolicy -Identity "RedmondClientVersionPolicy"
 
-如需詳細資訊，請參閱＜[New-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientVersionPolicy)＞ Cmdlet 和＜[set-csclientversionpolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[New-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientVersionPolicy)＞ Cmdlet 和＜[Set-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy)＞ Cmdlet 的說明主題。
 

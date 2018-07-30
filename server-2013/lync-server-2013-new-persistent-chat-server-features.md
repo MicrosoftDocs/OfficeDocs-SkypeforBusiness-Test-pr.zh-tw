@@ -75,18 +75,9 @@ Lync 2013 將常設聊天室功能整合到 Lync 2013 用戶端中。因此，�
 
 此外，為了在 常設聊天室中支援檔案上傳和下載， 常設聊天室伺服器 包含 Web 服務。在過去，此項服務是共置於 常設聊天室伺服器前端伺服器上，且先決條件為需要安裝 Internet Information Services (IIS)。在 Lync Server 2013常設聊天室伺服器 中，檔案上傳/下載 Web 服務是共置於 Lync Server 2013前端伺服器上，因此 Internet Information Services (IIS) 不再是 常設聊天室伺服器 的先決條件。檔案上傳/下載 Web 服務在 Internet Information Services (IIS) 管理員中是以 **PersistentChat** 識別。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有當 Lync Server 2013前端伺服器是 Standard Edition前端伺服器時， <strong>PersistentChatService</strong> 角色才能在該 前端伺服器的同一部伺服器上執行。 <strong>PersistentChatService</strong> 角色不能在沒有 Lync Server 2013前端伺服器的情況下執行，且只能安裝在 Lync Server 2013 部署環境中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 只有當 Lync Server 2013前端伺服器是 Standard Edition前端伺服器時， <strong>PersistentChatService</strong> 角色才能在該 前端伺服器的同一部伺服器上執行。 <strong>PersistentChatService</strong> 角色不能在沒有 Lync Server 2013前端伺服器的情況下執行，且只能安裝在 Lync Server 2013 部署環境中。
+
 
 
 常設聊天室伺服器 已移除查閱服務。在 Lync Server 2010 群組聊天中，查閱服務會在每部 群組聊天伺服器前端伺服器上執行，並會路由至其中一部通道伺服器。 Lync Server 2013 是透過連絡人物件使用路由，每個連絡人物件都代表一個 Persistent Chat Server 集區， Lync Server前端伺服器會使用連絡人物件來識別要將要求路由傳送到的適當 Persistent Chat Server 集區以及該集區中某部執行 常設聊天室伺服器 的電腦。
@@ -97,31 +88,13 @@ Lync Server 2013 也修改了規範服務：
 
   - 在每部 常設聊天室伺服器前端伺服器上由 常設聊天室服務和規範服務共用的訊息佇列 (也稱為 MSMQ)，現在是僅供這兩個服務共用的私用佇列。所有規範服務都會寫入至同一個規範後端資料庫，也會讀取該資料庫以便傳送資料到自己的配置器執行個體。規範後端伺服器是以新的後端伺服器角色代表。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在舊版中，所有規範資料僅處理一次。這些資料可由各種 Lync Server 2013常設聊天室伺服器 電腦上執行之規範服務所叫用的任何配置器執行個體處理。在 常設聊天室伺服器 中，任何一個配置器執行個體都能處理這些資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在舊版中，所有規範資料僅處理一次。這些資料可由各種 Lync Server 2013常設聊天室伺服器 電腦上執行之規範服務所叫用的任何配置器執行個體處理。在 常設聊天室伺服器 中，任何一個配置器執行個體都能處理這些資料。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需關於安裝訊息佇列的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">在伺服器上安裝 Lync Server 2013 的作業系統和必要軟體</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!NOTE]  
+    > 如需關於安裝訊息佇列的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-install-operating-systems-and-prerequisite-software-on-servers.md">在伺服器上安裝 Lync Server 2013 的作業系統和必要軟體</a>。
+    
 
 
 在 Lync Server 2013 中，高可用性和災害復原都有改進功能：

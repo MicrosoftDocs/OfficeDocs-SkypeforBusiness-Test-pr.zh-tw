@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2013-10-07_
 
   - **公用使用者**   公用 IM 服務 (例如 Windows Live 網路的網際網路服務、Yahoo\! 和 AOL 提供的 IM 服務) 的使用者，以及使用可延伸傳訊和顯示狀態通訊協定 (XMPP) (例如 Google Talk) 之提供者和伺服器的使用者。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請注意，與 Windows Live、AOL 和 Yahoo! 等公用 IM 進行連線可能需要個別授權</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 請注意，與 Windows Live、AOL 和 Yahoo! 等公用 IM 進行連線可能需要個別授權
+    
     
     <table>
     <colgroup>

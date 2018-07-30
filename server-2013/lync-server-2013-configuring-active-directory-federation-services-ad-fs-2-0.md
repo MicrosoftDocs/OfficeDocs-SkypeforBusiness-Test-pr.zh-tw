@@ -16,18 +16,9 @@ _**上次修改主題的時間：** 2013-07-03_
 
 下節說明如何設定 Active Directory Federation Service (AD FS 2.0) 以支援多重因素驗證。如需有關如何安裝 AD FS 2.0 的資訊，請參閱《AD FS 2.0 逐步指南》(英文)，網址為：[http://go.microsoft.com/fwlink/p/?LinkId=313374](http://go.microsoft.com/fwlink/p/?linkid=313374)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安裝 AD FS 2.0 時，請勿使用 Windows 伺服器管理員新增 Active Directory Federation Service 角色。請改為下載並安裝此處的 Active Directory Federation Services 2.0 RTW 套件，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=313375">http://go.microsoft.com/fwlink/p/?LinkId=313375</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 安裝 AD FS 2.0 時，請勿使用 Windows 伺服器管理員新增 Active Directory Federation Service 角色。請改為下載並安裝此處的 Active Directory Federation Services 2.0 RTW 套件，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=313375">http://go.microsoft.com/fwlink/p/?LinkId=313375</a>。
+
 
 
 

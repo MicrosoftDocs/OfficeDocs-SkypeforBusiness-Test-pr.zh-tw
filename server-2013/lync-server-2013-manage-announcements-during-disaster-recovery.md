@@ -42,32 +42,14 @@ Lync Server 2013 可支援在系統中斷期間，對撥給未指派號碼的通
 
 若要在系統中斷期間使用 宣告應用程式，您需要執行本節所述的工作，以在備份集區中重新建立宣告設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您在容錯移轉至備份集區後再執行這些工作，因為一旦執行步驟 2 後，備份集區就會獲得未指派號碼範圍的擁有權。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建議您在容錯移轉至備份集區後再執行這些工作，因為一旦執行步驟 2 後，備份集區就會獲得未指派號碼範圍的擁有權。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是使用 Exchange UM 自動語音應答電話號碼的號碼範圍，則不必執行這些步驟。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若是使用 Exchange UM 自動語音應答電話號碼的號碼範圍，則不必執行這些步驟。
+
 
 
 **在備份集區重新建立宣告設定**
@@ -78,18 +60,9 @@ Lync Server 2013 可支援在系統中斷期間，對撥給未指派號碼的通
     
     2.  使用 **New-CsAnnouncement** Cmdlet 並在 Parent 參數指定備份集區，以重新建立每個宣告。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需關於使用這些參數在備份集區建立宣告的詳細資訊，請參閱 <a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中建立宣告</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需關於使用這些參數在備份集區建立宣告的詳細資訊，請參閱 <a href="lync-server-2013-create-an-announcement.md">在 Lync Server 2013 中建立宣告</a>。
+    
 
 
 2.  在備份集區重新建立所有宣告後，將使用主要集區中之宣告的所有未指派號碼範圍，重新導向至備份集區中重新建立的宣告。
@@ -102,18 +75,9 @@ Lync Server 2013 可支援在系統中斷期間，對撥給未指派號碼的通
 
 主要集區恢復可用後，您需將因為系統中斷而做出變更的未指派號碼範圍重新導向回主要集區。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是使用 Exchange UM 自動語音應答電話號碼的號碼範圍，則不必執行這些步驟。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是使用 Exchange UM 自動語音應答電話號碼的號碼範圍，則不必執行這些步驟。
+
 
 
 **還原主要集區中的宣告**

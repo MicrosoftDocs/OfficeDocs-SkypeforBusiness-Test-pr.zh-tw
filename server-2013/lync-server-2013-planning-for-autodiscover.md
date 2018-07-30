@@ -36,18 +36,9 @@ Mobility 仍為不同的案例，且 Mobility Services 還是需要某些特別�
 
 因為 Lync Server 2013 對所有用戶端都使用自動探索，所以主要案例是只使用 HTTPS 並且建立含 lyncdiscover.\<網域\> 的憑證，做為設定反向 Proxy、Director 及前端伺服器的一部分。如果要在 Lync Server 2010 的升級部署中實作自動探索，建議您使用 HTTP 來避免重新發行憑證。下列章節將提供這兩個案例的指引。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>外部 Web 服務發行規則所使用的憑證主體替代名稱清單，必須針對組織內的每個 SIP 網域，各包含一個 <em>lyncdiscover.&lt;SIP 網域&gt;</em> 項目。 如需 Director、前端伺服器和反向 Proxy 所需之主體替代名稱項目的詳細資訊，請參閱＜<a href="lync-server-2013-certificate-summary-autodiscover.md">憑證摘要 - 自動探索</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 外部 Web 服務發行規則所使用的憑證主體替代名稱清單，必須針對組織內的每個 SIP 網域，各包含一個 <em>lyncdiscover.&lt;SIP 網域&gt;</em> 項目。 如需 Director、前端伺服器和反向 Proxy 所需之主體替代名稱項目的詳細資訊，請參閱＜<a href="lync-server-2013-certificate-summary-autodiscover.md">憑證摘要 - 自動探索</a>＞。
+
 
 
 ## 本章節內容

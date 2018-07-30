@@ -35,18 +35,9 @@ Enterprise Edition Pool 中的前端伺服器會組織成*升級網域*。這些
     
     1.  使用 `Stop-CsWindowsService -Graceful -Verbose` Cmdlet 停止要升級之前端伺服器的新連線。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您要在排定的伺服器停機時間進行這些伺服器的升級，可以執行此 Cmdlet 但不加上 ‘-<strong>Graceful</strong>‘ 參數，如下所示：<strong>Stop-CsWindowsService</strong>。如此將會立即關閉服務，而不會等候全部現有服務要求完成。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您要在排定的伺服器停機時間進行這些伺服器的升級，可以執行此 Cmdlet 但不加上 ‘-<strong>Graceful</strong>‘ 參數，如下所示：<strong>Stop-CsWindowsService</strong>。如此將會立即關閉服務，而不會等候全部現有服務要求完成。
+        
     
     2.  為與此升級網域關聯的伺服器進行升級。
     

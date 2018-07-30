@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 這些連接埠是您可以使用 **Set-CsApplicationServer** Cmdlet 變更的預設設定。如需有關此 Cmdlet 的詳細資訊，請參閱＜ Lync Server 管理命令介面＞文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>集區中同一個應用程式的所有執行個體都使用相同的 SIP 聆聽連接埠。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 集區中同一個應用程式的所有執行個體都使用相同的 SIP 聆聽連接埠。
+
 
 
 ### 電話撥入式會議使用的連接埠
@@ -99,18 +90,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 電話撥入式會議設定頁面支援下表中所述之作業系統和網頁瀏覽器的組合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援 32 位元和 64 位元版本的作業系統。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支援 32 位元和 64 位元版本的作業系統。
+
 
 
 ### 支援的作業系統和網頁瀏覽器

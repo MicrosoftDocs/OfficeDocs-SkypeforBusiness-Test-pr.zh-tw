@@ -27,18 +27,9 @@ Lync Server 2013 語音路由會將目的地電話號碼與一個或多個公用
 
 4.  從語音路由清單中按兩下語音路由，即可檢視其他屬性，或選取路由，按一下 **\[編輯\]** ，然後按一下 **\[顯示詳細資料\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每次僅可檢視單一路由的詳細資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 每次僅可檢視單一路由的詳細資訊。
+    
 
 
 **若要使用 Windows PowerShell 檢視語音路由**
@@ -61,18 +52,9 @@ Lync Server 2013 語音路由會將目的地電話號碼與一個或多個公用
         SuppressCallerId  :
         AlternateCallerId :
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-voice-routes.md">Lync Server 2013 中的語音路由</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-voice-routes.md">Lync Server 2013 中的語音路由</a>＞。
+
 
 
 ## 本章節內容

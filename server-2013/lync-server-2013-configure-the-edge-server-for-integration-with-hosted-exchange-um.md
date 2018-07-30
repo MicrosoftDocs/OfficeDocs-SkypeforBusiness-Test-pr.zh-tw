@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2015-01-23_
 
   - [New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須針對裝載的 Exchange 服務建立外部 DNS SRV 記錄，再執行這些步驟。如需詳細資訊，請參閱＜ <a href="lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md">針對與主控 Exchange UM 的整合建立 DNS SRV 記錄</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您必須針對裝載的 Exchange 服務建立外部 DNS SRV 記錄，再執行這些步驟。如需詳細資訊，請參閱＜ <a href="lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md">針對與主控 Exchange UM 的整合建立 DNS SRV 記錄</a>＞。
+
 
 
 ## 若要設定同盟的 Edge Server
@@ -79,18 +70,9 @@ _**上次修改主題的時間：** 2015-01-23_
     
       - **EnabledSharedAddressSpace** 會指出裝載提供者是否已在共用 SIP 位址空間 (分割網域) 案例中使用。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在將 <code>EnableSharedAddressSpace</code> 設為 True 之前，請嘗試在內部解析同盟 SRV 記錄。如果此記錄無法於內部解析，接著您需要在內部 DNS 中建立 _sipfederationtls._tcp.&lt;domain&gt; 和 _sip._tls.&lt;domain&gt; 的記錄。這些記錄應指向 Edge Server 的 Access 介面的外部 IP 位址。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 在將 <code>EnableSharedAddressSpace</code> 設為 True 之前，請嘗試在內部解析同盟 SRV 記錄。如果此記錄無法於內部解析，接著您需要在內部 DNS 中建立 _sipfederationtls._tcp.&lt;domain&gt; 和 _sip._tls.&lt;domain&gt; 的記錄。這些記錄應指向 Edge Server 的 Access 介面的外部 IP 位址。
+        
     
       - **HostsOCSUsers** 指出裝載提供者是否用於裝載 Lync Server 2013 帳戶。如果為 **False** ，則提供者會裝載其他帳戶類型，例如 Microsoft Exchange 帳戶。
     

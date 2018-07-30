@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-24_
 
 本主題說明如何在 Microsoft Exchange Server 上設定 Exchange 整合通訊 (UM)，來與企業語音一起使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題中的 Cmdlet 範例針對 Exchange 2007 版本的 Exchange 管理命令介面提供語法。如果您執行的是 Exchange 2010 或 Exchange 2013，請參閱適當的參考文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主題中的 Cmdlet 範例針對 Exchange 2007 版本的 Exchange 管理命令介面提供語法。如果您執行的是 Exchange 2010 或 Exchange 2013，請參閱適當的參考文件。
+
 
 
 ## 若要設定正在執行 Exchange Server UM 的伺服器
@@ -60,19 +51,9 @@ _**上次修改主題的時間：** 2013-02-24_
     
       - 若為 Exchange 2013，請參閱＜整合通訊＞，網址為 [http://go.microsoft.com/fwlink/?linkid=266579\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=266579%26clcid=0x404)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您要選取 <strong>SIPSecured</strong> 或是 <strong>Secured</strong> 安全性層級，取決於媒體加密已啟用還是停用安全即時傳輸通訊協定 (SRTP) 而定。若為 Lync Server 2010 與 Exchange UM 的整合，這應該對應至 Lync Server 媒體組態的加密層級。執行 <strong>Get-CsMediaConfiguration</strong> Cmdlet 即可檢視 Lync Server 媒體組態。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中的 Get-CsMediaConfiguration。<br />
-    如需選取適當 VoIP 安全性設定的詳細資訊，請參閱＜<a href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">整合內部部署 Unified Messaging 和 Lync Server 2013 的部署程序</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您要選取 <strong>SIPSecured</strong> 或是 <strong>Secured</strong> 安全性層級，取決於媒體加密已啟用還是停用安全即時傳輸通訊協定 (SRTP) 而定。若為 Lync Server 2010 與 Exchange UM 的整合，這應該對應至 Lync Server 媒體組態的加密層級。執行 <strong>Get-CsMediaConfiguration</strong> Cmdlet 即可檢視 Lync Server 媒體組態。如需詳細資訊，請參閱 Lync Server 管理命令介面文件中的 Get-CsMediaConfiguration。<br />
+    > 如需選取適當 VoIP 安全性設定的詳細資訊，請參閱＜<a href="lync-server-2013-deployment-process-for-integrating-on-premises-unified-messaging.md">整合內部部署 Unified Messaging 和 Lync Server 2013 的部署程序</a>＞。
 
 
 2.  執行下列 Cmdlet 以取得每個 UM 撥號對應表的完整網域名稱 (FQDN)：
@@ -91,18 +72,9 @@ _**上次修改主題的時間：** 2013-02-24_
 
 3.  記錄每個 UM 撥號對應表的撥號對應表名稱。根據您的 Exchange Server 版本而定，您稍後可能需要使用每個撥號對應表名稱的 FQDN 作為每個 UM 撥號對應表的對應 Lync Server 撥號對應表名稱，如此撥號對應表名稱才會相符。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在 UM 撥號對應表正在 Exchange 2010 SP1 <em>以前</em> 的 Exchange 版本上執行時，Lync Server 撥號對應表名稱才必須符合 UM 撥號對應表名稱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有在 UM 撥號對應表正在 Exchange 2010 SP1 <em>以前</em> 的 Exchange 版本上執行時，Lync Server 撥號對應表名稱才必須符合 UM 撥號對應表名稱。
+    
 
 
 4.  如下所示，將撥號對應表新增至執行 Exchange UM 的伺服器：
@@ -151,47 +123,20 @@ _**上次修改主題的時間：** 2013-02-24_
     
     如果您有與多個 IP 閘道關聯的一或多個 UM 撥號對應表，請繼續執行步驟 6。如果您的每個撥號對應表都只和一個 IP 閘道關聯，請略過步驟 6。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請務必在執行 exchucutil.ps1 <em>之後</em>，重新啟動 <strong>[Lync Server 前端]</strong> 服務 (rtcsrv.exe)。否則，Lync Server 偵測不到拓撲中的整合通訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請務必在執行 exchucutil.ps1 <em>之後</em>，重新啟動 <strong>[Lync Server 前端]</strong> 服務 (rtcsrv.exe)。否則，Lync Server 偵測不到拓撲中的整合通訊。
+    
 
 
 6.  使用 Exchange 管理命令介面或 Exchange 管理主控台，除了與您的撥號對應表關聯之 IP 閘道的撥出電話之外，停用所有 IP 閘道的撥出電話。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步驟是要確保執行 Exchange Server 整合通訊的伺服器撥出給外部使用者的電話 (例如，在電話上播放的狀況) 會可靠地穿越公司防火牆。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此步驟是要確保執行 Exchange Server 整合通訊的伺服器撥出給外部使用者的電話 (例如，在電話上播放的狀況) 會可靠地穿越公司防火牆。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>選取撥出電話要通過的 UM IP 閘道時，請選擇可處理最多流量的閘道。不要讓傳出流量通過連接至 Lync Server Director 集區的 IP 閘道。同時避免其他中央網站或分支網站中的集區。您可以使用下列任一種方法防止撥出電話通過 IP 閘道：</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 選取撥出電話要通過的 UM IP 閘道時，請選擇可處理最多流量的閘道。不要讓傳出流量通過連接至 Lync Server Director 集區的 IP 閘道。同時避免其他中央網站或分支網站中的集區。您可以使用下列任一種方法防止撥出電話通過 IP 閘道：
+    
     
       - 如果您使用 Exchange 管理命令介面，請執行下列命令以停用每個 IP 閘道：
         
@@ -203,34 +148,16 @@ _**上次修改主題的時間：** 2013-02-24_
     
       - 如果是使用 Exchange 管理主控台，請清除 **\[允許透過這個 IP 閘道的撥出電話\]** 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的 UM SIP URI 撥號對應表只與一個 IP 閘道關聯，請允許撥出的電話通過這個閘道。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您的 UM SIP URI 撥號對應表只與一個 IP 閘道關聯，請允許撥出的電話通過這個閘道。
+    
 
 
 7.  為每一個 Lync Server 撥號對應表建立 UM 自動語音應答。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請勿在自動語音應答的名稱中加入任何空格。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請勿在自動語音應答的名稱中加入任何空格。
+    
     
         New-umautoattendant -name <auto attendant name> -umdialplan < name of dial plan created in step 1> -PilotIdentifierList <auto attendant phone number in E.164 format> -SpeechEnabled $true -Status Enabled
     
@@ -244,18 +171,9 @@ _**上次修改主題的時間：** 2013-02-24_
 
 8.  建立 Exchange UM 使用者 (每個使用者都應設定一個 Exchange 信箱) 與 UM 撥號對應表的關聯，並為每個使用者建立 SIP URI。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>下列範例中的 <strong>SIPResourceIdentifier</strong> 必須是 Lync Server 使用者的 SIP 位址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 下列範例中的 <strong>SIPResourceIdentifier</strong> 必須是 Lync Server 使用者的 SIP 位址。
+    
     
         enable-ummailbox -id <user name> -ummailboxpolicy <name of the mailbox policy for the dial plan created in step 1> -Extensions <extension> -SIPResourceIdentifier "<user name>@<full domain name>" -PIN <user pin>
     

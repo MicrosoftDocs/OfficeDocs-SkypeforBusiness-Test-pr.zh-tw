@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-20_
 
 本節會引導您完成為組織中的使用者部署遠端呼叫控制功能的程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然位於組織防火牆以外的遠端使用者也可使用遠端呼叫控制功能，但本文件並不提供部署外部存取案例的詳細資訊。如需部署外部使用者存取的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部使用者存取</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然位於組織防火牆以外的遠端使用者也可使用遠端呼叫控制功能，但本文件並不提供部署外部存取案例的詳細資訊。如需部署外部使用者存取的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部使用者存取</a>。
+
 
 
 ## 本章節內容

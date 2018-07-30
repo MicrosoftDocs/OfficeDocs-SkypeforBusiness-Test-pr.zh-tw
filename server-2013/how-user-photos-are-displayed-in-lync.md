@@ -125,18 +125,9 @@ Lync 2010 引進一項功能，可在您的 Lync 設定檔案包含相片，其�
 
 「目前狀態」中包含的使用者相片也具備相關的雜湊值，可讓 Lync 用戶端用來判斷是否有較新的影像可用。系統會將「目前狀態」中使用的影像檔案變更自動通知用戶端。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於相片不會儲存於 GalContacts.db 資料庫，因此用戶端原則 (<a href="http://go.microsoft.com/fwlink/p/?linkid=507508">Set-CsClientPolicy</a>) 中的 <strong>AddressBookAvailability</strong> 設定與使用者相片的下載無關。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由於相片不會儲存於 GalContacts.db 資料庫，因此用戶端原則 (<a href="http://go.microsoft.com/fwlink/p/?linkid=507508">Set-CsClientPolicy</a>) 中的 <strong>AddressBookAvailability</strong> 設定與使用者相片的下載無關。
+
 
 
 ABWQ 服務的查詢包含下列屬性：
@@ -208,18 +199,9 @@ Lync 2013 針對使用者相片引進了高解析度影像支援。而且，Lync
 
 將影像上傳到使用者的信箱時，Exchange 會自動建立解析度較低的影像版本，以便在用戶端應用程式中使用。AD DS 中的使用者相片也會更新。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AD DS 中的影像檔案更新後，系統會建立 48 x 48 像素的影像，並將其使用於 AD DS 中的 thumbnailPhoto。任何現有的影像都會遭到取代。因此，若將 96 x 96 影像新增至 AD DS，會遭到新的 48 x 48 影像覆寫。唯有當您的環境中有使用者使用 Lync 2010 用戶端時，才需要注意上述情況，因為那些用戶端將從 AD DS 取得使用者相片。如果您的組織使用 Lync 2010 用戶端，您可以匯入 96 x 96 像素影像來取代 AD DS 所建立的影像。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> AD DS 中的影像檔案更新後，系統會建立 48 x 48 像素的影像，並將其使用於 AD DS 中的 thumbnailPhoto。任何現有的影像都會遭到取代。因此，若將 96 x 96 影像新增至 AD DS，會遭到新的 48 x 48 影像覆寫。唯有當您的環境中有使用者使用 Lync 2010 用戶端時，才需要注意上述情況，因為那些用戶端將從 AD DS 取得使用者相片。如果您的組織使用 Lync 2010 用戶端，您可以匯入 96 x 96 像素影像來取代 AD DS 所建立的影像。
+
 
 
 ## Lync 2013 中的使用者相片支援

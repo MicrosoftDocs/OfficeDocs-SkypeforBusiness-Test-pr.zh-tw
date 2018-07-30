@@ -27,16 +27,7 @@ _**上次修改主題的時間：** 2012-10-19_
 
 5.  (選用) 貴組織如有需要 Lync Server 2013 的增強目前狀態隱私權模式，可在移轉完成後定義用戶端版的原則規則，禁止舊版的用戶端登入，然後再啟用增強目前狀態隱私權模式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>為每位使用者或指定的伺服器集區安裝最新版的用戶端版本之前，請勿啟用 Lync 2013 增強目前狀態隱私權模式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 為每位使用者或指定的伺服器集區安裝最新版的用戶端版本之前，請勿啟用 Lync 2013 增強目前狀態隱私權模式。
+    
 

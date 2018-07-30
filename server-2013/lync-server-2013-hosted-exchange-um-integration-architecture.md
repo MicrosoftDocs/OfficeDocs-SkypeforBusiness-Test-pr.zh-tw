@@ -29,18 +29,9 @@ Lync Server 2013 ExUM Routing 應用程式支援與下列項目的整合：內�
 
   - **混合部署 ：** Lync Server 2013 部署中有一些使用者信箱位於您企業內的本機 Exchange 伺服器上，有一些信箱位於託管式 Exchange 服務資料中心。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>混合部署可以作為過渡解決方案 (例如進行評估以及將使用者分階段移轉至託管式 Exchange UM 的期間) 或永久解決方案 (如果您在進行部分移轉後，決定將其餘使用者的 Exchange UM 服務繼續留在內部部署)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 混合部署可以作為過渡解決方案 (例如進行評估以及將使用者分階段移轉至託管式 Exchange UM 的期間) 或永久解決方案 (如果您在進行部分移轉後，決定將其餘使用者的 Exchange UM 服務繼續留在內部部署)。
+    
 
 
 ## 共用 SIP 位址空間
@@ -49,18 +40,9 @@ Lync Server 2013 ExUM Routing 應用程式支援與下列項目的整合：內�
 
 若要整合 Lync Server 2013 與託管式 Exchange UM，您必須設定「共用 SIP 位址空間」 。在此組態中，同一個 SIP 網域位址空間可同時供 Lync Server 2013 和託管式 Exchange UM 服務提供者使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>共用 SIP 位址空間的使用方法，類似於交叉部署 Lync Server 2013 環境，即一些使用者位於內部部署，一些使用者位於託管式部署 (如 Lync Online)。SIP 網域被這兩者分割。當您整合 Lync Server 2013 與託管式 Exchange UM 時，請務必將 Exchange UM 服務提供者包含在共用 SIP 位址空間中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 共用 SIP 位址空間的使用方法，類似於交叉部署 Lync Server 2013 環境，即一些使用者位於內部部署，一些使用者位於託管式部署 (如 Lync Online)。SIP 網域被這兩者分割。當您整合 Lync Server 2013 與託管式 Exchange UM 時，請務必將 Exchange UM 服務提供者包含在共用 SIP 位址空間中。
+
 
 
 若要設定共用 SIP 位址空間以便與 Exchange UM 服務提供者整合，您必須如下設定 Edge Server：

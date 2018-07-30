@@ -27,36 +27,18 @@ Microsoft Lync Server 2013  通訊軟體支援針對 Access 和 Web Conferencin
 
   - 憑證的主體名稱是 Access Edge Service 外部介面完整網域名稱 (FQDN) 或硬體負載平衡器 VIP (例如，access.contoso.com)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 已不再是必要項，但是仍建議使用以提供與 Office Communications Server 的相容性。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 已不再是必要項，但是仍建議使用以提供與 Office Communications Server 的相容性。
+    
 
 
   - 主體別名清單包含下列各項的 FQDN：
     
       - Access Edge Service 外部介面或硬體負載平衡器 VIP (例如 sip.contoso.com)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>即使憑證主題名稱相當於存取 Edge FQDN，主體別名仍必須包含存取 Edge FQDN，因為傳輸層安全性 (TLS) 會忽略主體名稱並且使用主體別名項目進行驗證。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 即使憑證主題名稱相當於存取 Edge FQDN，主體別名仍必須包含存取 Edge FQDN，因為傳輸層安全性 (TLS) 會忽略主體名稱並且使用主體別名項目進行驗證。
+        
     
       - Web 會議 Edge 外部介面或硬體負載平衡器 VIP (例如，webcon.contoso.com)。
     
@@ -64,18 +46,9 @@ Microsoft Lync Server 2013  通訊軟體支援針對 Access 和 Web Conferencin
     
       - A/V Edge 服務不使用主體名稱或主體替代名稱項目。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>主題別名清單中 FQDN 的順序不拘。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 主題別名清單中 FQDN 的順序不拘。
+    
 
 
 如果您要在網站上部署多部負載平衡 Edge Server，則每一部 Edge Server 上安裝的 A/V 驗證服務憑證都必須來自相同的 CA，而且必須使用相同的私密金鑰。請注意，無論是在一部 Edge Server 或多部 Edge Server 上使用，憑證的私密金鑰都必須可匯出。如果您從 Edge Server 以外的任何電腦要求憑證，也同樣必須是可匯出的憑證。由於 A/V 驗證服務不使用主體名稱或主體替代名稱，因此只要主體名稱和主體替代名稱需求符合 Access Edge 和 Web Conferencing Edge，且可以匯出憑證的私密金鑰，就可以重複使用 Access Edge 憑證。

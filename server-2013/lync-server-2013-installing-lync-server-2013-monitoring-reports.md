@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 Microsoft Lync Server 2013 監控報告可提供您有關組織中通訊工作階段品質及數量的豐富資訊。但是，在安裝 Lync Server 2013 時，監控報告並不會自動安裝；相反地，您必須個別安裝監控報告，而且只能在將 Lync Server 安裝於電腦後進行。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您將監控報告安裝在已安裝監控資料庫之相同電腦上，如此可簡化存取報告的指派權限程序：將監控報告安裝在裝載監控存放區的電腦上，表示您不需要設定權限以允許某一台電腦上的資料庫與在第二台電腦執行的 Reporting Services 進行互動。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建議您將監控報告安裝在已安裝監控資料庫之相同電腦上，如此可簡化存取報告的指派權限程序：將監控報告安裝在裝載監控存放區的電腦上，表示您不需要設定權限以允許某一台電腦上的資料庫與在第二台電腦執行的 Reporting Services 進行互動。
+
 
 
 Lync Server 監控報告涵蓋超過 30 項報告，旨在提供有關會議、對等 IM 工作階段、使用者註冊、回應群組應用程式等其他更多的詳細資訊。在 2013 版本中，Lync Server 監控報告包含了幾項強化功能：
@@ -41,18 +32,9 @@ Lync Server 監控報告涵蓋超過 30 項報告，旨在提供有關會議、�
 
 有關個別報告的詳細資訊，可在監控報告文件中取得。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>還有一個新報告，也就是 QoE 詳細通話子報表，包含於 Lync Server 2013。但是，此報告主要用於內部，無法直接存取。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 還有一個新報告，也就是 QoE 詳細通話子報表，包含於 Lync Server 2013。但是，此報告主要用於內部，無法直接存取。
+
 
 
 有兩種方法可安裝 Lync Server 監控報告：您可使用 Lync Server 部署精靈或 Lync Server 2013 安裝檔案中包含的 Windows PowerShell 指令碼。無論您使用哪一種方法安裝報告，都必須先確認您具備下列條件：

@@ -75,18 +75,9 @@ A/V 驗證服務是專用來核發 Token，以供用戶端和其他 A/V 取用�
 
 4.  使用 Set-CsCertificate Cmdlet 並使用 –Roll 參數和 –EffectiveDate 參數來設定已匯入的憑證。生效日期應定義為目前憑證的到期時間 (14:00:00 或 2:00:00 PM) 扣除 Token 生命週期 (預設為八小時)。此即為憑證必須設為有效的時間，亦即 –EffectiveDate \<字串\>: “7/22/2012 6:00:00 AM”。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若為 Edge 集區，您就必須在第一個部署憑證之 –EffectiveDate 參數所定義的日期和時間之前，部署和佈建好 AudioVideoAuthentication 憑證，以避免由於舊憑證過期但尚未使用新憑證更新所有用戶端和取用者 Token 時導致的可能 A/V 通訊中斷問題。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 若為 Edge 集區，您就必須在第一個部署憑證之 –EffectiveDate 參數所定義的日期和時間之前，部署和佈建好 AudioVideoAuthentication 憑證，以避免由於舊憑證過期但尚未使用新憑證更新所有用戶端和取用者 Token 時導致的可能 A/V 通訊中斷問題。
+    
     
     Set-CsCertificate 命令搭配 –Roll 和 –EffectiveTime 參數：
     
@@ -96,18 +87,9 @@ A/V 驗證服務是專用來核發 Token，以供用戶端和其他 A/V 取用�
     
         Set-CsCertificate -Type AudioVideoAuthentication -Thumbprint "B142918E463981A76503828BB1278391B716280987B" -Roll -EffectiveDate "7/22/2012 6:00:00 AM"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須將 EffectiveDate 格式化為符合您伺服器區域和語言設定。範例是使用英文 (美國) 區域和語言設定</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須將 EffectiveDate 格式化為符合您伺服器區域和語言設定。範例是使用英文 (美國) 區域和語言設定
+    
 
 
 若要進一步了解 Set-CsCertificate、-Roll 和 –EffectiveDate 臨時發出新憑證，以核發新的 AudioVideoAuthentication Token，同時繼續使用現有的憑證來驗證取用者所使用的 AudioVideoAuthentication 的程序，視覺化的虛擬時間表是用來了解程序的有效方式。
@@ -138,18 +120,9 @@ A/V 驗證服務是專用來核發 Token，以供用戶端和其他 A/V 取用�
     
         Set-CsCertificate -Type OAuthTokenIssuer -Thumbprint "B142918E463981A76503828BB1278391B716280987B" -Roll -EffectiveDate "7/21/2012 1:00:00 PM"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須將 EffectiveDate 格式化為符合您伺服器區域和語言設定。範例是使用英文 (美國) 區域和語言設定</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須將 EffectiveDate 格式化為符合您伺服器區域和語言設定。範例是使用英文 (美國) 區域和語言設定
+    
 
 
 當生效時間到了 (7/21/2012 1:00:00 AM) 時，新的憑證就會發出新的 Token。驗證 Token 時，會先以新的憑證來加以驗證。若驗證失敗，就會嘗試舊的憑證。直到舊憑證到期時間以前，都會一直繼續嘗試新憑證並恢復使用舊憑證的程序。當舊的憑證到期 (7/22/2012 2:00:00 PM) 之後，就只會由新的憑證來驗證 Token。您可使用 Remove-CsCertificate Cmdlet 和 –Previous 參數，順利地移除舊的憑證。

@@ -37,18 +37,9 @@ _**上次修改主題的時間：** 2012-10-19_
     
     在 Exchange OWA 中，確認集區的 FQDN 也是可信任的。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的 CAS 伺服器 <em>沒有</em> 組合在執行 Exchange 2013 Unified Messaging (UM) 的同一部伺服器上，請略過本程序中的其餘步驟，並執行本主題中稍後的＜為 Exchange 2013 CAS 伺服器建立信任的應用程式＞程序。 若您的 CAS 伺服器組合在執行 Exchange 2013 Unified Messaging (UM) 的同一部伺服器上，請完成本程序中的步驟，而不要執行本主題中稍後的＜為 Exchange 2013 CAS 伺服器建立信任的應用程式＞程序。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您的 CAS 伺服器 <em>沒有</em> 組合在執行 Exchange 2013 Unified Messaging (UM) 的同一部伺服器上，請略過本程序中的其餘步驟，並執行本主題中稍後的＜為 Exchange 2013 CAS 伺服器建立信任的應用程式＞程序。 若您的 CAS 伺服器組合在執行 Exchange 2013 Unified Messaging (UM) 的同一部伺服器上，請完成本程序中的步驟，而不要執行本主題中稍後的＜為 Exchange 2013 CAS 伺服器建立信任的應用程式＞程序。
+    
 
 
 4.  執行 **\[Enable-CsTopology\]** 。

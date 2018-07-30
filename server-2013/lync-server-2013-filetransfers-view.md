@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 FileTranfer 檢視存放了對等檔案傳輸工作階段的相關資訊。此檢視已於＜Microsoft Lync Server 2013＞介紹過。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>FileTransfers 檢視除了包含下列欄位，還包含＜<a href="lync-server-2013-sessiondetails-view.md">SessionDetails 檢視</a>＞的所有欄位。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> FileTransfers 檢視除了包含下列欄位，還包含＜<a href="lync-server-2013-sessiondetails-view.md">SessionDetails 檢視</a>＞的所有欄位。
+
 
 
 

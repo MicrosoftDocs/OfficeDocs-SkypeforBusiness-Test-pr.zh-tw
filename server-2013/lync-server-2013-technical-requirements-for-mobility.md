@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2014-07-24_
 
 行動使用者會遇到各種需要特別規劃的行動應用程式案例。例如，某人下班時，可能會透過 3G 網路連線，開始使用行動應用程式，上班時再切換至公司的 Wi-Fi 網路，離開辦公室時再切換回 3G。您需要規劃環境來支援像這樣的網路轉換，以確保一致的使用者經驗。本節說明支援行動應用程式和自動探索行動資源時，必須具備的基礎結構需求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然行動應用程式也可以連線至其他 Lync Server 2013 服務，但是這個將所有行動應用程式 Web 要求傳送至相同外部 Web 完整網域名稱 (FQDN) 的需求，僅適用於 Lync Server 2013 Mobility Service。其他行動服務不需要此設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然行動應用程式也可以連線至其他 Lync Server 2013 服務，但是這個將所有行動應用程式 Web 要求傳送至相同外部 Web 完整網域名稱 (FQDN) 的需求，僅適用於 Lync Server 2013 Mobility Service。其他行動服務不需要此設定。
+
 
 
 如果您使用 Lync Server 2013 提供的 Lync Mobile，硬體負載平衡器的 Cookie 相關性要求將大幅減少，而且您可以替換傳輸控制通訊協定 (TCP) 相關性。雖然仍然可以使用 Cookie 相關性，但是 Web 服務不再需要此相關性。

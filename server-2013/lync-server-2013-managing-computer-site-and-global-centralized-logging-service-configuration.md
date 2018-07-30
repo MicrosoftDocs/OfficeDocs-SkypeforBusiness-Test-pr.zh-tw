@@ -58,18 +58,9 @@ _**上次修改主題的時間：** 2014-02-04_
 
 網站和全域範圍均定義於 **New-**、**Set-** 及 **Remove-**集中記錄服務 Cmdlet 中。下列範例示範如何設定網站和全域範圍。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>顯示的命令可能包含其他小節中所涵蓋的參數和概念。範例命令可以用來示範如何使用 <strong>–Identity</strong> 參數來定義範圍，而包含其他參數能讓範例更完整且可指定範圍。如需關於 <strong>Set-CsClsConfiguration</strong> Cmdlet 的詳細資訊，請參閱作業文件中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 顯示的命令可能包含其他小節中所涵蓋的參數和概念。範例命令可以用來示範如何使用 <strong>–Identity</strong> 參數來定義範圍，而包含其他參數能讓範例更完整且可指定範圍。如需關於 <strong>Set-CsClsConfiguration</strong> Cmdlet 的詳細資訊，請參閱作業文件中的 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration">Set-CsClsConfiguration</a>。
+
 
 
 ## 擷取目前的 集中記錄服務 設定
@@ -136,18 +127,9 @@ _**上次修改主題的時間：** 2014-02-04_
     
         Set-CsClsConfiguration -Identity "site/Redmond" -EtlFileRolloverSizeMB 40 -EtlFileFolder "C:\LogFiles\Tracing" 
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如範例中所述，記錄檔的預設位置為 %TEMP%\Tracing。但是，由於它實際上是正在寫入檔案的 CLSAgent 且 CSLAgent 會以網路服務形式來執行，所以 %TEMP% 變數會延伸至 %WINDIR%\ServiceProfiles\NetworkService\AppData\Local。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如範例中所述，記錄檔的預設位置為 %TEMP%\Tracing。但是，由於它實際上是正在寫入檔案的 CLSAgent 且 CSLAgent 會以網路服務形式來執行，所以 %TEMP% 變數會延伸至 %WINDIR%\ServiceProfiles\NetworkService\AppData\Local。
+    
 
 
 此命令會告知 Redmond 網站中每個電腦和集區上的 CLSAgent，將追蹤檔上變換值的大小設定為 40 MB。其他網站上電腦和集區將不會受到此命令所影響，並且將繼續使用目前設定的追蹤記錄變換值，此值是預設定義 (20 MB) 或在記錄工作階段開始期間所定義。
@@ -160,18 +142,9 @@ _**上次修改主題的時間：** 2014-02-04_
     
         New-CsClsConfiguration -Identity <scope and name> [CsClsConfiguration options for this site]
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>New-CsClsConfiguration 讓使用者可以存取大量的選用組態設定。如需關於設定選項的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">瞭解集中式記錄服務組態設定</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > New-CsClsConfiguration 讓使用者可以存取大量的選用組態設定。如需關於設定選項的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration">Get-CsClsConfiguration</a> 和<a href="lync-server-2013-understanding-centralized-logging-service-configuration-settings.md">瞭解集中式記錄服務組態設定</a>。
+    
     
     例如，若要建立新設定來定義適用於快取檔案的網路資料夾、記錄檔的變換期間，以及記錄檔的變換大小，您可以輸入：
     
@@ -191,18 +164,9 @@ _**上次修改主題的時間：** 2014-02-04_
     
         Remove-CsClsConfiguration -Identity "site:Redmond"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此為在＜建立新的集中記錄服務設定＞程序中所建立的新設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此為在＜建立新的集中記錄服務設定＞程序中所建立的新設定。
+    
 
 
 如果您選擇移除網站層級的設定，網站將使用全域設定。

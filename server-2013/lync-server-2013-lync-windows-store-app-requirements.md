@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-12-03_
 
 具有 Lync Server 內部部署的組織必須符合下列需求，才能支援 Lync Windows 市集應用程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>針對 Lync Server 2010，請於所有伺服器上執行 Lync Server 2010 累計更新 (2012 年 2 月) (可於 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</a> 取得) 或更新版本。若要讓使用者能夠加入會議，請於伺服器上執行 Lync Server 2010 累計更新 (2012 年 10 月) (可於 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</a> 取得)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 針對 Lync Server 2010，請於所有伺服器上執行 Lync Server 2010 累計更新 (2012 年 2 月) (可於 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2670352</a> 取得) 或更新版本。若要讓使用者能夠加入會議，請於伺服器上執行 Lync Server 2010 累計更新 (2012 年 10 月) (可於 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;kbid=2737915</a> 取得)。
+
 
 
   - 在伺服器上啟用自動探索、Lync Web App 和 Web 票證服務。

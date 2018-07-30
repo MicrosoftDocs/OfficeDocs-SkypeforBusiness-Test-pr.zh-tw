@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-10-29_
 
 5.  在 **\[準備樹系\]** 頁面上，按 **\[下一步\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>樹系準備可讓您選擇要放置 Lync Server 2013 之萬用群組的位置。請選擇和組織需求一致的位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 樹系準備可讓您選擇要放置 Lync Server 2013 之萬用群組的位置。請選擇和組織需求一致的位置。
+    
 
 
 6.  在 **\[執行命令\]** 頁面上，尋找 **\[工作狀態：完成\]** ，然後按一下 **\[檢視記錄檔\]** 。

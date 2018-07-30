@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 3.  啟動部署精靈。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果出現訊息告知必須安裝 Microsoft Visual C++ 可轉散發套件，請按一下 <strong>[是]</strong> 。在下一個對話方塊中，您可以接受預設的 <strong>[安裝位置]</strong> ，也可以按一下 <strong>[瀏覽]</strong> 選取其他位置，然後按一下 <strong>[安裝]</strong> 。在下一個對話方塊中，選取 <strong>[我接受授權合約中的條款]</strong> 核取方塊，然後按一下 <strong>[確定]</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果出現訊息告知必須安裝 Microsoft Visual C++ 可轉散發套件，請按一下 <strong>[是]</strong> 。在下一個對話方塊中，您可以接受預設的 <strong>[安裝位置]</strong> ，也可以按一下 <strong>[瀏覽]</strong> 選取其他位置，然後按一下 <strong>[安裝]</strong> 。在下一個對話方塊中，選取 <strong>[我接受授權合約中的條款]</strong> 核取方塊，然後按一下 <strong>[確定]</strong> 。
+    
 
 
 4.  在 \[部署精靈\] 中按一下 \[安裝或更新 Lync Server 系統\] 。

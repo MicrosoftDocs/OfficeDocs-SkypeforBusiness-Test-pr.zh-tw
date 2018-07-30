@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
   - 為了發行 Enterprise Edition 前端集區，SQL Server 的後端伺服器必須在線上加入您部署伺服器的網域中，而且設定適當的防火牆規則，讓遠端使用者可以使用。如需指定防火牆例外的詳細資訊，請參閱＜ [瞭解與 Lync Server 2013 搭配使用時之 SQL Server 的防火牆需求](lync-server-2013-understanding-firewall-requirements-for-sql-server.md)＞。如需其他有關設定 SQL Server 的詳細資訊，請參閱＜ [為 Lync Server 2013 設定 SQL Server](lync-server-2013-configure-sql-server-for-lync-server.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Standard Edition 伺服器 有一個組合的資料庫，會接受發行的組態。您必須先在 Lync Server 部署精靈 中執行 [準備第一個 Standard Edition Server] 設定工作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Standard Edition 伺服器 有一個組合的資料庫，會接受發行的組態。您必須先在 Lync Server 部署精靈 中執行 [準備第一個 Standard Edition Server] 設定工作。
+    
 
 
 ## 請參閱

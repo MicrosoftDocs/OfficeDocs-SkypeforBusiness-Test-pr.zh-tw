@@ -21,32 +21,14 @@ _**上次修改主題的時間：** 2012-10-04_
 
 { 中繼伺服器 FQDN, 中繼伺服器聆聽連接埠 (TLS 或 TCP)：閘道 IP 與 FQDN、閘道聆聽連接埠}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設您已設定 PSTN 閘道與根主幹，且至少有一個組合的或獨立式的 中繼伺服器，或如同部署文件的＜ <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 中於拓撲產生器內定義閘道</a>＞所述的集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主題假設您已設定 PSTN 閘道與根主幹，且至少有一個組合的或獨立式的 中繼伺服器，或如同部署文件的＜ <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 中於拓撲產生器內定義閘道</a>＞所述的集區。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設您已在至少一個中央網站中安裝至少一個 前端集區或 Standard Edition 伺服器，如同部署文件所述的＜ <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定義和設定前端集區或 Standard Edition Server</a>＞與＜ <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 本主題假設您已在至少一個中央網站中安裝至少一個 前端集區或 Standard Edition 伺服器，如同部署文件所述的＜ <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定義和設定前端集區或 Standard Edition Server</a>＞與＜ <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>＞。
+
 
 
 ## 定義 中繼伺服器與閘道對等之間的其他主幹
@@ -59,18 +41,9 @@ _**上次修改主題的時間：** 2012-10-04_
 
 3.  在 \[定義新主幹\] 中，指定一個好記的名稱，專門識別主幹。兩個主幹不能共用同一個名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您指定傳輸層安全性 (TLS) 作為傳輸類型，則必須指定 中繼伺服器對等的 FQDN，而非 IP 位址。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您指定傳輸層安全性 (TLS) 作為傳輸類型，則必須指定 中繼伺服器對等的 FQDN，而非 IP 位址。
+    
 
 
 4.  在 \[相關的 PSTN 閘道\] 下，選擇 PSTN 閘道對等，與此主幹建立關聯。
@@ -81,49 +54,22 @@ _**上次修改主題的時間：** 2012-10-04_
 
 6.  在 \[SIP 傳輸通訊協定\] 下，按一下對等使用的傳輸類型。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基於安全性理由，強烈建議您將對等部署至可使用 TLS 的 中繼伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 基於安全性理由，強烈建議您將對等部署至可使用 TLS 的 中繼伺服器。
+    
 
 
 7.  在 \[相關中繼伺服器\] 下選擇 中繼伺服器集區，與此對等的根主幹建立關聯
 
 8.  在 \[相關的中繼伺服器連接埠\] 下，輸入 中繼伺服器要從對等接收 SIP 訊息的聆聽連接埠。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 Lync Server 2013 支援多個主幹，因此兩個不同主幹名稱的主幹不能以同一個 [相關 中繼伺服器連接埠] 與 [IP/PSTN 閘道的聆聽連接埠] 設定</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 Lync Server 2013 支援多個主幹，因此兩個不同主幹名稱的主幹不能以同一個 [相關 中繼伺服器連接埠] 與 [IP/PSTN 閘道的聆聽連接埠] 設定
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 Lync Server 2013 支援多個支幹，因此 中繼伺服器可定義多個 SIP 訊號連接埠，以便與多個對等通訊。定義主幹時，[相關 中繼伺服器連接埠] 號碼不得超過 中繼伺服器允許各個通訊協定所有的聆聽連接埠範圍。此連接埠範圍是在 Lync Server 2013 與 中繼伺服器集區下設定。在相關的 中繼伺服器集區上按滑鼠右鍵，然後選擇 [編輯內容] 。在 [聆聽連接埠] 欄位中指定連接埠範圍。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!NOTE]  
+    > 由於 Lync Server 2013 支援多個支幹，因此 中繼伺服器可定義多個 SIP 訊號連接埠，以便與多個對等通訊。定義主幹時，[相關 中繼伺服器連接埠] 號碼不得超過 中繼伺服器允許各個通訊協定所有的聆聽連接埠範圍。此連接埠範圍是在 Lync Server 2013 與 中繼伺服器集區下設定。在相關的 中繼伺服器集區上按滑鼠右鍵，然後選擇 [編輯內容] 。在 [聆聽連接埠] 欄位中指定連接埠範圍。
+    
 
 
 9.  按一下 \[確定\] 。

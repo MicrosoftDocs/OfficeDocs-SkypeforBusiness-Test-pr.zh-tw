@@ -81,18 +81,9 @@ Standard Edition Server 可讓您使用立即訊息 (IM)、顯示狀態、會議
 
 後端伺服器是執行 Microsoft SQL Server 的資料庫伺服器，提供前端集區的資料庫服務。後端伺服器可當作集區使用者與會議資料的備份存放區，亦為回應群組等其他資料庫的主要存放區。您可有單一後端伺服器，但建議使用 SQL Server 鏡像的解決方案來進行容錯移轉。後端伺服器無法執行任何 Lync Server 軟體。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您不要將 Lync Server 資料庫與其他資料庫組合，如果這麼做，可能會影響可用性與效能。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建議您不要將 Lync Server 資料庫與其他資料庫組合，如果這麼做，可能會影響可用性與效能。
+
 
 
 後端伺服器資料庫中所儲存的資訊包括目前狀態資訊、使用者的連絡人清單、會議資料 (包括所有目前會議狀態的持續性資料) 以及會議排程資料。

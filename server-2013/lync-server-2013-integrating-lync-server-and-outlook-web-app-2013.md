@@ -33,18 +33,9 @@ Microsoft Lync 2013 也可與 Exchange 2010 和 Outlook 2010 搭配使用。不�
 
 Lync Server 2013 可以自動探索任何裝載 SipName UN 撥號對應表的 Exchange 伺服器；這些伺服器會自動新增至 Lync Server 已知伺服器清單。您不需要建立信任的應用程式集區，並且將這些伺服器新增至已知伺服器清單。事實上，這麼做會造成 Outlook Web App 整合停止運作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這是因為現在 Lync Server 拓撲對同一部電腦將會有兩個項目︰自動探索的項目和手動新增的項目。如果要解決這個問題，使得 Outlook Web App 能再次運作，則可使用 Windows PowerShell 移除伺服器的信任集區和信任應用程式項目。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplicationPool">Remove-CsTrustedApplicationPool</a>＞和＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplication">Remove-CsTrustedApplication</a>＞ Cmdlet 的說明主題。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這是因為現在 Lync Server 拓撲對同一部電腦將會有兩個項目︰自動探索的項目和手動新增的項目。如果要解決這個問題，使得 Outlook Web App 能再次運作，則可使用 Windows PowerShell 移除伺服器的信任集區和信任應用程式項目。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplicationPool">Remove-CsTrustedApplicationPool</a>＞和＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrustedApplication">Remove-CsTrustedApplication</a>＞ Cmdlet 的說明主題。
+
 
 
 如果這兩項服務在不同的電腦上執行，則在確認已安裝 Unified Communications Managed API 4.0 Runtime 之後，接著必須建立 Lync Server 信任應用程式集區以及與 Outlook Web App 關聯的信任應用程式；如此會將伺服器新增至已知伺服器清單。如果要這樣做，請首先在 Lync Server 管理命令介面中執行類似下列的命令：
@@ -73,18 +64,9 @@ Lync Server 2013 可以自動探索任何裝載 SipName UN 撥號對應表的 Ex
 
     Get-OwaVirtualDirectory | Set-OwaVirtualDirectory -InstantMessagingEnabled $True -InstantMessagingType OCS
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您安裝 Outlook Web App 時，預設為啟用立即訊息；也就是說，InstantMessagingEnabled 屬性會設為 True。不過，您還是必須執行上述命令，以將立即訊息類型設為 OCS。InstantMessagingType 預設是設為 None。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 當您安裝 Outlook Web App 時，預設為啟用立即訊息；也就是說，InstantMessagingEnabled 屬性會設為 True。不過，您還是必須執行上述命令，以將立即訊息類型設為 OCS。InstantMessagingType 預設是設為 None。
+
 
 
 接下來，您必須新增下列兩行至 Outlook Web App 的 Web.config 檔案 (此檔案通常位於資料夾 C:\\Program Files\\Microsoft\\Exchange Server\\V15\\ClientAccess\\Owa 中)。這兩行應該新增在 Web.config 檔案的 \<AppSettings\> 節點下，而且此程序只應在已安裝 Outlook Web App 的後端伺服器上執行：

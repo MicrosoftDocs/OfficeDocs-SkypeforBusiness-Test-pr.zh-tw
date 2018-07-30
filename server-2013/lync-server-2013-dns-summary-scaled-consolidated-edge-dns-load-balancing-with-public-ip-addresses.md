@@ -53,18 +53,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     Web Conferencing Edge Service 與 A/V Edge 服務 私人 IP 位址就是 Windows Server 裡，\[區域連線內容\] 的 \[網際網路通訊協定第 4 版 (TCP/IPv4)\] 與 \[網際網路通訊協定第 6 版 (TCP/IPv6)\] 內容中 \[進階\] 區段裡的其他 IP 位址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>上述的三個 Edge Service 介面確實能夠使用單一 IP 位址 (但不建議這樣做)。這樣做，雖能節省 IP 位址，但每個服務都要有不同的連接埠號碼。預設連接埠號碼為 443/TCP，其可確保大部分遠端防火牆均允許流量通過。將連接埠值變更為 (例如) 5061/TCP 以用於 Access Edge Service、444/TCP 以用於 Web Conferencing Edge Service 以及 443/TCP 以用於 A/V Edge 服務，可能會對遠端使用者造成問題，因為其防火牆不允許來自 5061/TCP 與 444/TCP 的流量通過。此外，由於能夠根據 IP 位址進行篩選，這三個不同的 IP 位址可讓疑難排解變得更輕鬆。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 上述的三個 Edge Service 介面確實能夠使用單一 IP 位址 (但不建議這樣做)。這樣做，雖能節省 IP 位址，但每個服務都要有不同的連接埠號碼。預設連接埠號碼為 443/TCP，其可確保大部分遠端防火牆均允許流量通過。將連接埠值變更為 (例如) 5061/TCP 以用於 Access Edge Service、444/TCP 以用於 Web Conferencing Edge Service 以及 443/TCP 以用於 A/V Edge 服務，可能會對遠端使用者造成問題，因為其防火牆不允許來自 5061/TCP 與 444/TCP 的流量通過。此外，由於能夠根據 IP 位址進行篩選，這三個不同的 IP 位址可讓疑難排解變得更輕鬆。
+    
 
 
   - **網路介面卡 2 - 節點 2 (外部介面)**
@@ -172,18 +163,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP Access Edge Service 外部介面。DNS 自動探索同盟合作夥伴 (亦稱為「允許的 SIP 網域」，先前版本稱為增強型同盟) 所需。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必要時，重複用於含有 Lync 啟用的使用者及使用 推播通知服務或 Apple 推播通知服務的 Microsoft Lync Mobile 用戶端的所有 SIP 網域</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 必要時，重複用於含有 Lync 啟用的使用者及使用 推播通知服務或 Apple 推播通知服務的 Microsoft Lync Mobile 用戶端的所有 SIP 網域
+
 
 </div></td>
 </tr>

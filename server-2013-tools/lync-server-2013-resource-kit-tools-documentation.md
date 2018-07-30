@@ -85,18 +85,9 @@ ABSConfig 乃是圖形化使用者介面應用程式，能夠讓系統管理員�
 
 在 Lync Server 2013 ABS 設定工具中，取消核取屬性的「啟用」核取方塊即可移除該屬性 (列)。這項操作與在 Lync Server 2010 中刪除屬性列的效果相同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「啟用」核取方塊位於最右方的欄位；您可能需要向右捲動才可顯示該欄位</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 「啟用」核取方塊位於最右方的欄位；您可能需要向右捲動才可顯示該欄位
+
 
 
 ## 輸出
@@ -165,18 +156,9 @@ Bandwidth Policy Service Monitor 工具乃是 GUI 應用程式。系統管理員
 
 **\[拓撲資訊\]** 索引標籤會顯示在網路設定中所設定的所有連結清單。畫面不僅會顯示各個連結的音訊與視訊頻寬容量，另外也會同時以 KB 與容量百分比的形式顯示目前使用的頻寬。這項工具會利用色彩編碼醒目提示使用量逼近容量的連結，讓系統管理員得以快速找出該類連結。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是 Bandwidth Policy Service Monitor 工具在連線至任何已設定的頻寬原則服務時發生失敗，<strong>[機器資訊]</strong> 與 <strong>[拓撲資訊]</strong> 索引標籤就不會填入任何資訊。然而，也有可能工具在開始時能夠連線至服務，而後又失去連線。在這種情況下，系統管理員所看到的可能是過期的資訊。各個索引標籤中所顯示的<strong>上次更新</strong>時間戳記可讓系統管理員瞭解特定頻寬原則服務上次所更新的時間。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是 Bandwidth Policy Service Monitor 工具在連線至任何已設定的頻寬原則服務時發生失敗，<strong>[機器資訊]</strong> 與 <strong>[拓撲資訊]</strong> 索引標籤就不會填入任何資訊。然而，也有可能工具在開始時能夠連線至服務，而後又失去連線。在這種情況下，系統管理員所看到的可能是過期的資訊。各個索引標籤中所顯示的<strong>上次更新</strong>時間戳記可讓系統管理員瞭解特定頻寬原則服務上次所更新的時間。
+
 
 
 ## 輸出
@@ -247,18 +229,9 @@ Bandwidth Utilization Analyzer 分為兩個使用程序：
 
   - 自訂報告，可透過 BandwidthUtilizationAnalyzer.xlsm 執行此操作
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議切勿由使用者手動啟動 BandwidthUtilizationAnalyzer.xlsm。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建議切勿由使用者手動啟動 BandwidthUtilizationAnalyzer.xlsm。
+
 
 
 ## 啟動 Bandwidth Utilization Analyzer
@@ -295,18 +268,9 @@ WanLinkLogCollector.exe 的使用步驟有三：
 
 ![頻寬使用量分析中的檔案目錄](images/JJ945604.d66daeac-1669-45e3-932d-3f6782840c2a(OCS.15).jpg "頻寬使用量分析中的檔案目錄")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>確認已將足夠的伺服器記錄與暫時檔案存放區資料夾的檔案存取權限提供給工具使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 確認已將足夠的伺服器記錄與暫時檔案存放區資料夾的檔案存取權限提供給工具使用者。
+
 
 
 ## 步驟 3 - 收集記錄並啟動報告檢視器
@@ -579,18 +543,9 @@ DBAnalyze 乃是有助於系統管理員收集 Lync Server 2013 資料庫相關�
 
   - **診斷模式**   建立包含下列相關資訊的報告：表格 (記錄數、分割、資料大小，以及索引大小)、資料與記錄檔大小、上次備份時間、執行 Microsoft Office Communications Server 的伺服器上的連絡人通訊群組、權限平均數、連絡人、容器、訂閱、發行集、每名使用者端點、任何未正確裝載的使用者、無法路由的使用者、每名使用者召集的平均會議數、排程會議、作用中會議，以及資料庫版本。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行診斷模式可能會影響伺服器效能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 執行診斷模式可能會影響伺服器效能。
+    
 
 
   - **使用者資料模式**  針對指定的使用者或連絡清單與權限清單中有該名使用者的使用者報告連絡人、容器、訂閱、發行集、權限以及連絡群組資料。此模式另外也會報告使用者召集或受邀之會議的摘要資料。
@@ -629,18 +584,9 @@ DBAnalyze 乃是有助於系統管理員收集 Lync Server 2013 資料庫相關�
 
 ![Dbanalyze.exe 的權限表。](images/JJ945604.b8931e9e-834e-4dec-8a84-2fc47d1613e9(OCS.15).jpg "Dbanalyze.exe 的權限表。")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行 <strong>/report:disk</strong> 模式必須要有本機系統管理員帳戶。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 執行 <strong>/report:disk</strong> 模式必須要有本機系統管理員帳戶。
+
 
 
 ## 範例
@@ -680,18 +626,9 @@ ImportStorageServiceData Resource Kit 工具可將已從存放服務 (LYSS) 清�
 
 安裝 Lync Server 2013 Resource Kit 工具。執行這項工具的機器必須已加入網域且安裝 Lync Server 與 Lync Server 管理命令介面。這項工具會透過管理命令介面而使用 Cmdlet 識別集區中的所有前端伺服器。再者，執行這項工具的機器所在集區必須安裝 **RtcLocal** 資料庫。這項工具將利用這個資料庫擷取集區之 WEBSERVICE 檔案共用區的位置。此外，使用這項工具前，必須先透過 **Enable-PSRemoting** 在各個前端伺服器上啟用 Windows PowerShell，執行工具所在的機器亦是如此。否則，從這項工具遠端執行 Windows PowerShell 命令將會發生失敗。集區中的所有前端伺服器之　Windows PowerShell 遠端執行功能會在完成後加以關閉。最後，叫用這項工具的帳戶或認證對於工具執行所在的集區之網路服務檔案共用區必須擁有讀取/寫入權限，否則這項工具將會因為 IO 權限錯誤而失敗。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Windows Server 2012 中，依預設會啟用 Windows PowerShell 遠端執行功能，但在 Windows Server 2008 作業系統 則不會啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Windows Server 2012 中，依預設會啟用 Windows PowerShell 遠端執行功能，但在 Windows Server 2008 作業系統 則不會啟用。
+
 
 
 ## 範例
@@ -1129,34 +1066,16 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
   - 啟用/停用/修改小組通話群組設定
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具的新功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 SEFAUtil 工具的新功能
+    
 
 
   - 啟用/停用/修改同時響鈴設定 (包括目的號碼)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具的新功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 SEFAUtil 工具的新功能
+    
 
 
   - 啟用/停用/修改群組來電接聽設定
@@ -1209,36 +1128,18 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
     
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用於執行 SEFAUtil 工具的電腦均必須安裝 UCMA 3.0</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 用於執行 SEFAUtil 工具的電腦均必須安裝 UCMA 3.0
+    
 
 
 2.  在拓撲中必須針對 SEFAUtil 工具定義信任的應用程式。為了將 SEFAUtil 定義為新信任的應用程式，請使用 Lync Server 管理命令介面並執行下列 Cmdlet：
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如有需要，可使用其他連接埠。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如有需要，可使用其他連接埠。
+    
 
 
 3.  拓撲變更需要加以啟用。若要啟用拓撲變更，可透過 Lync Server 管理命令介面執行下列 Cmdlet 而完成：
@@ -1263,18 +1164,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 下列命令會顯示使用者的通話處理。`SEFAUtil.exe /server:lyncserver.contoso.com katarina@contoso.com`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此範例會使用 <strong>/server</strong> 參數指定所要連線的 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此範例會使用 <strong>/server</strong> 參數指定所要連線的 Lync Server。
+
 
 
 **輸出**
@@ -1361,18 +1253,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 此範例會移除代理人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移除最後一個代理人後，代理人響鈴功能也會自動停用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 移除最後一個代理人後，代理人響鈴功能也會自動停用。
+
 
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
@@ -1405,18 +1288,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /setsimulringdestination:+14255550126 /enablesimulring
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於啟用同時響鈴的使用者，若要變更同時響鈴的目的號碼，請以 /enablesimulring 參數保留命令，否則目的號碼將無法變更。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 對於啟用同時響鈴的使用者，若要變更同時響鈴的目的號碼，請以 /enablesimulring 參數保留命令，否則目的號碼將無法變更。
+
 
 
 **輸出**
@@ -1448,18 +1322,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /addteammember:anders@contoso.com /simulringteam
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>將成員新增至使用者的小組通話群組會將使用者的同時響鈴設定自動切換至小組通話群組的響鈴。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 將成員新增至使用者的小組通話群組會將使用者的同時響鈴設定自動切換至小組通話群組的響鈴。
+
 
 
 **輸出**
@@ -1475,18 +1340,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removeteammember:anders@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是所要移除的成員為小組通話群組的唯一成員，則小組通話群組的同時響鈴功能將會自動停用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是所要移除的成員為小組通話群組的唯一成員，則小組通話群組的同時響鈴功能將會自動停用。
+
 
 
 **輸出**
@@ -1516,18 +1372,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /simulringteam
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是該名使用者的小組通話群組沒有成員，小組通話功能將無法啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是該名使用者的小組通話群組沒有成員，小組通話功能將無法啟用。
+
 
 
 **輸出**
@@ -1565,18 +1412,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablegrouppickup
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>停用使用者的群組來電接聽功能後，系統不會保留指派給該使用者的群組號碼。若是稍後要重新啟用該使用者的群組來電接聽功能，您必須以 /enablegrouppickup 參數重新指派群組號碼。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 停用使用者的群組來電接聽功能後，系統不會保留指派給該使用者的群組號碼。若是稍後要重新啟用該使用者的群組來電接聽功能，您必須以 /enablegrouppickup 參數重新指派群組號碼。
+
 
 
     User Aor: sip:katarina@contoso.com
@@ -1676,18 +1514,9 @@ Unassigned Number Announcements Migration 工具為 Windows PowerShell 指令碼
 
 1.  將位於來源伺服器或集區的宣告應用程式之未指派的號碼宣告所使用的所有音訊檔案移至目的地伺服器或集區的檔案存放區。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>音訊檔案在複製至目的地集區後，即會從來源集區中移除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 音訊檔案在複製至目的地集區後，即會從來源集區中移除。
+    
 
 
 2.  將位於來源伺服器或集區的宣告應用程式所設定之所有未指派的號碼宣告移至目的地伺服器或集區。
@@ -1756,18 +1585,9 @@ Move-CsAnnouncementConfiguration 指令碼需要下表中所述的兩個參數�
 
 4.  在集區之間移動單一使用者時一併移動與該使用者相關聯的所有 Web 會議資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在集區之間移動單一使用者時，Lync Server 2010 的 Resource Kit 工具 支援移動與該使用者相關聯的所有 Web 會議資料。該功能在這項工具中現已取代為 <strong>MoveConferenceData</strong> 參數。如需這項參數的詳細資訊，請見 <a href="https://technet.microsoft.com/zh-tw/library/gg398528(v=ocs.15)">Move-CsUser</a> Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在集區之間移動單一使用者時，Lync Server 2010 的 Resource Kit 工具 支援移動與該使用者相關聯的所有 Web 會議資料。該功能在這項工具中現已取代為 <strong>MoveConferenceData</strong> 參數。如需這項參數的詳細資訊，請見 <a href="https://technet.microsoft.com/zh-tw/library/gg398528(v=ocs.15)">Move-CsUser</a> Cmdlet。
+
 
 
 這項工具僅會刪除非使用中會議的會議資料。作用中會議 (或工作階段中的會議) 無法刪除。

@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2013-06-24_
 
 如果您之後想要暫時或永久阻止同盟網域的使用者存取，則可以停用組織的同盟。利用本節中的程序即可啟用或停用組織的同盟使用者存取，包括為組織指定要支援的適當同盟選項。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>啟用貴組織的同盟，只是指定執行 Access Edge 服務的伺服器支援同盟網域的路由。除非您也至少設定一個原則來支援同盟使用者存取，否則同盟網域中的使用者無法參與您組織內的 IM 或會議。除非您也至少設定一個原則來支援公用 IM 連線，否則公用 IM 服務提供者的使用者無法參與您組織內的 IM 或會議。除非您設定提供路由資訊之裝載的語音信箱原則，否則 Lync Server 無法為信箱位於裝載之 Exchange 服務的使用者，提供來電接聽、Outlook 語音存取 (包括語音信箱) 或自動語音應答服務。如需關於設定與其他組織中的同盟網域使用者進行通訊之原則的詳細資訊，請參閱作業文件中的 <a href="lync-server-2013-manage-sip-federated-domains-for-your-organization.md">在 Lync Server 2013 中管理組織的 SIP 同盟網域</a>。另外，如果您想要支援與 IM 服務提供者的使用者進行通訊，則必須設定原則來支援此通訊，同時針對要支援的個別服務提供者設定支援。如需詳細資訊，請參閱作業文件中的 <a href="lync-server-2013-manage-sip-federated-providers-for-your-organization.md">在 Lync Server 2013 中管理組織的 SIP 同盟提供者</a>。如需關於建立裝載之語音信箱原則的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-manage-hosted-voice-mail-policies.md">在 Lync Server 2013 中管理裝載語音信箱原則</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 啟用貴組織的同盟，只是指定執行 Access Edge 服務的伺服器支援同盟網域的路由。除非您也至少設定一個原則來支援同盟使用者存取，否則同盟網域中的使用者無法參與您組織內的 IM 或會議。除非您也至少設定一個原則來支援公用 IM 連線，否則公用 IM 服務提供者的使用者無法參與您組織內的 IM 或會議。除非您設定提供路由資訊之裝載的語音信箱原則，否則 Lync Server 無法為信箱位於裝載之 Exchange 服務的使用者，提供來電接聽、Outlook 語音存取 (包括語音信箱) 或自動語音應答服務。如需關於設定與其他組織中的同盟網域使用者進行通訊之原則的詳細資訊，請參閱作業文件中的 <a href="lync-server-2013-manage-sip-federated-domains-for-your-organization.md">在 Lync Server 2013 中管理組織的 SIP 同盟網域</a>。另外，如果您想要支援與 IM 服務提供者的使用者進行通訊，則必須設定原則來支援此通訊，同時針對要支援的個別服務提供者設定支援。如需詳細資訊，請參閱作業文件中的 <a href="lync-server-2013-manage-sip-federated-providers-for-your-organization.md">在 Lync Server 2013 中管理組織的 SIP 同盟提供者</a>。如需關於建立裝載之語音信箱原則的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-manage-hosted-voice-mail-policies.md">在 Lync Server 2013 中管理裝載語音信箱原則</a>。
+
 
 
 ## 啟用或停用組織的同盟使用者存取

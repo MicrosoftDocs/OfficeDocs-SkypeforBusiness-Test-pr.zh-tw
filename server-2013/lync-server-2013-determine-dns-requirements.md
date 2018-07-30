@@ -17,36 +17,18 @@ _**上次修改主題的時間：** 2015-03-09_
 
 使用下列流程圖來判斷網域名稱系統 (DNS) 需求。Lync Server 2013 累計更新 (2013 年 2 月) 的變更會在適用的地方指明。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Lync Server 2013 支援使用 IPv6 位址。若要使用 IPv6 位址，您也必須提供對 IPv6 DNS 的支援並設定 DNS 主機 AAAA (稱為「quad-A」) 記錄。在同時使用 IPv4 和 IPv6 的部署中，最好是同時設定和維護 IPv4 及主機 A，並且設定和維護 IPv6 及主機 AAAA。即使您的部署已完全轉換為 IPv6，若外部使用者仍會使用 IPv4，可能仍然需要 IPv4 DNS 主機記錄。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft Lync Server 2013 支援使用 IPv6 位址。若要使用 IPv6 位址，您也必須提供對 IPv6 DNS 的支援並設定 DNS 主機 AAAA (稱為「quad-A」) 記錄。在同時使用 IPv4 和 IPv6 的部署中，最好是同時設定和維護 IPv4 及主機 A，並且設定和維護 IPv6 及主機 AAAA。即使您的部署已完全轉換為 IPv6，若外部使用者仍會使用 IPv4，可能仍然需要 IPv4 DNS 主機記錄。
+
 
 
 **決定 DNS 需求流程圖**
 
 ![DNS 需求流程圖](images/Gg398758.175782ac-363e-408a-912f-8991bf152970(OCS.15).jpg "DNS 需求流程圖")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，未加入網域之電腦的電腦名稱是主機名稱，而不是完整網域名稱 (FQDN)。拓撲產生器 會使用 FQDN，而不是主機名稱。因此，在要部署為 Edge Server 的電腦 (未加入網域) 名稱中，您必須設定 DNS 尾碼。在指派 Lync Server、Edge Server 及集區的 FQDN 時，<strong>只使用標準字元</strong> (包括 A–Z、a–z、0–9 以及連字號)。請勿使用 Unicode 字元或底線。外部 DNS 和公用 CA (也就是當 FQDN 必須指派至憑證的 SN 時) 通常不支援 FQDN 中的非標準字元。如需其他詳細資訊，請參閱＜<a href="lync-server-2013-configure-dns-host-records.md">為 Lync Server 2013 設定 DNS 主機記錄</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 根據預設，未加入網域之電腦的電腦名稱是主機名稱，而不是完整網域名稱 (FQDN)。拓撲產生器 會使用 FQDN，而不是主機名稱。因此，在要部署為 Edge Server 的電腦 (未加入網域) 名稱中，您必須設定 DNS 尾碼。在指派 Lync Server、Edge Server 及集區的 FQDN 時，<strong>只使用標準字元</strong> (包括 A–Z、a–z、0–9 以及連字號)。請勿使用 Unicode 字元或底線。外部 DNS 和公用 CA (也就是當 FQDN 必須指派至憑證的 SN 時) 通常不支援 FQDN 中的非標準字元。如需其他詳細資訊，請參閱＜<a href="lync-server-2013-configure-dns-host-records.md">為 Lync Server 2013 設定 DNS 主機記錄</a>＞。
+
 
 
 ## Lync 用戶端如何尋找服務
@@ -85,18 +67,9 @@ Lync Windows 市集應用程式完全改變處理程序，因為它使用兩筆�
 
 如果已安裝 Lync Server 2013 累計更新 (2013 年 2 月)，則自動探索服務也會將參照傳回內部/UCWA、外部/UCWA，以及 UCWA。這些項目參考 Unified Communications Web API (UCWA) Web 元件。目前，僅會使用項目 UCWA，並提供 Web 元件的 URL 參考。UCWA 是由 Lync 2013 Mobile 用戶端所使用，而非 Lync 2010 Mobile 用戶端所使用之 Mcx Mobility Service。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建立 SRV 記錄時，請切記，這些記錄必須指向建立 DNS SRV 記錄之相同網域中的 DNS A 和 AAAA (如果您使用 IPv6 定址) 記錄。例如，如果 SRV 記錄位於 contoso.com 中，則其指向的 A 和 AAAA (如果您使用 IPv6 定址) 記錄不可位於 fabrikam.com 中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建立 SRV 記錄時，請切記，這些記錄必須指向建立 DNS SRV 記錄之相同網域中的 DNS A 和 AAAA (如果您使用 IPv6 定址) 記錄。例如，如果 SRV 記錄位於 contoso.com 中，則其指向的 A 和 AAAA (如果您使用 IPv6 定址) 記錄不可位於 fabrikam.com 中。
+
 
 
 <table>
@@ -113,18 +86,9 @@ Lync Windows 市集應用程式完全改變處理程序，因為它使用兩筆�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然行動應用程式也可以連線至其他 Lync Server 2013 服務 (例如通訊錄服務)，但是只有 Mobility Service 的內部行動應用程式 Web 要求才會前往外部 Web FQDN。其他服務要求 (例如通訊錄要求) 不需要此設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然行動應用程式也可以連線至其他 Lync Server 2013 服務 (例如通訊錄服務)，但是只有 Mobility Service 的內部行動應用程式 Web 要求才會前往外部 Web FQDN。其他服務要求 (例如通訊錄要求) 不需要此設定。
+
 
 
 行動裝置支援手動探索服務。在此情況下，每位使用者必須使用完整的內部和外部自動探索服務 URI (包括通訊協定和路徑) 來設定行動裝置設定，如下所示：
@@ -139,18 +103,9 @@ Lync Windows 市集應用程式完全改變處理程序，因為它使用兩筆�
 
 Split-brain DNS 有數個一般熟知的名稱，例如，split DNS 或 split-horizon DNS。簡單來說，它說明含有兩個 DNS 區域的 DNS 設定，這兩個 DNS 區域具備相同的命名空間，但有一個 DNS 區域僅服務內部要求，而另一個 DNS 區域僅服務外部要求。不過，內部 DNS 中包含的許多 DNS SRV 和 A 記錄將不會包含在外部 DNS 中，反之亦然。如果相同的 DNS 記錄 (例如，www.contoso.com) 同時存在於內部與外部 DNS，則傳回的 IP 位址會根據初始查詢的位置 (內部或外部) 而不同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Split-Brain DNS 目前不支援行動性，具體而言，即為 LyncDiscover 和 LyncDiscoverInternal DNS 記錄。LyncDiscover 必須定義於外部 DNS 伺服器上，而 LyncDiscoverInternal 必須定義於內部 DNS 伺服器上。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Split-Brain DNS 目前不支援行動性，具體而言，即為 LyncDiscover 和 LyncDiscoverInternal DNS 記錄。LyncDiscover 必須定義於外部 DNS 伺服器上，而 LyncDiscoverInternal 必須定義於內部 DNS 伺服器上。
+
 
 
 就這些主題的目的而言，將使用 split-brain DNS 一詞。
@@ -213,18 +168,9 @@ Split-brain DNS 有數個一般熟知的名稱，例如，split DNS 或 split-ho
 
   - **群組原則物件**   使用群組原則物件 (GPO) 來填寫正確的伺服器值。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此選項不會啟用自動設定，但會自動化手動組態的程序，因此，如果採用此方法，則不需要與自動設定相關聯的 SRV 記錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此選項不會啟用自動設定，但會自動化手動組態的程序，因此，如果採用此方法，則不需要與自動設定相關聯的 SRV 記錄。
+    
 
 
   - **相符的內部區域**   在內部 DNS 中建立一個區域來符合外部 DNS 區域 (例如，contoso.com)，並建立與自動設定所使用之 Lync Server 2013 集區對應的 DNS A 和 AAAA (如果您使用 IPv6 位址) 記錄。例如，如果使用者位於 pool01.contoso.net，但以 bob@contoso.com 登入 Lync，請建立名為 contoso.com 的內部 DNS 區域，然後在其中建立 pool01.contoso.com 的 DNS A 和 AAAA (如果您使用 IPv6 位址) 記錄。
@@ -249,34 +195,16 @@ Split-brain DNS 有數個一般熟知的名稱，例如，split DNS 或 split-ho
         dnscmd . /recordadd pool01.fabrikam.com. @ A 192.168.10.91
         dnscmd . /recordadd pool01.contoso.com. @ AAAA <IPv6 address>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>前端集區 FQDN 出現兩次，但各有不同的 IP 位址。這是因為使用 DNS 負載平衡的關係，如果使用硬體負載平衡，則只會有單一前端集區項目。另外，雖然前端集區 FQDN 值在 contoso.com 範例和 fabrikam.com 範例會有不同，但 IP 位址維持不變。這是因為從這兩個 SIP 網域之一登入的使用者都是以相同的前端集區執行自動設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 前端集區 FQDN 出現兩次，但各有不同的 IP 位址。這是因為使用 DNS 負載平衡的關係，如果使用硬體負載平衡，則只會有單一前端集區項目。另外，雖然前端集區 FQDN 值在 contoso.com 範例和 fabrikam.com 範例會有不同，但 IP 位址維持不變。這是因為從這兩個 SIP 網域之一登入的使用者都是以相同的前端集區執行自動設定。
+
 
 
 如需詳細資訊，請參閱 DMTF 部落格文章＜Communicator 自動設定和 Split-Brain DNS＞，網址為 <http://go.microsoft.com/fwlink/?linkid=200707>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個部落格的內容及其 URL 如有任何變更，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每個部落格的內容及其 URL 如有任何變更，恕不另行通知。
+
 
 
 ## 設定網域名稱系統 (DNS) 以進行災害復原
@@ -398,18 +326,9 @@ DNS 負載平衡通常是在應用程式層級實作。應用程式 (例如，�
 
   - 如果用戶端在嘗試所有快取的項目之後無法成功連線，就會向使用者通知目前沒有執行 Lync Server 2013 的伺服器可用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>DNS 負載平衡不同於 DNS 循環配置資源 (DNS RR)，後者通常是指依賴 DNS 提供不同順序的 IP 位址 (與集區中的伺服器對應) 來進行的負載平衡。DNS RR 通常只允許負載分散，而不允許容錯移轉。例如，如果連線至由 DNS A 和 AAAA (如果您使用 IPv6 位址) 查詢所傳回的某一個 IP 位址失敗，則連線即會失敗。因此，DNS 循環配置資源本身比 DNS 負載平衡更不可靠。您可以搭配使用 DNS 循環配置資源和 DNS 負載平衡。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> DNS 負載平衡不同於 DNS 循環配置資源 (DNS RR)，後者通常是指依賴 DNS 提供不同順序的 IP 位址 (與集區中的伺服器對應) 來進行的負載平衡。DNS RR 通常只允許負載分散，而不允許容錯移轉。例如，如果連線至由 DNS A 和 AAAA (如果您使用 IPv6 位址) 查詢所傳回的某一個 IP 位址失敗，則連線即會失敗。因此，DNS 循環配置資源本身比 DNS 負載平衡更不可靠。您可以搭配使用 DNS 循環配置資源和 DNS 負載平衡。
+
 
 
 DNS 負載平衡適合用於：

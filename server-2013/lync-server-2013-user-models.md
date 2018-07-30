@@ -254,18 +254,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>75% 的會議為 Web 會議，包括使用音訊加上一些其他共同作業的形式。</p>
 <p>這些會議的其他共同作業方法包括：</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些數字相加超過 100%，因為一場會議可能採用多種共同作業方法。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這些數字相加超過 100%，因為一場會議可能採用多種共同作業方法。
+
 
 </div>
 <ul>

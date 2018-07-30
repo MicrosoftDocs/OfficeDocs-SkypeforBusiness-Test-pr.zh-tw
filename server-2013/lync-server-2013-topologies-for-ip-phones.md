@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-06-21_
 
 本節提供連線程序的概觀，並會說明 IP 電話連線至內部與外部網路的差異。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 可支援下列 IP 電話：Aastra 6721ip 公用區電話、Aastra 6725ip 電話機、HP 4110 IP 電話 (公用區電話)、HP 4120 IP 電話 (電話機)、Polycom CX600 IP 電話機、Polycom CX700 IP 電話機、Polycom CX500 IP 公用區電話以及 Polycom CX3000 IP 會議電話。這些電話中，除了 Polycom CX700 之外，所有電話皆可執行 Lync Phone Edition。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 可支援下列 IP 電話：Aastra 6721ip 公用區電話、Aastra 6725ip 電話機、HP 4110 IP 電話 (公用區電話)、HP 4120 IP 電話 (電話機)、Polycom CX600 IP 電話機、Polycom CX700 IP 電話機、Polycom CX500 IP 公用區電話以及 Polycom CX3000 IP 會議電話。這些電話中，除了 Polycom CX700 之外，所有電話皆可執行 Lync Phone Edition。
+
 
 
 下圖說明公司環境中與裝置連線功能相關的所有元件。
@@ -37,18 +28,9 @@ _**上次修改主題的時間：** 2012-06-21_
 
 ![網路內部裝置](images/Gg425740.3d88893e-df57-46e3-855a-a1d24589030a(OCS.15).jpg "網路內部裝置")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>上圖所呈現的是邏輯性代表，而不是實際的概觀。例如，Active Directory 網域服務 (AD DS) 很少會與任何 Lync Server 元件位於相同的機器上。使用者存放區只能位於後端伺服器或是封存與監控伺服器之上。Lync Server 管理命令介面、Web 伺服器和升級服務都是前端伺服器角色的一部分。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 上圖所呈現的是邏輯性代表，而不是實際的概觀。例如，Active Directory 網域服務 (AD DS) 很少會與任何 Lync Server 元件位於相同的機器上。使用者存放區只能位於後端伺服器或是封存與監控伺服器之上。Lync Server 管理命令介面、Web 伺服器和升級服務都是前端伺服器角色的一部分。
+
 
 
 下圖說明當裝置位於公司網路外時相關的元件概觀。

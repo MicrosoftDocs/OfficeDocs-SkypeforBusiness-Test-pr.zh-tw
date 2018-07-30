@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 在您部署智慧型 IM 訊息篩選器工具之前，必須先了解在 Lync Server 2013 伺服器之間路由訊息時，如何套用篩選選項。無論伺服器位於單一組織內，或是涵蓋多個組織，套用這些篩選選項的方式是一樣的。這種一致性適用於自訂通知和警告文字插入訊息及跨伺服器傳送的方式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>立即訊息篩選器會增加訊息中處理 URL 所需的 CPU 資源量。這種對 CPU 需求的增加情形也會影響 Lync Server 的效能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 立即訊息篩選器會增加訊息中處理 URL 所需的 CPU 資源量。這種對 CPU 需求的增加情形也會影響 Lync Server 的效能。
+
 
 
 在 Lync Server 控制台中使用 \[IM 和目前狀態\] 群組中的「」URL 篩選器」頁面，可讓您封鎖部分或所有超連結或是設定警告。當您選擇 \[超連結首碼\] 選項 \[傳送警告訊息\] 時，即會在包含超連結的立即訊息開頭處插入警告。
@@ -55,18 +46,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
   - 如果伺服器 (Server1) 將警告新增至包含作用中超連結的立即訊息中，收到此立即訊息的後續伺服器 (Server2) 仍可以依據該立即訊息中出現的這個作用中超連結來採取不同的動作，並封鎖該立即訊息或新增警告。如果 Server2 設定為僅新增此 URL 的警告，便會移除之前由 Server1 新增的警告，而在 Server2 上所設定的警告將會新增至該立即訊息的開頭處。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您是在混合環境中執行 Lync Server 2013，則 Live Communications Server 2005 SP1 將是使用智慧型 IM 篩選器應用程式所需的最低版本。不具 SP1 的 Live Communications Server 2005 不支援智慧型 IM 篩選器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您是在混合環境中執行 Lync Server 2013，則 Live Communications Server 2005 SP1 將是使用智慧型 IM 篩選器應用程式所需的最低版本。不具 SP1 的 Live Communications Server 2005 不支援智慧型 IM 篩選器。
+
 
 
 ## URL 篩選
@@ -85,18 +67,9 @@ URL 可根據其超連結首碼受到篩選。以下是有效首碼的範例：
 
   - **封鎖含有副檔名的 URL**   任何作用中的內部網路或網際網路 URL 所含之檔案若具有 **\[編輯檔案篩選器\]** 對話方塊中的 **\[要封鎖的副檔名\]** 下所列的副檔名，都會遭到立即訊息篩選器封鎖。封鎖 URL 時，系統會對傳送者顯示錯誤訊息。選取此選項時，其優先順序將高於所有針對 **\[要封鎖的副檔名\]** 下所定義的任何副檔名而設定的其他篩選選項。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>副檔名的篩選僅限於標準的檔案名稱。內嵌在其他名稱中的副檔名可能篩選不出來。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 副檔名的篩選僅限於標準的檔案名稱。內嵌在其他名稱中的副檔名可能篩選不出來。
+    
 
 
 若要設定如何處理立即訊息交談中的超連結，請選取下列位於 \[超連結首碼\] 下方的其中一個選項：
@@ -119,18 +92,9 @@ URL 可根據其超連結首碼受到篩選。以下是有效首碼的範例：
 
 檔案傳輸篩選對立即訊息與會議都會有影響。對於會議，這些設定會影響 Office Live Meeting 2007 用戶端中的講義功能及多媒體播放功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 也提供檔案傳輸設定選項。除了 Lync Server 中可用的用戶端控制項以外，另外也提供此伺服器端選項。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 也提供檔案傳輸設定選項。除了 Lync Server 中可用的用戶端控制項以外，另外也提供此伺服器端選項。
+
 
 
 當您在 Office Live Meeting 2007 用戶端中使用講義功能，或使用各種檔案類型的多媒體播放功能時，您可以篩選立即訊息交談期間的檔案傳輸。您可以設定下列選項以控制檔案傳輸：
@@ -143,18 +107,9 @@ URL 可根據其超連結首碼受到篩選。以下是有效首碼的範例：
     
       - **全部封鎖**   伺服器會捨棄所有包含檔案傳輸要求的立即訊息，並將錯誤訊息傳回給發出要求的傳送者。Office Live Meeting 2007 用戶端的講義功能也會停用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>副檔名的篩選僅限於標準的檔案名稱。內嵌在其他名稱中的副檔名可能篩選不出來。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 副檔名的篩選僅限於標準的檔案名稱。內嵌在其他名稱中的副檔名可能篩選不出來。
+
 
 
 ## 本節內容

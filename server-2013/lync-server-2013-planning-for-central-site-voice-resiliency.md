@@ -45,18 +45,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 1.  用戶端透過 DNS SRV 記錄探索 Lync Server。 Lync Server 2013 裡的 DNS SRV 記錄可以設為將多筆 FQDN 傳回 DNS SRV 查詢。例如，如果 Contoso 企業擁有三個中央網站 (北美、歐洲與亞太地區) 並在每個中央網站擁有一個 Director 集區，DNS SRV 記錄可以分別指向這三個位置的個別 Director 集區 FQDN。只要這幾個位置中有任何一個提供 Director 集區服務，用戶端就能連線至第一個 Lync Server 躍點。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Director 集區為選擇性使用。您可以改用 前端集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Director 集區為選擇性使用。您可以改用 前端集區。
+    
 
 
 2.  Director 集區會告知 Lync 用戶端有關使用者的主要登錄器集區及備份登錄器集區。

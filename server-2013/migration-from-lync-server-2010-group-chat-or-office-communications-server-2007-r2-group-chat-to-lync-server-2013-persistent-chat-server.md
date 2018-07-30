@@ -17,32 +17,14 @@ _**上次修改主題的時間：** 2012-10-06_
 
 本節中的主題將引導您從 Lync Server 2010 群組聊天或 Office Communications Server 2007 R2群組聊天移轉至 Lync Server 2013常設聊天室伺服器 的流程。若要讓 Lync Server 2013常設聊天室伺服器 部署與 Lync Server 2010 群組聊天或 Office Communications Server 2007 R2群組聊天部署共存，本指南中也涵蓋一些在此混合環境中作業的基本資訊。本指南主要著重於 常設聊天室伺服器 的資料移轉。對於從舊版 Lync Server 移轉至 Lync Server 2013 的使用者，請參閱＜ [從 Lync Server 2010 移轉到 Lync Server 2013](migration-from-lync-server-2010-to-lync-server-2013.md)＞及＜ [從 Office Communications Server 2007 R2 移轉至 Lync Server 2013](migration-from-office-communications-server-2007-r2-to-lync-server-2013.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設您已安裝 Lync Server 2013，並且與 Lync Server 2010 或 Office Communications Server 2007 R2 共存。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 本主題假設您已安裝 Lync Server 2013，並且與 Lync Server 2010 或 Office Communications Server 2007 R2 共存。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本指南說明完成每階段移轉所需的一般步驟，並不會說明每一種可能的舊式部署拓撲或是每一種可能的移轉情況。因此，視部署之不同，可能不需要執行所述的每項步驟，或是有可能會需要執行額外的步驟。本指南也同時提供驗證步驟的範例。提供這些驗證步驟有助於了解要查看哪些內容，以確認在進行移轉的過程中，每個階段都已順利完成。可以針對您特定的移轉程序來修改這些驗證步驟。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 本指南說明完成每階段移轉所需的一般步驟，並不會說明每一種可能的舊式部署拓撲或是每一種可能的移轉情況。因此，視部署之不同，可能不需要執行所述的每項步驟，或是有可能會需要執行額外的步驟。本指南也同時提供驗證步驟的範例。提供這些驗證步驟有助於了解要查看哪些內容，以確認在進行移轉的過程中，每個階段都已順利完成。可以針對您特定的移轉程序來修改這些驗證步驟。
+
 
 
 本指南所提供的資訊旨在升級現有部署，並不會說明如何變更現有拓撲。本指南不包括新功能的實作。當詳細的程序記載於他處時，本指南將會引導您移至適當的文件或文件章節。

@@ -79,18 +79,9 @@ _**上次修改主題的時間：** 2015-07-22_
 
   - 工作階段初始通訊協定 (SIP) 網域。此為使用者目前用於立即訊息之 SIP URI 的網域尾碼。若是您的組織有超過一個 SIP 網域，請指定用於立即訊息之各個網域的網域尾碼。舉例來說，若是 user1@contoso.com，請將 contoso.com 指定為 SIP 網域；若是 user1@example.fabrikam.com，請將 example.fabrikam.com 指定為 SIP 網域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請僅指定 SIP 網域的網域尾碼。請勿指定任何 FQDN，包括 SIP 網域之 Access Edge Service 的 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 請僅指定 SIP 網域的網域尾碼。請勿指定任何 FQDN，包括 SIP 網域之 Access Edge Service 的 FQDN。
+    
 
 
   - 連絡人資訊。針對您指定之各個 SIP 網域的系統管理員，指定其電子郵件地址。

@@ -19,18 +19,9 @@ Lync Web App 是隨 Lync Server 2013 安裝的網際網路資訊服務 (IIS) Web
 
 Lync Web App 中的語音、視訊與共用功能需要 Microsoft ActiveX 控制項。您可事先安裝 ActiveX 控制項，或讓使用者在系統提示時進行安裝。當使用者第一次使用 Lync Web App 或第一次存取需要 ActiveX 控制項的功能時，即會出現提示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 Edge Server 部署中，周邊網路中需要有 HTTPS 反向 Proxy 才能進行 Lync Web App 用戶端存取。您也必須發行簡單 URL。如需詳細資訊，請參閱<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>與<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中規劃簡單 URL</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 Edge Server 部署中，周邊網路中需要有 HTTPS 反向 Proxy 才能進行 Lync Web App 用戶端存取。您也必須發行簡單 URL。如需詳細資訊，請參閱<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>與<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中規劃簡單 URL</a>。
+
 
 
 ## 啟用 Lync Web App 的多重因素驗證
@@ -112,18 +103,9 @@ Windows 7 與 Windows Server 2008 R2 中的 BranchCache 功能可能會干擾 
 
 4.  清除 \[不要將加密的網頁存到磁碟\]，然後按一下 \[確定\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若選取此設定，當嘗試從 Lync Web App 下載附件時，也會造成錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若選取此設定，當嘗試從 Lync Web App 下載附件時，也會造成錯誤。
+    
 
 
 5.  重新加入會議。應該可正確下載外掛程式。

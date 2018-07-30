@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 Lync Server 控制台需要安裝 Microsoft Silverlight 瀏覽器外掛程式 4.0.50524.0 版或最新版本。如果未安裝 Silverlight，或是安裝較舊版本，請遵循訊息中的指示來安裝所需的版本。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 控制台的其他軟體需求，取決於可安裝 Lync Server 控制台及所有其他 Lync Server 2013 系統管理工具的作業系統。如需詳細資訊，請參閱支援文件中的<a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的伺服器及工具作業系統支援</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 控制台的其他軟體需求，取決於可安裝 Lync Server 控制台及所有其他 Lync Server 2013 系統管理工具的作業系統。如需詳細資訊，請參閱支援文件中的<a href="lync-server-2013-server-and-tools-operating-system-support.md">Lync Server 2013 中的伺服器及工具作業系統支援</a>＞。
+
 
 
 如果您的網際網路瀏覽器基於安全考量而封鎖 Silverlight 的安裝，請將會開啟 Lync Server 控制台的統一資源定位器 (URL) 新增至信任網站清單。在 Internet Explorer 安全性設定中，確定已將 **\[執行 ActiveX 控制項及外掛程式\]** 設為 **\[啟用\]**。如需詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?linkid=214060\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=214060%26clcid=0x404)。此外，請確定已將瀏覽器設定為使用 SSL 3.0。
@@ -51,18 +42,9 @@ Lync Server 控制台需要安裝 Microsoft Silverlight 瀏覽器外掛程式 4.
 
 如需設定系統管理存取 URL 的逐步程序，請參閱部署文件中的＜[在 Lync Server 2013 中編輯或設定簡單 URL](lync-server-2013-edit-or-configure-simple-urls.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的 Web 伺服器上有多個網路介面卡，則必須為每個額外的網路介面卡手動設定 DNS，DNS 解析才能正確運作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的 Web 伺服器上有多個網路介面卡，則必須為每個額外的網路介面卡手動設定 DNS，DNS 解析才能正確運作。
+
 
 
 ## Internet Information Services (IIS) 需求

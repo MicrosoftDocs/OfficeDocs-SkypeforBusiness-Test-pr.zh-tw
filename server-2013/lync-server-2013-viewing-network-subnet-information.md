@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 4.  在 **\[子網路\]** 頁面上，按一下您要檢視的子網路。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您一次只能檢視一個子網路。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您一次只能檢視一個子網路。
+    
 
 
 5.  在 **\[編輯\]** 功能表上，按一下 **\[顯示詳細資料...\]**。

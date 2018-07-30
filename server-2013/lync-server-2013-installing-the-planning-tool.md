@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
 在您開始使用 Microsoft Lync Server 2013 規劃工具設計及規劃 Lync Server 2013 基礎結構之前，必須先安裝 規劃工具。部署 規劃工具的工作站或伺服器，不需要是您計劃安裝 Lync Server 2013 之網域或基礎結構的一部分。 規劃工具隨附的讀我檔案詳細說明安裝及使用該工具的重要資訊。讀我檔案中的某些資訊會在此重複以清楚說明。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>安裝 規劃工具的使用者必須對要安裝工具的電腦擁有系統管理員權限和授權。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 安裝 規劃工具的使用者必須對要安裝工具的電腦擁有系統管理員權限和授權。
+
 
 
 支援安裝及操作 規劃工具的作業系統為：

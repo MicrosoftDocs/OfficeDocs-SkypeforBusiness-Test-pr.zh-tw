@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2012-10-01_
 
 5.  在「執行命令」 頁面上，SQL Server 2012 Express 已安裝為 中央管理存放區。已建立所需的防火牆規則。在完成資料庫和必要軟體的安裝時，請按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果命令輸出摘要畫面沒有可見的更新，則初始安裝可能需要一些時間。這是由於安裝 SQL Server Express 的緣故。如果您需要監控資料庫的安裝，請使用 [工作管理員] 來監控安裝程式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果命令輸出摘要畫面沒有可見的更新，則初始安裝可能需要一些時間。這是由於安裝 SQL Server Express 的緣故。如果您需要監控資料庫的安裝，請使用 [工作管理員] 來監控安裝程式。
+    
 
 
 6.  如果您先前尚未安裝系統管理工具，請在 Lync Server 部署精靈頁面上按一下 **\[安裝拓撲產生器\]** 。如需詳細資訊，請參閱＜ [安裝 Lync Server 2013 系統管理工具](lync-server-2013-install-lync-server-administrative-tools.md)＞。

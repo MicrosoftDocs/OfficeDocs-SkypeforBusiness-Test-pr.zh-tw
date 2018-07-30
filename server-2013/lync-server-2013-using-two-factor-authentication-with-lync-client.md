@@ -107,18 +107,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您必須先註冊智慧卡，才能使用該卡登入—也就是說，卡片身分必須等同您的使用者認證。無論智慧卡為實體或虛擬形式皆為如此。您的 Lync Server 系統管理員可能已進行過此程序。如果您不確定是否已進行此程序，請詢問您的系統管理員。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於每個虛擬智慧卡只會與其安裝所在的裝置相關聯，因此您需要針對每部使用的 Windows 8 電腦註冊個別的智慧卡。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由於每個虛擬智慧卡只會與其安裝所在的裝置相關聯，因此您需要針對每部使用的 Windows 8 電腦註冊個別的智慧卡。
+
 
 
 **手動註冊智慧卡**
@@ -129,18 +120,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     請向您的 Lync Server 系統管理員取得此資源的網址 (如果您尚未取得)。URL 會類似下列範例：https://MyCA.\[yourcompanyname\].com/certsrv。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用的是 Internet Explorer 10，您可能需要使用相容模式檢視此網站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您使用的是 Internet Explorer 10，您可能需要使用相容模式檢視此網站。
+    
 
 
 3.  當系統提示您登入憑證頁面，請使用您的網域帳戶 (而不要以電腦的系統管理員身分) 登入。
@@ -169,18 +151,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 9.  收到提示時，輸入您的個人識別碼 (PIN)，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的技術支援人員尚未給您用以註冊智慧卡的特殊 PIN，請使用預設智慧卡 PIN 值，亦即 12345678。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的技術支援人員尚未給您用以註冊智慧卡的特殊 PIN，請使用預設智慧卡 PIN 值，亦即 12345678。
+    
 
 
 10. 請選取於第一次使用智慧卡時強制使用者 (亦即您本身) 變更 PIN 的選項。
@@ -189,18 +162,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 12. 收到提示時，輸入您的個人識別碼 (PIN)，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的技術支援人員尚未給您用以註冊智慧卡的特殊 PIN，請使用預設智慧卡 PIN 值，亦即 12345678。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的技術支援人員尚未給您用以註冊智慧卡的特殊 PIN，請使用預設智慧卡 PIN 值，亦即 12345678。
+    
 
 
 13. 請選取於第一次使用智慧卡時強制使用者 (亦即您本身) 變更 PIN 的選項。
@@ -225,16 +189,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 4.  輸入智慧卡的 PIN 號碼，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的支援人員並未指派智慧卡 PIN 號碼給您，請使用預設值，亦即 12345678。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的支援人員並未指派智慧卡 PIN 號碼給您，請使用預設值，亦即 12345678。
+    
 

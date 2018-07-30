@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2013-01-19_
 
 根據您的需求而定，您可以在一個或多個位置部署一部或多部 Edge Server。本節描述 Lync Server 2013 中的外部使用者存取案例，並且解釋如何規劃您的邊緣與反向 Proxy 拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然您需要 Edge Server 才能支援 Enterprise Voice 和外部使用者存取，但是本節將著重於 IM、目前狀態、A/V 會議、同盟、Web 會議與 Lync Mobile 的支援。如需 Enterprise Voice 支援的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-enterprise-voice.md">在 Lync Server 2013 中規劃企業語音</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然您需要 Edge Server 才能支援 Enterprise Voice 和外部使用者存取，但是本節將著重於 IM、目前狀態、A/V 會議、同盟、Web 會議與 Lync Mobile 的支援。如需 Enterprise Voice 支援的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-enterprise-voice.md">在 Lync Server 2013 中規劃企業語音</a>＞。
+
 
 
 ## 本章節內容

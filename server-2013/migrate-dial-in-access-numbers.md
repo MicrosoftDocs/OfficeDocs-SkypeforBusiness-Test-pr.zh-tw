@@ -35,32 +35,14 @@ _**上次修改主題的時間：** 2012-10-19_
 
 您必須在解除委任 Lync Server 2010 集區之前，完成指向 Lync Server 2010 之撥入存取號碼的移轉作業。若未完成下列程序所述的撥入存取號碼移轉，所有傳入該存取號碼的通話將會失敗。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須在解除委任 Lync Server 2010 集區之前執行此程序。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您必須在解除委任 Lync Server 2010 集區之前執行此程序。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議在網路使用量較低時移動撥入存取號碼，以避免服務出現短暫中斷的情況。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 建議在網路使用量較低時移動撥入存取號碼，以避免服務出現短暫中斷的情況。
+
 
 
 **識別及移動撥入存取號碼**
@@ -79,18 +61,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 6.  確認您在移轉的 Lync Server 2010 集區中已無任何撥入存取號碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當所有撥入存取號碼均指向 Lync Server 2013 集區時，即可解除委任 Lync Server 2010 集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當所有撥入存取號碼均指向 Lync Server 2013 集區時，即可解除委任 Lync Server 2010 集區。
+    
 
 
 **使用 Lync Server 控制台驗證移轉的撥入存取號碼**

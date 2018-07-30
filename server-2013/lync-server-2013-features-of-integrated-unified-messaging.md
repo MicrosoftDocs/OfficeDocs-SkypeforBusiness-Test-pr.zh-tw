@@ -35,16 +35,7 @@ Outlook Voice Access 不只可讓 企業語音使用者從電話語音介面存�
 
 Exchange UM 包含傳真功能，可讓使用者在 Exchange 信箱中接收傳入的傳真。如需詳細資訊，請參閱 Microsoft Exchange Server 文件中的＜整合通訊＞，網址為 [http://go.microsoft.com/fwlink/?linkid=135652\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=135652%26clcid=0x404)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange UM 伺服器所提供的傳真服務無法用在與 Microsoft Exchange Server 2010、 Exchange 2010 (含最新 Service Pack) 或 Exchange 2013 整合的 Lync Server 部署中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Exchange UM 伺服器所提供的傳真服務無法用在與 Microsoft Exchange Server 2010、 Exchange 2010 (含最新 Service Pack) 或 Exchange 2013 整合的 Lync Server 部署中。
+
 

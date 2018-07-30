@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-18_
 
 遵循下列步驟可以刪除使用者層級或網站層級 PIN 原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法刪除全域 PIN 原則。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您無法刪除全域 PIN 原則。
+
 
 
 ## 刪除使用者或網站 PIN 原則

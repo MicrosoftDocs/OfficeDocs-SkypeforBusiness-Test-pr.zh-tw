@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 樹系準備也會建立物件，這些物件將包含 Lync Server 2013 所使用的屬性集與顯示規範，並會將其儲存在組態容器中。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行樹系準備程序前，請確定架構準備變更已複寫至所有網域控制站。如果複寫未完成，則會發生錯誤。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在執行樹系準備程序前，請確定架構準備變更已複寫至所有網域控制站。如果複寫未完成，則會發生錯誤。
+
 
 
 如果您執行的是全新 Lync Server 部署，則必須將全域設定儲存在組態容器中。如果您是從舊版進行升級，且仍將全域設定儲存在系統容器中，則可以繼續使用系統容器。

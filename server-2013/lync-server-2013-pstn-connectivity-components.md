@@ -45,18 +45,9 @@ PSTN 閘道是協力廠商裝置，可轉譯 Enterprise Voice 基礎結構與 PS
 
   - 含有獨立 PSTN 閘道的分時多工 (TDM) PBX。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>媒體旁路不會與每個 PSTN 閘道、IP-PBX 以及 SBC 相互溝通。Microsoft 已經與認證的合作夥伴測試了一組 PSTN 閘道和 SBC，並用 Cisco IP-PBX 完成部分測試。只有列在 Unified Communications Open Interoperability Program – Lync Server 中的產品和版本支援媒體旁路，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 媒體旁路不會與每個 PSTN 閘道、IP-PBX 以及 SBC 相互溝通。Microsoft 已經與認證的合作夥伴測試了一組 PSTN 閘道和 SBC，並用 Cisco IP-PBX 完成部分測試。只有列在 Unified Communications Open Interoperability Program – Lync Server 中的產品和版本支援媒體旁路，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a>。
+
 
 
 如需提供 Enterprise Voice 方案之協力廠商的詳細資訊，請參閱 Microsoft Unified Communications Partners 網站，網址為 [http://go.microsoft.com/fwlink/?linkid=202836\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=202836%26clcid=0x404)。

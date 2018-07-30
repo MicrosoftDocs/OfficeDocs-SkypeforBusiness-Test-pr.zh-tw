@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 基於效能考量，針對 Lync Server 2013前端集區規劃及部署 Microsoft SQL Server 2012 或 Microsoft SQL Server 2008 R2 SP1 期間的重點，是將資料及記錄檔放入實體硬碟中。建議的磁碟設定是使用 6 個主軸實作 1+0 RAID 集。利用 Lync Server 部署精靈將 前端集區使用的所有資料庫與記錄檔，以及相關聯的伺服器角色與服務 (也就是 封存與監控伺服器、 Lync Server 回應群組服務、 Lync Server 通話駐留服務) 放入 RAID 磁碟集，這樣可產生經測試之後效能良好的設定。下表詳述資料庫檔案及其負責內容。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的原則和 SQL Server 設定需要更多特殊安裝，可使用 Lync Server 管理命令介面將資料庫與記錄檔安裝至任何預先定義的位置。如需詳細資訊，請參閱＜ <a href="lync-server-2013-database-installation-using-lync-server-management-shell.md">在 Lync Server 2013 中使用 Lync Server 管理命令介面安裝資料庫</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的原則和 SQL Server 設定需要更多特殊安裝，可使用 Lync Server 管理命令介面將資料庫與記錄檔安裝至任何預先定義的位置。如需詳細資訊，請參閱＜ <a href="lync-server-2013-database-installation-using-lync-server-management-shell.md">在 Lync Server 2013 中使用 Lync Server 管理命令介面安裝資料庫</a>＞。
+
 
 
 ### 中央管理存放區的資料及記錄檔

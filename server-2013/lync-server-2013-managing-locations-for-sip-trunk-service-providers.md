@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-10-02_
 
   - 如果是由無線存取點決定的概略位置，您可能想要加上 Near 的字詞 (例如 1234 號 1 樓附近)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用 Lync Server 管理命令介面命令發佈位置，並複寫到集區的本機存放區之前，用戶端無法使用新增到中央位置資料庫的位置。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-publish-the-location-database.md">在 Lync Server 2013 中發佈位置資料庫</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在使用 Lync Server 管理命令介面命令發佈位置，並複寫到集區的本機存放區之前，用戶端無法使用新增到中央位置資料庫的位置。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-publish-the-location-database.md">在 Lync Server 2013 中發佈位置資料庫</a>＞。
+
 
 
 以下各節討論填入和維護位置資料庫時需考量的事項。

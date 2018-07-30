@@ -85,18 +85,9 @@ Lync Server 2013 封存原則包含下列項目：
 
 如需有關如何在部署封存時設定內部封存原則的詳細資訊，請參閱部署文件中的[設定和指派封存原則](lync-server-2013-configuring-and-assigning-archiving-policies.md)。如需有關在部署之後使用封存原則來啟用和停用通訊的詳細資訊，請參閱作業文件中的[在 Lync Server 2013 中管理內部與外部通訊的封存](lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您實作這兩個 Lync Server 2013 封存資料庫並啟用 Microsoft Exchange 整合，Exchange 2013 原則就會優先於 Lync Server 封存原則，但僅限於 Exchange 2013 中信箱狀態為 [就地保留] 的使用者。Lync 封存僅會根據 Microsoft Exchange 就地保留原則而定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您實作這兩個 Lync Server 2013 封存資料庫並啟用 Microsoft Exchange 整合，Exchange 2013 原則就會優先於 Lync Server 封存原則，但僅限於 Exchange 2013 中信箱狀態為 [就地保留] 的使用者。Lync 封存僅會根據 Microsoft Exchange 就地保留原則而定。
+
 
 
 ## 我可以使用哪些選項來設定封存？
@@ -127,18 +118,9 @@ Lync Server 2013 封存原則包含下列項目：
     
       - 在匯出封存資料之後 (這包括已上傳至 Exchange 的資料 (如果您啟用了 Microsoft Exchange 整合))。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您啟用 Microsoft Exchange 整合，則針對位於 Exchange 2013 且其信箱狀態為 [就地保留] 的使用者進行清除的動作是由 Exchange 來控制。唯一的資格是適用於會議檔案，這些檔案儲存於 Lync Server 檔案共用中。如果您選取選項要在匯出封存資料之後清除資料，則只有在將檔案匯出 (上傳至 Exchange) 之後，才會從檔案共用中清除這些檔案，或者，如果您指定要保留的天數上限，則會在指定的天數上限之後清除檔案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您啟用 Microsoft Exchange 整合，則針對位於 Exchange 2013 且其信箱狀態為 [就地保留] 的使用者進行清除的動作是由 Exchange 來控制。唯一的資格是適用於會議檔案，這些檔案儲存於 Lync Server 檔案共用中。如果您選取選項要在匯出封存資料之後清除資料，則只有在將檔案匯出 (上傳至 Exchange) 之後，才會從檔案共用中清除這些檔案，或者，如果您指定要保留的天數上限，則會在指定的天數上限之後清除檔案。
+    
 
 
 預設不會啟用任何封存選項。您可以使用 Lync Server 2013 控制台來管理封存設定。

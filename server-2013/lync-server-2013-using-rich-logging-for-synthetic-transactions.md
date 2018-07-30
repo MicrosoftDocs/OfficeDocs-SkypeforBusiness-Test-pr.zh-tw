@@ -45,18 +45,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
     Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable RegistrationTest
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請不要在變數名稱的開頭加上 $ 字元。請使用像是 RegistrationTest 的變數名稱，而不要使用 $RegistrationTest。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 請不要在變數名稱的開頭加上 $ 字元。請使用像是 RegistrationTest 的變數名稱，而不要使用 $RegistrationTest。
+
 
 
 上述命令輸出內容如下：
@@ -79,16 +70,7 @@ _**上次修改主題的時間：** 2012-10-22_
 
 從 System Center Operations Manager 內部執行的綜合交易將會針對失敗自動產生這些記錄檔。但是，如果在 Windows PowerShell 能夠載入並執行綜合交易之前執行失敗，則將不會產生這些記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，Lync Server 2013 會將記錄檔儲存於未共用的資料夾。若要使這些記錄隨時都能存取，您應該共用這個資料夾 (例如，\\atl-watcher-001.litwareinc.com\WatcherNode)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 根據預設，Lync Server 2013 會將記錄檔儲存於未共用的資料夾。若要使這些記錄隨時都能存取，您應該共用這個資料夾 (例如，\\atl-watcher-001.litwareinc.com\WatcherNode)。
+
 

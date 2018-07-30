@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2014-03-12_
 
 如果您有多個網站且每個網站備有一個 Edge Server 集區，當一整個 Edge 集區失敗時，遠端存取服務將會繼續運作，而不需要系統管理員採取任何動作。當在其他網站建立 Edge 集區時，您無法使用相同的 FQDN。每個 Edge 集區都必須有唯一的 FQDN (內部與外部)。Edge 集區不會使用反向 Proxy 發行規則來與前端伺服器交談。當用戶端重新查詢遠端存取 DNS 服務記錄時，便會發生自動容錯移轉，並且會將遠端使用者傳送至其他網站中的 Edge 伺服器。用戶端會根據 DNS SRV 記錄的優先順序嘗試每個外部 Edge FQDN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要順利完成容錯移轉，請確保防火牆允許來自每個集區的前端伺服器與所有 Edge Server 通訊。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要順利完成容錯移轉，請確保防火牆允許來自每個集區的前端伺服器與所有 Edge Server 通訊。
+
 
 
 ## 同盟

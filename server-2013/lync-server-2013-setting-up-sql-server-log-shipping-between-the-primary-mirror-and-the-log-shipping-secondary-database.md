@@ -35,36 +35,18 @@ _**上次修改主題的時間：** 2013-02-21_
 
 9.  如果備份資料夾位在主要伺服器上，請在 \[如果備份資料夾位於主要伺服器上，請輸入至該資料夾的本機路徑 (範例: c:\\backup):\] 方塊中輸入備份資料夾的本機路徑。(如果備份資料夾不在主要伺服器上，可將此方塊保留空白。)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果主要伺服器上的 SQL Server 服務帳戶是在本機系統帳戶之下執行，則必須在主要伺服器上建立備份資料夾，並指定該資料夾的本機路徑。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果主要伺服器上的 SQL Server 服務帳戶是在本機系統帳戶之下執行，則必須在主要伺服器上建立備份資料夾，並指定該資料夾的本機路徑。
+    
 
 
 10. 設定 \[指定刪除檔案的時限\] 及 \[如果未在此時間內進行備份，則發出警示\] 參數。
 
 11. 查看列在 **\[備份作業\]** 下的 **\[排程\]** 方塊中的備份排程。如果要自訂安裝排程，按一下 **\[排程\]** ，然後依需要調整 SQL Server Agent 排程。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用和主要資料庫相同的設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 使用和主要資料庫相同的設定。
+    
 
 
 12. 在 **\[壓縮\]** 下，選取 **\[使用預設伺服器設定\]** ，然後按一下 **\[確定\]** 。
@@ -85,18 +67,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 20. 選取並執行前半部的查詢 (請參閱步驟 18) 直到此行：\*\*\*\*\*\* End: Script to be run at Primary: \*\*\*\*\*\*。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須手動執行此指令碼，因為 SQL Server Management Studio 在 SQL Server 記錄傳送設定中不支援多個主要資料庫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須手動執行此指令碼，因為 SQL Server Management Studio 在 SQL Server 記錄傳送設定中不支援多個主要資料庫。
+    
 
 
 21. 選取 **\[取消\]** 以關閉記錄檔傳送設定面板，然後建立工作設定，正確實作主要和鏡像資料庫 (若容錯移轉) 的記錄檔傳送。

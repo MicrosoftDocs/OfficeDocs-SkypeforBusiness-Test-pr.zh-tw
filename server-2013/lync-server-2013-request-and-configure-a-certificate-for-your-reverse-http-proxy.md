@@ -44,18 +44,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>集區 FQDN</p></td>
 <td><p>webext.contoso.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>主體名稱也必須出現在主體替代名稱中。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 主體名稱也必須出現在主體替代名稱中。
+
 
 </div></td>
 </tr>
@@ -68,18 +59,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>主體替代名稱</p></td>
 <td><p>會議簡單 URL</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>所有會議簡單 URL 都必須出現在主體替代名稱中。每個 SIP 網域都至少必須有一個作用中的會議簡單 URL。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 所有會議簡單 URL 都必須出現在主體替代名稱中。每個 SIP 網域都至少必須有一個作用中的會議簡單 URL。
+
 
 </div></td>
 <td><p>meet.contoso.com</p></td>
@@ -99,18 +81,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>外部自動探索服務 URL</p></td>
 <td><p>lyncdiscover.contoso.com</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您同時也使用 Microsoft Exchange Server，您也將需要為 Exchange 自動探索和 Web 服務 URL 設定反向 Proxy 規則。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您同時也使用 Microsoft Exchange Server，您也將需要為 Exchange 自動探索和 Web 服務 URL 設定反向 Proxy 規則。
+
 
 </div></td>
 </tr>
@@ -118,36 +91,18 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的內部部署包含多個 Standard Edition Server 或前端集區，則您必須為每個外部 Web 伺服陣列 FQDN 設定 Web 發行規則，且需要針對其中每個 FQDN 各有一個憑證和網頁接聽程式，否則，您就必須取得憑證 (其主體替代名稱包含所有集區使用的名稱)、將憑證指派給網頁接聽程式，然後在多個 Web 發行規則之間共用憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的內部部署包含多個 Standard Edition Server 或前端集區，則您必須為每個外部 Web 伺服陣列 FQDN 設定 Web 發行規則，且需要針對其中每個 FQDN 各有一個憑證和網頁接聽程式，否則，您就必須取得憑證 (其主體替代名稱包含所有集區使用的名稱)、將憑證指派給網頁接聽程式，然後在多個 Web 發行規則之間共用憑證。
+
 
 
 ## 建立憑證要求
 
 您可以使用反向 Proxy 建立憑證要求。您可以在另一部電腦上建立要求，但必須在從公用憑證授權單位取得後，匯出已簽署憑證與私密金鑰，並將其匯入反向 Proxy。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>憑證要求或憑證簽署要求 (CSR)，是指對信任的公用憑證授權單位 (CA) 要求驗證與簽署特定電腦之公開金鑰的作業。憑證產生時，會建立公開金鑰和私密金鑰。只有公開金鑰可供共用和簽署。顧名思義，公開金鑰可供任何公開要求使用。公開金鑰是供用戶端、伺服器與其他需要安全交換資訊及驗證電腦身分的要求者使用。私密金鑰會持續受到保護，只有能建立可將公開金鑰加密訊息解密之金鑰組的電腦，才能加以使用。私密金鑰也可用於其他用途。在反向 Proxy 用途方面，資料編密為主要功能。其次，做為憑證金鑰層級的驗證憑證為其另一功能，同時僅限用於要求者具備電腦公開金鑰的驗證，或用以驗證您擁有公開金鑰之電腦的真正身分。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 憑證要求或憑證簽署要求 (CSR)，是指對信任的公用憑證授權單位 (CA) 要求驗證與簽署特定電腦之公開金鑰的作業。憑證產生時，會建立公開金鑰和私密金鑰。只有公開金鑰可供共用和簽署。顧名思義，公開金鑰可供任何公開要求使用。公開金鑰是供用戶端、伺服器與其他需要安全交換資訊及驗證電腦身分的要求者使用。私密金鑰會持續受到保護，只有能建立可將公開金鑰加密訊息解密之金鑰組的電腦，才能加以使用。私密金鑰也可用於其他用途。在反向 Proxy 用途方面，資料編密為主要功能。其次，做為憑證金鑰層級的驗證憑證為其另一功能，同時僅限用於要求者具備電腦公開金鑰的驗證，或用以驗證您擁有公開金鑰之電腦的真正身分。
+
 
 
 <table>
@@ -194,18 +149,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 13. 在 **\[憑證內容\]** 頁面上，按一下 **\[私密金鑰\]** 索引標籤。按一下 **\[金鑰選項\]** 箭頭。在 **\[金鑰大小\]** 項目上，從下拉式功能表中選取 **\[2048\]** 。如果您要在預期使用此憑證之反向 Proxy 以外的電腦上產生此金鑰組，請選取 **\[可匯出私密金鑰\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398321.security(OCS.15).gif" title="security" alt="security" />安全性 附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您的伺服器陣列中有一個以上的反向 Proxy 時，建議選取 <strong>[可匯出私密金鑰]</strong> ，因為您會將憑證和私密金鑰複製到伺服器陣列中的每部電腦。如果您允許使用可匯出的私密金鑰，請務必小心處理憑證及產生憑證的電腦。若私密金鑰損毀，將會使得憑證無法作用，且可能會讓電腦暴露於外部存取與其他資訊安全風險之下。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您的伺服器陣列中有一個以上的反向 Proxy 時，建議選取 <strong>[可匯出私密金鑰]</strong> ，因為您會將憑證和私密金鑰複製到伺服器陣列中的每部電腦。如果您允許使用可匯出的私密金鑰，請務必小心處理憑證及產生憑證的電腦。若私密金鑰損毀，將會使得憑證無法作用，且可能會讓電腦暴露於外部存取與其他資訊安全風險之下。
+    
 
 
 14. 在 **\[私密金鑰\]** 索引標籤上，按一下 **\[金鑰類型\]** 箭頭。選取 **\[交換\]** 選項。
@@ -222,16 +168,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 20. 找出您在先前步驟中儲存的要求檔案。將檔案提交給您的公用憑證授權單位。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Microsoft 已確認出符合整合通訊用途需求的公用 CA。這些公用 CA 的清單可以在下列知識庫文章中找到： <a href="http://go.microsoft.com/fwlink/?linkid=282625">http://go.microsoft.com/fwlink/?LinkId=282625</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Microsoft 已確認出符合整合通訊用途需求的公用 CA。這些公用 CA 的清單可以在下列知識庫文章中找到： <a href="http://go.microsoft.com/fwlink/?linkid=282625">http://go.microsoft.com/fwlink/?LinkId=282625</a>
+    
 

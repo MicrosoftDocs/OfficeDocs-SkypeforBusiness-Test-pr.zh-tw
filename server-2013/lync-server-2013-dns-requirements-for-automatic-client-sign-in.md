@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 建立內部 DNS SRV 記錄，以支援此伺服器或集區的自動用戶端登入。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>下列記錄需求中，SIP 網域是指已指派給使用者的 SIP URI 的主機部分。例如，如果 SIP URI 的格式為 *@contoso.com，則 contoso.com 為 SIP 網域。SIP 網域通常與內部 Active Directory 網域不同。組織也可以支援多個 SIP 網域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 下列記錄需求中，SIP 網域是指已指派給使用者的 SIP URI 的主機部分。例如，如果 SIP URI 的格式為 *@contoso.com，則 contoso.com 為 SIP 網域。SIP 網域通常與內部 Active Directory 網域不同。組織也可以支援多個 SIP 網域。
+    
 
 
 若要啟用用戶端的自動設定，您必須建立內部 DNS SRV 記錄，將下列其中一個記錄對應到前端集區或 Standard Edition Server 的完整網域名稱 (FQDN)，來分送 Lync 用戶端的登入要求：
@@ -75,18 +66,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，DNS 記錄的查詢符合使用者名稱中的網域與 SRV 記錄之間的嚴格網域名稱比對。如果您想要讓用戶端 DNS 查詢改用尾碼比對，可以設定 DisableStrictDNSNaming 群組原則。如需詳細資訊，請參閱規劃文件中的＜<a href="lync-server-2013-planning-for-clients-and-devices.md">規劃 Lync Server 2013 中的用戶端和裝置</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 根據預設，DNS 記錄的查詢符合使用者名稱中的網域與 SRV 記錄之間的嚴格網域名稱比對。如果您想要讓用戶端 DNS 查詢改用尾碼比對，可以設定 DisableStrictDNSNaming 群組原則。如需詳細資訊，請參閱規劃文件中的＜<a href="lync-server-2013-planning-for-clients-and-devices.md">規劃 Lync Server 2013 中的用戶端和裝置</a>＞。
+
 
 
 ## 用戶端自動登入所需之憑證和 DNS 記錄的範例

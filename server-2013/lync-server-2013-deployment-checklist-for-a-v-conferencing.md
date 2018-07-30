@@ -46,18 +46,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>安裝必備硬體和軟體</strong></p></td>
 <td><p>在前端集區前端伺服器與 Standard Edition 伺服器執行會議。除了安裝這些伺服器所需的條件，沒有其他硬體或軟體需求。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 使用 Office Web Apps 及 Office Web Apps Server 以處理 PowerPoint 簡報的共用與轉譯。如需安裝與設定 Office Web Apps Server 的詳細資訊，請參閱＜<a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">設定 Office Web Apps Server 與 Lync Server 2013 的整合</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 使用 Office Web Apps 及 Office Web Apps Server 以處理 PowerPoint 簡報的共用與轉譯。如需安裝與設定 Office Web Apps Server 的詳細資訊，請參閱＜<a href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">設定 Office Web Apps Server 與 Lync Server 2013 的整合</a>＞。
+
 
 </div></td>
 <td><p>為本機系統管理員成員之網域使用者</p></td>

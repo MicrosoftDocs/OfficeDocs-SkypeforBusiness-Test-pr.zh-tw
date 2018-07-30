@@ -43,18 +43,9 @@ _**上次修改主題的時間：** 2012-06-19_
 
 11. 若要允許在 PIN 中使用共同模式的數字 (如連續數字與重複數字組)，請選取 **\[允許共同模式\]** 核取方塊。若未選取此選項，則只會允許複合模式的數字。依預設只會允許複合模式的數字。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建議您不要允許共同模式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 建議您不要允許共同模式。
+    
 
 
 12. 按一下 **\[認可\]**。

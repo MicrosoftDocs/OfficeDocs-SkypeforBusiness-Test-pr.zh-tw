@@ -35,16 +35,7 @@ Lync Server 部署精靈 可用來安裝每個 Lync 伺服器角色以及啟動�
 
 7.  完成 Lync Server 2013 元件安裝，並已視需要檢閱記錄後，按一下 \[完成\] 來完成此安裝步驟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果系統提示您重新啟動伺服器 (如果需要安裝 Windows Desktop Experience，可能會發生此狀況)，請照做。電腦重新啟動並運行後，您需要從上述的步驟 3 開始重複這些程序 (基本上在 [部署精靈] 中再次執行步驟 2)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果系統提示您重新啟動伺服器 (如果需要安裝 Windows Desktop Experience，可能會發生此狀況)，請照做。電腦重新啟動並運行後，您需要從上述的步驟 3 開始重複這些程序 (基本上在 [部署精靈] 中再次執行步驟 2)。
+    
 

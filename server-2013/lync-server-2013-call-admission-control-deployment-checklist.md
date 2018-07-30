@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
   - 如果已部署一個或多個 Edge Server，則必須將每個外部介面 IP 位址新增至網路組態設定中的子網路清單 (使用位元遮罩 32)。您也應該讓此子網路 (IP 位址) 與網站 ID 產生關聯，以供部署 A/V Edge 服務的地理位置使用。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>實作 CAC 不需要 Edge Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 實作 CAC 不需要 Edge Server。
+    
 
 
   - 確認 CAC 已啟用 (透過 Lync Server 控制台或執行[在 Lync Server 2013 中啟用通話許可控制](lync-server-2013-enable-call-admission-control.md)中所指定的 Cmdlet 來啟用)。

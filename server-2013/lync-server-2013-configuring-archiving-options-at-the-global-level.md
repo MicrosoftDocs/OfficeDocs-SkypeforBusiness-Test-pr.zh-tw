@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-10_
 
 如需關於封存組態如何運作的詳細資訊，包含全域、網站與集區設定的階層，請參閱規劃文件、部署文件或作業文件中的[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先在 [封存] 組態中指定所有適當選項，才能啟用封存功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必須先在 [封存] 組態中指定所有適當選項，才能啟用封存功能。
+
 
 
 ## 在全域層級設定封存選項

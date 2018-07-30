@@ -25,32 +25,14 @@ _**上次修改主題的時間：** 2012-11-01_
 
 如需詳細資訊，請參閱規劃文件中的＜ [在 Lync Server 2013 中規劃 PSTN 連線](lync-server-2013-planning-for-pstn-connectivity.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您開始進行主幹設定之前，請確認已建立拓撲，而且中繼伺服器及其對等已設定好，並彼此產生關聯。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 中於拓撲產生器內定義閘道</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您開始進行主幹設定之前，請確認已建立拓撲，而且中繼伺服器及其對等已設定好，並彼此產生關聯。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-define-a-gateway-in-topology-builder.md">在 Lync Server 2013 中於拓撲產生器內定義閘道</a>＞。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在主幹設定過程中，您可以啟用 Lync Server 2013 媒體旁路功能，讓媒體避開中繼伺服器。不論是否啟用媒體旁路功能，都可以設定主幹，但強烈建議您啟用該功能。如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-media-bypass.md">在 Lync Server 2013 中規劃媒體旁路</a>＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 在主幹設定過程中，您可以啟用 Lync Server 2013 媒體旁路功能，讓媒體避開中繼伺服器。不論是否啟用媒體旁路功能，都可以設定主幹，但強烈建議您啟用該功能。如需詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-media-bypass.md">在 Lync Server 2013 中規劃媒體旁路</a>＞。
+
 
 
 ## 本章節內容

@@ -31,34 +31,16 @@ _**上次修改主題的時間：** 2012-09-25_
 
 4.  Exchange 系統管理員將電話號碼指派給適當的 Exchange UM 撥號對應表，以用於自動語音應答和訂戶存取。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不像內部部署，您不需要在連絡人物件上設定任何 Lync Server 2013 撥號對應表設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 不像內部部署，您不需要在連絡人物件上設定任何 Lync Server 2013 撥號對應表設定。
+
 
 
 ## 設定裝載的連絡人物件
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您可以為裝載的 Exchange UM 啟用 Lync Server 2013 連絡人物件之前，必須先部署適用於這些物件的裝載語音信箱原則。原則的範圍可以是全域、網站或個別使用者，只要適用於您要啟用的連絡人物件即可。如需詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在您可以為裝載的 Exchange UM 啟用 Lync Server 2013 連絡人物件之前，必須先部署適用於這些物件的裝載語音信箱原則。原則的範圍可以是全域、網站或個別使用者，只要適用於您要啟用的連絡人物件即可。如需詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>＞。
+
 
 
 若要在跨部署部署中設定裝載的自動語音應答和訂戶存取連絡人物件，必須使用下列 Cmdlet：

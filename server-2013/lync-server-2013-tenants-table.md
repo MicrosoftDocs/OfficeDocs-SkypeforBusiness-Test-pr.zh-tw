@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 承租人表格是一種支援表格，儲存了各種承租人的清單。表格中的每筆記錄皆代表一名承租人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在內部部署中，CDR 會使用內建租用戶識別碼表示各種驗證類型，例如公共 IM 連線、同盟及匿名。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在內部部署中，CDR 會使用內建租用戶識別碼表示各種驗證類型，例如公共 IM 連線、同盟及匿名。
+
 
 
 

@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 1.  在執行 Lync Server 2013 或安裝 Lync Server 系統管理工具的電腦上，以本機 Users 群組成員的帳戶 (或者擁有對等使用者權限的帳戶) 身分登入。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用本機 Users 群組成員的帳戶來定義拓撲，但是若要發行拓撲 (在拓撲中新增元件的必要作業)，則必須使用 <strong>Domain Admins</strong> 群組及 <strong>RTCUniversalServerAdmins</strong> 群組成員的帳戶 (或者使用擁有對等權限的帳戶)，而且對於用在 Lync Server 2013 檔案存放區的檔案共用，擁有完全控制權限 (即讀取、寫入及修改)，讓拓撲產生器可以設定必要的判別存取控制清單 (DACL)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用本機 Users 群組成員的帳戶來定義拓撲，但是若要發行拓撲 (在拓撲中新增元件的必要作業)，則必須使用 <strong>Domain Admins</strong> 群組及 <strong>RTCUniversalServerAdmins</strong> 群組成員的帳戶 (或者使用擁有對等權限的帳戶)，而且對於用在 Lync Server 2013 檔案存放區的檔案共用，擁有完全控制權限 (即讀取、寫入及修改)，讓拓撲產生器可以設定必要的判別存取控制清單 (DACL)。
+    
 
 
 2.  啟動拓撲產生器。
@@ -91,32 +82,14 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - 如要切換至 Microsoft Exchange 整合，將封存資料及檔案儲存在 Exchange 2013 伺服器上 (如果部署中所有使用者的主伺服器皆在 Exchange 2013 伺服器上)，請刪除封存資料庫的所有資訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有任何 Lync 使用者的主伺服器不在 Exchange 2013 伺服器上，請勿刪除 SQL Server 儲存區資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果有任何 Lync 使用者的主伺服器不在 Exchange 2013 伺服器上，請勿刪除 SQL Server 儲存區資訊。
+    
 
 
 8.  如要儲存設定，按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在拓撲產生器中所做的變更，在發行新的拓撲之後才會發揮作用。如需詳細資訊，請參閱部署文件中的＜<a href="lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md">發佈已更新的拓撲以新增封存資料庫</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在拓撲產生器中所做的變更，在發行新的拓撲之後才會發揮作用。如需詳細資訊，請參閱部署文件中的＜<a href="lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md">發佈已更新的拓撲以新增封存資料庫</a>＞。
+    
 

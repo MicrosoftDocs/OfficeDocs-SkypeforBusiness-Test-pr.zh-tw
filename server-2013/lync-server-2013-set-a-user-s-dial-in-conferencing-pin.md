@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-06-10_
 
 若要以經過驗證的使用者身分加入電話撥入式會議，具有 Active Directory 網域服務 (AD DS) 認證的 Lync Server 2013 使用者需要個人識別碼 (PIN)。如果使用者忘記電話撥入式會議 PIN 或未使用 Lync Server 來設定 PIN，您可以從 Lync Server 控制台設定使用者的 PIN。您可以讓系統自動產生 PIN 或自行手動建立 PIN。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PIN 的特定特性 (例如最小長度) 可以以原則形式設定。除了全域原則，您還可以為個別網站或使用者設定 PIN 原則。如需設定 PIN 原則的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">在 Lync Server 2013 中設定電話撥入式會議個人識別碼 (PIN) 規則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> PIN 的特定特性 (例如最小長度) 可以以原則形式設定。除了全域原則，您還可以為個別網站或使用者設定 PIN 原則。如需設定 PIN 原則的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">在 Lync Server 2013 中設定電話撥入式會議個人識別碼 (PIN) 規則</a>＞。
+
 
 
 ## 設定使用者的 PIN
@@ -70,18 +61,9 @@ _**上次修改主題的時間：** 2014-06-10_
     
     5.  按一下 \[尋找\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 PIN 已鎖定，您必須解除鎖定 PIN，才能設定 PIN。若要解除鎖定 PIN，請依序按一下使用者、 <strong>[執行]</strong> 和 <strong>[解除鎖定 PIN]</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 PIN 已鎖定，您必須解除鎖定 PIN，才能設定 PIN。若要解除鎖定 PIN，請依序按一下使用者、 <strong>[執行]</strong> 和 <strong>[解除鎖定 PIN]</strong> 。
+    
 
 
 6.  依序按一下搜尋結果中的使用者、 **\[執行\]** 和 **\[設定 PIN\]** 。

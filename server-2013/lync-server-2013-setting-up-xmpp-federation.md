@@ -106,18 +106,9 @@ _**上次修改主題的時間：** 2012-12-03_
 
 23. 如要設定 DNS 用於 XMPP 同盟，請在外部 DNS 新增下列 SRV 記錄：\_xmpp-server.\_tcp.\<網域名稱\>。SRV 記錄會解析為 Edge Server 的 Access Edge FQDN (連接埠值為 5269)。此外，還需要設定 "A" 主機記錄 (例如 xmpp.contoso.com)，將其指向 Access Edge Server 的 IP 位址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如多個網站中都有 Edge 集區，建議您新增多個 SRV 記錄用於 XMPP 同盟。為組織中每個 Edge 集區新增一個 SRV 記錄，並給予每個 SRV 記錄不同的優先順序。當所有的 Edge 集區都在執行時，XMPP 要求都會由第一優先順序的 Edge 集區來處理，但如果該 Edge 集區發生問題，就不用新增 SRV 記錄來重新取得 XMPP 同盟功能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如多個網站中都有 Edge 集區，建議您新增多個 SRV 記錄用於 XMPP 同盟。為組織中每個 Edge 集區新增一個 SRV 記錄，並給予每個 SRV 記錄不同的優先順序。當所有的 Edge 集區都在執行時，XMPP 要求都會由第一優先順序的 Edge 集區來處理，但如果該 Edge 集區發生問題，就不用新增 SRV 記錄來重新取得 XMPP 同盟功能。
+    
 
 
 24. 如要設定新的外部存取原則來啟用所有的使用者，請在前端開啟 Lync Server 管理命令介面命令並輸入下列命令：

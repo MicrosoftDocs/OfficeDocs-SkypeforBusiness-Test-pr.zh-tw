@@ -39,18 +39,9 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
     
       - 若為內部 DNS 記錄，在 DNS 伺服器的主控台樹狀目錄中展開 Active Directory 網域 (例如 contoso.local) 的 \[正向對應區域\]。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此網域是 Lync Server 2013 Director 集區和前端集區安裝所在的 Active Directory 網域。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 此網域是 Lync Server 2013 Director 集區和前端集區安裝所在的 Active Directory 網域。
+        
     
       - 若為外部 DNS 記錄，在 DNS 伺服器的主控台樹狀目錄中展開 SIP 網域 (例如 contoso.com) 的 \[正向對應區域\]。
 
@@ -68,18 +59,9 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
 
 6.  若為內部 DNS 記錄，在 DNS 伺服器的主控台樹狀目錄中，展開 SIP 網域 (例如 contoso.com) 的 \[正向對應區域\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您正在建立外部 DNS 記錄，從步驟 3 就已展開 SIP 網域的 [正向對應區域]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您正在建立外部 DNS 記錄，從步驟 3 就已展開 SIP 網域的 [正向對應區域]。
+    
 
 
 7.  在 SIP 網域名稱上按一下滑鼠右鍵，然後按一下 \[新增別名 (CNAME)\]。
@@ -96,31 +78,13 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
     
       - 若為外部 DNS 記錄，輸入或瀏覽 Director 集區的外部 Web 服務 FQDN (例如 lyncwebextdir.contoso.com)，然後按一下 \[確定\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您沒有使用 Director，請使用前端集區的內部和外部 Web 服務 FQDN，或者，若為單一伺服器，請使用前端伺服器或 Standard Edition 伺服器的 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您沒有使用 Director，請使用前端集區的內部和外部 Web 服務 FQDN，或者，若為單一伺服器，請使用前端伺服器或 Standard Edition 伺服器的 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須在 Lync Server 2013 環境中，針對您所支援之每個 SIP 網域的正向對應區域，建立新的自動探索 CNAME 記錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 您必須在 Lync Server 2013 環境中，針對您所支援之每個 SIP 網域的正向對應區域，建立新的自動探索 CNAME 記錄。
+    
 
 
 ## 建立 DNS A 記錄
@@ -137,18 +101,9 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
     
       - 若為內部 DNS 記錄，在 DNS 伺服器的主控台樹狀目錄中展開 Active Directory 網域 (例如 contoso.local) 的 \[正向對應區域\]。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此網域是 Lync Server 2013 Director 集區和前端集區安裝所在的 Active Directory 網域。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 此網域是 Lync Server 2013 Director 集區和前端集區安裝所在的 Active Directory 網域。
+        
     
       - 若為外部 DNS 記錄，在 DNS 伺服器的主控台樹狀目錄中展開 SIP 網域 (例如 contoso.com) 的 \[正向對應區域\]。
 
@@ -166,18 +121,9 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
 
 6.  若為內部 DNS 記錄，在 DNS 伺服器的主控台樹狀目錄中，展開 SIP 網域 (例如 contoso.com) 的 \[正向對應區域\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您正在建立外部 DNS 記錄，從步驟 3 就已展開 SIP 網域的 [正向對應區域]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您正在建立外部 DNS 記錄，從步驟 3 就已展開 SIP 網域的 [正向對應區域]。
+    
 
 
 7.  在 SIP 網域名稱上按一下滑鼠右鍵，然後按一下 \[新增主機 (A 或 AAAA)\]。
@@ -188,36 +134,18 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
     
       - 若為外部 DNS 記錄，輸入 lyncdiscover 做為外部自動探索服務 URL 的主機名稱。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>網域名稱是從定義記錄所在的區域取得，因此，不需要輸入為 A 記錄的一部分。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 網域名稱是從定義記錄所在的區域取得，因此，不需要輸入為 A 記錄的一部分。
+    
 
 
 9.  在 \[IP 位址\] 中，輸入 IP 位址，如下所示：
     
       - 若為內部 DNS 記錄，輸入 Director 的內部 Web 服務 IP 位址 (或者，如果您使用負載平衡器，則輸入 Director 負載平衡器的虛擬 IP (VIP))。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您沒有使用 Director，請輸入前端伺服器或 Standard Edition 伺服器 IP 位址，或者，如果您使用負載平衡器，則輸入前端集區負載平衡器的 VIP。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您沒有使用 Director，請輸入前端伺服器或 Standard Edition 伺服器 IP 位址，或者，如果您使用負載平衡器，則輸入前端集區負載平衡器的 VIP。
+        
     
       - 若為外部 DNS 記錄，輸入反向 Proxy 的外部或公用 IP 位址。
 
@@ -225,18 +153,9 @@ DNS 記錄可以是 A (主機) 記錄或 CNAME 記錄，這取決於您建立具
 
 11. 若要建立其他 A 記錄，請重複步驟 8 至 10。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須在 Lync Server 2013 環境中，針對您所支援之每個 SIP 網域的正向對應區域，建立新的 lyncdiscover 和 lyncdiscoverinternal A 記錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須在 Lync Server 2013 環境中，針對您所支援之每個 SIP 網域的正向對應區域，建立新的 lyncdiscover 和 lyncdiscoverinternal A 記錄。
+    
 
 
 12. 完成建立 A (IPv6 為 AAAA) 記錄後，按一下 \[完成\]。

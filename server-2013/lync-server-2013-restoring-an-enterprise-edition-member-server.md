@@ -45,18 +45,9 @@ _**上次修改主題的時間：** 2013-02-18_
 
 1.  準備一部完整網域名稱 (FQDN) 與失敗伺服器相同的乾淨或全新伺服器，然後安裝作業系統，再還原或重新註冊憑證。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>遵循貴組織的伺服器部署程序執行此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 遵循貴組織的伺服器部署程序執行此步驟。
+    
 
 
 2.  從 RTCUniversalServerAdmins 群組成員的使用者帳戶登入所要還原的伺服器。

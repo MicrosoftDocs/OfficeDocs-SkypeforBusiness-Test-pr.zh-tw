@@ -53,18 +53,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>Deploy.exe</strong> – 由 setup.exe 呼叫，deploy.exe 負責部署伺服器角色的軟體元件。</p></td>
 <td><p>電腦上執行可執行檔的 Local Administrators 群組成員。讀取 AD DS 中資訊的 Domain Users 群組成員。此層級權限是必要權限，因為在本機電腦上自動安裝必要的 MSI 套件時，需要允許在受保護的本機電腦資源 (例如 Program Files 目錄) 以及受保護登錄 (例如 Local Machine Hive) 上讀取和寫入的權限。必須有讀取 中央管理存放區的 RtcUniversalReadOnlyAdmins 群組成員資格。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您是執行 Windows Vista 作業系統 或 Windows 7 作業系統，使用者帳戶控制 (UAC) 會提示您繼續安裝。如果您是用標準使用者帳戶登入，則在出現具有安裝軟體權限的帳戶提示時，您會需要身為 Local Administrators 群組成員的某個人提供憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您是執行 Windows Vista 作業系統 或 Windows 7 作業系統，使用者帳戶控制 (UAC) 會提示您繼續安裝。如果您是用標準使用者帳戶登入，則在出現具有安裝軟體權限的帳戶提示時，您會需要身為 Local Administrators 群組成員的某個人提供憑證。
+
 
 </div></td>
 </tr>

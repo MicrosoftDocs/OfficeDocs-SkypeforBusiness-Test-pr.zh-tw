@@ -47,18 +47,9 @@ _**上次修改主題的時間：** 2014-02-07_
 
 14. 依序按一下 **\[認可\]** 和 **\[全部認可\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每當您建立語音路由測試案例時，您必須執行 <strong>[全部認可]</strong> 命令來發行組態變更。如需詳細資料，請參閱操作文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 每當您建立語音路由測試案例時，您必須執行 <strong>[全部認可]</strong> 命令來發行組態變更。如需詳細資料，請參閱操作文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。
+    
     
     如果在測試中使用的撥號對應表正規化了以加號開頭的電話號碼 (例如，+12065551219)，該對應表可能會導致語音路由測試失敗。(撥號對應表與語音路由將可正常使用；事實上，Test-CsDialPlan 將會成功。但是，語音路由測試可能會失敗。) 這是在測試語音路由時應記住的事項。
 

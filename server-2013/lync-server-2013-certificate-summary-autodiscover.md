@@ -23,34 +23,16 @@ Lync Server 2013 自動探索服務會在 Director 和前端集區伺服器上�
 
   - **在連接埠 443 上發行**   外部 Web 服務發行規則所使用的憑證主體替代名稱清單，必須針對組織內的每個 SIP 網域，各包含一個「lyncdiscover.\<SIP 網域\>」 項目。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>強烈建議您使用 HTTPS，而不使用 HTTP。HTTPS 會使用憑證來加密流量。HTTP 不提供加密，且任何資料都是以純文字的方式傳送。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 強烈建議您使用 HTTPS，而不使用 HTTP。HTTPS 會使用憑證來加密流量。HTTP 不提供加密，且任何資料都是以純文字的方式傳送。
+    
 
 
 使用內部憑證授權單位來重新發出憑證通常是個簡單的程序。但是對於 Web 服務用來發行規則的公用憑證而言，新增多個主體替代名稱項目可能會變得很昂貴。為了避免這個問題，我們支援透過連接埠 80 進行初始的自動探索連線，這會重新導向至 Director 或前端伺服器上的連接埠 8080。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果 Lync Server 2013 基礎結構使用內部憑證授權單位 (CA) 發出的內部憑證，而且您計劃要支援行動裝置以無線方式連線，則內部 CA 的根憑證鏈結必須安裝在行動裝置上，否則您就必須變更 Lync Server 2013 基礎結構使用公用憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果 Lync Server 2013 基礎結構使用內部憑證授權單位 (CA) 發出的內部憑證，而且您計劃要支援行動裝置以無線方式連線，則內部 CA 的根憑證鏈結必須安裝在行動裝置上，否則您就必須變更 Lync Server 2013 基礎結構使用公用憑證。
+
 
 
 本主題說明 Director、前端伺服器及反向 Proxy 所需新增的主題替代名稱。在此僅提及新增的主體替代名稱 (SAN)。對於憑證上其他項目的指示，請參閱規劃章節。如需詳細資訊，請參閱＜[Lync Server 2013 中的 Director 案例](lync-server-2013-scenarios-for-the-director.md)、[Lync Server 2013 中的外部使用者存取案例](lync-server-2013-scenarios-for-external-user-access.md)＞，以及＜[Lync Server 2013 中的反向 Proxy 案例](lync-server-2013-scenarios-for-reverse-proxy.md)＞。
@@ -83,18 +65,9 @@ Lync Server 2013 自動探索服務會在 Director 和前端集區伺服器上�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將含有新 SAN 項目的新更新憑證指派給預設憑證。或者，您可以使用 SAN=*.<em>&lt;SIP 網域&gt;</em>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以將含有新 SAN 項目的新更新憑證指派給預設憑證。或者，您可以使用 SAN=*.<em>&lt;SIP 網域&gt;</em>。
+
 
 
 ### 前端集區憑證需求
@@ -123,18 +96,9 @@ Lync Server 2013 自動探索服務會在 Director 和前端集區伺服器上�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將含有新 SAN 項目的新更新憑證指派給預設憑證。或者，您可以使用 SAN=*.<em>&lt;SIP 網域&gt;</em></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以將含有新 SAN 項目的新更新憑證指派給預設憑證。或者，您可以使用 SAN=*.<em>&lt;SIP 網域&gt;</em>
+
 
 
 ### 反向 Proxy (公用 CA) 憑證需求
@@ -159,16 +123,7 @@ Lync Server 2013 自動探索服務會在 Director 和前端集區伺服器上�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將含有新 SAN 項目的新更新憑證指派給反向 Proxy 上的 SSL 接聽程式。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以將含有新 SAN 項目的新更新憑證指派給反向 Proxy 上的 SSL 接聽程式。
+
 

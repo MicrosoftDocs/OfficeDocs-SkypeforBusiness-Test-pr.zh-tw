@@ -74,18 +74,9 @@ _**上次修改主題的時間：** 2015-01-26_
 
   - OCSServices.\<domain\>
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需詳細的系統管理和管理程序，請參閱 <a href="lync-server-2013-backing-up-and-restoring-lync-server.md">備份及還原 Lync Server 2013</a> (備份及還原 Lync Server 2013)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如需詳細的系統管理和管理程序，請參閱 <a href="lync-server-2013-backing-up-and-restoring-lync-server.md">備份及還原 Lync Server 2013</a> (備份及還原 Lync Server 2013)。
+
 
 
 ## 請參閱

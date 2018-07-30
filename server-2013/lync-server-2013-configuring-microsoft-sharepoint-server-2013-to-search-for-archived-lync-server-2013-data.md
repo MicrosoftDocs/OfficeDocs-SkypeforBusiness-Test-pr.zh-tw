@@ -44,18 +44,9 @@ _**上次修改主題的時間：** 2014-02-04_
     $service.AllowOAuthOverHttp = $False
     $service.Update()
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請務必將該 URI 用於自動探索服務。不要使用範例 URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 請務必將該 URI 用於自動探索服務。不要使用範例 URI https://autodiscover.litwareinc.com/autodiscover/metadata/json/1。
+
 
 
 在建立 Token 發行者以及設定 Token 服務之後，執行下列命令，請務必以 SharePoint 網站的 URL 來替代範例 URL http://atl-sharepoint-001：
@@ -84,18 +75,9 @@ _**上次修改主題的時間：** 2014-02-04_
     $template = Get-SPWebTemplate | Where-Object {$_.Title -eq "eDiscovery Center"}
     New-SPSite -Url "https://atl-sharepoint-001/sites/discovery" -OwnerAlias "kenmyer" -Template $Template -Name "Discovery Center"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&quot;eDiscovery&quot; 是 &quot;electronic discovery&quot; (電子化探索) 的縮寫，此程序通常是指在電子化封存中尋找可以在法庭上「合理計算以導出可採納證據」的項目。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> &quot;eDiscovery&quot; 是 &quot;electronic discovery&quot; (電子化探索) 的縮寫，此程序通常是指在電子化封存中尋找可以在法庭上「合理計算以導出可採納證據」的項目。
+
 
 
 當新網站準備好時，下個步驟就是設定 Exchange 2013 來做為 SharePoint 的結果來源。若要執行此作業，您可以從「SharePoint 2013 管理中心」頁面來完成下列程序：

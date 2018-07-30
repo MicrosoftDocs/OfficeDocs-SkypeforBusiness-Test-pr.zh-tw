@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ConferenceMessageCount 檢視會儲存關於使用者傳送多少則訊息到會議的資訊。此檢視已於 Microsoft Lync Server 2013 引進使用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ConferenceMessageCount 檢視包含 <a href="lync-server-2013-conferencesessiondetails-view.md">ConferenceSessionDetails 檢視</a>中的所有欄以及下方所列的欄。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> ConferenceMessageCount 檢視包含 <a href="lync-server-2013-conferencesessiondetails-view.md">ConferenceSessionDetails 檢視</a>中的所有欄以及下方所列的欄。
+
 
 
 

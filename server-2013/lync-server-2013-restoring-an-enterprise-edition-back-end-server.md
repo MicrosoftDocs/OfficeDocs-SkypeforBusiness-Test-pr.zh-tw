@@ -43,36 +43,18 @@ _**上次修改主題的時間：** 2013-02-18_
 
 1.  準備一部完整網域名稱 (FQDN) 與失敗電腦相同的乾淨或全新伺服器，然後安裝作業系統，再還原或重新註冊憑證。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>遵循貴組織的伺服器部署程序執行此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 遵循貴組織的伺服器部署程序執行此步驟。
+    
 
 
 2.  從 RTCUniversalServerAdmins 群組成員的使用者帳戶登入所要還原的伺服器。
 
 3.  安裝 SQL Server 2012 或 SQL Server 2008 R2，並將執行個體名稱保持與失敗之前相同。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>視您的部署而定，後端伺服器可能包含多個組合或個別的資料庫。請遵循相同程序來安裝您原本用來部署伺服器的 SQL Server，包括 SQL Server 權限和登入。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 視您的部署而定，後端伺服器可能包含多個組合或個別的資料庫。請遵循相同程序來安裝您原本用來部署伺服器的 SQL Server，包括 SQL Server 權限和登入。
+    
 
 
 4.  安裝 SQL Server 之後，請執行下列動作：
@@ -87,18 +69,9 @@ _**上次修改主題的時間：** 2013-02-18_
     
     5.  遵循 \[發行拓撲精靈\] 中的步驟。在「建立資料庫」頁面上，選取要重新建立的資料庫。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>只有獨立伺服器會顯示在 [建立資料庫] 頁面上。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 只有獨立伺服器會顯示在 [建立資料庫] 頁面上。
+        
     
     6.  若要還原已鏡像處理的後端伺服器，請繼續遵循精靈中其餘的步驟，直到出現提示 \[建立鏡像資料庫\]。選取要安裝的資料庫，然後完成程序。
     

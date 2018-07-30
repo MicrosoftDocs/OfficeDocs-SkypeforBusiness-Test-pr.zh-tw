@@ -43,16 +43,7 @@ _**上次修改主題的時間：** 2010-11-07_
     
       - 使用者的 Active Directory 網域服務顯示名稱 (例如，Ken Myer)。如果使用顯示名稱做為 Identity 值，您可以使用星號 (\*) 萬用字元。例如，若 Identity 為 "\* Smith"，則會傳回所有顯示名稱結尾為字串值 " Smith" 的使用者。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者的 Active Directory SAM 帳戶名稱無法當做 Identity 值使用，因為 SAM 帳戶名稱在樹系中不一定是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用者的 Active Directory SAM 帳戶名稱無法當做 Identity 值使用，因為 SAM 帳戶名稱在樹系中不一定是唯一的。
+    
 

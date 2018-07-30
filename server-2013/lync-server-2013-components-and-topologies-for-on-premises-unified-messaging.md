@@ -37,16 +37,7 @@ Lync Server 2013 支援下列拓撲用於 Exchange UM 整合：
 
   - 多重樹系 (亦即資源樹系)。 Lync Server 2013 部署在單一樹系中，接著橫跨多個樹系分散使用者。使用者的 Exchange UM 屬性必須複寫至 Lync Server 2013 樹系。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 可以部署在多個樹系中。每個 Exchange 組織都能提供 Exchange UM 給其使用者，或是 Exchange UM 可以部署至與 Lync Server 2013 相同的樹系。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Exchange 可以部署在多個樹系中。每個 Exchange 組織都能提供 Exchange UM 給其使用者，或是 Exchange UM 可以部署至與 Lync Server 2013 相同的樹系。
+    
 

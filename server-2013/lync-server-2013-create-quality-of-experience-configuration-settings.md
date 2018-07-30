@@ -60,18 +60,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>New-CsQoEConfiguration Cmdlet 包含 Lync Server 控制台中未提供的其他選項。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</a> 說明主題。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> New-CsQoEConfiguration Cmdlet 包含 Lync Server 控制台中未提供的其他選項。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</a> 說明主題。
+
 
 
 ## 使用 Lync Server 控制台建立 QoE 組態設定

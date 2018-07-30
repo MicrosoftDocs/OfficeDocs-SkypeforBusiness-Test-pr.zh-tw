@@ -51,33 +51,15 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>在通話駐留範圍表中設定電話接聽號碼範圍</p></td>
 <td><p>使用 <strong>New-CSCallParkOrbit</strong> Cmdlet 在通話駐留範圍表中建立電話接聽號碼範圍，並且指派電話接聽範圍為 GroupPickup 類型。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用 Lync Server 管理命令介面 才能在通話駐留範圍表中建立、修改、移除及檢視群組來電接聽號碼範圍。Lync Server 控制台 無法使用群組來電接聽號碼範圍。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必須使用 Lync Server 管理命令介面 才能在通話駐留範圍表中建立、修改、移除及檢視群組來電接聽號碼範圍。Lync Server 控制台 無法使用群組來電接聽號碼範圍。
+
 
 </div>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了能與現有撥號對應表密切整合，號碼範圍通常設定為虛擬分機的區塊。不支援將直接向內撥號 (DID) 號碼指派為通話駐留範圍表中的範圍號碼。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 為了能與現有撥號對應表密切整合，號碼範圍通常設定為虛擬分機的區塊。不支援將直接向內撥號 (DID) 號碼指派為通話駐留範圍表中的範圍號碼。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>

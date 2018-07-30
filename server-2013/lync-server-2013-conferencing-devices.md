@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 使用本節中的主題以了解如何設定並管理您的會議裝置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需有關支援搭配 Lync Server 2013 使用的會議裝置的詳細資訊，請參閱網頁 <a href="http://technet.microsoft.com/en-us/lync/gg278164.aspx">Microsoft Lync 適用的電話與裝置</a> (英文)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需有關支援搭配 Lync Server 2013 使用的會議裝置的詳細資訊，請參閱網頁 <a href="http://technet.microsoft.com/en-us/lync/gg278164.aspx">Microsoft Lync 適用的電話與裝置</a> (英文)。
+
 
 
 ## 本章節內容

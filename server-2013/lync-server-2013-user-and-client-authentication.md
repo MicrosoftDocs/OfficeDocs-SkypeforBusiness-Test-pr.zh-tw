@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2013-11-11_
 
   - **NTLM 通訊協定**：針對有 Active Directory 認證且從企業防火牆外的端點連線的使用者。Access Edge Service 會將登入要求傳送至 Director (若有的話) 或是 前端伺服器 進行驗證。Access Edge Service 本身不執行驗證。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>NTLM 通訊協定所提供的攻擊防護較 Kerberos 弱，因此部分組織會盡量少用 NTLM。因此，Lync Server 2013 的存取權可能會限制為內部用戶端，或是透過 VPN 或 DirectAccess 連線的用戶端。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > NTLM 通訊協定所提供的攻擊防護較 Kerberos 弱，因此部分組織會盡量少用 NTLM。因此，Lync Server 2013 的存取權可能會限制為內部用戶端，或是透過 VPN 或 DirectAccess 連線的用戶端。
+    
 
 
   - **摘要式通訊協定**：針對所謂的匿名使用者。匿名使用者是沒有經認可 Active Directory 認證、但受邀參加內部會議且擁有有效的會議金鑰的外部使用者。摘要式驗證並非用於其他的用戶端互動。

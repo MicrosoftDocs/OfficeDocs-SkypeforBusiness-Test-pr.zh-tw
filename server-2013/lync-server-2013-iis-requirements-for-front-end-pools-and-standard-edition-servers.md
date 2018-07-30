@@ -37,34 +37,16 @@ Lync Server 2013 安裝程式會針對 Standard Edition Server、前端伺服器
 
   - 在 前端伺服器 或 Standard Edition Server 及 Director 上，讓行動裝置可自動探索行動性資源
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想部署行動性，建議您使用 IIS 7.5。 Lync Server Mobility Service 安裝程式會設定一些 ASP.NET 標幟以提升效能。預設會在 Windows Server 2008 R2 上安裝 IIS 7.5，且 Mobility Service 安裝程式會自動變更 ASP.NET 設定。如果您在 Windows Server 2008 上使用 IIS 7.0，則需要手動變更這些設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您想部署行動性，建議您使用 IIS 7.5。 Lync Server Mobility Service 安裝程式會設定一些 ASP.NET 標幟以提升效能。預設會在 Windows Server 2008 R2 上安裝 IIS 7.5，且 Mobility Service 安裝程式會自動變更 ASP.NET 設定。如果您在 Windows Server 2008 上使用 IIS 7.0，則需要手動變更這些設定。
+
 
 
 Lync Server 需要安裝下列 IIS 模組：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的組織要求您找到系統磁碟機以外之磁碟機上的 IIS 和所有 Web 服務，您可以變更安裝程式對話方塊中 Lync Server 檔案的安裝位置路徑。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，其餘的 Lync Server 檔案也會部署到此磁碟機。如需安裝 IIS 時如何重新安置由 Windows 伺服器管理員部署的 INETPUB 的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=216888%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=216888&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您的組織要求您找到系統磁碟機以外之磁碟機上的 IIS 和所有 Web 服務，您可以變更安裝程式對話方塊中 Lync Server 檔案的安裝位置路徑。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，其餘的 Lync Server 檔案也會部署到此磁碟機。如需安裝 IIS 時如何重新安置由 Windows 伺服器管理員部署的 INETPUB 的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=216888%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=216888&amp;clcid=0x404</a>。
+
 
 
   - 靜態內容
@@ -181,30 +163,12 @@ Lync Server 需要安裝下列 IIS 模組：
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於合併設定中的 前端集區，您必須先部署 IIS 才能在集區中新增伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 對於合併設定中的 前端集區，您必須先部署 IIS 才能在集區中新增伺服器。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398321.security(OCS.15).gif" title="security" alt="security" />安全性 附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用 IIS 系統管理嵌入式管理單元，來指派 IIS Web 元件伺服器所使用的憑證。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 您必須使用 IIS 系統管理嵌入式管理單元，來指派 IIS Web 元件伺服器所使用的憑證。
+
 

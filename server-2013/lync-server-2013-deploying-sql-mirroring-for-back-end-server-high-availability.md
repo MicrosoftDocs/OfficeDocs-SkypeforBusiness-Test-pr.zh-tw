@@ -41,18 +41,9 @@ _**上次修改主題的時間：** 2014-01-08_
 
 有了 SQL 鏡像，您可在建立集區時或在建立集區後設定鏡像的拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有在主要、鏡像及見證 (視需要) 伺服器皆屬於相同網域時，才會支援使用 拓撲產生器或 Cmdlet 設定與移除 SQL 鏡像。若要在不同網域的伺服器間設定 SQL 鏡像，請參閱 SQL Server 文件。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 只有在主要、鏡像及見證 (視需要) 伺服器皆屬於相同網域時，才會支援使用 拓撲產生器或 Cmdlet 設定與移除 SQL 鏡像。若要在不同網域的伺服器間設定 SQL 鏡像，請參閱 SQL Server 文件。
+
 
 
 <table>
@@ -78,18 +69,9 @@ _**上次修改主題的時間：** 2014-01-08_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須為鏡像檔案建立可供其寫入的檔案共用，而且 SQL Server 和 SQL Agent 執行所在的服務也需要讀取/寫入的權限。如果 SQL Server 服務是在 Network Service 下執行，您可以將主體和鏡像 SQL Server「&lt;網域&gt;\&lt;SQL 伺服器名稱&gt;$」都新增到共用權限。$ 必須存在，才能識別這是電腦帳戶。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必須為鏡像檔案建立可供其寫入的檔案共用，而且 SQL Server 和 SQL Agent 執行所在的服務也需要讀取/寫入的權限。如果 SQL Server 服務是在 Network Service 下執行，您可以將主體和鏡像 SQL Server「&lt;網域&gt;\&lt;SQL 伺服器名稱&gt;$」都新增到共用權限。$ 必須存在，才能識別這是電腦帳戶。
+
 
 
 ## 在 拓撲產生器中建立集區時設定 SQL 鏡像

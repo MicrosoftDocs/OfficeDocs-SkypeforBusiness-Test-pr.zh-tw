@@ -71,18 +71,9 @@ _**上次修改主題的時間：** 2015-06-22_
 
     Identity : tag:AllowPublicIMCommunication
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>tag 前置詞可追溯至 Lync Server 2010 的初期部署階段。當時，個別使用者原則稱為「標記原則」並可由 tag 前置詞 加以識別。這些原則現已更為精確地改稱為「個別使用者原則」，而標記範圍則更為精確地改稱為「個別使用者範圍」。然而，基於技術因素，tag 前置詞的用法從未變更。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> tag 前置詞可追溯至 Lync Server 2010 的初期部署階段。當時，個別使用者原則稱為「標記原則」並可由 tag 前置詞 加以識別。這些原則現已更為精確地改稱為「個別使用者原則」，而標記範圍則更為精確地改稱為「個別使用者範圍」。然而，基於技術因素，tag 前置詞的用法從未變更。
+
 
 
 另一個在使用 商務用 Skype Online 與 Windows PowerShell 時所會看到的詞彙是「租用戶」。當您設定 商務用 Skype Online 帳戶時，系統會將租用戶識別碼指派給您的新部署，該識別碼即為類似如下的全域唯一識別碼 (GUID)：

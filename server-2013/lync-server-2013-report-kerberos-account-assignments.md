@@ -47,16 +47,7 @@ _**上次修改主題的時間：** 2012-01-16_
         
             Get-CsKerberosAccountAssignment -Filter "*Redmond"
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>指定 Filter 參數的 *SiteName 會傳回在網站識別元的任意位置包含指定網站名稱之所有網站 (例如，在網站識別元中包含 Redmond 字串的所有網站) 的相關資訊。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 指定 Filter 參數的 *SiteName 會傳回在網站識別元的任意位置包含指定網站名稱之所有網站 (例如，在網站識別元中包含 Redmond 字串的所有網站) 的相關資訊。
+        
 

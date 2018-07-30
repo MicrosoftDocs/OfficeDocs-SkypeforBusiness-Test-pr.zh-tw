@@ -47,18 +47,9 @@ New-CsServerApplication -Identity Service:Registrar:LS2013CU2LBRPool.contoso.com
 
 使用此 Cmdlet 之後，會重新啟動集區中所有前端伺服器，或已啟用以位置為基礎之路由會議應用程式的 Standard Edition Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在重新啟動適用集區中的所有前端伺服器，或重新啟動 Standard Edition Server 之前，不會針對會議或咨詢轉接強制執行強制以位置為基礎的路由。若在前述 Cmdlet 中將 <strong>–Critical</strong> 設為 <strong>$true</strong>，您的 Lync 服務將立即重新啟動。如果不想立即重新啟動這些服務，請立即將 <strong>–Critical</strong> 設為 <strong>$false</strong>，稍後再於重新啟動服務後，使用 <strong>Set-CsServerApplication</strong> 將 <strong>-Critical</strong> 變為 <strong>$true</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在重新啟動適用集區中的所有前端伺服器，或重新啟動 Standard Edition Server 之前，不會針對會議或咨詢轉接強制執行強制以位置為基礎的路由。若在前述 Cmdlet 中將 <strong>–Critical</strong> 設為 <strong>$true</strong>，您的 Lync 服務將立即重新啟動。如果不想立即重新啟動這些服務，請立即將 <strong>–Critical</strong> 設為 <strong>$false</strong>，稍後再於重新啟動服務後，使用 <strong>Set-CsServerApplication</strong> 將 <strong>-Critical</strong> 變為 <strong>$true</strong>。
+
 
 
 成功啟用以位置為基礎的路由會議應用程式，並且重新啟動所有適用的 Lync 伺服器後，系統將監視已啟用「以位置為基礎的路由」之 Lync 使用者召集的所有會議，以避免 PSTN 公用電話旁路

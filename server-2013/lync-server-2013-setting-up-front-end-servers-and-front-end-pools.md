@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-01_
 
 本節會引導您安裝 Lync Server 2013，並設定 Standard Edition 伺服器的伺服器角色以及 前端集區，包括 前端伺服器，以及任何與 前端伺服器配置在一起的伺服器角色。若要安裝及設定伺服器角色，您需要在每部要安裝伺服器角色的電腦上執行 Lync Server 部署精靈。您可以使用 \[部署精靈\] 來完成所有四個部署步驟，包括安裝本機設定存放區、安裝 前端伺服器、設定憑證，以及啟動服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在設定伺服器角色之前，您必須成功發行拓撲。如需關於發行拓撲的詳細資訊，請參閱 <a href="lync-server-2013-finalizing-and-implementing-the-topology-design.md">在 Lync Server 2013 中完成和實作拓撲設計</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在設定伺服器角色之前，您必須成功發行拓撲。如需關於發行拓撲的詳細資訊，請參閱 <a href="lync-server-2013-finalizing-and-implementing-the-topology-design.md">在 Lync Server 2013 中完成和實作拓撲設計</a>。
+
 
 
 ## 本章節內容

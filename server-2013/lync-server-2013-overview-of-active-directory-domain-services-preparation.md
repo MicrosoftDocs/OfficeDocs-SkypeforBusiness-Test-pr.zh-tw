@@ -44,18 +44,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <p>為部署中即將部署 Lync Server 的每個樹系執行一次。</p></td>
 <td><p>針對每個樹系之根網域中即將部署 Lync Server 的架構主機。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您有架構主機的權限，就不需要在根網域中執行此步驟。但是，您必須是根網域中的 Schema Admins 群組成員，以及架構主機上的 Enterprise Admins 群組成員。在資源樹系拓撲中，只會在資源樹系中執行此步驟，不會在任何使用者樹系中執行。在中央樹系拓撲中，只會在中央樹系中執行此步驟，不會在任何使用者樹系中執行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您有架構主機的權限，就不需要在根網域中執行此步驟。但是，您必須是根網域中的 Schema Admins 群組成員，以及架構主機上的 Enterprise Admins 群組成員。在資源樹系拓撲中，只會在資源樹系中執行此步驟，不會在任何使用者樹系中執行。在中央樹系拓撲中，只會在中央樹系中執行此步驟，不會在任何使用者樹系中執行。
+
 
 </div></td>
 </tr>
@@ -66,18 +57,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <p>為部署中即將部署 Lync Server 的每個樹系執行一次。</p></td>
 <td><p>在即將部署 Lync Server 之每個樹系的根網域中。您必須是 Enterprise Admins 群組的成員，才能夠執行這個步驟。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在資源樹系拓撲中，只會在資源樹系中執行此步驟，不會在任何使用者樹系中執行。在中央樹系拓撲中，只會在中央樹系中執行此步驟，不會在任何使用者樹系中執行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在資源樹系拓撲中，只會在資源樹系中執行此步驟，不會在任何使用者樹系中執行。在中央樹系拓撲中，只會在中央樹系中執行此步驟，不會在任何使用者樹系中執行。
+
 
 </div></td>
 </tr>
@@ -87,18 +69,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>新增萬用群組成員所使用之物件的權限。</p>
 <p>為每個使用者網域或伺服器網域執行一次。</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要從 Lync Server 2010 移轉至 Lync Server 2013，「部署精靈」可能會指出網域準備已經完成。您不需要再次執行網域準備。權限並未從 Lync Server 2010 變更為 Lync Server 2013。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要從 Lync Server 2010 移轉至 Lync Server 2013，「部署精靈」可能會指出網域準備已經完成。您不需要再次執行網域準備。權限並未從 Lync Server 2010 變更為 Lync Server 2013。
+
 
 </div></td>
 <td><p>在即將部署 Lync Server 之每個網域的成員伺服器上。您必須是 Domain Admins 群組的成員，才能夠執行這個步驟。</p></td>

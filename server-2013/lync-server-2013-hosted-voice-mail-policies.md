@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-01_
 
 「裝載語音信箱原則」 提供資訊給 Lync Server 2013 ExUM Routing 應用程式，指定撥給信箱位於所裝載 Exchange 服務上使用者的電話應路由至何處。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有與裝載的 Exchange UM 進行 Lync Server 2013 整合時，才需要裝載語音信箱原則。與內部部署 Exchange UM 整合時則不需要。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有與裝載的 Exchange UM 進行 Lync Server 2013 整合時，才需要裝載語音信箱原則。與內部部署 Exchange UM 整合時則不需要。
+
 
 
 ## 裝載語音信箱原則範圍
@@ -41,18 +32,9 @@ _**上次修改主題的時間：** 2012-10-01_
 
   - *個別使用者* 原則只會影響個別使用者或群組。若要強制執行個別使用者原則，必須明確地將原則指派給個別使用者、群組和連絡人物件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在大多數情況下，只需要一個裝載的語音信箱原則。您通常可以修改全域原則來符合所有需求。如果部署多個裝載語音信箱原則，所有這類原則都會有個別使用者範圍。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在大多數情況下，只需要一個裝載的語音信箱原則。您通常可以修改全域原則來符合所有需求。如果部署多個裝載語音信箱原則，所有這類原則都會有個別使用者範圍。
+
 
 
 ## 裝載語音信箱原則屬性
@@ -61,41 +43,23 @@ _**上次修改主題的時間：** 2012-10-01_
 
   - **Destination ：**裝載的 Exchange UM 服務的完整網域名稱 (FQDN)。這個值是供內部部署 Lync Server Edge Server 用於路由目的。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange Online 的 FQDN 為 exap.um.outlook.com。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Exchange Online 的 FQDN 為 exap.um.outlook.com。
+    
 
 
   - **Organization ：**您的 Lync Server 2013 使用者信箱所屬之裝載 Exchange UM 服務的承租人 FQDN。語音信箱原則可能包含多個組織。如果原則中包含一個以上的組織，這個屬性必須是您的 Lync Server 2013 使用者信箱所屬之 Exchange Server 承租人的逗號分隔清單。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您的裝載 Exchange UM 服務的承租人系統管理員，將會為 Destination 和 Organization 屬性設定提供必要值。若要設定您的原則，必須執行 New-CsHostedVoicemailPolicy Cmdlet，或使用 set-cshostedvoicemailpolicy Cmdlet 來修改現有的原則 (例如，全域原則)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您的裝載 Exchange UM 服務的承租人系統管理員，將會為 Destination 和 Organization 屬性設定提供必要值。若要設定您的原則，必須執行 New-CsHostedVoicemailPolicy Cmdlet，或使用 Set-CsHostedVoicemailPolicy Cmdlet 來修改現有的原則 (例如，全域原則)。
+
 
 
 如需管理裝載語音信箱原則的詳細資訊，請參閱 Lync Server 管理命令介面文件中的下列 Cmdlet：
 
   - New-CsHostedVoicemailPolicy
 
-  - set-cshostedvoicemailpolicy
+  - Set-CsHostedVoicemailPolicy
 
   - Get-CsHostedVoicemailPolicy
 

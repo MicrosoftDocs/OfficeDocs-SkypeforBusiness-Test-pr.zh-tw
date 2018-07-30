@@ -33,16 +33,7 @@ _**上次修改主題的時間：** 2012-12-14_
 
 若要了解如何設定類比閘道，請參閱 Lync Server 2010 TechNet Library 中的＜規劃部署類比裝置＞(可能為英文網頁)，網址為： [http://go.microsoft.com/fwlink/?linkid=268537\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=268537%26clcid=0x404)。(類比裝置在 Lync Server 2013 的運作方式與 Lync Server 2010 相同。)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將交換器設定為支援增強型 9-1-1 (E9-1-1) (如果交換器支援此設定)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您可以將交換器設定為支援增強型 9-1-1 (E9-1-1) (如果交換器支援此設定)。
+
 

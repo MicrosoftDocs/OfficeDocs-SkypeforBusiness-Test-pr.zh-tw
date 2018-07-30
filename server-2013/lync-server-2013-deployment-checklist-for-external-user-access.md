@@ -78,18 +78,9 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 <p></p></td>
 <td><p><strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 或 <strong>CsAdmins</strong> 群組</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用本機使用者群組的成員帳戶來定義拓撲，但發行拓撲需要以 <strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 群組的成員帳戶進行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以使用本機使用者群組的成員帳戶來定義拓撲，但發行拓撲需要以 <strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 群組的成員帳戶進行。
+
 
 </div></td>
 <td><p>部署文件中的＜ <a href="lync-server-2013-building-an-edge-and-director-topology.md">在 Lync Server 2013 中建置 Edge 和 Director 拓撲</a>＞</p></td>

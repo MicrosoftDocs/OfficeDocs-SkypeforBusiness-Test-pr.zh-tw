@@ -39,18 +39,9 @@ Active Directory 的基礎結構需求包括下列：
 
 ## Active Directory 網域服務 準備
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您將通用設定部署到設定容器，而不要部署到系統容器。這樣不會增強安全性，但可以為部分 Active Directory 網域服務 拓撲提升延展性。如果您是從 Microsoft Office Communications Server 2007 移轉，而且已使用系統容器，但是計劃要使用設定容器，則「必須先」移動系統容器中的設定，「之後」再進行任何升級準備工作。若要將您的系統容器設定移轉至設定容器，請參閱＜Office Communications Server 2007 通用設定移轉工具＞(英文)：<a href="http://go.microsoft.com/fwlink/p/?linkid=145236">http://go.microsoft.com/fwlink/p/?LinkId=145236</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建議您將通用設定部署到設定容器，而不要部署到系統容器。這樣不會增強安全性，但可以為部分 Active Directory 網域服務 拓撲提升延展性。如果您是從 Microsoft Office Communications Server 2007 移轉，而且已使用系統容器，但是計劃要使用設定容器，則「必須先」移動系統容器中的設定，「之後」再進行任何升級準備工作。若要將您的系統容器設定移轉至設定容器，請參閱＜Office Communications Server 2007 通用設定移轉工具＞(英文)：<a href="http://go.microsoft.com/fwlink/p/?linkid=145236">http://go.microsoft.com/fwlink/p/?LinkId=145236</a>。
+
 
 
 部署 Lync Server 2013 時，第一步是準備 Active Directory 網域服務。為 Lync Server 2013 準備 Active Directory 網域服務 時，包含下列三個步驟：
@@ -75,18 +66,9 @@ Active Directory 的基礎結構需求包括下列：
 
 如需深入瞭解在為 Lync Server 準備 AD 時建立的特定萬用群組，以及新增至基礎結構群組的服務和系統管理群組，請參閱＜部署＞文件中的[Lync Server 2013 中的樹系準備所進行的變更](lync-server-2013-changes-made-by-forest-preparation.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 可針對執行 Lync Server 2013 的伺服器，支援 Windows Server 2012 中的萬用群組，並支援網域控制站使用 Windows Server 2003 作業系統。 萬用群組的成員可以包括網域樹狀目錄或樹系中任何網域的其他群組和帳戶，而且可在網域樹狀目錄或樹系中的任何網域獲指派權限。萬用群組支援加上系統管理員委派，即可簡化 Lync Server 部署的管理工作。例如，您不需要為了讓系統管理員能夠同時管理兩個網域，而將一個網域加入另一個網域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 可針對執行 Lync Server 2013 的伺服器，支援 Windows Server 2012 中的萬用群組，並支援網域控制站使用 Windows Server 2003 作業系統。 萬用群組的成員可以包括網域樹狀目錄或樹系中任何網域的其他群組和帳戶，而且可在網域樹狀目錄或樹系中的任何網域獲指派權限。萬用群組支援加上系統管理員委派，即可簡化 Lync Server 部署的管理工作。例如，您不需要為了讓系統管理員能夠同時管理兩個網域，而將一個網域加入另一個網域。
+
 
 
 ## 角色型存取控制

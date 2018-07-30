@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 4.  在 \[區域連結\] 頁面中，按一下要檢視的區域連結。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>一次只能檢視一個區域的資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 一次只能檢視一個區域的資訊。
+    
 
 
 5.  從 \[編輯\] 功能表中，選取 \[顯示詳細資料\]。

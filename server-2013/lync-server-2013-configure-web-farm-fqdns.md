@@ -37,18 +37,9 @@ _**上次修改主題的時間：** 2013-03-29_
 
 6.  以滑鼠右鍵按一下 \[ Lync Server 2013\] ，然後按一下 \[發行\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>發行順利完成之後，可能會出現一個連結，告知您需要採取額外的步驟。如果按一下此連結，便會開啟受 拓撲產生器中所做變更影響的伺服器清單，您會需要在每部列出的伺服器上重新執行 Lync Server 部署精靈，以更新所新增、移除或變更之元件的設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 發行順利完成之後，可能會出現一個連結，告知您需要採取額外的步驟。如果按一下此連結，便會開啟受 拓撲產生器中所做變更影響的伺服器清單，您會需要在每部列出的伺服器上重新執行 Lync Server 部署精靈，以更新所新增、移除或變更之元件的設定。
+    
 
 
 7.  針對組織中的每個 Standard Edition 伺服器、 前端集區、 Director 或 Director 集區，重複執行這些步驟。

@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 下節說明這三種組態的相容性，以便使用各種 Lync Server 功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有實驗室或驗證用途的僅限 IPv6 的用戶端或伺服器組態，才能獲得支援。生產部署不支援僅限 IPv6 組態。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有實驗室或驗證用途的僅限 IPv6 的用戶端或伺服器組態，才能獲得支援。生產部署不支援僅限 IPv6 組態。
+
 
 
 ## 用戶端登錄
@@ -347,18 +338,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 包含所有通話許可控制 (CAC)、增強型 911 (E9-1-1) 或媒體旁路的部署必須設為僅限 IPv4 或雙重堆疊實作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在雙重堆疊部署中，即使 Lync 用戶端使用 IPv6 連線到 Lync Server， Lync 將盡可能對應到適當的 IPv4 位置，以支援 E9-1-1。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在雙重堆疊部署中，即使 Lync 用戶端使用 IPv6 連線到 Lync Server， Lync 將盡可能對應到適當的 IPv4 位置，以支援 E9-1-1。
+
 
 
 有 IPv6 位址的 位置資訊服務 不受支援。

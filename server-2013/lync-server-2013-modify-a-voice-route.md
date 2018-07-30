@@ -49,85 +49,39 @@ _**上次修改主題的時間：** 2012-11-01_
 
 9.  若要將一個或多個公用交換電話網路 (PSTN) 主幹與語音路由產生關聯，則按一下 \[新增\]，然後從清單中選取主幹。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的部署包含任何 Microsoft Office Communications Server 2007 R2 中繼伺服器，這些伺服器也會出現在清單中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的部署包含任何 Microsoft Office Communications Server 2007 R2 中繼伺服器，這些伺服器也會出現在清單中。
+    
 
 
 10. 若要將一項或多項 PSTN 使用方式與語音路由產生關聯，則按一下 \[選取\]，然後從針對企業語音部署所定義的 PSTN 使用方式記錄清單中選擇一項記錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要檢視每一項可用 PSTN 使用方式記錄的屬性，請參閱<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中檢視 PSTN 使用方式記錄</a>。<br />
-    若要建立或編輯 PSTN 使用方式記錄，請參閱<a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中建立語音原則和設定 PSTN 使用方式記錄</a>或<a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改語音原則和設定 PSTN 使用方式記錄</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要檢視每一項可用 PSTN 使用方式記錄的屬性，請參閱<a href="lync-server-2013-view-pstn-usage-records.md">在 Lync Server 2013 中檢視 PSTN 使用方式記錄</a>。<br />
+    > 若要建立或編輯 PSTN 使用方式記錄，請參閱<a href="lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中建立語音原則和設定 PSTN 使用方式記錄</a>或<a href="lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md">在 Lync Server 2013 中修改語音原則和設定 PSTN 使用方式記錄</a>。
 
 
 11. 排列 PSTN 使用方式記錄，以獲得最佳效能。若要變更清單中某筆記錄的位置，請反白顯示記錄名稱，然後按一下向上或向下箭頭。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在語音原則中，列出 PSTN 使用方式記錄的順序很重要，但是對於語音路由而言，PSTN 使用方式記錄的順序並不重要。不過，我們建議您依照使用頻率組織清單，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。(Lync Server 是從上到下周遊清單)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在語音原則中，列出 PSTN 使用方式記錄的順序很重要，但是對於語音路由而言，PSTN 使用方式記錄的順序並不重要。不過，我們建議您依照使用頻率組織清單，例如：RedmondLocal、RedmondLongDist、RedmondInternational 和 RedmondBackup。(Lync Server 是從上到下周遊清單)。
+    
 
 
 12. (選用) 在 **\[輸入要測試的轉譯號碼\]** 欄位中輸入一個值，然後按一下 **\[執行\]**。測試結果會在欄位底下顯示。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以儲存尚未通過測試的語音路由，並於之後將它重新設定。如需詳細資訊，請參閱<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以儲存尚未通過測試的語音路由，並於之後將它重新設定。如需詳細資訊，請參閱<a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>。
+    
 
 
 13. 按一下 \[確定\] 。
 
 14. 在 **\[路由\]** 頁面上按一下 **\[認可\]**，然後按一下 **\[全部認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只要您建立或修改語音路由，就必須執行 [全部認可] 命令發行組態變更。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只要您建立或修改語音路由，就必須執行 [全部認可] 命令發行組態變更。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。
+    
 
 
 ## 請參閱

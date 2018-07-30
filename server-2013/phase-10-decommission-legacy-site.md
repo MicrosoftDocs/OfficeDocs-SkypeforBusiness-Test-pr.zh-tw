@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-10-16_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需在解除委任舊版環境之前移轉和升級 Microsoft Unified Communications Managed API (UCMA) 應用程式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如需在解除委任舊版環境之前移轉和升級 Microsoft Unified Communications Managed API (UCMA) 應用程式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</a>
+
 
 
 ## 本節內容

@@ -33,29 +33,11 @@ _**上次修改主題的時間：** 2010-11-08_
     
         Set-CsKerberosAccountPassword -FromComputer fe01.contoso.com -ToComputer dir01.contoso.com
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>來源電腦和目的地電腦的名稱必須是伺服器的完整網域名稱 (FQDN)。除非 FQDN 集區名稱與您作為來源電腦或目的地電腦使用的電腦名稱相同，否則您無法使用該集區 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 來源電腦和目的地電腦的名稱必須是伺服器的完整網域名稱 (FQDN)。除非 FQDN 集區名稱與您作為來源電腦或目的地電腦使用的電腦名稱相同，否則您無法使用該集區 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對 Kerberos 驗證進行變更之後 (如新增帳戶或移除帳戶)，您必須從 Lync Server 管理命令介面 命令提示字元執行 <strong>Enable-CsTopology</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 對 Kerberos 驗證進行變更之後 (如新增帳戶或移除帳戶)，您必須從 Lync Server 管理命令介面 命令提示字元執行 <strong>Enable-CsTopology</strong>。
+    
 

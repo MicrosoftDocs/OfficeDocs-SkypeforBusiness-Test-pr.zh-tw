@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2013-02-17_
 
 如果您未安裝知識庫文章 2290617 所提供的更新，下列程序說明如何變更 IIS 7.0 上的 ASP.NET 同時並存要求和執行緒最大數目。不過，即使您未安裝知識庫文章 2290617，也應使用該文章所提供的文件，為 Mobility 內部和外部 IIS 應用程式集區套用相同的變更。在此情況下，請針對 ASP.NET 設定使用不同的設定檔。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用下列程序變更最大值，此變更會影響所有 IIS 應用程式集區。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您使用下列程序變更最大值，此變更會影響所有 IIS 應用程式集區。
+
 
 
 如需進行這些設定的詳細資訊，請參閱 [http://go.microsoft.com/fwlink/?linkid=234537\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=234537%26clcid=0x404)。

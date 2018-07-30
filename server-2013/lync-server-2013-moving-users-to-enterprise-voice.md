@@ -96,18 +96,9 @@ _**上次修改主題的時間：** 2012-10-18_
 
   - Tel:5550100 (適用於整個企業中唯一的分機)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通訊錄服務 (ABS) 所執行的正規化作業，不會取代或排除將 Active Directory 網域服務中每位使用者的主要電話號碼正規化的需求，因為 ABS 並沒有 Active Directory 網域服務的存取權，所以無法將主要電話號碼複製到 <strong>msRTCSIP-line</strong> 屬性。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 通訊錄服務 (ABS) 所執行的正規化作業，不會取代或排除將 Active Directory 網域服務中每位使用者的主要電話號碼正規化的需求，因為 ABS 並沒有 Active Directory 網域服務的存取權，所以無法將主要電話號碼複製到 <strong>msRTCSIP-line</strong> 屬性。
+    
 
 
 ## 步驟 2. 讓使用者啟用 Enterprise Voice

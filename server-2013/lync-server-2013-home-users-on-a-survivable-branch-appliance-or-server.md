@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2014-12-10_
 
 2.  在 Lync Server 管理命令介面中，執行 Cmdlet **Move-CsUser** 以移動隸屬使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用 Lync Server 控制台 來確認先決條件並隸屬使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您也可以使用 Lync Server 控制台 來確認先決條件並隸屬使用者。
+
 
 
 ## 請參閱

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-09-12_
 
 您可以使用 回應群組設定工具建立工作流程。您可以從 Lync Server 控制台的 \[回應群組\] 頁面存取 回應群組設定工具。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須先建立代理群組和佇列，再建立使用這些項目的工作流程。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您必須先建立代理群組和佇列，再建立使用這些項目的工作流程。
+
 
 
 ## 本章節內容

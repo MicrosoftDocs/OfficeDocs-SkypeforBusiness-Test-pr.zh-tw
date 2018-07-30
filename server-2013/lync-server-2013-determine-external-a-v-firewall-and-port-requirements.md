@@ -143,18 +143,9 @@ A/V Edge 外部介面則不同。對於使用 Office Communications Server 2007 
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Office Communications Server 2007 需要稍微不同的設定。TCP 和 UDP 連接埠範圍 50,000-59,999 必須開放輸入和輸出。此需求僅針對 Office Communicator 2007。 Office Communications Server 2007 R2、 Lync Server 2010 及 Lync Server 2013 只要求 TCP 範圍 50,000-59,999 開放輸出。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft Office Communications Server 2007 需要稍微不同的設定。TCP 和 UDP 連接埠範圍 50,000-59,999 必須開放輸入和輸出。此需求僅針對 Office Communicator 2007。 Office Communications Server 2007 R2、 Lync Server 2010 及 Lync Server 2013 只要求 TCP 範圍 50,000-59,999 開放輸出。
+
 
 
 ## 外部使用者存取的 NAT 需求
@@ -163,18 +154,9 @@ NAT 通常是一種路由功能，但如防火牆甚至是硬體負載平衡器�
 
 Lync Server 2013通訊軟體不支援對進出 Edge 內部介面的流量使用 NAT，但對於 Edge 外部介面，下列 NAT 行為是必要的。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須針對連入和連出流量設定對稱的 NAT。對稱的 NAT 為此主題中說明的 NAT 技術。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您必須針對連入和連出流量設定對稱的 NAT。對稱的 NAT 為此主題中說明的 NAT 技術。
+
 
 
 本文件在表格和繪圖中使用縮寫 ChangeDST 和 ChangeSRC，以定義下列必要行為：

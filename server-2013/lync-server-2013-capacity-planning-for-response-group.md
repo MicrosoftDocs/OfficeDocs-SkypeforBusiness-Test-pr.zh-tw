@@ -17,32 +17,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 下表說明可供您作為容量規劃需求之基礎的 回應群組使用者模型。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表中的數字假設您使用 16 kHz 的單聲道 16 位元 Wave (.wav) 檔做為所有回應群組音訊檔。如果您使用其他檔案格式 (例如 Windows Media Audio (.wma))，則數字可能有所不同。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下表中的數字假設您使用 16 kHz 的單聲道 16 位元 Wave (.wav) 檔做為所有回應群組音訊檔。如果您使用其他檔案格式 (例如 Windows Media Audio (.wma))，則數字可能有所不同。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請記住，在災害復原容量規劃中，配對集區中的每一個集區都要能夠處理兩個集區中所有回應群組的工作負載。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 請記住，在災害復原容量規劃中，配對集區中的每一個集區都要能夠處理兩個集區中所有回應群組的工作負載。
+
 
 
 ### 回應群組使用者模型

@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
   - [Remove-CsNetworkInterSitePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkInterSitePolicy)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><em>只有</em>當兩個網站之間有直接的交叉連結時，才需要網站間原則。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> <em>只有</em>當兩個網站之間有直接的交叉連結時，才需要網站間原則。
+
 
 
 在範例拓撲北美地區中，Reno 和 Albuquerque 網站之間有直接連結。這兩個網站需要網站間原則，以套用適當的頻寬原則設定檔。下列範例會套用 20Mb\_Link 設定檔。

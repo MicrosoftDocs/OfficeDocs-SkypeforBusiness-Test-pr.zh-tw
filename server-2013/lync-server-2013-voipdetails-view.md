@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 VoIPDetails 檢視會儲存對等工作階段的相關資訊，其中至少有一個使用者是 VoIP 使用者。Microsoft Lync Server 2013 中即引入了此檢視。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>VoIPDetails 檢視包含＜<a href="lync-server-2013-sessiondetails-view.md">SessionDetails 檢視</a>＞中的所有欄，以及下列所示的欄。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> VoIPDetails 檢視包含＜<a href="lync-server-2013-sessiondetails-view.md">SessionDetails 檢視</a>＞中的所有欄，以及下列所示的欄。
+
 
 
 

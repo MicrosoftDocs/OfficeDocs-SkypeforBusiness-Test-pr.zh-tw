@@ -132,23 +132,23 @@ _**上次修改主題的時間：** 2015-03-09_
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 3 DEL-PBX>"
     New-CsTrunkConfiguration -Identity Service:PstnGateway:"<Trunk 4 HYD-PBX>"
 
-為每個主幹設定主幹組態後，您可以使用 Lync ServerWindows PowerShell 命令 set-cstrunkconfiguration 對必須執行路由限制的主幹啟用位置基礎路由。對將通話路由傳送到 (將通話路由傳送到 PSTN 之) PSTN 閘道的主幹啟用位置基礎路由，並與閘道所在的網站相關聯。
+為每個主幹設定主幹組態後，您可以使用 Lync ServerWindows PowerShell 命令 Set-CsTrunkConfiguration 對必須執行路由限制的主幹啟用位置基礎路由。對將通話路由傳送到 (將通話路由傳送到 PSTN 之) PSTN 閘道的主幹啟用位置基礎路由，並與閘道所在的網站相關聯。
 
-    set-cstrunkconfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
+    Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
 如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)＞。
 
 在此範例中，會為已與 Delhi 和 Hyderabad 之 PSTN 閘道建立關聯的每個主幹啟用位置基礎路由。
 
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 1 DEL-GW -EnableLocationRestriction $true -NetworkSiteID "Delhi"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 2 HYD-GW -EnableLocationRestriction $true -NetworkSiteID "Hyderabad"
 
   
 
 請勿為不會將通話路由傳送到 PSTN 的主幹啟用位置基礎路由；然而，您必須仍將主幹與系統所在之網站建立關聯，因為需要為連線到透過此主幹連接之端點的 PSTN 通話執行位置基礎路由限制。就此範例而言，並未為已與 Delhi 和 Hyderabad 之 PBX 系統建立關聯的每個主幹啟用位置基礎路由：
 
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
-    set-cstrunkconfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 3 DEL-PBX -EnableLocationRestriction $false -NetworkSiteID "Delhi"
+    Set-CsTrunkConfiguration -Identity Service:PstnGateway:Trunk 4 HYD-PBX -EnableLocationRestriction $false -NetworkSiteID "Hyderabad"
 
   
 連接到不會將通話路由傳送到 PSTN (亦即 PBX) 之系統的端點，會和已啟用位置基礎路由的 Lync 使用者端點具有類似限制。也就是說，不論位於何處，這些使用者都將能夠撥打電話給 Lync 使用者以及接聽來自對方的電話。而不論與系統建立關聯的網站為何，這些使用者也將能夠撥打電話給其他不會將通話路由傳送到 PSTN 網路 (亦即連接到不同 PBX 的端點) 的系統，以及接聽來自對方的電話。所有涉及 PSTN 的撥入通話、撥出通話、通話轉接和來電轉接都將受到強制位置基礎路由限制。此類通話僅能使用已定義為此類系統本機之 PSTN 閘道。
@@ -251,18 +251,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如需詳細資訊，請參閱＜[Set-CsRoutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRoutingConfiguration)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然位置基礎路由必須透過全域組態啟用，要套用的整組規則將只會針對已按照本說明文件中指定內容設定的網站、使用者和主幹執行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然位置基礎路由必須透過全域組態啟用，要套用的整組規則將只會針對已按照本說明文件中指定內容設定的網站、使用者和主幹執行。
+
 
 
 

@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-10-04_
 
 4.  若已與 Survivable Branch 伺服器 關聯，請依序展開 \[分支站台\] 、分支網站名稱及 \[Survivable Branch Appliances\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者介面中的 [Survivable Branch Appliances] 會套用至 Survivable Branch 伺服器 及 Survivable Branch Appliance。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用者介面中的 [Survivable Branch Appliances] 會套用至 Survivable Branch 伺服器 及 Survivable Branch Appliance。
+    
 
 
 5.  以滑鼠右鍵按一下關聯到監控伺服器的集區、伺服器或裝置，然後按一下 \[編輯屬性\]。

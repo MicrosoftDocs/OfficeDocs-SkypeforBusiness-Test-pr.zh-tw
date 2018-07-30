@@ -55,18 +55,9 @@ Lync Server 2013 使用憑證來提供通訊加密以及伺服器身分識別驗
 
   - 內部 Edge Server
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>至於內部 Edge Server 介面，可以將萬用字元項目指派給 SAN，而且可受支援。不會查詢內部 Edge Server 上的 SAN，而且萬用字元 SAN 項目的值會受到限制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 至於內部 Edge Server 介面，可以將萬用字元項目指派給 SAN，而且可受支援。不會查詢內部 Edge Server 上的 SAN，而且萬用字元 SAN 項目的值會受到限制。
+    
 
 
 如需憑證設定的詳細資訊，包括在憑證中使用萬用字元，請參閱下列主題：

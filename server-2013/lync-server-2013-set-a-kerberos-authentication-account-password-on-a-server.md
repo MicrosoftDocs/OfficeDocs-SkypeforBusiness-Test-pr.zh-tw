@@ -35,29 +35,11 @@ _**上次修改主題的時間：** 2012-01-16_
     
         Set-CsKerberosAccountPassword -UserAccount "contoso\KerbAuth"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須使用 Domain\User 格式指定 UserAccount 參數。User@Domain.extension 格式不支援用來參考為 Kerberos 驗證程序所建立的電腦物件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您必須使用 Domain\User 格式指定 UserAccount 參數。User@Domain.extension 格式不支援用來參考為 Kerberos 驗證程序所建立的電腦物件。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對 Kerberos 驗證進行變更之後 (如新增帳戶或移除帳戶)，您必須從 Lync Server 管理命令介面 命令提示字元執行 <strong>Enable-CsTopology</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 對 Kerberos 驗證進行變更之後 (如新增帳戶或移除帳戶)，您必須從 Lync Server 管理命令介面 命令提示字元執行 <strong>Enable-CsTopology</strong>。
+    
 

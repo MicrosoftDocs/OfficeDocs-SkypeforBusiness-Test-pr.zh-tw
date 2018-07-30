@@ -39,18 +39,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
   - 視訊工作階段限制：700 kbps
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>音訊工作階段限制的最小值為 40 kbps。視訊工作階段限制的最小值為 100 kbps。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 音訊工作階段限制的最小值為 40 kbps。視訊工作階段限制的最小值為 100 kbps。
+
 
 
 ## 若要使用管理命令介面建立頻寬原則設定檔

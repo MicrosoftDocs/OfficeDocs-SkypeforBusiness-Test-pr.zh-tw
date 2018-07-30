@@ -47,32 +47,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - **連接埠 8404**   用於伺服器間的通訊
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此連接埠用於配對服務，且在多部 前端伺服器 的集區中部署 回應群組應用程式時，為必要連接埠。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此連接埠用於配對服務，且在多部 前端伺服器 的集區中部署 回應群組應用程式時，為必要連接埠。
+    
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些連接埠是您可以使用 <strong>Set-CsApplicationServer</strong> Cmdlet 變更的預設設定。如需有關此 Cmdlet 的詳細資訊，請參閱＜ Lync Server 管理命令介面＞文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這些連接埠是您可以使用 <strong>Set-CsApplicationServer</strong> Cmdlet 變更的預設設定。如需有關此 Cmdlet 的詳細資訊，請參閱＜ Lync Server 管理命令介面＞文件。
+
 
 
 ## 音訊檔需求
@@ -105,18 +87,9 @@ Windows Media 音訊檔案格式必須將 Windows Media Format Runtime 安裝在
 
 回應群組設定工具支援下表中所述之作業系統和網頁瀏覽器的組合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援 32 位元或 64 位元版本的作業系統。只支援 32 位元版本的 Internet Explorer。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支援 32 位元或 64 位元版本的作業系統。只支援 32 位元版本的 Internet Explorer。
+
 
 
 ### 支援的作業系統和網頁瀏覽器
@@ -168,18 +141,9 @@ Windows Media 音訊檔案格式必須將 Windows Media Format Runtime 安裝在
 
 代理程式主控台支援下表中所述之作業系統和網頁瀏覽器的組合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>支援 32 位元或 64 位元版本的作業系統。只支援 32 位元版本的 Internet Explorer。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 支援 32 位元或 64 位元版本的作業系統。只支援 32 位元版本的 Internet Explorer。
+
 
 
 ### 支援的作業系統和網頁瀏覽器

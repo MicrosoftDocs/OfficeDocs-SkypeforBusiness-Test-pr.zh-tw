@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2015-04-24_
 
 Lync Server 2013 supports the new 商務用 Skype client experience as well as the Lync client experience. As an administrator, you can choose the preferred client experience for your users. For example, you might want to deploy the Lync client experience until users in your organization are fully trained in the new 商務用 Skype experience. Or, if you have not yet upgraded all users to 商務用 Skype Server 2015, you might want all users to have the same client experience until all are upgraded to the new server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>If your organization has both 商務用 Skype Server 2015 and Lync Server 2013 deployed, the default client experience will differ depending on server versions and UI settings. When users launch 商務用 Skype for the first time, they will always see the 商務用 Skype user interface--even if you have selected the Lync user interface. After several minutes, users are asked to switch to Lync mode. For more information, see <strong>First launch client behavior</strong> later in this topic.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> If your organization has both 商務用 Skype Server 2015 and Lync Server 2013 deployed, the default client experience will differ depending on server versions and UI settings. When users launch 商務用 Skype for the first time, they will always see the 商務用 Skype user interface--even if you have selected the Lync user interface. After several minutes, users are asked to switch to Lync mode. For more information, see <strong>First launch client behavior</strong> later in this topic.
+
 
 
 ## Configure the client experience

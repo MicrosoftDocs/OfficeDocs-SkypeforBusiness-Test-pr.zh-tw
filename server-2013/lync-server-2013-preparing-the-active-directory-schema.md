@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2012-08-27_
 
 Lync Server 架構延伸模組會在整個網域中進行複寫，因此會影響網路流量。請在網路使用率較低時執行架構準備作業。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您需要將 MicrosoftR Office Communicator Mobile 2007 R2 for Java 與適用於 Nokia 1.0 行動用戶端的 MicrosoftR Office Communicator Mobile 的支援新增至 Lync Server 2013 部署，則需要在 Lync Server 2013 的安裝期間為 Microsoft Office Communications Server 2007 R2 準備 Active Directory 架構。如需必要軟體和文件，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=207172%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=207172&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您需要將 MicrosoftR Office Communicator Mobile 2007 R2 for Java 與適用於 Nokia 1.0 行動用戶端的 MicrosoftR Office Communicator Mobile 的支援新增至 Lync Server 2013 部署，則需要在 Lync Server 2013 的安裝期間為 Microsoft Office Communications Server 2007 R2 準備 Active Directory 架構。如需必要軟體和文件，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=207172%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=207172&amp;clcid=0x404</a>。
+
 
 
 ## ADSI 編輯器

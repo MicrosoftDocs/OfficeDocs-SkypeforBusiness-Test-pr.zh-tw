@@ -23,18 +23,9 @@ Lync Server 2013 引進下列全新的視訊功能：
 
   - **H.264 視訊**   在 Lync 2013 用戶端上進行視訊編碼時，現在預設會採用 H.264 視訊轉碼器。H.264 視訊可支援範圍更大的解析度與畫面播放速率，並且改善視訊延展性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 仍支援 VC1 解碼器，以與舊版 Lync 享有互通性。如需新視訊解碼器的詳細資訊與背景資訊，請參閱 Jeff Schertz 的部落格文章＜Lync 2013 中的視訊互通性＞，網址為 <a href="http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/" class="uri">http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/</a> (英文)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 仍支援 VC1 解碼器，以與舊版 Lync 享有互通性。如需新視訊解碼器的詳細資訊與背景資訊，請參閱 Jeff Schertz 的部落格文章＜Lync 2013 中的視訊互通性＞，網址為 <a href="http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/" class="uri">http://blog.schertz.name/2012/07/video-interoperability-in-lync-2013/</a> (英文)。
+    
 
 
 本節說明如何管理 Lync Server 2013 中的視訊頻寬，以及如何設定視訊功能。

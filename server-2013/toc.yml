@@ -4193,8 +4193,8 @@
         - name: 通訊錄管理的 Windows PowerShell Cmdlet
           href: lync-server-2013-windows-powershell-cmdlets-for-address-book-management.md
           items:
-          - name: 用於通訊錄管理的 new-csaddressbookconfiguration
-            href: lync-server-2013-new-csaddressbookconfiguration-for-address-book-management.md
+          - name: 用於通訊錄管理的 New-CsAddressBookConfiguration
+            href: lync-server-2013-New-CsAddressBookConfiguration-for-address-book-management.md
           - name: 適用於通訊錄管理的 Set-CsAddressBookConfiguration
             href: lync-server-2013-set-csaddressbookconfiguration-for-address-book-management.md
           - name: 用於通訊錄管理的 Get-CsAddressBookConfiguration
@@ -4213,8 +4213,8 @@
             href: lync-server-2013-set-csclientpolicy-for-address-book-management.md
           - name: 適用於通訊錄管理的 Get-CsService
             href: lync-server-2013-get-csservice-for-address-book-management.md
-          - name: 適用於通訊錄管理的 new-cswebserviceconfiguration
-            href: lync-server-2013-new-cswebserviceconfiguration-for-address-book-management.md
+          - name: 適用於通訊錄管理的 New-CsWebServiceConfiguration
+            href: lync-server-2013-New-CsWebServiceConfiguration-for-address-book-management.md
           - name: 適用於通訊錄管理的 Get-CsWebServiceConfiguration
             href: lync-server-2013-get-cswebserviceconfiguration-for-address-book-management.md
           - name: 適用於通訊錄管理的 Set-CsWebServiceConfiguration

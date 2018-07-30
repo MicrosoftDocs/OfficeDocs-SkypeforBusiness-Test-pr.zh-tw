@@ -21,34 +21,16 @@ _**上次修改主題的時間：** 2013-09-25_
 
 1.  使用 \[Active Directory 電腦和使用者\] 將 Lync Server 2013 部署 (安裝 Lync Server 2013 控制台所在) 中系統管理員角色的 Active Directory 使用者物件新增至 \[CS系統管理員\] 群組。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您未將適當的使用者和群組加入至 CsAdministors 群組，則會在開啟 Lync Server 控制台時收到錯誤，表示「未授權: 存取被拒，因為角色型存取控制 (RBAC) 授權失敗」。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您未將適當的使用者和群組加入至 CsAdministors 群組，則會在開啟 Lync Server 控制台時收到錯誤，表示「未授權: 存取被拒，因為角色型存取控制 (RBAC) 授權失敗」。
+    
 
 
 2.  如果使用者物件目前為登入狀態，請先登出再登入，以登錄新的群組指派。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者帳戶不可以是執行 Lync Server 2013 之任何伺服器的本機系統管理員。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 使用者帳戶不可以是執行 Lync Server 2013 之任何伺服器的本機系統管理員。
+    
 
 
 3.  使用系統管理帳戶登入安裝 Lync Server 控制台所在的電腦。

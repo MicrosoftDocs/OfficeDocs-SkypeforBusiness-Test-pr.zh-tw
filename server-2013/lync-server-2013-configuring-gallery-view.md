@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-30_
 
 當會議參與者的視訊無法使用時，如果您部署高解析度相片 (Lync Server 2013 中的新功能)，可以增強使用者的「圖庫檢視」體驗。高解析度相片針對儲存在 Active Directory 網域服務 中解析度較小且有限的連絡人相片提供替代方案。由於高解析度相片儲存在使用者的 Exchange 2013 信箱中，因此您必須整合 Lync Server 2013 和 Exchange 2013。如需詳細資訊，請參閱 NextHop 部落格文章＜整合 Exchange 2013 與 Lync Server 2013＞，網址為 [http://go.microsoft.com/fwlink/?linkid=260987\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=260987%26clcid=0x404)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個部落格的內容及其 URL 如有任何變更，恕不另行通知。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每個部落格的內容及其 URL 如有任何變更，恕不另行通知。
+
 
 
 您可以使用 Lync Server 2013 控制台或使用下列其中一個 Cmdlet 來檢視或修改「圖庫檢視」參數：

@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 這些表格說明 Lync Server 2013 內部部署中 Lync 使用者可使用的功能。除非另有指示，相同的功能也適用於 Lync Online 和 Office 365 使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請參閱<a href="lync-server-2013-mobile-client-comparison-tables.md">Lync Server 2013 行動用戶端比較表</a>，以深入瞭解 Lync 2013 行動用戶端的功能可用性。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 請參閱<a href="lync-server-2013-mobile-client-comparison-tables.md">Lync Server 2013 行動用戶端比較表</a>，以深入瞭解 Lync 2013 行動用戶端的功能可用性。
+
 
 
 <table>
@@ -1397,18 +1388,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## 電話語音支援
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 語音功能限於特定 Lync Online 訂閱方案。如需詳細資訊，請參閱＜Lync Online 服務說明＞中的＜Lync 語音功能＞主題，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 語音功能限於特定 Lync Online 訂閱方案。如需詳細資訊，請參閱＜Lync Online 服務說明＞中的＜Lync 語音功能＞主題，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a>。
+
 
 
 

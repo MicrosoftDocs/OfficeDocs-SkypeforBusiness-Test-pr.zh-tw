@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-05-25_
 
 請使用下列程序，在您的 Internet Information Services (IIS) 虛擬目錄上設定憑證，或者確認憑證已設定正確。在內部 Lync Server 集區，以及選用的 Director 或 Director 集區伺服器中每個執行 IIS 的伺服器上執行下列程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列程序定義了要求組合憑證的程序，該憑證是用於 IIS 中所有目的 Lync Server Internal Web Site 及 External Web Site。 Lync Server 2010 推出一組 Lync Server 管理命令介面Windows PowerShell Cmdlet 以快速管理憑證要求、匯出及指派。程序中假設有內部部署的憑證授權單位 (CA) 可處理要求。如果針對 Lync Server 目的使用公用憑證，或 CA 需要離線要求，請參閱此主題中關於 –Output 參數詳細語法的資訊。 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下列程序定義了要求組合憑證的程序，該憑證是用於 IIS 中所有目的 Lync Server Internal Web Site 及 External Web Site。 Lync Server 2010 推出一組 Lync Server 管理命令介面Windows PowerShell Cmdlet 以快速管理憑證要求、匯出及指派。程序中假設有內部部署的憑證授權單位 (CA) 可處理要求。如果針對 Lync Server 目的使用公用憑證，或 CA 需要離線要求，請參閱此主題中關於 –Output 參數詳細語法的資訊。 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</a>
+
 
 
 ## 設定 IIS 虛擬目錄上的驗證及憑證

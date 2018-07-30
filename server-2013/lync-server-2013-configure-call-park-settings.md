@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果不要使用預設的通話駐留設定，可以加以自訂。安裝通話駐留應用程式時，依據預設會設定全域設定。您可以修改全域設定，也可以指定網站特定設定。使用 **New-CsCpsConfiguration** Cmdlet 可建立新的網站特定設定。使用 **Set-CsCpsConfiguration** Cmdlet 可修改現有設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您至少設定 <strong>OnTimeoutURI</strong> 選項，作為當駐留通話逾時且回撥失敗時的後援目的地。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 建議您至少設定 <strong>OnTimeoutURI</strong> 選項，作為當駐留通話逾時且回撥失敗時的後援目的地。
+
 
 
 使用 **New-CsCpsConfiguration** Cmdlet 或 **Set-CsCpsConfiguration** Cmdlet 進行下列任何一項設定：

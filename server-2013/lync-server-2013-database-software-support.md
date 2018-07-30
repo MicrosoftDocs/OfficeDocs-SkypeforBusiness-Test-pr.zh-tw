@@ -33,18 +33,9 @@ Lync Server 2013 支援下列資料庫管理系統：
         
         我們支援在前端伺服器和 Standard Edition 伺服器 上進行 Microsoft SQL Server 的修補與升級作業。不過，在前端伺服器上進行任何形式的升級及修補時，都必須將仲裁需求列入考量。如需詳細資訊，請參閱[在 Lync Server 2013 中升級或更新前端伺服器](lync-server-2013-upgrade-or-update-front-end-servers.md)及 [Lync Server 2013 中的前端伺服器、立即訊息及顯示狀態的拓撲和元件](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 會自動將 Microsoft SQL Server 2012 Express (64 位元版本) 安裝在各個 Standard Edition Server 和各個前端伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 會自動將 Microsoft SQL Server 2012 Express (64 位元版本) 安裝在各個 Standard Edition Server 和各個前端伺服器。
+    
 
 
 <table>
@@ -71,18 +62,9 @@ Lync Server 2013 支援下列資料庫管理系統：
 
 在前端集區中，後端資料庫可以是單一 SQL Server 電腦。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您將 Lync Server 資料庫與其他資料庫組合在一起，強烈建議評估可能影響可用性和效能的所有因素，並確定某個節點失敗時，其餘節點可以處理負載。若要確認容錯移轉功能，建議測試所有容錯移轉案例。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您將 Lync Server 資料庫與其他資料庫組合在一起，強烈建議評估可能影響可用性和效能的所有因素，並確定某個節點失敗時，其餘節點可以處理負載。若要確認容錯移轉功能，建議測試所有容錯移轉案例。
+
 
 
 ## 使用 SQL 鏡像與 SQL 叢集

@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-07_
 
 整合連絡人存放區可讓使用者保有單一連絡人清單，然後讓那些連絡人可於多個應用程式中使用，包括 Microsoft Lync 2013、Microsoft Outlook 2013 和 Microsoft Outlook Web App 2013。當您啟用使用者的整合連絡人存放區時，該使用者的連絡人並非儲存於 Microsoft Lync Server 2013 並使用 SIP 通訊協定來擷取。實際上，其連絡人會儲存於 Microsoft Exchange Server 2013 並使用 Exchange Web 服務來擷取。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在技術上，連絡人資訊儲存於一組資料夾，這些資料夾位於使用者的 Exchange 2013 信箱中。連絡人本身儲存在名為 Lync Contacts 的資料夾中，使用者可看到該資料夾；有關連絡人的中繼資料則儲存在使用者無法看到的子資料夾。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在技術上，連絡人資訊儲存於一組資料夾，這些資料夾位於使用者的 Exchange 2013 信箱中。連絡人本身儲存在名為 Lync Contacts 的資料夾中，使用者可看到該資料夾；有關連絡人的中繼資料則儲存在使用者無法看到的子資料夾。
+
 
 
 ## 針對使用者啟用整合連絡人存放區

@@ -209,18 +209,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>*</strong>非繼承的 ACE 不會授與這些容器下子物件的存取權。繼承的 ACE 則會授與這些容器下子物件的存取權。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>*</strong>非繼承的 ACE 不會授與這些容器下子物件的存取權。繼承的 ACE 則會授與這些容器下子物件的存取權。
+
 
 
 樹系準備會在組態命名內容下的設定容器上執行下列工作：

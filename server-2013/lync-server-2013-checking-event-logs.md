@@ -39,18 +39,9 @@ A server that is running Lync Server on a Windows Server operating system recor
 
   - **Lync Server 2013**   The logging tool records significant events related to authentication, connections, and user actions. After enabling diagnostic logging, you can view the log entries in Event Viewer.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>We do not recommend that you use the maximum logging settings unless you are instructed to do this by Microsoft Customer Support Services. Maximum logging drains significant resources and can give many “false positives,” that is, errors that get logged only at maximum logging but are really expected and are not a cause of concern. We also recommend that you do not enable diagnostic logging permanently. Use it only when troubleshooting.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> We do not recommend that you use the maximum logging settings unless you are instructed to do this by Microsoft Customer Support Services. Maximum logging drains significant resources and can give many “false positives,” that is, errors that get logged only at maximum logging but are really expected and are not a cause of concern. We also recommend that you do not enable diagnostic logging permanently. Use it only when troubleshooting.
+
 
 
 Within each Event Viewer log, Lync Server 2013 records informational, warning, and error events. Monitor these logs closely to track the types of transactions being conducted on the Lync Server 2013 servers. You should periodically archive the logs or use automatic rollover to avoid running out of space. Because log files can occupy a finite amount of space, increase the log size (for example, to 50 MB) and set it to overwrite so that the Lync Server 2013 Server can continue to write new events.
