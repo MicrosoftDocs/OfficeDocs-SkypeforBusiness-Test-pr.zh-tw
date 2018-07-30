@@ -53,19 +53,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>連絡人清單 (透過整合連絡人存放區)</p>
 <p>如需詳細資訊，請參閱＜<a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">設定 Microsoft Lync Server 2013 使用整合連絡人存放區</a>＞</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要有 Exchange 2013。<br />
-需要 Lync 2013 桌面用戶端。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 需要有 Exchange 2013。<br />
+> 需要 Lync 2013 桌面用戶端。
 
 </div></li>
 <li><p>Lync 2013 用戶端和 Lync Web App 中的高解析度連絡人相片。</p>

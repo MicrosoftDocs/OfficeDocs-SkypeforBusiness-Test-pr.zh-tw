@@ -23,19 +23,9 @@ _**上次修改主題的時間：** 2012-10-10_
 
 您一開始在部署封存時設定封存組態，但可以在部署之後變更、新增和刪除組態。如需關於封存組態實作方式的詳細資訊，包括您可以指定的選項以及封存組態的階層，請參閱規劃文件、部署文件或作業文件中的[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使用封存，您必須設定封存原則，以指定是否針對位於 Lync Server 2013 的使用者啟用內部通訊、外部通訊或兩者的封存。預設不會啟用內部或外部通訊的封存。在任何原則中啟用封存前，應先如本節所述，為您的部署和 (選用的) 特定網站與集區指定適當的封存組態。如需關於啟用封存的詳細資訊，請參閱部署文件中的<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">設定和指派封存原則</a>。<br />
-如果您在部署封存之後，決定要使用 Microsoft Exchange 整合在 Exchange 2013 伺服器上儲存封存資料和檔案，而且所有使用者都位於 Exchange 2013 伺服器上，您應從拓撲中移除 SQL Server 資料庫組態。如需詳細資訊，請參閱作業文件中的＜<a href="lync-server-2013-changing-archiving-database-options.md">在 Lync Server 2013 中變更封存資料庫選項</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要使用封存，您必須設定封存原則，以指定是否針對位於 Lync Server 2013 的使用者啟用內部通訊、外部通訊或兩者的封存。預設不會啟用內部或外部通訊的封存。在任何原則中啟用封存前，應先如本節所述，為您的部署和 (選用的) 特定網站與集區指定適當的封存組態。如需關於啟用封存的詳細資訊，請參閱部署文件中的<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">設定和指派封存原則</a>。<br />
+> 如果您在部署封存之後，決定要使用 Microsoft Exchange 整合在 Exchange 2013 伺服器上儲存封存資料和檔案，而且所有使用者都位於 Exchange 2013 伺服器上，您應從拓撲中移除 SQL Server 資料庫組態。如需詳細資訊，請參閱作業文件中的＜<a href="lync-server-2013-changing-archiving-database-options.md">在 Lync Server 2013 中變更封存資料庫選項</a>＞。
 
 
 ## 啟用或停用 IM 或會議工作階段的封存

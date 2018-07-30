@@ -68,18 +68,8 @@ _**上次修改主題的時間：** 2014-02-05_
     
         Set-CsExternalAccessPolicy -Identity global -EnableFederationAccess $true -EnableXmppAccess $true -EnableOutsideAccess $true -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>參數「EnablePublicCloudAudioVideoAccess」在 Lync Server 控制台 中沒有對應的選取項目</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 參數「EnablePublicCloudAudioVideoAccess」在 Lync Server 控制台 中沒有對應的選取項目
 
 
 ## 使用 Windows PowerShell 建立新原則以支援適用於同盟網域使用者的存取

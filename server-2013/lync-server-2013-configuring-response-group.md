@@ -21,18 +21,8 @@ _**上次修改主題的時間：** 2012-10-30_
 
 本節會引導您完成設定 Lync Server 2013回應群組的工作。文中假設您已閱讀 回應群組的相關規劃章節，且已部署具有 企業語音的 Enterprise Edition Server 或 Standard Edition Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需關於使用 Lync Server 管理命令介面建立 回應群組的詳細資訊，包括範例指令碼，請參閱＜使用 Lync Server 管理命令介面建立您第一個回應群組＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=204108%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=204108&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 如需關於使用 Lync Server 管理命令介面建立 回應群組的詳細資訊，包括範例指令碼，請參閱＜使用 Lync Server 管理命令介面建立您第一個回應群組＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=204108%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=204108&amp;clcid=0x404</a>。
 
 
 ## 本章節內容

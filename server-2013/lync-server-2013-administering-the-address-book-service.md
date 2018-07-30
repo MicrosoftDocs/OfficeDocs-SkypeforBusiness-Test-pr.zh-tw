@@ -252,18 +252,8 @@ Address Book Server 啟動時會在 AbAttribute 資料表中填入如下表中�
 
 您可以使用一些旗標位元來定義要在 Address Book Server 屬性上使用的篩選器。例如，某些旗標位元的存在可將屬性識別為包含屬性或排除屬性。\[使用者複寫器\] 會濾除含有排除屬性的連絡人，並濾除不含包含屬性的連絡人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需篩選通訊錄的詳細資訊，請參閱<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">Address Book Server Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">篩選 Lync 2013 通訊錄</a> (英文)</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 如需篩選通訊錄的詳細資訊，請參閱<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">Address Book Server Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">篩選 Lync 2013 通訊錄</a> (英文)
 
 
 目前，有三種不同的篩選器。下表列出這些篩選器。

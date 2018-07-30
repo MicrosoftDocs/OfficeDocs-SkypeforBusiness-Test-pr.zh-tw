@@ -17,18 +17,8 @@ _**上次修改主題的時間：** 2013-02-16_
 
     Some information in this topic pertains to Cumulative Updates for Lync Server 2013: February 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題中涉及容量規劃的資訊僅與 Lync 2010 Mobile 用戶端和 Mobility Service (Mcx) 有關。針對整合通訊 Web API (UCWA) 的容量規劃 (用於 Lync 2013 Mobile 用戶端) 是由 Lync Server 2013 規劃工具所提供。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 本主題中涉及容量規劃的資訊僅與 Lync 2010 Mobile 用戶端和 Mobility Service (Mcx) 有關。針對整合通訊 Web API (UCWA) 的容量規劃 (用於 Lync 2013 Mobile 用戶端) 是由 Lync Server 2013 規劃工具所提供。
 
 
 兩個行動效能計數器可協助您確定目前使用量，並有助於規劃 Lync Server 2013 Mobility Service (Mcx) 的容量，還可監控 UCWA 的記憶體使用量。對於 UCWA，計數器類別為 \[LS:WEB – UCWA\]。對於行動服務 (Mcx)，計數器的類別為 \[LS:WEB - Mobile Communication Service\]。要監控的計數器為︰

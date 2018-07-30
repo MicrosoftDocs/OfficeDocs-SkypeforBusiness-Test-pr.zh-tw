@@ -26,19 +26,9 @@ _**上次修改主題的時間：** 2014-07-24_
 
 如果您使用 Lync Server 2013 提供的 Lync Mobile，硬體負載平衡器的 Cookie 相關性要求將大幅減少，而且您可以替換傳輸控制通訊協定 (TCP) 相關性。雖然仍然可以使用 Cookie 相關性，但是 Web 服務不再需要此相關性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無論起始點是在內部或外部，所有 Mobility Service 流量都是通過反向 Proxy 傳輸。對於單一反向 Proxy 或一個反向 Proxy 陣列，或對於提供反向 Proxy 功能的裝置，當內部流量傳出介面並嘗試立即在相同介面接收時，會發生問題。這通常會導致違反安全性規則，稱為 TCP 封包詐騙或僅稱詐騙。必須允許「U 型迴轉」 (傳出和立即接收封包或一系列封包)，以供行動性正常運作。有一個解決此問題的方法是使用與防火牆相隔離的反向 Proxy (基於安全因素，應該在防火牆上一律強制執行此詐騙預防規則)。U 型迴轉會發生在反向 Proxy 的外部介面上，而非防火牆外部介面。您可以在防火牆上偵測到詐騙，並在反向 Proxy 放寬規則，以允許該行動性所需要的傳回。<br />
-儘可能使用網域名稱系統 (DNS) 主機或 CNAME 記錄來定義反向 Proxy 如何處理傳回行為 (而非防火牆)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 無論起始點是在內部或外部，所有 Mobility Service 流量都是通過反向 Proxy 傳輸。對於單一反向 Proxy 或一個反向 Proxy 陣列，或對於提供反向 Proxy 功能的裝置，當內部流量傳出介面並嘗試立即在相同介面接收時，會發生問題。這通常會導致違反安全性規則，稱為 TCP 封包詐騙或僅稱詐騙。必須允許「U 型迴轉」 (傳出和立即接收封包或一系列封包)，以供行動性正常運作。有一個解決此問題的方法是使用與防火牆相隔離的反向 Proxy (基於安全因素，應該在防火牆上一律強制執行此詐騙預防規則)。U 型迴轉會發生在反向 Proxy 的外部介面上，而非防火牆外部介面。您可以在防火牆上偵測到詐騙，並在反向 Proxy 放寬規則，以允許該行動性所需要的傳回。<br />
+> 儘可能使用網域名稱系統 (DNS) 主機或 CNAME 記錄來定義反向 Proxy 如何處理傳回行為 (而非防火牆)。
 
 
 Lync Server 2013 支援 Lync 2010 Mobile 和 Lync 2013 行動用戶端的行動服務。兩個用戶端會使用 Lync Server 2013 自動探索服務找出其行動進入點，但根據其使用的行動服務而有所不同。 Lync 2010 Mobile 會使用 Lync Server 2010 累計更新 (2011 年 11 月) 所導入的 Mobility Service，稱為 *Mcx* 。 Lync 2013 行動用戶端使用 Unified Communications Web API 或 *UCWA* ，做為其行動服務提供者。
@@ -71,19 +61,9 @@ Mobility Services Mcx (在 Lync Server 2010 累計更新 (2011 年 11 月) 導�
 
 ![行動要求流程](images/Hh690030.cdb96424-96f2-4abf-88d7-1d32d1010ffd(OCS.15).jpg "行動要求流程")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此圖說明一般 Web 服務。名稱為 Mobility 的虛擬目錄說明 Mobility Services Mcx 及/或 UCWA。如果尚未套用 Lync Server 2013 累計更新 (2013 年 2 月)，您不一定會有內部與外部 Web 服務上定義的虛擬目錄 Ucwa。您會有虛擬目錄自動探索，而且可能有虛擬目錄 Mcx。<br />
-無論您部署的行動服務技術為何，自動探索與服務探索會以相同方式運作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 此圖說明一般 Web 服務。名稱為 Mobility 的虛擬目錄說明 Mobility Services Mcx 及/或 UCWA。如果尚未套用 Lync Server 2013 累計更新 (2013 年 2 月)，您不一定會有內部與外部 Web 服務上定義的虛擬目錄 Ucwa。您會有虛擬目錄自動探索，而且可能有虛擬目錄 Mcx。<br />
+> 無論您部署的行動服務技術為何，自動探索與服務探索會以相同方式運作。
 
 
 如果不管是來自公司網路內部或外部行動使用者都要支援，則內部和外部 Web FQDN 都必須符合某些先決條件。此外，依據您選擇實作的功能，您可能還需要符合其他需求。
@@ -118,19 +98,9 @@ Mobility Services Mcx (在 Lync Server 2010 累計更新 (2011 年 11 月) 導�
 
 DNS 記錄可以是 CNAME 記錄或 A (主機，對於 IPv6 則為 AAAA) 記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動裝置用戶端不支援來自不同網域的多個 Secure Sockets Layer (SSL) 憑證。因此，不支援透過 HTTPS 將 CNAME 重新導向至不同的網域。例如，不支援透過 HTTPS 將 lyncdiscover.contoso.com 的 DNS CNAME 記錄重新導向至 director.contoso.net 的位址。在這樣的拓撲中，行動裝置用戶端需要使用 HTTP 來進行第一個要求，以透過 HTTP 來解析 CNAME 重新導向。後續的要求則會使用 HTTPS。若要支援此案例，您需要以連接埠 80 的 Web 發行規則來設定反向 Proxy (HTTP)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中設定行動的反向 Proxy</a>＞中的＜建立連接埠 80 的網頁發行規則＞。<br />
-支援透過 HTTPS 將 CNAME 重新導向至相同網域。在此情況下，目的地網域的憑證包含來源網域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 行動裝置用戶端不支援來自不同網域的多個 Secure Sockets Layer (SSL) 憑證。因此，不支援透過 HTTPS 將 CNAME 重新導向至不同的網域。例如，不支援透過 HTTPS 將 lyncdiscover.contoso.com 的 DNS CNAME 記錄重新導向至 director.contoso.net 的位址。在這樣的拓撲中，行動裝置用戶端需要使用 HTTP 來進行第一個要求，以透過 HTTP 來解析 CNAME 重新導向。後續的要求則會使用 HTTPS。若要支援此案例，您需要以連接埠 80 的 Web 發行規則來設定反向 Proxy (HTTP)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中設定行動的反向 Proxy</a>＞中的＜建立連接埠 80 的網頁發行規則＞。<br />
+> 支援透過 HTTPS 將 CNAME 重新導向至相同網域。在此情況下，目的地網域的憑證包含來源網域。
 
 
 如需案例所需之 DNS 記錄的詳細資訊，請參閱＜ [Lync Server 2013 中的 DNS 摘要 - 自動探索](lync-server-2013-dns-summary-autodiscover.md)＞。
@@ -139,18 +109,8 @@ DNS 記錄可以是 CNAME 記錄或 A (主機，對於 IPv6 則為 AAAA) 記錄�
 
 如果您支援推入通知，並且想要讓 Apple 行動裝置透過 Wi-Fi 網路來接收推入通知，您也需要在企業 Wi-Fi 網路上開啟連接埠 5223。連接埠 5223 是 Apple Push Notification Service (APNS) 使用的輸出 TCP 連接埠。行動裝置會啟動連線。如需詳細資訊，請參閱 [http://support.apple.com/kb/TS1629](http://support.apple.com/kb/ts1629?viewlocale=zh_tw)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Lync 2013 行動用戶端的 Apple 裝置不需要推入通知。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 使用 Lync 2013 行動用戶端的 Apple 裝置不需要推入通知。
 
 
 請注意，如果使用者隸屬於 Survivable Branch Appliance (SBA)，則需要下列連接埠：

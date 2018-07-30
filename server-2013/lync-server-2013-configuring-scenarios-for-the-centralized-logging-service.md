@@ -129,36 +129,16 @@ _**上次修改主題的時間：** 2014-02-05_
     
         Import-Module "C:\Program Files\Lync Server 2013\Debugging Tools\ClsController.psm1"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>模組成功載入時，會使您返回 Windows PowerShell 命令提示字元。若要確認載入模組且 Edit-CsClsScenario 為可用，請鍵入 <code>Get-Help Edit-CsClsScenario</code>。您應參閱 EditCsClsScenario 語法基本概要。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 模組成功載入時，會使您返回 Windows PowerShell 命令提示字元。若要確認載入模組且 Edit-CsClsScenario 為可用，請鍵入 <code>Get-Help Edit-CsClsScenario</code>。您應參閱 EditCsClsScenario 語法基本概要。
 
 
 3.  若要卸載模組，請鍵入：
     
         Remove-Module ClsController
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>模組成功卸載時，會使您返回 Windows PowerShell 命令提示字元。若要確認卸載模組，請鍵入 <code>Get-Help Edit-CsClsScenario</code>。Windows PowerShell 會嘗試尋找 Cmdlet 和失敗的說明。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 模組成功卸載時，會使您返回 Windows PowerShell 命令提示字元。若要確認卸載模組，請鍵入 <code>Get-Help Edit-CsClsScenario</code>。Windows PowerShell 會嘗試尋找 Cmdlet 和失敗的說明。
 
 
 ## 使用 Edit-ClsController 模組從案例移除現有提供者

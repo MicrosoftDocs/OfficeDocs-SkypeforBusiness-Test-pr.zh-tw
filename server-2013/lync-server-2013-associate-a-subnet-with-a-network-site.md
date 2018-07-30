@@ -60,18 +60,8 @@ _**上次修改主題的時間：** 2014-10-20_
 
   - [Remove-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkSubnet)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用大量的子網路，建議您使用逗號分隔值 (CSV) 檔案，將子網路與網站產生關聯。CSV 檔案必須有下列四欄： <strong>IPAddress</strong>、 <strong>mask</strong>、 <strong>description</strong> 和 <strong>NetworkSiteID</strong>。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 如果您使用大量的子網路，建議您使用逗號分隔值 (CSV) 檔案，將子網路與網站產生關聯。CSV 檔案必須有下列四欄： <strong>IPAddress</strong>、 <strong>mask</strong>、 <strong>description</strong> 和 <strong>NetworkSiteID</strong>。
 
 
 ## 使用管理命令介面將子網路與網站產生關聯

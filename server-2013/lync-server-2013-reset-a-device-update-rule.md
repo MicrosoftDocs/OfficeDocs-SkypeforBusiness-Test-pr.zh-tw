@@ -42,18 +42,8 @@ _**上次修改主題的時間：** 2013-02-23_
 
 5.  按一下 \[動作\]，然後按一下 \[取消擱置更新\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您確定不會再部署所取消的裝置更新，您可能會想要予以刪除。如需詳細資訊，請參閱＜<a href="lync-server-2013-remove-a-device-update-rule.md">移除裝置更新規則</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您確定不會再部署所取消的裝置更新，您可能會想要予以刪除。如需詳細資訊，請參閱＜<a href="lync-server-2013-remove-a-device-update-rule.md">移除裝置更新規則</a>＞。
 
 
 ## 使用 Windows PowerShell Cmdlet 重設裝置更新規則

@@ -145,19 +145,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 視部署大小而定，綜合交易可能會佔用大量電腦記憶體及處理器時間。因此，建議您使用專用電腦作為監看員節點。舉例來說，您不應設定前端伺服器作為監看員節點。監看員節點應符合下列硬體規格：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>舊版 Microsoft Lync Server 2010 監看員節點無法與 Lync Server 2013 監看員節點組合在相同機器上。這是因為 Lync Server 2010 及 Lync Server 2013 的核心系統檔案無法安裝在相同電腦上。<br />
-然而，Lync Server 2013 監看員節點可以同時監控 Lync Server 2013 及 Lync Server 2010。兩個產品版本都支援預設綜合交易。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 舊版 Microsoft Lync Server 2010 監看員節點無法與 Lync Server 2013 監看員節點組合在相同機器上。這是因為 Lync Server 2010 及 Lync Server 2013 的核心系統檔案無法安裝在相同電腦上。<br />
+> 然而，Lync Server 2013 監看員節點可以同時監控 Lync Server 2013 及 Lync Server 2010。兩個產品版本都支援預設綜合交易。
 
 
 可以在企業內或企業外部署 Lync Server 2013 監看員節點，以協助驗證下列事項：

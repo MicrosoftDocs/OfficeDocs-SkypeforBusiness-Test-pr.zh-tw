@@ -40,18 +40,8 @@ _**上次修改主題的時間：** 2013-09-23_
 
 移轉回應群組時，不會刪除 Lync Server 2010 回應群組。移轉後使用When you manage response groups after migration by using either Lync Server 控制台或 Lync Server 管理命令介面管理回應群組時，會看到 Lync Server 2010 回應群組和 Lync Server 2013 回應群組，但只應該將更新套用到 Lync Server 2013 回應群組。 Lync Server 2010 回應群組會保留，僅供復原之用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成移轉並建立新的回應群組後，Lync Server 控制台和 Lync Server 管理命令介面命令將顯示每個回應群組的 Lync Server 2010 和 Lync Server 2013 版本。請勿使用 Lync Server 控制台 或 Lync Server 管理命令介面 來移除 Lync Server 2010 回應群組。如果您移除一個回應群組，在移轉期間建立的對應回應群組將停止運作。淘汰 Lync Server 2010 集區時將移除 Lync Server 2010 回應群組。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 完成移轉並建立新的回應群組後，Lync Server 控制台和 Lync Server 管理命令介面命令將顯示每個回應群組的 Lync Server 2010 和 Lync Server 2013 版本。請勿使用 Lync Server 控制台 或 Lync Server 管理命令介面 來移除 Lync Server 2010 回應群組。如果您移除一個回應群組，在移轉期間建立的對應回應群組將停止運作。淘汰 Lync Server 2010 集區時將移除 Lync Server 2010 回應群組。
 
 
 > [!IMPORTANT]  

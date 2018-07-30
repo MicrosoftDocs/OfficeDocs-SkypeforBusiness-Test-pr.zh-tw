@@ -32,18 +32,8 @@ _**上次修改主題的時間：** 2012-09-10_
     
         Set-CsCallParkServiceMusicOnHoldFile -Service <ServiceID where the Call Park application resides> -Content <Byte[]>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用 <strong>Get-CsService</strong> Cmdlet 來識別服務。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService">Get-CsService</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 使用 <strong>Get-CsService</strong> Cmdlet 來識別服務。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService">Get-CsService</a>＞。
     
     下列範例顯示如何取得檔案 soothingmusic.wma 的位元組陣列內容，並將其指派給變數。然後將音訊檔案指派為通話駐留時的等候音樂檔案。如需詳細資訊，請參閱＜[Set-CsCallParkServiceMusicOnHoldFile](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCallParkServiceMusicOnHoldFile)＞。
     

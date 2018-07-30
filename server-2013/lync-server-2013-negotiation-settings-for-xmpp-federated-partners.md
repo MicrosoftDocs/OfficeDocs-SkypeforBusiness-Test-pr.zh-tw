@@ -95,18 +95,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>True</p></td>
 <td><p>SASL 優於 TLS</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若同時將 SASL 與 TLS 設為必要，回撥將無法作用。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 若同時將 SASL 與 TLS 設為必要，回撥將無法作用。
 
 </div></td>
 </tr>
@@ -123,18 +113,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>True</p></td>
 <td><p>SASL 優於 TLS、TLS 回撥、TCP 回撥</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -144,18 +124,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>False</p></td>
 <td><p>SASL 優於 TLS</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -165,18 +135,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>True</p></td>
 <td><p>TCP 回撥</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -185,33 +145,13 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>必要</p></td>
 <td><p>False</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無效組態</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 無效組態
 
 </div></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為 SASL 需要 TLS，且無法使用 TLS，所以 SASL/TLS 無法成功。TCP 回撥設為 False，且無法使用。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 因為 SASL 需要 TLS，且無法使用 TLS，所以 SASL/TLS 無法成功。TCP 回撥設為 False，且無法使用。
 
 </div></td>
 </tr>
@@ -235,18 +175,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>True</p></td>
 <td><p>SASL 優於 TLS、TLS 回撥、TCP 回撥</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -256,18 +186,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>False</p></td>
 <td><p>SASL 優於 TLS</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -277,18 +197,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>True</p></td>
 <td><p>TCP 回撥</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -297,33 +207,13 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>選用</p></td>
 <td><p>False</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無效組態</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 無效組態
 
 </div></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 要求 TLS。允許 TLS 變成選用可能會導致失敗的工作階段交涉。
 
 </div></td>
 </tr>
@@ -340,18 +230,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>False</p></td>
 <td><p>無效組態</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 或回撥必須啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 或回撥必須啟用。
 
 </div></td>
 </tr>
@@ -368,18 +248,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>False</p></td>
 <td><p>無效組態</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 或回撥必須啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 或回撥必須啟用。
 
 </div></td>
 </tr>
@@ -396,18 +266,8 @@ XMPP 協力廠商組態的訊號交涉類型設定有可種可能的組合。並
 <td><p>False</p></td>
 <td><p>無效組態</p></td>
 <td><div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SASL 或回撥必須啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> SASL 或回撥必須啟用。
 
 </div></td>
 </tr>

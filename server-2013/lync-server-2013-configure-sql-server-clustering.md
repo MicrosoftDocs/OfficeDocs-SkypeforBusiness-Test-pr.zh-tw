@@ -50,18 +50,8 @@ Microsoft Lync Server 2013 支援 SQL Server 2012 與 SQL Server 2008 R2 的叢�
 
 1.  啟動拓撲產生器：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\]，然後按一下 \[Lync Server 拓撲產生器\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>下列程序假設您已在拓撲產生器中定義並設定拓撲。如需有關定義拓撲的詳細資訊，請參閱<a href="lync-server-2013-defining-and-configuring-the-topology.md">在 Lync Server 2013 中定義和設定拓撲</a>。若要使用拓撲產生器來發行拓撲及設定資料庫，您必須以具有正確使用者權限與群組成員資格的使用者身分登入。如需必要權限與群組成員資格的相關詳細資訊，請參閱<a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署權限</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 下列程序假設您已在拓撲產生器中定義並設定拓撲。如需有關定義拓撲的詳細資訊，請參閱<a href="lync-server-2013-defining-and-configuring-the-topology.md">在 Lync Server 2013 中定義和設定拓撲</a>。若要使用拓撲產生器來發行拓撲及設定資料庫，您必須以具有正確使用者權限與群組成員資格的使用者身分登入。如需必要權限與群組成員資格的相關詳細資訊，請參閱<a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署權限</a>。
 
 
 2.  在拓撲產生器中發行拓撲時，在 \[建立資料庫\] 頁面中，按一下 \[進階\]。

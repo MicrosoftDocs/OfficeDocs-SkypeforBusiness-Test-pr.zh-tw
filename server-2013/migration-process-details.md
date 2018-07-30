@@ -43,18 +43,8 @@ _**上次修改主題的時間：** 2012-10-19_
 
 2.  檢查您的 Lync Server 2010 群組聊天 或 Office Communications Server 2007 R2  群組聊天聊天室和類別組態。對您現有舊版部署中之類別、聊天室或增益集進行的任何變更，將是以 群組聊天管理工具執行。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對您 Lync Server 2013常設聊天室伺服器 部署中之類別、聊天室或增益集所做的任何變更，是以 Lync Server 控制台 或 Windows PowerShell Cmdlet 執行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 對您 Lync Server 2013常設聊天室伺服器 部署中之類別、聊天室或增益集所做的任何變更，是以 Lync Server 控制台 或 Windows PowerShell Cmdlet 執行。
     
     請遵循這些步驟，準備要移轉的舊版系統。
     

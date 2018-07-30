@@ -27,19 +27,9 @@ _**上次修改主題的時間：** 2015-06-22_
 
     Get-CsExternalAccessPolicy -Identity "RedmondAccessPolicy"
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>參照個別使用者原則時，可選擇性加入前置詞 <strong>tag</strong>。語法包含前置詞後同樣有效：<br />
-Get-CsExternalAccessPolicy –Identity &quot;tag:RedmondAccessPolicy&quot;</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 參照個別使用者原則時，可選擇性加入前置詞 <strong>tag</strong>。語法包含前置詞後同樣有效：<br />
+> Get-CsExternalAccessPolicy –Identity &quot;tag:RedmondAccessPolicy&quot;
 
 
 若要傳回全域原則以外的所有原則 (即所有個別使用者原則)，請使用下列命令：

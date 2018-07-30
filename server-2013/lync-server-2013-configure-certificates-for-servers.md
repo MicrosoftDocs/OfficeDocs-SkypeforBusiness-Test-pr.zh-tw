@@ -22,18 +22,8 @@ _**上次修改主題的時間：** 2013-03-17_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雜湊摘要演算法與簽署演算法的選擇，會視將使用憑證的用戶端和伺服器而定，而用戶端和伺服器將會進行通訊的其他電腦與裝置，也必須知悉如何使用憑證中所採的演算法。如需有關作業系統與部分用戶端應用程式所支援之雜湊長度的資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=287002">http://go.microsoft.com/fwlink/?LinkId=287002</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 雜湊摘要演算法與簽署演算法的選擇，會視將使用憑證的用戶端和伺服器而定，而用戶端和伺服器將會進行通訊的其他電腦與裝置，也必須知悉如何使用憑證中所採的演算法。如需有關作業系統與部分用戶端應用程式所支援之雜湊長度的資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=287002">http://go.microsoft.com/fwlink/?LinkId=287002</a>。
 
 
 每部 Standard Edition 伺服器或 前端伺服器最多需要四個憑證：oAuthTokenIssuer 憑證、一個預設憑證、一個內部 Web 憑證和一個外部 Web 憑證。但是，可以要求並指派一個具有合適主體別名項目的預設憑證，以及 oAuthTokenIssuer 憑證。如需憑證需求的詳細資訊，請參閱＜ [Lync Server 2013 中內部伺服器的憑證需求](lync-server-2013-certificate-requirements-for-internal-servers.md)＞。如需要求、指派及安裝 oAuthTokenIssuer 憑證的詳細資訊，請參閱＜ [在 Lync Server 2013 中管理伺服器對伺服器驗證 (Oauth) 與夥伴應用程式](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)＞。

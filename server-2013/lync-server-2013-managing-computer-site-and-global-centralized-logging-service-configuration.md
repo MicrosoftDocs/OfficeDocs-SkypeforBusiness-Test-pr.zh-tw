@@ -25,35 +25,15 @@ _**上次修改主題的時間：** 2014-02-04_
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows PowerShell 會為您提供更多無法使用 CLSController.exe 來取得的選項和其他設定選項。CLSController 提供一個快速且明確的方法來執行命令，但會限制為可供 CLSController 使用的命令組。Windows PowerShell 不會只限制在可供 CLSController 之命令處理器使用的命令，並提供一組範圍更廣泛的命令和一組更豐富的選項。例如，CLSController.exe 會為您提供適用於 –computers 和 –pools 的範圍選項。利用 Windows PowerShell，您可以在大部分的命令中指出電腦或集區，而且在您定義新案例時 (CLSController 中使用者無法修改的案例數目有限)，可以定義網站或全域範圍。這個功能強大的 Windows PowerShell 功能讓您能夠將案例定義為網站或全域範圍，但可將實際記錄限制為電腦或集區。<br />
-您可在 Windows PowerShell 或 CLSController 中執行的命令列命令間有一些基本差異。Windows PowerShell 可提供一個豐富的方法來設定和定義案例，並針對您的疑難排解案例，以有意義的方式重複使用這些案例。當 CLSController 提供一個快速且有效率的方式來發出命令並取得結果時，針對 CLSController 設定的命令會受到您可以從命令列取得的有限命令所限制。不同於 Windows PowerShell Cmdlet，CLSController 無法定義新案例、在網站或全域層級管理範圍，以及許多無法動態設定之有限命令組的其他限制。儘管 CLSController 提供可用來快速執行的工具時，Windows PowerShell 也會提供工具來延伸 集中記錄服務 功能範圍，而此範圍可能會超越 CLSController。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Windows PowerShell 會為您提供更多無法使用 CLSController.exe 來取得的選項和其他設定選項。CLSController 提供一個快速且明確的方法來執行命令，但會限制為可供 CLSController 使用的命令組。Windows PowerShell 不會只限制在可供 CLSController 之命令處理器使用的命令，並提供一組範圍更廣泛的命令和一組更豐富的選項。例如，CLSController.exe 會為您提供適用於 –computers 和 –pools 的範圍選項。利用 Windows PowerShell，您可以在大部分的命令中指出電腦或集區，而且在您定義新案例時 (CLSController 中使用者無法修改的案例數目有限)，可以定義網站或全域範圍。這個功能強大的 Windows PowerShell 功能讓您能夠將案例定義為網站或全域範圍，但可將實際記錄限制為電腦或集區。<br />
+> 您可在 Windows PowerShell 或 CLSController 中執行的命令列命令間有一些基本差異。Windows PowerShell 可提供一個豐富的方法來設定和定義案例，並針對您的疑難排解案例，以有意義的方式重複使用這些案例。當 CLSController 提供一個快速且有效率的方式來發出命令並取得結果時，針對 CLSController 設定的命令會受到您可以從命令列取得的有限命令所限制。不同於 Windows PowerShell Cmdlet，CLSController 無法定義新案例、在網站或全域層級管理範圍，以及許多無法動態設定之有限命令組的其他限制。儘管 CLSController 提供可用來快速執行的工具時，Windows PowerShell 也會提供工具來延伸 集中記錄服務 功能範圍，而此範圍可能會超越 CLSController。
 
 
 單一電腦範圍可以在使用 –Computers 參數來執行 [Search-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Search-CsClsLogging)、[Show-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Show-CsClsLogging)、[Start-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Start-CsClsLogging)、[Stop-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging)、[Sync-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Sync-CsClsLogging) 及 [Update-CsClsLogging](https://docs.microsoft.com/en-us/powershell/module/skype/Update-CsClsLogging) 命令時進行定義。–Computers 參數會接受適用於目標電腦的完整網域名稱 (FQDN) 清單 (以逗號分隔)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以定義 –Pools 和以逗號分隔的集區清單，而您會想要在其上執行記錄命令。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 您也可以定義 –Pools 和以逗號分隔的集區清單，而您會想要在其上執行記錄命令。
 
 
 網站和全域範圍均定義於 **New-**、**Set-** 及 **Remove-**集中記錄服務 Cmdlet 中。下列範例示範如何設定網站和全域範圍。

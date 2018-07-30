@@ -51,18 +51,8 @@ DNS 負載平衡只支援對執行 Lync Server 2013 或 Lync Server 2010 的伺�
 
   - 若要支援 DNS 負載平衡所使用的 FQDN，您必須佈建 DNS，以將集區 FQDN (如 pool01.contoso.com) 解析為集區中所有伺服器的 IP 位址 (例如，192.168.1.1、192.168.1.2 等)。您應該只包含目前部署之伺服器的 IP 位址。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上的前端集區或前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的前端集區或前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何前端集區或前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何前端集區、Director 或 Director 集區各不相同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有一個以上的前端集區或前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的前端集區或前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何前端集區或前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何前端集區、Director 或 Director 集區各不相同。
 
 
 ## Edge Server 集區上的 DNS 負載平衡

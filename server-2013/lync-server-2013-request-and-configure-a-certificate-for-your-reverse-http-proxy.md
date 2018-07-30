@@ -105,18 +105,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您規劃同時使用 Edge Server 憑證和反向 Proxy 憑證，應留意這兩種憑證的需求相當類似。當您設定與要求 Edge Server 憑證時，可以結合 Edge Server 和反向 Proxy 主體替代名稱。如果您匯出憑證和私密金鑰，並將匯出的檔案複製到反向 Proxy，接著匯入憑證/金鑰組並視需要於後續的程序中進行指派，就可以為反向 Proxy 使用相同的憑證。請參閱 Edge Server 憑證需求相關內容  <a href="lync-server-2013-plan-for-edge-server-certificates.md">在 Lync Server 2013 中規劃 Edge Server 憑證</a>，以及反向 Proxy 相關內容 <a href="lync-server-2013-certificate-summary-reverse-proxy.md">Lync Server 2013 中的憑證摘要 - 反向 Proxy</a>。請務必建立內含可匯出私密金鑰的憑證。建立內含可匯出私密金鑰的憑證和憑證要求，對於 Edge Server 集區而言是必要的，因此這是一般性做法，且適用於 Edge Server 之 Lync Server 部署精靈 的憑證精靈會讓您設定 <strong>[可匯出私密金鑰]</strong> 旗標。當您從公開憑證授權單位收回憑證要求後，將可匯出憑證和私密金鑰。請參閱主題 <a href="lync-server-2013-set-up-certificates-for-the-external-edge-interface.md">針對 Lync Server 2013 設定外部 Edge 介面的憑證</a>中的＜為集區中的 Edge Server 匯出包含私密金鑰的憑證＞一節，瞭解有關如何建立和匯出內含私密金鑰的憑證詳細資訊。憑證的副檔名應會屬於 <strong>.pfx</strong> 類型。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 如果您規劃同時使用 Edge Server 憑證和反向 Proxy 憑證，應留意這兩種憑證的需求相當類似。當您設定與要求 Edge Server 憑證時，可以結合 Edge Server 和反向 Proxy 主體替代名稱。如果您匯出憑證和私密金鑰，並將匯出的檔案複製到反向 Proxy，接著匯入憑證/金鑰組並視需要於後續的程序中進行指派，就可以為反向 Proxy 使用相同的憑證。請參閱 Edge Server 憑證需求相關內容  <a href="lync-server-2013-plan-for-edge-server-certificates.md">在 Lync Server 2013 中規劃 Edge Server 憑證</a>，以及反向 Proxy 相關內容 <a href="lync-server-2013-certificate-summary-reverse-proxy.md">Lync Server 2013 中的憑證摘要 - 反向 Proxy</a>。請務必建立內含可匯出私密金鑰的憑證。建立內含可匯出私密金鑰的憑證和憑證要求，對於 Edge Server 集區而言是必要的，因此這是一般性做法，且適用於 Edge Server 之 Lync Server 部署精靈 的憑證精靈會讓您設定 <strong>[可匯出私密金鑰]</strong> 旗標。當您從公開憑證授權單位收回憑證要求後，將可匯出憑證和私密金鑰。請參閱主題 <a href="lync-server-2013-set-up-certificates-for-the-external-edge-interface.md">針對 Lync Server 2013 設定外部 Edge 介面的憑證</a>中的＜為集區中的 Edge Server 匯出包含私密金鑰的憑證＞一節，瞭解有關如何建立和匯出內含私密金鑰的憑證詳細資訊。憑證的副檔名應會屬於 <strong>.pfx</strong> 類型。
 
 
 若要在將指派憑證和私密金鑰的目標電腦上產生憑證簽署要求，請進行下列作業：

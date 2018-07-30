@@ -42,18 +42,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <ul>
 <li><p>DNS 負載平衡：Pool01.contoso.net   IP Address of pool   10.10.10.5</p>
 <div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每部前端伺服器也會有另一筆 A 記錄：</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 每部前端伺服器也會有另一筆 A 記錄：
 
 </div>
 <ol>

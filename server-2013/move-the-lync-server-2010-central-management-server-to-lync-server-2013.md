@@ -70,18 +70,8 @@ _**上次修改主題的時間：** 2013-11-25_
     
         Enable-CsTopology
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 <code>Enable-CsTopology</code> 沒有成功，請先阻止命令完成並解決問題之後再繼續。如果 <strong>Enable-CsTopology</strong> 沒有成功，移動就會失敗，且可能會導致您的拓撲處於沒有 中央管理存放區的狀態。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果 <code>Enable-CsTopology</code> 沒有成功，請先阻止命令完成並解決問題之後再繼續。如果 <strong>Enable-CsTopology</strong> 沒有成功，移動就會失敗，且可能會導致您的拓撲處於沒有 中央管理存放區的狀態。
 
 
 4.  在 Lync Server 2013前端伺服器或 前端集區上，於 Lync Server 管理命令介面中輸入：
@@ -117,18 +107,8 @@ _**上次修改主題的時間：** 2013-11-25_
 
 2.  開啟 Lync Server 管理命令介面
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請先確認複寫已完成且狀態穩定後，再繼續移除之前的資料庫檔案。如果您在複寫完成前就移除檔案，會中斷複寫程序，並導致剛移動的 中央管理伺服器處於未知狀態。請使用 <strong>Get-CsManagementStoreReplicationStatus</strong> Cmdlet 來確認複寫狀態。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 請先確認複寫已完成且狀態穩定後，再繼續移除之前的資料庫檔案。如果您在複寫完成前就移除檔案，會中斷複寫程序，並導致剛移動的 中央管理伺服器處於未知狀態。請使用 <strong>Get-CsManagementStoreReplicationStatus</strong> Cmdlet 來確認複寫狀態。
 
 
 3.  若要移除來自 Lync Server 2010中央管理伺服器的 中央管理存放區資料庫檔案，請輸入：

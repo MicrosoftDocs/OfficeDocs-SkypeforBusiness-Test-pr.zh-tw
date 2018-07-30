@@ -29,18 +29,8 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - 使用現有*提供者*或建立新的提供者。*提供者*定義記錄工作階段所收集的內容、內容的詳細程度、要追蹤哪些元件，以及要套用哪些旗標。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您熟悉 OCSLogger，<em>提供者</em>一詞是指<strong>元件</strong> (例如，S4、SIPStack)、<strong>記錄類型</strong> (例如，WPP、EventLog 或 IIS logfile)、<strong>記錄層次</strong> (例如，全部、詳細、偵錯) 及<strong>旗標</strong> (例如，TF_COMPONENT、TF_DIAG) 的集合。這些項目是在提供者 (Windows PowerShell 變數) 中定義，並傳遞到 集中記錄服務 命令。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 如果您熟悉 OCSLogger，<em>提供者</em>一詞是指<strong>元件</strong> (例如，S4、SIPStack)、<strong>記錄類型</strong> (例如，WPP、EventLog 或 IIS logfile)、<strong>記錄層次</strong> (例如，全部、詳細、偵錯) 及<strong>旗標</strong> (例如，TF_COMPONENT、TF_DIAG) 的集合。這些項目是在提供者 (Windows PowerShell 變數) 中定義，並傳遞到 集中記錄服務 命令。
     
       - 設定要從中收集記錄的電腦和集區。
     

@@ -32,18 +32,8 @@ _**上次修改主題的時間：** 2012-10-29_
 
 如需 **Grant-CsOuPermission** Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需在網域根目錄以及在使用者、電腦和網域控制站容器中建立之 ACE 的詳細資訊，請參閱＜ <a href="lync-server-2013-changes-made-by-domain-preparation.md">Lync Server 2013 中的網域準備所進行的變更</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 如需在網域根目錄以及在使用者、電腦和網域控制站容器中建立之 ACE 的詳細資訊，請參閱＜ <a href="lync-server-2013-changes-made-by-domain-preparation.md">Lync Server 2013 中的網域準備所進行的變更</a>＞。
 
 
 ## 本章節內容

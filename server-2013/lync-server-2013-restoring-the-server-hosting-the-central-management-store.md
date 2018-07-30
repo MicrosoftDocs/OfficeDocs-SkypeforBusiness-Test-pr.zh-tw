@@ -26,18 +26,8 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您在開始還原之前，先擷取系統的影像複本，以便在還原出錯時，可以利用此影像做為回復點。也建議您在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建議您在開始還原之前，先擷取系統的影像複本，以便在還原出錯時，可以利用此影像做為回復點。也建議您在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。
 
 
 ## 還原中央管理存放區
@@ -131,18 +121,8 @@ Lync Server 部署有單一中央管理存放區，其複本會複寫至每部�
     
     7.  依序執行精靈中剩餘的步驟，然後按一下 \[完成\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>除了執行拓撲產生器之外，您也可以使用 <strong>Install-CsDatabase</strong> Cmdlet 建立每一個資料庫，並且使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 設定鏡像資料庫。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsDatabase">Install-CsDatabase</a>＞和＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsMirrorDatabase">Install-CsMirrorDatabase</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 除了執行拓撲產生器之外，您也可以使用 <strong>Install-CsDatabase</strong> Cmdlet 建立每一個資料庫，並且使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 設定鏡像資料庫。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsDatabase">Install-CsDatabase</a>＞和＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Install-CsMirrorDatabase">Install-CsMirrorDatabase</a>＞。
 
 
 11. 如果您要還原Standard Edition 伺服器，請瀏覽至 Lync Server 安裝資料夾或媒體，然後啟動位在 \\setup\\amd64\\Setup.exe 的 \[Lync Server 部署精靈\]。使用 \[Lync Server 部署精靈\] 來執行下列動作：

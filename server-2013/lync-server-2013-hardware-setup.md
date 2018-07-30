@@ -27,18 +27,8 @@ _**上次修改主題的時間：** 2013-02-21_
     
     如需有關在分散式檔案系統 (DFS) 中使用檔案共用來更新的詳細資訊，請參閱＜ [針對 Lync Server 2013 設定檔案儲存](lync-server-2013-configure-dfs-file-storage.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 Enterprise Edition 的檔案共用不可位於 前端伺服器上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 2013 Enterprise Edition 的檔案共用不可位於 前端伺服器上。
 
 
   - 安裝並設定 Web 服務的硬體負載平衡器。部署網域名稱系統 (DNS) 負載平衡之後，這些集區還是需要使用硬體負載平衡器，但只限 HTTP/HTTPS 流量。硬體負載平衡器用於連接埠 443 和 80 上來自用戶端的 HTTPS 流量。雖然這些集區仍然需要硬體負載平衡器，但其設定和管理主要是針對 HTTP/HTTPS 流量，這也是硬體負載平衡器的系統管理員比較熟悉的領域。

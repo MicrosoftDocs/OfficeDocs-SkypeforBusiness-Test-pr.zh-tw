@@ -45,18 +45,8 @@ Set-CsCertificate Cmdlet 會收下該憑證，並立即設定該憑證擔任目�
 
 如果您不想使用 Windows PowerShell，也可以使用 \[憑證\] MMC 主控台從某部前端伺服器中匯出憑證，然後在所有其他前端伺服器上匯入該憑證。如果這麼做，請務必將私密金鑰隨著憑證本身一起匯出。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在此情況下，您必須在每部前端伺服器上執行此程序。以此方式匯出再匯入憑證時，Lync Server 2013 並不會將該憑證複寫到每部前端伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 在此情況下，您必須在每部前端伺服器上執行此程序。以此方式匯出再匯入憑證時，Lync Server 2013 並不會將該憑證複寫到每部前端伺服器。
 
 
 將憑證匯入到所有前端伺服器之後，便可以使用 \[Lync Server 部署精靈\] (而不是使用 Windows PowerShell) 指派該憑證。若要使用 \[部署精靈\] 指派憑證，請在已安裝 \[部署精靈\] 的電腦上完成下列步驟：

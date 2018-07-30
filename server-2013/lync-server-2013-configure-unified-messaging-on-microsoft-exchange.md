@@ -26,18 +26,8 @@ _**上次修改主題的時間：** 2013-02-24_
 
 1.  針對每一個企業語音位置設定檔，建立 UM 工作階段初始通訊協定 (SIP) 統一資源識別元 (URI) 撥號對應表。如果您選擇使用 Exchange 管理主控台，請使用安全性設定 **Secured (偏好選項)** 來建立新的撥號對應表。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如前建議，如果您將安全性設定值設定為 <strong>SIP Secured</strong>，僅要求將 SIP 流量加密，請注意如果前端集區已設定為需要加密 (這表示集區需要針對 SIP 與 RTP 流量進行加密)，則撥號對應表上的這項安全性設定並不足夠。當撥號對應表和集區安全性設定不相容時，所有來自前端集區對 Exchange UM 的呼叫將會失敗，因而導致您有「不相容的安全性設定」錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如前建議，如果您將安全性設定值設定為 <strong>SIP Secured</strong>，僅要求將 SIP 流量加密，請注意如果前端集區已設定為需要加密 (這表示集區需要針對 SIP 與 RTP 流量進行加密)，則撥號對應表上的這項安全性設定並不足夠。當撥號對應表和集區安全性設定不相容時，所有來自前端集區對 Exchange UM 的呼叫將會失敗，因而導致您有「不相容的安全性設定」錯誤。
     
     如果您使用 Exchange 管理命令介面，請輸入：
     

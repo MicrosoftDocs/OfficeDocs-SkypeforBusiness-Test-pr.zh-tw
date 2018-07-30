@@ -105,18 +105,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 可備份系統映像的軟體
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建議您在安裝作業系統和 SQL Server 後，先製作一個系統映像複本，再開始還原。您即可在還原期間發生任何狀況時，使用此映像做為回復點。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 建議您在安裝作業系統和 SQL Server 後，先製作一個系統映像複本，再開始還原。您即可在還原期間發生任何狀況時，使用此映像做為回復點。
 
 
   - Lync Server 2013 安裝軟體。Lync Server 部署精靈位於 Lync Server 的安裝資料夾或媒體中，路徑為：\\setup\\amd64\\Setup.exe。

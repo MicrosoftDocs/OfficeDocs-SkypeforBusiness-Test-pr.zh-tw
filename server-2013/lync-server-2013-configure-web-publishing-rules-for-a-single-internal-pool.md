@@ -116,18 +116,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 6.  在 **\[新增伺服器\]** 對話方塊的 **\[伺服器位址\]** 中，輸入 前端伺服器 上外部 Web 服務的完整網域名稱 (FQDN)。於此處做為範例之用的名稱與反向 Proxy 規劃一節 [Lync Server 2013 中的憑證摘要 - 反向 Proxy](lync-server-2013-certificate-summary-reverse-proxy.md) 中所用的名稱相同。為與反向 Proxy 規劃內容相互呼應，我們輸入 FQDN `webext.contoso.com`。確認 **\[線上\]** 旁的核取方塊已選取。按一下 **\[新增\]** 將伺服器新增到此組態之網頁伺服器集區。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 會使用硬體負載平衡器共用 Director 和 前端伺服器 處理 HTTP 和 HTTPS 流量。新增一部伺服器到 IIS ARR 伺服器陣列時，只需要提供單一 FQDN。該 FQDN 會是非共用伺服器組態中的 前端伺服器 或 Director，或是經設定用於伺服器集區之硬體負載平衡器的 FQDN。讓 HTTP 和 HTTPS 流量達到負載平衡的唯一支援方法是使用硬體負載平衡器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 會使用硬體負載平衡器共用 Director 和 前端伺服器 處理 HTTP 和 HTTPS 流量。新增一部伺服器到 IIS ARR 伺服器陣列時，只需要提供單一 FQDN。該 FQDN 會是非共用伺服器組態中的 前端伺服器 或 Director，或是經設定用於伺服器集區之硬體負載平衡器的 FQDN。讓 HTTP 和 HTTPS 流量達到負載平衡的唯一支援方法是使用硬體負載平衡器。
 
 
 7.  在 **\[新增伺服器\]** 對話方塊中，按一下 **\[進階設定…\]** 。如此會開啟對話方塊，讓您可以為設定之 FQDN 的要求定義應用程式要求路由。此作業的目的在重新定義當要求由 IIS ARR 處理時所使用的連接埠。
@@ -147,18 +137,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 11. 按一下伺服器陣列名稱。在 IIS 管理員 \[功能檢視\] 中的 **\[伺服器陣列\]** 下方，按兩下 **\[路由規則\]** 。在 \[路由規則\] 對話方塊的 \[路由\] 下方，清除 \[啟用 SSL 卸載\] 旁的核取方塊。如果無法清除該核取方塊，請選取 **\[使用 URL Rewrite 檢查傳入要求\]** 核取方塊。按一下 **\[套用\]** 儲存變更。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支援由反向 Proxy 進行 SSL 卸載。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 不支援由反向 Proxy 進行 SSL 卸載。
 
 
 12. 為每個必須通過反向 Proxy 的 URL 重複步驟 5-11。常見的清單如下：
@@ -196,18 +176,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 15. 為每個定義的 SSL 重寫規則重複步驟 14 中定義的程序，每個伺服器陣列 URL 使用一個。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>依照預設，也會建立 HTTP 規則並會以類似 SSL 規則的命名加以代表。就目前的範例而言，HTTP 規則會命名為 <strong>ARR_webext.contoso.com_loadbalance</strong> 。不需要修改這些規則，可以安全加以忽略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 依照預設，也會建立 HTTP 規則並會以類似 SSL 規則的命名加以代表。就目前的範例而言，HTTP 規則會命名為 <strong>ARR_webext.contoso.com_loadbalance</strong> 。不需要修改這些規則，可以安全加以忽略。
 
 
 ## 若要修改 TMG 2010 中網頁發行規則的內容

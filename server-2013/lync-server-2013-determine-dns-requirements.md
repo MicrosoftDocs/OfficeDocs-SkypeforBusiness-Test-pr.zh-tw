@@ -72,18 +72,8 @@ Lync Windows 市集應用程式完全改變處理程序，因為它使用兩筆�
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>預設設定是通過外部網站導入行動用戶端流量。您可以修改設定僅傳回內部 URL (如果這樣符合您的需求)。透過此設定，使用者只有在公司網路內部時，才可以在其行動裝置上使用 Lync 行動應用程式。若要定義此設定，請使用 <strong>Set-CsMcxConfiguration</strong> Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 預設設定是通過外部網站導入行動用戶端流量。您可以修改設定僅傳回內部 URL (如果這樣符合您的需求)。透過此設定，使用者只有在公司網路內部時，才可以在其行動裝置上使用 Lync 行動應用程式。若要定義此設定，請使用 <strong>Set-CsMcxConfiguration</strong> Cmdlet。
 
 
 > [!NOTE]  

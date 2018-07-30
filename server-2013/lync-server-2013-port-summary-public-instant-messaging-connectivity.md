@@ -19,19 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 Windows Live Messenger 可加入與 Lync 用戶端之間的音訊/視訊通訊。這表示連接埠與通訊協定防火牆的設定，與支持 Lync 為外部使用者時的一般防火牆設定非常相似。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard Client Access License (CAL) 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。<br />
-與 Messenger 用戶端的合約將在 2013 年 3 月 15 日正式終止 (中國大陸除外)。之前使用 Messenger 的同盟使用者，將由 Skype 取代為同盟用戶端。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard Client Access License (CAL) 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。<br />
+> 與 Messenger 用戶端的合約將在 2013 年 3 月 15 日正式終止 (中國大陸除外)。之前使用 Messenger 的同盟使用者，將由 Skype 取代為同盟用戶端。
 
 
 ## 防火牆摘要 – 公用即時訊息連線

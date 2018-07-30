@@ -30,19 +30,9 @@ _**上次修改主題的時間：** 2014-07-24_
 
   - **資料庫伺服器**   如需資料庫伺服器 (包括後端資料庫、 封存資料庫及 監控資料庫) 之作業系統需求的詳細資訊，請參閱 SQL Server 文件。若為 SQL Server 2012，請參閱 SQL Server 2012 線上叢書，網址為 [http://go.microsoft.com/fwlink/?linkid=218015\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=218015%26clcid=0x404)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要在 Windows Server 2008 R2 SP1 上安裝 Lync Server 2013，您必須先安裝 Microsoft 知識庫文章 2646886＜FIX：當模組呼叫 IIS 7.5 的 InsertEntityBody 方法時，發生堆積損毀＞(網址為 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;clcid=0x404</a>) 中所述的更新。<br />
-您還必須以知識庫文章中所述方式修改登錄，<a href="http://go.microsoft.com/fwlink/p/?linkid=506893">事件識別碼 32402 和 61045 會記錄在 Windows Server 2012 R2 所安裝的 Lync Server 2013 Front End 伺服器上</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要在 Windows Server 2008 R2 SP1 上安裝 Lync Server 2013，您必須先安裝 Microsoft 知識庫文章 2646886＜FIX：當模組呼叫 IIS 7.5 的 InsertEntityBody 方法時，發生堆積損毀＞(網址為 <a href="http://go.microsoft.com/fwlink/?linkid=3052%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=3052&amp;clcid=0x404</a>) 中所述的更新。<br />
+> 您還必須以知識庫文章中所述方式修改登錄，<a href="http://go.microsoft.com/fwlink/p/?linkid=506893">事件識別碼 32402 和 61045 會記錄在 Windows Server 2012 R2 所安裝的 Lync Server 2013 Front End 伺服器上</a>。
 
 
 ## 在伺服器上安裝 Windows Update

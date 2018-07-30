@@ -15,19 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-09-21_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設您已經針對您希望媒體略過中繼伺服器的特定網站或服務，對於從中繼伺服器至對等 (網際網路電話語音服務提供者 (ITSP) 的公用交換電話網路 (PSTN) 閘道、IP-PBX 或工作階段界限控制器 (SBC)) 的任何主幹連線設定媒體旁路。<br />
-本主題還假設您已用符合您根據<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中建立或修改網路地區</a>、<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中建立或修改網站</a>及<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>中的步驟執行之網路地區、網路網站和子網路設定的方式，在拓撲產生器中定義所有的中央網站和分支網站。如果不符合，則媒體旁路會失敗。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 本主題假設您已經針對您希望媒體略過中繼伺服器的特定網站或服務，對於從中繼伺服器至對等 (網際網路電話語音服務提供者 (ITSP) 的公用交換電話網路 (PSTN) 閘道、IP-PBX 或工作階段界限控制器 (SBC)) 的任何主幹連線設定媒體旁路。<br />
+> 本主題還假設您已用符合您根據<a href="lync-server-2013-create-or-modify-a-network-region.md">在 Lync Server 2013 中建立或修改網路地區</a>、<a href="lync-server-2013-create-or-modify-a-network-site.md">在 Lync Server 2013 中建立或修改網站</a>及<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>中的步驟執行之網路地區、網路網站和子網路設定的方式，在拓撲產生器中定義所有的中央網站和分支網站。如果不符合，則媒體旁路會失敗。
 
 
 除了針對與對等關聯的個別主幹連線啟用媒體旁路以外，您也必須設定全域設定。如果您使用本主題中的步驟來設定媒體旁路的全域設定，則假設下列其中一種或兩種情況會影響您的設定：

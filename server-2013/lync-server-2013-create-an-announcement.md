@@ -23,18 +23,8 @@ _**上次修改主題的時間：** 2012-11-01_
 
 3.  執行 **New-CsAnnouncement** Cmdlet 建立宣告並為其命名。執行此步驟可建立含有音訊提示、文字轉語音 (TTS) 提示或無提示的宣告。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您想要將來電轉接至特定目的地而不播放訊息，可能會希望建立沒有提示的宣告。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您想要將來電轉接至特定目的地而不播放訊息，可能會希望建立沒有提示的宣告。
 
 
 4.  將新的宣告指派給未指派號碼表中的某個號碼範圍。

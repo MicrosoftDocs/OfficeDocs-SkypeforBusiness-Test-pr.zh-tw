@@ -32,18 +32,8 @@ Microsoft Lync Server 2013 的新功能支援 IPv6 定址。指定方法與 IPv4
 
 現有的 IPv6 網路位址轉譯技術 (NAT) 支援 NAT IPv6 to IPv4 (通稱為 NAT64) 與 NAT IPv6 to IPv6 (通稱為 NAT66)。現有的 NAT 技術代表 Lync ServerEdge Server 的五個案例仍然有效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IPv6 是一個複雜的主題，必須與網路小組和網際網路供應商詳細規劃，確保指定的位址符合 Windows 伺服器層級及 Lync Server 2013 層級要求，也可如預期般運作。如需 IPv6 定址與規劃的其他資源，請參閱本主題最下方的連結。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> IPv6 是一個複雜的主題，必須與網路小組和網際網路供應商詳細規劃，確保指定的位址符合 Windows 伺服器層級及 Lync Server 2013 層級要求，也可如預期般運作。如需 IPv6 定址與規劃的其他資源，請參閱本主題最下方的連結。
 
 
 ![調整式合併 Edge 拓撲](images/JJ204761.7c1e3e6b-9b1b-4ac6-b0e7-9c256dbc2537(OCS.15).jpg "調整式合併 Edge 拓撲")

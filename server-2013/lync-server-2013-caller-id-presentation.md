@@ -41,16 +41,6 @@ Lync Server 2013 採用此選項，可將來電者的電話號碼 (即來電者�
     
       - 若要移除主幹中的轉譯規則，請反白選取規則名稱，然後再按一下 \[移除\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已在關聯的主幹對等端上設定轉譯規則，請勿再將轉譯規則與主幹建立關聯，因為這兩個規則可能會產生衝突。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您已在關聯的主幹對等端上設定轉譯規則，請勿再將轉譯規則與主幹建立關聯，因為這兩個規則可能會產生衝突。
 

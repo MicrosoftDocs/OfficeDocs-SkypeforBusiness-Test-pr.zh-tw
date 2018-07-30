@@ -29,18 +29,8 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 
 下表提供 Edge Server 部署程序的概觀。如要檢閱部署外部使用者存取之前必須完成的規劃決定，請參閱＜ [Lync Server 2013 中的外部使用者存取案例](lync-server-2013-scenarios-for-external-user-access.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表的資訊以全新部署為主。如果您已在 Lync Server 2010、 Office Communications Server 2007 R2 或 Office Communications Server 2007 環境中部署 Edge Server，請參閱 <a href="migration.md">移轉</a>中有關移轉至 Lync Server 2013 的詳細資訊。不支援從任何比 Office Communications Server 2007 R2 舊的版本 (包括 Office Communications Server 2007、 Live Communications Server 2005 以及 Live Communications Server 2003) 移轉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 下表的資訊以全新部署為主。如果您已在 Lync Server 2010、 Office Communications Server 2007 R2 或 Office Communications Server 2007 環境中部署 Edge Server，請參閱 <a href="migration.md">移轉</a>中有關移轉至 Lync Server 2013 的詳細資訊。不支援從任何比 Office Communications Server 2007 R2 舊的版本 (包括 Office Communications Server 2007、 Live Communications Server 2005 以及 Live Communications Server 2003) 移轉。
 
 
 為了提升 Edge Server 效能與安全性，以及協助部署順利進行，請在部署周邊網路和 Edge Server 時套用下列最佳作法：

@@ -23,18 +23,8 @@ _**上次修改主題的時間：** 2012-10-29_
 
 2.  依序按一下 **\[開始\]** 、 **\[系統管理工具\]** 和 **\[ADSI 編輯器\]** ，以開啟 \[ADSI 編輯器\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>或者，也可以從命令列執行 <strong>adsiedit.msc</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 或者，也可以從命令列執行 <strong>adsiedit.msc</strong> 。
 
 
 3.  在 Microsoft Management Console (MMC) 樹狀目錄中按一下 **\[ADSI 編輯器\]** (若尚未選取)。

@@ -15,19 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2015-03-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些步驟僅適用於移轉在部署 Lync 內部部署前於 Lync Online 中原本為 Lync 啟用的使用者帳戶。若要移動原本為 Lync 內部部署啟用而稍後移至 Lync Online 的使用者，請參閱<a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理 Lync Server 2013 混合部署中的使用者</a>。<br />
-此外，所有要移動的使用者都必須在內部部署的 Active Directory 中擁有帳戶。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 這些步驟僅適用於移轉在部署 Lync 內部部署前於 Lync Online 中原本為 Lync 啟用的使用者帳戶。若要移動原本為 Lync 內部部署啟用而稍後移至 Lync Online 的使用者，請參閱<a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理 Lync Server 2013 混合部署中的使用者</a>。<br />
+> 此外，所有要移動的使用者都必須在內部部署的 Active Directory 中擁有帳戶。
 
 
 ## 將原本在 Lync Online 中啟用的使用者帳戶移轉至 Lync 內部部署

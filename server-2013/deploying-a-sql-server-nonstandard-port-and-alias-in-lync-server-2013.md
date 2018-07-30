@@ -111,18 +111,8 @@ SQL Server 非標準連接埠和別名必須先在資料庫上完成設定，才
     
     ![建立新別名](images/Dn776290.03653588-aecf-4fdd-b58a-95f5b372d478(OCS.15).jpg "建立新別名")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>確定輸入您在上一個步驟使用的同一個非標準連接埠，因為這是 SQL Server 將會聆聽的連接埠。如果設定的別名連接到錯誤的 SQL Server FQDN 或執行個體，請停用後重新啟用相關的網路通訊協定。如此可以清除任何快取連接資訊，允許用戶端正常連接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 確定輸入您在上一個步驟使用的同一個非標準連接埠，因為這是 SQL Server 將會聆聽的連接埠。如果設定的別名連接到錯誤的 SQL Server FQDN 或執行個體，請停用後重新啟用相關的網路通訊協定。如此可以清除任何快取連接資訊，允許用戶端正常連接。
 
 
 **建立 DNS CNAME 資源記錄**

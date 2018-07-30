@@ -232,18 +232,8 @@ _**上次修改主題的時間：** 2015-03-09_
     > 基礎 URL 是 URL 的 Web 服務識別 (去除 https://)。例如，如果集區的 Web 服務的完整 URL 為 https://pool01.contoso.net，則基底 URL 是 pool01.contoso.net。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須為唯一名稱。例如，如果您將 前端伺服器外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，您便無法將 <strong>pool01.contoso.com</strong> 始用於其他 前端集區或 前端伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有一個以上 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須為唯一名稱。例如，如果您將 前端伺服器外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，您便無法將 <strong>pool01.contoso.com</strong> 始用於其他 前端集區或 前端伺服器。
     
     1.  如果您是設定 DNS 負載平衡，請選取 \[覆寫內部 Web 服務集區 FQDN\] 核取方塊，並在 \[內部基底 URL\] 中輸入內部基底 URL (必須與集區 FQDN 不同，例如，可以是 internal-\<基底 URL\>)。
         

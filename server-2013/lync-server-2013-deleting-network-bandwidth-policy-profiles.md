@@ -34,18 +34,8 @@ _**上次修改主題的時間：** 2012-11-01_
 
 5.  在 **\[編輯\]** 功能表上，按一下 **\[刪除\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您無法刪除與網站關聯的頻寬原則設定檔。您必須先移除與網站的關聯，才可以刪除設定檔。如需有關如何修改網站的詳細資訊，請參閱＜<a href="lync-server-2013-creating-or-modifying-network-sites.md">建立或修改網站</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 您無法刪除與網站關聯的頻寬原則設定檔。您必須先移除與網站的關聯，才可以刪除設定檔。如需有關如何修改網站的詳細資訊，請參閱＜<a href="lync-server-2013-creating-or-modifying-network-sites.md">建立或修改網站</a>＞。
 
 
 ## 請參閱

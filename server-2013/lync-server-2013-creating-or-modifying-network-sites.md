@@ -96,18 +96,8 @@ _**上次修改主題的時間：** 2012-10-08_
 
 6.  按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>但是如果網站與某個網路子網路相關聯時，則無法移除該網路網站。如果您嘗試移除與子網路相關聯的網站，則會收到錯誤訊息。若要查看網站是否與子網路相關聯，請按一下網站並按一下 <strong>[編輯]</strong> 功能表上的 <strong>[顯示詳細資料]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 但是如果網站與某個網路子網路相關聯時，則無法移除該網路網站。如果您嘗試移除與子網路相關聯的網站，則會收到錯誤訊息。若要查看網站是否與子網路相關聯，請按一下網站並按一下 <strong>[編輯]</strong> 功能表上的 <strong>[顯示詳細資料]</strong>。
 
 
 ## 請參閱

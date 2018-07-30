@@ -58,18 +58,8 @@ Lync Server 2013 Director 可以是單一執行個體伺服器，也能安裝為
     > 名稱必須可從網際網路 DNS 伺服器解析，且必須指向反向 Proxy 的公用 IP 位址。反向 Proxy 會接聽該 URL 的 HTTP/HTTPS 要求，並代為將 URL 傳送至 Director 上的外部 Web 服務虛擬目錄。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。
 
 
 8.  發行拓撲。
@@ -113,18 +103,8 @@ Lync Server 2013 Director 可以是單一執行個體伺服器，也能安裝為
     > 名稱必須可以從網際網路 DNS 伺服器解析，並指向反向 Proxy 的公用 IP 位址，反向 Proxy 會接聽傳送至該 URL 的 HTTP/HTTPS 要求，並將它們 Proxy 至該 Director 集區上的外部 Web 服務虛擬目錄。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。
 
 
 9.  發行拓撲。

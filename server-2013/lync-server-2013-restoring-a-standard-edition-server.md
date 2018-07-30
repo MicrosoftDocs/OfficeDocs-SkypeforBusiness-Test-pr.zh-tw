@@ -17,18 +17,8 @@ _**上次修改主題的時間：** 2013-02-21_
 
 若未執行中央管理存放區的 Standard Edition 伺服器失敗，請執行本節中的程序。若中央管理存放區失敗，請參閱＜[還原裝載中央管理存放區的伺服器](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您在還原之前，先擷取系統的影像複本，您可在還原出錯時，以此影像做為回復點。您可以在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建議您在還原之前，先擷取系統的影像複本，您可在還原出錯時，以此影像做為回復點。您可以在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。
 
 
 ## 還原 Standard Edition Server

@@ -111,17 +111,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 個別使用者必須登出 Lync，然後再次登入，才能使這些變更生效。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以使用單一命令啟用用戶端媒體連接埠範圍，然後指派這些連接埠範圍，例如：<br />
-<code>Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20</code></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您也可以使用單一命令啟用用戶端媒體連接埠範圍，然後指派這些連接埠範圍，例如：<br />
+> <code>Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20</code>
 
