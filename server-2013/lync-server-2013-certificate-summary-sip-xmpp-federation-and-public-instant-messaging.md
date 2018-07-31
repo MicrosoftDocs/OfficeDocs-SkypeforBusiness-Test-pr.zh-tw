@@ -48,6 +48,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <p>webcon.contoso.com</p>
 <p>contoso.com</p>
 <div class="alert">
+
 > [!NOTE]  
 > 支援 contoso.com XMPP 命名空間
 
@@ -55,6 +56,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </div>
 <p>sip.fabrikam.com</p>
 <div class="alert">
+
 > [!NOTE]  
 > 支援 fabrikam.com SIP 命名空間
 
@@ -62,6 +64,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </div>
 <p>fabrikam.com</p>
 <div class="alert">
+
 > [!NOTE]  
 > 支援 fabrikam.com XMPP 命名空間
 
@@ -74,6 +77,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>A/V Edge 服務</p></li>
 </ul>
 <div class="alert">
+
 > [!NOTE]  
 > 技術上來說，憑證並不會指派給 A/V Edge。安全通訊和驗證是採用媒體轉送驗證服務 (MRAS) 方式管理。MRAS 會使用指派給 Edge Server 內部介面的憑證。
 

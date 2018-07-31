@@ -81,6 +81,7 @@ _**上次修改主題的時間：** 2015-03-09_
 </ol></td>
 <td><p>RTCUniversalUserAdmins</p>
 <div class="alert">
+
 > [!NOTE]  
 > 若要建立、修改或移除連絡人物件，執行 New-CsExUmContact、Set-CsExUmContact 或 Remove-CsExUmContact Cmdlet 的使用者必須具備儲存新的連絡人物件所在 Active Directory 組織單位的正確權限。執行 Grant-CsOUPermission Cmdlet，即可授與此權限。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
 

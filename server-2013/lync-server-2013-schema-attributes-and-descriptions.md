@@ -316,7 +316,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>此屬性控制伺服器在回應用戶端的 SUBSCRIBE 要求時，是否會產生 Best Effort NOTIFY (BENOTIFY) 要求，而非 NOTIFY 要求。BENOTIFY 增強了訂閱通知信號交換的效能，讓伺服器產生 BENOTIFY 要求，而非一般的 NOTIFY 要求。這項效能優勢在於，BENOTIFY 要求不會像 NOTIFY 要求一樣，要求來自用戶端的 200 OK 回應。</p>
 <p>有效值為 <strong>TRUE</strong> 或 <strong>FALSE</strong>。</p>
 <div class="alert">
-> [!NOTE]  
+
+> [!NOTE]   
 > Live Communications Server 2003 不支援 BENOTIFY 要求。若要與使用 Live Communications Server 2003 伺服器 API (在 Live Communications Server 2005 及協力廠商伺服器上執行) 所撰寫的伺服器應用程式相互操作，可以將值設為 <strong>FALSE</strong> 以停用 BENOTIFY 要求。BENOTIFY 目前不是 IETF (網際網路工程任務推動小組) SIP 標準程序的一部分。
 
 

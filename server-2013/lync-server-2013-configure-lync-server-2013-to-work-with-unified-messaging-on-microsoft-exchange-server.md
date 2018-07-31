@@ -31,24 +31,13 @@ Exchange UM 整合公用程式必須從具有下列特性的使用者帳戶執�
 
   - 確認每個 企業語音撥號對應表的名稱與對應的整合通訊 (UM) 撥號對應表電話內容相符。只有當 UM 撥號對應表在版本比 Exchange 2010 Service Pack 1 (SP1) 還「舊」 的 Exchange 上執行，才需要要求上述兩者相符。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您執行 Exchange UM 整合公用程式之前，請確定您已完成下列步驟：
-<ul>
-<li><p>如 Exchange 產品文件中所述，建立一個以上的 Exchange UM 撥號對應表。</p>
-<p>如果是 Microsoft Exchange Server 2010，請參閱＜建立 UM 撥號對應表＞，網址是 <a href="http://go.microsoft.com/fwlink/?linkid=186177%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=186177&amp;clcid=0x404</a>。</p>
-<p>如果是 Microsoft Exchange Server 2007 Service Pack 1 (SP1)，請參閱＜如何建立整合通訊 SIP URI 撥號對應表＞，網址是 <a href="http://go.microsoft.com/fwlink/?linkid=185771%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=185771&amp;clcid=0x404</a>。</p></li>
-<li><p>如＜<a href="lync-server-2013-create-a-dial-plan.md">在 Lync Server 2013 中建立撥號對應表</a>＞中所述，建立一個以上的對應 Lync Server 撥號對應表。</p>
-<div class="alert">
+> [!IMPORTANT]  
+> <td>在您執行 Exchange UM 整合公用程式之前，請確定您已完成下列步驟：
+> <p>如 Exchange 產品文件中所述，建立一個以上的 Exchange UM 撥號對應表。</p>
+> <p>如果是 Microsoft Exchange Server 2010，請參閱＜建立 UM 撥號對應表＞，網址是 <a href="http://go.microsoft.com/fwlink/?linkid=186177%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=186177&amp;clcid=0x404</a>。</p>
+> <p>如果是 Microsoft Exchange Server 2007 Service Pack 1 (SP1)，請參閱＜如何建立整合通訊 SIP URI 撥號對應表＞，網址是 <a href="http://go.microsoft.com/fwlink/?linkid=185771%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=185771&amp;clcid=0x404</a>。</p></li>
+> <p>如＜<a href="lync-server-2013-create-a-dial-plan.md">在 Lync Server 2013 中建立撥號對應表</a>＞中所述，建立一個以上的對應 Lync Server 撥號對應表。</p>
+
 > [!IMPORTANT]  
 > 如果您使用的 Exchange 版本比 Microsoft Exchange Server 2010 SP1 還舊，則您必須在 Lync Server 2013 撥號對應表的 [簡單名稱] 欄位中，輸入對應 Exchange 整合通訊 (UM) SIP 撥號對應表的完整網域名稱 (FQDN)。如果您是使用 Microsoft Exchange Server 2010 SP1 或最新的 Service Pack，則這項撥號對應表名稱不一定得相符。
 

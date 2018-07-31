@@ -39,9 +39,9 @@ Lync Server 2013 的拓撲需求和考量與舊版不同，本節有相關說明
 
   - 常設聊天室伺服器 現在是伺服器角色。在 Microsoft Lync Server 2010 中， 群組聊天伺服器是 Microsoft Lync Server 2010 信任的第三方應用程式。在 Lync Server 2013 中， 常設聊天室伺服器 功能是以三個新的伺服器角色來實作：
     
-      - **PersistentChatService ：**當成前端角色實作的主要 常設聊天室伺服器 服務
+      - **PersistentChatService ：** 當成前端角色實作的主要 常設聊天室伺服器 服務
     
-      - **PersistentChatStore ：**後端伺服器角色
+      - **PersistentChatStore ：** 後端伺服器角色
     
       - **PersistentChatComplianceStore ：** 常設聊天室規範專用的後端伺服器角色
 

@@ -67,6 +67,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>所有的檔案存放區︰Lync Server 檔案存放區、封存檔案存放區</p>
 <div class="alert">
+
 > [!NOTE]  
 > <strong>Meeting.Active</strong> 檔案不應備份。會議進行期間會使用這些檔案並予以鎖定。
 
@@ -121,6 +122,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p>將 Active Directory 網域服務 指標還原至中央管理存放區</p>
 <div class="alert">
+
 > [!NOTE]  
 > 如果您在任何時候遺失服務連線點，都可以重新執行此 Cmdlet。
 
@@ -146,6 +148,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>重新安裝 Lync Server 元件</p></td>
 <td><p>Lync Server 安裝程式</p>
 <div class="alert">
+
 > [!NOTE]  
 > 位在 Lync Server 安裝資料夾或媒體的 \setup\amd64\Setup.exe。
 
@@ -164,6 +167,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>還原回應群組設定資料 (RgsConfig.mdf)</p></td>
 <td><p>Import-CsRgsConfiguration</p>
 <div class="alert">
+
 > [!NOTE]  
 > 如果設定是要還原在資料庫中沒有回應群組資料的新部署集區中，則應使用 –OverwriteOwner 選項。即使要還原的資料是在有著相同完整網域名稱 (FQDN) 的集區中，也請使用此選項，否則匯入將會失敗。這是因為回應群組的連絡人物件已經存在於 Active Directory 中。
 

@@ -267,6 +267,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><a href="lync-server-2013-voipdetails-table.md">Lync Server 2013 中的 VoipDetails 表格</a></p></td>
 <td><p>會針對每次雙方 VoIP/PSTN 通話，儲存通話的相關資訊，例如 VoIP 電話的電話 ID、所用閘道，以及哪一方中斷連線。請參考 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表格</a> 以取得通話開始/結束時間與回應碼。</p>
 <div class="alert">
+
 > [!NOTE]  
 > 如果通話任一方是 VoIP 使用者或者有中繼伺服器參與通話，此表格中會建立一筆記錄。 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表格</a> 中會擷取不參與公用交換電話網路 (PSTN) 電話的 VoIP/VoIP 通話之相關資訊。
 
@@ -296,6 +297,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><a href="lync-server-2013-locations-table.md">Lync Server 2013 中的 Locations 表格</a></p></td>
 <td><p>會針對每個緊急電話，如增強型 9-1-1 (E9-1-1) 通話，儲存通話的位置資訊。請參考 <a href="lync-server-2013-sessiondetails-table.md">Lync Server 2013 中的 SessionDetails 表格</a> 以取得通話開始/結束時間與回應碼。</p>
 <div class="alert">
+
 > [!NOTE]  
 > 此表格僅包含針對 E9-1-1 通話的位置二進位大型物件。請參考 SessionDetails 表格以取得通話的其他詳細資訊。
 

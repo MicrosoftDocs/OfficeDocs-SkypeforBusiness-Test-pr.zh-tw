@@ -81,6 +81,7 @@ XMPP 同盟定義以 eXtensible Messaging and Presence Protocol 為基礎的外�
 <td><p>執行 拓撲產生器以編輯 Edge Server 設定、建立並發行拓撲。您現有的邊緣拓撲會將變更從 中央管理存放區複寫到 Edge Server。</p></td>
 <td><p>Domain Admins 群組和 RTCUniversalServerAdmins 群組</p>
 <div class="alert">
+
 > [!NOTE]  
 > 您可以使用本機使用者群組的成員帳戶來編輯拓撲，但發行拓撲需要以 Domain Admins 群組和 RTCUniversalServerAdmins 群組的成員帳戶進行
 

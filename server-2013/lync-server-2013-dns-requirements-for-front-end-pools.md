@@ -42,7 +42,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <ul>
 <li><p>DNS 負載平衡：Pool01.contoso.net   IP Address of pool   10.10.10.5</p>
 <div class="alert">
-> [!WARNING]
+
+> [!WARNING]  
 > 每部前端伺服器也會有另一筆 A 記錄：
 
 </div>
@@ -77,6 +78,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>整合通訊 (UC) 裝置的裝置更新 Web 服務探索</p></td>
 <td><p>名稱為 ucupdates-r2.&lt;SIP 網域&gt; 的內部 A 記錄，解析為裝載裝置更新 Web 服務之前端集區的 IP 位址。在 UC 裝置已開啟，但從未有使用者登入裝置的情況下，A 記錄會允許裝置探索裝載裝置更新 Web 服務的前端集區，並取得更新。否則，裝置會透過使用者首次登入時的頻內佈建取得此資訊。</p>
 <div class="alert">
+
 > [!IMPORTANT]  
 > 如果您已在 Lync Server 2010 中部署裝置更新 Web 服務，表示您已建立一筆名稱為 ucupdates.<em>&lt;SIP 網域&gt;</em> 的內部 A 記錄。針對 Microsoft Office Communications Server 2007 R2，您必須另外建立一筆名稱為 ucupdates-r2.<em>&lt;SIP 網域&gt;</em> 的 DNS A 記錄。
 

@@ -141,6 +141,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP Access Edge 外部介面。DNS 自動探索其他可能同盟合作夥伴 (亦稱為「允許的 SIP 網域」，先前版本稱為增強型同盟) 的同盟所需。視需要針對所有含啟用 Lync 之使用者的 SIP 網域重複</p>
 <div class="alert">
+
 > [!IMPORTANT]  
 > 行動性和推入通知結算需要此 SRV 記錄
 
