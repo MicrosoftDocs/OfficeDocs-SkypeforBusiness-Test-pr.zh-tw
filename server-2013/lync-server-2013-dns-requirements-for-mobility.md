@@ -94,7 +94,7 @@ DNS 記錄可以是 CNAME 記錄或 A (主機) 記錄。
 <td><p>_sipfederationtls._tcp. <em>&lt;SIP 網域&gt;</em></p>
 <p>解析為 Access Edge Service 的主機 (A 或 AAAA) 記錄</p></td>
 <td><p>若要支援推播通知服務與 Apple 推播通知服務，您要為包含 Microsoft Lync Mobile 用戶端的每個 SIP 網域建立一筆 SRV 記錄。</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]  
 > 此需求只適用於 Apple 或 Microsoft 行動裝置的 Microsoft Lync Mobile 用戶端。Andriod 與 Nokia Symbian 裝置不使用推播通知。

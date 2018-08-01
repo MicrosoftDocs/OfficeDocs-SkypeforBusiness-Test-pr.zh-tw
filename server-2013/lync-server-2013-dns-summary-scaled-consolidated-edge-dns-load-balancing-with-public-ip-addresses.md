@@ -152,7 +152,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP Access Edge Service 外部介面。DNS 自動探索同盟合作夥伴 (亦稱為「允許的 SIP 網域」，先前版本稱為增強型同盟) 所需。</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]   
 > 必要時，重複用於含有 Lync 啟用的使用者及使用 推播通知服務或 Apple 推播通知服務的 Microsoft Lync Mobile 用戶端的所有 SIP 網域

@@ -149,7 +149,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>匿名使用者對會議的存取權</p></td>
 <td><p></p></td>
 <td><p><a href="lync-server-2013-assign-conferencing-policies-to-support-anonymous-users.md">在 Lync Server 2013 中指派會議原則以支援匿名使用者</a></p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 您也必須考慮會議原則的下列組態設定：＜ <a href="lync-server-2013-create-or-modify-a-conferencing-policy.md">在 Lync Server 2013 中建立或修改會議原則</a>＞及＜ <a href="lync-server-2013-conferencing-policy-settings-reference.md">Lync Server 2013 中的會議原則設定參考</a>＞

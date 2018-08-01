@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>主體替代名稱</p></td>
 <td><p>集區 FQDN</p></td>
 <td><p>webext.contoso.com</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]  
 > 主體名稱也必須出現在主體替代名稱中。
@@ -59,7 +59,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p>主體替代名稱</p></td>
 <td><p>會議簡單 URL</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 所有會議簡單 URL 都必須出現在主體替代名稱中。每個 SIP 網域都至少必須有一個作用中的會議簡單 URL。
@@ -82,7 +82,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>主體替代名稱</p></td>
 <td><p>外部自動探索服務 URL</p></td>
 <td><p>lyncdiscover.contoso.com</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 如果您同時也使用 Microsoft Exchange Server，您也將需要為 Exchange 自動探索和 Web 服務 URL 設定反向 Proxy 規則。

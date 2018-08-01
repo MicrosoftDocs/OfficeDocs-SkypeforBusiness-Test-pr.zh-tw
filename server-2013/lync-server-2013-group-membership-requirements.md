@@ -33,7 +33,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p><strong>Setup.exe</strong> – 啟動 Lync Server 2013 系統管理工具安裝程序的可執行檔。</p></td>
 <td><p>電腦上執行可執行檔的 Local Administrators 群組成員。讀取 Active Directory 網域服務 中資訊的 Domain Users 群組成員。此層級權限是必要權限，因為在本機電腦上自動安裝必要的 MSI 套件時，需要允許在受保護的本機電腦資源 (例如 Program Files 目錄) 以及受保護登錄 (例如 Local Machine Hive) 上讀取和寫入的權限。</p>
-<div class="alert">
+<div>
 
 > [!TIP]  
 > 您也可以委派安裝權限給您不想授予 Domain Admins 群組成員資格的使用者或群組。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-granting-setup-permissions.md">在 Lync Server 2013 中授與設定權限</a>＞。
@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p><strong>Deploy.exe</strong> – 由 setup.exe 呼叫，deploy.exe 負責部署伺服器角色的軟體元件。</p></td>
 <td><p>電腦上執行可執行檔的 Local Administrators 群組成員。讀取 AD DS 中資訊的 Domain Users 群組成員。此層級權限是必要權限，因為在本機電腦上自動安裝必要的 MSI 套件時，需要允許在受保護的本機電腦資源 (例如 Program Files 目錄) 以及受保護登錄 (例如 Local Machine Hive) 上讀取和寫入的權限。必須有讀取 中央管理存放區的 RtcUniversalReadOnlyAdmins 群組成員資格。</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 如果您是執行 Windows Vista 作業系統 或 Windows 7 作業系統，使用者帳戶控制 (UAC) 會提示您繼續安裝。如果您是用標準使用者帳戶登入，則在出現具有安裝軟體權限的帳戶提示時，您會需要身為 Local Administrators 群組成員的某個人提供憑證。

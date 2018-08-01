@@ -79,7 +79,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>在 [啟動佈建要求] 頁面中，按一下適當連結以啟動佈建要求：</p></li>
 <li><p>在 [指定佈建資訊] 頁面中，輸入「Access Edge Service FQDN」，例如 <strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>輸入至少一個或多個 SIP 網域名稱，然後按一下 [新增]。</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]  
 > 至少需要一部 Access Edge Server 與一個 SIP 網域，才能完成佈建程序。SIP 網域與 Access Edge Server 必須已啟用、正在運作，並可透過網路連線。

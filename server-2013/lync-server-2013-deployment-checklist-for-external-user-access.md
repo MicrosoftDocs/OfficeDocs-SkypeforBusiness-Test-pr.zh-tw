@@ -67,7 +67,7 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 </ul>
 <p></p></td>
 <td><p><strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 或 <strong>CsAdmins</strong> 群組</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 您可以使用本機使用者群組的成員帳戶來定義拓撲，但發行拓撲需要以 <strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 群組的成員帳戶進行。
@@ -84,7 +84,7 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 <li><p>設定內部與外部 DNS 記錄 (IPv4 和 IPv6 的主機 A 和 AAAA)，包括在要部署為 Edge Server 的電腦上設定 DNS 尾碼。</p></li>
 <li><p>(選用) 建立並安裝公用憑證。取得憑證所需的時間，視發出憑證的憑證授權單位 (CA) 而定。如果您此時不執行這個步驟，也必須在 Edge Server 安裝期間執行。未取得並安裝憑證前，Edge Server Service 無法啟動。</p></li>
 <li><p>佈建公用 IM 連線的支援 (如果您的部署是要支援與 Windows Live、AOL 或 Yahoo! 使用者的通訊)。</p>
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]  

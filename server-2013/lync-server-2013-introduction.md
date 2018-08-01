@@ -36,7 +36,7 @@ Lync Server 2013 和其用戶端軟體 (如 Lync 2013) 可讓使用者不論身�
 <td><p>IM 和目前狀態</p></td>
 <td><p>立即訊息 (IM) 和目前狀態能協助使用者有效率地搜尋人員及進行通訊。</p>
 <p>IM 提供具有交談記錄的立即訊息平台，並支援與公用 IM 網路 (如 MSN/Windows Live、Yahoo!、AOL 及 Google Talk) 上的使用者進行公用 IM 連線。</p>
-<div class="alert">
+<div>
 
 > [!IMPORTANT]  
 > <p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>

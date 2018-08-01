@@ -48,7 +48,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>執行 拓撲產生器來設定拓撲。設定拓撲時，選取電話撥入式會議選項。</p></li>
 <li><p>發行拓撲並部署 前端集區或 Standard Edition 伺服器。</p></li>
 <li><p>必要的話，建立獨立的 中繼伺服器，並將它與 PSTN 閘道建立關聯。</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 只有當您不部署 企業語音，也不將 中繼伺服器 與 Enterprise Edition前端伺服器 或 Standard Edition 伺服器 放置在一起時，才需要此步驟。如果您部署 企業語音，即會在 企業語音 部署過程中安裝及設定 中繼伺服器 和 PSTN 閘道。如果您將 中繼伺服器 放在一起，則會在 前端集區 或 Standard Edition 伺服器 的部署過程中安裝及設定 中繼伺服器。
@@ -111,7 +111,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p><strong>設定撥入存取號碼</strong></p></td>
 <td><p>使用 Lync Server 2013 控制台或 Lync Server 管理命令介面來設定由使用者撥打以加入會議的撥入存取號碼，並指定用來將存取號碼與適當撥號對應表建立關聯的區域。會議邀請中包含召集人的撥號對應表所指定之區域的前三個存取號碼。 電話撥入式會議設定頁面上會提供所有存取號碼。</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 在建立撥入存取號碼之後，您可以使用 <strong>Set-CsDialInConferencingAccessNumber</strong> Cmdlet 來修改 Active Directory 連絡人物件的顯示名稱，讓使用者可以更輕鬆識別正確的存取號碼。

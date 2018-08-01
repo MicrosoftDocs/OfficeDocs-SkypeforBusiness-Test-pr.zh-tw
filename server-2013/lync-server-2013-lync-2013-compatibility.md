@@ -189,7 +189,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>Exchange Server 2013</p></td>
 <td><p>與 Exchange Server 2010 支援相同，增加了整合連絡人存放區、高解析度圖片，以及封存整合。</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 如需詳細資訊，請參閱＜<a href="lync-server-2013-integrating-with-microsoft-exchange-server-2013.md">整合 Microsoft Lync Server 2013 與 Microsoft Exchange Server 2013</a>＞。

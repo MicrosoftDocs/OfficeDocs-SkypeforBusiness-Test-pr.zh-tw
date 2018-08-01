@@ -81,7 +81,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>50% 的連絡人在組織內。這些使用者的 10% 為遠端使用者，從防火牆外部連線。</p></li>
 <li><p>40% 的連絡人為公用雲端使用者 (例如 AOL、Yahoo!、MSN 或 Google Talk 使用者)。</p></li>
 <li><p>10% 的連絡人來自同盟協力廠商。</p>
-<div class="alert">
+<div>
+
 > [!Important]  
 > <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
 > <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
@@ -239,7 +240,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>混合媒體的會議</p></td>
 <td><p>75% 的會議為 Web 會議，包括使用音訊加上一些其他共同作業的形式。</p>
 <p>這些會議的其他共同作業方法包括：</p>
-<div class="alert">
+<div>
 
 > [!NOTE]  
 > 這些數字相加超過 100%，因為一場會議可能採用多種共同作業方法。
