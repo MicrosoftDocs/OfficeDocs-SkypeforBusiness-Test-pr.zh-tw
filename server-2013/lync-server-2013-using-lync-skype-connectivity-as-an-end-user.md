@@ -19,29 +19,15 @@ Lync-Skype 連線可讓 Skype 使用者與 Lync 使用者彼此互加為連絡�
 
 **什麼是 MSA？** Skype 使用者必須以 Microsoft 帳戶 (前稱為 Windows Live ID) 登入 Skype，才可與 Lync 連絡人通訊。Microsoft 帳戶是由一組電子郵件地址與密碼組成，亦可用於登入各種服務，例如 Microsoft OneDrive 儲存空間技術、Windows Phone、Microsoft Xbox LIVE 線上遊戲服務，以及 Microsoft Outlook 訊息與共同作業用戶端 (以及之前的 Microsoft Hotmail 網路電子郵件服務或 Windows Live Messenger)。若您使用電子郵件地址與密碼登入這些或其他服務，表示您已擁有 Microsoft 帳戶。如需建立 Microsoft 帳戶的詳細資料，請參閱 Microsoft 帳戶註冊頁面： [http://go.microsoft.com/fwlink/p/?LinkId=306061](http://go.microsoft.com/fwlink/p/?linkid=306061)。您可以將現有的 Skype 帳戶與 Microsoft 帳戶合併，以透過單一登入存取各種應用程式與服務。帳戶合併後，Skype 使用者就可以傳送聯絡人授權請求給 Lync 使用者。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要讓 Lync 與 Skype 使用者能夠完全彼此通訊，必須符合下列需求：
-<ul>
-<li><p>Skype 使用者必須以 Microsoft 帳戶 (MSA) 登入其 Skype 用戶端。</p></li>
-<li><p>Lync 使用者必須由其 Lync 系統管理員啟用公用 IM 連線功能。</p></li>
-<li><p>在 Skype 使用者新增 Lync 連絡人時，確認連絡人名稱下方顯示 &quot;Lync&quot; 的字樣，代表找到 Lync URI。</p></li>
-<li><p>在 Skype 使用者新增 Lync 連絡人而該 Lync 網域沒有傳回任何搜尋結果時，代表 PIC 佈建程序可能尚未完成，或 Lync 網域尚未設定。</p></li>
-<li><p>根據 Lync 與 Skype 使用者的隱私權設定，在各個使用者接受新連絡人之前，IM、視訊與目前狀態可能無法運作。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> 若要讓 Lync 與 Skype 使用者能夠完全彼此通訊，必須符合下列需求：
+> <ul>
+> <li><p>Skype 使用者必須以 Microsoft 帳戶 (MSA) 登入其 Skype 用戶端。</p></li>
+> <li><p>Lync 使用者必須由其 Lync 系統管理員啟用公用 IM 連線功能。</p></li>
+> <li><p>在 Skype 使用者新增 Lync 連絡人時，確認連絡人名稱下方顯示 &quot;Lync&quot; 的字樣，代表找到 Lync URI。</p></li>
+> <li><p>在 Skype 使用者新增 Lync 連絡人而該 Lync 網域沒有傳回任何搜尋結果時，代表 PIC 佈建程序可能尚未完成，或 Lync 網域尚未設定。</p></li>
+> <li><p>根據 Lync 與 Skype 使用者的隱私權設定，在各個使用者接受新連絡人之前，IM、視訊與目前狀態可能無法運作。</p></li>
+> </ul>
 
 **若要新增 Skype 連絡人至 Lync 2013**
 

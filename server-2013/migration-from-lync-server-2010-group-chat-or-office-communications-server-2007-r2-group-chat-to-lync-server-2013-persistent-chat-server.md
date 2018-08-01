@@ -48,19 +48,9 @@ _**上次修改主題的時間：** 2012-10-06_
 
 如組織需要規範支援，現在會隨每部 常設聊天室伺服器 自動安裝。不再需要個別的規範伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>常設聊天室伺服器 必須安裝在 NTFS 檔案系統上，以強制檔案系統安全性。 常設聊天室伺服器 不支援 FAT32 檔案系統。<br />
-如組織需要規範支援，現在會隨每部 常設聊天室伺服器 自動安裝。不再需要個別的規範伺服器。如需有關 Lync Server 2013常設聊天室伺服器 中變更的詳細資訊，請參閱＜入門＞文件中的 <a href="lync-server-2013-new-persistent-chat-server-features.md">Lync Server 2013 中的新常設聊天室伺服器功能</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 常設聊天室伺服器 必須安裝在 NTFS 檔案系統上，以強制檔案系統安全性。 常設聊天室伺服器 不支援 FAT32 檔案系統。<br />
+> 如組織需要規範支援，現在會隨每部 常設聊天室伺服器 自動安裝。不再需要個別的規範伺服器。如需有關 Lync Server 2013常設聊天室伺服器 中變更的詳細資訊，請參閱＜入門＞文件中的 <a href="lync-server-2013-new-persistent-chat-server-features.md">Lync Server 2013 中的新常設聊天室伺服器功能</a>。
 
 
 ## 本節內容

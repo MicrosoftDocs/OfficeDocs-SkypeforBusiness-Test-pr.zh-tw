@@ -102,23 +102,11 @@ DNS 負載平衡支援的 Edge 容錯移轉案例為 Lync 至 Lync 點對點工�
 
 **\*** 公用立即訊息 (IM) 連線和執行 Office Communications Server 伺服器同盟的容錯移轉不適用於 DNS 負載平衡。使用 DNS 負載平衡的 Exchange UM (遠端使用者) 容錯移轉必須具備 Exchange Server 2010 SP1 或更新版本。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><br />
-單一 Edge 和調整式的 Edge (DNS 負載平衡) 拓撲可以使用：
-<ul>
-<li><p>可路由公用 IP 位址</p></li>
-<li><p>無法經路由傳送的私人 IP 位址 (如果使用對稱式網路位址轉譯 (NAT))</p>
-<div class="alert">
+> [!NOTE]  
+> 單一 Edge 和調整式的 Edge (DNS 負載平衡) 拓撲可以使用：  
+>  可路由公用 IP 位址  
+> 無法經路由傳送的私人 IP 位址 (如果使用對稱式網路位址轉譯 (NAT))
+
 > [!NOTE]  
 > 若您使用公用 IP 位址或私人 IP 位址且搭配 NAT，則仍會根據您在 拓撲產生器中所做的設定選擇，使用相同的 IP 位址數目。您可設定 Edge Server 讓每項服務使用單一 IP 位址搭配明確的連接埠，或者讓每項服務使用明確的 IP 位址，但使用相同的連接埠 (預設為 TCP 443)。
 

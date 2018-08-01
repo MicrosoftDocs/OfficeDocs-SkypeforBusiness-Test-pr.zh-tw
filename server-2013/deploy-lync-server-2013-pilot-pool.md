@@ -36,18 +36,8 @@ _**上次修改主題的時間：** 2013-11-22_
 
 4.  輸入集區 FQDN。當您定義試驗集區時，可以選擇部署 Enterprise Edition 前端集區或 Standard Edition 伺服器。 Lync Server 2013 不需要試驗集區功能與舊版集區中的部署相同。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您為試驗集區所定義的集區或伺服器完整網域名稱 (FQDN) 不得重複。它不能與目前部署的 Lync Server 2010 集區同名，或是與其他目前部署的伺服器同名。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 您為試驗集區所定義的集區或伺服器完整網域名稱 (FQDN) 不得重複。它不能與目前部署的 Lync Server 2010 集區同名，或是與其他目前部署的伺服器同名。
     
     ![\[定義新前端集區精靈 FQDN\] 頁面](images/JJ205144.c5fd138c-e75a-413a-827f-b1461c996d40(OCS.15).jpg "[定義新前端集區精靈 FQDN] 頁面")
 

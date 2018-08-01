@@ -17,19 +17,9 @@ _**上次修改主題的時間：** 2012-10-05_
 
 本主題說明為了啟用 Lync Server 環境中使用者的遠端呼叫控制，必須執行的部署工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您移轉的是先前在 Microsoft Office Communicator 2007 R2 中有啟用遠端呼叫控制的使用者，則必須先執行一個額外的部署工作，才能開始執行本主題所述的遠端呼叫控制部署工作。在移轉至 Lync Server 的過程中，必須視需要使用 Office Communications Server 2007 R2 系統管理工具，移除信任的應用程式項目 (舊稱為「授權主機項目」 )。<br />
-如需移除授權主機的詳細資訊，請參閱＜ <a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中移除舊版授權主機 (選用)</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您移轉的是先前在 Microsoft Office Communicator 2007 R2 中有啟用遠端呼叫控制的使用者，則必須先執行一個額外的部署工作，才能開始執行本主題所述的遠端呼叫控制部署工作。在移轉至 Lync Server 的過程中，必須視需要使用 Office Communications Server 2007 R2 系統管理工具，移除信任的應用程式項目 (舊稱為「授權主機項目」 )。<br />
+> 如需移除授權主機的詳細資訊，請參閱＜ <a href="lync-server-2013-remove-a-legacy-authorized-host-optional.md">在 Lync Server 2013 中移除舊版授權主機 (選用)</a>＞。
 
 
 ## 步驟 1：安裝並設定 SIP/CSTA 閘道，以便與 PBX 通訊

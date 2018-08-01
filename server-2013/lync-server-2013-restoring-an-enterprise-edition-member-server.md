@@ -27,18 +27,8 @@ _**上次修改主題的時間：** 2013-02-18_
 
   - Edge Server
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您在還原之前，先擷取系統的影像複本，可以在還原出錯時利用此影像做為回復點。您可以在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建議您在還原之前，先擷取系統的影像複本，可以在還原出錯時利用此影像做為回復點。您可以在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。
 
 
 ## 還原成員伺服器

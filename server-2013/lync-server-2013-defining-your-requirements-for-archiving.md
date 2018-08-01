@@ -63,17 +63,7 @@ _**上次修改主題的時間：** 2012-10-09_
 
 如果您為某個前端集區或 Standard Edition Server 部署封存，便應該為部署中的所有其他前端集區和 Standard Edition Server 啟用封存。需要這麼做的原因是，需要將己身通訊封存的使用者可能會受邀參加不同集區上裝載的群組 IM 交談或會議。如果裝載交談或會議的集區上未啟用封存，便可能不會封存所有的會議資料。封存仍然會發生於已啟用封存的使用者以及所有 IM 訊息，但可能不會封存會議內容和事件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了能夠委派系統管理工作，同時又維持貴組織的安全性標準， Lync Server 2013 使用角色型存取控制 (RBAC)。使用 RBAC 時，系統管理權限的授與是透過對使用者指派預先定義的系統管理角色來達成。使用者若要設定 Lync 封存原則與封存組態，必須被指派 CsArchivingAdministrator 角色 (除非設定是直接在已部署封存的伺服器上進行，而非從另一部電腦遠端進行)。如需關於 RBAC 的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。如需封存部署時所需的使用者權限與角色清單，請參閱同時出現在規劃文件及部署文件中的 <a href="lync-server-2013-deployment-checklist-for-archiving.md">Lync Server 2013 中封存的部署檢查單</a>。<br />
-如果您使用 Microsoft Exchange 整合，則需要有適當的系統管理員權限才能設定 Exchange 原則。如需詳細資訊，請參閱 Exchange 2013 文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 為了能夠委派系統管理工作，同時又維持貴組織的安全性標準， Lync Server 2013 使用角色型存取控制 (RBAC)。使用 RBAC 時，系統管理權限的授與是透過對使用者指派預先定義的系統管理角色來達成。使用者若要設定 Lync 封存原則與封存組態，必須被指派 CsArchivingAdministrator 角色 (除非設定是直接在已部署封存的伺服器上進行，而非從另一部電腦遠端進行)。如需關於 RBAC 的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。如需封存部署時所需的使用者權限與角色清單，請參閱同時出現在規劃文件及部署文件中的 <a href="lync-server-2013-deployment-checklist-for-archiving.md">Lync Server 2013 中封存的部署檢查單</a>。<br />
+> 如果您使用 Microsoft Exchange 整合，則需要有適當的系統管理員權限才能設定 Exchange 原則。如需詳細資訊，請參閱 Exchange 2013 文件。
 

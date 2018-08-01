@@ -17,25 +17,11 @@ _**上次修改主題的時間：** 2015-07-20_
 
 在虛擬桌面基礎結構 (VDI) 環境中，虛擬機器與使用者的本機電腦必須符合本節概述的需求。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需如何安裝和部署虛擬環境的詳細資訊，請參閱虛擬解決方案提供者。如需以 Hyper-V 與遠端桌面服務為基礎部署虛擬環境的詳細資訊，請參閱下列的 Microsoft TechNet 文件庫文章：
-<ul>
-<li><p>＜Hyper-V＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=247514" class="uri">http://go.microsoft.com/fwlink/?linkid=247514</a></p></li>
-<li><p>Windows Server 2008 R2 中的＜遠端桌面服務＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=247513" class="uri">http://go.microsoft.com/fwlink/?linkid=247513</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 如需如何安裝和部署虛擬環境的詳細資訊，請參閱虛擬解決方案提供者。如需以 Hyper-V 與遠端桌面服務為基礎部署虛擬環境的詳細資訊，請參閱下列的 Microsoft TechNet 文件庫文章：
+> <ul>
+> <li><p>＜Hyper-V＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=247514" class="uri">http://go.microsoft.com/fwlink/?linkid=247514</a></p></li>
+> <li><p>Windows Server 2008 R2 中的＜遠端桌面服務＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=247513" class="uri">http://go.microsoft.com/fwlink/?linkid=247513</a></p></li></ul>
 
 
 下列是在資料中心電腦上執行虛擬機器的需求：

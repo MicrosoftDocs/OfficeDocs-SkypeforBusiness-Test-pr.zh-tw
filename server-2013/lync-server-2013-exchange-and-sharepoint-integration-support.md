@@ -23,19 +23,9 @@ _**上次修改主題的時間：** 2014-09-29_
 
   - 從 Lync 封存的內容 (例如 IM 和會議內容) 可儲存於 Exchange 儲存體。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 支援與舊版的 Microsoft Exchange Server 和 SharePoint 進行整合，但這些先前版本並不支援所有功能，例如封存存放區與 Microsoft Exchange 的整合。<br />
-如果將使用者移轉至 Exchange 2013，在您完成移轉的時候，便可暫時使用 Exchange 存放區及 Lync Server 存放區。 Exchange 及 Lync Server 存放區不支援永久使用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Lync Server 2013 支援與舊版的 Microsoft Exchange Server 和 SharePoint 進行整合，但這些先前版本並不支援所有功能，例如封存存放區與 Microsoft Exchange 的整合。<br />
+> 如果將使用者移轉至 Exchange 2013，在您完成移轉的時候，便可暫時使用 Exchange 存放區及 Lync Server 存放區。 Exchange 及 Lync Server 存放區不支援永久使用。
 
 
 Lync Server 2013、 Exchange 2013 以及 SharePoint Server 的整合需要執行 Lync Server 2013、 Microsoft Exchange Server 和 SharePoint Server 之伺服器之間的伺服器對伺服器驗證。 Lync Server 2013 可支援伺服器對伺服器驗證及授權的 OAuth (Open Authorization) 通訊協定。針對 Microsoft 伺服器之間的內部部署伺服器對伺服器驗證，並不需要使用協力廠商 Token 伺服器。 Lync Server 2013、 Exchange 2013 和 SharePoint 具有可用於彼此相互驗證的內建 Token 伺服器。例如， Lync Server 2013 可自行發行和簽署安全性 Token，以及可在與 Exchange 2013 通訊之時使用該 Token。在此情況下，則不需要使用協力廠商 Token 伺服器。

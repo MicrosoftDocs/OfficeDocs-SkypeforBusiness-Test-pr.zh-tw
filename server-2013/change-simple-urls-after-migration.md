@@ -41,18 +41,8 @@ Lync Server 支援 3 個簡單 URL：
 
 2.  在左窗格中選取 \[簡單 URL\] ，然後在 \[系統管理存取 URL\] 方塊下，輸入您想要以系統管理存取 Lync Server 2013 控制台的簡單 URL，然後一下 \[確定\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>建議您盡可能使用最簡單的 URL 作為管理 URL。最簡單的選項是 <strong>https://admin.</strong><em>&lt;domain&gt;</em>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 建議您盡可能使用最簡單的 URL 作為管理 URL。最簡單的選項是 <strong>https://admin.</strong><em>&lt;domain&gt;</em>。
 
 
 ## 請參閱

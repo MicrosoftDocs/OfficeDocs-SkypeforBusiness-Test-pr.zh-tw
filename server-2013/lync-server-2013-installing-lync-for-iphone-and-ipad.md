@@ -25,25 +25,12 @@ Lync 2013 for iPhone 和 Lync 2013 for iPad 是可以讓使用者安裝的應用
 
   - Lync for iPad 可在應用程式商店 \< http://www.apple.com/ipad/from-the-app-store/\> 找到
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>會將尚未安裝 Lync 2013 應用程式並嘗試透過會議邀請加入 Lync 會議的 iPhone 使用者重新導向至 [Join Launcher] 頁面。此頁面中包含安裝 Lync 2013 應用程式的連結。但是，此連結不會將使用者重新導向至應用程式市集，而是會開啟空白的 Safari 瀏覽器頁面。使用者可以執行以下兩個動作之一來解決此問題：
-<ul>
-<li><p>使用 <strong>[常用]</strong> 按鈕將 Safari 頁面傳送至背景，然後重新開啟 Safari。當 [在應用程式市集中開啟此頁面] 通知出現時，點選 <strong>[開啟]</strong> 以重新導向至應用程式市集中的 Lync 2013 下載。</p></li>
-<li><p>手動開啟應用程式市集，搜尋 [Lync 2013]，並下載應用程式。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> 會將尚未安裝 Lync 2013 應用程式並嘗試透過會議邀請加入 Lync 會議的 iPhone 使用者重新導向至 [Join Launcher] 頁面。此頁面中包含安裝 Lync 2013 應用程式的連結。但是，此連結不會將使用者重新導向至應用程式市集，而是會開啟空白的 Safari 瀏覽器頁面。使用者可以執行以下兩個動作之一來解決此問題：
+> <ul>
+> <li><p>使用 <strong>[常用]</strong> 按鈕將 Safari 頁面傳送至背景，然後重新開啟 Safari。當 [在應用程式市集中開啟此頁面] 通知出現時，點選 <strong>[開啟]</strong> 以重新導向至應用程式市集中的 Lync 2013 下載。</p></li>
+> <li><p>手動開啟應用程式市集，搜尋 [Lync 2013]，並下載應用程式。</p></li>
+> </ul>
 
 
 ## 確認行動用戶端安裝

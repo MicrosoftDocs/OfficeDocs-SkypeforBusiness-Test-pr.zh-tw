@@ -60,30 +60,16 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對 Lync Server 2013 而言，每當您從集區新增或移除前端伺服器，皆必須重新啟動服務。移除和新增伺服器應以個別作業執行。例如，如果您要新增兩部前端伺服器以及移除兩部前端伺服器，請使用下列程序：
-<ol>
-<li><p>移除兩部前端伺服器。</p></li>
-<li><p>發行並重新啟動拓撲。</p></li>
-<li><p>重新啟動服務</p></li>
-<li><p>新增兩部前端伺服器。</p></li>
-<li><p>發行並重新啟動拓撲。</p></li>
-<li><p>重新啟動服務。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> [!Note]  
+> 對 Lync Server 2013 而言，每當您從集區新增或移除前端伺服器，皆必須重新啟動服務。移除和新增伺服器應以個別作業執行。例如，如果您要新增兩部前端伺服器以及移除兩部前端伺服器，請使用下列程序：
+> <ol>
+> <li><p>移除兩部前端伺服器。</p></li>
+> <li><p>發行並重新啟動拓撲。</p></li>
+> <li><p>重新啟動服務</p></li>
+> <li><p>新增兩部前端伺服器。</p></li>
+> <li><p>發行並重新啟動拓撲。</p></li>
+> <li><p>重新啟動服務。</p></li>
+> </ol>
 
 當您定義好拓撲，請使用下列步驟為您的網站定義 前端集區。如需定義拓撲的詳細資訊，請參閱＜ [針對 Lync Server 2013 在拓撲建置器中定義和設定拓撲](lync-server-2013-define-and-configure-a-topology-in-topology-builder.md)＞。
 
@@ -232,33 +218,13 @@ _**上次修改主題的時間：** 2015-03-09_
     > 基礎 URL 是 URL 的 Web 服務識別 (去除 https://)。例如，如果集區的 Web 服務的完整 URL 為 https://pool01.contoso.net，則基底 URL 是 pool01.contoso.net。
     
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須為唯一名稱。例如，如果您將 前端伺服器外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，您便無法將 <strong>pool01.contoso.com</strong> 始用於其他 前端集區或 前端伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有一個以上 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須為唯一名稱。例如，如果您將 前端伺服器外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，您便無法將 <strong>pool01.contoso.com</strong> 始用於其他 前端集區或 前端伺服器。
     
     1.  如果您是設定 DNS 負載平衡，請選取 \[覆寫內部 Web 服務集區 FQDN\] 核取方塊，並在 \[內部基底 URL\] 中輸入內部基底 URL (必須與集區 FQDN 不同，例如，可以是 internal-\<基底 URL\>)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、Director 或 Director 集區。<strong>定義 URL 或完整網域名稱時，僅限使用標準字元</strong> (包括 A–Z、a–z、0–9 以及連字號)。請勿使用 Unicode 字元或底線 (_)。URL 或 FQDN 中的非標準字元通常不受外部 DNS 與公用 CA 支援 (也就是 URL 或 FQDN 必須指派給憑證中的主體名稱或主體別名時)。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、Director 或 Director 集區。<strong>定義 URL 或完整網域名稱時，僅限使用標準字元</strong> (包括 A–Z、a–z、0–9 以及連字號)。請勿使用 Unicode 字元或底線 (_)。URL 或 FQDN 中的非標準字元通常不受外部 DNS 與公用 CA 支援 (也就是 URL 或 FQDN 必須指派給憑證中的主體名稱或主體別名時)。
     
     2.  (選用) 在 **\[外部基底 URL\]** 中輸入外部基底 URL。輸入外部基底 URL 的目的，是為了與內部網域命名區分。例如，您的內部網域為 contoso.net，而外部網域名稱為 contoso.com。這時您可以使用 contoso.com 網域名稱來定義 URL。在反向 Proxy 的情況中，這種作法也很重要。外部基底 URL 網域名稱會與反向 Proxy 的 FQDN 的網域名稱相同。要啟用立即訊息和顯示狀態功能，必須要能透過 HTTP 存取 前端集區。
     

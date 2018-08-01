@@ -43,18 +43,8 @@ Lync Server 2013 支援在直接連結存放裝置 (DAS) 或存放區域網路 (
 
 系統管理員必須設定檔案共用的權限，讓 RTC 群組擁有所需的讀取及寫入存取權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果發生任何與權限相關的錯誤，請開啟拓撲產生器，下載並重新發行現有的拓撲。發行拓撲可驗證檔案共用權限，並依需要重設。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 如果發生任何與權限相關的錯誤，請開啟拓撲產生器，下載並重新發行現有的拓撲。發行拓撲可驗證檔案共用權限，並依需要重設。
 
 
 您可以使用下列設定來管理儲存會議內容的方式：

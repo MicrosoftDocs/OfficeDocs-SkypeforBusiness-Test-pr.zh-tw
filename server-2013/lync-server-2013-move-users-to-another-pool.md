@@ -17,18 +17,8 @@ _**上次修改主題的時間：** 2013-03-11_
 
 您可以使用 Lync Server 控制台將使用者指派至特定伺服器或集區。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>將所有現有使用者從執行 Microsoft Office Communications Server 2007 R2 或早於 Lync Server 2013 的來源集區，移至複雜 Active Directory 環境中，可能會導致 Active Directory 複寫速度變慢。為避免這種情況，您可以使用搜尋篩選，將使用者從執行 Microsoft Office Communications Server 2007 R2 或更早版本的集區各別移動，或是使用 Lync Server 管理命令介面透過 Cmdlet 移動使用者。而且，篩選器功能可用於 Lync Server 2013 使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 將所有現有使用者從執行 Microsoft Office Communications Server 2007 R2 或早於 Lync Server 2013 的來源集區，移至複雜 Active Directory 環境中，可能會導致 Active Directory 複寫速度變慢。為避免這種情況，您可以使用搜尋篩選，將使用者從執行 Microsoft Office Communications Server 2007 R2 或更早版本的集區各別移動，或是使用 Lync Server 管理命令介面透過 Cmdlet 移動使用者。而且，篩選器功能可用於 Lync Server 2013 使用者。
 
 
 ## 若要將選取的使用者移至不同的伺服器或集區
@@ -49,18 +39,8 @@ _**上次修改主題的時間：** 2013-03-11_
 
 8.  (選用) 如果目的地伺服器或集區無法使用，請選取 **\[強制\]** 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若選取 [強制]，將會移動使用者帳戶，但刪除所有相關的使用者資料 (例如該使用者所排定的會議)。若未選取此選項，將會移動帳戶及其相關資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 若選取 [強制]，將會移動使用者帳戶，但刪除所有相關的使用者資料 (例如該使用者所排定的會議)。若未選取此選項，將會移動帳戶及其相關資料。
 
 
 ## 若要從某部伺服器或集區將所有使用者移至不同的伺服器或集區
@@ -79,18 +59,8 @@ _**上次修改主題的時間：** 2013-03-11_
 
 7.  (選用) 如果目的地伺服器或集區無法使用，請選取 **\[強制\]** 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若選取 [強制]，將會移動使用者帳戶，但刪除所有相關的使用者資料 (例如該使用者所排定的會議)。若未選取此選項，將會移動帳戶及其相關資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 若選取 [強制]，將會移動使用者帳戶，但刪除所有相關的使用者資料 (例如該使用者所排定的會議)。若未選取此選項，將會移動帳戶及其相關資料。
 
 
 ## 利用篩選在集區之間移動使用者
@@ -118,18 +88,8 @@ _**上次修改主題的時間：** 2013-03-11_
 
 9.  (選用) 如果目的地伺服器或集區無法使用，請選取 \[強制\] 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若選取 [強制]，將會移動使用者帳戶，但刪除所有相關的使用者資料 (例如該使用者所排定的會議及連絡人)。若未選取此選項，將會移動帳戶及其相關資料。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 若選取 [強制]，將會移動使用者帳戶，但刪除所有相關的使用者資料 (例如該使用者所排定的會議及連絡人)。若未選取此選項，將會移動帳戶及其相關資料。
 
 
 ## 使用 Lync Management 命令介面將使用者從某一集區移至另一集區

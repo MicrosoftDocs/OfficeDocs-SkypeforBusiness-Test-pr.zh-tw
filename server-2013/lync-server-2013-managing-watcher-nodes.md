@@ -25,20 +25,11 @@ _**上次修改主題的時間：** 2012-10-20_
 
     Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -Enabled $True
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Enabled 屬性可用於開啟或關閉監看員節點。如果要永久刪除監看員節點，請使用 <strong>Remove-CsWatcherNodeConfiguration</strong> Cmdlet：<br />
-Remove-CsWatcherNodeConfiguration –Identity &quot;atl-watcher-001.litwareinc.com&quot;<br />
-此命令會移除指定電腦上所有的監看員節點組態設定，這樣就會防止電腦自動執行綜合交易。不過此命令並未解除安裝 System Center 代理程式檔案或 Lync Server 2013 系統檔案。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> Enabled 屬性可用於開啟或關閉監看員節點。如果要永久刪除監看員節點，請使用 <strong>Remove-CsWatcherNodeConfiguration</strong> Cmdlet：<br />
+> Remove-CsWatcherNodeConfiguration –Identity &quot;atl-watcher-001.litwareinc.com&quot;<br />
+> 此命令會移除指定電腦上所有的監看員節點組態設定，這樣就會防止電腦自動執行綜合交易。不過此命令並未解除安裝 System Center 代理程式檔案或 Lync Server 2013 系統檔案。
+
 
 
 根據預設，監看員節點在進行測試時，會使用組織的外部 URL。不過也可以設定監看員節點使用組織的內部 URL。這讓系統管理員可以驗證位於周邊網路內之使用者的 URL 存取。若要設定監看員節點使用內部 URL 而非外部 URL，請將 UseInternalWebUrls 屬性設為 True ($True)：

@@ -95,18 +95,9 @@ _**上次修改主題的時間：** 2014-12-19_
     
         Test-CsOuPermission -ObjectType "user","contact" -OU "cn=Bellevue,dc=contoso,dc=net" -Domain "contoso.net"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果在已鎖定 Active Directory 的環境中，於樹系根網域上執行網域準備，請記住 Lync Server 要求存取 Active Directory 架構和設定容器。<br />
-    如果預設的已驗證使用者權限已從 AD DS 的架構或設定容器中移除，則只允許 (架構容器的) Schema Admins 群組或 (設定容器的) Enterprise Admins 群組的成員存取指定的容器。因為 Setup.exe、 Lync Server 管理命令介面 Cmdlet 和 Lync Server 控制台需要有這些容器的存取權，因此，除非執行安裝的使用者擁有相當於 Schema Admins 及 Enterprise Admins 群組成員資格的使用者權限，否則無法設定及安裝系統管理工具。<br />
-    若要補救這種狀況，您必須將 RTCUniversalGlobalWriteGroup 群組的讀取和寫入權限授與架構和設定容器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+    > 如果在已鎖定 Active Directory 的環境中，於樹系根網域上執行網域準備，請記住 Lync Server 要求存取 Active Directory 架構和設定容器。<br />
+    > 如果預設的已驗證使用者權限已從 AD DS 的架構或設定容器中移除，則只允許 (架構容器的) Schema Admins 群組或 (設定容器的) Enterprise Admins 群組的成員存取指定的容器。因為 Setup.exe、 Lync Server 管理命令介面 Cmdlet 和 Lync Server 控制台需要有這些容器的存取權，因此，除非執行安裝的使用者擁有相當於 Schema Admins 及 Enterprise Admins 群組成員資格的使用者權限，否則無法設定及安裝系統管理工具。<br />
+    > 若要補救這種狀況，您必須將 RTCUniversalGlobalWriteGroup 群組的讀取和寫入權限授與架構和設定容器。
+
 

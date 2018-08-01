@@ -38,18 +38,8 @@ _**上次修改主題的時間：** 2012-10-19_
 
 在移轉回應群組之後，需要更新正式代理程式登入登出回應群組所用的 URL，並使用 Lync Server 控制台或 Lync Server 管理命令介面 Cmdlet 來驗證已成功移動所有代理程式群組、佇列及工作流程。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移轉回應群組時，不會移除 Office Communications Server 2007 R2 回應群組。請勿移除 Office Communications Server 2007 R2 回應群組。如果移除 Office Communications Server 2007 R2 回應群組， Lync Server 2013 中的回應群組會停止運作。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 移轉回應群組時，不會移除 Office Communications Server 2007 R2 回應群組。請勿移除 Office Communications Server 2007 R2 回應群組。如果移除 Office Communications Server 2007 R2 回應群組， Lync Server 2013 中的回應群組會停止運作。
 
 
 > [!IMPORTANT]  

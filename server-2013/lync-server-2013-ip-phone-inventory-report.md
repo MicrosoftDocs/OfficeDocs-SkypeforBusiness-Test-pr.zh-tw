@@ -23,18 +23,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
 此外，「IP 電話清查報告」不會提供各種電話類型的總計。例如，假設您有 105 支 Polycom CX600 電話。此報告不會告訴您您有其中 105 支電話；您只會看見 Polycom Cx600 的 105 個個別項目。要知道 Polycom Cx600 有 105 項的唯一方法就是手動計算各個項目。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>或者，匯出資料並使用 Microsoft Excel 或 Windows PowerShell 進行計算。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 或者，匯出資料並使用 Microsoft Excel 或 Windows PowerShell 進行計算。
 
 
 ## 存取 IP 電話清查報告

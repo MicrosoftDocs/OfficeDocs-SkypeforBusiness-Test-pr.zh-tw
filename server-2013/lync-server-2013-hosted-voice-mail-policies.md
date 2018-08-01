@@ -41,14 +41,14 @@ _**上次修改主題的時間：** 2012-10-01_
 
 語音信箱原則會定義兩個屬性， Lync Server 2013 ExUM 路由應用程式會將其插入 INVITE 訊息的要求 URI 中，此 INVITE 訊息會傳送至裝載的 Exchange UM 實作：
 
-  - **Destination ：**裝載的 Exchange UM 服務的完整網域名稱 (FQDN)。這個值是供內部部署 Lync Server Edge Server 用於路由目的。
+  - **Destination ：** 裝載的 Exchange UM 服務的完整網域名稱 (FQDN)。這個值是供內部部署 Lync Server Edge Server 用於路由目的。
     
     > [!NOTE]  
     > Exchange Online 的 FQDN 為 exap.um.outlook.com。
     
 
 
-  - **Organization ：**您的 Lync Server 2013 使用者信箱所屬之裝載 Exchange UM 服務的承租人 FQDN。語音信箱原則可能包含多個組織。如果原則中包含一個以上的組織，這個屬性必須是您的 Lync Server 2013 使用者信箱所屬之 Exchange Server 承租人的逗號分隔清單。
+  - **Organization ：** 您的 Lync Server 2013 使用者信箱所屬之裝載 Exchange UM 服務的承租人 FQDN。語音信箱原則可能包含多個組織。如果原則中包含一個以上的組織，這個屬性必須是您的 Lync Server 2013 使用者信箱所屬之 Exchange Server 承租人的逗號分隔清單。
 
 > [!NOTE]  
 > 您的裝載 Exchange UM 服務的承租人系統管理員，將會為 Destination 和 Organization 屬性設定提供必要值。若要設定您的原則，必須執行 New-CsHostedVoicemailPolicy Cmdlet，或使用 Set-CsHostedVoicemailPolicy Cmdlet 來修改現有的原則 (例如，全域原則)。

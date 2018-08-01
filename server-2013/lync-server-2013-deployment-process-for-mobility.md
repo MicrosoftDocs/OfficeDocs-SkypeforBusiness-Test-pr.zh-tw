@@ -95,20 +95,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>如果您要透過 Wi-Fi 網路來支援推入通知，請設定 TCP 連接埠 5223 的輸出防火牆規則。</p></li>
 <li><p>使用 <strong>Set-CsPushNotificationConfiguration</strong> Cmdlet 來啟用推入通知至 Apple Push Notification Service (APNS) 及 Microsoft Push Notification Service (MPNS)。此功能預設為停用。</p></li>
 <li><p>使用 <strong>Test-CsFederatedPartner</strong> Cmdlet 來測試同盟設定，並使用 <strong>Test-CsMCXPushNotification</strong> Cmdlet 來測試推入通知。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>推入通知是用於 Apple 裝置和 Windows Phone 上的 Lync 2010 Mobile 用戶端<br />
-推入通知只對 Windows Phone 上的 Lync 2013 Mobile 用戶端是必要的</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 推入通知是用於 Apple 裝置和 Windows Phone 上的 Lync 2010 Mobile 用戶端<br />
+> 推入通知只對 Windows Phone 上的 Lync 2013 Mobile 用戶端是必要的
 
 </div></li>
 </ul></td>

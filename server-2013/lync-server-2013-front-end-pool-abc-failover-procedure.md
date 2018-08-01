@@ -56,18 +56,8 @@ _**上次修改主題的時間：** 2014-05-22_
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請謹記，如果您不想以主要集區 (集區 A) 的設定覆寫備份集區 (集區 B) 的應用程式層級設定，當集區 A 遺失時，集區 A 的應用程式層級設定也會跟著遺失，因為「回應群組」應用程式只能對每一個集區儲存一組應用程式層級設定。若已部署集區 C 以取代集區 A，則必須重新設定應用程式層級設定，包含預設的等候音樂音訊檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 請謹記，如果您不想以主要集區 (集區 A) 的設定覆寫備份集區 (集區 B) 的應用程式層級設定，當集區 A 遺失時，集區 A 的應用程式層級設定也會跟著遺失，因為「回應群組」應用程式只能對每一個集區儲存一組應用程式層級設定。若已部署集區 C 以取代集區 A，則必須重新設定應用程式層級設定，包含預設的等候音樂音訊檔。
 
 
 5.  執行以下 Cmedlet 顯示匯入的回應群組，以確認成功匯入「回應群組」設定。請注意，匯入的回應群組仍屬於集區 A。
@@ -162,18 +152,8 @@ _**上次修改主題的時間：** 2014-05-22_
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請謹記，如果您不想以備份集區 (集區 B) 的設定覆寫集區 C 的應用程式層級設定，則集區 B 的應用程式層級設定將會遺失，因為回應群組對每一個集區只能儲存一組應用程式層級設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 請謹記，如果您不想以備份集區 (集區 B) 的設定覆寫集區 C 的應用程式層級設定，則集區 B 的應用程式層級設定將會遺失，因為回應群組對每一個集區只能儲存一組應用程式層級設定。
 
 
 18. 執行下列 Cmdlet 以顯示回應群組已匯入集區 C，確認回應群組設定已匯入成功。

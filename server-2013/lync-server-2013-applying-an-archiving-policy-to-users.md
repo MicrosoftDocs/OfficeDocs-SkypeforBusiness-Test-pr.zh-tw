@@ -17,19 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 如果已啟用使用者用於 Lync Server 2013，且已針對位於 Lync Server 2013 的使用者建立一項或多項封存使用者原則，則將適當的原則套用至那些使用者或使用者群組，就可以針對特定使用者實作封存支援。例如，如果建立原則來支援內部通訊的封存，則可以將它套用至最少一位使用者或最少一個使用者群組，以支援封存使用者的 Lync Server 2013 通訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果啟用部署的 Microsoft Exchange 整合，Exchange 就地保留原則會控制是否對位於 Exchange 2013 的使用者啟用封存，而將他們的信箱設定為就地保留狀態。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。<br />
-啟用封存前，應在封存組態中指定所有適當的選項。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理組織、網站及集區的封存設定選項</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果啟用部署的 Microsoft Exchange 整合，Exchange 就地保留原則會控制是否對位於 Exchange 2013 的使用者啟用封存，而將他們的信箱設定為就地保留狀態。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。<br />
+> 啟用封存前，應在封存組態中指定所有適當的選項。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理組織、網站及集區的封存設定選項</a>。
 
 
 使用本主題中的程序，將先前建立的封存使用者原則套用至一或多個使用者帳戶或使用者群組。

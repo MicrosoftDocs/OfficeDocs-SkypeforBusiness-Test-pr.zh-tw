@@ -19,18 +19,8 @@ _**上次修改主題的時間：** 2012-11-01_
 
 營業時間設定會定義工作流程能夠接聽來電的時間，以及指定對營業時間以外的來電採取的動作。回應群組系統管理員可以使用 **New-CsRgsHoursOfBusiness** Cmdlet 建立預先定義的排程，這些排程可用於任意數目的回應群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立或修改工作流程時，您可以指定只限該工作流程套用的自訂排程。如需詳細資訊，請參閱＜ <a href="lync-server-2013-create-or-modify-a-hunt-group-workflow.md">在 Lync Server 2013 中建立或修改群組搜尋工作流程</a>＞或＜ <a href="lync-server-2013-create-or-modify-an-interactive-workflow.md">在 Lync Server 2013 中建立或修改互動式工作流程</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 當您建立或修改工作流程時，您可以指定只限該工作流程套用的自訂排程。如需詳細資訊，請參閱＜ <a href="lync-server-2013-create-or-modify-a-hunt-group-workflow.md">在 Lync Server 2013 中建立或修改群組搜尋工作流程</a>＞或＜ <a href="lync-server-2013-create-or-modify-an-interactive-workflow.md">在 Lync Server 2013 中建立或修改互動式工作流程</a>＞。
 
 
 > [!NOTE]  

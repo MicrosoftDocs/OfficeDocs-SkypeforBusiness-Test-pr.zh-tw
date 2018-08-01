@@ -37,17 +37,7 @@ _**上次修改主題的時間：** 2012-10-02_
 
   - 若為多方會議，則視訊解析度及視訊功能和舊版集區中舊版使用者所經歷的相同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當舊版伺服器主控 Lync Server 2013 用戶端時，可以設定視訊會議頻寬，使集區上的所有使用者僅會收到低解析度的視訊，但可傳送高解析度的視訊。此情況的範例即是在媒體組態中將 MaxVideoRateAllowed 設為 CIF-250K，在會議原則中將 VideoBitRateKb 設為 2000 kbps。此情況所產生的影響就是集區中的使用者無法收到高解析度。<br />
-由於 Lync Server 2013 用戶端已不再使用 MaxVideoRateAllowed，所以無法阻擋 Lync Server 2013 用戶端要求高解析度視訊。改成在會議原則中針對集區的所有使用者，將 VideoBitRateKb 設定為與 MaxVideoRateAllowed 相同的值 (亦即將 CIF 設為 250 kbps，或將 VGA 設為 600 kbps，或將 HD 設為 1500 kbps)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 當舊版伺服器主控 Lync Server 2013 用戶端時，可以設定視訊會議頻寬，使集區上的所有使用者僅會收到低解析度的視訊，但可傳送高解析度的視訊。此情況的範例即是在媒體組態中將 MaxVideoRateAllowed 設為 CIF-250K，在會議原則中將 VideoBitRateKb 設為 2000 kbps。此情況所產生的影響就是集區中的使用者無法收到高解析度。<br />
+> 由於 Lync Server 2013 用戶端已不再使用 MaxVideoRateAllowed，所以無法阻擋 Lync Server 2013 用戶端要求高解析度視訊。改成在會議原則中針對集區的所有使用者，將 VideoBitRateKb 設定為與 MaxVideoRateAllowed 相同的值 (亦即將 CIF 設為 250 kbps，或將 VGA 設為 600 kbps，或將 HD 設為 1500 kbps)。
 

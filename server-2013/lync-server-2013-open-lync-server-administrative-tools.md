@@ -80,19 +80,9 @@ _**上次修改主題的時間：** 2012-06-28_
 
 使用下列程序開啟 Lync Server 2013 管理命令介面，利用命令列管理環境中的伺服器、使用者、用戶端和裝置。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用指派給 CsAdministrator 角色的使用者帳戶，在 Lync Server 2013 管理命令介面中執行任何工作。您可以使用其他角色來登入，根據您需要執行的工作來執行特定的系統管理工作。例如，您可以使用 CSArchivingAdministrator 執行與封存管理有關的 Cmdlet。如需角色的詳細資訊，請參閱規劃文件中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。如需可用來執行特定 Cmdlet 之角色的詳細資訊，請參閱 Cmdlet 的文件。<br />
-您也可以根據 Cmdlet，使用 RTCUniversalServerAdmins、RTCUniversalUserAdmins 或 RTCUniversalReadOnlyAdmins 群組中的使用者帳戶，執行特定的 Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 您可以使用指派給 CsAdministrator 角色的使用者帳戶，在 Lync Server 2013 管理命令介面中執行任何工作。您可以使用其他角色來登入，根據您需要執行的工作來執行特定的系統管理工作。例如，您可以使用 CSArchivingAdministrator 執行與封存管理有關的 Cmdlet。如需角色的詳細資訊，請參閱規劃文件中的<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。如需可用來執行特定 Cmdlet 之角色的詳細資訊，請參閱 Cmdlet 的文件。<br />
+> 您也可以根據 Cmdlet，使用 RTCUniversalServerAdmins、RTCUniversalUserAdmins 或 RTCUniversalReadOnlyAdmins 群組中的使用者帳戶，執行特定的 Cmdlet。
 
 
 ## 開啟 Lync Server 2013 管理命令介面

@@ -38,25 +38,12 @@ _**上次修改主題的時間：** 2015-03-09_
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>如需 Lync Online 訂閱方案的詳細資訊，請參閱＜Lync Online 服務說明＞，網址為：<a href="http://technet.microsoft.com/zh-tw/library/jj822172.aspx">http://go.microsoft.com/fwlink/p/?LinkId=282430</a>。</p></li>
-<li><p>Lync Server 2013 支援下列先前發行的用戶端：Lync 2010、Lync 2010 Mobile、Lync Phone Edition 及 Lync 2010 Attendant。如需這些用戶端的詳細資訊，請參閱 Lync 2010 版本的＜用戶端比較表＞，網址為：<a href="lync-server-2013-desktop-client-comparison-tables.md">http://go.microsoft.com/fwlink/p/?LinkID=213798</a>。</p></li>
-<li><p>Lync 2013 用戶端可支援虛擬桌面基礎結構 (VDI) 環境中的音訊和視訊。如需有關 VDI 環境中的 Lync 2013 功能詳細資訊，請參閱＜<a href="lync-server-2013-supported-virtualization-technologies-and-known-limitations.md">Lync Server 2013 中受支援的虛擬化技術與已知限制</a>＞。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> <ul>
+> <li><p>如需 Lync Online 訂閱方案的詳細資訊，請參閱＜Lync Online 服務說明＞，網址為：<a href="http://technet.microsoft.com/zh-tw/library/jj822172.aspx">http://go.microsoft.com/fwlink/p/?LinkId=282430</a>。</p></li>
+> <li><p>Lync Server 2013 支援下列先前發行的用戶端：Lync 2010、Lync 2010 Mobile、Lync Phone Edition 及 Lync 2010 Attendant。如需這些用戶端的詳細資訊，請參閱 Lync 2010 版本的＜用戶端比較表＞，網址為：<a href="lync-server-2013-desktop-client-comparison-tables.md">http://go.microsoft.com/fwlink/p/?LinkID=213798</a>。</p></li>
+> <li><p>Lync 2013 用戶端可支援虛擬桌面基礎結構 (VDI) 環境中的音訊和視訊。如需有關 VDI 環境中的 Lync 2013 功能詳細資訊，請參閱＜<a href="lync-server-2013-supported-virtualization-technologies-and-known-limitations.md">Lync Server 2013 中受支援的虛擬化技術與已知限制</a>＞。</p></li>
+> </ul>
 
 
 ## 增強目前狀態支援
@@ -878,27 +865,12 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## 會議支援
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Lync Online 獨立方案 1 不提供 Lync 會議功能。</p></li>
-<li><p>在 Lync 對 Lync 工作階段中，Lync Online 方案 1 使用者可以參與桌面共用和應用程式共用，只要是受到具共用功能存取權之使用者的邀請即可。</p></li>
-<li><p>如需詳細資訊，請參閱＜Lync Online 服務說明＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
-
+> [!Note]  
+> <ul>
+> <li><p>Lync Online 獨立方案 1 不提供 Lync 會議功能。</p></li>
+> <li><p>在 Lync 對 Lync 工作階段中，Lync Online 方案 1 使用者可以參與桌面共用和應用程式共用，只要是受到具共用功能存取權之使用者的邀請即可。</p></li>
+> <li><p>如需詳細資訊，請參閱＜Lync Online 服務說明＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=282430" class="uri">http://go.microsoft.com/fwlink/?linkid=282430</a>。</p></li>
+> </ul>
 
 <table style="width:100%;">
 <colgroup>

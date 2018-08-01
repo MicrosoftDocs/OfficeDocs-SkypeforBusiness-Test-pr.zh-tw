@@ -39,17 +39,7 @@ _**上次修改主題的時間：** 2012-06-21_
 
 ![網路外部裝置](images/Gg425740.8ce6bb8e-b89c-4c4e-ac6d-41ac6c68f6f3(OCS.15).jpg "網路外部裝置")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>裝置更新 Web 服務會提供一個外部與內部網站，但此處僅顯示外部網站。<br />
-當啟用外部存取時，組織的登錄器位置與裝置更新 Web 服務的 URL 都必須發佈至 DNS。此外，您必須部署並正確設定 Edge Server，以讓裝置和公司環境之間的外部通訊可順利進行。上圖省略了這個部分，因為 Edge 部署並不是專用於裝置連線此部分。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 裝置更新 Web 服務會提供一個外部與內部網站，但此處僅顯示外部網站。<br />
+> 當啟用外部存取時，組織的登錄器位置與裝置更新 Web 服務的 URL 都必須發佈至 DNS。此外，您必須部署並正確設定 Edge Server，以讓裝置和公司環境之間的外部通訊可順利進行。上圖省略了這個部分，因為 Edge 部署並不是專用於裝置連線此部分。
 

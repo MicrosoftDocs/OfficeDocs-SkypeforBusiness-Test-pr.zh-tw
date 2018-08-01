@@ -25,11 +25,11 @@ _**上次修改主題的時間：** 2012-10-18_
 
   - 執行設定工作的系統管理員必須具備適當的權限：
     
-      - **CsVoiceAdministrator：**此系統管理員角色可以執行語音設定工作、管理語音應用程式，以及指派語音原則給一般使用者。
+      - **CsVoiceAdministrator：** 此系統管理員角色可以執行語音設定工作、管理語音應用程式，以及指派語音原則給一般使用者。
     
-      - **CsUserAdministrator：**此系統管理員角色可以管理使用者屬性，例如啟用使用者的 Enterprise Voice。此系統管理員角色也可以指派個別使用者原則，封存原則除外；移動使用者；管理公用區電話和類比裝置。
+      - **CsUserAdministrator：** 此系統管理員角色可以管理使用者屬性，例如啟用使用者的 Enterprise Voice。此系統管理員角色也可以指派個別使用者原則，封存原則除外；移動使用者；管理公用區電話和類比裝置。
     
-      - **CsAdministrator：**此系統管理員角色可以執行 CsVoiceAdministrator 和 CsUserAdministrator 的所有工作。
+      - **CsAdministrator：** 此系統管理員角色可以執行 CsVoiceAdministrator 和 CsUserAdministrator 的所有工作。
     
     > [!NOTE]  
     > 委派可讓更多系統管理員參與您的 Lync Server 部署，而不需要開啟不必要的資源存取權。

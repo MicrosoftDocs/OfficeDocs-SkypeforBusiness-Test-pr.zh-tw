@@ -25,18 +25,8 @@ _**上次修改主題的時間：** 2012-09-22_
 
 3.  若要建立靜態路由並將它放在變數 $TLSRoute 或 $TCPRoute 中，請執行下列其中一項：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要比對網域的子網域，您可以在 MatchUri 參數中指定萬用字元值。例如， <strong>*.contoso.net</strong> 。該值會比對結尾尾碼為 <strong>contoso.net</strong> 的所有網域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 若要比對網域的子網域，您可以在 MatchUri 參數中指定萬用字元值。例如， <strong>*.contoso.net</strong> 。該值會比對結尾尾碼為 <strong>contoso.net</strong> 的所有網域。
     
       - 若是傳輸層安全性 (TLS) 連線，請在命令提示字元中輸入下列命令：
         

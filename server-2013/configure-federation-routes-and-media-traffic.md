@@ -175,20 +175,11 @@ _**上次修改主題的時間：** 2012-10-15_
 
 3.  等候部署中所有集區的 Active Directory 複寫作業開始。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您將會見到下列訊息：<br />
-    <strong>警告：拓撲包含多部同盟 Edge Server。移轉至最新版本的產品時可能會發生此問題。在這個情況下，只能有一部作用中 Edge Server 用於同盟。如果您要部署多部同盟 Edge Server 以同時作用 (也就是非移轉案例)，請確認所有同盟協力廠商都是使用 Lync Server，並確認外部 DNS SRV 記錄會列出所有啟用同盟的 Edge Server。</strong><br />
-    此為預期中的警告，可以不予理會。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+    > 您將會見到下列訊息：<br />
+    > <strong>警告：拓撲包含多部同盟 Edge Server。移轉至最新版本的產品時可能會發生此問題。在這個情況下，只能有一部作用中 Edge Server 用於同盟。如果您要部署多部同盟 Edge Server 以同時作用 (也就是非移轉案例)，請確認所有同盟協力廠商都是使用 Lync Server，並確認外部 DNS SRV 記錄會列出所有啟用同盟的 Edge Server。</strong><br />
+    > 此為預期中的警告，可以不予理會。
+
 
 
 ## 設定 Lync Server 2013 Edge Server

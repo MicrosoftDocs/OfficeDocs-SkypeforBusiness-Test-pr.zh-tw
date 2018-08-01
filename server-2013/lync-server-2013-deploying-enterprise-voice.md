@@ -78,20 +78,21 @@ Lync Server 2013、 企業語音 是 Lync Server 2013 基礎結構的部分。
    [設定內部部署 Lync Server 2013 與 Exchange Online 整合](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)
 
    [在 Lync Server 2013 中部署進階 Enterprise Voice 功能](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
+   
     
-    - [關於 Lync Server 2013 中的網路區域、網站和子網路](lync-server-2013-about-network-regions-sites-and-subnets.md)
+  - [關於 Lync Server 2013 中的網路區域、網站和子網路](lync-server-2013-about-network-regions-sites-and-subnets.md)
     
-    - [在 Lync Server 2013 中建立或修改網路地區](lync-server-2013-create-or-modify-a-network-region.md)
+  - [在 Lync Server 2013 中建立或修改網路地區](lync-server-2013-create-or-modify-a-network-region.md)
     
-    - [在 Lync Server 2013 中建立或修改網站](lync-server-2013-create-or-modify-a-network-site.md)
+  - [在 Lync Server 2013 中建立或修改網站](lync-server-2013-create-or-modify-a-network-site.md)
     
-    - [在 Lync Server 2013 中建立子網路與網路站台的關聯](lync-server-2013-associate-a-subnet-with-a-network-site.md)
+  - [在 Lync Server 2013 中建立子網路與網路站台的關聯](lync-server-2013-associate-a-subnet-with-a-network-site.md)
     
-    - [在 Lync Server 2013 中設定通話許可控制](lync-server-2013-configure-call-admission-control.md)
+  - [在 Lync Server 2013 中設定通話許可控制](lync-server-2013-configure-call-admission-control.md)
     
-    - [在 Lync Server 2013 中設定增強型 9-1-1](lync-server-2013-configure-enhanced-9-1-1.md)
+  - [在 Lync Server 2013 中設定增強型 9-1-1](lync-server-2013-configure-enhanced-9-1-1.md)
     
-    - [在 Lync Server 2013 中設定媒體旁路](lync-server-2013-configure-media-bypass.md)
+  - [在 Lync Server 2013 中設定媒體旁路](lync-server-2013-configure-media-bypass.md)
 
    [在 Lync Server 2013 中為使用者啟用企業語音](lync-server-2013-enable-users-for-enterprise-voice.md)
 

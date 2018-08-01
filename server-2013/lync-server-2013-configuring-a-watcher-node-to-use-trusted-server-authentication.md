@@ -28,19 +28,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
     New-CsTrustedApplicationPool -Identity atl-watcher-001.litwareinc.com -Registrar atl-cs-001.litwareinc.com -ThrottleAsServer $True -TreatAsAuthenticated $True -OutboundOnly $False -RequiresReplication $True -ComputerFqdn atl-watcher-001.litwareinc.com -Site Redmond
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需以上命令使用的參數相關詳細資料，請在 Lync Server 管理命令介面提示中鍵入下列內容：<br />
-Get-Help New-CsTrustedApplicationPool -Full | more</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如需以上命令使用的參數相關詳細資料，請在 Lync Server 管理命令介面提示中鍵入下列內容：<br />
+> Get-Help New-CsTrustedApplicationPool -Full | more
 
 
 建立信任的應用程式集區後，請將監看員節點電腦設為以信任的應用程式執行綜合交易。若要設定，可使用 **New-CsTrustedApplication** Cmdlet 以及與下列類似的命令進行：

@@ -17,40 +17,16 @@ _**上次修改主題的時間：** 2012-11-13_
 
 音訊/視訊 (A/V) 通訊是 Microsoft Lync Server 2013 中的一個主要元件。應用程式共用和音訊/視訊會議等功能就需仰賴指派給 A/V Edge 服務 的憑證，尤其是 A/V 驗證服務。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ol>
-<li><p>這個新功能的主要目的是用來搭配 A/V Edge 服務 和 <em>OAuthTokenIssuer</em> 憑證。使用 A/V Edge 服務 和 OAuth 憑證類型也可以佈建其他憑證類型，不過就不能享有 A/V Edge 服務 憑證所具備的共存行為優勢。</p></li>
-<li><p>用來管理 Microsoft Lync Server 2013 憑證的 Lync Server 管理命令介面 PowerShell Cmdlet 會將 A/V Edge 服務 憑證參照為 <em>AudioVideoAuthentication</em> 憑證類型，而將 OAuthServer 憑證參照為 <em>OAuthTokenIssuer</em> 類型。在本主題的其餘內容中，為了唯一識別憑證，也會以相同的識別碼類型 <em>AudioVideoAuthentication</em> 和 <em>OAuthTokenIssuer</em> 來參照憑證。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ol>
+> <li><p>這個新功能的主要目的是用來搭配 A/V Edge 服務 和 <em>OAuthTokenIssuer</em> 憑證。使用 A/V Edge 服務 和 OAuth 憑證類型也可以佈建其他憑證類型，不過就不能享有 A/V Edge 服務 憑證所具備的共存行為優勢。</p></li>
+> <li><p>用來管理 Microsoft Lync Server 2013 憑證的 Lync Server 管理命令介面 PowerShell Cmdlet 會將 A/V Edge 服務 憑證參照為 <em>AudioVideoAuthentication</em> 憑證類型，而將 OAuthServer 憑證參照為 <em>OAuthTokenIssuer</em> 類型。在本主題的其餘內容中，為了唯一識別憑證，也會以相同的識別碼類型 <em>AudioVideoAuthentication</em> 和 <em>OAuthTokenIssuer</em> 來參照憑證。</p></li>
+> </ol>
 
 A/V 驗證服務是專用來核發 Token，以供用戶端和其他 A/V 取用者使用。Token 是依據憑證上的屬性而產生，因此當憑證到期、連線中斷或必須重新加入時，就會導致新的憑證產生新的 Token。Lync Server 2013 中具備的新功能可以杜絕這個問題 – 其可在舊的憑證過期前先臨時發出新的憑證，以利兩個憑證都持續運作一段時間。此功能會使用 Set-CsCertificate Lync Server 管理命令介面 Cmdlet 中已更新的功能。現有的 –EffectiveDate 參數可使用新的 –Roll 參數，將新的 AudioVideoAuthentication 憑證放進憑證存放區。舊的 AudioVideoAuthentication 憑證仍會保留給已核發的 Token，以免其失效。只要一將新的 AudioVideoAuthentication 憑證準備就緒，就會發生下列一系列的事件：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Lync Server 管理命令介面 Cmdlet 以管理憑證時，您可以在 Edge Server 上針對不同用途，要求個別和不同的憑證。您可使用 Lync Server 部署精靈 中的 [憑證精靈] 來協助建立憑證，不過其通常是<strong>預設</strong>類型，其中將 Edge Server 所用的所有憑證都組合在單一的憑證上。若您要使用彙總的憑證，建議的做法是將 AudioVideoAuthentication 憑證從其他憑證用途中獨立出來。您可以佈建和臨時發出預設類型的憑證，但只有組合憑證的 AudioVideoAuthentication 部分可以臨時發出。舉例來說，當憑證過期時，立即訊息對話中的使用者將需要登出再重新登入，才能使用與 Access Edge Service 相關聯的新憑證。若是使用 Web Conferencing Edge Service 參與 Web 會議的使用者也需要採取類似的行為。OAuthTokenIssuer 憑證是一種特殊類型的憑證，在所有伺服器中都可以共用。您只需在一個位置建立並管理憑證，憑證就會存放在所有其他伺服器的中央管理存放區中。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 使用 Lync Server 管理命令介面 Cmdlet 以管理憑證時，您可以在 Edge Server 上針對不同用途，要求個別和不同的憑證。您可使用 Lync Server 部署精靈 中的 [憑證精靈] 來協助建立憑證，不過其通常是<strong>預設</strong>類型，其中將 Edge Server 所用的所有憑證都組合在單一的憑證上。若您要使用彙總的憑證，建議的做法是將 AudioVideoAuthentication 憑證從其他憑證用途中獨立出來。您可以佈建和臨時發出預設類型的憑證，但只有組合憑證的 AudioVideoAuthentication 部分可以臨時發出。舉例來說，當憑證過期時，立即訊息對話中的使用者將需要登出再重新登入，才能使用與 Access Edge Service 相關聯的新憑證。若是使用 Web Conferencing Edge Service 參與 Web 會議的使用者也需要採取類似的行為。OAuthTokenIssuer 憑證是一種特殊類型的憑證，在所有伺服器中都可以共用。您只需在一個位置建立並管理憑證，憑證就會存放在所有其他伺服器的中央管理存放區中。
 
 
 在使用 Set-CsCertificate Cmdlet 以及在目前的憑證過期前利用此 Cmdlet 臨時發出憑證時，您需要更多資訊以全盤了解您的選項和需求。–Roll 參數很重要，但基本上為單一目的。若將其定義為參數，就必須提供 Set-CsCertificate 下列資訊︰會受影響的憑證 (由 –Type 定義，例如 AudioVideoAuthentication 和 OAuthTokenIssuer)，以及憑證何時生效 (由 -EffectiveDate 定義)。

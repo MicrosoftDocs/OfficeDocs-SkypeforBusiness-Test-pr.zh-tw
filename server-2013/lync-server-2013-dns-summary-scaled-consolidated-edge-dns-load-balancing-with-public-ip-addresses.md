@@ -66,18 +66,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
     Web Conferencing Edge Service 與 A/V Edge 服務 私人 IP 位址就是 Windows Server 裡，\[區域連線內容\] 的 \[網際網路通訊協定第 4 版 (TCP/IPv4)\] 與 \[網際網路通訊協定第 6 版 (TCP/IPv6)\] 內容中 \[進階\] 區段裡的其他 IP 位址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>設定 Edge Server 使用兩片網路介面卡是兩個選項之一。另一個選項是使用一片網路介面卡供內部使用，並使用三個網路介面卡供 Edge Server 的外部使用。這個選項的主要優點是每個 Edge Server Service 都有一片不同的網路介面卡，而且能夠在疑難排解時更簡潔地收集資料。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 設定 Edge Server 使用兩片網路介面卡是兩個選項之一。另一個選項是使用一片網路介面卡供內部使用，並使用三個網路介面卡供 Edge Server 的外部使用。這個選項的主要優點是每個 Edge Server Service 都有一片不同的網路介面卡，而且能夠在疑難排解時更簡潔地收集資料。
 
 
 ### 經調整的合併 Edge、DNS 負載平衡搭配使用公用 IP 位址所需的 DNS 記錄 (範例)
@@ -162,8 +152,9 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP Access Edge Service 外部介面。DNS 自動探索同盟合作夥伴 (亦稱為「允許的 SIP 網域」，先前版本稱為增強型同盟) 所需。</p>
-<div class="alert">
-> [!IMPORTANT]  
+<div>
+
+> [!IMPORTANT]   
 > 必要時，重複用於含有 Lync 啟用的使用者及使用 推播通知服務或 Apple 推播通知服務的 Microsoft Lync Mobile 用戶端的所有 SIP 網域
 
 

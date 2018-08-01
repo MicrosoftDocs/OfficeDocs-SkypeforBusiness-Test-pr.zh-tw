@@ -28,18 +28,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
 1.  覆寫內部 Web 服務集區 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、 Director 或 Director 集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、 Director 或 Director 集區。
 
 
 2.  建立 DNS A 主機記錄，以便將集區 FQDN 解析為集區中所有伺服器的 IP 位址。

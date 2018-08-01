@@ -33,26 +33,12 @@ _**上次修改主題的時間：** 2013-10-07_
     
       - 您的使用者可以和下列公用 IM 服務的使用者交換立即訊息：Windows Live、AOL、Yahoo\! 及 Google Talk。與這些服務的公用 IM 連線可能需要個別的授權。
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><ul>
-        <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
-        <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
-        <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-        </ul></td>
-        </tr>
-        </tbody>
-        </table>
-
+        > [!IMPORTANT]  
+		> <ul>
+        > <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
+        > <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
+        > <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
+        > </ul>
 
   - **分支網站生存能力。** 此組織執行 Lync Server Enterprise Voice 功能的接駁計畫。某些使用者使用 Lync Server 作為唯一的語音解決方案。其中一些語音接駁使用者位於分支網站。分支網站沒有中央網站的可靠廣域網路 (WAN) 連結，所以便部署了 Survivable Branch Appliance。部署此設備之後，如果 WAN 連結中斷，分支網站的使用者仍可撥打和接聽電話 (包含組織內的電話和 PSTN 電話)、擁有語音信箱功能，以及利用雙方立即訊息 (IM) 通訊。無法使用 WAN 連結時，也可以驗證使用者。
 

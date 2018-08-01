@@ -1080,18 +1080,8 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
   - 啟用/停用/修改群組來電接聽設定
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具的新功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 2013 SEFAUtil 工具的新功能
 
 
 這項工具有下列限制：

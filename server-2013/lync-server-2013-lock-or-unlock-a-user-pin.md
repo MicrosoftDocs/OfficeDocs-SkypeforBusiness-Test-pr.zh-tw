@@ -41,18 +41,8 @@ _**上次修改主題的時間：** 2013-02-23_
     
     4.  視您選取的使用者內容而定，透過直接輸入文字或按一下下拉式清單中的箭頭，輸入您要用來篩選搜尋結果的準則。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要將更多搜尋子句加入至查詢，請按一下 <strong>[新增篩選]</strong>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要將更多搜尋子句加入至查詢，請按一下 <strong>[新增篩選]</strong>。
     
     5.  按一下 **\[尋找\]**。
     
@@ -82,18 +72,8 @@ _**上次修改主題的時間：** 2013-02-23_
     
     4.  視您選取的使用者內容而定，透過直接輸入文字或按一下下拉式清單中的箭頭，輸入您要用來篩選搜尋結果的準則。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要將更多搜尋子句加入至查詢，請按一下 <strong>[新增篩選]</strong>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要將更多搜尋子句加入至查詢，請按一下 <strong>[新增篩選]</strong>。
     
     5.  按一下 **\[尋找\]**。
     

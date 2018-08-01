@@ -23,19 +23,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 您一開始部署封存時會設定封存組態，但是在部署後可以變更、新增及刪除組態。在 Lync Server 2013 控制台中，您可以使用 **\[封存與監控\]** 群組的 **\[封存組態\]** 頁面來管理全域層級、網站層級和集區層級的組態。如需有關如何實作封存組態，包括可以指定的選項，以及封存組態的階層，請參閱規劃文件、部署文件或作業文件中的＜[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如要使用封存，您必須設定封存原則，以指定是否針對所有主伺服器位於 Lync Server 2013 的使用者，啟用內部通訊、外部通訊或兩者的封存。依據預設，都不會啟用內部或外部通訊的封存。如果使用 Microsoft Exchange 整合，則必須啟用並設定 Exchange 2013，才可支援封存所有主伺服器位於 Exchange 2013 且信箱處於就地保留狀態的使用者。<br />
-在啟用封存之前，應針對部署 (及選擇性針對特定網站和集區) 指定適當的封存組態，如本區段所述。如需有關啟用封存的詳細資訊，請參閱部署文件中的＜<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">設定和指派封存原則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如要使用封存，您必須設定封存原則，以指定是否針對所有主伺服器位於 Lync Server 2013 的使用者，啟用內部通訊、外部通訊或兩者的封存。依據預設，都不會啟用內部或外部通訊的封存。如果使用 Microsoft Exchange 整合，則必須啟用並設定 Exchange 2013，才可支援封存所有主伺服器位於 Exchange 2013 且信箱處於就地保留狀態的使用者。<br />
+> 在啟用封存之前，應針對部署 (及選擇性針對特定網站和集區) 指定適當的封存組態，如本區段所述。如需有關啟用封存的詳細資訊，請參閱部署文件中的＜<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">設定和指派封存原則</a>＞。
 
 
 **使用 Lync Server 管理命令介面 Cmdlet 檢視封存組態**

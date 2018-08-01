@@ -28,27 +28,14 @@ Lync Web App 中的語音、視訊與共用功能需要 Microsoft ActiveX 控制
 
 Lync Web App 的 Lync Server 2013 版本支援多重因素驗證。除了使用者名稱與密碼之外，您可使用其他的驗證方法 (例如智慧卡或 PIN)，在從外部網路加入的使用者登入 Lync 會議時進行驗證。您可在 Lync Server 2013 中部署 Active Directory Federation Service (AD FS) 同盟伺服器並啟用被動驗證來啟用多重因素驗證。AD FS 設定之後，嘗試加入 Lync 會議的外部使用者會看見 AD FS 多重因素驗證網頁，當中包含使用者名稱與密碼挑戰，以及您已設定的其他驗證方法。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您計劃設定 AD FS 來進行多重因素驗證，下列為重要的考量事項：
-<ul>
-<li><p>如果會議參與者和召集人位於相同組織，或同樣來自 AD FS 同盟組織，則多重因素 ADFS 驗證可以正常運作。多重因素 ADFS 驗證無法用於 Lync 同盟使用者，因為 Lync 伺服器 Web 基礎結構目前並不支援它。</p></li>
-<li><p>若您使用硬體負載平衡器，請在負載平衡器上啟用 Cookie 持續性，這樣來自 Lync Web App 用戶端的所有要求才能由相同的前端伺服器處理。</p></li>
-<li><p>當您在 Lync Server 與 AD FS 伺服器之間建立信賴憑證者信任時，請指定長度足夠的 Token 檔案，以擴展您 Lync 會議的長度上限。一般來說，240 分鐘的 Token 檔案即足夠。</p></li>
-<li><p>此設定並不會套用至 Lync 行動用戶端。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您計劃設定 AD FS 來進行多重因素驗證，下列為重要的考量事項：
+> <ul>
+> <li><p>如果會議參與者和召集人位於相同組織，或同樣來自 AD FS 同盟組織，則多重因素 ADFS 驗證可以正常運作。多重因素 ADFS 驗證無法用於 Lync 同盟使用者，因為 Lync 伺服器 Web > 基礎結構目前並不支援它。</p></li>
+> <li><p>若您使用硬體負載平衡器，請在負載平衡器上啟用 Cookie 持續性，這樣來自 Lync Web App 用戶端的所有要求才能由相同的前端伺服器處理。</p></li>
+> <li><p>當您在 Lync Server 與 AD FS 伺服器之間建立信賴憑證者信任時，請指定長度足夠的 Token 檔案，以擴展您 Lync 會議的長度上限。一般來說，240 分鐘的 Token 檔案即足夠。</p></li>
+> <li><p>此設定並不會套用至 Lync 行動用戶端。</p></li>
+> </ul>
 
 
 **設定多重因素驗證**

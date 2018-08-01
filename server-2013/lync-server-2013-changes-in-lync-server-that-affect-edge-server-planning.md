@@ -51,18 +51,8 @@ Lync Server 2013 的新功能是能夠在目前的憑證過期之前，籌備好
 
 在舊版的 Lync Server 及 Office Communications Server 中，Web 服務會使用 Cookie 為主的親和性，來確保用戶端和 Web 服務工作階段狀態能夠保持。 Lync Server 2013 Web 服務使用內建的親和性機制，消除了大多數對 Cookie 為主親和性的需求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在移轉所有用戶端至即將推出的 Microsoft Lync Mobile 用戶端之前 (發行日期未定)， Microsoft Lync 2010 Mobile 用戶端仍舊必須使用 Cookie 為主的親和性，而且需要設定 Cookie 為主的親和性。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 在移轉所有用戶端至即將推出的 Microsoft Lync Mobile 用戶端之前 (發行日期未定)， Microsoft Lync 2010 Mobile 用戶端仍舊必須使用 Cookie 為主的親和性，而且需要設定 Cookie 為主的親和性。
 
 
 如需 Lync Server 2013 中 Cookie 為主親和性的詳細資訊，請參閱＜ [外部使用者在 Lync Server 2013 中存取時所需的元件](lync-server-2013-components-required-for-external-user-access.md)＞。

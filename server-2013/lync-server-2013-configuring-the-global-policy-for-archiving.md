@@ -19,19 +19,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
 如需有關封存原則如何運作 (包含全域、網站及使用者原則的階層)，請參閱規劃文件、部署文件或作業文件中的[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您針對部署啟用 Microsoft Exchange 整合，Exchange 就地保留原則便會控制是否要針對位於 Exchange 2013 且其信箱狀態為 [就地保留] 的使用者啟用封存。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。<br />
-啟用封存之前，您應該先在封存設定中指定所有適當的選項。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-configuring-archiving-options.md">設定封存選項</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您針對部署啟用 Microsoft Exchange 整合，Exchange 就地保留原則便會控制是否要針對位於 Exchange 2013 且其信箱狀態為 [就地保留] 的使用者啟用封存。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。<br />
+> 啟用封存之前，您應該先在封存設定中指定所有適當的選項。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-configuring-archiving-options.md">設定封存選項</a>。
 
 
 ## 使用 Lync Server 封存資料庫時設定封存的全域原則

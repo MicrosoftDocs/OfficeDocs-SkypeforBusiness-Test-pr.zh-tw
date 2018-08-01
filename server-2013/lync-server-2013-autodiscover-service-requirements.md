@@ -49,23 +49,14 @@ Microsoft Lync Server 2013 自動探索服務會在 Director 和前端集區伺�
     
     在此情況下，不需要變更憑證以支援行動性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果目標 Web 伺服器的憑證沒有 lyncdiscover.contoso.com 的相符值，以作為主體替代名稱清單值，則：<br />
-    a.   Web 伺服器會回應「伺服器問候語」，而沒有憑證。<br />
-    b.   執行 Lync Mobile 的行動裝置會立即終止工作階段。<br />
+    > [!Note]  
+	> 如果目標 Web 伺服器的憑證沒有 lyncdiscover.contoso.com 的相符值，以作為主體替代名稱清單值，則：<br />
+    > a.   Web 伺服器會回應「伺服器問候語」，而沒有憑證。<br />
+    > b.   執行 Lync Mobile 的行動裝置會立即終止工作階段。<br />
     如果目標 Web 伺服器的憑證包含 lyncdiscover.contoso.com，以作為主體替代名稱清單值，則：<br />
-    a.   Web 伺服器會回應「伺服器問候語」和憑證。<br />
-    b.   執行 Lync Mobile 的行動裝置會驗證憑證，並完成信號交換。</td>
-    </tr>
-    </tbody>
-    </table>
+    > a.   Web 伺服器會回應「伺服器問候語」和憑證。<br />
+    > b.   執行 Lync Mobile 的行動裝置會驗證憑證，並完成信號交換。
+    
 
 
 若要使用反向 Proxy 伺服器上的連接埠 80 來支援初始連線至自動探索服務，您可以建立 http 發行規則，類似用於 Forefront Threat Management Gateway 2010 反向 Proxy 網頁發行規則的下列範例：

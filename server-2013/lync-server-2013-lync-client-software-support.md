@@ -42,7 +42,8 @@ _**上次修改主題的時間：** 2015-07-06_
 <p>Windows 8</p>
 <p>Windows 7 作業系統</p>
 <p>具有最新 Service Pack 的 Windows Server 2008 R2</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > Windows Vista 或 Windows XP (任何版本) 都不支援 Lync 2013 與 Lync 2013 的線上會議增益集。
 
@@ -60,7 +61,8 @@ _**上次修改主題的時間：** 2015-07-06_
 <p>Internet Explorer 8 網際網路瀏覽器</p>
 <p>Internet Explorer 7 網際網路瀏覽器</p>
 <p>Mozilla Firefox 網頁瀏覽器</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如果您使用 Lync 搭配 Microsoft Exchange Online，而且您的組織已部署驗證的 HTTP Proxy，那麼需要使用 Internet Explorer 9 或 Internet Explorer 8。
 

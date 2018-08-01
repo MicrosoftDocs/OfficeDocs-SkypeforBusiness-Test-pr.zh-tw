@@ -19,18 +19,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您必須在 拓撲產生器中發行拓撲之前，先設定必要的網域名稱系統 (DNS) 記錄。此外，用於 Lync Server 2013 部署設定中的某些完整網域名稱 (FQDN) 是邏輯而非實體伺服器 FQDN，所以在發行之前需要額外的 DNS 設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 不支援單一標籤的網域。例如，根網域名稱為 <strong>contoso.local</strong> 的樹系是受支援的，名為 <strong>local</strong> 的根網域則不受支援。如需詳細資訊，請參閱 Microsoft 知識庫文章 300684＜為具有單一標籤 DNS 名稱之網域設定 Windows 的相關資訊＞，網址為 <a href="http://support.microsoft.com/kb/300684/zh-tw" class="uri">http://support.microsoft.com/kb/300684/zh-tw</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> Lync Server 2013 不支援單一標籤的網域。例如，根網域名稱為 <strong>contoso.local</strong> 的樹系是受支援的，名為 <strong>local</strong> 的根網域則不受支援。如需詳細資訊，請參閱 Microsoft 知識庫文章 300684＜為具有單一標籤 DNS 名稱之網域設定 Windows 的相關資訊＞，網址為 <a href="http://support.microsoft.com/kb/300684/zh-tw" class="uri">http://support.microsoft.com/kb/300684/zh-tw</a>。
 
 
 > [!IMPORTANT]  

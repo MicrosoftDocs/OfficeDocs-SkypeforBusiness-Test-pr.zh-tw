@@ -39,18 +39,8 @@ _**上次修改主題的時間：** 2012-11-01_
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:backup.contoso.com" -FileName "C:\RgsExportPrimary.zip" -ReplaceExistingSettings
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您不取代備份集區中的設定，且無法復原主要集區，則會遺失主要集區設定。如需詳細資訊，請參閱 <a href="lync-server-2013-planning-for-response-group-disaster-recovery.md">在 Lync Server 2013 中規劃回應群組災害復原</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 如果您不取代備份集區中的設定，且無法復原主要集區，則會遺失主要集區設定。如需詳細資訊，請參閱 <a href="lync-server-2013-planning-for-response-group-disaster-recovery.md">在 Lync Server 2013 中規劃回應群組災害復原</a>。
 
 
 4.  顯示匯入的回應群組，以確認匯入成功。匯入的回應群組仍為主要集區所擁有。請執行下列動作：

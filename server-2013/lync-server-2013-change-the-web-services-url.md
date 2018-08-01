@@ -34,18 +34,8 @@ _**上次修改主題的時間：** 2014-02-07_
 
 4.  新增或編輯 **\[外部 Web 服務 FQDN\]**，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有多個前端集區或前端伺服器，外部 Web 服務 FQDN 必須是唯一的。例如，如果您將前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，就無法將 <strong>pool01.contoso.com</strong> 用於另一個前端集區或前端伺服器。如果您也部署 Director，則為任何 Director 或 Director 集區定義的外部 Web 服務 FQDN 必須是唯一的，用於區分其他的 Director 或 Director 集區以及任何的前端集區或前端伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有多個前端集區或前端伺服器，外部 Web 服務 FQDN 必須是唯一的。例如，如果您將前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，就無法將 <strong>pool01.contoso.com</strong> 用於另一個前端集區或前端伺服器。如果您也部署 Director，則為任何 Director 或 Director 集區定義的外部 Web 服務 FQDN 必須是唯一的，用於區分其他的 Director 或 Director 集區以及任何的前端集區或前端伺服器。
 
 
 5.  確認環境中已正確設定聆聽和發行的連接埠。
@@ -62,18 +52,8 @@ _**上次修改主題的時間：** 2014-02-07_
 
   - 您可以覆寫 前端集區、Director 或 Director 集區上的內部 Web 服務，並定義您自己的 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、Director 或 Director 集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、Director 或 Director 集區。
 
 
   - 在反向 Proxy 或硬體負載平衡器上，必須設定發行的連接埠作為聆聽連接埠。

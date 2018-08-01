@@ -31,16 +31,6 @@ _**上次修改主題的時間：** 2012-10-01_
 
 6.  設定及安裝 Standard Edition 伺服器。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已部署僅具有 Standard Edition 伺服器 的環境，則您可能已透過下列動作從 [ Lync Server 部署精靈] 開始進行設定程序：使用 [準備第一個 Standard Edition Server] 連結將初始資料庫檔案安裝至新的 Standard Edition 伺服器。將 Standard Edition 伺服器 安裝到現有 Lync Server 2013 部署時， <strong>請勿</strong>遵循該程序。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 如果您已部署僅具有 Standard Edition 伺服器 的環境，則您可能已透過下列動作從 [ Lync Server 部署精靈] 開始進行設定程序：使用 [準備第一個 Standard Edition Server] 連結將初始資料庫檔案安裝至新的 Standard Edition 伺服器。將 Standard Edition 伺服器 安裝到現有 Lync Server 2013 部署時， <strong>請勿</strong>遵循該程序。
 

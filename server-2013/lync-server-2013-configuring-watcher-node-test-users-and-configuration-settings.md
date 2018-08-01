@@ -166,19 +166,9 @@ _**上次修改主題的時間：** 2013-07-29_
     PersistentChatMessage
     DataConference
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要以字母順序檢視綜合交易，請改用以下命令：<br />
-Get-CsWatcherNodeConfiguration –Identity &quot;atl-cs-001.litwareinc.com&quot; | Select-Object –ExpandProperty Tests | Sort-Object</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> 若要以字母順序檢視綜合交易，請改用以下命令：<br />
+Get-CsWatcherNodeConfiguration –Identity &quot;atl-cs-001.litwareinc.com&quot; | Select-Object –ExpandProperty Tests | Sort-Object
 
 
 若要確認監看員節點已建立，請從 Lync Server 管理命令介面輸入下列命令：

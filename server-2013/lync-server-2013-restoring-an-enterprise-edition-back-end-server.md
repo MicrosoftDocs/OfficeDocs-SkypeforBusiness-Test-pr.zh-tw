@@ -25,18 +25,8 @@ _**上次修改主題的時間：** 2013-02-18_
 
 若中央管理存放區失敗，請參閱＜[還原裝載中央管理存放區的伺服器](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md)＞。若是非後端伺服器的 Enterprise Edition 成員伺服器失敗，請參閱＜[還原 Enterprise Edition 成員伺服器](lync-server-2013-restoring-an-enterprise-edition-member-server.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您在開始還原之前，先擷取系統的影像複本，以便在還原出錯時，可以利用此影像做為回復點。也建議您在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 建議您在開始還原之前，先擷取系統的影像複本，以便在還原出錯時，可以利用此影像做為回復點。也建議您在安裝作業系統及 SQL Server 之後擷取影像複本，然後再還原或重新註冊憑證。
 
 
 ## 若要還原 Enterprise Edition 後端伺服器
@@ -77,18 +67,8 @@ _**上次修改主題的時間：** 2013-02-18_
     
     7.  依序執行精靈中剩餘的步驟，然後按一下 \[完成\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>除了執行拓撲產生器之外，您也可以使用 <strong>Install-CsDatabase</strong> Cmdlet 建立每一個資料庫，並且使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 設定鏡像資料庫。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 除了執行拓撲產生器之外，您也可以使用 <strong>Install-CsDatabase</strong> Cmdlet 建立每一個資料庫，並且使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 設定鏡像資料庫。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
 
 
 5.  執行下列動作還原使用者資料：

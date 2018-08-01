@@ -36,18 +36,8 @@ _**上次修改主題的時間：** 2013-07-11_
     
         New-CsWebServiceConfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>WsFedPassiveMetadataUri FQDN 的值為 AD FS 2.0 的 Federation Service 名稱。您可以在 AD FS 2.0 管理主控台上，從瀏覽窗格中在 <strong>[服務]</strong> 上按一下滑鼠右鍵，接著選取 <strong>[編輯 Federation Service 內容]</strong>，找出 Federation Service 名稱值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > WsFedPassiveMetadataUri FQDN 的值為 AD FS 2.0 的 Federation Service 名稱。您可以在 AD FS 2.0 管理主控台上，從瀏覽窗格中在 <strong>[服務]</strong> 上按一下滑鼠右鍵，接著選取 <strong>[編輯 Federation Service 內容]</strong>，找出 Federation Service 名稱值。
 
 
 4.  執行下列命令，確認已正確設定 UseWsFedPassiveAuth 和 WsFedPassiveMetadataUri 值：

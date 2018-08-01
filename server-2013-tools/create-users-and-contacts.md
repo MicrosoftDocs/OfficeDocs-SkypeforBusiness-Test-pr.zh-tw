@@ -87,24 +87,11 @@ When you click on Delete Users button, it will validate all the input parameters
 
   - If all the input values are correct, it will start disabling and deleting users in Active Directory Domain Services. A progress bar will appear at the bottom of this form. We recommend that you do not close the application while the progress bar is active.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ol>
-<li><p>Only U.S.-formatted phone numbers are supported. Phone numbers are always assigned to users, and all users created by UserProvisioningTool.exe are enabled for 企業語音. Any scenarios that use the phone number, such as Conferencing Auto Attendant or UC-PSTN calls, use this phone number to properly route calls. For this reason, every user must have a unique phone number. If you have to create users twice, the command will fail unless you use a different area code, or if the previous users have been disabled by using the <strong>Disable-CsUser</strong> cmdlet.</p></li>
-<li><p>Before you create contacts, you must first complete user replication, performed from the Users tab. If you have just created your users, you must wait until Lync Server replication completes and populates the user accounts in the database. If the users have not finished replicating, you will see an error. You will know when users have finished replicating if Lync Server 2013 Front End service has started, or by successfully running the <strong>Get-CsUser</strong> cmdlet on the last user.</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> <ol>
+> <li><p>Only U.S.-formatted phone numbers are supported. Phone numbers are always assigned to users, and all users created by UserProvisioningTool.exe are enabled for 企業語音. Any scenarios that use the phone number, such as Conferencing Auto Attendant or UC-PSTN calls, use this phone number to properly route calls. For this reason, every user must have a unique phone number. If you have to create users twice, the command will fail unless you use a different area code, or if the previous users have been disabled by using the <strong>Disable-CsUser</strong> cmdlet.</p></li>
+> <li><p>Before you create contacts, you must first complete user replication, performed from the Users tab. If you have just created your users, you must wait until Lync Server replication completes and populates the user accounts in the database. If the users have not finished replicating, you will see an error. You will know when users have finished replicating if Lync Server 2013 Front End service has started, or by successfully running the <strong>Get-CsUser</strong> cmdlet on the last user.</p></li>
+> </ol>
 
 
 ## Contacts Creation Tab

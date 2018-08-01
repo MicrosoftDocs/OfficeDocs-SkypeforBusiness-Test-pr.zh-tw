@@ -61,19 +61,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 完成指令碼後，接著您必須設定 Lync Server 2013 與授權伺服器之間的信任關係，以及設定 Exchange 2013 與授權伺服器之間的第二個信任關係。唯有使用 Microsoft Online Services Cmdlet 才能完成這項作業。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您尚未安裝 Microsoft Online Services Cmdlet，那麼，您必需先完成兩個動作才能繼續進行。首先，下載及安裝 Microsoft Online Services 登入小幫手 64 位元版本。完成安裝後，下載及安裝適用於 Windows PowerShell 的 Microsoft Online Services 模組 64 位元版本。您可以在 Office 365 網站找到有關安裝及使用 Microsoft Online Services 模組的詳細資訊。這些說明也將告訴您如何設定 Office 365 與 Active Directory 之間的單一登入、同盟與同步處理。<br />
-如果您尚未安裝這些 Cmdlet，您的指令碼將會失敗，因為 Get-CsTenant Cmdlet 將無法使用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 如果您尚未安裝 Microsoft Online Services Cmdlet，那麼，您必需先完成兩個動作才能繼續進行。首先，下載及安裝 Microsoft Online Services 登入小幫手 64 位元版本。完成安裝後，下載及安裝適用於 Windows PowerShell 的 Microsoft Online Services 模組 64 位元版本。您可以在 Office 365 網站找到有關安裝及使用 Microsoft Online Services 模組的詳細資訊。這些說明也將告訴您如何設定 Office 365 與 Active Directory 之間的單一登入、同盟與同步處理。<br />
+> 如果您尚未安裝這些 Cmdlet，您的指令碼將會失敗，因為 Get-CsTenant Cmdlet 將無法使用。
 
 
 完成 Office 365 設定並建立 Lync Server 2013 與 Exchange 2013 Office 365 服務主體後，接著您將需要藉由這些服務主體註冊您的認證。為了完成這項作業，您首先必須取得副檔名為 .CER 的 X.509 Base64 檔案。接著此憑證將會套用至 Office 365 服務主體。

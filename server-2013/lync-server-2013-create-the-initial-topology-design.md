@@ -38,18 +38,8 @@ _**上次修改主題的時間：** 2013-02-21_
 
 4.  選取合適的設計條件回應各個區段，然後按 \[下一步\] ，繼續前往下一個精靈頁面。按 \[上一步\] 變更之前的頁面。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每個頁面都說明了選取條件和基於慣用作法及容量規劃的建議。如果您需要其他詳細資訊，請按一下 [深入了解] ，閱讀 Microsoft TechNet 網站上 Lync Server 2013 規劃文件中的詳細資訊。必須具有網際網路連線，才能存取 Microsoft TechNet 網站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 每個頁面都說明了選取條件和基於慣用作法及容量規劃的建議。如果您需要其他詳細資訊，請按一下 [深入了解] ，閱讀 Microsoft TechNet 網站上 Lync Server 2013 規劃文件中的詳細資訊。必須具有網際網路連線，才能存取 Microsoft TechNet 網站。
 
 
 5.  選擇適用於您設計的選項。定義初始條件之後，將會在某個頁面中確認 \[功能?觀\] 是否完整。

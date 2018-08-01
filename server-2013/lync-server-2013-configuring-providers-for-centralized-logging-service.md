@@ -27,19 +27,9 @@ _**上次修改主題的時間：** 2014-03-19_
 
 本主題的其餘內容將特別針對定義提供者、修改提供者的方式，及提供者定義所包含的內容做討論，以使您的疑難排解作業獲得最佳成效。發行集中記錄服務命令有兩種方式。您可以使用 CLSController.exe，其預設位置為目錄 C:\\Program Files\\Common Files\\Microsoft Lync Server 2013\\CLSAgent。或者，您可使用Lync Server 管理命令介面來發行 Windows PowerShell 命令。其中重要區別在於，當您在命令列上使用 CLSController.exe 時，選擇會侷限於提供者已定義好而無法變更的可用案例中，但您可以定義記錄層級。藉由使用 Windows PowerShell，您就可定義新的提供者，以在您的記錄工作階段中使用，並對其建立作業、其收集內容、其收集資料的層級擁有完整控制權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如前所述，提供者的功能強大。不過，案例的作用卻更為強大，因為它們包含全部所需具體資訊，可用以在提供者代表的元件上設定和執行追蹤作業。若與做為提供者集合的案例進行約略比較，它就像執行包含數百個命令的批次檔，可用來收集大量資訊，而非在命令列上以一次一個的方式發行數百個命令。<br />
-您無需深入發掘提供者的詳細資料，集中記錄服務會提供許多已為您定義好的案例。所提供的案例涵蓋您可能會遭遇的絕大多數問題。在一些罕見的情況下，您可能需建立並定義提供者，並將其指派給案例。我們強烈建議您在調查需求以建立新提供者和案例前，先熟悉所提供的每個案例。您可在這裡找到建立提供者的資訊，以熟悉案例使用提供者元素收集追蹤資訊的方式，而此時並不會提供提供者本身的詳細資料。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 如前所述，提供者的功能強大。不過，案例的作用卻更為強大，因為它們包含全部所需具體資訊，可用以在提供者代表的元件上設定和執行追蹤作業。若與做為提供者集合的案例進行約略比較，它就像執行包含數百個命令的批次檔，可用來收集大量資訊，而非在命令列上以一次一個的方式發行數百個命令。<br />
+> 您無需深入發掘提供者的詳細資料，集中記錄服務會提供許多已為您定義好的案例。所提供的案例涵蓋您可能會遭遇的絕大多數問題。在一些罕見的情況下，您可能需建立並定義提供者，並將其指派給案例。我們強烈建議您在調查需求以建立新提供者和案例前，先熟悉所提供的每個案例。您可在這裡找到建立提供者的資訊，以熟悉案例使用提供者元素收集追蹤資訊的方式，而此時並不會提供提供者本身的詳細資料。
 
 
 如同在[集中式記錄服務概觀](lync-server-2013-overview-of-the-centralized-logging-service.md)中的介紹，定義使用者以供案例之用時，其主要元素為：
@@ -126,18 +116,8 @@ _**上次修改主題的時間：** 2014-03-19_
 
 命令的最終結果是，案例 site:Redmond/RedmondLyssInfo 會有更新的旗標和層級供指派給案例的提供者使用。您可以使用 Get-CsClsScenario 檢視新案例。如需詳細資訊，請參閱 [Get-CsClsScenario](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsScenario)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>New-ClsCsProvider</strong> 不會進行檢查來決定旗標是否有效。請確認旗標的拼字 (例如 TF_DIAG 或 TF_CONNECTION) 正確無誤。如果旗標的拼字不正確，提供者就無法傳回預期的記錄資訊。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> <strong>New-ClsCsProvider</strong> 不會進行檢查來決定旗標是否有效。請確認旗標的拼字 (例如 TF_DIAG 或 TF_CONNECTION) 正確無誤。如果旗標的拼字不正確，提供者就無法傳回預期的記錄資訊。
 
 
 如果您想要將其他提供者新增至此案例，請輸入下列項目：
@@ -167,18 +147,8 @@ _**上次修改主題的時間：** 2014-03-19_
     
         Remove-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Cmdlet <strong>Remove-CsClsScenario</strong> 不會提示您進行確認。案例會連同指派給它的提供者一併遭刪除。您可以重新執行一開始用來建立案例的命令以重新建立案例。您無法還原遭移除的案例或提供者。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Cmdlet <strong>Remove-CsClsScenario</strong> 不會提示您進行確認。案例會連同指派給它的提供者一併遭刪除。您可以重新執行一開始用來建立案例的命令以重新建立案例。您無法還原遭移除的案例或提供者。
 
 
 在使用 **Remove-CsClsScenario** Cmdlet 移除案例時，您可以將案例從範圍完全移除。若要使用您建立的案例，及使用做為案例之一部分的提供者，您需建立新的提供者，並將其指派給新的案例。

@@ -24,18 +24,8 @@ _**上次修改主題的時間：** 2014-02-05_
 
 **Install-CsDatabase** 是您用來安裝資料庫的 Windows PowerShell Cmdlet。 **Install-CsDatabase** Cmdlet 擁有大量的參數，不過本文中僅討論其中一小部分。如需有關可能參數的詳細資訊，請參閱 Lync Server 2013 管理命令介面 文件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為避免效能問題和可能的逾時問題發生，參考 SQL Server 架構伺服器時一定要使用完整網域名稱 (FQDN)。避免使用只有主機名稱的參考。例如，使用 sqlbe01.contoso.net，而避免使用 SQLBE01。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 為避免效能問題和可能的逾時問題發生，參考 SQL Server 架構伺服器時一定要使用完整網域名稱 (FQDN)。避免使用只有主機名稱的參考。例如，使用 sqlbe01.contoso.net，而避免使用 SQLBE01。
 
 
 安裝資料庫時， **Install-CsDatabase** 會使用三種主要方法將資料庫放置到準備好的 SQL Server 架構伺服器上：
@@ -66,18 +56,8 @@ _**上次修改主題的時間：** 2014-02-05_
       Install-CsDatabase -CentralManagementDatabase -SqlServerFqdn sqlbe.contoso.net -SqlInstanceName rtc -DatabasePaths "C:\CSDB-Logs","C:\CSDB-CMS" -Report "C:\Logs\InstallDatabases.html"
       ```
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Report 參數是選用的，但是，如果您要記錄安裝程序，就會很實用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Report 參數是選用的，但是，如果您要記錄安裝程序，就會很實用。
 
 
 4.  **Install-CsDatabase –DatabasePaths** 最多可使用 6 個路徑參數，每個參數定義磁碟機的路徑，如＜SQL Server 資料和記錄檔位置＞中的定義方式。根據 Lync Server 2013 中的資料庫組態邏輯規則，磁碟機會被剖析出來並分到 2 個、4 個或 6 個「貯體」(Bucket) 中。根據您的 SQL Server 組態和貯體數目，您將提供 2 個、4 個或 6 個路徑。
@@ -113,18 +93,8 @@ _**上次修改主題的時間：** 2014-02-05_
        -Report "C:\Logs\InstallDatabases.html"
       ```
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Report 參數是選用的，但是，如果您要記錄安裝程序，就會很實用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > Report 參數是選用的，但是，如果您要記錄安裝程序，就會很實用。
 
 
 5.  資料庫安裝完成時，關閉 Lync Server 2013 管理命令介面。
