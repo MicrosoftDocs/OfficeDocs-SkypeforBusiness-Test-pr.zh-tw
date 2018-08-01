@@ -59,18 +59,8 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
     
        如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> **\[同盟及外部存取\]** \> **\[SIP 同盟網域\]** 。請建立 **\[新增\]** 原則或 **\[編輯\]** 現有的原則，以依 FQDN 來允許或封鎖網域。
         
-      <table>
-      <thead>
-      <tr class="header">
-      <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr class="odd">
-      <td>手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。</td>
-      </tr>
-      </tbody>
-      </table>
+      > [!WARNING]  
+	  > 手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。
         
       > [!NOTE]  
       > 若是 <strong>[新的 SIP 同盟網域]</strong>，您必須為 Microsoft Lync Online、Microsoft Office 365 提供 <strong>[網域名稱 (或 FQDN)]</strong>。若是 Microsoft Lync Server 2013、Lync Server 2010 及 Office Communications Server，您也必須提供 <strong>[Access Edge Service (FQDN)]</strong>
@@ -108,25 +98,11 @@ Public Instant Messaging Connectivity 是一種同盟等級，此設定可讓您
 
   - America Online (AOL) 連絡人
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，Microsoft Lync Public IM Connectivity User Subscription License (&quot;PIC USL&quot; ) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 同盟，直到服務終止日為止 (確切日期尚未決定，但不會早於 2013 年 6 月)。</p></li>
-<li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將不再續約。</p></li>
-<li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> <li><p>自 2012 年 9 月 1 日起，Microsoft Lync Public IM Connectivity User Subscription License (&quot;PIC USL&quot; ) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 同盟，直到服務終止日為止 (確切日期尚未決定，但不會早於 2013 年 6 月)。</p></li>
+> <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將不再續約。</p></li>
+> <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
+> </ul>
 
 
 使用此同盟等級必須考量下列規劃：

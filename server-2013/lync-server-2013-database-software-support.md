@@ -38,27 +38,13 @@ Lync Server 2013 支援下列資料庫管理系統：
     
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Lync Server 2013 不支援 SQL Server 32 位元版本。您必須使用 64 位元版本。</p></li>
-<li><p>不支援 SQL Server Web Edition 和 SQL Server Workgroup Edition。您無法使用者兩種版本搭配 Lync Server 2013。</p></li>
-<li><p>Lync Server 2013 確實支援原生資料庫鏡像功能。</p></li>
-<li><p>若要使用監控伺服器角色，您應該安裝 SQL Server Reporting Services。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> <ul>
+> <li><p>Lync Server 2013 不支援 SQL Server 32 位元版本。您必須使用 64 位元版本。</p></li>
+> <li><p>不支援 SQL Server Web Edition 和 SQL Server Workgroup Edition。您無法使用者兩種版本搭配 Lync Server 2013。</p></li>
+> <li><p>Lync Server 2013 確實支援原生資料庫鏡像功能。</p></li>
+> <li><p>若要使用監控伺服器角色，您應該安裝 SQL Server Reporting Services。</p></li>
+> </ul>
 
 在前端集區中，後端資料庫可以是單一 SQL Server 電腦。
 

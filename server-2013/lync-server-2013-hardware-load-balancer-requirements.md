@@ -86,19 +86,9 @@ Lync Server 2013 調整式合併 Edge 拓撲經過最佳化，可讓主要與其
 
 如果您正在部署行動裝置，硬體負載平衡器就必須能夠在 TCP 工作階段中負載平衡個別要求 (實際上，您必須能夠根據目標 IP 位址來負載平衡個別要求)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>F5 硬體負載平衡器有一項叫做 OneConnect 的功能，可以確保 TCP 連線中的每個要求都能個別負載平衡。如果您正在部署行動裝置，請確定硬體負載平衡器廠商支援相同的功能。最新版的 Apple iOS 行動應用程式需要傳輸層安全性 (TLS) 版本 1.2。F5 提供適用於此版本的特殊設定。<br />
-如需協力廠商硬體負載平衡器的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=230700%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=230700&amp;clcid=0x404</a></td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]  
+> F5 硬體負載平衡器有一項叫做 OneConnect 的功能，可以確保 TCP 連線中的每個要求都能個別負載平衡。如果您正在部署行動裝置，請確定硬體負載平衡器廠商支援相同的功能。最新版的 Apple iOS 行動應用程式需要傳輸層安全性 (TLS) 版本 1.2。F5 提供適用於此版本的特殊設定。<br />
+> 如需協力廠商硬體負載平衡器的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=230700%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=230700&amp;clcid=0x404</a>
 
 
 下面是 Director 與前端集區 Web 服務的硬體負載平衡器需求：

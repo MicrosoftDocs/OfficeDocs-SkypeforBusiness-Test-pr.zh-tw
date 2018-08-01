@@ -33,20 +33,11 @@ _**上次修改主題的時間：** 2012-10-20_
 
 這項措施適用於通往網路網站 1 之用戶端的傳入 PSTN 通話，以及適用於源自網路網站 1 之用戶端應用程式的傳出 PSTN 通話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請確定 PSTN 閘道隸屬的 IP 子網路已經過設定，並與網路網站 2 相關聯。<br />
-請確定中繼伺服器之兩個介面隸屬的 IP 子網路已經過設定，並與網路網站 1 相關聯。<br />
-如需詳細資訊，請參閱＜<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 請確定 PSTN 閘道隸屬的 IP 子網路已經過設定，並與網路網站 2 相關聯。<br />
+> 請確定中繼伺服器之兩個介面隸屬的 IP 子網路已經過設定，並與網路網站 1 相關聯。<br />
+> 如需詳細資訊，請參閱＜<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>＞。
+
 
 
 ## 案例 2：中繼伺服器和具有媒體終端點之協力廠商 PBX 間的 CAC
@@ -65,20 +56,11 @@ _**上次修改主題的時間：** 2012-10-20_
 
 這項措施適用於通往網路網站 1 之用戶端的傳入 PSTN 通話，以及源自網路網站 1 之用戶端的傳出 PSTN 通話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請確定 MTP 隸屬的 IP 子網路已經過設定，並與網路網站 2 相關聯。<br />
-請確定中繼伺服器之兩個介面隸屬的 IP 子網路已經過設定，並與網路網站 1 相關聯。<br />
-如需詳細資訊，請參閱＜<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 請確定 MTP 隸屬的 IP 子網路已經過設定，並與網路網站 2 相關聯。<br />
+> 請確定中繼伺服器之兩個介面隸屬的 IP 子網路已經過設定，並與網路網站 1 相關聯。<br />
+> 如需詳細資訊，請參閱＜<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>＞。
+
 
 
 ## 案例 3：中繼伺服器和不具有媒體終端點之協力廠商 PBX 間的 CAC
@@ -93,18 +75,9 @@ _**上次修改主題的時間：** 2012-10-20_
 
 對於源自協力廠商端點的通話，由於在工作階段要求提出之際能取得端點裝置的相關資訊，因此中繼伺服器能在兩端執行 CAC 檢查。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請確定端點裝置隸屬的 IP 子網路已經過設定，並與網路網站 2 相關聯。<br />
-請確定中繼伺服器之兩個介面隸屬的 IP 子網路已經過設定，並與網路網站 1 相關聯。<br />
-如需詳細資訊，請參閱＜<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 請確定端點裝置隸屬的 IP 子網路已經過設定，並與網路網站 2 相關聯。<br />
+> 請確定中繼伺服器之兩個介面隸屬的 IP 子網路已經過設定，並與網路網站 1 相關聯。<br />
+> 如需詳細資訊，請參閱＜<a href="lync-server-2013-associate-a-subnet-with-a-network-site.md">在 Lync Server 2013 中建立子網路與網路站台的關聯</a>＞。
+
 

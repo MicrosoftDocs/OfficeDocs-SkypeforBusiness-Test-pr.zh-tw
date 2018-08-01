@@ -23,24 +23,11 @@ Lync 2013 推出了不同的用戶端部署方式。與舊版不同的是，Lync
 
 本節中的主題著重於如何使用 Office 2013 以 MSI 為基礎的安裝程式來部署用戶端。您的主要參考資料應為＜Office 2013 Resource Kit＞文件，其中詳細描述如何準備基礎結構、自訂安裝程式，以及部署 Office 2013。不過您應該在使用 Office 文件時搭配本節中的主題，因為本節針對 Lync 2013 指出部署的考量。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Lync 2013 的線上會議增益集會隨著 Lync 2013 自動安裝，支援在 Outlook 訊息和共同作業用戶端內管理會議。</p></li>
-<li><p>Office 2013 安裝程式不會解除安裝舊版的 Lync 或 Office Communicator。Lync 2013 用戶端會與其他 Lync 或 Office Communicator 用戶端並存安裝。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> <ul>
+> <li><p>Lync 2013 的線上會議增益集會隨著 Lync 2013 自動安裝，支援在 Outlook 訊息和共同作業用戶端內管理會議。</p></li>
+> <li><p>Office 2013 安裝程式不會解除安裝舊版的 Lync 或 Office Communicator。Lync 2013 用戶端會與其他 Lync 或 Office Communicator 用戶端並存安裝。</p></li>
+> </ul>
 
 
 ## 本節內容

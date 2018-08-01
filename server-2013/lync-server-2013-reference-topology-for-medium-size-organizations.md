@@ -55,26 +55,12 @@ _**上次修改主題的時間：** 2013-10-07_
     
       - 您的使用者可以和下列公用 IM 服務的使用者交換立即訊息：Windows Live、AOL、Yahoo\! 及 Google Talk。與這些服務的公用 IM 連線可能需要個別的授權。
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td><ul>
-        <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
-        <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
-        <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-        </ul></td>
-        </tr>
-        </tbody>
-        </table>
-
+        > [!IMPORTANT]  
+		> <ul>
+        > <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
+        > <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
+        > <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
+        > </ul>
 
   - **可以新增 Director。** 如果這個組織想要協助提高針對拒絕服務攻擊的安全性，也可以部署 Director 的集區。 Director 在不裝載使用者帳戶或是提供目前狀態或會議服務的 Lync Server 中，是個別的選用伺服器角色，其作為內部的下一個躍點伺服器，讓 Edge Server 將預定要進入內部伺服器的輸入 SIP 流量路由至該處。 Director 會預先驗證輸入要求，並將其重新導向至使用者的主集區或伺服器。Director 的預先驗證允許捨棄部署無法辨識的使用者帳戶的要求。 Director 有助於隔絕前端伺服器的惡意流量，例如拒絕服務 (DoS) 攻擊。如果網路上因此類攻擊而充斥無效的外部流量，這些流量將止於 Director。
 

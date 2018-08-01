@@ -40,20 +40,11 @@ _**上次修改主題的時間：** 2013-11-07_
 
 如果使用 Edge Server 的網站超過一個 (也就是多重網站邊緣拓撲)，或者在不同的負載平衡器後方部署了不同組的 Edge Server，就需要針對具有 Edge Server 的每個網站以及部署在不同的負載平衡器後方的每組 Edge Server 執行這些步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節程序的步驟使用 Windows Server 2008 CA、 Windows Server 2008 R2 CA、 Windows Server 2012 CA，或 Windows Server 2012 R2 CA，來為每部 Edge Server 建立憑證。如需任何其他 CA 的逐步指引，請參閱該 CA 的相關文件。根據預設，所有通過驗證的使用者皆有適當的使用者權限來要求憑證。<br />
-本節中的程序會將在 Edge Server 上建立憑證要求作為 Edge Server 部署程序的一部分。可以使用前端伺服器建立憑證要求。這樣做之後，您可以及早在計劃和部署程序期間完成憑證要求，然後再開始部署 Edge Server。為此，您必須確保您要求的憑證已使用可匯?的私密金鑰來定義。<br />
-本節中的程序描述了對憑證使用 .cer 和 .p7b 檔案。若您使用的是其他類型的檔案，請根據需要修改這些程序。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 本節程序的步驟使用 Windows Server 2008 CA、 Windows Server 2008 R2 CA、 Windows Server 2012 CA，或 Windows Server 2012 R2 CA，來為每部 Edge Server 建立憑證。如需任何其他 CA 的逐步指引，請參閱該 CA 的相關文件。根據預設，所有通過驗證的使用者皆有適當的使用者權限來要求憑證。<br />
+> 本節中的程序會將在 Edge Server 上建立憑證要求作為 Edge Server 部署程序的一部分。可以使用前端伺服器建立憑證要求。這樣做之後，您可以及早在計劃和部署程序期間完成憑證要求，然後再開始部署 Edge Server。為此，您必須確保您要求的憑證已使用可匯?的私密金鑰來定義。<br />
+> 本節中的程序描述了對憑證使用 .cer 和 .p7b 檔案。若您使用的是其他類型的檔案，請根據需要修改這些程序。
+
 
 
 ## 使用 certsrv 網站為內部介面下載 CA 憑證鏈結
@@ -229,18 +220,8 @@ _**上次修改主題的時間：** 2013-11-07_
     
       - 匯出所有延伸內容
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>從 Edge Server 匯出憑證時，不要選取 [如果匯出成功即刪除私密金鑰] 。選取這個選項時，必須將憑證和私密金鑰匯入這個 Edge Server。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 從 Edge Server 匯出憑證時，不要選取 [如果匯出成功即刪除私密金鑰] 。選取這個選項時，必須將憑證和私密金鑰匯入這個 Edge Server。
     
     按 \[下一步\] 繼續。
 

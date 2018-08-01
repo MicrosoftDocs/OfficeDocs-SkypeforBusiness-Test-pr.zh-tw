@@ -53,24 +53,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
 Lync Server 控制台會自動安裝於每一部 Lync Server 前端伺服器或 Standard Edition Server。在這一版中，您可以遠端方式管理 Edge Server。您也可以在其他電腦上安裝 Lync Server 控制台，例如想利用來集中管理 Lync Server 的管理主控台。如需詳細資訊，請參閱＜ [安裝 Lync Server 2013 系統管理工具](lync-server-2013-install-lync-server-administrative-tools.md)＞。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>若要使用 Lync Server 控制台來進行設定，您必須使用已指派給 CsAdministrator 角色的帳戶進行登入。 如需 Lync Server 2013 中可用的預先定義管理角色的詳細資料，請參閱<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。</p></li>
-<li><p>若要使用 Lync Server 控制台進行設定，您也必須使用最低螢幕解析度 1024 x 768 的電腦。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> <ul>
+> <li><p>若要使用 Lync Server 控制台來進行設定，您必須使用已指派給 CsAdministrator 角色的帳戶進行登入。 如需 Lync Server 2013 中可用的預先定義管理角色的詳細資料，請參閱<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。</p></li>
+> <li><p>若要使用 Lync Server 控制台進行設定，您也必須使用最低螢幕解析度 1024 x 768 的電腦。</p></li>
+> </ul>
 
 
 ## Lync Server 管理命令介面

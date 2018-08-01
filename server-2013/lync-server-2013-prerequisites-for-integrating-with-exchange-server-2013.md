@@ -57,20 +57,11 @@ _**上次修改主題的時間：** 2014-04-22_
 
     Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>前置命令中的身分識別參數可省略；因為 Lync Server 只能讓您擁有一個 OAuth 組態設定值的單一全域集合。除此之外，這代表您可使用較簡單的命令設定自動探索 URL：<br />
-Set-CsOAuthConfiguration–ExchangeAutodiscoverUrl &quot;https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc&quot;<br />
-若不熟悉此技術，OAuth 是各大網站使用的標準授權通訊協定。有了 OAuth，使用者認證與密碼就不會在電腦之間傳送，而是根據安全性權杖的交換進行驗證與授權；這些權杖會授與存取權，讓您在特定時間長度內存取特定資源集合。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 前置命令中的身分識別參數可省略；因為 Lync Server 只能讓您擁有一個 OAuth 組態設定值的單一全域集合。除此之外，這代表您可使用較簡單的命令設定自動探索 URL：<br />
+> Set-CsOAuthConfiguration–ExchangeAutodiscoverUrl &quot;https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc&quot;<br />
+> 若不熟悉此技術，OAuth 是各大網站使用的標準授權通訊協定。有了 OAuth，使用者認證與密碼就不會在電腦之間傳送，而是根據安全性權杖的交換進行驗證與授權；這些權杖會授與存取權，讓您在特定時間長度內存取特定資源集合。
+
 
 
 除了設定自動探索服務，您還必須為指向 Exchange 伺服器的服務建立 DNS 記錄。例如，若自動探索服務的位置在 autodiscover.litwareinc.com，您必須為 autodiscover.litwareinc.com (解析到 Exchange 伺服器的完整網域名稱) 建立 DNS 記錄 (例如 atl-exchange-001.litwareinc.com)。

@@ -17,27 +17,14 @@ _**上次修改主題的時間：** 2012-10-03_
 
 Lync Server 使用 SIP 主幹，將緊急通話連接至 E9-1-1 服務提供者。您可以在一個中央網台、多個中央網台或每個分支網站上設定 E9-1-1 的緊急服務 SIP 主幹。不過，如果來電者網站與主控緊急服務 SIP 主幹的網站之間的 WAN 連結無法使用，由中斷連線網站上的使用者所撥打的電話在使用者語音原則中，需要有特殊的電話使用方式記錄來指定透過本機公用交換電話網路 (PSTN) 閘道，將電話路由至 ECRC。如果通話許可控制並行通話限制有效，則有同樣的需求。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有兩種方法可以在 Lync Server 環境中實作 SIP 主幹：
-<ul>
-<li><p>使用多重主目錄 中繼伺服器，利用它們向外公開路由的介面與 SIP 主幹提供者通訊。</p></li>
-<li><p>使用內部部署工作階段邊界控制器 (SBC) 在 中繼伺服器和 SIP 主幹提供者的服務之間提供安全的分割點。</p></li>
-</ul>
-如果您選擇後者，請確定您所選擇的 SBC 品牌與型號已取得認證，並且支援傳遞「目前狀態資訊資料格式位置物件」(PIDF-LO) 位置資料做為其 SIP INVITE 的一部分。否則電話將會送達去除其位置資訊的緊急服務服務提供者。如需有關認證的 SBC 的詳細資訊，請參閱＜Microsoft Lync 適用的基礎結構＞，網址為： <a href="http://go.microsoft.com/fwlink/?linkid=248425%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=248425&amp;clcid=0x404</a>。<br />
-E9-1-1 服務提供者為您提供一組 SBC 的存取做為後備之用。您必須做幾項有關 中繼伺服器拓樸及通話路由設定的決定。您是要將兩台 SBC 視為對等，並對它們之間的通話使用循環配置資源路由；或是要將一個 SBC 指派為主要，而另一個指派為次要呢？</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 有兩種方法可以在 Lync Server 環境中實作 SIP 主幹：
+> <ul>
+> <li><p>使用多重主目錄 中繼伺服器，利用它們向外公開路由的介面與 SIP 主幹提供者通訊。</p></li>
+> <li><p>使用內部部署工作階段邊界控制器 (SBC) 在 中繼伺服器和 SIP 主幹提供者的服務之間提供安全的分割點。</p></li>
+> </ul>
+> 如果您選擇後者，請確定您所選擇的 SBC 品牌與型號已取得認證，並且支援傳遞「目前狀態資訊資料格式位置物件」(PIDF-LO) 位置資料做為其 SIP INVITE 的一部分。否則電話將會送達去除其位置資訊的緊急服務服務提供者。如需有關認證的 SBC 的詳細資訊，請參閱＜Microsoft Lync 適用的基礎結構＞，網址為： <a href="http://go.microsoft.com/fwlink/?linkid=248425%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=248425&amp;clcid=0x404</a>。<br />
+> E9-1-1 服務提供者為您提供一組 SBC 的存取做為後備之用。您必須做幾項有關 中繼伺服器拓樸及通話路由設定的決定。您是要將兩台 SBC 視為對等，並對它們之間的通話使用循環配置資源路由；或是要將一個 SBC 指派為主要，而另一個指派為次要呢？
 
 
 如需有關在 Lync Server 中部署 SIP 主幹的詳細資訊，請參閱＜ [如何在 Lync Server 2013 中實作 SIP 主幹？](lync-server-2013-how-do-i-implement-sip-trunking.md)＞。為了協助決定如何部署 E9-1-1 的 SIP 主幹，您應該先回答下列問題。

@@ -96,28 +96,15 @@ _**上次修改主題的時間：** 2015-03-09_
     <li><p><a href="lync-server-2013-create-or-edit-hosted-sip-federated-providers.md">建立或編輯主控的 SIP 同盟提供者 Lync Server 2013</a></p></li>
     </ul></td>
     <td><p>此同盟類型定義您要為使用者設定的服務和裝載提供者。一般用法包含針對像是 Windows Live Messenger、Yahoo! 及 AOL 等公用 IM 提供者，以及像是 Lync Online 和 Office 365 的主機服務提供者進行設定。</p>
-    <div class="alert">
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
-    <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
-    <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
-    <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
-
-    </div></td>
+	
+    > [!IMPORTANT]  
+	> <ul>
+    > <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
+    > <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
+    > <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
+    > </ul>
+	
+	</td>
     </tr>
     </tbody>
     </table>
@@ -127,22 +114,12 @@ _**上次修改主題的時間：** 2015-03-09_
 
 3.  使用 Lync Server 控制台或使用 Lync Server 管理命令介面和適當的 Cmdlet 來定義和設定任何原則。如需關於 Lync Server 管理命令介面 Cmdlet 的詳細資訊，請參閱＜ [Lync Server 2013 中的同盟和外部存取 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Room System (LRS) 不會針對同盟 Lync 合作夥伴中的組織者所傳送的會議顯示加入按鈕。若要在 LRS 上顯示會議加入連結，傳送組織必須使用下列 Cmdlet 啟用 TNEF：<br />
-    <br />
-    <code>New-RemoteDomain -DomainName Contoso.com -Name Contoso</code><br />
-    <code>Set-RemoteDomain -Identity Contoso -TNEFEnabled $true</code><br />
-    請注意，這定不是 LRS 特有的。Outlook 與 Lync 在此情況下也不會顯示 [加入] 連結，因為並未傳輸 MAPI 內容，但在 Outlook 中，使用者可以開啟會議邀請並按一下會議 URL。當 TNEFEnabled 設定為 true 時，Exchange 2013 不會除去包括 OnlineMeetingExternalLink 的 MAPI 內容，且 [加入] 按鈕將會顯示在提醒中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+	> Lync Room System (LRS) 不會針對同盟 Lync 合作夥伴中的組織者所傳送的會議顯示加入按鈕。若要在 LRS 上顯示會議加入連結，傳送組織必須使用下列 Cmdlet 啟用 TNEF：<br />
+    > <br />
+    > <code>New-RemoteDomain -DomainName Contoso.com -Name Contoso</code><br />
+    > <code>Set-RemoteDomain -Identity Contoso -TNEFEnabled $true</code><br />
+    > 請注意，這定不是 LRS 特有的。Outlook 與 Lync 在此情況下也不會顯示 [加入] 連結，因為並未傳輸 MAPI 內容，但在 Outlook 中，使用者可以開啟會議邀請並按一下會議 URL。當 TNEFEnabled 設定為 true 時，Exchange 2013 不會除去包括 OnlineMeetingExternalLink 的 MAPI 內容，且 [加入] 按鈕將會顯示在提醒中。
 
 
 ## 請參閱

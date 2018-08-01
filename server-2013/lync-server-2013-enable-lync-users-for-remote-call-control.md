@@ -21,20 +21,11 @@ _**上次修改主題的時間：** 2012-09-21_
 
 如果您有現有的 Communications Server 2007 R2 或 Communications Server 2007 部署， Communicator 2007 R2 和 Communicator 2007 用戶端將在並存移轉時繼續使用原則設定。不過，如果您想要將原則設定沿用至 Lync 用戶端，則需要設定對等的 Lync Server 頻內佈建設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要啟用使用者的遠端呼叫控制功能，必須同時提供使用者 [線路 URI] 和 [線路伺服器 URI]。如 <a href="lync-server-2013-deployment-tasks-for-remote-call-control.md">Lync Server 2013 中遠端呼叫控制的部署工作</a>中所述，您必須確認使用這些設定之閘道所需的語法。<br />
-請確定 [線路伺服器 URI] 中的網域與您設定閘道的靜態路由時，在 MatchUri 參數中指定的目的地網域相同。<br />
-[線路 URI] 會指定指派給使用者的 E.164 格式電話號碼，並且以 &quot;TEL:&quot; 做為首碼。(例如，tel:+14255550150)。如果您想要設定分機號碼，則格式為 tel:+14255550150;ext=111。如果您之前已設定使用者的 [線路 URI] 而且值並未變更，則不需要在啟用使用者的遠端呼叫控制功能時指定 [線路 URI]。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 若要啟用使用者的遠端呼叫控制功能，必須同時提供使用者 [線路 URI] 和 [線路伺服器 URI]。如 <a href="lync-server-2013-deployment-tasks-for-remote-call-control.md">Lync Server 2013 中遠端呼叫控制的部署工作</a>中所述，您必須確認使用這些設定之閘道所需的語法。<br />
+> 請確定 [線路伺服器 URI] 中的網域與您設定閘道的靜態路由時，在 MatchUri 參數中指定的目的地網域相同。<br />
+> [線路 URI] 會指定指派給使用者的 E.164 格式電話號碼，並且以 &quot;TEL:&quot; 做為首碼。(例如，tel:+14255550150)。如果您想要設定分機號碼，則格式為 tel:+14255550150;ext=111。如果您之前已設定使用者的 [線路 URI] 而且值並未變更，則不需要在啟用使用者的遠端呼叫控制功能時指定 [線路 URI]。
+
 
 
 ## 使用管理命令介面啟用已啟用 Lync 之使用者的遠端呼叫控制
