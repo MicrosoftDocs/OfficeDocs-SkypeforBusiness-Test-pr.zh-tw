@@ -67,13 +67,10 @@ _**上次修改主題的時間：** 2015-03-09_
 <p>Exchange 組織系統管理員 (如果這不是組織中的第一部 Exchange Server)</p></td>
 <td><p>請參閱您的 Exchange Server 版本所適用的文件：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>Exchange Server 2007 的部署文件，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268694%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268694&amp;clcid=0x404</a>。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>Exchange Server 2010 或最新的 Service Pack 部署文件，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268695%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268695&amp;clcid=0x404</a>。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>Microsoft Exchange Server 2013 規劃及部署，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=266569%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=266569&amp;clcid=0x404</a>。</p>
 </dd>
 </dl></td>
