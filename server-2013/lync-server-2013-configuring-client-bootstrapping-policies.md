@@ -52,10 +52,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>停用登入失敗記錄檔的自動上傳 (DisableAutomaticSendTracing)</p></td>
 <td><p>將登入失敗記錄檔自動上傳到 Lync Server 進行分析。如果登入成功，就不會自動上傳記錄檔。如果未設定這個原則，則會發生下列情況：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>若為 Lync Online 使用者：登入失敗記錄檔會自動上傳。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>若為 Lync 內部部署使用者：在上傳之前會顯示確認對話方塊。</p>
 </dd>
 </dl>
