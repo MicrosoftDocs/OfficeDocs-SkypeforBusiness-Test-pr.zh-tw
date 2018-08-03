@@ -56,7 +56,7 @@ _**上次修改主題的時間：** 2014-01-08_
 > </ol>
 
 > [!NOTE]  
-> 您必須為鏡像檔案建立可供其寫入的檔案共用，而且 SQL Server 和 SQL Agent 執行所在的服務也需要讀取/寫入的權限。如果 SQL Server 服務是在 Network Service 下執行，您可以將主體和鏡像 SQL Server「&lt;網域&gt;\&lt;SQL 伺服器名稱&gt;$」都新增到共用權限。$ 必須存在，才能識別這是電腦帳戶。
+> 您必須為鏡像檔案建立可供其寫入的檔案共用，而且 SQL Server 和 SQL Agent 執行所在的服務也需要讀取/寫入的權限。如果 SQL Server 服務是在 Network Service 下執行，您可以將主體和鏡像 SQL Server「&lt;網域&gt;\\&lt;SQL 伺服器名稱&gt;$」都新增到共用權限。$ 必須存在，才能識別這是電腦帳戶。
 
 
 
