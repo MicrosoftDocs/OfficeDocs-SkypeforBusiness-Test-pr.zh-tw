@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：將 Lync Server 2013 Standard Edition 部署到現有 Lync Server 2013 Enterprise 中
+title: "Lync Server 2013：部署 Lync Server 2013 Standard 到現有 Lync Server 2013 Enterprise 中"
 TOCTitle: 將 Lync Server 2013 Standard Edition 部署到現有 Lync Server 2013 Enterprise 中
 ms:assetid: 05ea128d-6c94-49b3-b28b-477367196425
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Gg398112(v=OCS.15)

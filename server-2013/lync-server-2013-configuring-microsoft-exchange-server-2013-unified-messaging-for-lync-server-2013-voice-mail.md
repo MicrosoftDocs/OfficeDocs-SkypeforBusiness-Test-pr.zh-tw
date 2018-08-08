@@ -1,6 +1,6 @@
 ﻿---
-title: 針對 Microsoft Lync Server 2013 Voicemail 設定 Microsoft Exchange Server 2013 Unified Messaging
-TOCTitle: 針對 Microsoft Lync Server 2013 Voicemail 設定 Microsoft Exchange Server 2013 Unified Messaging
+title: "設定 Microsoft Exchange Server 2013 整合通訊以使用 Microsoft Lync Server 2013 語音信箱"
+TOCTitle: "設定 Microsoft Exchange Server 2013 整合通訊以使用 Microsoft Lync Server 2013 語音信箱"
 ms:assetid: 1be9c4f4-fd8e-4d64-9798-f8737b12e2ab
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/JJ687983(v=OCS.15)
 ms:contentKeyID: 49889963

@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：設定 Lync Server 2013 以搭配 Microsoft Exchange Server 上的 Unified Messaging 使用
+title: "Lync Server 2013：設定 Lync Server 2013 與 Microsoft Exchange Server 上的整合通訊搭配使用"
 TOCTitle: 設定 Lync Server 2013 以搭配 Microsoft Exchange Server 上的 Unified Messaging 使用
 ms:assetid: 1098ae4d-f57f-44f3-804e-39889d9fc14e
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Gg398193(v=OCS.15)

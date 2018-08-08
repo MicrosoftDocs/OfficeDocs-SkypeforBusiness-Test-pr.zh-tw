@@ -1,6 +1,6 @@
 ﻿---
-title: 從 Lync Server 2010 群組聊天或 Office Communications Server 2007 R2 群組聊天移轉至 Lync Server 2013 常設聊天室伺服器
-TOCTitle: 從 Lync Server 2010 群組聊天或 Office Communications Server 2007 R2 群組聊天移轉至 Lync Server 2013 常設聊天室伺服器
+title: "移轉Lync Server 2010或Office Communications Server 2007 R2群聊至Lync Server 2013常設聊天室伺服器"
+TOCTitle: "移轉Lync Server 2010或Office Communications Server 2007 R2群聊至Lync Server 2013常設聊天室伺服器"
 ms:assetid: 5b4d3db1-6eba-4932-b49c-f60bcf9488f9
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Gg615442(v=OCS.15)
 ms:contentKeyID: 49291025
