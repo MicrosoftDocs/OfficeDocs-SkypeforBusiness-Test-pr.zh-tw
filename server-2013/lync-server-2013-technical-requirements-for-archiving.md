@@ -63,7 +63,7 @@ Lync Server 2013 簡化封存的先決條件，原因如下：
       - Microsoft SQL Server 2012 Standard
     
     > [!NOTE]  
-    > 不支援 Microsoft SQL Server 2008 R2 Express 及 Microsoft SQL Server 2012 Express 進行封存。不支援 32 位元版本的 SQL Server。如需其他的 SQL Server 需求及限制，請參閱規劃文件或支援文件中的＜ <a href="lync-server-2013-database-software-support.md">Lync Server 2013 中的資料庫軟體支援</a>＞。
+    > 不支援 Microsoft SQL Server 2008 R2 Express 及 Microsoft SQL Server 2012 Express 進行封存。不支援 32 位元版本的 SQL Server。如需其他的 SQL Server 需求及限制，請參閱規劃文件或支援文件中的 <a href="lync-server-2013-database-software-support.md">Lync Server 2013 中的資料庫軟體支援</a>。
     
     
     您必須先設定 SQL Server 平台才能部署和啟用封存功能。如果用來發佈拓撲的帳戶擁有適當的系統管理員權限，您可以在發佈拓撲時建立封存資料庫 (LcsLog)。您也可以稍後建立資料庫，這是安裝程序的一部分。如需 SQL Server 的詳細資訊，請參閱 SQL Server TechCenter，網址為： [http://go.microsoft.com/fwlink/?linkid=129045\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=129045%26clcid=0x404)。
