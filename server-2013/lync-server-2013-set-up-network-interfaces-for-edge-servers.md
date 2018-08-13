@@ -17,8 +17,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 每個 Edge Server 都是具有對外和對內介面的多重目錄電腦。介面卡網域名稱系統 (DNS) 設定取決於周邊網路中是否有 DNS 伺服器。如果 DNS 伺服器存在於周邊中，它們必須有一個包含一或多個 DNS A 記錄的區域，以用於下一個躍點伺服器或集區 (也就是，Director 集區或指定的前端集區)，以及將名稱查閱參照到其他公用 DNS 伺服器的外部查詢。如果沒有任何 DNS 伺服器存在於周邊中，則 Edge Server 會使用外部 DNS 伺服器來解析網際網路名稱查閱，且每個 Edge Server 會使用 HOST 將下一個躍點伺服器名稱解析為 IP 位址。
 
-> [!NOTE]  
-> 基於安全性理由，建議您不要讓 Edge Server 存取內部網路中的 DNS 伺服器。
+<div class="alert"><div class="contentTableWrapper"><table summary="table"><tbody><tr><th align="left" scope="col"><img id="security" alt="security" src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="security" xmlns="" class="cl_IC101171">安全性 附註： </th></tr><tr><td>
+					基於安全性理由，建議您不要讓 Edge Server 存取內部網路中的 DNS 伺服器。
+				</td></tr></tbody></table></div></div>
 
 
 
