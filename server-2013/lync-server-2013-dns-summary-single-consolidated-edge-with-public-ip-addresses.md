@@ -49,7 +49,7 @@ _**上次修改主題的時間：** 2015-03-09_
     
     Web 會議和 A/V Edge 公開 IP 位址是 Windows Server 的 **本機區域連線內容**中 **網際網路協定第 4 版 (TCP/IPv4)** 和 **網際網路通訊協定第 6 版(TCP/IPv6)** 所出現的 **進階**區段中額外的 IP 位址。
 
-> [!TIP]
+> [!TIP]  
 > 設定 Edge Server 使用兩片網路介面卡是兩個選項之一。另一個選項是使用一片網路介面卡供內部使用，並使用三個網路介面卡供 Edge Server 的外部使用。這個選項的主要優點是每個 Edge Server Service 都有一片不同的網路介面卡，而且能夠在疑難排解時更簡潔地收集資料。
 
 
@@ -140,7 +140,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>SIP Access Edge 外部介面。DNS 自動探索其他可能同盟合作夥伴 (亦稱為「允許的 SIP 網域」，先前版本稱為增強型同盟) 的同盟所需。視需要針對所有含啟用 Lync 之使用者的 SIP 網域重複</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]  
 > 行動性和推入通知結算需要此 SRV 記錄
 

@@ -46,31 +46,17 @@ _**上次修改主題的時間：** 2014-01-08_
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每當您變更為後端資料庫鏡像關係時，皆必須重新啟動集區中的前端伺服器。<br />
+> [!IMPORTANT]  
+> 每當您變更為後端資料庫鏡像關係時，皆必須重新啟動集區中的前端伺服器。<br />
 如需變更鏡像，(例如變更鏡像伺服器的位置)，您必須使用 拓撲產生器執行以下三個步驟：
-<ol>
-<li><p>從舊鏡像伺服器移除鏡像。</p></li>
-<li><p>將鏡像新增至新鏡像伺服器。</p></li>
-<li><p>發行拓撲。</p></li>
-</ol></td>
-</tr>
-</tbody>
-</table>
-
+> <ol>
+> <li><p>從舊鏡像伺服器移除鏡像。</p></li>
+> <li><p>將鏡像新增至新鏡像伺服器。</p></li>
+> <li><p>發行拓撲。</p></li>
+> </ol>
 
 > [!NOTE]  
-> 您必須為鏡像檔案建立可供其寫入的檔案共用，而且 SQL Server 和 SQL Agent 執行所在的服務也需要讀取/寫入的權限。如果 SQL Server 服務是在 Network Service 下執行，您可以將主體和鏡像 SQL Server「&lt;網域&gt;\&lt;SQL 伺服器名稱&gt;$」都新增到共用權限。$ 必須存在，才能識別這是電腦帳戶。
+> 您必須為鏡像檔案建立可供其寫入的檔案共用，而且 SQL Server 和 SQL Agent 執行所在的服務也需要讀取/寫入的權限。如果 SQL Server 服務是在 Network Service 下執行，您可以將主體和鏡像 SQL Server「&lt;網域&gt;\\&lt;SQL 伺服器名稱&gt;$」都新增到共用權限。$ 必須存在，才能識別這是電腦帳戶。
 
 
 

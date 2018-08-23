@@ -56,25 +56,11 @@ _**上次修改主題的時間：** 2012-09-25_
 
 在範例 1 中，Tukwila 資料中心內的 Exchange UM 伺服器 1 和伺服器 2 均已啟用；Dublin 資料中心內的 Exchange UM 伺服器 3 和伺服器 4 均已啟用。當 Tukwila 中的 Exchange UM 停止運作時，應分別將伺服器 1 和 2 的網域名稱系統 (DNS) A 記錄設定為指向伺服器 3 和 4。當 Dublin 中的 Exchange UM 停止運作時，應分別將伺服器 3 和 4 的 DNS A 記錄設定為指向伺服器 1 和 2。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在範例 1 中，您還需要在每部 Exchange UM 伺服器上指派以下任一憑證：
-<ul>
-<li><p>在主體替代名稱 (SAN) 中使用含萬用字元的憑證。</p></li>
-<li><p>在 SAN 中分別放入每部 Exchange UM 伺服器的完整網域名稱 (FQDN)。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 在範例 1 中，您還需要在每部 Exchange UM 伺服器上指派以下任一憑證：
+> <ul>
+> <li><p>在主體替代名稱 (SAN) 中使用含萬用字元的憑證。</p></li>
+> <li><p>在 SAN 中分別放入每部 Exchange UM 伺服器的完整網域名稱 (FQDN)。</p></li></ul>
 
 
 **範例 2：Exchange UM 恢復能力**

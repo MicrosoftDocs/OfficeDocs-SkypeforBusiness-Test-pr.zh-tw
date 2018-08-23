@@ -19,25 +19,11 @@ _**上次修改主題的時間：** 2013-02-24_
 
 使用下列程序可建立或修改網站。例如，如果您已為一個語音功能建立網站，就不需要再建立新的網站，其他語音功能會使用這些相同的網站。不過，您可能需要修改現有網站定義，以便套用特定的功能設定。例如，如果已為 E9-1-1 建立了網站，在部署通話許可控制期間需要修改網站，以便套用頻寬原則設定檔。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可在部署文件中，找到與每個進階語音功能相關之網站的特定範例與需求：
-<ul>
-<li><p><a href="lync-server-2013-configure-network-sites-for-cac.md">在 Lync Server 2013 中設定 CAC 的網站</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!Note]  
+> 您可在部署文件中，找到與每個進階語音功能相關之網站的特定範例與需求：
+> <ul>
+> <li><p><a href="lync-server-2013-configure-network-sites-for-cac.md">在 Lync Server 2013 中設定 CAC 的網站</a></p></li>
+> </ul>
 
 如需使用網路網站的詳細資訊，請參閱 Lync Server 管理命令介面文件中關於下列 Cmdlet 的部分：
 

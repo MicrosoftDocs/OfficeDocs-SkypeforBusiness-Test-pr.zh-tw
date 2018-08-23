@@ -47,20 +47,11 @@ _**上次修改主題的時間：** 2013-10-24_
 
 6.  **\[簡單名稱\]** 欄位會預先填入出現在 **\[名稱\]** 欄位中的相同名稱。您可以選擇性地編輯此欄位來指定更為描述性的名稱，以便反映套用撥號對應表的網站、服務或使用者。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[簡單名稱] 在 Lync Server 部署內的所有撥號對應表之間必須是唯一的。此名稱不得超過 256 個 Unicode 字元，其中每個字元可以是字母或數字字元、連字號 (-)、句點 (.) 或底線 (_)。<br />
-    「不支援」的字元 包括空格與在 RFC 3966 (http://www.ietf.org/rfc/rfc3966.txt) 中定義的保留字元。 [簡單名稱]中「不支援」的保留字元包括以下：<br />
-    &quot;;&quot; &quot;/&quot; &quot;?&quot; &quot;:&quot; &quot;@&quot; &quot;&amp;&quot; &quot;=&quot; &quot;+&quot; &quot;$&quot; &quot;,&quot;</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+    > [簡單名稱] 在 Lync Server 部署內的所有撥號對應表之間必須是唯一的。此名稱不得超過 256 個 Unicode 字元，其中每個字元可以是字母或數字字元、連字號 (-)、句點 (.) 或底線 (_)。<br />
+    > 「不支援」的字元 包括空格與在 RFC 3966 (http://www.ietf.org/rfc/rfc3966.txt) 中定義的保留字元。 [簡單名稱]中「不支援」的保留字元包括以下：<br />
+    > &quot;;&quot; &quot;/&quot; &quot;?&quot; &quot;:&quot; &quot;@&quot; &quot;&amp;&quot; &quot;=&quot; &quot;+&quot; &quot;$&quot; &quot;,&quot;
+
 
 
 7.  (選用) 在 **\[描述\]** 欄位中，可以輸入有關撥號對應表的其他描述性資訊。

@@ -189,7 +189,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>Exchange Server 2013</p></td>
 <td><p>與 Exchange Server 2010 支援相同，增加了整合連絡人存放區、高解析度圖片，以及封存整合。</p>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 如需詳細資訊，請參閱＜<a href="lync-server-2013-integrating-with-microsoft-exchange-server-2013.md">整合 Microsoft Lync Server 2013 與 Microsoft Exchange Server 2013</a>＞。
 
@@ -272,25 +273,11 @@ Lync Server 2013 支援執行 Macintosh 作業系統之電腦上的某些用戶�
 
 \*最新版 Windows Live Messenger 支援 A/V。如果您透過 Windows Live Messenger 實作音訊/視訊 (A/V) 同盟，您還必須修改伺服器加密層級。根據預設，加密層級為 \[必要\]。您必須使用 Lync Server 管理命令介面將此設定變更為 \[支援\]。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的確切結束日期。如需詳細資訊，請參閱＜<a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>＞。</p></li>
-<li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
-<li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync 標準 CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]   
+> <p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的確切結束日期。如需詳細資訊，請參閱＜<a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>＞。</p></li>
+> <p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
+> <p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync 標準 CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。</p>  
 
 
 ## 請參閱

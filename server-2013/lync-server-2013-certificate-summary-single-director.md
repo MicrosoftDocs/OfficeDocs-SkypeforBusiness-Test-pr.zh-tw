@@ -52,7 +52,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>OAuthTokenIssuer</p></td>
 <td><p>dir01.contoso.net</p></td>
 <td><p>無項目</p></td>
-<td><div class="alert">
+<td><div>
+
 > [!IMPORTANT]  
 > 請注意，雖然最小金鑰長度是 1024，但是您可能會收到警告表示建議最小金鑰長度為 2048 位元。
 

@@ -17,25 +17,12 @@ _**上次修改主題的時間：** 2012-09-21_
 
 請在中央網站執行這項程序，其中至少包含一個 前端集區或 Standard Edition 伺服器。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行此程序之前，必須符合下列條件：
-<ul>
-<li><p>必須在中央網站設定 Lync Server 2013  通訊軟體。</p></li>
-<li><p>必須將 中繼伺服器部署於中央網站。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> 在執行此程序之前，必須符合下列條件：
+> <ul>
+> <li><p>必須在中央網站設定 Lync Server 2013  通訊軟體。</p></li>
+> <li><p>必須將 中繼伺服器部署於中央網站。</p></li>
+> </ul>
 
 
 ## 定義 PSTN 閘道

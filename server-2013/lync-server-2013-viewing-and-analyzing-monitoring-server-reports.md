@@ -49,7 +49,6 @@ A primary part of keeping Monitoring Server Reports interesting for daily and we
 
 8.  Click **Commit**.
 
-9.  
 
 ## Configure QoE
 

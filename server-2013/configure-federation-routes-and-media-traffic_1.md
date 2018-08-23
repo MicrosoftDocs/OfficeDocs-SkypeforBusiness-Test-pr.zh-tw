@@ -24,25 +24,12 @@ _**上次修改主題的時間：** 2012-10-16_
 
 
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您的舊版 Office Communications Server 2007 R2 Edge Server 是設定為使用與 Access Edge Service、Web Conferencing Edge Service 以及 A/V Edge Service 相同的 FQDN，就不支援本節中轉換同盟設定至 Lync Server 2013 Edge Server 的程序。如果舊版 Edge Service 是設定為使用相同的 FQDN，您必須先將所有使用者從 Office Communications Server 2007 R2 移轉至 Lync Server 2013，然後解除委任 Office Communications Server 2007 R2 Edge Server 後才能啟用 Lync Server 2013 Edge Server 上的同盟功能。如需詳細資訊，請參閱下列主題：
-<ul>
-<li><p><a href="move-remaining-users-to-lync-server-2013_1.md">將剩餘使用者移到 Lync Server 2013</a></p></li>
-<li><p>＜移除伺服器與伺服器角色＞(英文)，網址為： <a href="http://go.microsoft.com/fwlink/?linkid=268790%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268790&amp;clcid=0x404</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> 若您的舊版 Office Communications Server 2007 R2 Edge Server 是設定為使用與 Access Edge Service、Web Conferencing Edge Service 以及 A/V Edge Service 相同的 FQDN，就不支援本節中轉換同盟設定至 Lync Server 2013 Edge Server 的程序。如果舊版 Edge Service 是設定為使用相同的 FQDN，您必須先將所有使用者從 Office Communications Server 2007 R2 移轉至 Lync Server 2013，然後解除委任 Office Communications Server 2007 R2 Edge Server 後才能啟用 Lync Server 2013 Edge Server 上的同盟功能。如需詳細資訊，請參閱下列主題：
+> <ul>
+> <li><p><a href="move-remaining-users-to-lync-server-2013_1.md">將剩餘使用者移到 Lync Server 2013</a></p></li>
+> <li><p>＜移除伺服器與伺服器角色＞(英文)，網址為： <a href="http://go.microsoft.com/fwlink/?linkid=268790%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268790&amp;clcid=0x404</a></p></li>
+> </ul>
 
 
 > [!IMPORTANT]  
@@ -184,20 +171,11 @@ _**上次修改主題的時間：** 2012-10-16_
 
 3.  等候部署中所有集區的 Active Directory 複寫作業開始。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您將會見到下列訊息：<br />
-    <strong>警告：拓撲包含多個同盟 Edge Server。移轉至最新版本的產品時可能會發生此問題。在這個情況下，僅會啟動一個 Edge Server 以主動用於同盟。請確認外部 DNS SRV 記錄有指向正確的 Edge Server。若您想同時部署多部主動的同盟 Edge Server (亦即，不是在移轉案例中)，請確認所有同盟協力廠商都是使用 Office Communications Server 2007 R2 或 Lync Server，並確認外部 DNS SRV 記錄有提列所有啟用同盟的 Edge Servers。</strong><br />
-    此為預期中的警告，可以不予理會。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+    > 您將會見到下列訊息：<br />
+    > <strong>警告：拓撲包含多個同盟 Edge Server。移轉至最新版本的產品時可能會發生此問題。在這個情況下，僅會啟動一個 Edge Server 以主動用於同盟。請確認外部 DNS SRV 記錄有指向正確的 Edge Server。若您想同時部署多部主動的同盟 Edge Server (亦即，不是在移轉案例中)，請確認所有同盟協力廠商都是使用 Office Communications Server 2007 R2 或 Lync Server，並確認外部 DNS SRV 記錄有提列所有啟用同盟的 Edge Servers。</strong><br />
+    > 此為預期中的警告，可以不予理會。
+
 
 
 ## 驗證同盟及外部使用者的遠端存取

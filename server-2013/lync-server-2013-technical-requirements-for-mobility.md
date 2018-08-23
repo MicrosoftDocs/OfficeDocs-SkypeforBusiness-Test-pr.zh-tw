@@ -39,20 +39,11 @@ Mobility Services Mcx (在 Lync Server 2010 累計更新 (2011 年 11 月) 導�
 
 當您使用自動探索時，行動裝置會使用 DNS 尋找資源。在 DNS 查閱期間，會先嘗試連線至與內部 DNS 記錄 (lyncdiscoverinternal.*\<internal domain name\>*) 相關聯的 FQDN。如果無法使用內部 DNS 記錄來建立連線，則會嘗試使用外部 DNS 記錄 (lyncdiscover.*\<sipdomain\>*) 來進行連線。在網路內部的行動裝置會連線至內部自動探索服務 URL，而在網路外部的行動裝置會連線至外部自動探索服務 URL。外部自動探索要求會通過反向 Proxy。Lync Server 2013 自動探索服務會針對使用者的主集區，傳回所有 Web 服務 URL，包括 Mobility Service (Mcx 和 UCWA) URL。不過，內部 Mobility Service URL 及外部 Mobility Service URL 都會與外部 Web 服務 FQDN 相關聯。因此，無論行動裝置是在網路內部或外部，該裝置都會透過反向 Proxy 從外部連線至 Lync Server 2013 Mobility Service。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必須注意的是，您的部署可能包含內部和外部使用的多個不同命名空間。SIP 網域名稱可能與內部部署網域名稱不同。例如，SIP 網域可能是 <strong>contoso.com</strong>，而內部部署可能是 <strong>contoso.net</strong>。登入 Lync Server 的使用者將使用 SIP 網域名稱，例如 <strong>john@contoso.com</strong>。處理外部 Web 服務 (在 拓撲產生器 中定義為 [外部 Web 服務]) 時，網域名稱和 SIP 網域名稱將與 DNS 中定義的名稱一致。處理內部 Web 服務 (在 拓撲產生器 中定義為 [內部 Web 服務]) 時，內部 Web 服務的預設名稱將是 前端伺服器、前端集區、Director 或 Director 集區 的 FQDN。您可以選擇覆寫內部 Web 服務名稱。對於內部 Web 服務，您應該使用內部網域名稱 (而非 SIP 網域名稱)，並定義 DNS 主機 A (對於 IPv6 則是 AAAA) 記錄來反映覆寫的名稱。例如，預設的內部 Web 服務 FQDN 可能是 <strong>pool01.contoso.net</strong>。受覆寫的內部 Web 服務 FQDN 可能是 <strong>webpool.contoso.net</strong>。以此方式定義 Web 服務有助於確保遵循服務的內部及外部位置 (而非使用服務之使用者的位置)。<br />
-不過，由於 Web 服務是在 拓撲產生器 中定義，而且可以覆寫內部 Web 服務名稱，因此，只要產生的 Web 服務名稱、驗證該服務的憑證和定義該服務的 DNS 記錄三者保持一致，您就能夠以任何的網域名稱 (包括 SIP 網域名稱) 定義您所需的內部 Web 服務。最後，IP 位址的名稱解析將由 DNS 主機記錄和一致的命名空間所決定。<br />
-對於本主題和範例而言，內部網域名稱是用來說明拓撲和 DNS 定義。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 必須注意的是，您的部署可能包含內部和外部使用的多個不同命名空間。SIP 網域名稱可能與內部部署網域名稱不同。例如，SIP 網域可能是 <strong>contoso.com</strong>，而內部部署可能是 <strong>contoso.net</strong>。登入 Lync Server 的使用者將使用 SIP 網域名稱，例如 <strong>john@contoso.com</strong>。處理外部 Web 服務 (在 拓撲產生器 中定義為 [外部 Web 服務]) 時，網域名稱和 SIP 網域名稱將與 DNS 中定義的名稱一致。處理內部 Web 服務 (在 拓撲產生器 中定義為 [內部 Web 服務]) 時，內部 Web 服務的預設名稱將是 前端伺服器、前端集區、Director 或 Director 集區 的 FQDN。您可以選擇覆寫內部 Web 服務名稱。對於內部 Web 服務，您應該使用內部網域名稱 (而非 SIP 網域名稱)，並定義 DNS 主機 A (對於 IPv6 則是 AAAA) 記錄來反映覆寫的名稱。例如，預設的內部 Web 服務 FQDN 可能是 <strong>pool01.contoso.net</strong>。受覆寫的內部 Web 服務 FQDN 可能是 <strong>webpool.contoso.net</strong>。以此方式定義 Web 服務有助於確保遵循服務的內部及外部位置 (而非使用服務之使用者的位置)。<br />
+> 不過，由於 Web 服務是在 拓撲產生器 中定義，而且可以覆寫內部 Web 服務名稱，因此，只要產生的 Web 服務名稱、驗證該服務的憑證和定義該服務的 DNS 記錄三者保持一致，您就能夠以任何的網域名稱 (包括 SIP 網域名稱) 定義您所需的內部 Web 服務。最後，IP 位址的名稱解析將由 DNS 主機記錄和一致的命名空間所決定。<br />
+> 對於本主題和範例而言，內部網域名稱是用來說明拓撲和 DNS 定義。
+
 
 
 下圖說明使用內部和外部 DNS 設定時，Mobility Service 和自動探索服務的行動應用程式 Web 要求流程。

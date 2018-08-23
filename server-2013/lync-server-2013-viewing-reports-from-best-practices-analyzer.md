@@ -47,7 +47,7 @@ _**上次修改主題的時間：** 2012-09-21_
       - 若要從本機儲存的掃描結果清單檢視報告，請按一下掃描名稱，然後按 **\[檢視此掃描的報告\]**。
         
         > [!NOTE]  
-        > 最佳做法分析程式會從 <em>&lt;systemDrive&gt;</em>\Documents and Settings\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 資料夾建立本機檔案清單。
+        > 最佳做法分析程式會從 <em>&lt;systemDrive&gt;</em>\Documents and Settings\\<em>&lt;user&gt;</em>\Application Data\Microsoft\RtcBPA 資料夾建立本機檔案清單。
         
     
       - 若要檢視儲存於其他位置的掃描結果報告，請按一下 **\[匯入掃描\]**，尋找包含有掃描結果的檔案，然後按 **\[開啟\]**。

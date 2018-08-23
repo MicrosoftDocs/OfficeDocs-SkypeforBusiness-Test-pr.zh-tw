@@ -52,8 +52,9 @@ DNS 記錄摘要表格會說明針對開放或可公開同盟的必要輸入。�
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>您的同盟和其他潛在同盟協力廠商之自動 DNS 探索的必要 Access Edge Service 外部介面，其亦稱為「允許的 SIP 網域」(舊版則稱為增強型同盟)。您可視需要，針對啟用了 Lync 之使用者的所有 SIP 網域重複此項目。</p>
-<div class="alert">
-> [!IMPORTANT]  
+<div>
+
+> [!IMPORTANT]    
 > 行動性和推播通知結算所都必須使用此 SRV 記錄。若您有一個以上的 SIP 網域，請針對將服務 Lync Mobile 用戶端的每個網域建立並發行 SRV 記錄。若不是每個部署支援的 SIP 網域都具備明確的 SRV 記錄，則推播通知服務和 Apple 推播通知服務可能無法如預期般運作。
 
 

@@ -37,25 +37,12 @@ _**上次修改主題的時間：** 2015-07-17_
 
 這些表格說明 Lync Server 2013 內部部署中 Lync 使用者可使用的功能。除了表格註腳說明的內容，相同的功能也適用於 商務用 Skype Online 和 Microsoft Office 365 使用者。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>如需一般使用者的線上說明和資源，請參閱＜行動用戶端 Microsoft Lync 2013＞，網址為：<a href="http://go.microsoft.com/fwlink/?linkid=286237">http://go.microsoft.com/fwlink/?LinkId=286237</a>。</p></li>
-<li><p>若要比較其他 Lync 2013 用戶端的可用功能，請參閱＜<a href="lync-server-2013-desktop-client-comparison-tables.md">Lync Server 2013 的用戶端比較表</a>＞。</p></li>
-<li><p>Lync Server 2013 亦支援 Lync 2010 行動應用程式。如需詳細資訊，請參閱 Lync Server 2010 文件庫中的＜行動用戶端比較一覽表＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=234777" class="uri">http://go.microsoft.com/fwlink/?linkid=234777</a>。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> <ul>
+> <li><p>如需一般使用者的線上說明和資源，請參閱＜行動用戶端 Microsoft Lync 2013＞，網址為：<a href="http://go.microsoft.com/fwlink/?linkid=286237">http://go.microsoft.com/fwlink/?LinkId=286237</a>。</p></li>
+> <li><p>若要比較其他 Lync 2013 用戶端的可用功能，請參閱＜<a href="lync-server-2013-desktop-client-comparison-tables.md">Lync Server 2013 的用戶端比較表</a>＞。</p></li>
+> <li><p>Lync Server 2013 亦支援 Lync 2010 行動應用程式。如需詳細資訊，請參閱 Lync Server 2010 文件庫中的＜行動用戶端比較一覽表＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=234777" class="uri">http://go.microsoft.com/fwlink/?linkid=234777</a>。</p></li>
+> </ul>
 
 
 ## 登入、推入通知與一般功能

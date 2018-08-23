@@ -59,7 +59,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>若要使用 Microsoft Exchange 整合 (針對部分或所有使用者使用 Exchange 2013 封存存放區)，您需要現有 Exchange 2013 部署。</p></li>
 <li><p>若針對部分或所有使用者使用個別封存資料庫 (使用 SQL Server 資料庫) 封存存放區，伺服器上的 SQL Server 將會儲存封存資料。</p></li>
 </ul>
-<div class="alert">
+<div>
+
 > [!NOTE]  
 > 封存會在 Enterprise Pool 前端伺服器與 Standard Edition Server 上執行。安裝這些伺服器除必條件外，沒有額外的硬體或軟體需求。
 

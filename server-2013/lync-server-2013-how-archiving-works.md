@@ -49,9 +49,9 @@ Lync Server 也不會封存常設聊天室的交談。若要封存常設聊天�
 
 當您部署伺服器時，封存會自動安裝於每部前端伺服器上，但在您設定封存之前不會加以啟用。您設定封存的方式是根據您部署封存的方式來決定：
 
-  - **使用 Microsoft Exchange 整合進行封存。**如果您的使用者位於 Exchange 2013 且其信箱狀態為 \[就地保留\]，則您可以選取選項來將 Lync Server 2013 儲存與 Exchange 儲存整合。如果您選擇 Microsoft Exchange 整合選項，就可以使用 Exchange 2013 原則和設定來控制這些使用者的 Lync Server 2013 資料封存。
+  - **使用 Microsoft Exchange 整合進行封存。** 如果您的使用者位於 Exchange 2013 且其信箱狀態為 \[就地保留\]，則您可以選取選項來將 Lync Server 2013 儲存與 Exchange 儲存整合。如果您選擇 Microsoft Exchange 整合選項，就可以使用 Exchange 2013 原則和設定來控制這些使用者的 Lync Server 2013 資料封存。
 
-  - **使用 Lync Server 封存資料庫進行封存。**如果您的使用者並未位於 Exchange 2013 或他們的信箱狀態不是 \[就地保留\]，或者如果您不想針對部署中的任何或所有使用者使用 Microsoft Exchange 整合，則您可以使用 SQL Server 來部署 Lync Server 封存資料庫，以儲存這些使用者的封存資料。在此情況下，Lync Server 2013 封存原則和設定會決定是否要啟用封存及實作封存的方式。若要使用 Lync Server 2013，您必須將適當的 SQL Server 資料庫新增至您的拓撲並發行該拓撲。
+  - **使用 Lync Server 封存資料庫進行封存。** 如果您的使用者並未位於 Exchange 2013 或他們的信箱狀態不是 \[就地保留\]，或者如果您不想針對部署中的任何或所有使用者使用 Microsoft Exchange 整合，則您可以使用 SQL Server 來部署 Lync Server 封存資料庫，以儲存這些使用者的封存資料。在此情況下，Lync Server 2013 封存原則和設定會決定是否要啟用封存及實作封存的方式。若要使用 Lync Server 2013，您必須將適當的 SQL Server 資料庫新增至您的拓撲並發行該拓撲。
 
 ## 使用 Microsoft Exchange 整合時進行封存設定
 

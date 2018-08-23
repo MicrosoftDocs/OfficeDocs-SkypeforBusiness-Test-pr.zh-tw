@@ -17,19 +17,9 @@ _**上次修改主題的時間：** 2013-02-16_
 
 針對 Lync Server 的自動探索推出於 Lync Server 2010 累計更新 (2011 年 11 月)。此初始實作自動探索的主要目的是提供 Lync Mobile 尋找 Mobility Service (Mcx) 的方法。Lync Server 2013 中的自動探索服務現在是所有用戶端在尋找伺服器和使用者服務時所用的服務。Microsoft Lync Server 2013 自動探索服務執行於 Director 和前端伺服器上。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需自動探索以及與用戶端通訊之內容的詳細技術資訊，請參閱＜<a href="lync-server-2013-understanding-autodiscover.md">了解自動探索</a>＞。<br />
-Mobility 仍為不同的案例，且 Mobility Services 還是需要某些特別的規劃。如需詳細資訊，請參閱＜<a href="lync-server-2013-planning-for-mobility.md">Lync Server 2013 中的行動規劃</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> 如需自動探索以及與用戶端通訊之內容的詳細技術資訊，請參閱＜<a href="lync-server-2013-understanding-autodiscover.md">了解自動探索</a>＞。<br />
+Mobility 仍為不同的案例，且 Mobility Services 還是需要某些特別的規劃。如需詳細資訊，請參閱＜<a href="lync-server-2013-planning-for-mobility.md">Lync Server 2013 中的行動規劃</a>＞。
 
 
 當在 Lync Server 2010 中推出自動探索時必須做出妥協，才能實作這個可能需要對現有伺服器部署變更憑證的服務。自動探索可透過連接埠 TCP 443 用於 HTTPS，或透過連接埠 TCP 80 用於 HTTP。如果決定使用 HTTPS，則需要重新發行反向 Proxy、Director 及前端伺服器上的憑證，才能配合所需的 `lyncdiscover.<網域>` 和 `lyncdiscoverinternal.<網域>` DNS 記錄。如果決定使用 HTTP，則可使用 DNS CNAME (或別名) 記錄，在憑證上使用現有的名稱，即可避免重新發行憑證。使用 HTTP 也表示初始通訊是未加密的。

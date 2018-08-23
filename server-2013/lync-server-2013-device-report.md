@@ -219,28 +219,20 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>語音交換原因</strong></p></td>
 <td><p>通話必須切換至半雙工模式以防止回音的原因。在半雙工模式中，同一時間通訊只能單向傳送，類似於使用對講機時使用者輪流通訊。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[全部]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>無</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>損毀的時間戳記</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>回音</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>DNLP (動態非線性處理器)</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>低複雜性</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>不良的裝置狀態</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>AEC 後的回音 (柔和式迴音效果取消功能)</p>
 </dd>
 </dl></td>
@@ -249,25 +241,18 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>回音的原因</strong></p></td>
 <td><p>在通話中偵測到超出可接受之程度的回音原因。(在電信中，回音是聲音的反射，當您對著水井的底部大叫時會聽到相同的現象)。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[全部]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>無</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>損毀的時間戳記</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>AEC 後的回音 (柔和式迴音效果取消功能)</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>ANLP (調適式非線性處理器)</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>DNLP (動態非線性處理器)</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>麥克風雜音</p>
 </dd>
 </dl></td>
@@ -276,16 +261,12 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>通話類型</strong></p></td>
 <td><p>指出所進行的通話類型。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[全部]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>用戶端通話</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>PSTN 通話</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>會議通話</p>
 </dd>
 </dl></td>
@@ -294,13 +275,10 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>存取類型</strong></p></td>
 <td><p>指出撥打電腦時，用戶端是否登入內部網路或外部網路。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[全部]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>內部</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>外部</p>
 </dd>
 </dl></td>
@@ -309,13 +287,10 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>網路類型</strong></p></td>
 <td><p>指出當撥打電話時，用戶端連線的網路類型。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[全部]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>有線</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>無線</p>
 </dd>
 </dl></td>
@@ -324,13 +299,10 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>VPN</strong></p></td>
 <td><p>指出當撥打電話時，外部用戶端是否使用虛擬私人網路 (VPN) 連線。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>[全部]</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>VPN</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>非 VPN</p>
 </dd>
 </dl></td>
@@ -339,13 +311,10 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p><strong>裝置類型</strong></p></td>
 <td><p>指出裝置類型。請選取下列其中一項：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>擷取裝置</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>轉換裝置</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>成對的擷取/轉換裝置</p>
 </dd>
 </dl></td>

@@ -1,5 +1,5 @@
 ﻿---
-title: Lync Server 2013：將使用者隸屬於 Survivable Branch Appliance 或 Survivable Branch Server
+title: "Lync Server 2013：將使用者隸屬於 Survivable Branch Appliance 或 Survivable Branch 伺服器"
 TOCTitle: 將使用者隸屬於 Survivable Branch Appliance 或 Survivable Branch Server
 ms:assetid: faf1ebb9-6d7d-4a58-8ff7-801b7b31d3ba
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Gg413066(v=OCS.15)

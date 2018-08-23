@@ -24,20 +24,11 @@ _**上次修改主題的時間：** 2013-02-17_
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要規劃外部使用者連線 (例如同盟、外部使用者存取或行動性功能)，則須使用 Edge Server 搭配 Standard Edition 伺服器 和 前端伺服器或 前端集區。 Standard Edition 伺服器 和 前端伺服器或 前端集區沒有可供外部使用者存取您內部部署的必要元件，或是供內部部署與外部使用者通訊的必要元件。如需包含外部使用者與內部使用者共同作業或通訊的所有案例，包括行動性，您必須至少部署一部 Edge Server 和一個反向 Proxy。<br />
-「推播通知」 使用 Lync Online 服務的一種同盟，用於裝載「推播通知結算所」(PNCH)。當行動裝置處於非使用的狀態時，推播通知會參考音效通知、螢幕上通知 (文字) 和徽章，這些項目由應用程式向 Apple iPhone、iPad 和 Windows Phone 進行推播。PNCH 會從 Lync Server 收到推播通知。當 PNCH 收到訊息通知後，PNCH 會根據訊息的預期行動用戶端收件者，透過 Apple 推播通知服務或 Lync Server 2013 推播通知服務，將通知轉寄給行動用戶端。PNCH 對這些行動用戶端而言，是必要服務。為了與 Lync Online 同盟，PNCH 使用 Edge Server 和憑證確保機密性和驗證、原則以及正確設定的網域名稱系統 (DNS) 記錄。Nokia Symbian 和 Android 型 Lync Mobile 用戶端不使用 PNCH。如需規劃和部署 Edge Server 的詳細資訊，請參閱＜ <a href="lync-server-2013-planning-for-external-user-access.md">在 Lync Server 2013 中規劃外部使用者存取</a>＞和＜ <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部使用者存取</a>＞。<br />
-使用 Apple 裝置的 Lync 2013 Mobile 用戶端引進了 Lync Server 2013 累計更新 (2013 年 2 月)，不再使用推播通知或推播通知結算所 (PNCH)。 Windows Phone 上的 Lync 2013 Mobile 用戶端仍使用推播通知和 PNCH。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 如果您要規劃外部使用者連線 (例如同盟、外部使用者存取或行動性功能)，則須使用 Edge Server 搭配 Standard Edition 伺服器 和 前端伺服器或 前端集區。 Standard Edition 伺服器 和 前端伺服器或 前端集區沒有可供外部使用者存取您內部部署的必要元件，或是供內部部署與外部使用者通訊的必要元件。如需包含外部使用者與內部使用者共同作業或通訊的所有案例，包括行動性，您必須至少部署一部 Edge Server 和一個反向 Proxy。<br />
+> 「推播通知」 使用 Lync Online 服務的一種同盟，用於裝載「推播通知結算所」(PNCH)。當行動裝置處於非使用的狀態時，推播通知會參考音效通知、螢幕上通知 (文字) 和徽章，這些項目由應用程式向 Apple iPhone、iPad 和 Windows Phone 進行推播。PNCH 會從 Lync Server 收到推播通知。當 PNCH 收到訊息通知後，PNCH 會根據訊息的預期行動用戶端收件者，透過 Apple 推播通知服務或 Lync Server 2013 推播通知服務，將通知轉寄給行動用戶端。PNCH 對這些行動用戶端而言，是必要服務。為了與 Lync Online 同盟，PNCH 使用 Edge Server 和憑證確保機密性和驗證、原則以及正確設定的網域名稱系統 (DNS) 記錄。Nokia Symbian 和 Android 型 Lync Mobile 用戶端不使用 PNCH。如需規劃和部署 Edge Server 的詳細資訊，請參閱＜ <a href="lync-server-2013-planning-for-external-user-access.md">在 Lync Server 2013 中規劃外部使用者存取</a>＞和＜ <a href="lync-server-2013-deploying-external-user-access.md">在 Lync Server 2013 中部署外部使用者存取</a>＞。<br />
+> 使用 Apple 裝置的 Lync 2013 Mobile 用戶端引進了 Lync Server 2013 累計更新 (2013 年 2 月)，不再使用推播通知或推播通知結算所 (PNCH)。 Windows Phone 上的 Lync 2013 Mobile 用戶端仍使用推播通知和 PNCH。
+
 
 
 ## 行動性元件

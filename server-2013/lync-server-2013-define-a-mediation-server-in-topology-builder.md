@@ -35,26 +35,12 @@ _**上次修改主題的時間：** 2013-03-25_
 
 5.  在 \[選取組合的伺服器角色\] 中，勾選 \[組合 中繼伺服器\] 選項。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
-    <li><p>如果您選取的 前端集區類型是 Enterprise Edition，則將會在該 前端集區的所有 前端伺服器上安裝 中繼伺服器元件。</p></li>
-    <li><p>中繼伺服器所使用的 [下一個躍點集區] 將會是已在其中組合 中繼伺服器的 前端集區。</p></li>
-    <li><p>中繼伺服器所使用的 [Edge 集區] 將會是與已在其中組合 中繼伺服器的 前端集區相關聯的相同 Edge 集區。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!Note]  
+	> <ul>
+    > <li><p>如果您選取的 前端集區類型是 Enterprise Edition，則將會在該 前端集區的所有 前端伺服器上安裝 中繼伺服器元件。</p></li>
+    > <li><p>中繼伺服器所使用的 [下一個躍點集區] 將會是已在其中組合 中繼伺服器的 前端集區。</p></li>
+    > <li><p>中繼伺服器所使用的 [Edge 集區] 將會是與已在其中組合 中繼伺服器的 前端集區相關聯的相同 Edge 集區。</p></li>
+    > </ul>
 
 6.  按一下 \[成為預設\] ，使用這個 前端集區，將通話從 Microsoft Office Communications Server 2007 R2 路由傳送至 PSTN。
 

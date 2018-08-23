@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server: Protecting the Edge Server Against DoS and Password Brute-Force Attacks'
+title: "Lync Server：保護 Edge Server 避免 DoS 和暴力密碼破解攻擊"
 TOCTitle: Protecting the Edge Server Against DoS and Password Brute-Force Attacks in Lync Server
 ms:assetid: a2aff6d2-8e3e-4c25-9dbd-07b535e90b73
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Dn879446(v=OCS.15)

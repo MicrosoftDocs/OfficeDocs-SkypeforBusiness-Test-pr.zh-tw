@@ -182,19 +182,8 @@ _**上次修改主題的時間：** 2012-09-08_
     
       - 匯出所有延伸內容
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>從 Edge Server 匯出憑證時，不要選取 [如果匯出成功即刪除私密金鑰] 。選取這個選項時，必須將憑證和私密金鑰匯入這個 Edge Server。</td>
-        </tr>
-        </tbody>
-        </table>
-
+        > [!WARNING]  
+		> 從 Edge Server 匯出憑證時，不要選取 [如果匯出成功即刪除私密金鑰] 。選取這個選項時，必須將憑證和私密金鑰匯入這個 Edge Server。
 
 10. 按 **\[下一步\]** 。
 

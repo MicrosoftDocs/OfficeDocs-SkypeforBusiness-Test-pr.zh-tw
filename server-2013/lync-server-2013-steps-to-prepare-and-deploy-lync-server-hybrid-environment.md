@@ -56,7 +56,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p></p></td>
 <td><p>Active Directory 同步作業的準備</p></td>
 <td><p>Active Directory 同步作業會持續將內部部署 Active Directory 與 Office 365 保持同步。這可讓您建立每一個使用者帳戶與群組的同步版本，也可讓全域通訊清單 (GAL) 從本機的 Microsoft Exchange Server 環境到 Microsoft Exchange Online 保持同步。</p>
-<div class="alert">
+<div>
+
 > [!IMPORTANT]  
 > 您需要替組織中位於內部部署與線上 Lync 部署的所有 Lync 使用者同步處理 AD 帳戶，即使使用者並未移至 Lync Online 亦然。如果您並未同步處理所有使用者，組織中的內部部署使用者與線上使用者可能無法如預期般正常通訊。
 

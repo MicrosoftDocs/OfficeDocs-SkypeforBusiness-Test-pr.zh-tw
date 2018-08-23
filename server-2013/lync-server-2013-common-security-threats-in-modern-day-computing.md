@@ -79,7 +79,7 @@ Microsoft Lync Server 2013 內預設的流量建議和設定，是在受信任�
 
 Microsoft Lync Server 2013 有可能會在公用網路上洩露資訊，而可能藉此連結至個人。資訊類型可細分成兩種特定類別：
 
-  - **增強型目前狀態資料： **「增強型目前狀態資料」是指使用者可選擇是否透過同盟合作夥伴的連結共用的資訊，或是與組織中的連絡人共用的資訊。這類資料不會與公用 IM 網路上的使用者共用。用戶端原則和其他用戶端設定可讓系統管理員進行一些控管。在 Lync Server 2013 中，可以為個別的使用者設定增強型目前狀態隱私權模式，以避免不在使用者連絡清單中的 Lync 使用者看到使用者的目前狀態資訊。增強型目前狀態隱私權模式無法避免 Microsoft Office Communicator 2007 與 Microsoft Office Communicator 2007 R2 的使用者看到使用者的目前狀態資訊。如需詳細資訊，請參閱快速入門文件中的[Lync Server 2013 中的用戶端最新訊息](lync-server-2013-what-s-new-for-clients.md)與部署文件中的[設定增強的顯示狀態隱私權模式](lync-server-2013-configuring-enhanced-presence-privacy-mode.md)。
+  - **增強型目前狀態資料：**「增強型目前狀態資料」是指使用者可選擇是否透過同盟合作夥伴的連結共用的資訊，或是與組織中的連絡人共用的資訊。這類資料不會與公用 IM 網路上的使用者共用。用戶端原則和其他用戶端設定可讓系統管理員進行一些控管。在 Lync Server 2013 中，可以為個別的使用者設定增強型目前狀態隱私權模式，以避免不在使用者連絡清單中的 Lync 使用者看到使用者的目前狀態資訊。增強型目前狀態隱私權模式無法避免 Microsoft Office Communicator 2007 與 Microsoft Office Communicator 2007 R2 的使用者看到使用者的目前狀態資訊。如需詳細資訊，請參閱快速入門文件中的[Lync Server 2013 中的用戶端最新訊息](lync-server-2013-what-s-new-for-clients.md)與部署文件中的[設定增強的顯示狀態隱私權模式](lync-server-2013-configuring-enhanced-presence-privacy-mode.md)。
 
   - **必要資料：** 「必要資料」是指正常操作伺服器或用戶端時所需的資料，該資料「不受」用戶端或系統管理員控制。這項資訊為伺服器或網路層級所需，用於路由、狀態維護及發出訊號。
 

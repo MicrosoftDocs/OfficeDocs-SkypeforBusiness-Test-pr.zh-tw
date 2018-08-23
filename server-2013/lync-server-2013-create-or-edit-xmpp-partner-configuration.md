@@ -63,18 +63,8 @@ Microsoft Lync Server 2013 會整合 Edge Server 上的 Extensible Messaging and
     
       - **SASL 交涉** 。定義 SASL 交涉規則。XMPP 服務可以將 SASL 視為必要或選用，或者由您將 SASL 定義為不支援。選擇 \[選擇性\] 會將此需求留給協力廠商 XMPP 服務進行必須交涉的決定。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>SASL 要求 TLS。若要使用 SASL，TLS 必須是必要項目或選用項目。任何將 SASL 定義為必要或選用的設定都必須受到 TLS 支援。按一下 <strong>[認可]</strong> 以儲存您的變更時，如果您尚未將 TLS 設定為必要或選用，系統將會警告您，SASL 必須受到 TLS 支援，而您的變更將不會儲存。若要解決此錯誤，請將 TLS 設定為 <strong>[必要]</strong> 或 <strong>[選用]</strong> 。如果 SASL 的用法為選用且無法支援 TLS 交涉，則您必須將 SASL 交涉設定為 <strong>[不支援]</strong> 。利用 XMPP 服務來確認適用於 TLS 和 SASL 的正確交涉資料流必須是何種類型，或者將會發生服務中斷。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> SASL 要求 TLS。若要使用 SASL，TLS 必須是必要項目或選用項目。任何將 SASL 定義為必要或選用的設定都必須受到 TLS 支援。按一下 <strong>[認可]</strong> 以儲存您的變更時，如果您尚未將 TLS 設定為必要或選用，系統將會警告您，SASL 必須受到 TLS 支援，而您的變更將不會儲存。若要解決此錯誤，請將 TLS 設定為 <strong>[必要]</strong> 或 <strong>[選用]</strong> 。如果 SASL 的用法為選用且無法支援 TLS 交涉，則您必須將 SASL 交涉設定為 <strong>[不支援]</strong> 。利用 XMPP 服務來確認適用於 TLS 和 SASL 的正確交涉資料流必須是何種類型，或者將會發生服務中斷。
         
            **必要**。XMPP 服務需要 SASL 交涉。
         

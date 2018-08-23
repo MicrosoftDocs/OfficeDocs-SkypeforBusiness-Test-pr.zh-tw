@@ -75,24 +75,11 @@ _**上次修改主題的時間：** 2013-07-03_
 
 11. 當您看到憑證已核發的通知時，請按一下 **\[安裝這個憑證\]** 以完成註冊程序。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的憑證要求失敗，並出現「這個 Web 瀏覽器不支援產生憑證要求」錯誤訊息，有三種方式可能可以解決問題：
-    <ol>
-    <li><p>在 Internet Explorer 中啟用相容性檢視</p></li>
-    <li><p>在 Internet Explorer 中啟用 [開啟內部網路設定] 選項</p></li>
-    <li><p>在 Internet Explorer 選項功能表中的 [安全性] 標籤下選取 [將所有區域重設為預設等級] 設定。</p></li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+	> 如果您的憑證要求失敗，並出現「這個 Web 瀏覽器不支援產生憑證要求」錯誤訊息，有三種方式可能可以解決問題：
+    > <ol>
+    > <li><p>在 Internet Explorer 中啟用相容性檢視</p></li>
+    > <li><p>在 Internet Explorer 中啟用 [開啟內部網路設定] 選項</p></li>
+    > <li><p>在 Internet Explorer 選項功能表中的 [安全性] 標籤下選取 [將所有區域重設為預設等級] 設定。</p></li>
+    > </ol>
 

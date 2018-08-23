@@ -84,21 +84,11 @@ _**上次修改主題的時間：** 2013-02-24_
             $ums[0].DialPlans +=$dp.Identity; 
             set-umserver -instance $ums[0]
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在執行下列步驟之前，請先確定所有的 Enterprise Voice 使用者都已設定好 Exchange Server 信箱。<br />
-    若為 Exchange 2007，請參閱 Exchange Server 2007 TechNet Library，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268685%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268685&amp;clcid=0x404</a>。<br />
-    若為 Exchange 2010，請參閱 Exchange Server 2010 TechNet Library，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268686%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268686&amp;clcid=0x404</a>。<br />
-    當您為在步驟 1 中所建立的每個撥號對應表指定信箱原則時，請選取預設原則或您所建立的原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+	> 在執行下列步驟之前，請先確定所有的 Enterprise Voice 使用者都已設定好 Exchange Server 信箱。<br />
+    > 若為 Exchange 2007，請參閱 Exchange Server 2007 TechNet Library，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268685%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268685&amp;clcid=0x404</a>。<br />
+    > 若為 Exchange 2010，請參閱 Exchange Server 2010 TechNet Library，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=268686%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268686&amp;clcid=0x404</a>。<br />
+    > 當您為在步驟 1 中所建立的每個撥號對應表指定信箱原則時，請選取預設原則或您所建立的原則。
 
 
 5.  瀏覽到 \<*Exchange 安裝目錄*\>\\Scripts，如果 Exchange 部署在單一樹系中，請輸入：

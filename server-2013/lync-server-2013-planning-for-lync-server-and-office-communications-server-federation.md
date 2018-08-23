@@ -47,18 +47,8 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
     
        如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> \[同盟及外部存取\]\> \[SIP 同盟網域\]。請「新增」原則或「編輯」現有的原則，以依 FQDN 來允許或封鎖網域。
         
-      <table>
-      <thead>
-      <tr class="header">
-      <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr class="odd">
-      <td>手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。</td>
-      </tr>
-      </tbody>
-      </table>
+      > [!WARNING]  
+	  > 手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。
         
       > [!NOTE]  
       > 若是新的 SIP 同盟網域，您必須為 Microsoft Lync Online、Microsoft Office 365 提供 [網域名稱 (或 FQDN)]。若是 Microsoft Lync Server 2013、Lync Server 2010 及 Office Communications Server，您也必須提供 [Access Edge Service (FQDN)]

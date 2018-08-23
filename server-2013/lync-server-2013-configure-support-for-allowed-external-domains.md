@@ -36,20 +36,11 @@ _**上次修改主題的時間：** 2012-10-19_
     
       - 在 **\[網域名稱 (或 FQDN)\]** 中，輸入同盟協力廠商網域的名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>此名稱必須是唯一的，而且不能已存在作為這個執行 Access Edge Service 的伺服器的允許網域。此外，名稱長度不可超過 256 個字元。<br />
-        搜尋同盟協力廠商網域名稱時會執行尾碼比對。例如，如果輸入 <strong>contoso.com</strong> ，搜尋也會傳回網域 <strong>it.contoso.com</strong> 。<br />
-        不能同時封鎖又允許同一個同盟協力廠商網域。 Lync Server 2013 會防止這種狀況發生，所以您不必讓清單維持同步。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!Note]  
+        > 此名稱必須是唯一的，而且不能已存在作為這個執行 Access Edge Service 的伺服器的允許網域。此外，名稱長度不可超過 256 個字元。<br />
+        > 搜尋同盟協力廠商網域名稱時會執行尾碼比對。例如，如果輸入 <strong>contoso.com</strong> ，搜尋也會傳回網域 <strong>it.contoso.com</strong> 。<br />
+        > 不能同時封鎖又允許同一個同盟協力廠商網域。 Lync Server 2013 會防止這種狀況發生，所以您不必讓清單維持同步。
+
     
       - 如果您要將同盟網域的存取限制於執行 Access Edge Service 之特定伺服器的使用者，可以在 **\[Access Edge Service (FQDN)\]** 中輸入執行 Access Edge Service 之同盟網域伺服器的 FQDN。
     

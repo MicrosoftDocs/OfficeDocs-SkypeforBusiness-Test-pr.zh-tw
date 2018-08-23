@@ -85,20 +85,11 @@ Configure the load levels and parameters for each of the general scenarios that 
 
 8.  In **Location Information Services**, select the appropriate value for Load Level. The load level for Location Information Services must be **Enabled** or **Disabled**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Each of the scenarios has an <strong>Advanced</strong> button located next to it, and a set of check boxes that enable variations of the scenarios. <strong>Ad-hoc</strong> means to generate simulation of conferences that will be created throughout the hour. <strong>Large Conf</strong> means that Large Conference Scenario will be simulated. <strong>External</strong> means to also simulate external users.<br />
-These buttons and check boxes allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and make customization possible. For each scenario on the <strong>General Scenarios</strong> tab (except for Location Information Services), if the value of Load Level is <strong>Custom</strong>, then the conversation rate will be calculated using the corresponding field in the <strong>Advanced</strong> dialog box. The field name differs, depending on the scenario, but the field description will state, &quot;NOTE: This number will only be used if Custom is selected from the drop-down menu.&quot; In general, the values <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> will alter the conversation rates per modality in line with the User Model that is a balance of all the scenarios. If there is a need to change the load level per modality due to a difference in expected usage, we recommend using a <strong>Custom</strong> conversation rate.<br />
-</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> Each of the scenarios has an <strong>Advanced</strong> button located next to it, and a set of check boxes that enable variations of the scenarios. <strong>Ad-hoc</strong> means to generate simulation of conferences that will be created throughout the hour. <strong>Large Conf</strong> means that Large Conference Scenario will be simulated. <strong>External</strong> means to also simulate external users.<br />
+> These buttons and check boxes allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and make customization possible. For each scenario on the <strong>General Scenarios</strong> tab (except for Location Information Services), if the value of Load Level is <strong>Custom</strong>, then the conversation rate will be calculated using the corresponding field in the <strong>Advanced</strong> dialog box. The field name differs, depending on the scenario, but the field description will state, &quot;NOTE: This number will only be used if Custom is selected from the drop-down menu.&quot; In general, the values <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> will alter the conversation rates per modality in line with the User Model that is a balance of all the scenarios. If there is a need to change the load level per modality due to a difference in expected usage, we recommend using a <strong>Custom</strong> conversation rate.<br />
+> 
+
 
 
 ## Voice Scenarios
