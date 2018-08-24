@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-05-25_
 
 請使用下列程序，在您的 Internet Information Services (IIS) 虛擬目錄上設定憑證，或者確認憑證已設定正確。在內部 Lync Server 集區，以及選用的 Director 或 Director 集區伺服器中每個執行 IIS 的伺服器上執行下列程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列程序定義了要求組合憑證的程序，該憑證是用於 IIS 中所有目的 Lync Server Internal Web Site 及 External Web Site。 Lync Server 2010 推出一組 Lync Server 管理命令介面Windows PowerShell Cmdlet 以快速管理憑證要求、匯出及指派。程序中假設有內部部署的憑證授權單位 (CA) 可處理要求。如果針對 Lync Server 目的使用公用憑證，或 CA 需要離線要求，請參閱此主題中關於 –Output 參數詳細語法的資訊。 <a href="request-cscertificate.md">Request-CsCertificate</a></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下列程序定義了要求組合憑證的程序，該憑證是用於 IIS 中所有目的 Lync Server Internal Web Site 及 External Web Site。 Lync Server 2010 推出一組 Lync Server 管理命令介面Windows PowerShell Cmdlet 以快速管理憑證要求、匯出及指派。程序中假設有內部部署的憑證授權單位 (CA) 可處理要求。如果針對 Lync Server 目的使用公用憑證，或 CA 需要離線要求，請參閱此主題中關於 –Output 參數詳細語法的資訊。 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Request-CsCertificate">Request-CsCertificate</a>
+
 
 
 ## 設定 IIS 虛擬目錄上的驗證及憑證
@@ -39,18 +30,8 @@ _**上次修改主題的時間：** 2012-05-25_
 
 3.  在 **\[Internet Information Services (IIS) 管理員\]** 中，選取 **\[伺服器名稱\]** 。在 **\[功能檢視\]** 中，選取 **\[伺服器憑證\]** ，按右鍵並選取 **\[開啟功能\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 [伺服器憑證功能檢視] 中，如果有憑證指派給伺服器，將會在此顯示。如果有憑證符合 IIS 中 External Web Site 的要求，可以重複使用該憑證。要檢視憑證，在憑證按右鍵並選取 <strong>[檢視...]</strong> 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 在 [伺服器憑證功能檢視] 中，如果有憑證指派給伺服器，將會在此顯示。如果有憑證符合 IIS 中 External Web Site 的要求，可以重複使用該憑證。要檢視憑證，在憑證按右鍵並選取 <strong>[檢視...]</strong> 。
 
 
 4.  在為其要求憑證的 前端伺服器或 Director 上，按一下 **\[開始\]** ，選取 **\[所有程式\]** 、 **\[ Microsoft Lync Server 2013\]** ，然後按一下 **\[ Lync Server 管理命令介面\]** 。
@@ -71,18 +52,8 @@ _**上次修改主題的時間：** 2012-05-25_
     
         Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -CA dc01.contoso.net\contoso-DC01-CA -Verbose -DomainName "LyncdiscoverInternal.Contoso.com,Lyncdiscover.Contoso.com"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>依預設，Request-CsCertificate 會在主體名稱中填入伺服器或集區名稱，並且在主體替代名稱的項目中填入伺服器 FQDN、集區 FQDN、簡單 URL FQDN 以及內部與外部 Web 服務 FQDN。這是透過參考部署中的拓撲文件而成。如果缺少某個值，而且指定了 –Verbose 參數，將會通知您別名的計算值與實際值不同，但不會告知缺少哪些值，不過會提供您 Cmdlet 參考的整個計算值。可使用輸出中的計算別名稱串，重新要求會包含所有值的新憑證。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 依預設，Request-CsCertificate 會在主體名稱中填入伺服器或集區名稱，並且在主體替代名稱的項目中填入伺服器 FQDN、集區 FQDN、簡單 URL FQDN 以及內部與外部 Web 服務 FQDN。這是透過參考部署中的拓撲文件而成。如果缺少某個值，而且指定了 –Verbose 參數，將會通知您別名的計算值與實際值不同，但不會告知缺少哪些值，不過會提供您 Cmdlet 參考的整個計算值。可使用輸出中的計算別名稱串，重新要求會包含所有值的新憑證。
     
     ![使用 Request-CsCertifica 從 cert 要求輸出](images/Gg429702.9e59a657-fa75-4454-8fd3-57c81e829f7b(OCS.15).jpg "使用 Request-CsCertifica 從 cert 要求輸出")
 
@@ -114,6 +85,6 @@ _**上次修改主題的時間：** 2012-05-25_
 
 #### 其他資源
 
-[Get-CsCertificate](get-cscertificate.md)  
-[Set-CsCertificate](set-cscertificate.md)
+[Get-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCertificate)  
+[Set-CsCertificate](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)
 

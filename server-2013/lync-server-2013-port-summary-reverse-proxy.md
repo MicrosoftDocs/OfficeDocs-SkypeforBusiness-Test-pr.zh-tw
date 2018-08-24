@@ -27,18 +27,8 @@ _**上次修改主題的時間：** 2015-03-09_
     
     ![反向 Proxy 和外部 Web 服務](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "反向 Proxy 和外部 Web 服務")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請勿將來自反向 Proxy 的 4443 (透過 TCP) 與來自 Standard Edition Server 或管理 中央管理存放區角色之 前端集區的連接埠 4443 (透過 TCP) 流量的內部部署混淆。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 請勿將來自反向 Proxy 的 4443 (透過 TCP) 與來自 Standard Edition Server 或管理 中央管理存放區角色之 前端集區的連接埠 4443 (透過 TCP) 流量的內部部署混淆。
 
 
 ## 連接埠和通訊協定詳細資訊

@@ -25,18 +25,8 @@ _**上次修改主題的時間：** 2012-09-22_
 
 3.  若要建立靜態路由並將它放在變數 $TLSRoute 或 $TCPRoute 中，請執行下列其中一項：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要比對網域的子網域，您可以在 MatchUri 參數中指定萬用字元值。例如， <strong>*.contoso.net</strong> 。該值會比對結尾尾碼為 <strong>contoso.net</strong> 的所有網域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 若要比對網域的子網域，您可以在 MatchUri 參數中指定萬用字元值。例如， <strong>*.contoso.net</strong> 。該值會比對結尾尾碼為 <strong>contoso.net</strong> 的所有網域。
     
       - 若是傳輸層安全性 (TLS) 連線，請在命令提示字元中輸入下列命令：
         
@@ -52,18 +42,9 @@ _**上次修改主題的時間：** 2012-09-22_
     
       - 若是傳輸控制通訊協定 (TCP) 連線，請在命令提示字元中輸入下列命令：
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您要指定完整網域名稱 (FQDN)，必須先設定網域名稱系統 (DNS) A 記錄。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 如果您要指定完整網域名稱 (FQDN)，必須先設定網域名稱系統 (DNS) A 記錄。
+        
         
             $TCPRoute = New-CsStaticRoute -TCPRoute -Destination <gateway IP address or FQDN> -Port <gateway SIP listening port> -MatchUri <destination domain>
         
@@ -85,9 +66,12 @@ _**上次修改主題的時間：** 2012-09-22_
 
 4.  若要將新建立的靜態路由保存在 中央管理存放區中，請視需要執行下列其中一項：
     
-        Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
-    
-        Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
+    ```
+    Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
+    ```
+    ```
+    Set-CsStaticRoutingConfiguration -Route @{Add=$TCPRoute}
+    ```
 
 ## 請參閱
 

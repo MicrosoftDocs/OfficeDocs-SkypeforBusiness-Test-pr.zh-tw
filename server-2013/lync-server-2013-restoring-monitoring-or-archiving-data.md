@@ -57,16 +57,7 @@ _**上次修改主題的時間：** 2013-02-18_
     
     3.  在 \[資料庫角色成員資格\] 底下，選取 \[ServerRole\] 權限，然後按一下 \[確定\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您不需要重新啟動封存或監控服務。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您不需要重新啟動封存或監控服務。
+    
 

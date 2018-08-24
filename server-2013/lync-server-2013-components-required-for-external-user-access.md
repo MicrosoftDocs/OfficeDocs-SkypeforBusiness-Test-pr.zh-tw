@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2014-05-29_
 
   - 調整式 Edge 拓撲的負載平衡 (DNS 負載平衡或硬體負載平衡器)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支援在一個介面上使用 DNS 負載平衡，而在另一個介面上使用硬體負載平衡。您必須同時針對這兩個介面使用硬體負載平衡或 DNS 負載平衡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 不支援在一個介面上使用 DNS 負載平衡，而在另一個介面上使用硬體負載平衡。您必須同時針對這兩個介面使用硬體負載平衡或 DNS 負載平衡。
+    
 
 
 ## Edge Server
@@ -55,18 +46,9 @@ Edge Server 可傳送及接收外部使用者對內部部署提供之服務的�
 
 經授權的外部使用者可存取 Edge Server 以連線至您的內部 Lync Server 2013 部署，但 Edge Server 並不會提供任何其他內部網路存取。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>部署 Edge Server 的目的是為啟用的 Lync 用戶端和其他 Microsoft Edge Server (在同盟案例中) 提供連線。設計的目的不是允許來自其他端點用戶端或伺服器類型的連線。可部署 XMPP 閘道伺服器，允許與設定的 XMPP 協力廠商進行連線。Edge Server 和 XMPP 閘道僅支援來自這些用戶端和同盟類型的端點連線。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 部署 Edge Server 的目的是為啟用的 Lync 用戶端和其他 Microsoft Edge Server (在同盟案例中) 提供連線。設計的目的不是允許來自其他端點用戶端或伺服器類型的連線。可部署 XMPP 閘道伺服器，允許與設定的 XMPP 協力廠商進行連線。Edge Server 和 XMPP 閘道僅支援來自這些用戶端和同盟類型的端點連線。
+
 
 
 ## 反向 Proxy
@@ -91,18 +73,9 @@ Edge Server 可傳送及接收外部使用者對內部部署提供之服務的�
 
 如需反向 Proxy 及其必須符合之要求的詳細資訊，請參閱＜ [Lync Server 2013 中的反向 Proxy 設定需求](lync-server-2013-configuration-requirements-for-reverse-proxy.md)＞中的詳細資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>外部使用者不需要透過虛擬私人網路 (VPN) 連線至您的組織才能使用 Lync Server 2013 參與通訊。若您已將 VPN 技術實作至組織中，且使用者為 Lync 使用了 VPN，就可能會對媒體流量 (例如視訊會議) 產生負面影響。您應考慮提供一種方法供媒體流量直接連線至 AV Edge 服務，並略過 VPN。如需詳細資訊，請參閱 NextHop 部落格文章＜啟用 Lync 媒體以略過 VPN 通道＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=256532" class="uri">http://go.microsoft.com/fwlink/?linkid=256532</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 外部使用者不需要透過虛擬私人網路 (VPN) 連線至您的組織才能使用 Lync Server 2013 參與通訊。若您已將 VPN 技術實作至組織中，且使用者為 Lync 使用了 VPN，就可能會對媒體流量 (例如視訊會議) 產生負面影響。您應考慮提供一種方法供媒體流量直接連線至 AV Edge 服務，並略過 VPN。如需詳細資訊，請參閱 NextHop 部落格文章＜啟用 Lync 媒體以略過 VPN 通道＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=256532" class="uri">http://go.microsoft.com/fwlink/?linkid=256532</a>。
+
 
 
 ## 防火牆

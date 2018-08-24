@@ -57,21 +57,11 @@ _**上次修改主題的時間：** 2012-10-18_
 
   - 複製到 Active Directory 的 **msRTCSIP-line** 屬性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>與遠端呼叫控制 (RCC) 並存</strong><br />
-    RCC 是使用 Lync Server 監視和控制桌面 PBX 電話的能力。它會透過伺服器路由傳送控制，並將此伺服器當做通往 PBX 的閘道。雖然您無法為使用者同時設定 RCC 和 企業語音，但是在任一情況下，[線路 URI] 設定都會指定使用者的主要電話號碼。<br />
-    如果您希望所選使用者繼續使用現有的 PBX 基礎結構，可以使用漸進方式將 企業語音引進組織內。如需此部署案例的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-direct-sip-deployment-options.md">Lync Server 2013 中的 SIP 直接部署選項</a>。<br />
-    您可以在舊版中為使用者同時啟用 RCC 和 企業語音，但前提是您也為使用者設定了雙重分支處理，這項功能會使來電同時在使用者的 PBX 電話和 Communicator 上響鈴。 Lync Server 2010 不支援雙重分支處理。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!Note]  
+	> <strong>與遠端呼叫控制 (RCC) 並存</strong><br />
+    > RCC 是使用 Lync Server 監視和控制桌面 PBX 電話的能力。它會透過伺服器路由傳送控制，並將此伺服器當做通往 PBX 的閘道。雖然您無法為使用者同時設定 RCC 和 企業語音，但是在任一情況下，[線路 URI] 設定都會指定使用者的主要電話號碼。<br />
+    > 如果您希望所選使用者繼續使用現有的 PBX 基礎結構，可以使用漸進方式將 企業語音引進組織內。如需此部署案例的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-direct-sip-deployment-options.md">Lync Server 2013 中的 SIP 直接部署選項</a>。<br />
+    > 您可以在舊版中為使用者同時啟用 RCC 和 企業語音，但前提是您也為使用者設定了雙重分支處理，這項功能會使來電同時在使用者的 PBX 電話和 Communicator 上響鈴。 Lync Server 2010 不支援雙重分支處理。
 
 
 有三種方法可填入 **msRTCSIP-line** 屬性：
@@ -96,18 +86,9 @@ _**上次修改主題的時間：** 2012-10-18_
 
   - Tel:5550100 (適用於整個企業中唯一的分機)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>通訊錄服務 (ABS) 所執行的正規化作業，不會取代或排除將 Active Directory 網域服務中每位使用者的主要電話號碼正規化的需求，因為 ABS 並沒有 Active Directory 網域服務的存取權，所以無法將主要電話號碼複製到 <strong>msRTCSIP-line</strong> 屬性。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 通訊錄服務 (ABS) 所執行的正規化作業，不會取代或排除將 Active Directory 網域服務中每位使用者的主要電話號碼正規化的需求，因為 ABS 並沒有 Active Directory 網域服務的存取權，所以無法將主要電話號碼複製到 <strong>msRTCSIP-line</strong> 屬性。
+    
 
 
 ## 步驟 2. 讓使用者啟用 Enterprise Voice

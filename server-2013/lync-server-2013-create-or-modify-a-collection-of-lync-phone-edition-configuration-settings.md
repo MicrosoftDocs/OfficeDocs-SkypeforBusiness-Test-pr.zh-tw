@@ -33,18 +33,8 @@ _**上次修改主題的時間：** 2013-02-23_
     
       - 若要在現有集合中編輯任何設定，請依序按一下集合、**\[編輯\]**功能表、**\[顯示詳細資料\]**，然後進行變更。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要返回以使用全域集合的預設設定，請依序按一下全域集合、<strong>[編輯]</strong>功能表、<strong>[刪除]</strong>，然後按一下 <strong>[確定]</strong>。這樣做並不會刪除全域集合，只是將設定重設為預設值。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要返回以使用全域集合的預設設定，請依序按一下全域集合、<strong>[編輯]</strong>功能表、<strong>[刪除]</strong>，然後按一下 <strong>[確定]</strong>。這樣做並不會刪除全域集合，只是將設定重設為預設值。
 
 
 5.  按一下 **\[認可\]**。
@@ -73,7 +63,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         New-CsUCPhoneConfiguration -Identity "site:Redmond" -EnforcePhoneLock $True -MinPhonePinLength 8
 
-如需詳細資訊，請參閱 [New-CsUCPhoneConfiguration](new-csucphoneconfiguration.md)。
+如需詳細資訊，請參閱 [New-CsUCPhoneConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsUCPhoneConfiguration)。
 
 ## 請參閱
 

@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2013-02-21_
 
 您可以使用下列程序刪除子網路。從 Lync Server 控制台可以建立、修改或刪除網路子網路。如需關於建立或修改網路子網路的詳細資訊，請參閱[建立或修改網路子網路](lync-server-2013-create-or-modify-network-subnets.md)
 
-在已實作通話許可控制 (CAC) 的大多數 Microsoft Lync Server 2013 部署中，通常有大量子網路。因此，最好是從 Lync Server 管理命令介面設定子網路。您可以從該處呼叫 **New-CsNetworkSubnet** 並搭配 Windows PowerShell Cmdlet **Import-CSV**。您可以同時使用這兩個 Cmdlet，一次從逗點分隔值 (.csv) 檔案讀入子網路設定並建立多個子網路。如需如何從 .csv 檔案建立子網路的範例，請參閱 [New-CsNetworkSubnet](new-csnetworksubnet.md)。
+在已實作通話許可控制 (CAC) 的大多數 Microsoft Lync Server 2013 部署中，通常有大量子網路。因此，最好是從 Lync Server 管理命令介面設定子網路。您可以從該處呼叫 **New-CsNetworkSubnet** 並搭配 Windows PowerShell Cmdlet **Import-CSV**。您可以同時使用這兩個 Cmdlet，一次從逗點分隔值 (.csv) 檔案讀入子網路設定並建立多個子網路。如需如何從 .csv 檔案建立子網路的範例，請參閱 [New-CsNetworkSubnet](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSubnet)。
 
 ## 刪除網路子網路
 
@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 4.  在 \[子網路\] 頁面中，按一下您要刪除的子網路。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以一次刪除一個以上的子網路。若要這麼做，請按住 CTRL 鍵，然後選取一個以上的子網路。或者，若要選取所有子網路，請按一下 [編輯] 功能表上的 [全選]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以一次刪除一個以上的子網路。若要這麼做，請按住 CTRL 鍵，然後選取一個以上的子網路。或者，若要選取所有子網路，請按一下 [編輯] 功能表上的 [全選]。
+    
 
 
 5.  在 \[編輯\] 功能表中，按一下 \[刪除\]。

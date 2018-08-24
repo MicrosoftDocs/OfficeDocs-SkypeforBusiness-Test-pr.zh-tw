@@ -17,20 +17,11 @@ _**上次修改主題的時間：** 2012-12-12_
 
 Director 集區、前端集區及反向 Proxy 的憑證需要額外的主體替代名稱項目，以支援與 Lync 用戶端的安全連線。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用 <strong>Get-CsCertificate</strong> Cmdlet 來檢視目前指派的憑證相關資訊。然而，預設檢視會截斷憑證屬性，而且不會顯示 SubjectAlternativeNames 屬性中所有的值。您可以使用 <strong>Get-CsCertificate</strong>、<strong>Request-</strong>CsCertificate 和 <strong>Set-CsCertificate</strong> Cmdlet 來檢視部分資訊，並要求及指派憑證。不過，如果您不確定目前憑證上主體替代名稱 (SAN) 的屬性，這並不是最好的方法。如果要檢視憑證和所有屬性成員，建議使用 <em>Microsoft Management Console (MMC)</em> 憑證嵌入式管理單元或使用 Lync Server 部署精靈。在 Lync Server 部署精靈中，您可以使用「憑證精靈」來檢視憑證屬性。下列程序中詳述使用 Lync Server 管理命令介面和 <em>Microsoft Management Console (MMC)</em> 來檢視、要求和指派憑證的程序。如果要使用 Lync Server 部署精靈，且您已部署選用的 Director 或 Director 集區，請參閱下列詳細資訊：<a href="lync-server-2013-configure-certificates-for-the-director.md">在 Lync Server 2013 中設定 Director 的憑證</a>。若是前端伺服器或前端集區，請參閱下列詳細資訊：<a href="lync-server-2013-configure-certificates-for-servers.md">在 Lync Server 2013 中設定伺服器憑證</a>。<br />
-此程序中的最初步驟是準備步驟，引導您了解目前憑證扮演的角色。依預設，憑證不會有 lyncdiscover.&lt;SIP　網域&gt; 或 lyncdiscoverinternal.&lt;內部網域名稱&gt; 項目，除非您先前已安裝 Mobility Service 或已預先準備您的憑證。這個程序使用 SIP 網域名稱範例 ‘contoso.com’ 及內部網域名稱範例 ‘contoso.net’。<br />
-Lync Server 2013 和 Lync Server 2010 的預設憑證設定是使用單一憑證 (名為 ‘Default’)，而其目的是 Default (適用於所有用途，除了 Web 服務)、WebServicesExternal 和 WebServicesInternal。選用設定是針對每種用途使用不同的憑證。憑證可以使用 Lync Server 管理命令介面和 Windows PowerShell Cmdlet 來管理，或使用 Lync Server 部署精靈中的「憑證精靈」來管理。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 您可以使用 <strong>Get-CsCertificate</strong> Cmdlet 來檢視目前指派的憑證相關資訊。然而，預設檢視會截斷憑證屬性，而且不會顯示 SubjectAlternativeNames 屬性中所有的值。您可以使用 <strong>Get-CsCertificate</strong>、<strong>Request-</strong>CsCertificate 和 <strong>Set-CsCertificate</strong> Cmdlet 來檢視部分資訊，並要求及指派憑證。不過，如果您不確定目前憑證上主體替代名稱 (SAN) 的屬性，這並不是最好的方法。如果要檢視憑證和所有屬性成員，建議使用 <em>Microsoft Management Console (MMC)</em> 憑證嵌入式管理單元或使用 Lync Server 部署精靈。在 Lync Server 部署精靈中，您可以使用「憑證精靈」來檢視憑證屬性。下列程序中詳述使用 Lync Server 管理命令介面和 <em>Microsoft Management Console (MMC)</em> 來檢視、要求和指派憑證的程序。如果要使用 Lync Server 部署精靈，且您已部署選用的 Director 或 Director 集區，請參閱下列詳細資訊：<a href="lync-server-2013-configure-certificates-for-the-director.md">在 Lync Server 2013 中設定 Director 的憑證</a>。若是前端伺服器或前端集區，請參閱下列詳細資訊：<a href="lync-server-2013-configure-certificates-for-servers.md">在 Lync Server 2013 中設定伺服器憑證</a>。<br />
+> 此程序中的最初步驟是準備步驟，引導您了解目前憑證扮演的角色。依預設，憑證不會有 lyncdiscover.&lt;SIP　網域&gt; 或 lyncdiscoverinternal.&lt;內部網域名稱&gt; 項目，除非您先前已安裝 Mobility Service 或已預先準備您的憑證。這個程序使用 SIP 網域名稱範例 ‘contoso.com’ 及內部網域名稱範例 ‘contoso.net’。<br />
+> Lync Server 2013 和 Lync Server 2010 的預設憑證設定是使用單一憑證 (名為 ‘Default’)，而其目的是 Default (適用於所有用途，除了 Web 服務)、WebServicesExternal 和 WebServicesInternal。選用設定是針對每種用途使用不同的憑證。憑證可以使用 Lync Server 管理命令介面和 Windows PowerShell Cmdlet 來管理，或使用 Lync Server 部署精靈中的「憑證精靈」來管理。
+
 
 
 ## 使用 Lync Server 管理命令介面以新的主體替代名稱來更新憑證
@@ -67,18 +58,9 @@ Lync Server 2013 和 Lync Server 2010 的預設憑證設定是使用單一憑證
 
 8.  如果憑證位於這部電腦上，請選取 \[本機電腦\]。如果憑證位於另一部電腦上，則選取 \[另一部電腦\]，輸入電腦的完整網域名稱或按一下 \[請輸入物件名稱來選取\] 中的 \[瀏覽\]，輸入電腦的名稱。按一下 \[檢查名稱\]。解析出電腦的名稱之後，將會加上底線。依序按一下 \[確定\] 和 \[完成\]。按一下 \[確定\] 以認可選取項目，然後關閉 \[新增/移除嵌入式管理單元\] 對話方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果主控台未顯示該憑證，請確認未選取 [使用者] 或 [服務]。您必須選取 [電腦]，否則就無法找到適當的憑證。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果主控台未顯示該憑證，請確認未選取 [使用者] 或 [服務]。您必須選取 [電腦]，否則就無法找到適當的憑證。
+    
 
 
 9.  如果要檢視憑證的屬性，依序展開 \[憑證\] 和 \[個人\]，然後選取 \[憑證\]。選取要檢視的憑證，用滑鼠右鍵按一下憑證，然後選取 \[開啟\]。

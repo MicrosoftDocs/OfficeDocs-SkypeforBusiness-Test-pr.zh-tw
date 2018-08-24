@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Allow
 
-如需詳細資訊，請參閱 [Set-CsClientVersionPolicy](set-csclientversionpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsClientVersionPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-04-13_
 
 若要使用 Lync Web App，您必須具備下列其中一種受支援的作業系統與瀏覽器組合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有些 Lync Web App 功能必須要有外掛程式，包含以電腦為基礎的語音、視訊、共用及進行中螢幕共用的檢視。您可以在加入會議或啟動以下功能時安裝共用外掛程式。 1</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有些 Lync Web App 功能必須要有外掛程式，包含以電腦為基礎的語音、視訊、共用及進行中螢幕共用的檢視。您可以在加入會議或啟動以下功能時安裝共用外掛程式。 1
+
 
 
 ## Lync Web App 支援的作業系統與瀏覽器組合

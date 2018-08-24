@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2013-02-20_
 
 透過本節中的主題了解如何建立公用區域電話的連絡人物件、加以修改和刪除，以及設定和檢視部署中有關公用區域電話的設定資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>有三種公用區域電話：Aastra 6721ip 公用區域電話、HP 4110 IP Phone 及 Polycom CX500 IP 公用區域電話。Polycom CX3000 IP 會議電話是另一種不同的公用區域電話，它適合在會議室中使用。如需公用區域電話的詳細資訊，請參閱<a href="http://technet.microsoft.com/zh-tw/library/gg398958(v=ocs.14).aspx">選擇新裝置</a>的＜公用區域電話＞一節。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 有三種公用區域電話：Aastra 6721ip 公用區域電話、HP 4110 IP Phone 及 Polycom CX500 IP 公用區域電話。Polycom CX3000 IP 會議電話是另一種不同的公用區域電話，它適合在會議室中使用。如需公用區域電話的詳細資訊，請參閱<a href="http://technet.microsoft.com/zh-tw/library/gg398958(v=ocs.14).aspx">選擇新裝置</a>的＜公用區域電話＞一節。
+
 
 
 ## 本章節內容

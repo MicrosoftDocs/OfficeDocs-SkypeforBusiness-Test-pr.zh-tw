@@ -39,5 +39,5 @@ Lync Server 2013 混合環境指的是部署中部分使用者位於內部部署
 
 ## 連線到 Lync Online PowerShell
 
-系統管理員現在能夠使用 Windows PowerShell 管理 Lync Online 與其 Lync Online 使用者帳戶。若要執行此操作，您必須先從 Microsoft 下載中心 (http://go.microsoft.com/fwlink/?LinkId=294688) 下載並安裝 Lync Online 連接器模組。如需下載、安裝及使用 Lync Online 連接器模組的詳細資訊，以及使用 Windows PowerShell 管理 Lync Online 的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md)。
+系統管理員現在能夠使用 Windows PowerShell 管理 Lync Online 與其 Lync Online 使用者帳戶。若要執行此操作，您必須先從 Microsoft 下載中心 (http://go.microsoft.com/fwlink/?LinkId=294688) 下載並安裝 Lync Online 連接器模組。如需下載、安裝及使用 Lync Online 連接器模組的詳細資訊，以及使用 Windows PowerShell 管理 Lync Online 的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 

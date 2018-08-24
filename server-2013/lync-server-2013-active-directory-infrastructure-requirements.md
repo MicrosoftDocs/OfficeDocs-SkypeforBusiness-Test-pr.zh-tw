@@ -37,18 +37,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
   - 部署 Lync Server 的樹系提高到 Windows Server 2012 R2、 Windows Server 2012、 Windows Server 2008 R2、 Windows Server 2008，或至少 Windows Server 2003 的樹系功能等級。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要變更網域或樹系功能等級，請參閱 TechNet Library 中的＜提高網域與樹系功能等級＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=263775" class="uri">http://go.microsoft.com/fwlink/?linkid=263775</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要變更網域或樹系功能等級，請參閱 TechNet Library 中的＜提高網域與樹系功能等級＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=263775" class="uri">http://go.microsoft.com/fwlink/?linkid=263775</a>。
+    
 
 
   - 通用類別目錄會在您部署 Lync Server 電腦或使用者的每個網域中部署。

@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2013-02-23_
 
-封存在封存資料庫中的資料無法搜尋或者不是可讀格式，但是您可以使用 Export-CsArchivingData Cmdlet 從資料庫擷取記錄，並儲存為 Outlook 電子郵件 (EML) 檔案。如需匯出封存資料的詳細資訊，請參閱操作文件中的＜[Export-CsArchivingData](export-csarchivingdata.md)＞。
+封存在封存資料庫中的資料無法搜尋或者不是可讀格式，但是您可以使用 Export-CsArchivingData Cmdlet 從資料庫擷取記錄，並儲存為 Outlook 電子郵件 (EML) 檔案。如需匯出封存資料的詳細資訊，請參閱操作文件中的＜[Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)＞。
 
 如果您啟用 Microsoft Exchange 整合，資料會封存在 Exchange 2013 儲存區。封存在 Exchange 2013 的資料可供搜尋及探查。如需 Exchange 2013 及 Lync Server 2013 整合的通訊支援的詳細資訊，請參閱支援文件中的＜[Lync Server 2013 中的 Exchange Server 與 SharePoint 整合支援](lync-server-2013-exchange-and-sharepoint-integration-support.md)＞。如需存取封存在 Exchange 之資料的詳細資訊，請參閱 Exchange 2013 文件。
 
@@ -35,7 +35,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Export-CsArchivingData -Identity "ArchivingDatabase:atl-sql-001.litwareinc.com" -StartDate 6/1/2012 -OutputFolder "C:\ArchivingExports" -UserUri "sip:kenmyer@litwareinc.com"
 
-如需詳細資訊，請參閱 [Export-CsArchivingData](export-csarchivingdata.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData) Cmdlet 的說明主題。
 
 ## 請參閱
 
@@ -45,6 +45,6 @@ _**上次修改主題的時間：** 2013-02-23_
 
 #### 其他資源
 
-[Export-CsArchivingData](export-csarchivingdata.md)  
+[Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData)  
 [管理 Lync Server 2013 封存](lync-server-2013-managing-archiving.md)
 

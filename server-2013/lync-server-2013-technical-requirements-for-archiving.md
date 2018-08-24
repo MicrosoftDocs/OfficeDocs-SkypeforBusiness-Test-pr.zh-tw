@@ -27,18 +27,9 @@ Lync Server 2013 技術需求如下：
 
   - 封存資料庫的效能需求與考量。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個 Lync Server 2013 版本不提供延展性與效能資訊。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這個 Lync Server 2013 版本不提供延展性與效能資訊。
+
 
 
 ## 基礎結構需求
@@ -71,18 +62,9 @@ Lync Server 2013 簡化封存的先決條件，原因如下：
     
       - Microsoft SQL Server 2012 Standard
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支援 Microsoft SQL Server 2008 R2 Express 及 Microsoft SQL Server 2012 Express 進行封存。不支援 32 位元版本的 SQL Server。如需其他的 SQL Server 需求及限制，請參閱規劃文件或支援文件中的＜ <a href="lync-server-2013-database-software-support.md">Lync Server 2013 中的資料庫軟體支援</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 不支援 Microsoft SQL Server 2008 R2 Express 及 Microsoft SQL Server 2012 Express 進行封存。不支援 32 位元版本的 SQL Server。如需其他的 SQL Server 需求及限制，請參閱規劃文件或支援文件中的 <a href="lync-server-2013-database-software-support.md">Lync Server 2013 中的資料庫軟體支援</a>。
+    
     
     您必須先設定 SQL Server 平台才能部署和啟用封存功能。如果用來發佈拓撲的帳戶擁有適當的系統管理員權限，您可以在發佈拓撲時建立封存資料庫 (LcsLog)。您也可以稍後建立資料庫，這是安裝程序的一部分。如需 SQL Server 的詳細資訊，請參閱 SQL Server TechCenter，網址為： [http://go.microsoft.com/fwlink/?linkid=129045\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=129045%26clcid=0x404)。
 

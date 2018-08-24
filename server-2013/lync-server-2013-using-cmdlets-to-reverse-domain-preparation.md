@@ -34,18 +34,9 @@ _**上次修改主題的時間：** 2012-10-29_
     
     如果存在 Force 參數，即使已啟動網域中的一或多部 前端伺服器或 A/V 會議伺服器，也會回復網域準備工作。如果不存在 Force 參數，且已啟動網域中的任何 前端伺服器或 A/V 會議伺服器，則會終止網域準備的回復。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>GlobalSettingsDomainController 參數可讓您指出全域設定的存放位置。如果您的設定存放在 System 容器 (在升級部署作業期間，當全域設定尚未移轉到 Configuration 容器時的常見現象)，請將網域控制站定義到 Active Directory 樹系根目錄中。如果全域設定位於 Configuration 容器中 (在全新部署或升級部署作業期間，當設定已經移轉至 Configuration 容器時的常見現象)，您可以在樹系中定義任何網域控制站。如果您未指定此參數，則 Cmdlet 會認為設定儲存在 [設定] 容器中，並參考 AD DS 中的任何網域控制站。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > GlobalSettingsDomainController 參數可讓您指出全域設定的存放位置。如果您的設定存放在 System 容器 (在升級部署作業期間，當全域設定尚未移轉到 Configuration 容器時的常見現象)，請將網域控制站定義到 Active Directory 樹系根目錄中。如果全域設定位於 Configuration 容器中 (在全新部署或升級部署作業期間，當設定已經移轉至 Configuration 容器時的常見現象)，您可以在樹系中定義任何網域控制站。如果您未指定此參數，則 Cmdlet 會認為設定儲存在 [設定] 容器中，並參考 AD DS 中的任何網域控制站。
+    
 
 
 ## 請參閱

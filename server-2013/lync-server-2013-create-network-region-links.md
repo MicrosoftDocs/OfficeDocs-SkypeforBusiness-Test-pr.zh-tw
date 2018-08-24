@@ -19,13 +19,13 @@ _**上次修改主題的時間：** 2012-10-19_
 
 如需使用網路地區連結的詳細資訊，請參閱 Lync Server 管理命令介面文件中的下列 Cmdlet：
 
-  - [New-CsNetworkRegionLink](new-csnetworkregionlink.md)
+  - [New-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegionLink)
 
-  - [Get-CsNetworkRegionLink](get-csnetworkregionlink.md)
+  - [Get-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink)
 
-  - [Set-CsNetworkRegionLink](set-csnetworkregionlink.md)
+  - [Set-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkRegionLink)
 
-  - [Remove-CsNetworkRegionLink](remove-csnetworkregionlink.md)
+  - [Remove-CsNetworkRegionLink](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkRegionLink)
 
 範例拓撲中包含北美和 APAC 地區之間的連結，以及 EMEA 和 APAC 地區之間的連結。這些地區連結都會受限於 WAN 頻寬，如規劃文件中＜[範例：在 Lync Server 2013 中收集通話許可控制服務需求](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md)＞一節的＜地區連結頻寬資訊表＞中所述。
 
@@ -35,9 +35,12 @@ _**上次修改主題的時間：** 2012-10-19_
 
 2.  執行 New-CsNetworkRegionLink Cmdlet 建立地區連結，並且套用適當的頻寬原則設定檔。例如，執行：
     
-        New-CsNetworkRegionLink -NetworkRegionLinkID NA-EMEA-LINK -NetworkRegionID1 NorthAmerica -NetworkRegionID2 EMEA -BWPolicyProfileID 50Mb_Link
-    
-        New-CsNetworkRegionLink -NetworkRegionLinkID EMEA-APAC-LINK -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -BWPolicyProfileID 25Mb_Link
+    ```
+    New-CsNetworkRegionLink -NetworkRegionLinkID NA-EMEA-LINK -NetworkRegionID1 NorthAmerica -NetworkRegionID2 EMEA -BWPolicyProfileID 50Mb_Link
+    ```
+    ```
+    New-CsNetworkRegionLink -NetworkRegionLinkID EMEA-APAC-LINK -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -BWPolicyProfileID 25Mb_Link
+    ```
 
 ## 若要使用 Lync Server 控制台建立網路地區連結
 
@@ -57,18 +60,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 8.  (選用) 按一下 **\[頻寬原則\]**，然後選取您要套用至網路地區連結的頻寬原則設定檔。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在網路地區連結受限於頻寬，而且您想要在該連結上使用 CAC 控制媒體流量時，才套用頻寬原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有在網路地區連結受限於頻寬，而且您想要在該連結上使用 CAC 控制媒體流量時，才套用頻寬原則。
+    
 
 
 9.  按一下 **\[認可\]**。

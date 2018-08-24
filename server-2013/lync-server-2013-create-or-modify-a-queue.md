@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 1.  以 RTCUniversalServerAdmins 群組成員或支援回應群組的某個預先定義之管理角色成員的身分登入。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您是受管理工作流程的其中一位委派回應群組管理員，則可建立或修改回應群組佇列，並將它們指派給您管理的工作流程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您是受管理工作流程的其中一位委派回應群組管理員，則可建立或修改回應群組佇列，並將它們指派給您管理的工作流程。
+    
 
 
 2.  開啟瀏覽器視窗，然後輸入管理 URL 以開啟 Lync Server 控制台。如需可用於啟動 Lync Server 控制台的不同方法的詳細資料，請參閱[開啟 Lync Server 系統管理工具](lync-server-2013-open-lync-server-administrative-tools.md)。
@@ -57,18 +48,9 @@ _**上次修改主題的時間：** 2013-02-23_
     
       - 若要變更代理人的搜尋順序，請在代理人群組清單中，按一下群組，然後按一下向上箭頭或向下箭頭。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>伺服器搜尋佇列中的有空代理人時，會使用群組順序。也就是說，會先搜尋清單中的第一個群組、接著搜尋清單中的第二個群組，以此類推。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 伺服器搜尋佇列中的有空代理人時，會使用群組順序。也就是說，會先搜尋清單中的第一個群組、接著搜尋清單中的第二個群組，以此類推。
+        
 
 
 8.  若要指定來電者等候代理人接聽通話之前的最長保留期間，請選取 \[啟用佇列逾時\] 核取方塊，然後執行下列動作：
@@ -115,18 +97,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 1.  以 RTCUniversalServerAdmins 群組成員或支援回應群組的某個預先定義之管理角色成員的身分登入。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您是受管理工作流程的其中一位委派回應群組管理員，則可建立代理人群組和佇列，並將代理人群組指派給佇列。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您是受管理工作流程的其中一位委派回應群組管理員，則可建立代理人群組和佇列，並將代理人群組指派給佇列。
+    
 
 
 2.  啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。
@@ -139,36 +112,18 @@ _**上次修改主題的時間：** 2013-02-23_
     
         "All agents are currently busy. Please call back later."
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>＞。
+    
 
 
 4.  定義達到佇列逾時臨界值時要採取的動作，並將其儲存至變數。在命令列中執行：
     
         $actionTO = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需可行動作及其語法的詳細資訊，請參閱 <a href="new-csrgscallaction.md">New-CsRgsCallAction</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需可行動作及其語法的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction">New-CsRgsCallAction</a>。
+    
     
     例如：
     
@@ -182,36 +137,18 @@ _**上次修改主題的時間：** 2013-02-23_
     
         $promptOV = New-CsRgsPrompt -TextToSpeechPrompt "Too many calls are waiting. Please call back later."
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="import-csrgsaudiofile.md">Import-CsRgsAudioFile</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若要使用音訊檔案做為提示，請使用 <strong>Import-CsRgsAudioFile</strong> Cmdlet。如需詳細資訊，請參閱＜ <a href="https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile">Import-CsRgsAudioFile</a>＞。
+    
 
 
 6.  定義達到佇列溢位臨界值時要採取的動作，並將其儲存至變數。在命令列中執行：
     
         $actionOV = New-CsRgsCallAction -Prompt <saved prompt from previous step> -Action <action to be taken>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需可行動作及其語法的詳細資訊，請參閱 <a href="new-csrgscallaction.md">New-CsRgsCallAction</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需可行動作及其語法的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction">New-CsRgsCallAction</a>。
+    
     
     例如：
     
@@ -225,18 +162,9 @@ _**上次修改主題的時間：** 2013-02-23_
     
         $agid = (Get-CsRgsAgentGroup -Name "Help Desk").Identity;
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需建立代理人群組的詳細資訊，請參閱 <a href="new-csrgsagentgroup.md">New-CsRgsAgentGroup</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需建立代理人群組的詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsAgentGroup">New-CsRgsAgentGroup</a>。
+    
 
 
 9.  建立佇列。在命令列中執行：
@@ -255,11 +183,11 @@ _**上次修改主題的時間：** 2013-02-23_
 
 #### 其他資源
 
-[New-CsRgsQueue](new-csrgsqueue.md)  
-[Set-CsRgsQueue](set-csrgsqueue.md)  
-[New-CsRgsPrompt](new-csrgsprompt.md)  
-[New-CsRgsCallAction](new-csrgscallaction.md)  
-[Get-CsRgsQueue](get-csrgsqueue.md)  
-[Import-CsRgsAudioFile](import-csrgsaudiofile.md)  
-[Remove-CsRgsQueue](remove-csrgsqueue.md)
+[New-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsQueue)  
+[Set-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsQueue)  
+[New-CsRgsPrompt](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsPrompt)  
+[New-CsRgsCallAction](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsCallAction)  
+[Get-CsRgsQueue](https://docs.microsoft.com/powershell/module/skype/Get-CsRgsQueue)  
+[Import-CsRgsAudioFile](https://docs.microsoft.com/powershell/module/skype/Import-CsRgsAudioFile)  
+[Remove-CsRgsQueue](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsRgsQueue)
 

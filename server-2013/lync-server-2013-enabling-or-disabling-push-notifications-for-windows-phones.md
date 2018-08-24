@@ -61,7 +61,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $False
 
-如需詳細資訊，請參閱 [Set-CsPushNotificationConfiguration](set-cspushnotificationconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPushNotificationConfiguration) Cmdlet 的說明主題。
 
 ## 請參閱
 

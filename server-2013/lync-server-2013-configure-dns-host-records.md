@@ -29,31 +29,13 @@ _**上次修改主題的時間：** 2012-10-01_
 
 5.  按一下 **\[IP 位址\]** ，然後為 前端集區的負載平衡器輸入虛擬 IP (VIP)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在使用 Director 集區的部署中，簡單 URL 的主機 (A) 記錄應指向 Director 負載平衡器的 VIP。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在使用 Director 集區的部署中，簡單 URL 的主機 (A) 記錄應指向 Director 負載平衡器的 VIP。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您僅部署一個不使用負載平衡器就連線至拓撲的 Enterprise Edition Server 或 Director，或是您部署了一部 Standard Edition Server，請輸入 Enterprise Edition Server、Standard Edition Server 或 Director 的 IP 位址。如果您要在集區中部署多個 Enterprise Edition Server 或 Director，則需要負載平衡器。負載平衡器無法用於 Standard Edition Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!NOTE]  
+    > 如果您僅部署一個不使用負載平衡器就連線至拓撲的 Enterprise Edition Server 或 Director，或是您部署了一部 Standard Edition Server，請輸入 Enterprise Edition Server、Standard Edition Server 或 Director 的 IP 位址。如果您要在集區中部署多個 Enterprise Edition Server 或 Director，則需要負載平衡器。負載平衡器無法用於 Standard Edition Server。
+    
 
 
 6.  按一下 \[新增主機\] ，然後按一下 \[確定\] 。

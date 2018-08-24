@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 遵循這些步驟即可刪除使用者層級或網站層級會議原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法刪除全域會議原則。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您無法刪除全域會議原則。
+
 
 
 ## 刪除網站或使用者會議原則
@@ -63,5 +54,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsConferencingPolicy | Where-Object {$_.AllowExternalUsersToRecordMeetings -eq $True} | Remove-CsConferencingPolicy
 
-如需詳細資訊，請參閱 [Remove-CsConferencingPolicy](remove-csconferencingpolicy.md)。
+如需詳細資訊，請參閱 [Remove-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsConferencingPolicy)。
 

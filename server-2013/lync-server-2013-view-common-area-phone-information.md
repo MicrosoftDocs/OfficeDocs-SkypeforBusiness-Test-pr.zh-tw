@@ -15,7 +15,7 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2013-02-20_
 
-您可以使用 **Get-CsCommonAreaPhone** Cmdlet 檢視有關設定供組織使用之公共區域電話的資訊。如果沒有使用任何參數，此 Cmdlet 會傳回有關您所有公共區域電話的資訊。選用的參數則提供讓您篩選資訊的各種方法，例如，您可以傳回所有在指定組織單位 (OU) 中具有連絡人物件的公共區域電話，或所有位於某指定建築物中的連絡人物件。如需 **Get-CsCommonAreaPhone** 參數的詳細資訊，請參閱＜[Get-CsCommonAreaPhone](get-cscommonareaphone.md)＞。
+您可以使用 **Get-CsCommonAreaPhone** Cmdlet 檢視有關設定供組織使用之公共區域電話的資訊。如果沒有使用任何參數，此 Cmdlet 會傳回有關您所有公共區域電話的資訊。選用的參數則提供讓您篩選資訊的各種方法，例如，您可以傳回所有在指定組織單位 (OU) 中具有連絡人物件的公共區域電話，或所有位於某指定建築物中的連絡人物件。如需 **Get-CsCommonAreaPhone** 參數的詳細資訊，請參閱＜[Get-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCommonAreaPhone)＞。
 
 從 Lync Server 2013 管理命令介面或 Windows PowerShell 遠端工作階段執行 **Get-CsCommonAreaPhone**。
 
@@ -46,5 +46,5 @@ _**上次修改主題的時間：** 2013-02-20_
         Description        :
         ExUmEnabled        : False
 
-如需詳細資訊，請參閱＜[Get-CsCommonAreaPhone](get-cscommonareaphone.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Get-CsCommonAreaPhone](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsCommonAreaPhone)＞ Cmdlet 的說明主題。
 

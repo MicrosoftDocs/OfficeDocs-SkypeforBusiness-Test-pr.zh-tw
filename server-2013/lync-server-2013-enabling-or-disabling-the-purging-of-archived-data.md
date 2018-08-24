@@ -23,19 +23,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 您會在部署封存時，先設定封存組態，但您可以在部署之後進行變更、新增及刪除組態。如需如何實作封存組態的詳細資訊，包括您可以指定哪些選項以及封存組態的階層，請參閱規劃文件、部署文件或作業文件中的＜[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要針對位於 Lync Server 2013 的使用者使用封存，必須設定封存原則以指定是否要啟用內部或外部通訊的封存，或是兩者皆啟用。預設並沒有啟用內部或外部通訊的封存。以任何原則啟用封存之前，您應先為部署指定適用的封存組態，然後如上一節中所述，選用地針對網站與集區指定封存組態。如需啟用封存的詳細資訊，請參閱部署文件中的＜<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">設定和指派封存原則</a>＞。<br />
-若您決定在部署封存之後要使用 Microsoft Exchange 整合以將封存資料及檔案儲存在 Exchange 2013 伺服器，且您的所有使用者均位於 Exchange 2013 伺服器，則您應從拓撲移除 SQL Server 資料庫組態。您必須使用拓撲產生器執行此動作。如需詳細資訊，請參閱作業文件中的＜<a href="lync-server-2013-changing-archiving-database-options.md">在 Lync Server 2013 中變更封存資料庫選項</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要針對位於 Lync Server 2013 的使用者使用封存，必須設定封存原則以指定是否要啟用內部或外部通訊的封存，或是兩者皆啟用。預設並沒有啟用內部或外部通訊的封存。以任何原則啟用封存之前，您應先為部署指定適用的封存組態，然後如上一節中所述，選用地針對網站與集區指定封存組態。如需啟用封存的詳細資訊，請參閱部署文件中的＜<a href="lync-server-2013-configuring-and-assigning-archiving-policies.md">設定和指派封存原則</a>＞。<br />
+> 若您決定在部署封存之後要使用 Microsoft Exchange 整合以將封存資料及檔案儲存在 Exchange 2013 伺服器，且您的所有使用者均位於 Exchange 2013 伺服器，則您應從拓撲移除 SQL Server 資料庫組態。您必須使用拓撲產生器執行此動作。如需詳細資訊，請參閱作業文件中的＜<a href="lync-server-2013-changing-archiving-database-options.md">在 Lync Server 2013 中變更封存資料庫選項</a>＞。
 
 
 ## 啟用或停用封存的清除功能
@@ -72,7 +62,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 ## 僅啟用匯出封存資料的清除
 
-  - 若要限制只清除已匯出至資料檔案 (藉由使用 [Export-CsArchivingData](export-csarchivingdata.md) Cmdlet) 的封存記錄，您也必須將 PurgeExportedArchivesOnly 屬性設為 True ($True)。例如：
+  - 若要限制只清除已匯出至資料檔案 (藉由使用 [Export-CsArchivingData](https://docs.microsoft.com/en-us/powershell/module/skype/Export-CsArchivingData) Cmdlet) 的封存記錄，您也必須將 PurgeExportedArchivesOnly 屬性設為 True ($True)。例如：
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $True -PurgeExportedArchivesOnly $True
     
@@ -84,7 +74,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $False
 
-如需包含清除封存資料之其他選項的詳細資訊，請參閱說明主題中的 [Set-CsArchivingConfiguration](set-csarchivingconfiguration.md) Cmdlet。
+如需包含清除封存資料之其他選項的詳細資訊，請參閱說明主題中的 [Set-CsArchivingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingConfiguration) Cmdlet。
 
 ## 請參閱
 

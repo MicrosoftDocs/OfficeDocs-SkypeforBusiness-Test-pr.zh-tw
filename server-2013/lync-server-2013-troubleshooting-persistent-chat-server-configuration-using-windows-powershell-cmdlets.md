@@ -19,16 +19,6 @@ _**上次修改主題的時間：** 2012-10-06_
 
   - 如果顯示「未提供主體」錯誤訊息，則想新增的主體無法使用。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>因應措施 – 無因應措施。此錯誤訊息表示主體無法使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 因應措施 – 無因應措施。此錯誤訊息表示主體無法使用。
 

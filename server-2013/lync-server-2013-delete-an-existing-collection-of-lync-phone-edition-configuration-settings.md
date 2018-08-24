@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 若您不再需要使用執行 Lync Phone Edition 之裝置的設定集合，請將其刪除。若您刪除網站的集合，該網站中的電話就會套用全域設定。您無法刪除全域集合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您不想刪除集合，而只想變更部分設定。如需如何進行這項作業的詳細資訊，請參閱＜<a href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">建立或修改 Lync Phone Edition 的組態設定集合</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若您不想刪除集合，而只想變更部分設定。如需如何進行這項作業的詳細資訊，請參閱＜<a href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">建立或修改 Lync Phone Edition 的組態設定集合</a>＞。
+
 
 
 ## 若要刪除 Lync Phone Edition 組態設定
@@ -41,18 +32,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 4.  在「裝置設定」 頁面中，按一下欲刪除的集合，然後按一下 \[編輯\] 功能表，再按一下 \[刪除\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您要刪除全域集合，設定就會還原為預設值，但集合仍會存在。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若您要刪除全域集合，設定就會還原為預設值，但集合仍會存在。
+    
 
 
 5.  在確認對話方塊中，按一下 \[確定\]。
@@ -79,5 +61,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsUCPhoneConfiguration | Where-Object {$_.EnforcePhoneLock -eq $False} | Remove-CsUCPhoneConfiguration
 
-如需詳細資訊，請參閱＜[Remove-CsUCPhoneConfiguration](remove-csucphoneconfiguration.md)＞。
+如需詳細資訊，請參閱＜[Remove-CsUCPhoneConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsUCPhoneConfiguration)＞。
 

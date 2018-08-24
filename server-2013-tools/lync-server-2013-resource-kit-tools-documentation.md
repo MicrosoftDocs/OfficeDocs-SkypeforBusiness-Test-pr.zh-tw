@@ -85,18 +85,9 @@ ABSConfig 乃是圖形化使用者介面應用程式，能夠讓系統管理員�
 
 在 Lync Server 2013 ABS 設定工具中，取消核取屬性的「啟用」核取方塊即可移除該屬性 (列)。這項操作與在 Lync Server 2010 中刪除屬性列的效果相同。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「啟用」核取方塊位於最右方的欄位；您可能需要向右捲動才可顯示該欄位</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 「啟用」核取方塊位於最右方的欄位；您可能需要向右捲動才可顯示該欄位
+
 
 
 ## 輸出
@@ -165,18 +156,9 @@ Bandwidth Policy Service Monitor 工具乃是 GUI 應用程式。系統管理員
 
 **\[拓撲資訊\]** 索引標籤會顯示在網路設定中所設定的所有連結清單。畫面不僅會顯示各個連結的音訊與視訊頻寬容量，另外也會同時以 KB 與容量百分比的形式顯示目前使用的頻寬。這項工具會利用色彩編碼醒目提示使用量逼近容量的連結，讓系統管理員得以快速找出該類連結。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是 Bandwidth Policy Service Monitor 工具在連線至任何已設定的頻寬原則服務時發生失敗，<strong>[機器資訊]</strong> 與 <strong>[拓撲資訊]</strong> 索引標籤就不會填入任何資訊。然而，也有可能工具在開始時能夠連線至服務，而後又失去連線。在這種情況下，系統管理員所看到的可能是過期的資訊。各個索引標籤中所顯示的<strong>上次更新</strong>時間戳記可讓系統管理員瞭解特定頻寬原則服務上次所更新的時間。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是 Bandwidth Policy Service Monitor 工具在連線至任何已設定的頻寬原則服務時發生失敗，<strong>[機器資訊]</strong> 與 <strong>[拓撲資訊]</strong> 索引標籤就不會填入任何資訊。然而，也有可能工具在開始時能夠連線至服務，而後又失去連線。在這種情況下，系統管理員所看到的可能是過期的資訊。各個索引標籤中所顯示的<strong>上次更新</strong>時間戳記可讓系統管理員瞭解特定頻寬原則服務上次所更新的時間。
+
 
 
 ## 輸出
@@ -237,7 +219,7 @@ Bandwidth Utilization Analyzer 提供下列兩個應用程式 (工具)：
 
   - **WanLinkLogCollector.exe**   此工具可讓其使用者輸入所需資訊。
 
-  - **BandwidthUtilizationAnalyzer.xlsm **  Microsoft Excel 試算表軟體報告可透過 WanLinkLogCollector.exe 自動啟動。此應用程式可讓使用者將篩選條件套用至報告中，如後文中所述。
+  - **BandwidthUtilizationAnalyzer.xlsm**  Microsoft Excel 試算表軟體報告可透過 WanLinkLogCollector.exe 自動啟動。此應用程式可讓使用者將篩選條件套用至報告中，如後文中所述。
 
 ## 使用 Bandwidth Utilization Analyzer 的程序
 
@@ -247,18 +229,9 @@ Bandwidth Utilization Analyzer 分為兩個使用程序：
 
   - 自訂報告，可透過 BandwidthUtilizationAnalyzer.xlsm 執行此操作
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議切勿由使用者手動啟動 BandwidthUtilizationAnalyzer.xlsm。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建議切勿由使用者手動啟動 BandwidthUtilizationAnalyzer.xlsm。
+
 
 
 ## 啟動 Bandwidth Utilization Analyzer
@@ -273,7 +246,7 @@ WanLinkLogCollector.exe 的使用步驟有三：
 
 2.  **指定檔案目錄**   提供檔案位置資訊
 
-3.  **收集記錄並啟動報告檢視器 **  執行命令以產生報告
+3.  **收集記錄並啟動報告檢視器**  執行命令以產生報告
 
 ## 步驟 1 - 記錄時間範圍
 
@@ -291,22 +264,13 @@ WanLinkLogCollector.exe 的使用步驟有三：
 
   - **伺服器記錄檔位置** 儲存頻寬原則伺服器記錄的資料夾位置，通常為 \<fileserver\>\\\<choice of FE\>\\AppServerFiles\\PDP。
 
-  - **暫時檔案儲存位置 ** 產生報告時儲存中繼檔案的暫時檔案位置。
+  - **暫時檔案儲存位置** 產生報告時儲存中繼檔案的暫時檔案位置。
 
 ![頻寬使用量分析中的檔案目錄](images/JJ945604.d66daeac-1669-45e3-932d-3f6782840c2a(OCS.15).jpg "頻寬使用量分析中的檔案目錄")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>確認已將足夠的伺服器記錄與暫時檔案存放區資料夾的檔案存取權限提供給工具使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 確認已將足夠的伺服器記錄與暫時檔案存放區資料夾的檔案存取權限提供給工具使用者。
+
 
 
 ## 步驟 3 - 收集記錄並啟動報告檢視器
@@ -460,6 +424,7 @@ CPS 工具的用途在於提供對 CPS 資料庫的命令列存取權限。系�
 
 若是這項工具與 CPS 在相同的電腦上執行，則不受任何需求限制。若是這項工具執行於遠端電腦，則 Lync Server 2013 所採用的 SQL Server 資料庫必須設為允許遠端存取。Call Parkometer 必須以 SQL Server 資料庫連接字串加以設定，才可連線至集區的 SQL Server。此 SQL Server 資料庫連接字串定義於設定檔 **parkometer.exe.config**。這個設定檔必須與 parkometer.exe 位於相同的目錄。下列 XML 檔則為 parkometer.exe.config 範例。必須加以設定的參數為使用者名稱 (例如 mydomain\\Administrator)、密碼 (例如 mypassword) 以及主機名稱 (例如 myserver)。
 
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -470,6 +435,7 @@ CPS 工具的用途在於提供對 CPS 資料庫的命令列存取權限。系�
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
+```
 
 ## 範例
 
@@ -577,18 +543,9 @@ DBAnalyze 乃是有助於系統管理員收集 Lync Server 2013 資料庫相關�
 
   - **診斷模式**   建立包含下列相關資訊的報告：表格 (記錄數、分割、資料大小，以及索引大小)、資料與記錄檔大小、上次備份時間、執行 Microsoft Office Communications Server 的伺服器上的連絡人通訊群組、權限平均數、連絡人、容器、訂閱、發行集、每名使用者端點、任何未正確裝載的使用者、無法路由的使用者、每名使用者召集的平均會議數、排程會議、作用中會議，以及資料庫版本。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>執行診斷模式可能會影響伺服器效能。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 執行診斷模式可能會影響伺服器效能。
+    
 
 
   - **使用者資料模式**  針對指定的使用者或連絡清單與權限清單中有該名使用者的使用者報告連絡人、容器、訂閱、發行集、權限以及連絡群組資料。此模式另外也會報告使用者召集或受邀之會議的摘要資料。
@@ -627,18 +584,9 @@ DBAnalyze 乃是有助於系統管理員收集 Lync Server 2013 資料庫相關�
 
 ![Dbanalyze.exe 的權限表。](images/JJ945604.b8931e9e-834e-4dec-8a84-2fc47d1613e9(OCS.15).jpg "Dbanalyze.exe 的權限表。")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>執行 <strong>/report:disk</strong> 模式必須要有本機系統管理員帳戶。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 執行 <strong>/report:disk</strong> 模式必須要有本機系統管理員帳戶。
+
 
 
 ## 範例
@@ -664,7 +612,7 @@ ImportStorageServiceData Resource Kit 工具可將已從存放服務 (LYSS) 清�
 
 根據佇列項目狀態或資料庫大小從存放服務清除資料的作業可能為自動 (定期) 作業。這項作業亦可透過手動叫用集區容錯移轉 Cmdlet 或由集區容錯移轉 Cmdlet 所叫用的 StorageServiceFullFlush Cmdlet 而執行。請注意，若是位於前端的任何存放服務 (LYSS ) 資料庫超過一般大小，最好不要重新匯入資料，因為如此可能導致有更多資料遭到匯出。再者，任何可能引發錯誤而導致存放服務佇列增長的問題應先加以解決 (例如 Exchange 端點錯誤、網路問題或其他問題)。
 
-**案例 1：**集區容錯移轉期間，檔案可能會從各個前端的存放服務中清除。容錯移轉完成後，應執行這項工具以重新匯入資料。
+**案例 1：** 集區容錯移轉期間，檔案可能會從各個前端的存放服務中清除。容錯移轉完成後，應執行這項工具以重新匯入資料。
 
 **案例 2：** 資料會每天自動清除或因為存放服務資料庫超過特定大小閾值 (例如 60%、80%、90% 滿) 而清除。這些自動清除的資料應由系統管理員定期重新匯入。在上述情況下，若是未部署監視的 SCOM 套件，即會發生從 Lync Server 存放服務清除資料的相關存放服務事件。事件識別碼有 32075 (完整清除作業已開始)、32076 (完整清除已完成)、32082 (維護層級清除已開始)、32083 (維護層級清除完成)、32089 (由於資料庫填滿而發生清除)。請注意，這些事件識別碼所對應的是 RTM 版本。當系統管理員看到這些事件，代表有檔案遭到清除。請利用這項工具定期匯入這些資料，例如每週一次。
 
@@ -678,18 +626,9 @@ ImportStorageServiceData Resource Kit 工具可將已從存放服務 (LYSS) 清�
 
 安裝 Lync Server 2013 Resource Kit 工具。執行這項工具的機器必須已加入網域且安裝 Lync Server 與 Lync Server 管理命令介面。這項工具會透過管理命令介面而使用 Cmdlet 識別集區中的所有前端伺服器。再者，執行這項工具的機器所在集區必須安裝 **RtcLocal** 資料庫。這項工具將利用這個資料庫擷取集區之 WEBSERVICE 檔案共用區的位置。此外，使用這項工具前，必須先透過 **Enable-PSRemoting** 在各個前端伺服器上啟用 Windows PowerShell，執行工具所在的機器亦是如此。否則，從這項工具遠端執行 Windows PowerShell 命令將會發生失敗。集區中的所有前端伺服器之　Windows PowerShell 遠端執行功能會在完成後加以關閉。最後，叫用這項工具的帳戶或認證對於工具執行所在的集區之網路服務檔案共用區必須擁有讀取/寫入權限，否則這項工具將會因為 IO 權限錯誤而失敗。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Windows Server 2012 中，依預設會啟用 Windows PowerShell 遠端執行功能，但在 Windows Server 2008 作業系統 則不會啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Windows Server 2012 中，依預設會啟用 Windows PowerShell 遠端執行功能，但在 Windows Server 2008 作業系統 則不會啟用。
+
 
 
 ## 範例
@@ -1003,11 +942,11 @@ Network Configuration Viewer (NetworkConfigurationViewer.exe) 可讓系統管理
 
 ## 範例
 
-**以圖形格式從 Lync Server 2013 部署中載入並檢視 CAC 網路拓撲：**Lync Server 2013 系統管理員若要在任何 Lync Server 2013 電腦上載入並檢視 CAC 網路拓撲設定，可利用 **\[下載網路設定\]** 選項加以執行，如下圖所示。若是這項工具部署於無法連線至 Lync 設定存放區的電腦，將無法下載或檢視這類設定。
+**以圖形格式從 Lync Server 2013 部署中載入並檢視 CAC 網路拓撲：** Lync Server 2013 系統管理員若要在任何 Lync Server 2013 電腦上載入並檢視 CAC 網路拓撲設定，可利用 **\[下載網路設定\]** 選項加以執行，如下圖所示。若是這項工具部署於無法連線至 Lync 設定存放區的電腦，將無法下載或檢視這類設定。
 
 ![下載網路設定。](images/JJ945604.8d126d3f-2545-4f13-a244-974f09614982(OCS.15).jpg "下載網路設定。")
 
-**以圖形格式從頻寬原則伺服器記錄檔中載入並檢視 CAC 網路拓撲：**Lync Server 2013 頻寬原則伺服器會透過記錄機制而將 CAC 網路拓撲儲存於 Lync Server 2013 檔案共用區位置下。Lync Server 系統管理員若要以圖形格式檢視這類檔案，可利用 **\[開啟網路設定\]** 選項加以執行，如下所示。
+**以圖形格式從頻寬原則伺服器記錄檔中載入並檢視 CAC 網路拓撲：** Lync Server 2013 頻寬原則伺服器會透過記錄機制而將 CAC 網路拓撲儲存於 Lync Server 2013 檔案共用區位置下。Lync Server 系統管理員若要以圖形格式檢視這類檔案，可利用 **\[開啟網路設定\]** 選項加以執行，如下所示。
 
 ![開啟 Bandwidth Policy Server 記錄檔。](images/JJ945604.3e503e92-aacb-4921-a8d2-23f860fe2df6(OCS.15).jpg "開啟 Bandwidth Policy Server 記錄檔。")
 
@@ -1019,7 +958,7 @@ Network Configuration Viewer (NetworkConfigurationViewer.exe) 可讓系統管理
 
 ![將網路設定儲存為圖片。](images/JJ945604.145a6fb9-58b1-46b1-bbd5-a661ceba07b4(OCS.15).jpg "將網路設定儲存為圖片。")
 
-**檢視 CAC 網路拓撲設定資料：**Lync Server 2013 系統管理員若要以文字格式檢視相關的網路設定資料，例如網路地區、網路網站、頻寬設定檔，以及站台子網路 IP 位址，可利用 \[檢視網路設定資料\] 選項加以執行，如下所示。
+**檢視 CAC 網路拓撲設定資料：** Lync Server 2013 系統管理員若要以文字格式檢視相關的網路設定資料，例如網路地區、網路網站、頻寬設定檔，以及站台子網路 IP 位址，可利用 \[檢視網路設定資料\] 選項加以執行，如下所示。
 
 ![檢視網路設定資料。](images/JJ945604.b72a4c21-a042-4d91-bf96-fcb396af0679(OCS.15).jpg "檢視網路設定資料。")
 
@@ -1031,7 +970,7 @@ Network Configuration Viewer (NetworkConfigurationViewer.exe) 可讓系統管理
 
 ![為 CAC 網路拓撲定義自訂連接器](images/JJ945604.b20bea67-c8e1-453e-b1dd-e2aa17b62566(OCS.15).jpg "為 CAC 網路拓撲定義自訂連接器")
 
-**檢視 CAC 網路拓撲的網站資訊、地區資訊，以及佈建的頻寬原則：**Lync Server 2013 系統管理員若要檢視相關的 CAC 網路地區資訊、網站資訊，以及 CAC 頻寬佈建資訊，可利用以下所示的選項。(例如說，在網路地區或網路網站物件中按一下 **\[資訊\]**。)
+**檢視 CAC 網路拓撲的網站資訊、地區資訊，以及佈建的頻寬原則：** Lync Server 2013 系統管理員若要檢視相關的 CAC 網路地區資訊、網站資訊，以及 CAC 頻寬佈建資訊，可利用以下所示的選項。(例如說，在網路地區或網路網站物件中按一下 **\[資訊\]**。)
 
 ![為您的網路定義自訂連接器。](images/JJ945604.26262c75-4342-41c3-bc98-1793aa6a7713(OCS.15).jpg "為您的網路定義自訂連接器。")
 
@@ -1061,7 +1000,7 @@ Response Group Agent Live 工具建置於回應群組服務與 Microsoft Lync 20
 
 以下為專員在 Response Group Agent Live 中所能使用的三個主要功能：
 
-  - **登入/登出：**相對於 \[專員群組\] 頁面 (可從 Lync 2013 中存取)，Response Group Agent Live 僅供專員同時登入或登出所有專員群組。這項應用程式提供專員三種快速登入或登出的方式：
+  - **登入/登出：** 相對於 \[專員群組\] 頁面 (可從 Lync 2013 中存取)，Response Group Agent Live 僅供專員同時登入或登出所有專員群組。這項應用程式提供專員三種快速登入或登出的方式：
     
       - 按一下應用程式中的 \[登入/登出\] (綠色與紅色) 按鈕。
     
@@ -1069,9 +1008,9 @@ Response Group Agent Live 工具建置於回應群組服務與 Microsoft Lync 20
     
       - 使用可供設定的鍵盤快速鍵。
 
-  - **群組成員資格：**選取專員群組後，Response Group Agent Live 即會在右側窗格中顯示群組專員清單。若是 Lync 2013 與這個應用程式執行於相同的電腦，Response Group Agent Live 中即會顯示目前狀態資訊以及連絡人卡片。專員可直接從該處傳送 IM 或致電給其他專員。
+  - **群組成員資格：** 選取專員群組後，Response Group Agent Live 即會在右側窗格中顯示群組專員清單。若是 Lync 2013 與這個應用程式執行於相同的電腦，Response Group Agent Live 中即會顯示目前狀態資訊以及連絡人卡片。專員可直接從該處傳送 IM 或致電給其他專員。
 
-  - **即時統計資料：**Response Group Agent Live 可提供所有專員群組的即時統計資料。更新頻率為一分鐘。當回應群組接聽通話後，具有目前佇列通話數的群組名稱旁即會新增視覺指示器。另外，將游標停留於群組上方亦可顯示最長等候時間。
+  - **即時統計資料：** Response Group Agent Live 可提供所有專員群組的即時統計資料。更新頻率為一分鐘。當回應群組接聽通話後，具有目前佇列通話數的群組名稱旁即會新增視覺指示器。另外，將游標停留於群組上方亦可顯示最長等候時間。
 
 ## 需求
 
@@ -1127,50 +1066,22 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
   - 啟用/停用/修改小組通話群組設定
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具的新功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 SEFAUtil 工具的新功能
+    
 
 
   - 啟用/停用/修改同時響鈴設定 (包括目的號碼)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具的新功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 2013 SEFAUtil 工具的新功能
+    
 
 
   - 啟用/停用/修改群組來電接聽設定
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945596.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 SEFAUtil 工具的新功能</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 2013 SEFAUtil 工具的新功能
 
 
 這項工具有下列限制：
@@ -1207,36 +1118,18 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
     
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>用於執行 SEFAUtil 工具的電腦均必須安裝 UCMA 3.0</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 用於執行 SEFAUtil 工具的電腦均必須安裝 UCMA 3.0
+    
 
 
 2.  在拓撲中必須針對 SEFAUtil 工具定義信任的應用程式。為了將 SEFAUtil 定義為新信任的應用程式，請使用 Lync Server 管理命令介面並執行下列 Cmdlet：
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如有需要，可使用其他連接埠。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如有需要，可使用其他連接埠。
+    
 
 
 3.  拓撲變更需要加以啟用。若要啟用拓撲變更，可透過 Lync Server 管理命令介面執行下列 Cmdlet 而完成：
@@ -1261,18 +1154,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 下列命令會顯示使用者的通話處理。`SEFAUtil.exe /server:lyncserver.contoso.com katarina@contoso.com`
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此範例會使用 <strong>/server</strong> 參數指定所要連線的 Lync Server。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此範例會使用 <strong>/server</strong> 參數指定所要連線的 Lync Server。
+
 
 
 **輸出**
@@ -1359,18 +1243,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
 此範例會移除代理人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移除最後一個代理人後，代理人響鈴功能也會自動停用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 移除最後一個代理人後，代理人響鈴功能也會自動停用。
+
 
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
@@ -1403,18 +1278,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /setsimulringdestination:+14255550126 /enablesimulring
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於啟用同時響鈴的使用者，若要變更同時響鈴的目的號碼，請以 /enablesimulring 參數保留命令，否則目的號碼將無法變更。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 對於啟用同時響鈴的使用者，若要變更同時響鈴的目的號碼，請以 /enablesimulring 參數保留命令，否則目的號碼將無法變更。
+
 
 
 **輸出**
@@ -1446,18 +1312,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /addteammember:anders@contoso.com /simulringteam
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>將成員新增至使用者的小組通話群組會將使用者的同時響鈴設定自動切換至小組通話群組的響鈴。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 將成員新增至使用者的小組通話群組會將使用者的同時響鈴設定自動切換至小組通話群組的響鈴。
+
 
 
 **輸出**
@@ -1473,18 +1330,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removeteammember:anders@contoso.com
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是所要移除的成員為小組通話群組的唯一成員，則小組通話群組的同時響鈴功能將會自動停用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是所要移除的成員為小組通話群組的唯一成員，則小組通話群組的同時響鈴功能將會自動停用。
+
 
 
 **輸出**
@@ -1514,18 +1362,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /simulringteam
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是該名使用者的小組通話群組沒有成員，小組通話功能將無法啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是該名使用者的小組通話群組沒有成員，小組通話功能將無法啟用。
+
 
 
 **輸出**
@@ -1563,18 +1402,9 @@ SEFAUtil (次要擴充功能啟用) 可讓 Lync Server 2013 系統管理員與�
 
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablegrouppickup
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>停用使用者的群組來電接聽功能後，系統不會保留指派給該使用者的群組號碼。若是稍後要重新啟用該使用者的群組來電接聽功能，您必須以 /enablegrouppickup 參數重新指派群組號碼。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 停用使用者的群組來電接聽功能後，系統不會保留指派給該使用者的群組號碼。若是稍後要重新啟用該使用者的群組來電接聽功能，您必須以 /enablegrouppickup 參數重新指派群組號碼。
+
 
 
     User Aor: sip:katarina@contoso.com
@@ -1605,7 +1435,7 @@ SYSPrep.ps1 乃是 Windows PowerShell 指令碼，會將下列 Lync Server 2013 
 
 ## 需求
 
-執行 SYSPrep.ps1 指令碼前，您必須將先決條件檔案複製至 Windows Server 2008 作業系統 機器的本機資料夾 (例如 **D:\\Setup)**。這個資料夾必須另外包含 Lync Server 2013 檔案的複本，特別是 **Setup.exe。**先決條件檔案可從下列位置進行下載：
+執行 SYSPrep.ps1 指令碼前，您必須將先決條件檔案複製至 Windows Server 2008 作業系統 機器的本機資料夾 (例如 **D:\\Setup)**。這個資料夾必須另外包含 Lync Server 2013 檔案的複本，特別是 **Setup.exe。** 先決條件檔案可從下列位置進行下載：
 
 
 <table>
@@ -1674,18 +1504,9 @@ Unassigned Number Announcements Migration 工具為 Windows PowerShell 指令碼
 
 1.  將位於來源伺服器或集區的宣告應用程式之未指派的號碼宣告所使用的所有音訊檔案移至目的地伺服器或集區的檔案存放區。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>音訊檔案在複製至目的地集區後，即會從來源集區中移除。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 音訊檔案在複製至目的地集區後，即會從來源集區中移除。
+    
 
 
 2.  將位於來源伺服器或集區的宣告應用程式所設定之所有未指派的號碼宣告移至目的地伺服器或集區。
@@ -1704,11 +1525,11 @@ Unassigned Number Announcements Migration 工具為 Windows PowerShell 指令碼
 
 Unassigned Number Announcements Migration 指令碼可用於下列三個使用案例：
 
-  - **移轉組態設定至新版的 Lync Server：**Contoso 目前正在移轉至 Lync Server 2013，在移轉程序期間，Lync Server 系統管理員要將宣告應用程式所處理之未指派的號碼設定從 Lync Server 2010 部署移至新的 Lync Server 2013 部署。為了移動組態設定，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具。
+  - **移轉組態設定至新版的 Lync Server：** Contoso 目前正在移轉至 Lync Server 2013，在移轉程序期間，Lync Server 系統管理員要將宣告應用程式所處理之未指派的號碼設定從 Lync Server 2010 部署移至新的 Lync Server 2013 部署。為了移動組態設定，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具。
 
-  - **從 Lync Server 2013 回復至 Lync Server 2010 的部署：**由於非預期的因素，Contoso 需要將移轉作業回復至新的 Lync Server 2013 部署。為了盡可能減少服務中斷情形，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具從 Lync Server 2013 部署的設定回復至 Lync Server 2010 部署。
+  - **從 Lync Server 2013 回復至 Lync Server 2010 的部署：** 由於非預期的因素，Contoso 需要將移轉作業回復至新的 Lync Server 2013 部署。為了盡可能減少服務中斷情形，Lync Server 系統管理員會使用 Unassigned Number Announcements Migration 工具從 Lync Server 2013 部署的設定回復至 Lync Server 2010 部署。
 
-  - **在 Lync 部署之間移動資料：**Contoso 目前正以較新的伺服器取代單一集區中的所有伺服器。Contoso 的策略在於部署新版的 Lync Server 2013 集區，將所有資料從舊集區移至新集區，接著取代舊集區運作。新集區部署完成後，會使用 Unassigned Number Announcements Migration 工具將設定從舊集區移至新集區。
+  - **在 Lync 部署之間移動資料：** Contoso 目前正以較新的伺服器取代單一集區中的所有伺服器。Contoso 的策略在於部署新版的 Lync Server 2013 集區，將所有資料從舊集區移至新集區，接著取代舊集區運作。新集區部署完成後，會使用 Unassigned Number Announcements Migration 工具將設定從舊集區移至新集區。
 
 ## 需求
 
@@ -1754,18 +1575,9 @@ Move-CsAnnouncementConfiguration 指令碼需要下表中所述的兩個參數�
 
 4.  在集區之間移動單一使用者時一併移動與該使用者相關聯的所有 Web 會議資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在集區之間移動單一使用者時，Lync Server 2010 的 Resource Kit 工具 支援移動與該使用者相關聯的所有 Web 會議資料。該功能在這項工具中現已取代為 <strong>MoveConferenceData</strong> 參數。如需這項參數的詳細資訊，請見 <a href="https://technet.microsoft.com/zh-tw/library/gg398528(v=ocs.15)">Move-CsUser</a> Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在集區之間移動單一使用者時，Lync Server 2010 的 Resource Kit 工具 支援移動與該使用者相關聯的所有 Web 會議資料。該功能在這項工具中現已取代為 <strong>MoveConferenceData</strong> 參數。如需這項參數的詳細資訊，請見 <a href="https://technet.microsoft.com/zh-tw/library/gg398528(v=ocs.15)">Move-CsUser</a> Cmdlet。
+
 
 
 這項工具僅會刪除非使用中會議的會議資料。作用中會議 (或工作階段中的會議) 無法刪除。

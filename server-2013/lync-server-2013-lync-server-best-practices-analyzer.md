@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-06-13_
 
 Lync Server 2013，Best Practices Analyzer 乃一診斷工具，可收集 Lync Server 2013 環境的組態資訊，並決定是否要根據 Microsoft 最佳作法設定組態。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013，Best Practices Analyzer 會掃描並只回報 Lync Server 2013 元件的問題。若您的部署包含 Lync Server 2010 或 Office Communications Server 2007 R2 元件，請使用舊版 Best Practices Analyzer 以分析這些元件。如需詳細資訊，請參閱＜<a href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">執行最佳做法分析程式的需求</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013，Best Practices Analyzer 會掃描並只回報 Lync Server 2013 元件的問題。若您的部署包含 Lync Server 2010 或 Office Communications Server 2007 R2 元件，請使用舊版 Best Practices Analyzer 以分析這些元件。如需詳細資訊，請參閱＜<a href="lync-server-2013-requirements-for-running-best-practices-analyzer.md">執行最佳做法分析程式的需求</a>＞。
+
 
 
 ## 本章節內容

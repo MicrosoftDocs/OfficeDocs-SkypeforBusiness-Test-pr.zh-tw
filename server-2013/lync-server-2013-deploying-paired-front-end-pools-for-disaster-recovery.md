@@ -51,26 +51,23 @@ _**上次修改主題的時間：** 2013-02-21_
 
 10. 使用下列 Cmdlet，強制兩個集區的使用者及會議資料互相進行同步處理：
     
-        Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
-    
-        Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
+      ```
+      Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
+      ```    
+      ```
+      Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
+      ```
     
     同步處理資料可能需要花費一些時間。您可以使用下列 Cmdlet 檢查狀態。確保雙向中的狀態處於穩定狀態。
     
-        Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
-    
-        Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
+      ```
+      Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
+      ```    
+      ```
+      Get-CsBackupServiceStatus -PoolFqdn <Pool2 FQDN>
+      ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>[語音自動容錯移轉和容錯回復] 選項以及 拓撲產生器中的相關時間間隔僅會套用至 Lync Server 2010 中引入的語音恢復功能。選取此選項不表示會自動使用本文件中討論的集區容錯移轉。集區容錯移轉和容錯回復一律需要管理員以手動方式分別呼叫容錯移轉和容錯回復 Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> [語音自動容錯移轉和容錯回復] 選項以及 拓撲產生器中的相關時間間隔僅會套用至 Lync Server 2010 中引入的語音恢復功能。選取此選項不表示會自動使用本文件中討論的集區容錯移轉。集區容錯移轉和容錯回復一律需要管理員以手動方式分別呼叫容錯移轉和容錯回復 Cmdlet。
+
 

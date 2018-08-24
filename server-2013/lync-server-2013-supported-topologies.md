@@ -25,18 +25,9 @@ Lync Server 2013 內部部署包含下列各項：
     
       - Enterprise Edition 前端集區包含一或多個前端伺服器 (通常至少兩個前端伺服器，以維持延展性)，以及一個獨立的後端伺服器。前端集區最多可包含十二個前端伺服器。多個前端伺服器必須有負載平衡。針對 SIP 流量，建議使用 DNS 負載平衡，但也支援硬體負載平衡。如果您針對 SIP 流量使用 DNS 負載平衡，仍需要針對 HTTP 流量使用硬體負載平衡器。若要讓資料庫保有高可用性，建議您使用 SQL Server 鏡像。後端資料庫必須要有個別的執行個體，但您可以組合封存資料庫、監控資料庫、常設聊天室資料庫，以及常設聊天室規範資料庫。 Lync Server 2013 支援在您的部署中使用共用叢集，以進行檔案共用。如需資料庫儲存需求的詳細資料，請參閱 [Lync Server 2013 中的資料庫軟體支援](lync-server-2013-database-software-support.md)。如需檔案儲存需求的詳細資訊，請參閱 [Lync Server 2013 中的檔案儲存支援](lync-server-2013-file-storage-support.md)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您組合 Lync Server 資料庫，則強烈建議您評估可能會影響可用性和效能的所有因素。若要確認容錯移轉功能，建議您測試所有容錯移轉狀況。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 如果您組合 Lync Server 資料庫，則強烈建議您評估可能會影響可用性和效能的所有因素。若要確認容錯移轉功能，建議您測試所有容錯移轉狀況。
+        
     
       - Standard Edition Server，其中包含組合的 SQL Server Express 資料庫。
 
@@ -44,18 +35,9 @@ Lync Server 2013 內部部署包含下列各項：
 
 本節將說明 Lync Server 2013 部署的站台與元件。如需有關 Lync Server 2013 站台、拓撲與元件規劃的詳細資訊，請參閱＜規劃＞文件中的 [規劃 Lync Server 2013 前必須知道的拓撲基本知識](lync-server-2013-topology-basics-you-must-know-before-planning.md)與 [Lync Server 2013 中的參考拓撲](lync-server-2013-reference-topologies.md)。如需有關整合舊版元件的詳細資訊，請參閱 [Lync Server 2013 中支援的移轉路徑和並存案例](lync-server-2013-supported-migration-paths-and-coexistence-scenarios.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>前端、Edge、中繼和 Director 伺服器角色不支援延伸的集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 前端、Edge、中繼和 Director 伺服器角色不支援延伸的集區。
+
 
 
 ## 中央站台的拓撲與元件 (內部部署)
@@ -82,18 +64,9 @@ Lync Server 2013 內部部署包含下列各項：
 
   - 反向 Proxy，這並不是 Lync Server 2013 元件，但若您想要支援同盟使用者共用 Web 內容或支援行動流量，就必須使用。任何 Lync Server 2013 伺服器角色皆不可與反向 Proxy 伺服器組合，但是您可以在用於其他應用程式之組織中的現有反向 Proxy 伺服器上設定支援，來實作 Lync Server 2013 部署的反向 Proxy 支援。如需有關反向 Proxy 伺服器的詳細資訊，請參閱＜部署＞文件中的 [設定 Lync Server 2013 的反向 Proxy 伺服器](lync-server-2013-setting-up-reverse-proxy-servers.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，A/V 會議、監控及封存會在前端伺服器上執行，而且不再是個別的伺服器角色。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 中，A/V 會議、監控及封存會在前端伺服器上執行，而且不再是個別的伺服器角色。
+
 
 
 您在中央網站上部署的所有前端集區與 Standard Edition Server，將會共用您為中央網站所部署的下列各項：
@@ -112,18 +85,9 @@ Lync Server 2013 內部部署包含下列各項：
 
   - 封存
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您想支援 Exchange 2013 Unified Messaging 的整合，您可以在 Lync Server 2013 部署中實作 Exchange UM Server，但這並不是 Lync Server 2013 站台的元件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您想支援 Exchange 2013 Unified Messaging 的整合，您可以在 Lync Server 2013 部署中實作 Exchange UM Server，但這並不是 Lync Server 2013 站台的元件。
+
 
 
 多個中央網站也可共用您在某個中央網站上部署的下列任何項目：
@@ -138,18 +102,9 @@ Lync Server 2013 內部部署包含下列各項：
 
   - 監控
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Exchange UM Server 可以在您的 Lync Server 2013 部署中實作，也可以讓多個中央站台共用，但它並不是 Lync Server 2013 站台的元件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Exchange UM Server 可以在您的 Lync Server 2013 部署中實作，也可以讓多個中央站台共用，但它並不是 Lync Server 2013 站台的元件。
+
 
 
 如需有關 Lync Server 2013 伺服器角色和功能的詳細資訊，請參閱＜規劃＞文件中的 [Lync Server 2013 中的伺服器角色](lync-server-2013-server-roles.md)。

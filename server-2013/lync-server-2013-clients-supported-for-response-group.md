@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2014-03-28_
 
   - Lync Phone Edition
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>回應群組應用程式在 Lync 行動用戶端上未受支援。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 回應群組應用程式在 Lync 行動用戶端上未受支援。
+
 
 
 如需關於新功能的詳細資訊，請參閱＜快速入門＞文件中的＜ [Lync Server 2013 中的新回應群組應用程式功能](lync-server-2013-new-response-group-application-features.md)＞。

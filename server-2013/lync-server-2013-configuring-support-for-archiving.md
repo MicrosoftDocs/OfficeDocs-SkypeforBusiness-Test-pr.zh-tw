@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-01_
 
 將封存新增至拓撲且發行新拓撲之後，您需要針對最初如何在部署中實作封存的方式來設定選項，然後設定一或多個封存原則來為部署 (且可選擇性地針對特定的網站和使用者) 啟用封存。您可以使用 Lync Server 2013 控制台來執行此動作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>部署之後，您可以變更封存設定以停用或啟用封存。如需有關如何實作對每日管理的封存支援或在部署之後如何符合組織中新需求的詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving.md">管理 Lync Server 2013 封存</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 部署之後，您可以變更封存設定以停用或啟用封存。如需有關如何實作對每日管理的封存支援或在部署之後如何符合組織中新需求的詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving.md">管理 Lync Server 2013 封存</a>。
+
 
 
 ## 本章節內容

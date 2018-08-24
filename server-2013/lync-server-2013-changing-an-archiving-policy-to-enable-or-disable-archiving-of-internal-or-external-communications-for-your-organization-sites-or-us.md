@@ -25,19 +25,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 如需關於如何實作原則的詳細資訊，包含原則的階層，請參閱規劃文件、部署文件或作業文件中的[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若您在部署中啟用 Microsoft Exchange 整合，Exchange 原則可控制是否為位於 Exchange 2013 的使用者啟用封存，並將他們的信箱就地保留。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。<br />
-您必須先在 [封存] 組態中指定所有適當選項，才能啟用封存功能。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理組織、網站及集區的封存設定選項</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若您在部署中啟用 Microsoft Exchange 整合，Exchange 原則可控制是否為位於 Exchange 2013 的使用者啟用封存，並將他們的信箱就地保留。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。<br />
+> 您必須先在 [封存] 組態中指定所有適當選項，才能啟用封存功能。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理組織、網站及集區的封存設定選項</a>。
 
 
 ## 變更封存原則
@@ -64,18 +54,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 6.  按一下 \[認可\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者原則的設定只會套用到您套用該原則的特定使用者及使用者群組。如需詳細資訊，請參閱<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">將封存原則套用到使用者</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 使用者原則的設定只會套用到您套用該原則的特定使用者及使用者群組。如需詳細資訊，請參閱<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">將封存原則套用到使用者</a>。
+    
 
 
 ## 使用 Lync Server PowerShell Cmdlet 啟用與停用封存
@@ -106,7 +87,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Set-CsArchivingPolicy -Identity "global" -ArchiveInternal $False -ArchiveExternal $False
 
-如需詳細資訊，請參閱 [Set-CsArchivingPolicy](set-csarchivingpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsArchivingPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

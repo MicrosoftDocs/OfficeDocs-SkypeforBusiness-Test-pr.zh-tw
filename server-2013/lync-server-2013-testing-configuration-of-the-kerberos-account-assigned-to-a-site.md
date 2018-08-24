@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Testing configuration of the Kerberos account assigned to a site'
+title: "Lync Server 2013：測試指派到網站之 Kerberos 帳戶的設定"
 TOCTitle: Testing configuration of the Kerberos account assigned to a site
 ms:assetid: a087d77e-c59e-44f5-9caa-ccfd41be7276
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/Dn743837(v=OCS.15)
@@ -44,7 +44,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 The Test-CsKerberosAccountAssignment cmdlet enables you to verify that a Kerberos account is associated with a given site, that this account is configured correctly, and that the account is working as expected. Kerberos accounts are computer accounts that can serve as the authentication principal for all the computers in a site that are running Internet Information Server (IIS). Because these accounts use the Kerberos authentication protocol, the accounts are known as Kerberos accounts, and the new authentication process is known as Kerberos web authentication. This enables you to manage all IIS servers by using a single account.
 
-For more information, see the Help documentation for the [Test-CsKerberosAccountAssignment](test-cskerberosaccountassignment.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsKerberosAccountAssignment](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsKerberosAccountAssignment) cmdlet.
 
 ## Running the Test
 
@@ -56,7 +56,7 @@ The following command runs Test-CsKerberosAccountAssignment and saves the output
 
     Test-CsKerberosAccountAssignment -Identity "site:Redmond" -Report "C:\Logs\KerberosTest.html" -Verbose
 
-For more information, see the Help documentation for the [Test-CsKerberosAccountAssignment](test-cskerberosaccountassignment.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsKerberosAccountAssignment](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsKerberosAccountAssignment) cmdlet.
 
 ## Determining Success or Failure
 
@@ -84,5 +84,5 @@ Here are some common reasons why Test-CsKerberosAccountAssignment might fail:
     
     InvalidKerberosConfiguration: The Kerberos configuration on atl-cs001.litwareinc.com is invalid. The expected assigned account is litwareinc\\kerberostest. Ensure that the account has not expired, and the configured password on the machine matches the Active Directory password of the account.
     
-    You can set the password using the [Set-CsKerberosAccountPassword](set-cskerberosaccountpassword.md) cmdlet.
+    You can set the password using the [Set-CsKerberosAccountPassword](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsKerberosAccountPassword) cmdlet.
 

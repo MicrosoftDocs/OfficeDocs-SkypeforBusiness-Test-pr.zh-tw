@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 5.  在 \[語音原則\] 底下的 \[編輯 Lync Server 使用者\] 中，選取想要套用的使用者原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[&lt;自動&gt;] 設定會套用預設伺服器或全域原則設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > [&lt;自動&gt;] 設定會套用預設伺服器或全域原則設定。
+    
 
 
 ## 使用 Lync Server 管理命令介面指派使用者專屬的語音原則
@@ -73,7 +64,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者的語音原則指派給多個使用者
 
-  - 此命令會將個別使用者的語音原則 FinanceVoicePolicy 指派給所有在 Active Directory 的 Finance OU 中具有帳戶的使用者。如需關於此命令中所使用之 OU 參數的詳細資訊，請參閱 [Get-CsUser](get-csuser.md) Cmdlet 的文件。
+  - 此命令會將個別使用者的語音原則 FinanceVoicePolicy 指派給所有在 Active Directory 的 Finance OU 中具有帳戶的使用者。如需關於此命令中所使用之 OU 參數的詳細資訊，請參閱 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 的文件。
     
         Get-CsUser -OU "ou=Finance,ou=North America,dc=litwareinc,dc=com" | Grant-CsVoicePolicy -PolicyName "FinanceVoicePolicy"
 
@@ -83,7 +74,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱 [Grant-CsVoicePolicy](grant-csvoicepolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

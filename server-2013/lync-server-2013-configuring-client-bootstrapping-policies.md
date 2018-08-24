@@ -52,10 +52,8 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>停用登入失敗記錄檔的自動上傳 (DisableAutomaticSendTracing)</p></td>
 <td><p>將登入失敗記錄檔自動上傳到 Lync Server 進行分析。如果登入成功，就不會自動上傳記錄檔。如果未設定這個原則，則會發生下列情況：</p>
 <dl>
-<dt><span></span></dt>
 <dd><p>若為 Lync Online 使用者：登入失敗記錄檔會自動上傳。</p>
 </dd>
-<dt><span></span></dt>
 <dd><p>若為 Lync 內部部署使用者：在上傳之前會顯示確認對話方塊。</p>
 </dd>
 </dl>
@@ -161,18 +159,9 @@ _**上次修改主題的時間：** 2015-03-09_
     
     `%systemroot%\sysvol\domain\policies\PolicyDefinitions`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>這個程序假設您想要管理您網域中的多部電腦。在這種情況下，您會將集中存放區中的範本儲存在主要網域控制站上的 Sysvol 資料夾中。這樣可以為網域系統管理範本提供一個複製的集中存放區位置。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 這個程序假設您想要管理您網域中的多部電腦。在這種情況下，您會將集中存放區中的範本儲存在主要網域控制站上的 Sysvol 資料夾中。這樣可以為網域系統管理範本提供一個複製的集中存放區位置。
+    
 
 
 2.  為您將要使用的每種語言建立子資料夾。這些子資料夾包含語言特定的 ADML 資源檔案。例如，在此位置建立美國英文 (EN-US) 的子資料夾：

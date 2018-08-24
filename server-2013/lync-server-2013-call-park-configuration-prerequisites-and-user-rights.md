@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-10_
 
 通話駐留是部署 企業語音時，預設安裝的一項通話管理功能。本主題說明在設定 通話駐留前，必須備妥的項目，以及執行設定工作所需的使用者權限。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 災害復原程序時，系統不會將 通話駐留應用程式的自訂等候音樂檔案備份，因此若檔案所上傳的集區受損、損毀或遭清除，這些檔案就會遺失。請一律另行備份一份用於 通話駐留的已上傳自訂等候音樂檔案複本。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在 Lync Server 2013 災害復原程序時，系統不會將 通話駐留應用程式的自訂等候音樂檔案備份，因此若檔案所上傳的集區受損、損毀或遭清除，這些檔案就會遺失。請一律另行備份一份用於 通話駐留的已上傳自訂等候音樂檔案複本。
+
 
 
 本節假設您已閱讀與 通話駐留相關的規劃文件 (請參閱＜ [在 Lync Server 2013 中規劃通話管理功能](lync-server-2013-planning-for-call-management-features.md)＞)。
@@ -57,26 +48,17 @@ _**上次修改主題的時間：** 2012-09-10_
 
 設定 通話駐留需要下列任一系統管理角色，依工作而定：
 
-  - **CsVoiceAdministrator ：**此系統管理員角色可以建立、設定和管理所有語音相關設定和原則。
+  - **CsVoiceAdministrator ：** 此系統管理員角色可以建立、設定和管理所有語音相關設定和原則。
 
-  - **CsUserAdministrator ：**此系統管理員角色可以啟用語音原則中的 通話駐留。其也具有所有語音設定的唯讀檢視存取權。
+  - **CsUserAdministrator ：** 此系統管理員角色可以啟用語音原則中的 通話駐留。其也具有所有語音設定的唯讀檢視存取權。
 
-  - **CsServerAdministrator ：**此系統管理員角色可以管理、監視和疑難排解伺服器及服務問題。
+  - **CsServerAdministrator ：** 此系統管理員角色可以管理、監視和疑難排解伺服器及服務問題。
 
-  - **CsAdministrator ：**此系統管理員角色可以執行 CsVoiceAdministrator 、CsServerAdministrator 和 CsUserAdministrator 的所有工作。
+  - **CsAdministrator ：** 此系統管理員角色可以執行 CsVoiceAdministrator 、CsServerAdministrator 和 CsUserAdministrator 的所有工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需管理權限的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需管理權限的詳細資訊，請參閱規劃文件中的＜ <a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>＞。
+
 
 
 ## 請參閱

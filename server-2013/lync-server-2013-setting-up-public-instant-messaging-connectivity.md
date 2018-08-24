@@ -37,16 +37,7 @@ _**上次修改主題的時間：** 2012-09-08_
     
     用於 Lync Server 的預設範本憑證名稱為 Web Server。如果您需要使用不同於預設範本的其他範本，請僅指定「範本名稱」。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的組織想要對 AOL 支援公用 IM 連線能力，您必須使用 Windows PowerShell (而非憑證精靈) 以要求要指定給 Access Edge Service 之外部邊緣的憑證。這是因為憑證精靈用來要求憑證的 Certificate Authority (CA) 伺服器範本不支援用戶端 EKU 組態。在您使用 Windows PowerShell 建立憑證之前，CA 管理員必須建立並部署支援用戶端 EKU 的新範本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您的組織想要對 AOL 支援公用 IM 連線能力，您必須使用 Windows PowerShell (而非憑證精靈) 以要求要指定給 Access Edge Service 之外部邊緣的憑證。這是因為憑證精靈用來要求憑證的 Certificate Authority (CA) 伺服器範本不支援用戶端 EKU 組態。在您使用 Windows PowerShell 建立憑證之前，CA 管理員必須建立並部署支援用戶端 EKU 的新範本。
+    
 

@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2012-10-20_
 
     C:\Tools\Watchernode.msi Authentication=Negotiate
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如前所述，Watchernode.msi 也可以透過命令視窗來執行。若要開啟命令視窗，請按一下 [開始]，然後以滑鼠右鍵按一下 [命令提示字元]，再按一下 [以系統管理員身分執行]。開啟命令視窗時，輸入與稍早所示相同的命令。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如前所述，Watchernode.msi 也可以透過命令視窗來執行。若要開啟命令視窗，請按一下 [開始]，然後以滑鼠右鍵按一下 [命令提示字元]，再按一下 [以系統管理員身分執行]。開啟命令視窗時，輸入與稍早所示相同的命令。
+
 
 
 您可以在無法將監看員節點設為信任的應用程式集區時，使用交涉模式。在此模式中，系統管理員必須在監看員節點上管理測試使用者密碼。

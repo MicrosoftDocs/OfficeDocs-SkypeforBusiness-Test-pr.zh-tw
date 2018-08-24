@@ -27,16 +27,7 @@ _**上次修改主題的時間：** 2014-09-03_
 
 3.  在 \[執行命令\] 頁面上順利啟動所有服務之後，按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在伺服器上啟動服務的命令是報告事實上已啟動服務的最佳方法。它可能不會反映服務的實際狀態。建議您在 [啟動服務] 之後立即使用 [服務狀態 (選擇性)] 步驟，以開啟 Microsoft Management Console (MMC)，並確認已成功啟動服務。如果未啟動任何 Lync Server 服務，您可以在 MMC 中以滑鼠右鍵按一下該服務，然後按一下 [啟動] 。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在伺服器上啟動服務的命令是報告事實上已啟動服務的最佳方法。它可能不會反映服務的實際狀態。建議您在 [啟動服務] 之後立即使用 [服務狀態 (選擇性)] 步驟，以開啟 Microsoft Management Console (MMC)，並確認已成功啟動服務。如果未啟動任何 Lync Server 服務，您可以在 MMC 中以滑鼠右鍵按一下該服務，然後按一下 [啟動] 。
+    
 

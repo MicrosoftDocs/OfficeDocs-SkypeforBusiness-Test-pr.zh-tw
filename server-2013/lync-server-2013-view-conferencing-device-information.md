@@ -17,21 +17,12 @@ _**上次修改主題的時間：** 2013-02-20_
 
 您可以使用 Windows PowerShell 和 **Get-CsMeetingRoom** Cmdlet 檢視供組織使用而設定之會議裝置的相關資訊。請從 Lync Server 2013 管理命令介面或從 Windows PowerShell 的遠端工作階段執行 **Get-CsMeetingRoom** Cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。
 
 
-如果您使用不含任何參數的 **Get-CsMeetingRoom** Cmdlet，其會傳回所有會議裝置的相關資訊。選用的參數則提供讓您篩選資訊的各種方法。如需詳細資訊，請參閱＜[Get-CsMeetingRoom](get-csmeetingroom.md)＞的＜參數＞一節。
+
+如果您使用不含任何參數的 **Get-CsMeetingRoom** Cmdlet，其會傳回所有會議裝置的相關資訊。選用的參數則提供讓您篩選資訊的各種方法。如需詳細資訊，請參閱＜[Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom)＞的＜參數＞一節。
 
 
 ## 檢視所有會議裝置的相關資訊
@@ -66,5 +57,5 @@ _**上次修改主題的時間：** 2013-02-20_
     
         Get-CsMeetingRoom -Identity "Room 1219"
 
-如需詳細資訊，請參閱 [Get-CsMeetingRoom](get-csmeetingroom.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsMeetingRoom](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMeetingRoom) Cmdlet 的說明主題。
 

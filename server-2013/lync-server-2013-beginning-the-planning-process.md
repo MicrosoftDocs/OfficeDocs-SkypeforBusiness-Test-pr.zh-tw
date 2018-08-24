@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2014-11-07_
 
 滿意之後，您可以使用 規劃工具來建立規劃部署的圖表。在以 拓撲產生器建立部署時，您可以使用此圖表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個 Lync Server 2013 版本隨附的規劃工具是發行前版本。請注意，規劃工具中的容量規劃數字是初步數字，不受最終版本支援。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這個 Lync Server 2013 版本隨附的規劃工具是發行前版本。請注意，規劃工具中的容量規劃數字是初步數字，不受最終版本支援。
+
 
 
 ## Lync Server 拓撲產生器

@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2012-06-20_
 
     Get-CsServerVersion
 
-[Get-CsServerVersion](get-csserverversion.md) Cmdlet 會分析本機電腦，並回報下列其中一項：
+[Get-CsServerVersion](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsServerVersion) Cmdlet 會分析本機電腦，並回報下列其中一項：
 
   - Lync Server 大量授權金鑰已安裝在電腦上，表示不需要更新。
 

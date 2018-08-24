@@ -57,16 +57,7 @@ _**上次修改主題的時間：** 2012-09-26_
     
     ![具有 Identity 篩選器之 Get-CsUser Cmdlet 的輸出](images/JJ205401.bc5d4672-8068-4475-b882-dbd305c801a9(OCS.15).jpg "具有 Identity 篩選器之 Get-CsUser Cmdlet 的輸出")  
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需 <strong>Get-CsUser</strong> Cmdlet 的相關詳細資訊，請執行：<strong>Get-Help Get-CsUser –Detailed</strong></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需 <strong>Get-CsUser</strong> Cmdlet 的相關詳細資訊，請執行：<strong>Get-Help Get-CsUser –Detailed</strong>
+    
 

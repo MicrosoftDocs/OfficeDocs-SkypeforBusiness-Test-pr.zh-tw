@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 當您準備及執行災害復原程序時，請記得下列事項。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在共存環境中，針對本文件中描述的災害復原程序，僅支援 Lync Server 2013 回應群組。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在共存環境中，針對本文件中描述的災害復原程序，僅支援 Lync Server 2013 回應群組。
+
 
 
   - 在進行容量規劃時，請規劃災害復原。針對災害復原容量，一對集區中的每個集區都應該要能夠處理這兩個集區中所有回應群組的工作量。如需 回應群組容量規劃的詳細資訊，請參閱＜ [Lync Server 2013 中的回應群組的容量規劃](lync-server-2013-capacity-planning-for-response-group.md)＞。
@@ -47,18 +38,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 您可以在發生災害或容錯移轉作業之前，就將回應群組匯入備份集區。事先匯入回應群組可減少停機時間，因為只要通話路由傳送至備份集區， Lync Server 回應群組服務 就可以在備份集區中還原。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在容錯移轉完成之前， 回應群組應用程式無法連線到安置在非使用中集區的任何代理程式。在此期間內， 回應群組應用程式處理通話時，會將那些代理程式當做無法使用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在容錯移轉完成之前， 回應群組應用程式無法連線到安置在非使用中集區的任何代理程式。在此期間內， 回應群組應用程式處理通話時，會將那些代理程式當做無法使用。
+    
 
 
 ## 回應群組災害復原程序
@@ -73,36 +55,18 @@ _**上次修改主題的時間：** 2015-03-09_
 
 當您建立不同 FQDN 的新集區以進行復原，需要在匯入回應群組時，將新集區指派為該回應群組的擁有者。回應群組的擁有權會一直跟隨著原始集區，除非 (或直到) 您使用 –OverwriteOwner 參數搭配 **Import-CsRgsConfiguration** Cmdlet 來明確地重新指派擁有權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您曾在復原期間重新建立集區 (意即，回應群組資料庫是空的)，無論您是否使用相同的 FQDN，都需要使用 –OverwriteOwner 參數。如果您沒有重新建立集區，則不需使用 –OverwriteOwner 參數，但是每當您將回應群組匯入回主要集區時，都可以使用此參數。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您曾在復原期間重新建立集區 (意即，回應群組資料庫是空的)，無論您是否使用相同的 FQDN，都需要使用 –OverwriteOwner 參數。如果您沒有重新建立集區，則不需使用 –OverwriteOwner 參數，但是每當您將回應群組匯入回主要集區時，都可以使用此參數。
 
 
-針對每個集區，只能各定義一組應用程式層級 回應群組組態設定。這些設定包括預設等候音樂組態、預設等候音樂音訊檔案、代理回電寬限期，以及呼叫內容組態。若要檢視這些組態設定，請執行 **Get-CsRgsConfiguration** Cmdlet。如需 **Get-CsRgsConfiguration** Cmdlet 的詳細資訊，請參閱＜ [Get-CsRgsConfiguration](get-csrgsconfiguration.md)＞。
+
+針對每個集區，只能各定義一組應用程式層級 回應群組組態設定。這些設定包括預設等候音樂組態、預設等候音樂音訊檔案、代理回電寬限期，以及呼叫內容組態。若要檢視這些組態設定，請執行 **Get-CsRgsConfiguration** Cmdlet。如需 **Get-CsRgsConfiguration** Cmdlet 的詳細資訊，請參閱＜ [Get-CsRgsConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration)＞。
 
 您可以使用 **Import-CsRgsConfiguration** Cmdlet 搭配 –ReplaceExistingSettings 參數，將這些應用程式層級設定從一個集區轉移到另一個集區，但是這麼做會覆寫目的集區中的設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此有關將設定轉移到另一個集區的限制，僅適用於應用程式層級設定和預設等候音樂音訊檔案，不適用於代理群組、佇列、工作流程、營業時間和假日集。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 此有關將設定轉移到另一個集區的限制，僅適用於應用程式層級設定和預設等候音樂音訊檔案，不適用於代理群組、佇列、工作流程、營業時間和假日集。
+
 
 
 如果您不想在災害期間取代備份集區中的應用程式層級設定，而且主要集區無法復原，主要集區的應用程式層級設定將會遺失。如果您需要在復原期間建立新集區來取代主要集區，無論是使用相同的 FQDN 或不同的 FQDN，您都無法復原原始應用程式層級設定。在此情況下，您需要設定使用這些設定的新集區，並包含等候音樂音訊檔案。
@@ -138,19 +102,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p>系統中斷期間</p></td>
 <td><p>執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet，將備份的 Lync Server 回應群組服務組態從主要集區匯入備份集區。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要將備份集區中的應用程式層級 回應群組 設定，取代成主要集區中的設定，請使用 –ReplaceExistingSettings 參數。如果您不將應用程式層級設定從主要集區轉移到備份集區，而且主要集區無法復原，您將會遺失主要集區的設定。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果您要將備份集區中的應用程式層級 回應群組 設定，取代成主要集區中的設定，請使用 –ReplaceExistingSettings 參數。如果您不將應用程式層級設定從主要集區轉移到備份集區，而且主要集區無法復原，您將會遺失主要集區的設定。
+
 
 </div></td>
 <td><p>RTCUniversalServerAdmins</p>
@@ -159,19 +115,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="odd">
 <td><p>匯入之後</p></td>
 <td><p>執行 回應群組 Cmdlet 搭配 –ShowAll 參數 (顯示所有回應群組) 或 –Owner 參數 (只顯示匯入的回應群組)，以確認所有回應群組組態都已匯入備份集區。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您不使用 –ShowAll 參數，也不使用 –Owner 參數，您匯入備份集區的回應群組將不會列示在 Cmdlet 傳回的結果中。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]  
+> 如果您不使用 –ShowAll 參數，也不使用 –Owner 參數，您匯入備份集區的回應群組將不會列示在 Cmdlet 傳回的結果中。
+
 
 </div>
 <p>執行下列 Cmdlet：</p>
@@ -192,19 +140,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>所有正式代理程式都必須再次登入備份集區上的正式群組。</p></li>
 <li><p>管理組態變更：</p>
 <p>在系統中斷期間，仍可像平常一樣修改備份集區中的回應群組 (無論是匯入備份集區或為備份集區所擁有)。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須使用 Lync Server 管理命令介面 來管理您匯入備份集區的回應群組。當這些回應群組在備份集區中時，您不能使用 Lync Server 控制台來加以管理。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]  
+> 您必須使用 Lync Server 管理命令介面 來管理您匯入備份集區的回應群組。當這些回應群組在備份集區中時，您不能使用 Lync Server 控制台來加以管理。
+
 
 </div></li>
 </ul></td>
@@ -220,19 +160,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>容錯回復之後</p></td>
 <td><ul>
 <li><p>執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet，將回應群組匯入回主要集區。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果無法復原主要集區，而您部署新的集區來將其取代，請使用 –ReplaceExistingSettings 參數，將應用程式層級設定從備份集區轉移到新集區。如果您沒有從備份集區轉移設定，新集區將會使用預設設定。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如果無法復原主要集區，而您部署新的集區來將其取代，請使用 –ReplaceExistingSettings 參數，將應用程式層級設定從備份集區轉移到新集區。如果您沒有從備份集區轉移設定，新集區將會使用預設設定。
+
 
 </div></li>
 <li><p>執行下列 Cmdlet 搭配 –ShowAll 參數 (顯示所有回應群組) 或 –Owner 參數 (只顯示匯入的回應群組)，以確認所有回應群組組態都已成功匯入回主要集區：</p>

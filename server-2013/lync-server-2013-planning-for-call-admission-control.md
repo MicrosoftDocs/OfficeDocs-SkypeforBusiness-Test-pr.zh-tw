@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
 本節描述通話許可控制功能，並且解釋如何規劃 CAC。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 具有三項進階的 企業語音功能：通話許可控制 (CAC)、緊急服務 (E9-1-1) 以及媒體旁路。如需這三項功能全域的規劃資訊概觀，請參閱 <a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中的進階企業語音功能的網路設定</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 具有三項進階的 企業語音功能：通話許可控制 (CAC)、緊急服務 (E9-1-1) 以及媒體旁路。如需這三項功能全域的規劃資訊概觀，請參閱 <a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中的進階企業語音功能的網路設定</a>。
+
 
 
 ## 本章節內容

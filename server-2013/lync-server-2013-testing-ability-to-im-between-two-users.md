@@ -44,7 +44,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 The Test-CsIM cmdlet verifies that a pair of test users can exchange instant messages. When called, the Test-CsIM cmdlet starts off by trying to log on a pair of test users to Lync Server. Assuming the two logons are successful, the cmdlet then starts an IM session between the two test users. (User 1 invites User 2 to an IM session, and User 2 accepts the invitation.) After verifying that messages can be exchanged between the two users, Test-CsIM then ends the IM session and logs both users off the system.
 
-For more information, see the Help documentation for the [Test-CsIM](test-csim.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsIM](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsIM) cmdlet.
 
 ## Running the Test
 
@@ -58,7 +58,7 @@ To run this check using actual user accounts, you must create two Windows PowerS
     $credential2 = Get-Credential "litwareinc\davidlongmire"
     Test-CsIm -TargetFqdn "atl-cs-001.litwareinc.com" -SenderSipAddress "sip:kenmyer@litwareinc.com" -SenderCredential $credential1 -ReceiverSipAddress "sip:davidlongmire@litwareinc.com" -ReceiverCredential $credential2
 
-For more information, see the Help documentation for the [Test-CsIM](test-csim.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsIM](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsIM) cmdlet.
 
 ## Determining Success or Failure
 

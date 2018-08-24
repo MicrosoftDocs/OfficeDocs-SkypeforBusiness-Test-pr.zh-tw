@@ -43,7 +43,7 @@ _**上次修改主題的時間：** 2013-02-23_
         EnableApplePushNotificationService     : False
         EnableMicrosoftPushNotificationService : False
 
-如需詳細資訊，請參閱 [Get-CsPushNotificationConfiguration](get-cspushnotificationconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsPushNotificationConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPushNotificationConfiguration) Cmdlet 的說明主題。
 
 ## 請參閱
 

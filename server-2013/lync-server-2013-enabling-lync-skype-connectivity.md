@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 ![顯示 PIC](images/Dn440170.451b94e3-0b38-488c-835f-1f25690e8074(OCS.15).jpg "顯示 PIC")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PIC 同盟不再受 Live Communication Server 2005 SP1 或 Office Communications Server 2007 支援。PIC 同盟的支援平台包括 Lync Server 2013、Lync Server 2010 以及 Office Communications Server 2007 R2。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> PIC 同盟不再受 Live Communication Server 2005 SP1 或 Office Communications Server 2007 支援。PIC 同盟的支援平台包括 Lync Server 2013、Lync Server 2010 以及 Office Communications Server 2007 R2。
+
 
 
 ## 2\. 設定至少一項原則以支援同盟使用者存取
@@ -49,18 +40,9 @@ _**上次修改主題的時間：** 2014-12-16_
 
 系統管理員必須使用 Lync Server 管理命令介面設定 Lync 用戶端原則以將 Skype 顯示為額外 PIC 提供者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除非您亦有設定至少一項原則 (此程序先前的步驟 2) 以支援公用 IM 連線，否則公用立即訊息連線 (PIC) 服務提供者的使用者將無法參與貴組織中的 IM 或音訊或視訊會議。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除非您亦有設定至少一項原則 (此程序先前的步驟 2) 以支援公用 IM 連線，否則公用立即訊息連線 (PIC) 服務提供者的使用者將無法參與貴組織中的 IM 或音訊或視訊會議。
+
 
 
 1.  若要設定同盟與 PIC，請參閱＜啟用或停用同盟及公用 IM 連線＞： [http://go.microsoft.com/fwlink/p/?LinkId=306063](http://go.microsoft.com/fwlink/p/?linkid=306063)。

@@ -41,68 +41,29 @@ _**上次修改主題的時間：** 2013-02-22_
     
     4.  依據您選取的使用者內容，輸入您要用來篩選搜尋結果的條件，您可以自行輸入或按一下下拉式清單的箭頭。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要將更多搜尋子句加入查詢，請按一下 [新增篩選]。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要將更多搜尋子句加入查詢，請按一下 [新增篩選]。
     
     5.  按一下 \[尋找\]。
 
 6.  依序按一下搜尋結果中的某個使用者、\[動作\] 和 \[指派原則\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您想將同一個的每一使用者行動性原則套用至多位使用者，請在搜尋結果中選取多位使用者，然後依序按一下[動作] 和 [指派原則]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您想將同一個的每一使用者行動性原則套用至多位使用者，請在搜尋結果中選取多位使用者，然後依序按一下[動作] 和 [指派原則]。
 
 
 7.  在 \[指派原則\] 中的 \[行動性原則\] 下，執行下列其中一個動作：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 [指派原則] 可以設定多個原則，因此對話方塊中的每個原則預設都是選取 [&lt;維持不變&gt;]。不變更此設定，即可繼續沿用先前指派給使用者的原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 [指派原則] 可以設定多個原則，因此對話方塊中的每個原則預設都是選取 [&lt;維持不變&gt;]。不變更此設定，即可繼續沿用先前指派給使用者的原則。
+    
     
       - 選取 \[\<自動\>\] 可讓 Lync Server 2013 自動選擇全域層級原則或網站層級原則 (如果有定義的話)。
     
       - 按一下您之前在 \[行動性原則\] 頁面上所定義每一使用者行動性原則的名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>為了協助您判斷應指派哪個原則，在按下原則名稱後，按一下 [檢視] 可以檢視該原則所定義的使用者權限。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 為了協助您判斷應指派哪個原則，在按下原則名稱後，按一下 [檢視] 可以檢視該原則所定義的使用者權限。
 
 
 8.  完成時，請按一下 \[確定\]。
@@ -119,7 +80,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將每一使用者行動性原則指派給多位使用者
 
-  - 下列命令會將每一使用者行動性原則 RedmondMobilityPolicy 指派給目前獲指派 NorthAmericaMobilityPolicy 原則的所有使用者。如需此命令中使用之 Filter 參數的詳細資訊，請參閱＜[Get-CsUser](get-csuser.md)＞。
+  - 下列命令會將每一使用者行動性原則 RedmondMobilityPolicy 指派給目前獲指派 NorthAmericaMobilityPolicy 原則的所有使用者。如需此命令中使用之 Filter 參數的詳細資訊，請參閱＜[Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)＞。
     
         Get-CsUser -Filter {MobilityPolicy -eq "NorthAmericaMobilityPolicy"} | Grant-CsMobilityPolicy -PolicyName "RedmondMobilityPolicy"
 
@@ -129,7 +90,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsMobilityPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱＜[Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)＞。
+如需詳細資訊，請參閱＜[Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)＞。
 
 ## 請參閱
 

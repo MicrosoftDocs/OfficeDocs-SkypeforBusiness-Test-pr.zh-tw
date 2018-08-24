@@ -27,20 +27,11 @@ _**上次修改主題的時間：** 2013-02-22_
 
 您可以使用 Windows Server 命令列介面或 Lync Server 管理命令介面發出命令。命令會在您登入的電腦上執行，並傳送給本機的 ClsAgent 或傳送給位於部署中的其餘電腦與集區。
 
-ClsAgent 會維護一份索引檔案來指出其在本機電腦上的所有 .CACHE 檔案。ClsAgent 會配置這些檔案，讓這些檔案平均分散在 CacheFileLocalFolders 選項所定義的各磁碟區，且確保絕對不會耗用每個磁碟區超過 80% 的空間 (您可以使用 **Set-CsClsConfiguration** Cmdlet 來設定本機快取位置與百分比)。ClsAgent 也負責從本機中清理掉所快取的老舊事件追蹤記錄 (.etl) 檔案。兩週之後 (您可以使用 **Set-CsClsConfiguration** Cmdlet 設定此時間範圍)，這些檔案會複製到檔案共用並自本機電腦中刪除。如需詳細資訊，請參閱 [Set-CsClsConfiguration](set-csclsconfiguration.md)。收到搜尋要求時，系統會使用搜尋條件來選取快取的 .etl 檔案集，以根據代理程式所維護之索引中的值來執行搜尋。
+ClsAgent 會維護一份索引檔案來指出其在本機電腦上的所有 .CACHE 檔案。ClsAgent 會配置這些檔案，讓這些檔案平均分散在 CacheFileLocalFolders 選項所定義的各磁碟區，且確保絕對不會耗用每個磁碟區超過 80% 的空間 (您可以使用 **Set-CsClsConfiguration** Cmdlet 來設定本機快取位置與百分比)。ClsAgent 也負責從本機中清理掉所快取的老舊事件追蹤記錄 (.etl) 檔案。兩週之後 (您可以使用 **Set-CsClsConfiguration** Cmdlet 設定此時間範圍)，這些檔案會複製到檔案共用並自本機電腦中刪除。如需詳細資訊，請參閱 [Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)。收到搜尋要求時，系統會使用搜尋條件來選取快取的 .etl 檔案集，以根據代理程式所維護之索引中的值來執行搜尋。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ClsAgent 可以搜尋從本機電腦移至檔案共用的檔案。ClsAgent 將檔案移至檔案共用之後，就不負責維護檔案的老舊清理和移除。您應該定義管理工作來監視檔案共用中檔案的大小並進行刪除或封存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> ClsAgent 可以搜尋從本機電腦移至檔案共用的檔案。ClsAgent 將檔案移至檔案共用之後，就不負責維護檔案的老舊清理和移除。您應該定義管理工作來監視檔案共用中檔案的大小並進行刪除或封存。
+
 
 
 可用來讀取和分析所產生記錄檔的工具有很多，包括 **Snooper.exe** 和任何可以讀取文字檔的工具 (例如 **Notepad.exe**)。Snooper.exe 是 Lync Server 2013 偵錯工具的一部分，可以從網路下載。
@@ -55,33 +46,13 @@ ClsAgent 會維護一份索引檔案來指出其在本機電腦上的所有 .CAC
 
 當您啟動記錄工作階段時，您會指定與目前所嘗試解決之問題有關的案例。不論何時，您都可以有兩個案例在執行。其中一個案例應該是 AlwaysOn 案例。正如其名，此案例應該一律在您的部署中執行，收集所有電腦、集區與元件上的資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>根據預設，AlwaysOn 案例不會在您的部署中執行。您必須明確啟動該案例。啟動之後，它會持續執行 (即使電腦重新開機也一樣) 直到被明確停止為止。如需關於啟動及停止案例的詳細資訊，請參閱＜<a href="lync-server-2013-using-start-for-the-centralized-logging-service-to-capture-logs.md">將 Start 用於集中式記錄服務以擷取記錄</a>＞及＜<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">將 Stop 用於集中式記錄服務</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 根據預設，AlwaysOn 案例不會在您的部署中執行。您必須明確啟動該案例。啟動之後，它會持續執行 (即使電腦重新開機也一樣) 直到被明確停止為止。如需關於啟動及停止案例的詳細資訊，請參閱＜<a href="lync-server-2013-using-start-for-the-centralized-logging-service-to-capture-logs.md">將 Start 用於集中式記錄服務以擷取記錄</a>＞及＜<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">將 Stop 用於集中式記錄服務</a>＞。
+
 
 
 當有問題發生時，請開始進行跟所報告問題有關的第二個案例。重現問題，然後讓第二個案例停止記錄。開始進行跟所報告問題有關的記錄搜尋。收集到的記錄會全部彙總成一個記錄檔，其中包含來自您某個網站中或全域部署範圍中之所有電腦的追蹤訊息。如果搜尋傳回的資料超過可行的分析範圍 (通常稱為訊雜比；其中的雜訊過高)，便須以範圍較小的參數執行另一個搜尋。此時，您可以開始在出現的模式中，注意是否有能夠幫助您專注於問題的模式。最後，在執行幾次精化的搜尋之後，您就能夠找到與問題有關的資料，並查出根本原因。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 中看到問題案例時，請問問自己：「我對這個問題知道多少？」如果您將問題的範圍量化，就可以省去 Lync Server 中絕大部分的操作。<br />
-假設有一個案例是您知道使用者在查詢連絡人時無法取得最新的結果。在媒體元件、企業語音、會議功能及其他數個元件中尋找問題並無意義。您可能並不知道問題的實際發生位置：這是用戶端還是伺服器端的問題？連絡人是由 User Replicator 自 Active Directory 收集而來，並經由 Address Book Server (ABServer) 傳送至用戶端。ABServer 會從 RTC 資料庫取得更新 (這些更新是由 User Replicator 寫入至資料庫)，並在預設時間 (上午 1:30) 將更新收錄到通訊錄檔案中。Lync Server 用戶端會依隨機的排程擷取新的通訊錄。知道整個流程，就能夠縮小可能原因的搜尋範圍，來查出問題是與 User Replicator 從 Active Directory 收集的資料、ABServer 並未擷取及建立通訊錄，還是用戶端未下載通訊錄檔案有關。</td>
-</tr>
-</tbody>
-</table>
-
+> [!TIP]  
+> 在 Lync Server 中看到問題案例時，請問問自己：「我對這個問題知道多少？」如果您將問題的範圍量化，就可以省去 Lync Server 中絕大部分的操作。<br />
+假設有一個案例是您知道使用者在查詢連絡人時無法取得最新的結果。在媒體元件、企業語音、會議功能及其他數個元件中尋找問題並無意義。您可能並不知道問題的實際發生位置：這是用戶端還是伺服器端的問題？連絡人是由 User Replicator 自 Active Directory 收集而來，並經由 Address Book Server (ABServer) 傳送至用戶端。ABServer 會從 RTC 資料庫取得更新 (這些更新是由 User Replicator 寫入至資料庫)，並在預設時間 (上午 1:30) 將更新收錄到通訊錄檔案中。Lync Server 用戶端會依隨機的排程擷取新的通訊錄。知道整個流程，就能夠縮小可能原因的搜尋範圍，來查出問題是與 User Replicator 從 Active Directory 收集的資料、ABServer 並未擷取及建立通訊錄，還是用戶端未下載通訊錄檔案有關。

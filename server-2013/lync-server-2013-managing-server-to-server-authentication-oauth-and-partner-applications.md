@@ -21,18 +21,9 @@ Lync Server 2013 採取的方式就是使用單一、標準化的伺服器對伺
 
 OAuth 驗證通常涉及三方：單一授權伺服器及兩個需要互相通訊的領域。(伺服器對伺服器驗證也可不使用驗證伺服器，本文件稍後會討論此一程序。) 授權伺服器 (亦稱為安全性權杖伺服器) 會發行安全性權杖給兩個需要通訊的領域；這些證明通訊來自其中一方領域的權杖應受另一方領域的信任。例如，授權伺服器可發行權杖以證明從特定 Lync Server 2013 領域的使用者可存取指定的 Exchange 2013 領域，反之亦然。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>領域只是安全性容器。依據預設，Lync Server 2013 使用預設的 SIP 網域作為 OAuth 領域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 領域只是安全性容器。依據預設，Lync Server 2013 使用預設的 SIP 網域作為 OAuth 領域。
+
 
 
 Lync Server 2013 支援三種伺服器對伺服器驗證狀況。透過 Lync Server 2013 您可以處理下列情況：
@@ -59,18 +50,9 @@ Lync Server 2013 支援三種伺服器對伺服器驗證狀況。透過 Lync Ser
 
   - 將 Lync Server 2013 要通訊的伺服器設定為「協力廠商應用程式」。例如，如果 Lync Server 2013 需要與 Exchange 2013 通訊，則需要將 Exchange 設定為協力廠商應用程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>「協力廠商應用程式」是不需透過協力廠商安全性權杖伺服器，就能與 Lync Server 2013 直接交換安全性權杖的任何應用程式。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 「協力廠商應用程式」是不需透過協力廠商安全性權杖伺服器，就能與 Lync Server 2013 直接交換安全性權杖的任何應用程式。
+
 
 
 請注意，OAuth 是產品的核心部分，無法停用或移除。

@@ -41,18 +41,9 @@ CAC 僅控制語音及視訊的即時流量。並不控制資料流量。
 
 詳細通話記錄 (CDR) 可擷取重新路由傳送至 PSTN 或語音信箱之通話的資訊。CDR 不會擷取重新路由傳送至網際網路之通話的資訊，因為網際網路是視為替代路徑，而非次要選項。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>因為頻寬條件約束，所以不會拒絕語音信箱儲放。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 因為頻寬條件約束，所以不會拒絕語音信箱儲放。
+
 
 
 頻寬原則服務會產生兩種類型的記錄檔，其格式為逗點分隔值 (CSV)。 **check failures** 記錄檔會擷取拒絕頻寬要求時的資訊。 **link utilization** 記錄檔會擷取網路拓撲及 WAN 連結頻寬使用的快照集。這兩種記錄檔可以協助您根據使用率來微調 CAC 原則。

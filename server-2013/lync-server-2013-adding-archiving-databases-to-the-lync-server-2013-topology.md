@@ -17,36 +17,18 @@ _**上次修改主題的時間：** 2012-10-10_
 
 您必須先將封存納入拓撲中，才能設定部署來支援封存。本主題中的資訊說明如何使用拓撲產生器將封存新增至現有的拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要使用 Microsoft Exchange 整合，為部署中的所有使用者將封存資料和檔案儲存在 Exchange 2013 伺服器上，請勿指定 [封存 SQL Server 儲存區] 或 [使用 SQL Server 儲存區鏡像] 資訊。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要使用 Microsoft Exchange 整合，為部署中的所有使用者將封存資料和檔案儲存在 Exchange 2013 伺服器上，請勿指定 [封存 SQL Server 儲存區] 或 [使用 SQL Server 儲存區鏡像] 資訊。
+
 
 
 ## 新增封存資料庫支援至拓撲
 
 1.  在執行 Lync Server 2013 的電腦上，或安裝 Lync Server 系統管理工具的電腦上，使用本機 Users 群組成員的帳戶 (或具有相等使用者權限的帳戶) 登入。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用本機 Users 群組成員的帳戶來定義拓撲，但是若要發行拓撲 (新增伺服器至拓撲時所必需)，您必須使用 <strong>Domain Admins</strong> 群組成員及 <strong>RTCUniversalServerAdmins</strong> 群組成員的帳戶，而且在您要用於 Lync Server 2013 檔案儲存區 (以便拓撲產生器可設定所需的判別存取控制清單 (DACL)) 的檔案共用上，具有完整控制權限 (亦即，讀取、寫入和修改) 的帳戶，或是具有相等權限的帳戶。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用本機 Users 群組成員的帳戶來定義拓撲，但是若要發行拓撲 (新增伺服器至拓撲時所必需)，您必須使用 <strong>Domain Admins</strong> 群組成員及 <strong>RTCUniversalServerAdmins</strong> 群組成員的帳戶，而且在您要用於 Lync Server 2013 檔案儲存區 (以便拓撲產生器可設定所需的判別存取控制清單 (DACL)) 的檔案共用上，具有完整控制權限 (亦即，讀取、寫入和修改) 的帳戶，或是具有相等權限的帳戶。
+    
 
 
 2.  啟動拓撲產生器。

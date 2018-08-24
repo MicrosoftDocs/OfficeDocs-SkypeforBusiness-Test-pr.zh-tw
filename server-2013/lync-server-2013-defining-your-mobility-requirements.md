@@ -47,31 +47,13 @@ _**上次修改主題的時間：** 2015-03-09_
     
         Set-CsMcxConfiguration -Identity site:Redmond -ExposedWebURL Internal
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>UCWA 不需要其他設定。UCWA 沒有相當於僅限內部的設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > UCWA 不需要其他設定。UCWA 沒有相當於僅限內部的設定。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用的是 Lync Server 2013前端伺服器或 前端集區，且您 <strong>沒有</strong>任何 Lync Server 2010前端伺服器或 前端集區， <strong>就沒有 Cookie 型持續性的需求</strong>。如果您需要保留任何 Lync Server 2010前端伺服器或 前端集區，則會為 Cookie 型持續性套用 Lync Server 2010 中的相同規則。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 如果您使用的是 Lync Server 2013前端伺服器或 前端集區，且您 <strong>沒有</strong>任何 Lync Server 2010前端伺服器或 前端集區， <strong>就沒有 Cookie 型持續性的需求</strong>。如果您需要保留任何 Lync Server 2010前端伺服器或 前端集區，則會為 Cookie 型持續性套用 Lync Server 2010 中的相同規則。
+    
 
 
   - **您是否要支援 Apple iOS 裝置和 Windows Phone 的推入通知功能？**
@@ -80,33 +62,15 @@ _**上次修改主題的時間：** 2015-03-09_
     
     如果您要在 Wi-Fi 網路上支援推入通知，除了在行動裝置提供者的 3G 或資料網路上支援推入通知之外，您還必須開啟企業 Wi-Fi 網路上的連接埠 5223 輸出。在 Wi-Fi 網路上支援推入通知，可支援僅使用 Wi-Fi 的行動裝置，以及室內接收情況不佳的行動裝置。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在支援執行 Lync 2010 Mobile 用戶端的 Apple 裝置時，才需要開啟連接埠 TCP 5223。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 只有在支援執行 Lync 2010 Mobile 用戶端的 Apple 裝置時，才需要開啟連接埠 TCP 5223。
+    
     
     如果您不支援推入通知，Apple 行動裝置和 Windows Phone 的使用者將無法了解行動應用程式非作用中時所發生的事件資訊 - 例如立即訊息邀請或未接訊息。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Apple 裝置上的 Lync 2013 行動用戶端不需要推入通知。 Windows Phone 上的 Lync 2013 行動用戶端會使用推入通知。對於 Windows Phone 上的 Lync Mobile 以及無法執行 Lync 2013 行動用戶端的 Apple 裝置，推入通知的規劃和推入通知結算所會保持相同。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Apple 裝置上的 Lync 2013 行動用戶端不需要推入通知。 Windows Phone 上的 Lync 2013 行動用戶端會使用推入通知。對於 Windows Phone 上的 Lync Mobile 以及無法執行 Lync 2013 行動用戶端的 Apple 裝置，推入通知的規劃和推入通知結算所會保持相同。
+    
 
 
   - **您想讓所有使用者都可以存取行動功能，或想指定存取這些功能的使用者？**
@@ -171,24 +135,15 @@ _**上次修改主題的時間：** 2015-03-09_
     </tbody>
     </table>
     
-    如需您可設定之原則設定的說明，以及如何管理原則的詳細資訊，請參閱＜ [New-CsMobilityPolicy](new-csmobilitypolicy.md)＞、＜ [Set-CsMobilityPolicy](set-csmobilitypolicy.md)＞、＜ [Get-CsMobilityPolicy](get-csmobilitypolicy.md)＞、＜ [Grant-CsMobilityPolicy](grant-csmobilitypolicy.md)＞和＜ [Remove-CsMobilityPolicy](remove-csmobilitypolicy.md)＞。
+    如需您可設定之原則設定的說明，以及如何管理原則的詳細資訊，請參閱＜ [New-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy)＞、＜ [Set-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMobilityPolicy)＞、＜ [Get-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsMobilityPolicy)＞、＜ [Grant-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsMobilityPolicy)＞和＜ [Remove-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsMobilityPolicy)＞。
 
   - **您是否要讓未啟用 Enterprise Voice 的使用者能夠使用 \[按一下加入\] 加入會議？**
     
     使用者必須啟用企業語音，才可以存取行動功能和「從公司撥號」 。不過，未啟用企業語音的使用者若獲派適當的語音原則，也可以在其行動裝置上按一下連結來加入會議。您可以將特定語音原則指派給這些使用者，或確定存在其所適用的全域原則或網站層級原則。您指派的語音原則必須具有公用交換電話網路 (PSTN) 使用方式記錄，以及定義使用者可撥出加入會議之區域的路由。如需設定語音原則、PSTN 使用方式記錄及路由的詳細資訊，請參閱＜ [在 Lync Server 2013 中設定語音原則、PSTN 使用方式記錄和語音路由](lync-server-2013-configuring-voice-policies-pstn-usage-records-and-voice-routes.md)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>想使用 [按一下加入] 的行動使用者需要語音原則，以及相關的 PSTN 使用方式記錄和語音路由，因為在行動裝置上按一下連結會導致從 Lync Server 2013 撥出電話。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 想使用 [按一下加入] 的行動使用者需要語音原則，以及相關的 PSTN 使用方式記錄和語音路由，因為在行動裝置上按一下連結會導致從 Lync Server 2013 撥出電話。
+    
 
 
 ## 請參閱

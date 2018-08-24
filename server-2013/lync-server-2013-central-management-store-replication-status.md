@@ -31,5 +31,5 @@ Get-CsManagementStoreReplicationStatus cmdlet 可讓您確認您組織中任何 
 
 #### 其他資源
 
-[Get-CsManagementStoreReplicationStatus](get-csmanagementstorereplicationstatus.md)
+[Get-CsManagementStoreReplicationStatus](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsManagementStoreReplicationStatus)
 

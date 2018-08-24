@@ -19,18 +19,9 @@ Lync Server 可讓您設定如何處理撥打至組織內之有效但尚未指�
 
 本節描述如何管理未指定的號碼範圍，以處理未指派電話號碼的通話。本節還描述如果您希望在服務中斷期間使用此功能，如何在災害復原期間管理宣告。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以選擇是否在服務中斷期間使用未指派的號碼處理。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以選擇是否在服務中斷期間使用未指派的號碼處理。
+
 
 
 ## 本章節內容

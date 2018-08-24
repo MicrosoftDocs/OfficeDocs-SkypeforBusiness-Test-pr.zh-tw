@@ -1,6 +1,6 @@
 ﻿---
-title: 針對 Microsoft Lync Server 2013 Voicemail 設定 Microsoft Exchange Server 2013 Unified Messaging
-TOCTitle: 針對 Microsoft Lync Server 2013 Voicemail 設定 Microsoft Exchange Server 2013 Unified Messaging
+title: "設定 Microsoft Exchange Server 2013 整合通訊以使用 Microsoft Lync Server 2013 語音信箱"
+TOCTitle: "設定 Microsoft Exchange Server 2013 整合通訊以使用 Microsoft Lync Server 2013 語音信箱"
 ms:assetid: 1be9c4f4-fd8e-4d64-9798-f8737b12e2ab
 ms:mtpsurl: https://technet.microsoft.com/zh-tw/library/JJ687983(v=OCS.15)
 ms:contentKeyID: 49889963
@@ -61,13 +61,13 @@ Microsoft Lync Server 2013 可讓您將語音留言儲存在 Microsoft Exchange 
 
 在上一個命令中，Extensions 參數代表使用者的電話分機號碼。在此範例中，使用者的分機號碼為 100。
 
-啟用 kenmyer@litwareinc.com 的信箱後，該使用者應該就能使用 Exchange 整合通訊。您可從 Lync Server 管理命令介面執行 [Test-CsExUMConnectivity](test-csexumconnectivity.md) Cmdlet，以驗證使用者是否能連線至 Exchange UM：
+啟用 kenmyer@litwareinc.com 的信箱後，該使用者應該就能使用 Exchange 整合通訊。您可從 Lync Server 管理命令介面執行 [Test-CsExUMConnectivity](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExUMConnectivity) Cmdlet，以驗證使用者是否能連線至 Exchange UM：
 
     $credential = Get-Credential "litwareinc\kenmyer"
     
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-若您還有第二個啟用了整合通訊的使用者，您可使用 [Test-CsExUMVoiceMail](test-csexumvoicemail.md) Cmdlet 來驗證第二個使用者是否能語音留言給第一個使用者。
+若您還有第二個啟用了整合通訊的使用者，您可使用 [Test-CsExUMVoiceMail](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsExUMVoiceMail) Cmdlet 來驗證第二個使用者是否能語音留言給第一個使用者。
 
     $credential = Get-Credential "litwareinc\pilar"
     

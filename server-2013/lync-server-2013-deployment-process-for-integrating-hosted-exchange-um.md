@@ -80,19 +80,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>為裝載的 Exchange UM 建立訂戶存取連絡人物件。</p></li>
 </ol></td>
 <td><p>RTCUniversalUserAdmins</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要建立、修改或移除連絡人物件，執行 New-CsExUmContact、Set-CsExUmContact 或 Remove-CsExUmContact Cmdlet 的使用者必須具備儲存新的連絡人物件所在 Active Directory 組織單位的正確權限。執行 Grant-CsOUPermission Cmdlet，即可授與此權限。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 若要建立、修改或移除連絡人物件，執行 New-CsExUmContact、Set-CsExUmContact 或 Remove-CsExUmContact Cmdlet 的使用者必須具備儲存新的連絡人物件所在 Active Directory 組織單位的正確權限。執行 Grant-CsOUPermission Cmdlet，即可授與此權限。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
+
 
 </div></td>
 <td><p><a href="lync-server-2013-create-contact-objects-for-hosted-exchange-um.md">在 Lync Server 2013 中建立主控 Exchange UM 的聯絡人物件</a></p></td>

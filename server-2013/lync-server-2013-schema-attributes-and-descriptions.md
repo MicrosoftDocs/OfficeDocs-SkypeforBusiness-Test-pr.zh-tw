@@ -315,19 +315,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>msRTCSIP-EnableBestEffortNotify (過時的)</p></td>
 <td><p>此屬性控制伺服器在回應用戶端的 SUBSCRIBE 要求時，是否會產生 Best Effort NOTIFY (BENOTIFY) 要求，而非 NOTIFY 要求。BENOTIFY 增強了訂閱通知信號交換的效能，讓伺服器產生 BENOTIFY 要求，而非一般的 NOTIFY 要求。這項效能優勢在於，BENOTIFY 要求不會像 NOTIFY 要求一樣，要求來自用戶端的 200 OK 回應。</p>
 <p>有效值為 <strong>TRUE</strong> 或 <strong>FALSE</strong>。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Live Communications Server 2003 不支援 BENOTIFY 要求。若要與使用 Live Communications Server 2003 伺服器 API (在 Live Communications Server 2005 及協力廠商伺服器上執行) 所撰寫的伺服器應用程式相互操作，可以將值設為 <strong>FALSE</strong> 以停用 BENOTIFY 要求。BENOTIFY 目前不是 IETF (網際網路工程任務推動小組) SIP 標準程序的一部分。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]   
+> Live Communications Server 2003 不支援 BENOTIFY 要求。若要與使用 Live Communications Server 2003 伺服器 API (在 Live Communications Server 2005 及協力廠商伺服器上執行) 所撰寫的伺服器應用程式相互操作，可以將值設為 <strong>FALSE</strong> 以停用 BENOTIFY 要求。BENOTIFY 目前不是 IETF (網際網路工程任務推動小組) SIP 標準程序的一部分。
+
 
 </div></td>
 <td><p>Live Communications Server 2005 的新增項目。</p>
@@ -690,7 +682,7 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>此屬性是單一值 Unicode 字串。此字串屬性包含 XML 格式的原則定義。XML 結構描述定義在不同原則類型之間是共通的，只有各原則類型的設定不相同。</p>
 <p>XML 結構描述定義 (XSD) 定義如下：</p>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;xs:schema id=&quot;instance&quot;  xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;
+&lt;xs:schema id=&quot;instance&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;
   &lt;xs:element name=&quot;instance&quot; msdata:IsDataSet=&quot;true&quot;&gt;
     &lt;xs:complexType&gt;
       &lt;xs:choice maxOccurs=&quot;unbounded&quot;&gt;

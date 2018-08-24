@@ -45,5 +45,5 @@ _**上次修改主題的時間：** 2015-03-30_
         ExUmEnabled            : False
         Enabled                : True
 
-如需詳細資訊，請參閱＜[Get-CsTrustedApplication](get-cstrustedapplication.md)＞。
+如需詳細資訊，請參閱＜[Get-CsTrustedApplication](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsTrustedApplication)＞。
 

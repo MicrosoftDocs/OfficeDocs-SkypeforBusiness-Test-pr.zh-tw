@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-11_
 
 常設聊天室雖然可以包含較長的訊息 (稱為「本文」 )，還有超連結、表情符號以及上傳的文件，但主要包含簡短的文字訊息。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 用戶端不支援檔案上傳和下載，但是 常設聊天室伺服器 的 Lync Server 2013 支援。舊版 群組聊天 用戶端可張貼和檢視檔案，但是，如果透過 Lync 2013 用戶端存取同一個聊天室，則無法存取檔案。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 2013 用戶端不支援檔案上傳和下載，但是 常設聊天室伺服器 的 Lync Server 2013 支援。舊版 群組聊天 用戶端可張貼和檢視檔案，但是，如果透過 Lync 2013 用戶端存取同一個聊天室，則無法存取檔案。
+
 
 
 聊天室的存取權是由成員資格清單控制。任何成員都能依時間順序檢閱或全文搜尋整個聊天室記錄。如需關於使用 常設聊天室的詳細資訊，請參閱規劃文件中的＜ [規劃 Lync Server 2013 中的用戶端](lync-server-2013-planning-for-clients.md)」與部署文件中的＜ [在 Lync Server 2013 中部署用戶端和裝置](lync-server-2013-deploying-clients-and-devices.md)＞。

@@ -48,34 +48,16 @@ _**上次修改主題的時間：** 2012-10-07_
             New-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $True
             Grant-CsUserServicesPolicy -Identity "<user display name>" -PolicyName <"policy name">
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您也可以使用使用者別名或 SIP URI，而不使用使用者顯示名稱。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您也可以使用使用者別名或 SIP URI，而不使用使用者顯示名稱。
+        
         
         例如：
         
             New-CsUserServicesPolicy -Identity "UCS Enabled Users" -UcsAllowed $True
             Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName "UCS Enabled Users"
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在上一個範例中，第一個命令建立名稱為「UCS 已啟用使用者」 的新個別使用者原則，而且將 UcsAllowed 旗標設定為 True。第二個指令將該原則指派給顯示名稱為 Ken Myer 的使用者，這表示目前已針對 Ken Myer 啟用整合連絡人存放區。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 在上一個範例中，第一個命令建立名稱為「UCS 已啟用使用者」 的新個別使用者原則，而且將 UcsAllowed 旗標設定為 True。第二個指令將該原則指派給顯示名稱為 Ken Myer 的使用者，這表示目前已針對 Ken Myer 啟用整合連絡人存放區。
+        
 

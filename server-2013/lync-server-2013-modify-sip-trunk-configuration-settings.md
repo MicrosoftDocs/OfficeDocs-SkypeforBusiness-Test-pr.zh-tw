@@ -60,7 +60,7 @@ SIP 主幹組態設定定義了中繼伺服器與公用交換電話網路 (PSTN)
 <tr class="even">
 <td><p>加密支援等級</p></td>
 <td><p>SRTPMode</p></td>
-<td><p>指出將 Mediation Server 與服務提供者的 PSTN 閘道、IP-PBX 或 SBC 之間的媒體流量加以保護的支援等級。若是媒體旁路的情況，此值必須與媒體組態中的 EncryptionLevel 設定相容。媒體組態必須使用 <a href="new-csmediaconfiguration.md">New-CsMediaConfiguration</a> 和 <a href="set-csmediaconfiguration.md">Set-CsMediaConfiguration</a> Cmdlet 加以設定。</p>
+<td><p>指出將 Mediation Server 與服務提供者的 PSTN 閘道、IP-PBX 或 SBC 之間的媒體流量加以保護的支援等級。若是媒體旁路的情況，此值必須與媒體組態中的 EncryptionLevel 設定相容。媒體組態必須使用 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMediaConfiguration">New-CsMediaConfiguration</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMediaConfiguration">Set-CsMediaConfiguration</a> Cmdlet 加以設定。</p>
 <p>允許的值為：</p>
 <ul>
 <li><p>Required：必須使用 SRTP 加密。</p></li>
@@ -145,18 +145,9 @@ SIP 主幹組態設定定義了中繼伺服器與公用交換電話網路 (PSTN)
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server CsTrunkConfiguration Cmdlet 支援 Lync Server 控制台中未顯示的其他內容。如需詳細資訊，請參閱 <a href="set-cstrunkconfiguration.md">Set-CsTrunkConfiguration</a> Cmdlet 的說明主題。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server CsTrunkConfiguration Cmdlet 支援 Lync Server 控制台中未顯示的其他內容。如需詳細資訊，請參閱 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsTrunkConfiguration">Set-CsTrunkConfiguration</a> Cmdlet 的說明主題。
+
 
 
 ## 使用 Lync Server 控制台修改 SIP 主幹組態設定

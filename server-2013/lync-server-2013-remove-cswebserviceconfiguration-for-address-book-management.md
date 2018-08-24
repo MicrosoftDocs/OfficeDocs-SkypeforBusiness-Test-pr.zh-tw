@@ -31,5 +31,5 @@ Remove-CsWebServiceConfiguration Cmdlet 可讓系統管理員移除先前建立�
 
 #### 其他資源
 
-[Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)
+[Remove-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsWebServiceConfiguration)
 

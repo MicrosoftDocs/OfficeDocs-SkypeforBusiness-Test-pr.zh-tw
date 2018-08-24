@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
   - **是否要封存內部或外部通訊**。您可以對內部通訊 (內部使用者之間的通訊) 和 (或) 外部通訊 (通訊至少有一方是位於您內部網路之外的使用者) 啟用封存。您可以為整個組織指定這些選項，也可以為特定的網站和集區指定這些選項。預設不會啟用任何選項。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用 Microsoft Exchange 整合來存放封存的資料， Exchange 設定將控制是否封存 Lync 通訊。如果部署中包含多個樹系，您必須讓 Lync Server 和 Exchange 之間的設定同步。內部或外部通訊的封存，只能以 Lync 原則控制。就整合了 Exchange 的封存而言，兩者會一起封存或不封存。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您使用 Microsoft Exchange 整合來存放封存的資料， Exchange 設定將控制是否封存 Lync 通訊。如果部署中包含多個樹系，您必須讓 Lync Server 和 Exchange 之間的設定同步。內部或外部通訊的封存，只能以 Lync 原則控制。就整合了 Exchange 的封存而言，兩者會一起封存或不封存。
+    
 
 
   - **為何要啟用封存**。您可以在全域層級為整個部署啟用及停用封存，也可以為特定的網站和使用者啟用及停用封存。在這每一個層級，您都要指定是否對 IM 工作階段 (對等) 和 (或) 會議 (多方工作階段的會議) 啟用封存。預設會停用封存。
@@ -61,18 +52,9 @@ _**上次修改主題的時間：** 2012-10-09_
 
   - **封存原則**。您可以使用一或多個封存原則，啟用及停用內部與外部通訊的封存。預設不會啟用封存。若要啟用或停用位於部署中之內部通訊和 (或) 外部通訊的封存，您可以使用預設的全域原則。全域原則是無法刪除的。您可以指定一或多個選用網站原則，為特定網站啟用或停用內部及外部通訊的封存。您也可以指定一或多個使用者原則，為特定的使用者和使用者群組來啟用或停用封存。使用者層級的原則優先於網站原則。網站層級的原則優先於全域層級的原則。使用者層級的原則只會對設為使用該原則的特定使用者實作。群組的立即訊息與會議只有在至少其中一個參與者的原則已設為啟用封存時，才會受到封存。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您使用 Microsoft Exchange 整合，則對於所有隸屬於 Exchange 2013 伺服器的使用者而言， Exchange 2013 原則優先於 Lync Server 封存原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您使用 Microsoft Exchange 整合，則對於所有隸屬於 Exchange 2013 伺服器的使用者而言， Exchange 2013 原則優先於 Lync Server 封存原則。
+    
 
 
   - **封存設定**。您使用一或多項封存設定來指定本主題先前所述的大多數封存選項，只有啟用內部與外部通訊的封存時除外 (那是使用封存原則來設定，如上項所述)。封存設定包含預設的全域設定和選用的網站與集區設定。全域設定是無法刪除的。集區層級的設定優先於網站層級的設定。網站層級的設定優先於全域層級的設定。
@@ -81,17 +63,7 @@ _**上次修改主題的時間：** 2012-10-09_
 
 如果您為某個前端集區或 Standard Edition Server 部署封存，便應該為部署中的所有其他前端集區和 Standard Edition Server 啟用封存。需要這麼做的原因是，需要將己身通訊封存的使用者可能會受邀參加不同集區上裝載的群組 IM 交談或會議。如果裝載交談或會議的集區上未啟用封存，便可能不會封存所有的會議資料。封存仍然會發生於已啟用封存的使用者以及所有 IM 訊息，但可能不會封存會議內容和事件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了能夠委派系統管理工作，同時又維持貴組織的安全性標準， Lync Server 2013 使用角色型存取控制 (RBAC)。使用 RBAC 時，系統管理權限的授與是透過對使用者指派預先定義的系統管理角色來達成。使用者若要設定 Lync 封存原則與封存組態，必須被指派 CsArchivingAdministrator 角色 (除非設定是直接在已部署封存的伺服器上進行，而非從另一部電腦遠端進行)。如需關於 RBAC 的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。如需封存部署時所需的使用者權限與角色清單，請參閱同時出現在規劃文件及部署文件中的 <a href="lync-server-2013-deployment-checklist-for-archiving.md">Lync Server 2013 中封存的部署檢查單</a>。<br />
-如果您使用 Microsoft Exchange 整合，則需要有適當的系統管理員權限才能設定 Exchange 原則。如需詳細資訊，請參閱 Exchange 2013 文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 為了能夠委派系統管理工作，同時又維持貴組織的安全性標準， Lync Server 2013 使用角色型存取控制 (RBAC)。使用 RBAC 時，系統管理權限的授與是透過對使用者指派預先定義的系統管理角色來達成。使用者若要設定 Lync 封存原則與封存組態，必須被指派 CsArchivingAdministrator 角色 (除非設定是直接在已部署封存的伺服器上進行，而非從另一部電腦遠端進行)。如需關於 RBAC 的詳細資訊，請參閱規劃文件中的 <a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。如需封存部署時所需的使用者權限與角色清單，請參閱同時出現在規劃文件及部署文件中的 <a href="lync-server-2013-deployment-checklist-for-archiving.md">Lync Server 2013 中封存的部署檢查單</a>。<br />
+> 如果您使用 Microsoft Exchange 整合，則需要有適當的系統管理員權限才能設定 Exchange 原則。如需詳細資訊，請參閱 Exchange 2013 文件。
 

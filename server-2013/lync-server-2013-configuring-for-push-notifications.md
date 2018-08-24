@@ -17,20 +17,11 @@ _**上次修改主題的時間：** 2013-02-12_
 
 推入通知 (其格式包括徽章、圖示或通知) 可傳送至行動裝置，即使行動應用程式非作用中亦然。推入通知會通知使用者新的或未接的 IM 邀請及語音信箱等事件。 Lync Server 2013 Mobility Service 將通知傳送至雲端架構的 Lync Server 推入通知服務，然後再將通知傳送至 Apple 推入通知服務 (APNS) (適用於執行 Lync 2010 Mobile 用戶端的 Apple 裝置) 或 Microsoft 推入通知服務 (MPNS) (適用於執行 Lync 2010 Mobile 或 Lync 2013 Mobile 用戶端的 Windows Phone 裝置)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您使用具備 Lync 2010 Mobile 或 Lync 2013 Mobile 用戶端的 Windows Phone，推入通知是重要的考量要點。<br />
-如果您在 Apple 裝置上使用 Lync 2010 Mobile，推入通知是重要的考量要點。<br />
-如果您在 Apple 裝置上使用 Lync 2013 Mobile，您將不再需要推入通知。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 如果您使用具備 Lync 2010 Mobile 或 Lync 2013 Mobile 用戶端的 Windows Phone，推入通知是重要的考量要點。<br />
+> 如果您在 Apple 裝置上使用 Lync 2010 Mobile，推入通知是重要的考量要點。<br />
+> 如果您在 Apple 裝置上使用 Lync 2013 Mobile，您將不再需要推入通知。
+
 
 
 請執行下列動作，以設定您的拓撲支援推入通知：
@@ -39,18 +30,9 @@ _**上次修改主題的時間：** 2013-02-12_
 
   - 如果您的環境具有 Office Communications Server 2007 R2Edge Server，您必須設定與 push.lync.com 的直接 SIP 同盟。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Push.lync.com 是推入通知服務的 Microsoft Office 365 網域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Push.lync.com 是推入通知服務的 Microsoft Office 365 網域。
+    
 
 
   - 若要啟用推入通知，您必須執行 **Set-CsPushNotificationConfiguration** Cmdlet。預設會關閉推入通知。
@@ -71,18 +53,9 @@ _**上次修改主題的時間：** 2013-02-12_
     
         New-CsHostingProvider -Identity "LyncOnline" -Enabled $True -ProxyFqdn "sipfed.online.lync.com" -VerificationLevel UseSourceVerification
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您只能與一個裝載提供者有一個同盟關係。換句話說，如果您已設定同盟關係為 sipfed.online.lync.com 的裝載提供者，請勿針對此關係新增其他裝載提供者，即使裝載提供者的身分識別不是 LyncOnline 亦然。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您只能與一個裝載提供者有一個同盟關係。換句話說，如果您已設定同盟關係為 sipfed.online.lync.com 的裝載提供者，請勿針對此關係新增其他裝載提供者，即使裝載提供者的身分識別不是 LyncOnline 亦然。
+    
 
 
 4.  設定組織與 Lync Online 推入通知服務之間的裝載提供者同盟。在命令列中輸入：
@@ -147,6 +120,6 @@ _**上次修改主題的時間：** 2013-02-12_
 
 #### 其他資源
 
-[Test-CsFederatedPartner](test-csfederatedpartner.md)  
-[Test-CsMcxPushNotification](test-csmcxpushnotification.md)
+[Test-CsFederatedPartner](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsFederatedPartner)  
+[Test-CsMcxPushNotification](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsMcxPushNotification)
 

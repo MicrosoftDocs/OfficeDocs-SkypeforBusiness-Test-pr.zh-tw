@@ -21,22 +21,13 @@ _**上次修改主題的時間：** 2012-09-24_
 
 如需設定連絡人物件的詳細資訊，請參閱 Lync Server 管理命令介面文件中的下列 Cmdlet：
 
-  - [New-CsExUmContact](new-csexumcontact.md)
+  - [New-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsExUmContact)
 
-  - [Set-CsExUmContact](set-csexumcontact.md)
+  - [Set-CsExUmContact](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExUmContact)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您可以為裝載的 Exchange UM 啟用 Lync Server 2013 連絡人物件之前，必須先部署適用於這些物件的裝載語音信箱原則。如需詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您可以為裝載的 Exchange UM 啟用 Lync Server 2013 連絡人物件之前，必須先部署適用於這些物件的裝載語音信箱原則。如需詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-voice-mail-policies.md">Lync Server 2013 中的主控語音信箱原則</a>＞。
+
 
 
 ## 若要為裝載的 Exchange UM 建立 AA 或 SA 連絡人物件
@@ -45,9 +36,12 @@ _**上次修改主題的時間：** 2012-09-24_
 
 2.  執行 New-CsExUmContact Cmdlet 建立部署所需的任何連絡人物件。例如，執行下列命令建立 AA 和 SA 連絡人物件：
     
-        New-CsExUmContact -SipAddress "sip:exumaa1@fabrikam.com" -RegistrarPool "RedmondPool.litwareinc.com" -OU "HostedExUM Integration" -DisplayNumber "+14255550101" -AutoAttendant $True
-    
-        New-CsExUmContact -SipAddress "sip:exumsa1@fabrikam.com" -RegistrarPool "RedmondPool.litwareinc.com" -OU "HostedExUM Integration" -DisplayNumber "+14255550101"
+    ```
+    New-CsExUmContact -SipAddress "sip:exumaa1@fabrikam.com" -RegistrarPool "RedmondPool.litwareinc.com" -OU "HostedExUM Integration" -DisplayNumber "+14255550101" -AutoAttendant $True
+    ```
+    ```
+    New-CsExUmContact -SipAddress "sip:exumsa1@fabrikam.com" -RegistrarPool "RedmondPool.litwareinc.com" -OU "HostedExUM Integration" -DisplayNumber "+14255550101"
+    ```
     
     這些範例會設定下列參數：
     
@@ -55,18 +49,9 @@ _**上次修改主題的時間：** 2012-09-24_
     
       - **RegistrarPool** 指定登錄器服務執行所在集區的完整網域名稱 (FQDN)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>在 Lync Server 2013 之前，Exchange UM 連絡人物件無法移至屬於 Lync Server 2013 部署的集區中。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 在 Lync Server 2013 之前，Exchange UM 連絡人物件無法移至屬於 Lync Server 2013 部署的集區中。
+        
     
       - **OU** 指定將要放置這個連絡人物件所在的 Active Directory 組織單位。
     

@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
   - 網域全名 (FQDN)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>服務提供者可能會要求您連接多個 ITSP 閘道。在這種情況下，您必須在每個 ITSP 閘道和集區中的每部 中繼伺服器之間設定連線。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 服務提供者可能會要求您連接多個 ITSP 閘道。在這種情況下，您必須在每個 ITSP 閘道和集區中的每部 中繼伺服器之間設定連線。
+
 
 
 提供給服務提供者的資訊取決於您的 SIP 主幹連線類型：
@@ -51,18 +42,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
 2.  如果 ITSP 支援傳輸層安全性 (TLS)，則 ITSP 必須提供憑證給您。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SIP 能和即時傳輸通訊協定 (RTP) 或安全即時傳輸通訊協定 (SRTP) 搭配運作，其為管理 Voice over Internet Protocol (VoIP) 通話中實際語音資料的通訊協定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SIP 能和即時傳輸通訊協定 (RTP) 或安全即時傳輸通訊協定 (SRTP) 搭配運作，其為管理 Voice over Internet Protocol (VoIP) 通話中實際語音資料的通訊協定。
+
 
 
 ## 部署程序

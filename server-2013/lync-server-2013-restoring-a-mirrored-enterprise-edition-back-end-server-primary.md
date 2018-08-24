@@ -35,18 +35,8 @@ _**上次修改主題的時間：** 2013-02-17_
     
         Invoke-CsDataBaseFailover -PoolFqdn pool0.vdomain.com -DatabaseType User -NewPrincipal Mirror -Force -Verbose
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您已將後端資料庫設定為使用具有見證的同步鏡像，將自動進行容錯移轉。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您已將後端資料庫設定為使用具有見證的同步鏡像，將自動進行容錯移轉。
 
 
 4.  完成容錯移轉後，執行下列作業：

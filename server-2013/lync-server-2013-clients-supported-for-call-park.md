@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-09-13_
 
 您可以駐留來自任何 IP、專用交換機 (PBX)、公用交換電話網路 (PSTN) 或行動電話的通話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只可以駐留音訊通話。不能駐留立即訊息和會議。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只可以駐留音訊通話。不能駐留立即訊息和會議。
+
 
 
 下列用戶端可以使用 通話駐留 來駐留通話：
@@ -45,18 +36,9 @@ _**上次修改主題的時間：** 2012-09-13_
 
   - Lync Phone Edition
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動電話無法使用 通話駐留 來駐留通話。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 行動電話無法使用 通話駐留 來駐留通話。
+
 
 
 ## 擷取通話支援的用戶端

@@ -21,16 +21,7 @@ _**上次修改主題的時間：** 2012-10-17_
 
   - 系統管理員建立工作流程，而一般管理員設定選項 - CsResponseGroupAdministrator 角色成員 (或同等權限) 定義主要 SIP URI、顯示名稱，指派一或多個 CsResponseGroupManager 角色成員，以及選取佇列並啟動工作流程。然後，CsResponseGroupManager 會登入並編輯工作流程設定，包括建立代理群組、將群組指派給佇列，以及設定電話號碼、假日和上班時間、等候音樂等。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您想建立受管理的工作流程時，您必須建立並啟動工作流程。儲存作用中的受管理工作流程之後，即可修改及停用工作流程。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您想建立受管理的工作流程時，您必須建立並啟動工作流程。儲存作用中的受管理工作流程之後，即可修改及停用工作流程。
+    
 

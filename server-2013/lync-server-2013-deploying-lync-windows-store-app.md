@@ -21,28 +21,14 @@ _**上次修改主題的時間：** 2013-12-03_
 
 Lync Server 2013 的累計更新：2013 年 6 月新增對於 Lync Windows 市集應用程式用戶端的多重要素驗證支援。除了使用者名稱與密碼外，您可以要求其他驗證方式 (例如智慧卡或 PIN) 以在外部使用者登入 Lync 會議時進行驗證。若要啟用多重要素驗證，請在 Lync Server 2013 中部署 Active Directory Federation Service (AD FS) 同盟伺服器並啟用被動式驗證。AD FS 設定完成後，嘗試加入 Lync 會議的外部使用者將會看到 AD FS 多重要素驗證網頁，不僅包含使用者名稱與密碼問題，另外還有您所設定的任何額外驗證方法。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下為設定 AD FS 以進行 Lync Windows 市集應用程式的多重要素驗證時所要考量的重要事項：
-<ul>
-<li><p>至少要有 Lync Server 2013 搭配 Lync Server 2013 的累計更新：2013 年 6 月。Lync 2013 桌面用戶端並不需要 Lync Server 2013 的累計更新：2013 年 6 月，所以被動式驗證可能會因為 Lync 2013 用戶端能夠進行驗證而呈現正常運作的狀態。然而，Lync Windows 市集應用程式用戶端的驗證程序將無法完成，且畫面不會出現任何通知或錯誤訊息。</p></li>
-<li><p>伺服器必須將被動式驗證設為唯一提供的驗證類型。</p></li>
-<li><p>若您使用硬體負載平衡器，請在負載平衡器上啟用 Cookie 持續性，這樣來自 Lync Windows 市集應用程式 用戶端的所有要求才能由相同的前端伺服器處理。</p></li>
-<li><p>當您在 Lync Server 與 AD FS 伺服器之間建立信賴憑證者信任時，請指定長度足夠的 Token 檔案，以擴展您 Lync 會議的長度上限。一般來說，240 分鐘的 Token 檔案即足夠。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> 以下為設定 AD FS 以進行 Lync Windows 市集應用程式的多重要素驗證時所要考量的重要事項：
+> <ul>
+> <li><p>至少要有 Lync Server 2013 搭配 Lync Server 2013 的累計更新：2013 年 6 月。Lync 2013 桌面用戶端並不需要 Lync Server 2013 的累計更新：2013 年 6 月，所以被動式驗證可能會因為 Lync 2013 用戶端能夠進行驗證而呈現正常運作的狀態。然而，Lync Windows 市集應用程式用戶端的驗證程序將無法完成，且畫面不會出現任何通知或錯誤訊息。</p></li>
+> <li><p>伺服器必須將被動式驗證設為唯一提供的驗證類型。</p></li>
+> <li><p>若您使用硬體負載平衡器，請在負載平衡器上啟用 Cookie 持續性，這樣來自 Lync Windows 市集應用程式 用戶端的所有要求才能由相同的前端伺服器處理。</p></li>
+> <li><p>當您在 Lync Server 與 AD FS 伺服器之間建立信賴憑證者信任時，請指定長度足夠的 Token 檔案，以擴展您 Lync 會議的長度上限。一般來說，240 分鐘的 Token 檔案即足夠。</p></li>
+</ul>
 
 **設定多重因素驗證**
 
@@ -60,11 +46,15 @@ Lync Server 2013 的累計更新：2013 年 6 月新增對於 Lync Windows 市�
 
 5.  設定下列信賴憑證者規則：
     
-        $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'$IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
-    
-        Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
-    
-        Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
+      ```
+      $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'$IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
+      ```
+      ```
+      Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
+      ```
+      ```
+      Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
+      ```
 
 ## 可能會造成無法登入的已知問題
 

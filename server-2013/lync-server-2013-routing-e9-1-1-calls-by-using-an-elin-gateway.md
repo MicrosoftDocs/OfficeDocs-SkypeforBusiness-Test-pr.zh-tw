@@ -25,18 +25,9 @@ Unified Communications Open Interoperability Program 中的部分協力廠商提
 
 ELIN 閘道僅支援來自組織網路內的緊急通話。它們不支援從您網路外部撥打的緊急通話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需有關針對緊急通話使用 SIP 主幹連線的詳細資訊，請參閱＜ <a href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">在 Lync Server 2013 中使用 SIP 主幹路由 E9-1-1 來電</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需有關針對緊急通話使用 SIP 主幹連線的詳細資訊，請參閱＜ <a href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">在 Lync Server 2013 中使用 SIP 主幹路由 E9-1-1 來電</a>＞。
+
 
 
 下圖顯示當您使用 ELIN 閘道時，如何將緊急通話從 Lync Server 路由傳送至 PSAP。

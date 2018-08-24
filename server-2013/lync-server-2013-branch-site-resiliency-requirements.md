@@ -35,34 +35,16 @@ _**上次修改主題的時間：** 2015-03-09_
 
 建議您為分支網站中的使用者建立不同的使用者層級 VoIP 原則。此原則應包含一個使用 Survivable Branch Appliance 或分支伺服器閘道的主要路由，以及一或多個使用中央網站上具有公用交換電話網路 (PSTN) 閘道之主幹的備份路由。如果主要路由無法使用，則會改用使用一或多個中央網站閘道的備份路由。如此一來，無論使用者在何處註冊 (在分支網站登錄器或中央網站的備份登錄器集區)，使用者的 VoIP 原則永遠有效。這是容錯移轉案例的重要考量。比如，如果您需要重命名 Survivable Branch Appliance 或重新設定 Survivable Branch Appliance，以連接至中央網站的備份登錄器集區，那麼在此期間您必須將分支網站使用者移動至中央網站 (如需重新命名或重新設定Survivable Branch Appliance 的詳細資訊，請參閱部署文件中的[Lync Server 2013 中的附錄 B：管理 Survivable Branch Appliance](lync-server-2013-appendix-b-managing-a-survivable-branch-appliance.md))。如果這些使用者沒有使用者層級 VoIP 原則或使用者層級撥號對應表，則將使用者移動至其他網站時，預設會對使用者套用中央網站的網站層級 VoIP 原則和網站層級撥號對應表，而不是套用分支網站的網站層級 VoIP 原則和撥號對應表。在此例中，除非備份登錄器集區使用的網站層級 VoIP 原則與網站層級撥號對應表也能套用至分支網站使用者，否則其通話將會失敗。例如，日本分支網站的使用者被移動至 Redmond 中央網站，那麼在所有的 7 位數電話前面加上 +1425 的正規化規則撥號對應表，就無法正確地為這些使用者轉譯電話。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立分公司備份路由時，建議您將兩個 PSTN 電話使用方式記錄新增至分公司使用者原則，並將不同的路由指派給每個記錄。第一個 (或主要) 路由會將通話導向至與 Survivable Branch Appliance (SBA) 或分公司伺服器相關聯的閘道；第二個 (或備份) 路由會將通話導向至中央網站的閘道。在導向通話時，SBA 或分公司伺服器會先嘗試指派給第一個 PSTN 使用方式記錄的所有路由，然後再嘗試第二個使用方式記錄。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 當您建立分公司備份路由時，建議您將兩個 PSTN 電話使用方式記錄新增至分公司使用者原則，並將不同的路由指派給每個記錄。第一個 (或主要) 路由會將通話導向至與 Survivable Branch Appliance (SBA) 或分公司伺服器相關聯的閘道；第二個 (或備份) 路由會將通話導向至中央網站的閘道。在導向通話時，SBA 或分公司伺服器會先嘗試指派給第一個 PSTN 使用方式記錄的所有路由，然後再嘗試第二個使用方式記錄。
+
 
 
 若要確保在分支閘道或 Survivable Branch Appliance 網站的 Windows 元件無法使用時 (例如， Survivable Branch Appliance 或分支閘道關機進行維護時會發生此情況)，對分支網站使用者的來電會路由傳送給這些使用者，請在閘道上建立容錯移轉路由 (或與您的直接內部撥號 (DID) 提供者合作)，以將來電重新導向至中央網站的備份登錄器集區。在這裡，會透過 WAN 連結將來電路由傳送給分公司使用者。請確定路由會轉譯號碼以符合 PSTN 閘道或其他對等主幹接受的電話號碼格式。如需關於建立容錯移轉路由的詳細資訊，請參閱＜ [在 Lync Server 2013 中設定容錯移轉路由](lync-server-2013-configuring-a-failover-route.md)＞。另外，請為與分支網站上的閘道相關聯的主幹建立服務層級撥號對應表，以正規化來電。如果您在分支網站有兩個 Survivable Branch Appliance，除非需要個別的服務層級對應表，否則可以建立兩者共用的網站層級撥號對應表。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為了針對任何一個分支網站裡倚賴中央網站以獲得顯示狀態、會議或容錯移轉功能的使用者，記錄其對中央網站資源的使用情況，建議您將每位分支網站使用者視為向中央網站註冊的使用者。對於分支網站使用者的數量，包括向 Survivable Branch Appliance註冊的使用者，目前並沒有限制。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 為了針對任何一個分支網站裡倚賴中央網站以獲得顯示狀態、會議或容錯移轉功能的使用者，記錄其對中央網站資源的使用情況，建議您將每位分支網站使用者視為向中央網站註冊的使用者。對於分支網站使用者的數量，包括向 Survivable Branch Appliance註冊的使用者，目前並沒有限制。
+
 
 
 我們也建議您建立使用者層級撥號對應表和語音原則，然後將它指派給分支網站使用者。如需詳細資訊，請參閱部署文件中的＜ [在 Lync Server 2013 中建立撥號對應表](lync-server-2013-create-a-dial-plan.md)＞及＜ [在 Lync Server 2013 中為分支使用者建立 VoIP 路由原則](lync-server-2013-create-the-voip-routing-policy-for-branch-users.md)＞。
@@ -203,18 +185,9 @@ Survivable Branch Appliance (SBA) 和 Survivable Branch 伺服器 可在 WAN 中
 
 如果企業 DNS 伺服器只位在中央網站，則分支網站使用者在 WAN 中斷期間將無法連線至這些伺服器；因此，使用 DNS SRV (服務 (SRV) 資源記錄) 的 Lync Server 探索將會失敗。為了確保在 WAN 中斷期間立即重新路由傳送，分支網站必須快取 DNS 記錄。如果分支路由器支援 DNS 快取，請開啟 DNS 快取功能。或者，您可在分支網站部署 DNS 伺服器。這可以是獨立的伺服器，或支援 DNS 功能的 Survivable Branch Appliance 版本。如需詳細資訊，請連絡您的 Survivable Branch Appliance 提供者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>分支網站不需要有網域控制站。 Survivable Branch Appliance 會使用特殊的憑證來驗證用戶端，該憑證是它在登入時為回應用戶端的憑證要求傳送給用戶端的憑證。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 分支網站不需要有網域控制站。 Survivable Branch Appliance 會使用特殊的憑證來驗證用戶端，該憑證是它在登入時為回應用戶端的憑證要求傳送給用戶端的憑證。
+
 
 
 Lync 用戶端可使用 DHCP 選項 120 (SIP 登錄器選項) 來探索 Lync Server。這可使用下列兩種方式之一來設定：

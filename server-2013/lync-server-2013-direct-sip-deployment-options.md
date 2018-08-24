@@ -21,9 +21,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果您的組織使用本節所述的其中一種部署， Lync Server 2013 就可以做為部分或全體組織的唯一電話語音解決方案。本節詳細說明下列部署：
 
-  - **漸進式部署：**此選項假設您已經有專用交換機 (PBX) 基礎結構，而且打算以漸進方式將 企業語音引進組織內較小的群組或小組中。
+  - **漸進式部署：** 此選項假設您已經有專用交換機 (PBX) 基礎結構，而且打算以漸進方式將 企業語音引進組織內較小的群組或小組中。
 
-  - **Lync Server 僅限 VoIP 部署：**此選項假設您考慮在沒有傳統電話語音基礎結構的據點上部署 企業語音。
+  - **Lync Server 僅限 VoIP 部署：** 此選項假設您考慮在沒有傳統電話語音基礎結構的據點上部署 企業語音。
 
 ## 漸進式部署
 
@@ -37,32 +37,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ![部門的移轉選項圖表](images/Gg398672.e951ecf4-7cd2-425a-9106-76977492d682(OCS.15).jpg "部門的移轉選項圖表")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要使 Lync Server 部署和取得認證的直接 SIP 協力廠商連線， 中繼伺服器和 PBX 之間便不需要公用交換電話網路 (PSTN) 閘道。如需取得認證的直接 SIP 協力廠商清單，請參閱 Microsoft Unified Communications Open Interoperability Program 網站 ( <a href="http://go.microsoft.com/fwlink/?linkid=203309%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=203309&amp;clcid=0x404</a>)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要使 Lync Server 部署和取得認證的直接 SIP 協力廠商連線， 中繼伺服器和 PBX 之間便不需要公用交換電話網路 (PSTN) 閘道。如需取得認證的直接 SIP 協力廠商清單，請參閱 Microsoft Unified Communications Open Interoperability Program 網站 ( <a href="http://go.microsoft.com/fwlink/?linkid=203309%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=203309&amp;clcid=0x404</a>)。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此圖表展示的媒體路徑已啟用媒體旁路 (建議設定)。如果您選擇停用媒體旁路，媒體路徑將經由 中繼伺服器 路由傳送。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 此圖表展示的媒體路徑已啟用媒體旁路 (建議設定)。如果您選擇停用媒體旁路，媒體路徑將經由 中繼伺服器 路由傳送。
+
 
 
 在此拓撲中，選取的部門或工作群組已啟用 企業語音。PSTN 閘道會將啟用 Voice over Internet Protocol (VoIP) 的工作群組連結至 PBX。啟用 企業語音的使用者 (包括遠端工作者) 會透過 IP 網路通訊。 企業語音使用者向 PSTN 和未啟用 企業語音的同事所撥打的電話，都會路由傳送至適當的 PSTN 閘道。來自仍位於 PBX 系統上之同事，或者來自 PSTN 上之來電者的通話，會路由傳送至 PSTN 閘道，閘道會將通話轉送至 Lync Server 以便路由傳送。
@@ -113,18 +95,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 在此部署中，所有的通話都會透過 IP 網路路由傳送。撥給 PSTN 的通話會路由傳送至適當的 PSTN 閘道。 Lync 2013 或 Lync Phone Edition 都可以當做軟體電話來使用。無法使用遠端呼叫控制而且也不需要，因為 PBX 電話已不存在，所以使用者不需要控制。您可以透過 Exchange 整合通訊 (UM) 的選用部署，來提供語音信箱和自動語音應答服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除了支援 Lync Server 2013 所需的網路基礎結構以外，僅限 VoIP 部署還能使用小型的合格閘道來支援傳真機和類比裝置。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 除了支援 Lync Server 2013 所需的網路基礎結構以外，僅限 VoIP 部署還能使用小型的合格閘道來支援傳真機和類比裝置。
+
 
 
 下圖說明僅限 VoIP 部署的一般拓撲。
@@ -133,16 +106,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ![Greenfidle 部署選項](images/Gg398672.820dc5fe-0e20-431b-ae4e-fefdf2221d3b(OCS.15).jpg "Greenfidle 部署選項")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此圖表展示的媒體路徑已啟用媒體旁路 (建議設定)。如果您選擇停用媒體旁路，媒體路徑將經由 中繼伺服器 路由傳送。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此圖表展示的媒體路徑已啟用媒體旁路 (建議設定)。如果您選擇停用媒體旁路，媒體路徑將經由 中繼伺服器 路由傳送。
+
 

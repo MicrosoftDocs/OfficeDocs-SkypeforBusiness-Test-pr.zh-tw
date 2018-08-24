@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2012-10-30_
 
   - 每個 IPv6 位址都有範圍。有三個範圍可以用於 IPv6 定址：IPv6 全域位址 (類似公用 IPv4 位址)、IPv6 唯一本機位址 (類似私人 IPv4 位址範圍)，以及 IPv6 連結本機位址 (類似 Windows Server 中 IPv4 的自動私人 IP 位址)。集區內的所有伺服器都應該具有相同範圍的 IPv6 位址。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>IPv6 是個複雜的主題，需要與您的網路團隊及網際網路提供者一起小心規劃，以確保您在 Windows Server 層級和 Lync Server 2013 層級指派的位址將會如預期般運作。如需 IPv6 定址和規劃的其他資源，請參閱本主題結尾的連結。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> IPv6 是個複雜的主題，需要與您的網路團隊及網際網路提供者一起小心規劃，以確保您在 Windows Server 層級和 Lync Server 2013 層級指派的位址將會如預期般運作。如需 IPv6 定址和規劃的其他資源，請參閱本主題結尾的連結。
+
 
 
 ## 請參閱

@@ -29,36 +29,17 @@ _**上次修改主題的時間：** 2013-03-26_
     
     「回應群組」應用程式每一個集區僅可儲存一組應用程式層級設定。這些設定可透過 **Get-CsRgsConfiguration** Cmdlet 存取。設定包含預設的等候音樂設定、預設的等候音樂音訊檔、代理人回電寬限期及來電內容設定。這些設定可利用 **ReplaceExistingSettings** 參數，透過 **Import-CsRgsConfiguration** Cmdlet 從一個集區傳輸至另一個集區，但是此作業會置換目的地集區中的任何應用程式層級設定。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在單獨的位置中，保留已用於設定「回應群組」應用程式 (也就是任何錄音檔案或等候音樂檔案) 之所有原始音訊檔的備份複本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 在單獨的位置中，保留已用於設定「回應群組」應用程式 (也就是任何錄音檔案或等候音樂檔案) 之所有原始音訊檔的備份複本。
     
     如果您有任何針對集區中「通話駐留」上傳之自訂的音樂保留檔案，應該將這些的複本保留在其他位置中。這些檔案未備份為 Lync Server 2013 災害復原程序的一部分，且如果上傳至集區的檔案毀壞、受損或遭到清除，就會遺失。
     
         Xcopy  <Source: Pool A CPS File Store Path>  <Destination>
         Example: Xcopy  "<Pool A File Store Path>\LyncFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Destination:  Backup location 1>"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>「通話駐留」應用程式每一個集區僅可以儲存一組設定與一個自訂等候音樂音訊檔。這些設定可透過 <strong>Get-CsCpsConfiguration</strong> Cmdlet 存取。因為「通話駐留」的災害復原機制仰賴備份集區的「通話駐留」應用程式，如果發生災害，則不會備份或保留主要集區的設定。如果遺失主要集區，則無法復原這些設定，當部署新的集區以取代主要集區時，需要設定「通話駐留」設定與任何自訂等候音樂音訊檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 「通話駐留」應用程式每一個集區僅可以儲存一組設定與一個自訂等候音樂音訊檔。這些設定可透過 <strong>Get-CsCpsConfiguration</strong> Cmdlet 存取。因為「通話駐留」的災害復原機制仰賴備份集區的「通話駐留」應用程式，如果發生災害，則不會備份或保留主要集區的設定。如果遺失主要集區，則無法復原這些設定，當部署新的集區以取代主要集區時，需要設定「通話駐留」設定與任何自訂等候音樂音訊檔。
+    
 
 
   - 如果您將任何宣告設定為「未指派號碼語音功能」的一部分，建議您將初始組態期間所使用的任何原始音訊檔副本保留在其他位置。如果不這麼做，您可以在要匯入音訊檔之伺服器或集區的檔案存放區中，取得已設定音訊檔的副本。這些檔案未備份為 Lync Server 2013 災害復原程序的一部分，且如果上傳至集區的檔案毀壞、受損或遭到清除，就會遺失。若要從伺服器或集區的檔案存放區中複製用於設定「未指派號碼語音功能」的所有音訊檔，請使用：

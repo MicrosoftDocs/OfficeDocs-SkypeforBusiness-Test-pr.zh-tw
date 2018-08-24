@@ -81,18 +81,9 @@ Standard Edition Server 可讓您使用立即訊息 (IM)、顯示狀態、會議
 
 後端伺服器是執行 Microsoft SQL Server 的資料庫伺服器，提供前端集區的資料庫服務。後端伺服器可當作集區使用者與會議資料的備份存放區，亦為回應群組等其他資料庫的主要存放區。您可有單一後端伺服器，但建議使用 SQL Server 鏡像的解決方案來進行容錯移轉。後端伺服器無法執行任何 Lync Server 軟體。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議您不要將 Lync Server 資料庫與其他資料庫組合，如果這麼做，可能會影響可用性與效能。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建議您不要將 Lync Server 資料庫與其他資料庫組合，如果這麼做，可能會影響可用性與效能。
+
 
 
 後端伺服器資料庫中所儲存的資訊包括目前狀態資訊、使用者的連絡人清單、會議資料 (包括所有目前會議狀態的持續性資料) 以及會議排程資料。
@@ -101,25 +92,11 @@ Standard Edition Server 可讓您使用立即訊息 (IM)、顯示狀態、會議
 
 Edge Server 可讓使用者與組織防火牆外部的使用者通訊及共同作業。這些外部使用者可以包括目前在辦公室外工作的組織使用者、同盟協力廠商組織的使用者，以及受邀加入 Lync Server 部署中所主控之會議的外部使用者。Edge Server 也可以連線至公用 IM 連線服務 (包括 Windows Live、AOL、Yahoo\! 及 Google Talk)。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
-<li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
-<li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> <li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
+> <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
+> <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
+> </ul>
 
 
 部署 Edge Server 亦會啟用支援行動裝置上 Lync 功能的行動服務。使用者可使用支援的 Apple iOS、Android、Windows Phone 或 Nokia 行動裝置執行活動，例如，傳送和接收立即訊息、檢視聯絡人、檢視目前狀態。此外，行動裝置還支援部分 企業語音功能，例如，按一下即可加入會議、透過公司電話通話、單一號碼連絡、語音信箱及未接來電。行動功能亦可針對不支援應用程式在背景執行的行動裝置支援 *「推入通知」* 。推入通知是可將行動應用程式處於非作用狀態時發生的事件傳送至行動裝置的通知。

@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 若要以經過驗證的使用者身分加入電話撥入式會議，具有 Active Directory 網域服務 (AD DS) 認證的 Lync Server 2013 使用者需要個人識別碼 (PIN)。您可以從 Lync Server 2013 控制台檢視使用者的 PIN 資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以檢視諸如是否已設定 PIN 或上次變更 PIN 的時間之類的 PIN 狀態資訊，但無法藉由查看 PIN 狀態來查看目前的 PIN。如果使用者遺失他們的 PIN，您可以遵循<a href="lync-server-2013-set-a-user-s-dial-in-conferencing-pin.md">在 Lync Server 2013 中設定使用者的電話撥入式會議 PIN</a>中的程序來重設 PIN</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您可以檢視諸如是否已設定 PIN 或上次變更 PIN 的時間之類的 PIN 狀態資訊，但無法藉由查看 PIN 狀態來查看目前的 PIN。如果使用者遺失他們的 PIN，您可以遵循<a href="lync-server-2013-set-a-user-s-dial-in-conferencing-pin.md">在 Lync Server 2013 中設定使用者的電話撥入式會議 PIN</a>中的程序來重設 PIN
+
 
 
 ## 在 Lync Server 控制台中檢視使用者的 PIN
@@ -55,33 +46,14 @@ _**上次修改主題的時間：** 2013-02-23_
     
     4.  視您選取的使用者內容而定，透過直接輸入文字或按下拉式清單中的箭頭，輸入您要用來篩選搜尋結果的準則。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要將更多搜尋子句加入至查詢，請按一下 [新增篩選]。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要將更多搜尋子句加入至查詢，請按一下 [新增篩選]。
     
     5.  按一下 \[尋找\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 PIN 已鎖定，您必須解除鎖定 PIN，才能設定 PIN。若要解除鎖定 PIN，請依序按一下使用者、[執行] 和 [解除鎖定 PIN]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 PIN 已鎖定，您必須解除鎖定 PIN，才能設定 PIN。若要解除鎖定 PIN，請依序按一下使用者、[執行] 和 [解除鎖定 PIN]。
+    
 
 
 6.  依序按一下搜尋結果中的使用者、\[執行\] 和 \[檢視 PIN 狀態\]。
@@ -104,7 +76,7 @@ _**上次修改主題的時間：** 2013-02-23_
         LastPinChangeTime : 9/25/2012 1:35:03 PM
         PinExpirationTime :
 
-如需詳細資訊，請參閱適用於 [Get-CsConferenceDisclaimer](get-csconferencedisclaimer.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱適用於 [Get-CsConferenceDisclaimer](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsConferenceDisclaimer) Cmdlet 的說明主題。
 
 ## 請參閱
 

@@ -87,19 +87,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p>A/V 會議</p></td>
 <td><p>前端集區提供的 A/V 會議服務支援集區的會議，但前提假設會議大小上限為 250 位使用者，而且一次只會舉行一個這類大型會議。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此外，您可以部署含有兩部 前端伺服器的個別 前端集區來舉行大型會議，藉以支援使用者介於 250 位和 1000 位之間的大型會議。如需詳細資訊，請參閱＜ <a href="lync-server-2013-supporting-large-meetings.md">使用 Lync Server 2013 支援大型會議</a>＞。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 此外，您可以部署含有兩部 前端伺服器的個別 前端集區來舉行大型會議，藉以支援使用者介於 250 位和 1000 位之間的大型會議。如需詳細資訊，請參閱＜ <a href="lync-server-2013-supporting-large-meetings.md">使用 Lync Server 2013 支援大型會議</a>＞。
+
 
 </div></td>
 </tr>
@@ -131,18 +123,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## 前端伺服器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個伺服器角色不支援延伸的集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這個伺服器角色不支援延伸的集區。
+
 
 
 在 前端集區中，集區中每 6,660 位使用者就應該有一部 前端伺服器，前提假設已在集區中的所有伺服器上啟用超執行緒功能，而且伺服器硬體符合 [Lync Server 2013 的伺服器硬體平台](lync-server-2013-server-hardware-platforms.md)中的建議。一個 前端集區中的最大使用者數目是 80,000，前提假設已在集區中的所有伺服器上啟用超執行緒功能。如果網站中有 80,000 位以上的使用者，則可以部署一個以上的 前端集區。
@@ -163,18 +146,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
   - 組織的使用方式與使用者模型差異極大，例如大量的會議流量。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 中，狀態資料庫現在裝載於 前端伺服器上，不同於 Lync Server 2010，它們是裝載於 後端伺服器。這表示 前端伺服器的磁碟效能與容量應該會受到本節先前所列和 <a href="lync-server-2013-server-hardware-platforms.md">Lync Server 2013 的伺服器硬體平台</a>中的建議所影響，而不論您的 前端伺服器中裝載了多少位使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在 Lync Server 2013 中，狀態資料庫現在裝載於 前端伺服器上，不同於 Lync Server 2010，它們是裝載於 後端伺服器。這表示 前端伺服器的磁碟效能與容量應該會受到本節先前所列和 <a href="lync-server-2013-server-hardware-platforms.md">Lync Server 2013 的伺服器硬體平台</a>中的建議所影響，而不論您的 前端伺服器中裝載了多少位使用者。
+
 
 
 下表根據 [Lync Server 2013 中的使用者模型](lync-server-2013-user-models.md)中定義的使用者模型，顯示 IM 和目前狀態的平均頻寬。
@@ -200,18 +174,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要提升 前端伺服器上並存之 A/V 會議與 中繼伺服器功能的媒體效能，您應該在 前端伺服器的介面卡上啟用接收端調整 (RSS)。RSS 可讓伺服器上的多個處理器平行處理連入封包。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a> 上的＜Windows Server 2008 中的接收端調整增強功能＞。如需如何啟用 RSS 的詳細資訊，請參閱網路介面卡文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要提升 前端伺服器上並存之 A/V 會議與 中繼伺服器功能的媒體效能，您應該在 前端伺服器的介面卡上啟用接收端調整 (RSS)。RSS 可讓伺服器上的多個處理器平行處理連入封包。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a> 上的＜Windows Server 2008 中的接收端調整增強功能＞。如需如何啟用 RSS 的詳細資訊，請參閱網路介面卡文件。
+
 
 
 ## 會議最大值
@@ -228,52 +193,25 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## Edge Server
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個伺服器角色不支援延伸的集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這個伺服器角色不支援延伸的集區。
+
 
 
 針對同時存取網站的每 12,000 位遠端使用者，您應該部署一部 Edge Server。建議最少使用兩部 Edge Server ，以獲得高可用性。這些建議假設您的 Edge Server 硬體符合 [Lync Server 2013 的伺服器硬體平台](lync-server-2013-server-hardware-platforms.md)中的建議。
 
 當您考量 Edge Server 的使用者數目時，請納入位於與此網站的 前端集區相關聯的分公司的 Survivable Branch Appliance 和 Survivable Branch 伺服器上的使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要提升 Edge Server上 A/V Conferencing Edge service 的效能，您應該在 Edge Server 的介面卡上啟用接收端調整 (RSS)。RSS 可讓伺服器上的多個處理器平行處理連入封包。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a> 上的＜Windows Server 2008 中的接收端調整增強功能＞。如需如何啟用 RSS 的詳細資訊，請參閱網路介面卡文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要提升 Edge Server上 A/V Conferencing Edge service 的效能，您應該在 Edge Server 的介面卡上啟用接收端調整 (RSS)。RSS 可讓伺服器上的多個處理器平行處理連入封包。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a> 上的＜Windows Server 2008 中的接收端調整增強功能＞。如需如何啟用 RSS 的詳細資訊，請參閱網路介面卡文件。
+
 
 
 ## Director
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個伺服器角色不支援延伸的集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這個伺服器角色不支援延伸的集區。
+
 
 
 如果您部署 Director 伺服器角色，建議您針對同時存取網站的每 12,000 位遠端使用者部署一部 Director。建議最少使用兩個 Director，以獲得高可用性。這些建議假設您的 Edge Server 硬體符合 [Lync Server 2013 的伺服器硬體平台](lync-server-2013-server-hardware-platforms.md)中的建議。
@@ -282,18 +220,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 ## 中繼伺服器
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這個伺服器角色不支援延伸的集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這個伺服器角色不支援延伸的集區。
+
 
 
 如果您將 中繼伺服器與 前端伺服器組合， 中繼伺服器便會在集區中的每部 前端伺服器上執行，而且應該為集區中的使用者提供足夠的容量。
@@ -338,18 +267,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然在效能測試時使用含 32 GB 記憶體的伺服器，但獨立 中繼伺服器支援含 16 GB 記憶體的伺服器，而且足以提供本表格中顯示的效能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然在效能測試時使用含 32 GB 記憶體的伺服器，但獨立 中繼伺服器支援含 16 GB 記憶體的伺服器，而且足以提供本表格中顯示的效能。
+
 
 
 ### 中繼伺服器容量 (已與 前端伺服器組合的 中繼伺服器) 70% 內部使用者、30% 外部使用者、非旁路通話容量 (透過 中繼伺服器執行媒體處理)
@@ -374,32 +294,14 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此數字小於獨立 中繼伺服器的數目，因為除了需要為語音通話進行轉碼之外， 前端伺服器還必須為其上的 6600 位使用者處理其他特性與功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此數字小於獨立 中繼伺服器的數目，因為除了需要為語音通話進行轉碼之外， 前端伺服器還必須為其上的 6600 位使用者處理其他特性與功能。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要提升 中繼伺服器的效能，您應該在 中繼伺服器 的介面卡上啟用接收端調整 (RSS)。RSS 可讓伺服器上的多個處理器平行處理連入封包。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a> 上的＜Windows Server 2008 中的接收端調整增強功能＞。如需如何啟用 RSS 的詳細資訊，請參閱網路介面卡文件。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 若要提升 中繼伺服器的效能，您應該在 中繼伺服器 的介面卡上啟用接收端調整 (RSS)。RSS 可讓伺服器上的多個處理器平行處理連入封包。如需詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268731" class="uri">http://go.microsoft.com/fwlink/?linkid=268731</a> 上的＜Windows Server 2008 中的接收端調整增強功能＞。如需如何啟用 RSS 的詳細資訊，請參閱網路介面卡文件。
+
 
 
 ## 後端伺服器

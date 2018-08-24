@@ -19,32 +19,14 @@ _**上次修改主題的時間：** 2013-10-01_
 
 在 拓撲產生器 中定義拓撲之後，您必須將拓撲發行到 中央管理存放區。中央管理存放區 提供在定義、設定、維護、管理、描述及運作 Lync Server 2013 部署時，所需要的穩固、結構描述化的資料儲存。它也驗證資料，以確保設定一致性。對此設定資料的所有變更都發生在 中央管理存放區，避免發生「不同步」的問題。資料的唯讀複本會複製到拓撲中的所有伺服器，包括 Edge Server。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SQL Server 至少需要 20 GB 的可用磁碟空間，才能成功發佈初始拓撲及建立中央管理伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SQL Server 至少需要 20 GB 的可用磁碟空間，才能成功發佈初始拓撲及建立中央管理伺服器。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅限 Enterprise Edition：若要發行拓撲，SQL Server 後端伺服器必須上線，並納入防火牆例外中以供人存取。如需指定防火牆例外的詳細資訊，請參閱＜ <a href="lync-server-2013-understanding-firewall-requirements-for-sql-server.md">瞭解與 Lync Server 2013 搭配使用時之 SQL Server 的防火牆需求</a>＞。如需設定 SQL Server 的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-sql-server-for-lync-server.md">為 Lync Server 2013 設定 SQL Server</a>＞。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 僅限 Enterprise Edition：若要發行拓撲，SQL Server 後端伺服器必須上線，並納入防火牆例外中以供人存取。如需指定防火牆例外的詳細資訊，請參閱＜ <a href="lync-server-2013-understanding-firewall-requirements-for-sql-server.md">瞭解與 Lync Server 2013 搭配使用時之 SQL Server 的防火牆需求</a>＞。如需設定 SQL Server 的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-sql-server-for-lync-server.md">為 Lync Server 2013 設定 SQL Server</a>＞。
+
 
 
 ## 若要發行拓撲
@@ -59,18 +41,9 @@ _**上次修改主題的時間：** 2013-10-01_
 
 5.  在 **\[建立資料庫\]** 頁面上，選取您要發行的資料庫。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您不具有建立某些資料庫的適當權限，可以清除那些資料庫旁邊的核取方塊，讓具有適當權限的其他人稍後再來建立資料庫。如需詳細資訊，請參閱＜ <a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署權限</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您不具有建立某些資料庫的適當權限，可以清除那些資料庫旁邊的核取方塊，讓具有適當權限的其他人稍後再來建立資料庫。如需詳細資訊，請參閱＜ <a href="lync-server-2013-deployment-permissions-for-sql-server.md">Lync Server 2013 中 SQL Server 的部署權限</a>＞。
+    
 
 
 6.  (選用) 按一下 \[進階\]。進階 SQL Server 資料檔案位置選項可讓您選取下列選項：

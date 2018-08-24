@@ -75,14 +75,14 @@ _**上次修改主題的時間：** 2015-03-09_
 <tr class="even">
 <td><p>使用 Mcx Mobility Service 測試 Lync 2010 Mobile 的行動部署</p></td>
 <td><p>執行 <strong>Test-CsMcxP2PIM</strong>，以測試從一個人傳送立即訊息給另一個人。</p>
-<p>如需 <a href="test-csmcxp2pim.md">Test-CsMcxP2PIM</a> 選項的完整清單，請參閱 Lync Server 管理命令介面 Cmdlet 文件。</p></td>
+<p>如需 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsMcxP2PIM">Test-CsMcxP2PIM</a> 選項的完整清單，請參閱 Lync Server 管理命令介面 Cmdlet 文件。</p></td>
 <td><p>CsAdministrator</p></td>
 <td><p><a href="lync-server-2013-verifying-your-mobility-deployment.md">在 Lync Server 2013 中驗證行動性部署</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>使用 UCWA Web 元件測試 Lync 2013 Mobile 用戶端的行動部署</p></td>
 <td><p>使用 <strong>Test-CsUcwaConference</strong> Cmdlet，以測試並驗證預先定義的測試使用者或一對實際使用者可使用 UCWA 來建立並參與會議。</p>
-<p>如需 <a href="test-csucwaconference.md">Test-CsUcwaConference</a> 選項的完整清單，請參閱 Lync Server 管理命令介面 Cmdlet 文件。</p></td>
+<p>如需 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUcwaConference">Test-CsUcwaConference</a> 選項的完整清單，請參閱 Lync Server 管理命令介面 Cmdlet 文件。</p></td>
 <td><p>CsAdministrator</p></td>
 <td><p><a href="lync-server-2013-verifying-your-mobility-deployment.md">在 Lync Server 2013 中驗證行動性部署</a></p></td>
 </tr>
@@ -95,20 +95,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>如果您要透過 Wi-Fi 網路來支援推入通知，請設定 TCP 連接埠 5223 的輸出防火牆規則。</p></li>
 <li><p>使用 <strong>Set-CsPushNotificationConfiguration</strong> Cmdlet 來啟用推入通知至 Apple Push Notification Service (APNS) 及 Microsoft Push Notification Service (MPNS)。此功能預設為停用。</p></li>
 <li><p>使用 <strong>Test-CsFederatedPartner</strong> Cmdlet 來測試同盟設定，並使用 <strong>Test-CsMCXPushNotification</strong> Cmdlet 來測試推入通知。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>推入通知是用於 Apple 裝置和 Windows Phone 上的 Lync 2010 Mobile 用戶端<br />
-推入通知只對 Windows Phone 上的 Lync 2013 Mobile 用戶端是必要的</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 推入通知是用於 Apple 裝置和 Windows Phone 上的 Lync 2010 Mobile 用戶端<br />
+> 推入通知只對 Windows Phone 上的 Lync 2013 Mobile 用戶端是必要的
 
 </div></li>
 </ul></td>

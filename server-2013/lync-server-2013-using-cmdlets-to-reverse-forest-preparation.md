@@ -17,18 +17,8 @@ _**上次修改主題的時間：** 2013-06-19_
 
 使用 **Disable-CsAdForest** Cmdlet 反向樹系準備步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您在已部署舊版 Lync Server 的環境中執行 <strong>Disable-CsAdForest</strong> Cmdlet，則也會刪除舊版的全域設定。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 如果您在已部署舊版 Lync Server 的環境中執行 <strong>Disable-CsAdForest</strong> Cmdlet，則也會刪除舊版的全域設定。
 
 
 ## 若要使用 Cmdlet 反向樹系準備

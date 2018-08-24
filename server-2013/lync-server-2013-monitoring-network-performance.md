@@ -61,18 +61,9 @@ System Center Operations Manager 會提供端對端服務管理，不僅易於�
 
   - SNMP 這種管理通訊協定會用於在管理站和代理之間通訊管理資訊。管理資訊會參考位於虛擬資訊存放區 (稱為管理資訊基地，MIB) 的受管理物件集。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以上提供協力廠商網路監控解決方案的範例。此清單不具決定性，Microsoft 並未偏好任何特定的廠商解決方案。請向網路服務提供者和/或個別的技術提供者諮詢，以為組織決定最適合的網路監控解決方案。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 以上提供協力廠商網路監控解決方案的範例。此清單不具決定性，Microsoft 並未偏好任何特定的廠商解決方案。請向網路服務提供者和/或個別的技術提供者諮詢，以為組織決定最適合的網路監控解決方案。
+
 
 
 ## 監控個別伺服器網路效能的工具

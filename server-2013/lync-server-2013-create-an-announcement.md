@@ -23,18 +23,8 @@ _**上次修改主題的時間：** 2012-11-01_
 
 3.  執行 **New-CsAnnouncement** Cmdlet 建立宣告並為其命名。執行此步驟可建立含有音訊提示、文字轉語音 (TTS) 提示或無提示的宣告。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您想要將來電轉接至特定目的地而不播放訊息，可能會希望建立沒有提示的宣告。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您想要將來電轉接至特定目的地而不播放訊息，可能會希望建立沒有提示的宣告。
 
 
 4.  將新的宣告指派給未指派號碼表中的某個號碼範圍。
@@ -69,13 +59,13 @@ _**上次修改主題的時間：** 2012-11-01_
     
         New-CsAnnouncement -Parent service:ApplicationServer:pool0.contoso.com -Name "Help Desk Announcement" -TextToSpeechPrompt "The Help Desk number has changed. Please dial 5550100." -Language "en-US"
     
-    如需有關這些 Cmdlet 的詳細資訊，以及查看在 **TextToSpeechPrompt** 參數中使用的語言代碼清單，請參閱＜ [New-CsAnnouncement](new-csannouncement.md)＞。
+    如需有關這些 Cmdlet 的詳細資訊，以及查看在 **TextToSpeechPrompt** 參數中使用的語言代碼清單，請參閱＜ [New-CsAnnouncement](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAnnouncement)＞。
 
 ## 請參閱
 
 #### 其他資源
 
-[Import-CsAnnouncementFile](import-csannouncementfile.md)  
-[New-CsAnnouncement](new-csannouncement.md)  
+[Import-CsAnnouncementFile](https://docs.microsoft.com/en-us/powershell/module/skype/Import-CsAnnouncementFile)  
+[New-CsAnnouncement](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAnnouncement)  
 [在 Lync Server 2013 中設定未指派號碼表](lync-server-2013-configure-the-unassigned-number-table.md)
 

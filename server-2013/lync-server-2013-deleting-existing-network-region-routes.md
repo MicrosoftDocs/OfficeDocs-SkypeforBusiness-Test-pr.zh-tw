@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 4.  在 **\[地區路由\]** 頁面上，按一下您要刪除的地區路由。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以同時刪除多個地區路由。如果要執行這項作業，請按住 CTRL 鍵，然後選取多個地區路由。或者，若要選取所有地區路由，請按一下 <strong>[編輯]</strong> 功能表上的 <strong>[全選]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以同時刪除多個地區路由。如果要執行這項作業，請按住 CTRL 鍵，然後選取多個地區路由。或者，若要選取所有地區路由，請按一下 <strong>[編輯]</strong> 功能表上的 <strong>[全選]</strong>。
+    
 
 
 5.  在 **\[編輯\]** 功能表中，按一下 **\[刪除\]**。
@@ -57,8 +48,8 @@ _**上次修改主題的時間：** 2012-11-01_
 
 #### 其他資源
 
-[New-CsNetworkInterRegionRoute](new-csnetworkinterregionroute.md)  
-[Set-CsNetworkInterRegionRoute](set-csnetworkinterregionroute.md)  
-[Remove-CsNetworkInterRegionRoute](remove-csnetworkinterregionroute.md)  
-[Get-CsNetworkInterRegionRoute](get-csnetworkinterregionroute.md)
+[New-CsNetworkInterRegionRoute](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkInterRegionRoute)  
+[Set-CsNetworkInterRegionRoute](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkInterRegionRoute)  
+[Remove-CsNetworkInterRegionRoute](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkInterRegionRoute)  
+[Get-CsNetworkInterRegionRoute](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkInterRegionRoute)
 

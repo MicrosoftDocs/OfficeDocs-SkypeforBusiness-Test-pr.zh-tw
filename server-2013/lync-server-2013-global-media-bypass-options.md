@@ -15,36 +15,18 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2012-10-04_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本主題假設前提為您已針對希望媒體略過中繼伺服器的特定網站或服務，設定好主幹對等端 (公用交換電話網路 (PSTN) 閘道、IP-PBX 或網際網路電話語音服務提供者上的工作階段邊界控制器 (SBC)) 的媒體旁路。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本主題假設前提為您已針對希望媒體略過中繼伺服器的特定網站或服務，設定好主幹對等端 (公用交換電話網路 (PSTN) 閘道、IP-PBX 或網際網路電話語音服務提供者上的工作階段邊界控制器 (SBC)) 的媒體旁路。
+
 
 
 除了啟用對等端相關之個別主幹連線的媒體旁路，您也必須全域啟用媒體旁路。全域媒體旁路設定可以指定為 PSTN 的來電一律嘗試使用媒體旁路，或是使用網路網站和網路地區的子網路對應來採用媒體旁路，此方法與通話許可控制 (此為另一個進階語音功能) 類似。媒體旁路和通話許可控制都啟用時，在判斷是否採用媒體旁路時，會自動使用指定給通話許可控制的網路地區、網路網站以及子網路資訊。亦即，在啟用通話許可控制的狀況下，您無法指定對 PSTN 的來電一律嘗試使用媒體旁路。
 
 本主題說明如何搭配使用 Lync Server 控制台和 Lync Server 管理命令介面，來進行全域媒體旁路設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用下列步驟設定媒體旁路時，假設前提是用戶端和中繼伺服器對等端 (例如 PSTN 閘道、IP-PBX 或 SIP 主幹提供者上的 SBC) 之間的連線良好。如果連結上有頻寬限制，就無法將媒體旁路套用至通話。媒體旁路不會與每個 PSTN 閘道、IP-PBX 以及 SBC 相互溝通。Microsoft 已經與認證的合作夥伴測試了一組 PSTN 閘道和 SBC，並用 Cisco IP-PBX 完成部分測試。只有列在 Unified Communications Open Interoperability Program – Lync Server 中的產品和版本支援媒體旁路，網址為：<a href="http://go.microsoft.com/fwlink/?linkid=214406%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=214406&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 使用下列步驟設定媒體旁路時，假設前提是用戶端和中繼伺服器對等端 (例如 PSTN 閘道、IP-PBX 或 SIP 主幹提供者上的 SBC) 之間的連線良好。如果連結上有頻寬限制，就無法將媒體旁路套用至通話。媒體旁路不會與每個 PSTN 閘道、IP-PBX 以及 SBC 相互溝通。Microsoft 已經與認證的合作夥伴測試了一組 PSTN 閘道和 SBC，並用 Cisco IP-PBX 完成部分測試。只有列在 Unified Communications Open Interoperability Program – Lync Server 中的產品和版本支援媒體旁路，網址為：<a href="http://go.microsoft.com/fwlink/?linkid=214406%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=214406&amp;clcid=0x404</a>。
+
 
 
 ## 後續步驟：選擇全域媒體旁路設定

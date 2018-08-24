@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-09-23_
 
 4.  設定 Survivable Branch Appliance 或 Survivable Branch 伺服器 閘道上的備用通話路由，以指向中央網站上的備用登錄器集區 (與中繼伺服器組合在一起)(請參閱您的 Survivable Branch Appliance 或 Survivable Branch 伺服器 廠商文件)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此備用通話路由設定作業有助於在 Survivable Branch Appliance 或 Survivable Branch 伺服器 無法提供服務時 (例如，停機維護期間) 確保撥入給分支使用者的通話能夠暢通無阻。如果 Survivable Branch Appliance 或 Survivable Branch 伺服器 上的登錄器與中繼伺服器無法提供服務，且使用者已經註冊到中央網站的備用登錄器集區，則撥入的通話仍舊可以路由傳送給使用者。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此備用通話路由設定作業有助於在 Survivable Branch Appliance 或 Survivable Branch 伺服器 無法提供服務時 (例如，停機維護期間) 確保撥入給分支使用者的通話能夠暢通無阻。如果 Survivable Branch Appliance 或 Survivable Branch 伺服器 上的登錄器與中繼伺服器無法提供服務，且使用者已經註冊到中央網站的備用登錄器集區，則撥入的通話仍舊可以路由傳送給使用者。
+    
 
 
 下一步：[在 Lync Server 2013 中設定語音信箱重新路由設定](lync-server-2013-configure-voice-mail-rerouting-settings.md)

@@ -17,11 +17,9 @@ _**上次修改主題的時間：** 2013-01-30_
 
 如果您已選擇要啟用 Web 會議，則需規劃下列事項：
 
-  -   
-    存取檔案存放區，以用來儲存 Web 會議內容。
+   存取檔案存放區，以用來儲存 Web 會議內容。
 
-  -   
-    與 Office Web Apps Server 整合，在會議期間共用 PowerPoint 檔案時所需。
+   與 Office Web Apps Server 整合，在會議期間共用 PowerPoint 檔案時所需。
 
 ## 檔案存放區
 
@@ -45,25 +43,15 @@ Lync Server 2013 支援在直接連結存放裝置 (DAS) 或存放區域網路 (
 
 系統管理員必須設定檔案共用的權限，讓 RTC 群組擁有所需的讀取及寫入存取權。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果發生任何與權限相關的錯誤，請開啟拓撲產生器，下載並重新發行現有的拓撲。發行拓撲可驗證檔案共用權限，並依需要重設。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 如果發生任何與權限相關的錯誤，請開啟拓撲產生器，下載並重新發行現有的拓撲。發行拓撲可驗證檔案共用權限，並依需要重設。
 
 
 您可以使用下列設定來管理儲存會議內容的方式：
 
-  - **ContentGracePeriod** (位在＜[Set-CsConferencingConfiguration](set-csconferencingconfiguration.md)＞中) 可設定會議結束後，將 Web 會議內容保留在伺服器上的時間。
+  - **ContentGracePeriod** (位在＜[Set-CsConferencingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsConferencingConfiguration)＞中) 可設定會議結束後，將 Web 會議內容保留在伺服器上的時間。
 
-  - **MaxContentStorageMb** (位在＜[Set-CsConferencingConfiguration](set-csconferencingconfiguration.md)＞中) 可設定單一會議期間，可用來儲存內容的檔案空間量上限。
+  - **MaxContentStorageMb** (位在＜[Set-CsConferencingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsConferencingConfiguration)＞中) 可設定單一會議期間，可用來儲存內容的檔案空間量上限。
 
 **MaxUploadFileSizeMb** 不會限制 Lync Web App 的檔案上傳設定。Lync Web App 的檔案大小上傳限制設為大約 30MB，並由 IIS web.config 檔案控制：/DataCollabWeb/Int\[Ext\]/Handler/web.config。若要設定 Lync Web App 的檔案大小上傳限制，請更新 web.config 檔案中的 `maxRequestLength` 及 `maxAllowedContentLength`，如下所示。
 

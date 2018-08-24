@@ -19,20 +19,11 @@ Lync Server 2013 包含標準 Web 服務介面，可供您用來將位置資訊�
 
 如果安裝了 SNMP 應用程式，而位置資訊服務在位置資料庫中找不到相符項目，則位置資訊服務會自動使用用戶端所提供的 MAC 位址來查詢該應用程式。然後，位置資訊服務會使用 SNMP 應用程式所傳回的連接埠和交換器資訊，再次查詢位置資料庫。
 
-如需詳細資訊，請參閱 [Set-CsWebServiceConfiguration](set-cswebserviceconfiguration.md)。
+如需詳細資訊，請參閱 [Set-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWebServiceConfiguration)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MAC 位址不適用於執行 Windows 8 的電腦。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> MAC 位址不適用於執行 Windows 8 的電腦。
+
 
 
 ## 若要設定 SNMP 應用程式 URL

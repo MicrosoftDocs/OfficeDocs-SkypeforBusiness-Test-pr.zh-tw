@@ -57,44 +57,22 @@ _**上次修改主題的時間：** 2012-08-07_
     
     2.  請注意，\[儲存語音路由測試案例資訊\] 對話方塊上的其餘欄位都是唯讀的，其內容會從非正式測試組態*和*結果預先填入。請確認這是您要儲存的測試案例組態。
         
-        <table>
-        <colgroup>
-        <col style="width: 100%" />
-        </colgroup>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>測試結果的值會用來預先填入 <strong>[儲存語音路由測試案例資訊]</strong> 對話方塊上的欄位，如下所述：
-        <ul>
-        <li><p><strong>[預期的轉譯]</strong> 會以 <strong>[正規化的號碼]</strong> 欄位中的值預先填入。</p></li>
-        <li><p><strong>[預期的路由]</strong> 會以 <strong>[第一個路由]</strong> 欄位中的值預先填入。</p></li>
-        <li><p><strong>[預期的 PSTN 使用方式記錄]</strong> 會以 <strong>[第一個 PSTN 使用方式]</strong> 欄位中的值預先填入。</p></li>
-        </ul>
-        如果在測試回合期間找不到任何與這些值相符的項目，則 <strong>[儲存語音路由測試案例資訊]</strong> 對話方塊上對應的欄位會是空白的。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!Note]  
+		> 測試結果的值會用來預先填入 <strong>[儲存語音路由測試案例資訊]</strong> 對話方塊上的欄位，如下所述：
+        > <ul>
+        > <li><p><strong>[預期的轉譯]</strong> 會以 <strong>[正規化的號碼]</strong> 欄位中的值預先填入。</p></li>
+        > <li><p><strong>[預期的路由]</strong> 會以 <strong>[第一個路由]</strong> 欄位中的值預先填入。</p></li>
+        > <li><p><strong>[預期的 PSTN 使用方式記錄]</strong> 會以 <strong>[第一個 PSTN 使用方式]</strong> 欄位中的值預先填入。</p></li>
+        > </ul>
+        > 如果在測試回合期間找不到任何與這些值相符的項目，則 <strong>[儲存語音路由測試案例資訊]</strong> 對話方塊上對應的欄位會是空白的。
     
     3.  按一下 \[確定\] 儲存測試案例，或按一下 \[取消\] 返回 \[檢視語音路由測試案例資訊\] 對話方塊，進一步擴展測試後再將它儲存。
 
 11. 依序按一下 **\[認可\]** 和 **\[全部認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只要您建立語音路由測試案例，就必須執行 [全部認可] 命令發佈測試案例。如需詳細資訊，請參閱操作文件中的＜<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只要您建立語音路由測試案例，就必須執行 [全部認可] 命令發佈測試案例。如需詳細資訊，請參閱操作文件中的＜<a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>＞。
+    
 
 
 ## 請參閱

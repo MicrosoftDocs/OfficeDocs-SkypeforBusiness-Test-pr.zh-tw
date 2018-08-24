@@ -19,11 +19,11 @@ _**上次修改主題的時間：** 2012-10-19_
 
 如需詳細資訊，請參閱 Lync Server 管理命令介面文件中關於下列 Cmdlet 的部分：
 
-  - [Get-CsNetworkConfiguration](get-csnetworkconfiguration.md)
+  - [Get-CsNetworkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkConfiguration)
 
-  - [Set-CsNetworkConfiguration](set-csnetworkconfiguration.md)
+  - [Set-CsNetworkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkConfiguration)
 
-  - [Remove-CsNetworkConfiguration](remove-csnetworkconfiguration.md)
+  - [Remove-CsNetworkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkConfiguration)
 
 ## 若要使用管理命令介面啟用通話許可控制
 
@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 5.  在 **\[編輯通用設定\]** 頁面上，選取 **\[啟用通話許可控制台\]** 核取方塊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您要在整個部署中停用通話許可控制，請清除此核取方塊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您要在整個部署中停用通話許可控制，請清除此核取方塊。
+    
 
 
 6.  按一下 \[認可\]。

@@ -47,48 +47,19 @@ Lync Server 2013 Director 可以是單一執行個體伺服器，也能安裝為
     
     2.  若要建立新的檔案共用，請按一下 \[定義新的檔案共用\] 、在 \[檔案伺服器 FQDN\] 中輸入檔案共用之位置的 FQDN、在 \[檔案共用\] 中輸入共用的名稱，然後按 \[下一步\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>於此步驟指定或建立的檔案共用必須已存在，或是在發行拓撲之前完成建立。<br />
-    系統實際上不會使用指派給 Director 的檔案共用，因此您可以指派組織中任何集區的檔案共用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 於此步驟指定或建立的檔案共用必須已存在，或是在發行拓撲之前完成建立。<br />
+    > 系統實際上不會使用指派給 Director 的檔案共用，因此您可以指派組織中任何集區的檔案共用。
 
 
 7.  在 \[指定 Web 服務 URL\] 對話方塊的 \[外部基底 URL\] 中，指定 Director 的 FQDN，然後按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>名稱必須可從網際網路 DNS 伺服器解析，且必須指向反向 Proxy 的公用 IP 位址。反向 Proxy 會接聽該 URL 的 HTTP/HTTPS 要求，並代為將 URL 傳送至 Director 上的外部 Web 服務虛擬目錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 名稱必須可從網際網路 DNS 伺服器解析，且必須指向反向 Proxy 的公用 IP 位址。反向 Proxy 會接聽該 URL 的 HTTP/HTTPS 要求，並代為將 URL 傳送至 Director 上的外部 Web 服務虛擬目錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!WARNING]
+    > 如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。
 
 
 8.  發行拓撲。
@@ -121,48 +92,19 @@ Lync Server 2013 Director 可以是單一執行個體伺服器，也能安裝為
     
       - 若要建立新的檔案共用，請按一下 \[定義新的檔案共用\] 、在 \[檔案伺服器 FQDN\] 中輸入檔案共用之位置的 FQDN、在 \[檔案共用\] 中輸入共用的名稱，然後按 \[下一步\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>於此步驟指定或建立的檔案共用必須已存在，或是在發行拓撲之前完成建立。<br />
-    系統實際上不會使用指派給 Director 的檔案共用，因此您可以指派組織中任何集區的檔案共用。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 於此步驟指定或建立的檔案共用必須已存在，或是在發行拓撲之前完成建立。<br />
+    > 系統實際上不會使用指派給 Director 的檔案共用，因此您可以指派組織中任何集區的檔案共用。
 
 
 8.  在 \[指定 Web 服務 URL\] 對話方塊的 \[外部基底 URL\] 中，指定 Director 的 FQDN，然後按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>名稱必須可以從網際網路 DNS 伺服器解析，並指向反向 Proxy 的公用 IP 位址，反向 Proxy 會接聽傳送至該 URL 的 HTTP/HTTPS 要求，並將它們 Proxy 至該 Director 集區上的外部 Web 服務虛擬目錄。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 名稱必須可以從網際網路 DNS 伺服器解析，並指向反向 Proxy 的公用 IP 位址，反向 Proxy 會接聽傳送至該 URL 的 HTTP/HTTPS 要求，並將它們 Proxy 至該 Director 集區上的外部 Web 服務虛擬目錄。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!WARNING]
+    > 如果您有一個以上的 前端集區或 前端伺服器，則外部 Web 服務 FQDN 必須是唯一的。例如，如果您將 前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，便無法針對其他的 前端集區或 前端伺服器使用 <strong>pool01.contoso.com</strong>。如果您同時部署了 Director，則針對任何 Director 或 Director 集區定義的外部 Web 服務 FQDN，在任何其他 Director 或 Director 集區以及任何 前端集區或 前端伺服器中必須是唯一的。如果決定以自我定義的 FQDN 覆寫內部 Web 服務，各個 FQDN 必須與其他任何 前端集區、 Director 或 Director 集區各不相同。
 
 
 9.  發行拓撲。

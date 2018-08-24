@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-09-08_
 
 您可以實作單一 Director 伺服器，也可以實作 Director 集區。 Director 一定是個別的伺服器或集區，不會與 Lync Server 2013 中的任何其他伺服器角色組合在一起。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果沒有部署 Director， 前端伺服器或 前端集區將會採用 Director 角色。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果沒有部署 Director， 前端伺服器或 前端集區將會採用 Director 角色。
+
 
 
 Director 集區必須負載平衡。您可以執行下列其中一項：

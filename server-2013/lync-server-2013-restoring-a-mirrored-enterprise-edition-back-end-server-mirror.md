@@ -53,16 +53,6 @@ _**上次修改主題的時間：** 2013-02-19_
     
       - 遵循精靈中的步驟，直到系統提示 \[建立鏡像資料庫\]。選取要安裝的資料庫，然後完成程序。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>除了執行拓撲產生器之外，也可以使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 來設定鏡像。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 除了執行拓撲產生器之外，也可以使用 <strong>Install-CsMirrorDatabase</strong> Cmdlet 來設定鏡像。如需詳細資訊，請參閱 Lync Server 管理命令介面文件。
 

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 使用下列程序來為整個組織或組織內的個別網站啟用 CDR。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如要啟用 CDR，您必須設定監控及監控資料庫。如需詳細資訊，請參閱＜<a href="lync-server-2013-deploying-monitoring.md">在 Lync Server 2013 中部署監控</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如要啟用 CDR，您必須設定監控及監控資料庫。如需詳細資訊，請參閱＜<a href="lync-server-2013-deploying-monitoring.md">在 Lync Server 2013 中部署監控</a>＞。
+
 
 
 ## 使用 Lync Server 控制台啟用 CDR
@@ -43,18 +34,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 4.  在 **\[詳細通話記錄\]** 頁面上，依序按一下表格中的適當網站、**\[動作\]** 和 **\[啟用 CDR\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>預設會啟用 CDR。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 預設會啟用 CDR。
+    
 
 
 ## 使用 Lync Server 管理命令介面 Cmdlet 啟用 CDR
@@ -79,7 +61,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsCdrConfiguration | Set-CsCdrConfiguration "site:Redmond" -EnableCDR $True
 
-如需詳細資訊，請參閱 [Set-CsCdrConfiguration](set-cscdrconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsCdrConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCdrConfiguration) Cmdlet 的說明主題。
 
 ## 請參閱
 

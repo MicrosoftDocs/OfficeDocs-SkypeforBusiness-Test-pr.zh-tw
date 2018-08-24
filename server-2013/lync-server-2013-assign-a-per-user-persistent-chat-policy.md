@@ -41,68 +41,29 @@ _**上次修改主題的時間：** 2013-02-22_
     
     4.  依據您選取的使用者內容，輸入您要用來篩選搜尋結果的條件，您可以自行輸入或按一下下拉式清單的箭頭。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要將更多搜尋子句加入至查詢，請按一下 [新增篩選]。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要將更多搜尋子句加入至查詢，請按一下 [新增篩選]。
     
     5.  按一下 \[尋找\]。
 
 6.  依序按一下搜尋結果中的某個使用者、\[動作\] 和 \[指派原則\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果想將同一個個別使用者常設聊天原則套用至多位使用者，請在搜尋結果中選取多位使用者，然後按一下 [執行]，再按一下 [指派原則]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果想將同一個個別使用者常設聊天原則套用至多位使用者，請在搜尋結果中選取多位使用者，然後按一下 [執行]，再按一下 [指派原則]。
 
 
 7.  在 \[指派原則\] 的 \[常設聊天原則\] 下，執行下列其中一項作業：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 [指派原則] 對話方塊可以設定多個原則，因此對話方塊中的每個原則預設都是選取 [&lt;維持不變&gt;]。不變更此設定，即可繼續沿用先前指派給使用者的原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 [指派原則] 對話方塊可以設定多個原則，因此對話方塊中的每個原則預設都是選取 [&lt;維持不變&gt;]。不變更此設定，即可繼續沿用先前指派給使用者的原則。
+    
     
       - 選取 \[\<自動\>\] 可讓 Lync Server 2013 自動選擇全域層級原則或網站層級原則 (如果有定義的話)。
     
       - 按一下您之前在 \[常設聊天原則\] 頁面所定義個別使用者封存原則的名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>為了協助您判斷應指派哪個原則，在按下原則名稱後，按一下 [檢視] 可以檢視該原則所定義的使用者權限。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 為了協助您判斷應指派哪個原則，在按下原則名稱後，按一下 [檢視] 可以檢視該原則所定義的使用者權限。
 
 
 8.  完成時，請按一下 \[確定\]。
@@ -119,7 +80,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者常設聊天原則指派到多位使用者
 
-  - 此命令可將個別使用者常設聊天原則 RedmondUsersPersistentChatPolicy 指派到 IT 部門的所有員工。如需詳細了解本命令所用的 LdapFilter 參數，請參閱＜[Get-CsUser](get-csuser.md)＞Cmdlet 的文件。
+  - 此命令可將個別使用者常設聊天原則 RedmondUsersPersistentChatPolicy 指派到 IT 部門的所有員工。如需詳細了解本命令所用的 LdapFilter 參數，請參閱＜[Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser)＞Cmdlet 的文件。
     
         Get-CsUser -LdapFilter "Department=IT" | Grant-CsPersistentChatPolicy -PolicyName "RedmondUsersPersistentChatPolicy"
 
@@ -129,7 +90,7 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsPersistentChatPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱＜[Grant-CsPersistentChatPolicy](grant-cspersistentchatpolicy.md)＞Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[Grant-CsPersistentChatPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsPersistentChatPolicy)＞Cmdlet 的說明主題。
 
 ## 請參閱
 

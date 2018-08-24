@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
   - 元件與使用者管理套件 (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) 可追蹤的 Lync Server 問題包含事件記錄中所記錄的問題、效能計數器登錄的問題，或詳細通話記錄 (CDR) 或品質經驗 (QoE) 資料庫所記錄的問題。對於重大問題，可設定 System Center Operations Manager 立即透過電子郵件、立即訊息或短訊息服務 (SMS) 訊息通知系統管理員。SMS 是行動裝置之間互傳文字訊息的技術。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需關於設定 Operations Manager 通知的詳細資訊，請參閱 TechNet Library 的「設定通知」(<a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x404</a>)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需關於設定 Operations Manager 通知的詳細資訊，請參閱 TechNet Library 的「設定通知」(<a href="http://go.microsoft.com/fwlink/?linkid=268785%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=268785&amp;clcid=0x404</a>)。
+    
 
 
   - Active Monitoring Management Pack (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) 會主動測試重要的 Lync Server 元件，例如登入系統、互傳立即訊息，或者與公用交換電話網路 (PSTN) 上的電話通話。這些測試是使用 Lync Server 綜合交易 Cmdlet 進行。例如，您可以使用 **Test-CsIM** Cmdlet 模擬兩個測試使用者之間的立即訊息 (IM) 交談。如果這個模擬的訊息交談失敗，將產生通知。
@@ -39,18 +30,9 @@ _**上次修改主題的時間：** 2012-10-22_
 
 Component and User Management Pack 僅用於監視 Lync Server 2013。如果是在同時安裝 Lync Server 2013 和 Lync Server 2010 的共存環境下，您應該對於 Lync Server 2010 電腦繼續使用 Lync Server 2010 管理組件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2010 的管理組件包含 Lync Server 2010 Monitoring Management Pack 及 Lync Server 2010 Group Chat Monitoring Management Pack。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2010 的管理組件包含 Lync Server 2010 Monitoring Management Pack 及 Lync Server 2010 Group Chat Monitoring Management Pack。
+
 
 
 您可以使用下列工具匯入管理組件：

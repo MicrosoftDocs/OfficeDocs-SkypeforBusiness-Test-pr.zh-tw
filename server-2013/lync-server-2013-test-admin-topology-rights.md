@@ -42,22 +42,13 @@ _**上次修改主題的時間：** 2015-08-17_
 
 ## Description
 
-By default, only domain administrators can enable a Lync Server topology and make large changes to the Lync Server infrastructure. This won't be a problem as long as your domain administrators and your Lync Server administrators are one and the same.In many organizations Lync Server administrators do not hold administrative rights to the whole domain. By default, that means that these administrators (defined as members of the RTCUniversalServerAdmins group) can't make Lync Server topology changes. To give members of the RTCUniversalServerAdmins group the right to make topology changes, you must assign the required Active Directory permissions by using the [Grant-CsSetupPermission](grant-cssetuppermission.md) cmdlet.
+By default, only domain administrators can enable a Lync Server topology and make large changes to the Lync Server infrastructure. This won't be a problem as long as your domain administrators and your Lync Server administrators are one and the same.In many organizations Lync Server administrators do not hold administrative rights to the whole domain. By default, that means that these administrators (defined as members of the RTCUniversalServerAdmins group) can't make Lync Server topology changes. To give members of the RTCUniversalServerAdmins group the right to make topology changes, you must assign the required Active Directory permissions by using the [Grant-CsSetupPermission](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsSetupPermission) cmdlet.
 
 The Test-CsSetupPermission cmdlet verifies that the required permissions that are needed to install Lync Server or one of its components are configured on the specified Active Directory container. If the permissions are not assigned, you can then run the Grant-CsSetupPermission cmdlet to give members of the RTCUniversalServerAdmins group the right to install and enable Lync Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>For a detailed list of permissions assigned by Grant-CsSetupPermission, see the blog post <a href="http://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission and Grant-CsOUPermission</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> For a detailed list of permissions assigned by Grant-CsSetupPermission, see the blog post <a href="http://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission and Grant-CsOUPermission</a>.
+
 
 
 ## Running the test
@@ -66,7 +57,7 @@ To determine whether setup permissions are assigned for an Active Directory cont
 
     Test-CsSetupPermission -ComputerOU "ou=CsServers,dc=litwareinc,dc=com"
 
-For more information, see the help topic for the [Test-CsSetupPermission](test-cssetuppermission.md) cmdlet.
+For more information, see the help topic for the [Test-CsSetupPermission](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsSetupPermission) cmdlet.
 
 ## Determining success or failure
 
@@ -92,5 +83,5 @@ Although there are rare exceptions, if Test-CsSetupPermission fails that typical
 
     Grant-CsSetupPermission -ComputerOU "cn=Computers,dc=litwareinc,dc=com"
 
-For more information, see the help topic for the [Test-CsSetupPermission](test-cssetuppermission.md) cmdlet.
+For more information, see the help topic for the [Test-CsSetupPermission](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsSetupPermission) cmdlet.
 

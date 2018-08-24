@@ -172,7 +172,7 @@ Here are some common reasons why **Test-CsDatabase** might fail:
 
 #### 其他資源
 
-[Get-CsDatabaseMirrorState](get-csdatabasemirrorstate.md)  
-[Get-CsService](get-csservice.md)  
-[Get-CsUserDatabaseState](get-csuserdatabasestate.md)
+[Get-CsDatabaseMirrorState](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsDatabaseMirrorState)  
+[Get-CsService](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService)  
+[Get-CsUserDatabaseState](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUserDatabaseState)
 

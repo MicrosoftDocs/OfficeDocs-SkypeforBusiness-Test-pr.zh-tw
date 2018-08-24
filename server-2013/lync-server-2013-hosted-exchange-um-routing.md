@@ -35,18 +35,9 @@ Alice 的信箱及 Exchange UM 服務位在裝載的 Exchange 服務提供者的
 
   - Alice 使用者帳戶之 msExchUCVoiceMailSettings 屬性中所設定的值，會告知 ExUM Routing 應用程式檢查裝載語音信箱原則中的路由詳細資料。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Exchange 服務提供者或 Lync Server 2013 系統管理員可以設定 msExchUCVoiceMailSettings 屬性的值。在上圖所顯示的範例中， Lync Server 2013 系統管理員已設定值 (CsHostedVoiceMail=1) 來啟用 Alice 的裝載語音信箱。如需此屬性的詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-exchange-user-management.md">Lync Server 2013 中的主控 Exchange 使用者管理</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Exchange 服務提供者或 Lync Server 2013 系統管理員可以設定 msExchUCVoiceMailSettings 屬性的值。在上圖所顯示的範例中， Lync Server 2013 系統管理員已設定值 (CsHostedVoiceMail=1) 來啟用 Alice 的裝載語音信箱。如需此屬性的詳細資訊，請參閱＜ <a href="lync-server-2013-hosted-exchange-user-management.md">Lync Server 2013 中的主控 Exchange 使用者管理</a>＞。
+    
 
 
   - 指派給 Alice 使用者帳戶的裝載語音信箱原則提供路由詳細資料：
@@ -55,31 +46,13 @@ Alice 的信箱及 Exchange UM 服務位在裝載的 Exchange 服務提供者的
     
       - 組織是透過租用戶 ID 所識別，而租用戶 ID 是路由 FQDN，適用於位在 ls.ExUm.*\<hostedExchangeServer\>*.com 之 Exchange Server 租用戶的 SIP 訊息 (在此範例中是 corp.contoso.com 及 corp.litwareinc.com)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Exchange Online 的 FQDN 為 exap.um.outlook.com。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Exchange Online 的 FQDN 為 exap.um.outlook.com。
+        
         
         如需詳細資訊，請參閱＜[Lync Server 2013 中的主控語音信箱原則](lync-server-2013-hosted-voice-mail-policies.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果使用者帳戶中同時存在 msExchUCVoiceMailSettings 屬性及 UM Proxy 位址設定，則會優先採用 msExchUCVoiceMailSettings 屬性。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果使用者帳戶中同時存在 msExchUCVoiceMailSettings 屬性及 UM Proxy 位址設定，則會優先採用 msExchUCVoiceMailSettings 屬性。
+
 

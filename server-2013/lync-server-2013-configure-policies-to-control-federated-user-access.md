@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 當您設定原則以支援與同盟協力廠商的通訊時，這些原則會套用至同盟網域的使用者。您可以設定一或多個外部使用者存取原則，以控制同盟網域的使用者是否能夠與您的 Lync Server 2013 使用者共同作業。若要控制同盟使用者存取，請在全域、網站與使用者層級設定相關原則。 套用到某原則層級的 Lync Server 原則設定，可能會覆寫套用到其他原則層級的設定。Lync Server 原則的優先順序是使用者原則 (影響力最大) 會覆寫網站原則，網站原則則會覆寫全域原則 (影響力最小)。亦即，愈接近原則所影響之物件的原則設定，對物件的影響力愈大。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即便您並未對所屬組織啟用同盟，仍舊可以設定原則來控制同盟使用者存取。不過，只有當您為組織啟用同盟時，所設定的原則才會生效。如需有關啟用同盟的詳細資訊，請參閱部署文件或作業文件中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>。此外，如果您指定使用者原則以控制同盟使用者存取，則該原則僅會套用至已啟用 Lync Server 2013 且設為使用該原則的使用者。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即便您並未對所屬組織啟用同盟，仍舊可以設定原則來控制同盟使用者存取。不過，只有當您為組織啟用同盟時，所設定的原則才會生效。如需有關啟用同盟的詳細資訊，請參閱部署文件或作業文件中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>。此外，如果您指定使用者原則以控制同盟使用者存取，則該原則僅會套用至已啟用 Lync Server 2013 且設為使用該原則的使用者。
+
 
 
 ## 若要設定原則以支援同盟網域使用者存取
@@ -77,18 +68,8 @@ _**上次修改主題的時間：** 2014-02-05_
     
         Set-CsExternalAccessPolicy -Identity global -EnableFederationAccess $true -EnableXmppAccess $true -EnableOutsideAccess $true -EnablePublicCloudAccess $true -EnablePublicCloudAudioVideoAccess $true
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>參數「EnablePublicCloudAudioVideoAccess」在 Lync Server 控制台 中沒有對應的選取項目</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 參數「EnablePublicCloudAudioVideoAccess」在 Lync Server 控制台 中沒有對應的選取項目
 
 
 ## 使用 Windows PowerShell 建立新原則以支援適用於同盟網域使用者的存取
@@ -136,9 +117,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 [在 Lync Server 2013 中管理組織的 SIP 同盟網域](lync-server-2013-manage-sip-federated-domains-for-your-organization.md)  
 [在 Lync Server 2013 中管理組織的 SIP 同盟提供者](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)  
-[Set-CsExternalAccessPolicy](set-csexternalaccesspolicy.md)  
-[New-CsExternalAccessPolicy](new-csexternalaccesspolicy.md)  
-[Get-CsExternalAccessPolicy](get-csexternalaccesspolicy.md)  
-[Remove-CsExternalAccessPolicy](remove-csexternalaccesspolicy.md)  
-[Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)
+[Set-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsExternalAccessPolicy)  
+[New-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsExternalAccessPolicy)  
+[Get-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsExternalAccessPolicy)  
+[Remove-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsExternalAccessPolicy)  
+[Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)
 

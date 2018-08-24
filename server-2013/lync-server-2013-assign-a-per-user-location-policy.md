@@ -49,68 +49,29 @@ _**上次修改主題的時間：** 2013-02-22_
     
     4.  依據您選取的使用者內容，輸入您要用來篩選搜尋結果的條件，您可以自行輸入或按一下下拉式清單的箭頭。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若要將更多搜尋子句加入至查詢，請按一下 <strong>[新增篩選]</strong>。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 若要將更多搜尋子句加入至查詢，請按一下 <strong>[新增篩選]</strong>。
     
     5.  按一下 **\[尋找\]**。
 
 6.  依序按一下搜尋結果中的某個使用者、**\[動作\]** 和 **\[指派原則\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果想將同一個個別使用者位置原則套用至多位使用者，請在搜尋結果中選取多位使用者，然後依序按一下<strong>[動作]</strong> 和 <strong>[指派原則]</strong>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果想將同一個個別使用者位置原則套用至多位使用者，請在搜尋結果中選取多位使用者，然後依序按一下<strong>[動作]</strong> 和 <strong>[指派原則]</strong>。
 
 
 7.  在 **\[指派原則\]** 的 **\[位置原則\]** 下方，執行下列其中一項動作：
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>由於 <strong>[指派原則]</strong> 對話方塊可以設定多個原則，因此對話方塊中的每個原則預設都是選取 <strong>[&lt;維持不變&gt;]</strong>。不變更此設定，即可繼續沿用先前指派給使用者的原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 由於 <strong>[指派原則]</strong> 對話方塊可以設定多個原則，因此對話方塊中的每個原則預設都是選取 <strong>[&lt;維持不變&gt;]</strong>。不變更此設定，即可繼續沿用先前指派給使用者的原則。
+    
     
       - 讓 Lync Server 2013 自動選擇全域層級原則或子網路層級原則 (如有定義此項的話)。
     
       - 按一下先前執行 **New-CsLocationPolicy** Cmdlet 所定義之個別使用者位置原則的名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>為了協助您判斷應指派哪個原則，在按下原則名稱後，按一下 <strong>[檢視]</strong> 可以檢視該原則所定義的使用者權限。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!TIP]  
+        > 為了協助您判斷應指派哪個原則，在按下原則名稱後，按一下 <strong>[檢視]</strong> 可以檢視該原則所定義的使用者權限。
 
 
 8.  完成時，請按一下 **\[確定\]**。
@@ -127,7 +88,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 將個別使用者位置原則指派給多位使用者
 
-  - 此命令會將個別使用者位置原則 AccountingDepartmentLocationPolicy 指派給所有在 Accounting 部門工作的使用者。如需此命令中所使用之 LdapFilter 參數的詳細資訊，請參閱適用於 [Get-CsUser](get-csuser.md) Cmdlet 的文件。
+  - 此命令會將個別使用者位置原則 AccountingDepartmentLocationPolicy 指派給所有在 Accounting 部門工作的使用者。如需此命令中所使用之 LdapFilter 參數的詳細資訊，請參閱適用於 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 的文件。
     
         Get-CsUser -LdapFilter "Department=Accounting" | Grant-CsLocationPolicy -PolicyName "AccountingDepartmentLocationPolicy"
 
@@ -137,5 +98,5 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsLocationPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱適用於 [Grant-CsLocationPolicy](grant-cslocationpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱適用於 [Grant-CsLocationPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsLocationPolicy) Cmdlet 的說明主題。
 

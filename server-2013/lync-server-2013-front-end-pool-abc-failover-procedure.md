@@ -33,7 +33,7 @@ _**上次修改主題的時間：** 2014-05-22_
     
         Invoke-CsManagementServerFailover -BackupSqlServerFqdn <Pool B BE FQDN> -BackupSqlInstanceName <Pool B BE instance name> [-BackupMirrorSqlServerFqdn <Pool B Mirror BE FQDN> -BackupMirrorSqlInstanceName <Pool B Mirror BE Instance name>] -Force -Verbose
     
-    執行此作業後，建議您對額外的恢復功能將 CMS 從集區 B 移至其他現有的配對集區。如需詳細資訊，請參閱＜ [Move-CsManagementServer](move-csmanagementserver.md)＞。
+    執行此作業後，建議您對額外的恢復功能將 CMS 從集區 B 移至其他現有的配對集區。如需詳細資訊，請參閱＜ [Move-CsManagementServer](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsManagementServer)＞。
 
 3.  如果集區 A 包含 CMS，請將 LIS 設定從集區 A 匯入集區 B 的 LIS 資料庫 (Lis.mdf)。只有在已定期備份 LIS 資料時，才會發生作用。若要匯入 LIS 設定，請執行下列 Cmdlet：
     
@@ -42,18 +42,9 @@ _**上次修改主題的時間：** 2014-05-22_
 
 4.  將備份的 Lync Server 回應群組服務工作流程從集區 A 匯入集區 B。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>目前， <strong>Import-CsRgsConfiguration</strong> Cmdlet 要求集區 A 上的佇列與工作流程名稱與集區 B 上的佇列與工作流程名稱不同。如果名稱沒有任何不同，則在執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet 時會發生錯誤，而且必須先在集區 B 中重新命名佇列與工作流程，才可繼續執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 目前， <strong>Import-CsRgsConfiguration</strong> Cmdlet 要求集區 A 上的佇列與工作流程名稱與集區 B 上的佇列與工作流程名稱不同。如果名稱沒有任何不同，則在執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet 時會發生錯誤，而且必須先在集區 B 中重新命名佇列與工作流程，才可繼續執行 <strong>Import-CsRgsConfiguration</strong> Cmdlet。
+    
     
     您有兩種選擇可將回應群組設定從集區 A 匯入集區 B。使用的方法取決於您是否想以集區 A 的應用程式層級設定覆寫集區 B 的應用程式層級設定。
     
@@ -65,18 +56,8 @@ _**上次修改主題的時間：** 2014-05-22_
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請謹記，如果您不想以主要集區 (集區 A) 的設定覆寫備份集區 (集區 B) 的應用程式層級設定，當集區 A 遺失時，集區 A 的應用程式層級設定也會跟著遺失，因為「回應群組」應用程式只能對每一個集區儲存一組應用程式層級設定。若已部署集區 C 以取代集區 A，則必須重新設定應用程式層級設定，包含預設的等候音樂音訊檔。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 請謹記，如果您不想以主要集區 (集區 A) 的設定覆寫備份集區 (集區 B) 的應用程式層級設定，當集區 A 遺失時，集區 A 的應用程式層級設定也會跟著遺失，因為「回應群組」應用程式只能對每一個集區儲存一組應用程式層級設定。若已部署集區 C 以取代集區 A，則必須重新設定應用程式層級設定，包含預設的等候音樂音訊檔。
 
 
 5.  執行以下 Cmedlet 顯示匯入的回應群組，以確認成功匯入「回應群組」設定。請注意，匯入的回應群組仍屬於集區 A。
@@ -95,18 +76,9 @@ _**上次修改主題的時間：** 2014-05-22_
         
             Set-CsUnassignedNumber -Identity "<Range Name>" -AnnouncementService "<Pool B FQDN>" -AnnouncementName "<New Announcement in pool B>"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對於使用 &quot;Exchange UM&quot; 做為所選取之宣告服務的未指派號碼範圍不需要此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 對於使用 &quot;Exchange UM&quot; 做為所選取之宣告服務的未指派號碼範圍不需要此步驟。
+    
 
 
 7.  執行下列 Cmdlet，在災害復原 (DR) 模式中將集區 A 容錯移轉至集區 B：
@@ -180,18 +152,8 @@ _**上次修改主題的時間：** 2014-05-22_
         
             Import-CsRgsConfiguration -Destination "service:ApplicationServer:<Pool B FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請謹記，如果您不想以備份集區 (集區 B) 的設定覆寫集區 C 的應用程式層級設定，則集區 B 的應用程式層級設定將會遺失，因為回應群組對每一個集區只能儲存一組應用程式層級設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 請謹記，如果您不想以備份集區 (集區 B) 的設定覆寫集區 C 的應用程式層級設定，則集區 B 的應用程式層級設定將會遺失，因為回應群組對每一個集區只能儲存一組應用程式層級設定。
 
 
 18. 執行下列 Cmdlet 以顯示回應群組已匯入集區 C，確認回應群組設定已匯入成功。
@@ -216,18 +178,9 @@ _**上次修改主題的時間：** 2014-05-22_
     
       - (選用) 如果集區 B 中不再使用這些宣告，請從集區 B 移除在集區 C 中重新建立的宣告。若要移除宣告，請使用 **Remove-CsAnnouncement** Cmdlet。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>對於使用 &quot;Exchange UM&quot; 做為宣告服務的未指派號碼範圍不需要此步驟。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 對於使用 &quot;Exchange UM&quot; 做為宣告服務的未指派號碼範圍不需要此步驟。
+        
 
 
 21. 執行下列 Cmdlet，在集區 B 中清除集區 A 的使用者資料：
@@ -299,18 +252,9 @@ _**上次修改主題的時間：** 2014-05-22_
             Update-CsUserData -FileName c:\logs\exportedUserDAta.xml -UserFilter $user - 
             }
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>位於與集區 A 相關聯之 SBA 的使用者會發生服務中斷，直到這些使用者移至集區 C 為止。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 位於與集區 A 相關聯之 SBA 的使用者會發生服務中斷，直到這些使用者移至集區 C 為止。
+        
 
 
 28. 在拓撲產生器中，對先前與集區 A 相關聯的每一個 SBA X，執行下列動作：

@@ -62,19 +62,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <td><p>webdirext.contoso.com</p></td>
 <td><p>為對外發佈的資源指派聆聽程式</p></td>
 <td><p>您部署中 Director 或 Director 集區的外部 Web 服務。您可以盡可能地定義許多 Director，因為其他 SIP 可能會和不同的 Director 關聯。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>為 Director 定義 DNS 記錄並發行 Director，並不屬於前端集區或 Director 決策。若您是使用 Director，就必須定義及發行 Director 及 前端集區外部 Web 服務。若已在拓撲中定義了 Director，請先指定要傳送至 Director 的流量類型 (用於驗證和其他使用者)。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]  
+> 為 Director 定義 DNS 記錄並發行 Director，並不屬於前端集區或 Director 決策。若您是使用 Director，就必須定義及發行 Director 及 前端集區外部 Web 服務。若已在拓撲中定義了 Director，請先指定要傳送至 Director 的流量類型 (用於驗證和其他使用者)。
+
 
 </div></td>
 </tr>

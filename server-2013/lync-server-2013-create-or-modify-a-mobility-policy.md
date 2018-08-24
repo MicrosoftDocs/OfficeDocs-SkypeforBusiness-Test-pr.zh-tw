@@ -79,7 +79,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         New-CsMobilityPolicy "site:Redmond" -EnableMobility $False -EnableOutsideVoice $False
 
-如需詳細資訊，請參閱[New-CsMobilityPolicy](new-csmobilitypolicy.md)與[Set-CsMobilityPolicy](set-csmobilitypolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱[New-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsMobilityPolicy)與[Set-CsMobilityPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsMobilityPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

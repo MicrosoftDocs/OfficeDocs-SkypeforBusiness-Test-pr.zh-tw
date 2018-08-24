@@ -17,30 +17,18 @@ _**上次修改主題的時間：** 2015-03-09_
 
 同盟、公用立即訊息連線和 Extensible Messaging and Presence Protocol (XMPP) 定義不同類別的外部使用者 – 同盟使用者。同盟 Lync Server 部署或 XMPP 部署的使用者可存取一組有限的服務，並由外部部署進行驗證。遠端使用者是 Lync Server 部署的成員，可以存取您的部署提供的所有服務。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的確切結束日期。如需詳細資訊，請參閱＜ <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的確切結束日期。如需詳細資訊，請參閱＜ <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>＞。
+
 
 
 公用立即訊息連線是一種特別類型的同盟，可讓 Lync Server 用戶端使用 Lync 2013 存取設定的公用立即訊息合作夥伴。目前的公用立即訊息連線合作夥伴包含：
 
-  -   
-    America Online
+   America Online
 
-  -   
-    Windows Live
+   Windows Live
 
-  -   
-    Yahoo\!
+   Yahoo\!
 
 公用立即訊息連線組態可讓 Lync 使用者透過下列方式存取公用立即訊息連線使用者：
 
@@ -64,18 +52,9 @@ XMPP 同盟定義以 eXtensible Messaging and Presence Protocol 為基礎的外�
 
   - 在 Lync 用戶端中建立 XMPP 同盟連絡人
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。
+
 
 
 ## Edge Server 外部同盟、公用立即訊息連線和 XMPP 使用者部署程序
@@ -101,19 +80,11 @@ XMPP 同盟定義以 eXtensible Messaging and Presence Protocol 為基礎的外�
 <td><p>決定要新增至現有 Edge 部署的選項</p></td>
 <td><p>執行 拓撲產生器以編輯 Edge Server 設定、建立並發行拓撲。您現有的邊緣拓撲會將變更從 中央管理存放區複寫到 Edge Server。</p></td>
 <td><p>Domain Admins 群組和 RTCUniversalServerAdmins 群組</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用本機使用者群組的成員帳戶來編輯拓撲，但發行拓撲需要以 Domain Admins 群組和 RTCUniversalServerAdmins 群組的成員帳戶進行</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 您可以使用本機使用者群組的成員帳戶來編輯拓撲，但發行拓撲需要以 Domain Admins 群組和 RTCUniversalServerAdmins 群組的成員帳戶進行
+
 
 </div></td>
 <td><p><a href="lync-server-2013-building-an-edge-and-director-topology.md">在 Lync Server 2013 中建置 Edge 和 Director 拓撲</a></p></td>

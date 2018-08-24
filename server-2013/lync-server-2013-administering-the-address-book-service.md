@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 部署 Lync Server、Enterprise Edition 或 Standard Edition 伺服器 時，預設會安裝通訊錄服務。通訊錄服務使用的資料庫 (RTCab) 是建立在 SQL Server 上 (就 Enterprise Edition 而言，這是後端 SQL Server；就 Standard Edition 伺服器 而言，這是組合的 SQL Server)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需使用 [ADSI 編輯器]編輯 Active Directory 網域服務 物件屬性的相關資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=330427">ADSI 編輯器</a>。如需通訊錄服務專用之 Resource Kit 工具的相關資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 Resource Kit 工具</a> (英文)。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需使用 [ADSI 編輯器]編輯 Active Directory 網域服務 物件屬性的相關資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=330427">ADSI 編輯器</a>。如需通訊錄服務專用之 Resource Kit 工具的相關資訊，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 Resource Kit 工具</a> (英文)。
+
 
 
 ## Address Book Server 電話號碼正規化
@@ -250,18 +241,9 @@ Address Book Server 啟動時會在 AbAttribute 資料表中填入如下表中�
 
 在舊版 Lync Server 中，將變更套用於 Active Directory 時，系統管理員需要執行 **Update -CSUserDatabase** 和 **Update –CSAddressBook**Windows PowerShell Cmdlet，才能立即變更 Lync Server 資料庫和 RTCab 資料庫。在 Lync Server 2013 中，Lync Server 使用者複寫器將從 Active Directory 擷取變更，並按照設定的間隔更新 Lync Server 使用者資料庫。Lync Server 使用者複寫器也會將變更迅速傳播到 RTCab 資料庫，系統管理員完全不需要執行 Update-CSAddressBook。如果啟用 Address Book Web 查詢，則 Lync 用戶端會在搜尋結果中反映這些變更。如果啟用 Address Book 檔案下載，系統管理員只需要執行 Update -CSAddressBook。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 使用者複寫器會每隔 5 分鐘執行一次。您可以使用 Set -CSUserReplicatorConfiguration -ReplicationCycleInterval &lt;&gt; 設定這個間隔。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 使用者複寫器會每隔 5 分鐘執行一次。您可以使用 Set -CSUserReplicatorConfiguration -ReplicationCycleInterval &lt;&gt; 設定這個間隔。
+
 
 
 ## 篩選通訊錄
@@ -270,18 +252,8 @@ Address Book Server 啟動時會在 AbAttribute 資料表中填入如下表中�
 
 您可以使用一些旗標位元來定義要在 Address Book Server 屬性上使用的篩選器。例如，某些旗標位元的存在可將屬性識別為包含屬性或排除屬性。\[使用者複寫器\] 會濾除含有排除屬性的連絡人，並濾除不含包含屬性的連絡人。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需篩選通訊錄的詳細資訊，請參閱<a href="lync-server-2013-address-book-server-cmdlets.md">Address Book Server Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">篩選 Lync 2013 通訊錄</a> (英文)</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 如需篩選通訊錄的詳細資訊，請參閱<a href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">Address Book Server Cmdlet</a> 和<a href="http://go.microsoft.com/fwlink/?linkid=330430">篩選 Lync 2013 通訊錄</a> (英文)
 
 
 目前，有三種不同的篩選器。下表列出這些篩選器。
@@ -315,18 +287,9 @@ Address Book Server 啟動時會在 AbAttribute 資料表中填入如下表中�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果同時設定 0x4000 (排除屬性) 和 0x8000 (包含屬性) 旗標位元，則 0x4000 位元會覆寫 0x8000 位元，並排除該連絡人。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果同時設定 0x4000 (排除屬性) 和 0x8000 (包含屬性) 旗標位元，則 0x4000 位元會覆寫 0x8000 位元，並排除該連絡人。
+
 
 
 雖然您可以篩選通訊錄來僅包含某些使用者，但限制項目並不會限制其他使用者連絡被濾除的使用者，或查看其顯示狀態的能力。使用者一律可以輸入使用者的完整登入名稱，以尋找不在通訊錄中的使用者，或是對其手動傳送即時訊息或手動進行呼叫。另外，在 Outlook 中也可以找到使用者的連絡資訊。
@@ -335,30 +298,12 @@ Address Book Server 啟動時會在 AbAttribute 資料表中填入如下表中�
 
 修改 AbAttribute 資料表之後，您可以執行 Cmdlet **Update-CsUserDatabase** 命令，以重新整理 AbUserEntry 資料表中的資料。在 UR 複寫完成之後，您可以手動執行 Cmdlet **UpdateCsAddressBook** 命令，以更新 Address Book Server 檔案存放區中的檔案。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Address Book Server 所在的前端伺服器無法利用系統管理權限來設定。在部署期間就已選擇一個前端 – 通常是第一個部署的前端伺服器。如果失敗，則會將通訊錄服務移至另一個前端伺服器，而不需要系統管理人員介入。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Address Book Server 所在的前端伺服器無法利用系統管理權限來設定。在部署期間就已選擇一個前端 – 通常是第一個部署的前端伺服器。如果失敗，則會將通訊錄服務移至另一個前端伺服器，而不需要系統管理人員介入。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在多樹系部署或父系/子系部署中合併或修改基礎結構 (例如，在移至 Lync Server 之前合併基礎結構)，可能會發現某些使用者執行通訊錄服務下載和 Address Book Web Query 時會失敗。在具有多個網域或樹系的部署中，出現此問題的使用者物件上已填入屬性 <strong>MsRTCSIP-OriginatorSid</strong>。您必須將這些物件的 <strong>MsRTCSIP-OriginatorSid</strong> 屬性設為 NULL，才能解決此問題。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 如果您已在多樹系部署或父系/子系部署中合併或修改基礎結構 (例如，在移至 Lync Server 之前合併基礎結構)，可能會發現某些使用者執行通訊錄服務下載和 Address Book Web Query 時會失敗。在具有多個網域或樹系的部署中，出現此問題的使用者物件上已填入屬性 <strong>MsRTCSIP-OriginatorSid</strong>。您必須將這些物件的 <strong>MsRTCSIP-OriginatorSid</strong> 屬性設為 NULL，才能解決此問題。
+
 

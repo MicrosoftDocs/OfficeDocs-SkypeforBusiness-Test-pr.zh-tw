@@ -17,50 +17,23 @@ _**上次修改主題的時間：** 2014-02-07_
 
 使用下列任一個程序建立或修改代理程式群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>系統管理員 (例如 CsVoiceAdministrator) 必須先啟用使用者的企業語音與 Lync Server，才能將使用者指派至代理群組。如果您是其中一位受管理工作流程的委派「回應群組管理員」，即可建立代理群組，並在您所管理的工作流程中使用代理群組。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 系統管理員 (例如 CsVoiceAdministrator) 必須先啟用使用者的企業語音與 Lync Server，才能將使用者指派至代理群組。如果您是其中一位受管理工作流程的委派「回應群組管理員」，即可建立代理群組，並在您所管理的工作流程中使用代理群組。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您將使用者指派為回應群組代理程式時，如果他們已啟用隱私權模式，請通知他們需要搜尋 &quot;RGS Presence Watcher&quot; 連絡人並將他們新增到其連絡人清單。已啟用隱私權模式但其連絡人清單中沒有 &quot;RGS Presence Watcher&quot; 的代理程式，無法接聽打給回應群組的電話。未啟用隱私權模式的代理程式則不受影響。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 當您將使用者指派為回應群組代理程式時，如果他們已啟用隱私權模式，請通知他們需要搜尋 &quot;RGS Presence Watcher&quot; 連絡人並將他們新增到其連絡人清單。已啟用隱私權模式但其連絡人清單中沒有 &quot;RGS Presence Watcher&quot; 的代理程式，無法接聽打給回應群組的電話。未啟用隱私權模式的代理程式則不受影響。
+
 
 
 ## 使用 Lync Server 控制台 建立或修改代理人群組
 
 1.  以 RTCUniversalServerAdmins 群組成員或支援回應群組的某個預先定義之管理角色成員的身分登入。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您是其中一位受管理工作流程的委派「回應群組經理」，即可建立群組，並在管理的工作流程中使用這些群組。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您是其中一位受管理工作流程的委派「回應群組經理」，即可建立群組，並在管理的工作流程中使用這些群組。
+    
 
 
 2.  開啟瀏覽器視窗，然後輸入管理 URL 以開啟 Lync Server 控制台。如需可用於啟動 Lync Server 控制台的不同方法的詳細資料，請參閱[開啟 Lync Server 系統管理工具](lync-server-2013-open-lync-server-administrative-tools.md)。
@@ -85,18 +58,9 @@ _**上次修改主題的時間：** 2014-02-07_
 
 8.  在 \[警示時間 (秒)\] 中，指定代理程式的電話響幾秒 (預設值為 20 秒) 後會轉給下一個線上代理程式。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>代理程式警示時間設定不得超過 180 秒。如果代理程式警示時間超過 180 秒，用戶端應用程式會拒絕通話，因為 SIP 交易計時器達到等候時間的上線。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 代理程式警示時間設定不得超過 180 秒。如果代理程式警示時間超過 180 秒，用戶端應用程式會拒絕通話，因為 SIP 交易計時器達到等候時間的上線。
+    
 
 
 9.  在 \[路由方法\] 中，選取將電話路由轉送給群組代理程式的方式，如下所示：
@@ -133,18 +97,9 @@ _**上次修改主題的時間：** 2014-02-07_
         
           - 通訊群組清單中的使用者若已啟用 Lync Server 2010 但未啟用企業語音，則使用者會以功能運作正常之代理人的身分新增至代理人群組中。請確認通訊群組清單中所有成員的使用者帳戶皆已啟用企業語音。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您使用電子郵件通訊群組清單，則 回應群組 系統管理員或使用者可能會看得見隱藏的成員資格或隱藏的清單。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > 如果您使用電子郵件通訊群組清單，則 回應群組 系統管理員或使用者可能會看得見隱藏的成員資格或隱藏的清單。
+        
         
         在下列情況下，隱藏的成員資格或隱藏的清單會顯現出來：
         
@@ -168,18 +123,9 @@ _**上次修改主題的時間：** 2014-02-07_
     
         New-CsRgsAgentGroup -Name "Help Desk" -Parent "service:ApplicationServer:atl-cs-001.contoso.com"  -Description "Contoso Help Desk" -AgentAlertTime 20 -ParticipationPolicy Formal -RoutingMethod RoundRobin -AgentsByUri("sip:mindy@contoso.com","sip:bob@contoso.com")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>代理程式警示時間設定不得超過 180 秒。如果代理程式警示時間超過 180 秒，用戶端應用程式會拒絕通話，因為 SIP 交易計時器達到等候時間的上線。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 代理程式警示時間設定不得超過 180 秒。如果代理程式警示時間超過 180 秒，用戶端應用程式會拒絕通話，因為 SIP 交易計時器達到等候時間的上線。
+    
 
 
 4.  確認是否已建立代理程式群組。執行：
@@ -195,8 +141,8 @@ _**上次修改主題的時間：** 2014-02-07_
 #### 其他資源
 
 [管理回應群組代理程式群組](lync-server-2013-managing-response-group-agent-groups.md)  
-[Get-CsService](get-csservice.md)  
-[New-CsRgsAgentGroup](new-csrgsagentgroup.md)  
-[Set-CsRgsAgentGroup](set-csrgsagentgroup.md)  
-[Get-CsRgsAgentGroup](get-csrgsagentgroup.md)
+[Get-CsService](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsService)  
+[New-CsRgsAgentGroup](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsAgentGroup)  
+[Set-CsRgsAgentGroup](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRgsAgentGroup)  
+[Get-CsRgsAgentGroup](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsRgsAgentGroup)
 

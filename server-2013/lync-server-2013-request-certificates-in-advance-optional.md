@@ -21,16 +21,7 @@ Lync Server 2013 安裝程式中包含憑證精靈，可在部署期間簡化要
 
 本部署文件提供在安裝程序中使用憑證精靈來要求憑證的程序，如本部署文件之 [在 Lync Server 2013 中設定伺服器憑證](lync-server-2013-configure-certificates-for-servers.md)、 [在 Lync Server 2013 中設定 Director 的憑證](lync-server-2013-configure-certificates-for-the-director.md)及 [在 Lync Server 2013 中安裝中繼伺服器的檔案](lync-server-2013-install-the-files-for-mediation-server.md)等小節所述。如果您預先要求憑證，必須適度修改上述各小節所記載的憑證部署程序才能匯入及指派憑證，而非在部署時要求憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync Server 2013 含有 SHA-256 憑證的支援，可供從執行 Windows Vista、 Windows Server 2008、 Windows Server 2008 R2 及 Windows 7 等作業系統和 Lync Phone Edition 的用戶端進行連線。為了支援使用 SHA-256 的外部存取，外部憑證由公用 CA 使用 SHA-256 發行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync Server 2013 含有 SHA-256 憑證的支援，可供從執行 Windows Vista、 Windows Server 2008、 Windows Server 2008 R2 及 Windows 7 等作業系統和 Lync Phone Edition 的用戶端進行連線。為了支援使用 SHA-256 的外部存取，外部憑證由公用 CA 使用 SHA-256 發行。
+
 

@@ -23,18 +23,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 請使用下列程序建立網頁發行規則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些程序假設您已安裝 Forefront Threat Management Gateway (TMG) 2010 標準版，或是已安裝和設定具有 Application request Routing (IIS ARR) 延伸模組功能的 Internet Information Server。您可以使用 TMG 或 IIS ARR。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這些程序假設您已安裝 Forefront Threat Management Gateway (TMG) 2010 標準版，或是已安裝和設定具有 Application request Routing (IIS ARR) 延伸模組功能的 Internet Information Server。您可以使用 TMG 或 IIS ARR。
+
 
 
 ## 若要在執行 TMG 2010 的電腦上建立 Web 伺服器發行規則
@@ -53,34 +44,16 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 7.  在 **\[內部發行詳細資料\]** 頁面的 **\[內部網站名稱\]** 方塊中，輸入裝載會議內容和通訊錄內容之內部 Web 伺服陣列的完整網域名稱 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的內部伺服器是 Standard Edition Server，則此 FQDN 是 Standard Edition Server 的 FQDN。如果您的內部伺服器為前端集區，此 FQDN 即是使內部 Web 伺服器陣列負載平衡的硬體負載平衡器虛擬 IP (VIP)。TMG 伺服器必須可以將 FQDN 解析成內部 Web 伺服器的 IP 位址。如果 TMG 伺服器無法將 FQDN 解析為適當的 IP 位址，您可以選取 [使用要連線到發行伺服器的電腦名稱或 IP 位址] ，然後在 [電腦名稱] 或 [IP 位址] 方塊中輸入內部 Web 伺服器的 IP 位址。如果要這樣做，您必須確定 TMG 伺服器已經開啟連接埠 53，而且可以連結周邊網路中的 DNS 伺服器。您也可以使用本機主機檔案中的項目來提供名稱解析。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您的內部伺服器是 Standard Edition Server，則此 FQDN 是 Standard Edition Server 的 FQDN。如果您的內部伺服器為前端集區，此 FQDN 即是使內部 Web 伺服器陣列負載平衡的硬體負載平衡器虛擬 IP (VIP)。TMG 伺服器必須可以將 FQDN 解析成內部 Web 伺服器的 IP 位址。如果 TMG 伺服器無法將 FQDN 解析為適當的 IP 位址，您可以選取 [使用要連線到發行伺服器的電腦名稱或 IP 位址] ，然後在 [電腦名稱] 或 [IP 位址] 方塊中輸入內部 Web 伺服器的 IP 位址。如果要這樣做，您必須確定 TMG 伺服器已經開啟連接埠 53，而且可以連結周邊網路中的 DNS 伺服器。您也可以使用本機主機檔案中的項目來提供名稱解析。
+    
 
 
 8.  在 **\[內部發行詳細資料\]** 頁面的 **\[路徑 (選用)\]** 方塊中，輸入 **/\*** 表示要發行的資料夾路徑。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在網站發行精靈中，您只能指定一個路徑。修改規則內容可以新增其他路徑。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在網站發行精靈中，您只能指定一個路徑。修改規則內容可以新增其他路徑。
+    
 
 
 9.  在 **\[公用名稱詳細資料\]** 頁面上，確認已為 **\[為右列接受要求\]** 選取 **\[這個網域名稱\]** ，並在 **\[公用名稱\]** 方塊中輸入外部 Web 服務 FQDN。
@@ -117,18 +90,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 1.  將用於反向 Proxy 的憑證繫結到 HTTPS 通訊協定。按一下 **\[開始\]** ，選取 **\[所有程式\]** ，再選取 **\[系統管理工具\]** ，然後按一下 **\[Internet Information Services (IIS) 管理員\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>其他有關部署和設定 IIS ARR 的說明、螢幕擷取畫面和指引，可以在 NextHop 文章 <a href="http://go.microsoft.com/fwlink/?linkid=293391">使用 IIS ARR 做為 Lync Server 2013 的反向 Proxy</a> (英文) 中找到。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 其他有關部署和設定 IIS ARR 的說明、螢幕擷取畫面和指引，可以在 NextHop 文章 <a href="http://go.microsoft.com/fwlink/?linkid=293391">使用 IIS ARR 做為 Lync Server 2013 的反向 Proxy</a> (英文) 中找到。
+    
 
 
 2.  如果您尚未匯入要用於反向 Proxy 的憑證，請進行匯入。在 **\[Internet Information Services (IIS) 管理員\]** 中，按一下主控台左側的反向 Proxy 伺服器名稱。在主控台中央的 **\[IIS\]** 下方，找出 **\[伺服器憑證\]** ，在 **\[伺服器憑證\]** 上按一下滑鼠右鍵並選取 **\[開啟功能\]** 。
@@ -137,51 +101,23 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 4.  指派憑證供 HTTPS 使用。在主控台左側，選取 IIS 伺服器的 **\[預設的網站\]** 。在右側，按一下 **\[繫結…\]** 。在 **\[站台繫結\]** 對話方塊中，按一下 **\[新增…\]** 。在 **\[新增站台繫結\]** 對話方塊中的 **\[類型:\]** 下，選取 **\[https\]** 。選取 https 可以讓您選取要用於 https 的憑證。在 **\[SSL 憑證:\]** 下，選取您匯入供反向 Proxy 使用的憑證。按一下 **\[確定\]** 。接著，按一下 **\[關閉\]** 。憑證現在已繫結到安全通訊端層 (SSL) 和傳輸層安全性 (TLS) 的反向 Proxy。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在關閉 [繫結] 對話方塊時看到中繼憑證遺失的訊息，您需要找出並匯入公用 CA 根憑證授權及任何中繼 CA 憑證。請參考您要求憑證之來源公用 CA 的相關指示，依照指示要求與匯入憑證鏈結。如果您是從 Edge Server 匯出憑證，則可以匯出根 CA 憑證及任何與 Edge Server 關聯的中繼 CA 憑證。請將根 CA 憑證匯入電腦的 (請留意勿與使用者存放區混淆) 受信任的根憑證授權單位存放區，並將中繼憑證匯入電腦的中繼憑證授權單位存放區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您在關閉 [繫結] 對話方塊時看到中繼憑證遺失的訊息，您需要找出並匯入公用 CA 根憑證授權及任何中繼 CA 憑證。請參考您要求憑證之來源公用 CA 的相關指示，依照指示要求與匯入憑證鏈結。如果您是從 Edge Server 匯出憑證，則可以匯出根 CA 憑證及任何與 Edge Server 關聯的中繼 CA 憑證。請將根 CA 憑證匯入電腦的 (請留意勿與使用者存放區混淆) 受信任的根憑證授權單位存放區，並將中繼憑證匯入電腦的中繼憑證授權單位存放區。
+    
 
 
 5.  在主控台左側 IIS 伺服器名稱下方，在 **\[伺服器陣列\]** 上按一下滑鼠右鍵，然後按一下 **\[建立伺服器陣列…\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您沒有看到 <strong>[伺服器陣列]</strong> 節點，代表需要安裝 Application Request Routing。如需詳細資訊，請參閱 <a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您沒有看到 <strong>[伺服器陣列]</strong> 節點，代表需要安裝 Application Request Routing。如需詳細資訊，請參閱 <a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>。
+    
     
     在 **\[建立伺服器陣列\]** 對話方塊的 **\[伺服器陣列名稱\]** 中，為第一個 URL 輸入名稱 (可以是便於識別的易記名稱)。按 **\[下一步\]** 。
 
 6.  在 **\[新增伺服器\]** 對話方塊的 **\[伺服器位址\]** 中，輸入 前端伺服器 上外部 Web 服務的完整網域名稱 (FQDN)。於此處做為範例之用的名稱與反向 Proxy 規劃一節 [Lync Server 2013 中的憑證摘要 - 反向 Proxy](lync-server-2013-certificate-summary-reverse-proxy.md) 中所用的名稱相同。為與反向 Proxy 規劃內容相互呼應，我們輸入 FQDN `webext.contoso.com`。確認 **\[線上\]** 旁的核取方塊已選取。按一下 **\[新增\]** 將伺服器新增到此組態之網頁伺服器集區。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 會使用硬體負載平衡器共用 Director 和 前端伺服器 處理 HTTP 和 HTTPS 流量。新增一部伺服器到 IIS ARR 伺服器陣列時，只需要提供單一 FQDN。該 FQDN 會是非共用伺服器組態中的 前端伺服器 或 Director，或是經設定用於伺服器集區之硬體負載平衡器的 FQDN。讓 HTTP 和 HTTPS 流量達到負載平衡的唯一支援方法是使用硬體負載平衡器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > Lync Server 會使用硬體負載平衡器共用 Director 和 前端伺服器 處理 HTTP 和 HTTPS 流量。新增一部伺服器到 IIS ARR 伺服器陣列時，只需要提供單一 FQDN。該 FQDN 會是非共用伺服器組態中的 前端伺服器 或 Director，或是經設定用於伺服器集區之硬體負載平衡器的 FQDN。讓 HTTP 和 HTTPS 流量達到負載平衡的唯一支援方法是使用硬體負載平衡器。
 
 
 7.  在 **\[新增伺服器\]** 對話方塊中，按一下 **\[進階設定…\]** 。如此會開啟對話方塊，讓您可以為設定之 FQDN 的要求定義應用程式要求路由。此作業的目的在重新定義當要求由 IIS ARR 處理時所使用的連接埠。
@@ -194,34 +130,15 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 10. 按一下伺服器陣列的名稱。在 IIS 管理員 \[功能檢視\] 中的 \[伺服器陣列\] 下方，按兩下 \[Proxy\]。在 \[Proxy 設定\] 頁面上，將 \[逾時 (秒)\] 值變更為適合您部署的值。按一下 \[套用\] 儲存變更。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每次部署的 Proxy 逾時值數字會有所不同。您應該監視您的部署及修改值，讓用戶端有最佳的體驗。您可以設定低至 200 的值。如果您在環境中支援 Lync 行動用戶端，則應將值設為 960，以允許從逾時值為 900 的 Office 365 中推入通知逾時。當值太低時，您很可能需要增加逾時值以避免用戶端中斷連線，而如果透過 Proxy 進行的連線於用戶端中斷連線後很久仍未斷線與清除，您可能需要降低數字。唯一能夠精確判斷此值是否正確設定的方式，是監控您的環境並為環境中的常態訂定基準。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 每次部署的 Proxy 逾時值數字會有所不同。您應該監視您的部署及修改值，讓用戶端有最佳的體驗。您可以設定低至 200 的值。如果您在環境中支援 Lync 行動用戶端，則應將值設為 960，以允許從逾時值為 900 的 Office 365 中推入通知逾時。當值太低時，您很可能需要增加逾時值以避免用戶端中斷連線，而如果透過 Proxy 進行的連線於用戶端中斷連線後很久仍未斷線與清除，您可能需要降低數字。唯一能夠精確判斷此值是否正確設定的方式，是監控您的環境並為環境中的常態訂定基準。
+    
 
 
 11. 按一下伺服器陣列名稱。在 IIS 管理員 \[功能檢視\] 中的 **\[伺服器陣列\]** 下方，按兩下 **\[路由規則\]** 。在 \[路由規則\] 對話方塊的 \[路由\] 下方，清除 \[啟用 SSL 卸載\] 旁的核取方塊。如果無法清除該核取方塊，請選取 **\[使用 URL Rewrite 檢查傳入要求\]** 核取方塊。按一下 **\[套用\]** 儲存變更。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>不支援由反向 Proxy 進行 SSL 卸載。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 不支援由反向 Proxy 進行 SSL 卸載。
 
 
 12. 為每個必須通過反向 Proxy 的 URL 重複步驟 5-11。常見的清單如下：
@@ -238,18 +155,9 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
     
       - Office Web Apps Server URL：officewebapps01.contoso.com
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Office Web Apps Server 的 URL 會使用不同的 httpsPort 位址。在步驟 7 中，您會將 <strong>httpsPort</strong> 定義為 <strong>443</strong> ，並將 <strong>httpPort</strong> 定義為連接埠 <strong>80</strong> 。所有其他組態設定都是相同的。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!IMPORTANT]  
+        > Office Web Apps Server 的 URL 會使用不同的 httpsPort 位址。在步驟 7 中，您會將 <strong>httpsPort</strong> 定義為 <strong>443</strong> ，並將 <strong>httpPort</strong> 定義為連接埠 <strong>80</strong> 。所有其他組態設定都是相同的。
+        
 
 
 13. 在主控台左側，按一下 IIS 伺服器名稱。在主控台中央，於 **IIS** 下找出 **\[URL Rewrite\]** 。按兩下 \[URL Rewrite\] 以開啟 URL Rewrite 規則組態。您應會看到您於先前步驟中為每個伺服器陣列建立的規則。如果沒有看到，請確認已於 IIS 管理員主控台中按下 **\[起始網頁\]** 節點正下方的 **\[IIS 伺服器\]** 名稱。
@@ -268,18 +176,8 @@ Microsoft Forefront Threat Management Gateway 2010 和 Internet Information Serv
 
 15. 為每個定義的 SSL 重寫規則重複步驟 14 中定義的程序，每個伺服器陣列 URL 使用一個。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>依照預設，也會建立 HTTP 規則並會以類似 SSL 規則的命名加以代表。就目前的範例而言，HTTP 規則會命名為 <strong>ARR_webext.contoso.com_loadbalance</strong> 。不需要修改這些規則，可以安全加以忽略。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 依照預設，也會建立 HTTP 規則並會以類似 SSL 規則的命名加以代表。就目前的範例而言，HTTP 規則會命名為 <strong>ARR_webext.contoso.com_loadbalance</strong> 。不需要修改這些規則，可以安全加以忽略。
 
 
 ## 若要修改 TMG 2010 中網頁發行規則的內容

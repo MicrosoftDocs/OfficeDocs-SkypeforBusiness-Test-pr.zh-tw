@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-10-28_
 
 在順利完成 [使用 Lync Server 2013 部署 Survivable Branch Appliance 或 Survivable Branch Server - 中央網站工作](lync-server-2013-deploying-a-survivable-branch-appliance-or-server-central-site-tasks.md)中的工作之後，請在分支網站上執行本主題中所述的兩個程序之一。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您必須是 RTCUniversalSBATechnicians 群組的成員，才能執行這項程序。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您必須是 RTCUniversalSBATechnicians 群組的成員，才能執行這項程序。
+
 
 
 ## 若要部署 Survivable Branch Appliance
@@ -39,18 +30,9 @@ _**上次修改主題的時間：** 2014-10-28_
 
   - 在執行 Windows Server 2008 或 Windows Server 2008 R2 的電腦上安裝 Microsoft Lync Server 2010，如同安裝任何其他 Lync Server 2013 伺服器角色一般。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如需安裝 Lync Server 的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如需安裝 Lync Server 的詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-lync-server.md">部署 Lync Server 2013</a>。
+    
 
 
 下一步：[在 Lync Server 2013 中為分支網站恢復設定使用者](lync-server-2013-configuring-users-for-branch-site-resiliency.md)

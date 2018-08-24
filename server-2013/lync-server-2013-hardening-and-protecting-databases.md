@@ -33,18 +33,9 @@ Microsoft Lync Server 2013 也會將使用者資訊、會議狀態、封存資�
     
       - Lync Server 2013 使用 TCP/IP 通訊協定。其支援 IP 版本 4 (IPv4)，但不支援 IP 版本 6 (IPv6)。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>Lync Server 2013 可以在啟用雙重 IP 堆疊的網路中運作。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > Lync Server 2013 可以在啟用雙重 IP 堆疊的網路中運作。
+        
     
       - Lync Server 2013 支援多個 IP 位址 (多重主目錄網路位址卡)。您可以指定 SQL Server 僅接聽特定的 IP 位址 (個別位址或按照子網路)，以及只使用特定的通訊協定。
     
@@ -52,32 +43,14 @@ Microsoft Lync Server 2013 也會將使用者資訊、會議狀態、封存資�
 
   - 只在靜態 (非預設) 連接埠上執行 SQL Server，而不執行 SQL Server 瀏覽器 (使之無法將接聽連接埠回報給用戶端)。這需要每部 SQL Server 用戶端上自訂設定，包括前端伺服器、監控伺服器、封存伺服器及管理主控台 (執行 Lync Server 管理命令介面、Lync Server 控制台或拓撲產生器)，以及所有執行 Lync Server 資料庫的其他伺服器)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必須限制只有信任的資料庫管理員才可存取資料庫。惡意的資料庫管理員可能會藉由將資料插入資料庫或加以修改而獲取 Lync Server 2013 伺服器的權限，或是從服務獲取機密的資訊，即使資料庫管理員並未取得 Lync Server 2013 伺服器的直接存取或控制亦是如此。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 必須限制只有信任的資料庫管理員才可存取資料庫。惡意的資料庫管理員可能會藉由將資料插入資料庫或加以修改而獲取 Lync Server 2013 伺服器的權限，或是從服務獲取機密的資訊，即使資料庫管理員並未取得 Lync Server 2013 伺服器的直接存取或控制亦是如此。
+
 
 
 如需自訂設定及強化 SQL Server 資料庫的詳細資訊，請參閱 NextHop 部落格文章＜搭配使用 Lync Server 2010 與自訂的 SQL Server 網路設定 ＞(英文)，網址是：[http://go.microsoft.com/fwlink/p/?LinkId=214008](http://go.microsoft.com/fwlink/p/?linkid=214008) 。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以強化作業系統及應用程式伺服器，以及使用群組原則在 Lync Server 部署中實作安全性鎖定。如需詳細資訊，請參閱<a href="lync-server-2013-hardening-and-protecting-servers-and-applications.md">增強及保護 Lync Server 2013 的伺服器和應用程式</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您也可以強化作業系統及應用程式伺服器，以及使用群組原則在 Lync Server 部署中實作安全性鎖定。如需詳細資訊，請參閱<a href="lync-server-2013-hardening-and-protecting-servers-and-applications.md">增強及保護 Lync Server 2013 的伺服器和應用程式</a>。
+
 

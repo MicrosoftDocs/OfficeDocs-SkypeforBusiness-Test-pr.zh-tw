@@ -53,24 +53,11 @@ _**上次修改主題的時間：** 2013-02-21_
 
 Lync Server 控制台會自動安裝於每一部 Lync Server 前端伺服器或 Standard Edition Server。在這一版中，您可以遠端方式管理 Edge Server。您也可以在其他電腦上安裝 Lync Server 控制台，例如想利用來集中管理 Lync Server 的管理主控台。如需詳細資訊，請參閱＜ [安裝 Lync Server 2013 系統管理工具](lync-server-2013-install-lync-server-administrative-tools.md)＞。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>若要使用 Lync Server 控制台來進行設定，您必須使用已指派給 CsAdministrator 角色的帳戶進行登入。 如需 Lync Server 2013 中可用的預先定義管理角色的詳細資料，請參閱<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。</p></li>
-<li><p>若要使用 Lync Server 控制台進行設定，您也必須使用最低螢幕解析度 1024 x 768 的電腦。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> <ul>
+> <li><p>若要使用 Lync Server 控制台來進行設定，您必須使用已指派給 CsAdministrator 角色的帳戶進行登入。 如需 Lync Server 2013 中可用的預先定義管理角色的詳細資料，請參閱<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>。</p></li>
+> <li><p>若要使用 Lync Server 控制台進行設定，您也必須使用最低螢幕解析度 1024 x 768 的電腦。</p></li>
+> </ul>
 
 
 ## Lync Server 管理命令介面
@@ -81,18 +68,9 @@ Lync Server 控制台會自動安裝於每一部 Lync Server 前端伺服器或 
 
 Lync Server 記錄工具可以在產品執行時，從產品擷取記錄和追蹤資訊，進而協助進行疑難排解。您可以使用這個工具，在任何 Lync Server 伺服器角色上執行偵錯工作階段。如需記錄工具的詳細資訊，請參閱 TechNet Library 的＜Lync Server 2010 記錄工具＞文件，網址為 <http://go.microsoft.com/fwlink/?linkid=199265>。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在所有情況下的各種 Lync Server 記錄工具之間的所有記錄集合建議使用 集中記錄服務。 Lync Server 記錄工具仍會正常運作，但如果 集中記錄服務正在執行中，則該工具會干擾或大部分呈現無效。您應該僅使用 集中記錄服務或 Lync Server 記錄工具，但絕對不要同時使用兩種工具。如需 集中記錄服務以及為何應該單獨使用的詳細資訊，請參閱＜ <a href="lync-server-2013-using-the-centralized-logging-service.md">使用集中式記錄服務</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在所有情況下的各種 Lync Server 記錄工具之間的所有記錄集合建議使用 集中記錄服務。 Lync Server 記錄工具仍會正常運作，但如果 集中記錄服務正在執行中，則該工具會干擾或大部分呈現無效。您應該僅使用 集中記錄服務或 Lync Server 記錄工具，但絕對不要同時使用兩種工具。如需 集中記錄服務以及為何應該單獨使用的詳細資訊，請參閱＜ <a href="lync-server-2013-using-the-centralized-logging-service.md">使用集中式記錄服務</a>＞。
+
 
 
 ## 本節內容

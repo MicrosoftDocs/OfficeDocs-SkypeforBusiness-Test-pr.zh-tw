@@ -31,19 +31,9 @@ Lync Server 2013 中的 Windows PowerShell 須知事項：
 
   - 若要執行 Lync Server Cmdlet，請開啟 Lync Server 管理命令介面。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您開啟 Windows PowerShell 視窗，而非 Lync Server 管理命令介面，則預設無法執行 Lync Server Cmdlet。若要從 Windows PowerShell 執行 Lync Server Cmdlet，請先在 Windows PowerShell 命令提示字元中鍵入下列命令：<br />
-    Import-Module Lync</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]  
+	> 如果您開啟 Windows PowerShell 視窗，而非 Lync Server 管理命令介面，則預設無法執行 Lync Server Cmdlet。若要從 Windows PowerShell 執行 Lync Server Cmdlet，請先在 Windows PowerShell 命令提示字元中鍵入下列命令：<br />
+    > Import-Module Lync
 
 
   - Lync Server 管理命令介面會自動安裝在每部 Lync Server Enterprise Edition 前端伺服器或 Standard Edition Server 上。

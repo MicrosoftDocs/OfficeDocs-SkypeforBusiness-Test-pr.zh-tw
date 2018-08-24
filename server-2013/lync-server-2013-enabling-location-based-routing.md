@@ -31,7 +31,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsVoiceRoutingPolicy -Identity <voice routing policy ID> -Name <voice routing policy name> -PstnUsages <usages>
 
-如需詳細資訊，請參閱＜[New-CsVoiceRoutingPolicy](new-csvoiceroutingpolicy.md)＞。
+如需詳細資訊，請參閱＜[New-CsVoiceRoutingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoiceRoutingPolicy)＞。
 
 就此範例而言，下表和 Windows PowerShell 命令說明了此案例中定義的兩種語音路由原則及關聯的 PSTN 使用方式。表中只包括位置基礎路由的特有設定，做為說明之用。
 
@@ -123,7 +123,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     New-CsTrunkConfiguration -Identity < trunk configuration ID>
 
-如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](new-cstrunkconfiguration.md)＞。
+如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)＞。
 
 就此範例而言，下列 Windows PowerShell 命令說明了如何為此案例中定義之部署的每個主幹建立主幹組態。
 
@@ -136,7 +136,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Set-CsTrunkConfiguration -Identity <trunk configuration ID> -EnableLocationRestriction $true -NetworkSiteID <site ID>
 
-如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](new-cstrunkconfiguration.md)＞。
+如需詳細資訊，請參閱＜[New-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsTrunkConfiguration)＞。
 
 在此範例中，會為已與 Delhi 和 Hyderabad 之 PSTN 閘道建立關聯的每個主幹啟用位置基礎路由。
 
@@ -201,7 +201,7 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Set-CsVoicePolicy -Identity <voice policy ID> -PreventPSTNTollBypass <$true|$false>
 
-如需詳細資訊，請參閱＜[New-CsVoicePolicy](new-csvoicepolicy.md)＞。
+如需詳細資訊，請參閱＜[New-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsVoicePolicy)＞。
 
 就此範例而言，下表和 Windows PowerShell 命令說明如何對此案例中定義之 Delhi 和 Hyderabad 語音原則禁止 PSTN 免話費機制。表中只包括位置基礎路由的特有設定，做為說明之用。
 
@@ -249,20 +249,11 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Set-CsRoutingConfiguration -EnableLocationBasedRouting $true
 
-如需詳細資訊，請參閱＜[Set-CsRoutingConfiguration](set-csroutingconfiguration.md)＞。
+如需詳細資訊，請參閱＜[Set-CsRoutingConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsRoutingConfiguration)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然位置基礎路由必須透過全域組態啟用，要套用的整組規則將只會針對已按照本說明文件中指定內容設定的網站、使用者和主幹執行。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然位置基礎路由必須透過全域組態啟用，要套用的整組規則將只會針對已按照本說明文件中指定內容設定的網站、使用者和主幹執行。
+
 
 
 

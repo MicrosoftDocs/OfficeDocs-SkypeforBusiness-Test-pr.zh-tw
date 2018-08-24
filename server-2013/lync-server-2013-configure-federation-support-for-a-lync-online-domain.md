@@ -17,36 +17,18 @@ _**上次修改主題的時間：** 2012-11-01_
 
 與 Microsoft Lync Online 2010 客戶同盟需要完成下列步驟：
 
-  - 設定 Lync Online 2010 客戶的網域支援 (例如，contoso.onmicrosoft.com)。如同本文件的＜[與 Lync Online 客戶同盟的先決條件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)＞一節所述，您應該已經為組織啟用同盟。啟用同盟需要指定同盟網域用來控制存取的方法。如果您將組織設定成使用探索，則可選擇是否將網域新增至組織的允許清單中。如果您未啟用網域探索，則必須將 Lync Online 客戶的網域名稱新增至您的允許網域清單中。您可以使用 Lync Server 控制台或執行 **New-CSAllowedDomain** Cmdlet，來新增網域名稱。如需使用 Lync Server 控制台的詳細資訊 (包括啟用網域探索)，請參閱作業文件中的＜[在 Lync Server 2013 中管理組織的 SIP 同盟提供者](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)＞。如需使用 **New-CSAllowedDomain** Cmdlet 來新增網域的詳細資訊，請參閱作業文件中的＜[New-CsAllowedDomain](new-csalloweddomain.md)＞。
+  - 設定 Lync Online 2010 客戶的網域支援 (例如，contoso.onmicrosoft.com)。如同本文件的＜[與 Lync Online 客戶同盟的先決條件](lync-server-2013-prerequisites-for-federating-with-a-lync-online-customer.md)＞一節所述，您應該已經為組織啟用同盟。啟用同盟需要指定同盟網域用來控制存取的方法。如果您將組織設定成使用探索，則可選擇是否將網域新增至組織的允許清單中。如果您未啟用網域探索，則必須將 Lync Online 客戶的網域名稱新增至您的允許網域清單中。您可以使用 Lync Server 控制台或執行 **New-CSAllowedDomain** Cmdlet，來新增網域名稱。如需使用 Lync Server 控制台的詳細資訊 (包括啟用網域探索)，請參閱作業文件中的＜[在 Lync Server 2013 中管理組織的 SIP 同盟提供者](lync-server-2013-manage-sip-federated-providers-for-your-organization.md)＞。如需使用 **New-CSAllowedDomain** Cmdlet 來新增網域的詳細資訊，請參閱作業文件中的＜[New-CsAllowedDomain](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAllowedDomain)＞。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Online 客戶可以擁有多個網域。如果您想與一個以上的網域同盟，必須為每個您想支援同盟的個別網域設定相關支援，而且 Lync Online 客戶的管理員必須為要同盟的每個網域啟用同盟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Online 客戶可以擁有多個網域。如果您想與一個以上的網域同盟，必須為每個您想支援同盟的個別網域設定相關支援，而且 Lync Online 客戶的管理員必須為要同盟的每個網域啟用同盟。
+    
 
 
   - 針對您想同盟之 Lync Online 2010 客戶網域的裝載提供者設定支援。請使用本節中的程序，為裝載提供者設定相關支援。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只有在與 Lync Online 客戶的網域同盟時，才需要此步驟，要與同盟協力廠商位置上內部部署的任何網域同盟時，則不需要此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只有在與 Lync Online 客戶的網域同盟時，才需要此步驟，要與同盟協力廠商位置上內部部署的任何網域同盟時，則不需要此步驟。
+    
 
 
 ## 針對裝載提供者設定支援
@@ -73,5 +55,5 @@ _**上次修改主題的時間：** 2012-11-01_
     
       - **IsLocal** 會指出裝載提供者使用的 Proxy 伺服器是否包含在您的 Lync Server 拓撲內。
     
-    如需有關使用此 Cmdlet 的詳細資訊，請參閱作業文件中的＜[New-CsHostingProvider](new-cshostingprovider.md)＞。
+    如需有關使用此 Cmdlet 的詳細資訊，請參閱作業文件中的＜[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)＞。
 

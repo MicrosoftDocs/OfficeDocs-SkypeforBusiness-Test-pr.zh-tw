@@ -61,19 +61,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>在 [啟動佈建要求] 頁面中，按一下適當連結以啟動佈建要求：</p></li>
 <li><p>在 [指定佈建資訊] 頁面中，輸入「Access Edge Service FQDN」，例如 <strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>輸入至少一個或多個 SIP 網域名稱，然後按一下 [新增]。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>至少需要一部 Access Edge Server 與一個 SIP 網域，才能完成佈建程序。SIP 網域與 Access Edge Server 必須已啟用、正在運作，並可透過網路連線。</td>
-</tr>
-</tbody>
-</table>
+
+
+> [!IMPORTANT]  
+> 至少需要一部 Access Edge Server 與一個 SIP 網域，才能完成佈建程序。SIP 網域與 Access Edge Server 必須已啟用、正在運作，並可透過網路連線。
+
 
 </div></li>
 <li><p>在 [公用 IM 服務提供者] 清單中，選取 [Skype]，然後按一下 [下一步] 以新增連絡人資訊並提交佈建要求。</p></li>
@@ -87,19 +79,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>在 [啟動佈建要求] 頁面中，按一下適當連結以啟動佈建要求：</p></li>
 <li><p>在 [指定佈建資訊] 頁面中，輸入「Access Edge Service FQDN」，例如 <strong>accessedge.contoso.com</strong>。</p></li>
 <li><p>輸入至少一個或多個 SIP 網域名稱，然後按一下 [新增]。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>至少需要一部 Access Edge Server 與一個 SIP 網域，才能完成佈建程序。SIP 網域與 Access Edge Server 必須已啟用、正在運作，並可透過網路連線。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]  
+> 至少需要一部 Access Edge Server 與一個 SIP 網域，才能完成佈建程序。SIP 網域與 Access Edge Server 必須已啟用、正在運作，並可透過網路連線。
+
 
 </div></li>
 <li><p>在 [公用 IM 服務提供者] 清單中，選取 [Skype]，然後按一下 [下一步] 以新增連絡人資訊並提交佈建要求。</p></li>
@@ -121,18 +105,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 同盟是 Skype 使用者與組織中的 Lync 使用者進行通訊的必要途徑。公用立即訊息連線 (PIC) 則是一種同盟等級，必須加以設定以讓 Lync 使用者與 Skype 使用者進行通訊。同盟與 PIC 均是使用 Lync Server 控制台進行設定，如下所示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PIC 同盟不再受 Live Communication Server 2005 SP1 或 Office Communications Server 2007 支援。PIC 同盟的支援平台包括 Lync Server 2013、Lync Server 2010 以及 Office Communications Server 2007 R2。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> PIC 同盟不再受 Live Communication Server 2005 SP1 或 Office Communications Server 2007 支援。PIC 同盟的支援平台包括 Lync Server 2013、Lync Server 2010 以及 Office Communications Server 2007 R2。
+
 
 
 ## 2\. 設定至少一項原則以支援同盟使用者存取
@@ -143,20 +118,10 @@ _**上次修改主題的時間：** 2015-03-09_
 
 系統管理員必須使用 Lync Server 管理命令介面設定 Lync 用戶端原則以將 Skype 顯示為額外 PIC 提供者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>除非您亦有設定至少一項原則 (此程序先前的步驟 2) 以支援公用 IM 連線，否則公用立即訊息連線 (PIC) 服務提供者的使用者將無法參與貴組織中的 IM 或會議。<br />
+> [!NOTE]  
+> 除非您亦有設定至少一項原則 (此程序先前的步驟 2) 以支援公用 IM 連線，否則公用立即訊息連線 (PIC) 服務提供者的使用者將無法參與貴組織中的 IM 或會議。<br />
 若要設定同盟與 PIC，請參閱＜啟用或停用同盟及公用 IM 連線＞： <a href="http://go.microsoft.com/fwlink/p/?linkid=306063">http://go.microsoft.com/fwlink/p/?LinkId=306063</a>。<br />
-若要設定至少一項原則以支援同盟使用者存取，請參閱＜設定原則以控制公用使用者存取＞： <a href="http://go.microsoft.com/fwlink/p/?linkid=306064">http://go.microsoft.com/fwlink/p/?LinkId=306064</a>。</td>
-</tr>
-</tbody>
-</table>
+若要設定至少一項原則以支援同盟使用者存取，請參閱＜設定原則以控制公用使用者存取＞： <a href="http://go.microsoft.com/fwlink/p/?linkid=306064">http://go.microsoft.com/fwlink/p/?LinkId=306064</a>。
 
 
 1.  從 Lync Server 前端伺服器中，開啟 Lync Server 管理命令介面。

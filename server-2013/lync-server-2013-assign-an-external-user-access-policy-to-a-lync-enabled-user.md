@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 如果已啟用使用者的 Lync Server，則將適當的原則套用至特定使用者，就可以在 Lync Server 控制台中設定 SIP 同盟、XMPP 同盟、遠端使用者存取及公用立即訊息 (IM) 連線。例如，如果您已建立原則來支援遠端使用者存取，則必須先將它套用至一個使用者，該使用者才能從遠端位置連線至 Lync Server，以及與遠端位置的內部使用者共同作業。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要支援外部使用者存取，您必須啟用想要支援之每種外部使用者存取類型的支援，以及設定適當原則及其他控制使用的選項。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-configuring-support-for-external-user-access.md">在 Lync Server 2013 中設定外部使用者存取支援</a> 或作業文件中的 <a href="lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md">管理 Lync Server 2013 的同盟與外部存取</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要支援外部使用者存取，您必須啟用想要支援之每種外部使用者存取類型的支援，以及設定適當原則及其他控制使用的選項。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-configuring-support-for-external-user-access.md">在 Lync Server 2013 中設定外部使用者存取支援</a> 或作業文件中的 <a href="lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md">管理 Lync Server 2013 的同盟與外部存取</a>。
+
 
 
 使用本主題中的程序，將先前建立的外部使用者存取原則套用至一或多個使用者帳戶。
@@ -45,18 +36,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 5.  在 **\[外部存取原則\]** 的 **\[編輯 Lync Server 使用者\]** 下，選取想要套用的使用者原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>[&lt;自動&gt;]</strong> 設定套用預設伺服器或全域原則設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>[&lt;自動&gt;]</strong> 設定套用預設伺服器或全域原則設定。
+    
 
 
 ## 使用 Windows PowerShell Cmdlet 指派每個使用者的外部存取原則
@@ -71,7 +53,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 ## 指派每個使用者外部存取原則給多位使用者
 
-  - 此命令可將個別使用者外部存取原則 USAExternalAccessPolicy，指派給所有具有 Active Directory 中之 UnitedStates OUto 帳戶的使用者。如需有關此項命令之 OU 參數的詳細資訊，請參閱文件以了解 [Get-CsUser](get-csuser.md) Cmdlet。
+  - 此命令可將個別使用者外部存取原則 USAExternalAccessPolicy，指派給所有具有 Active Directory 中之 UnitedStates OUto 帳戶的使用者。如需有關此項命令之 OU 參數的詳細資訊，請參閱文件以了解 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet。
     
         Get-CsUser -OU "ou=UnitedStates,dc=litwareinc,dc=com" | Grant-CsExternalAccessPolicy -PolicyName "USAExternalAccessPolicy"
 
@@ -81,5 +63,5 @@ _**上次修改主題的時間：** 2013-02-22_
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName $Null
 
-如需詳細資訊，請參閱 [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy) Cmdlet 的說明主題。
 

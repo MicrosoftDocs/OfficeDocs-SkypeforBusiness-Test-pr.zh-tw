@@ -19,32 +19,14 @@ Lync Server 2013 可讓您指定環境中支援的用戶端版本。當執行不
 
 除了建立全域原則之外，您還可以為特定服務或網站建立用戶端版本原則，或是建立可指派給個別使用者的使用者範圍原則。使用者範圍用戶端版本原則可以指派給 Lync Server 控制台中 \[使用者\] 群組的個別使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於匿名使用者不會與使用者、網站或服務產生關聯，因此匿名使用者只會受全域層級的原則影響。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由於匿名使用者不會與使用者、網站或服務產生關聯，因此匿名使用者只會受全域層級的原則影響。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>篩選器會依優先順序列出。例如，如果您有一個可讓執行 1.5 版的用戶端連線的篩選器，後面接著一個封鎖執行 2.0 以前版本之用戶端的篩選器，則第一個篩選器的優先順序高於第二個，而且執行 1.5 版的用戶端可以連線。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 篩選器會依優先順序列出。例如，如果您有一個可讓執行 1.5 版的用戶端連線的篩選器，後面接著一個封鎖執行 2.0 以前版本之用戶端的篩選器，則第一個篩選器的優先順序高於第二個，而且執行 1.5 版的用戶端可以連線。
+
 
 
 ## 編輯預設用戶端版本原則
@@ -55,18 +37,9 @@ Lync Server 2013 可讓您指定環境中支援的用戶端版本。當執行不
 
 3.  在左導覽列中，按一下 **\[用戶端\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><strong>[用戶端版本原則]</strong> 索引標籤預設為已選取。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > <strong>[用戶端版本原則]</strong> 索引標籤預設為已選取。
+    
 
 
 4.  在 **\[用戶端版本原則\]** 頁面上，按兩下清單中的 **\[通用\]** 原則。
@@ -77,18 +50,9 @@ Lync Server 2013 可讓您指定環境中支援的用戶端版本。當執行不
     
       - 按一下清單中的其中一個已定義的用戶端類型，然後按一下 \[顯示詳細資料\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用萬用字元表示用戶端類型。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用萬用字元表示用戶端類型。
+    
 
 
 6.  在 \[使用者代理程式\] 中，選取用戶端類型。
@@ -103,18 +67,9 @@ Lync Server 2013 可讓您指定環境中支援的用戶端版本。當執行不
     
       - 在 **\[更新\]** 中，輸入對應至用戶端更新版本的號碼。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以使用萬用字元表示用戶端版本號碼。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以使用萬用字元表示用戶端版本號碼。
+    
 
 
 8.  若要指定您在前述步驟中所指定用戶端版本的比對作業，請在 \[比較作業\] 中，按下列其中一項：
@@ -137,18 +92,9 @@ Lync Server 2013 可讓您指定環境中支援的用戶端版本。當執行不
     
       - 若要允許用戶端登入並且從 Windows Server Update Service 或 Microsoft Update 接收更新，請按一下 \[允許並升級\]。此動作只有在選取「使用者代理程式 OC」時才可使用。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>選取此動作會在使用者下次登入 Lync 2013 時出現通知。通知指出有可用的更新，即使更新還沒有發佈至 Windows Server Update Service 或 Microsoft Update。為避免混淆，您應該僅在有可用更新時選擇此動作。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 選取此動作會在使用者下次登入 Lync 2013 時出現通知。通知指出有可用的更新，即使更新還沒有發佈至 Windows Server Update Service 或 Microsoft Update。為避免混淆，您應該僅在有可用更新時選擇此動作。
+        
     
       - 若要允許用戶端登入並且顯示哪裡可以下載其他用戶端版本的訊息，請按一下 **\[以 URL 允許\]**。您稍後會在此程序中指定 URL。
     

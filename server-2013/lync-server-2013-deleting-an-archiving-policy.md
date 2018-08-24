@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 您可以刪除使用者原則或網站原則。無法移除全域原則。如果您刪除全域原則，Lync Server 2013會自動將原則重設為預設值。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您針對部署啟用 Microsoft Exchange 整合，Exchange 原則會控制是否為隸屬於 Exchange 2013 的使用者啟用封存，並保留他們的信箱。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您針對部署啟用 Microsoft Exchange 整合，Exchange 原則會控制是否為隸屬於 Exchange 2013 的使用者啟用封存，並保留他們的信箱。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。
+
 
 
 ## 若要刪除使用者或網站原則進行封存
@@ -65,7 +56,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsArchivingPolicy | Where-Object {$_.ArchiveInternal -eq $False} | Remove-CsArchivingPolicy
 
-如需詳細資訊，請參閱 [Remove-CsArchivingPolicy](remove-csarchivingpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Remove-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsArchivingPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

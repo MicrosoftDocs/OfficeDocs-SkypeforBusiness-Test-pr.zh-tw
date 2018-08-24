@@ -29,18 +29,8 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 
 下表提供 Edge Server 部署程序的概觀。如要檢閱部署外部使用者存取之前必須完成的規劃決定，請參閱＜ [Lync Server 2013 中的外部使用者存取案例](lync-server-2013-scenarios-for-external-user-access.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下表的資訊以全新部署為主。如果您已在 Lync Server 2010、 Office Communications Server 2007 R2 或 Office Communications Server 2007 環境中部署 Edge Server，請參閱 <a href="migration.md">移轉</a>中有關移轉至 Lync Server 2013 的詳細資訊。不支援從任何比 Office Communications Server 2007 R2 舊的版本 (包括 Office Communications Server 2007、 Live Communications Server 2005 以及 Live Communications Server 2003) 移轉。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 下表的資訊以全新部署為主。如果您已在 Lync Server 2010、 Office Communications Server 2007 R2 或 Office Communications Server 2007 環境中部署 Edge Server，請參閱 <a href="migration.md">移轉</a>中有關移轉至 Lync Server 2013 的詳細資訊。不支援從任何比 Office Communications Server 2007 R2 舊的版本 (包括 Office Communications Server 2007、 Live Communications Server 2005 以及 Live Communications Server 2003) 移轉。
 
 
 為了提升 Edge Server 效能與安全性，以及協助部署順利進行，請在部署周邊網路和 Edge Server 時套用下列最佳作法：
@@ -77,19 +67,11 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 </ul>
 <p></p></td>
 <td><p><strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 或 <strong>CsAdmins</strong> 群組</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以使用本機使用者群組的成員帳戶來定義拓撲，但發行拓撲需要以 <strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 群組的成員帳戶進行。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 您可以使用本機使用者群組的成員帳戶來定義拓撲，但發行拓撲需要以 <strong>Domain Admins</strong> 群組和 <strong>RTCUniversalServerAdmins</strong> 群組的成員帳戶進行。
+
 
 </div></td>
 <td><p>部署文件中的＜ <a href="lync-server-2013-building-an-edge-and-director-topology.md">在 Lync Server 2013 中建置 Edge 和 Director 拓撲</a>＞</p></td>
@@ -102,26 +84,13 @@ Microsoft Lync Server 2013 包含的工具有助於規劃及部署內部伺服�
 <li><p>設定內部與外部 DNS 記錄 (IPv4 和 IPv6 的主機 A 和 AAAA)，包括在要部署為 Edge Server 的電腦上設定 DNS 尾碼。</p></li>
 <li><p>(選用) 建立並安裝公用憑證。取得憑證所需的時間，視發出憑證的憑證授權單位 (CA) 而定。如果您此時不執行這個步驟，也必須在 Edge Server 安裝期間執行。未取得並安裝憑證前，Edge Server Service 無法啟動。</p></li>
 <li><p>佈建公用 IM 連線的支援 (如果您的部署是要支援與 Windows Live、AOL 或 Yahoo! 使用者的通訊)。</p>
-<div class="alert">
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p></li>
-<li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p></li>
-<li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+<div>
+
+
+> [!IMPORTANT]  
+> <p>自 2012 年 9 月 1 日起，Microsoft Lync 公用 IM 連線使用者訂閱授權 (&quot;PIC USL&quot;) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 維持同盟關係直至服務終止日。目前已公佈 AOL 與 Yahoo! 在 2014 年 6 月的結束日期。如需詳細資訊，請參閱 <a href="lync-server-2013-support-for-public-instant-messenger-connectivity.md">Lync Server 2013 中的公用立即訊息連線的支援</a>。</p>  
+> <p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將告結束。</p>
+> <p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p>
 
 </div></li>
 <li><p>佈建針對 Office Communications Server 2007、 Office Communications Server 2007 R2 以及 Lync Server 2010 協力廠商之 XMPP 與同盟的支援 (如果部署將使用的話)</p></li>

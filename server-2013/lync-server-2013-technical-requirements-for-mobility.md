@@ -19,35 +19,16 @@ _**上次修改主題的時間：** 2014-07-24_
 
 行動使用者會遇到各種需要特別規劃的行動應用程式案例。例如，某人下班時，可能會透過 3G 網路連線，開始使用行動應用程式，上班時再切換至公司的 Wi-Fi 網路，離開辦公室時再切換回 3G。您需要規劃環境來支援像這樣的網路轉換，以確保一致的使用者經驗。本節說明支援行動應用程式和自動探索行動資源時，必須具備的基礎結構需求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然行動應用程式也可以連線至其他 Lync Server 2013 服務，但是這個將所有行動應用程式 Web 要求傳送至相同外部 Web 完整網域名稱 (FQDN) 的需求，僅適用於 Lync Server 2013 Mobility Service。其他行動服務不需要此設定。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然行動應用程式也可以連線至其他 Lync Server 2013 服務，但是這個將所有行動應用程式 Web 要求傳送至相同外部 Web 完整網域名稱 (FQDN) 的需求，僅適用於 Lync Server 2013 Mobility Service。其他行動服務不需要此設定。
+
 
 
 如果您使用 Lync Server 2013 提供的 Lync Mobile，硬體負載平衡器的 Cookie 相關性要求將大幅減少，而且您可以替換傳輸控制通訊協定 (TCP) 相關性。雖然仍然可以使用 Cookie 相關性，但是 Web 服務不再需要此相關性。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>無論起始點是在內部或外部，所有 Mobility Service 流量都是通過反向 Proxy 傳輸。對於單一反向 Proxy 或一個反向 Proxy 陣列，或對於提供反向 Proxy 功能的裝置，當內部流量傳出介面並嘗試立即在相同介面接收時，會發生問題。這通常會導致違反安全性規則，稱為 TCP 封包詐騙或僅稱詐騙。必須允許「U 型迴轉」 (傳出和立即接收封包或一系列封包)，以供行動性正常運作。有一個解決此問題的方法是使用與防火牆相隔離的反向 Proxy (基於安全因素，應該在防火牆上一律強制執行此詐騙預防規則)。U 型迴轉會發生在反向 Proxy 的外部介面上，而非防火牆外部介面。您可以在防火牆上偵測到詐騙，並在反向 Proxy 放寬規則，以允許該行動性所需要的傳回。<br />
-儘可能使用網域名稱系統 (DNS) 主機或 CNAME 記錄來定義反向 Proxy 如何處理傳回行為 (而非防火牆)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 無論起始點是在內部或外部，所有 Mobility Service 流量都是通過反向 Proxy 傳輸。對於單一反向 Proxy 或一個反向 Proxy 陣列，或對於提供反向 Proxy 功能的裝置，當內部流量傳出介面並嘗試立即在相同介面接收時，會發生問題。這通常會導致違反安全性規則，稱為 TCP 封包詐騙或僅稱詐騙。必須允許「U 型迴轉」 (傳出和立即接收封包或一系列封包)，以供行動性正常運作。有一個解決此問題的方法是使用與防火牆相隔離的反向 Proxy (基於安全因素，應該在防火牆上一律強制執行此詐騙預防規則)。U 型迴轉會發生在反向 Proxy 的外部介面上，而非防火牆外部介面。您可以在防火牆上偵測到詐騙，並在反向 Proxy 放寬規則，以允許該行動性所需要的傳回。<br />
+> 儘可能使用網域名稱系統 (DNS) 主機或 CNAME 記錄來定義反向 Proxy 如何處理傳回行為 (而非防火牆)。
 
 
 Lync Server 2013 支援 Lync 2010 Mobile 和 Lync 2013 行動用戶端的行動服務。兩個用戶端會使用 Lync Server 2013 自動探索服務找出其行動進入點，但根據其使用的行動服務而有所不同。 Lync 2010 Mobile 會使用 Lync Server 2010 累計更新 (2011 年 11 月) 所導入的 Mobility Service，稱為 *Mcx* 。 Lync 2013 行動用戶端使用 Unified Communications Web API 或 *UCWA* ，做為其行動服務提供者。
@@ -58,20 +39,11 @@ Mobility Services Mcx (在 Lync Server 2010 累計更新 (2011 年 11 月) 導�
 
 當您使用自動探索時，行動裝置會使用 DNS 尋找資源。在 DNS 查閱期間，會先嘗試連線至與內部 DNS 記錄 (lyncdiscoverinternal.*\<internal domain name\>*) 相關聯的 FQDN。如果無法使用內部 DNS 記錄來建立連線，則會嘗試使用外部 DNS 記錄 (lyncdiscover.*\<sipdomain\>*) 來進行連線。在網路內部的行動裝置會連線至內部自動探索服務 URL，而在網路外部的行動裝置會連線至外部自動探索服務 URL。外部自動探索要求會通過反向 Proxy。Lync Server 2013 自動探索服務會針對使用者的主集區，傳回所有 Web 服務 URL，包括 Mobility Service (Mcx 和 UCWA) URL。不過，內部 Mobility Service URL 及外部 Mobility Service URL 都會與外部 Web 服務 FQDN 相關聯。因此，無論行動裝置是在網路內部或外部，該裝置都會透過反向 Proxy 從外部連線至 Lync Server 2013 Mobility Service。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>必須注意的是，您的部署可能包含內部和外部使用的多個不同命名空間。SIP 網域名稱可能與內部部署網域名稱不同。例如，SIP 網域可能是 <strong>contoso.com</strong>，而內部部署可能是 <strong>contoso.net</strong>。登入 Lync Server 的使用者將使用 SIP 網域名稱，例如 <strong>john@contoso.com</strong>。處理外部 Web 服務 (在 拓撲產生器 中定義為 [外部 Web 服務]) 時，網域名稱和 SIP 網域名稱將與 DNS 中定義的名稱一致。處理內部 Web 服務 (在 拓撲產生器 中定義為 [內部 Web 服務]) 時，內部 Web 服務的預設名稱將是 前端伺服器、前端集區、Director 或 Director 集區 的 FQDN。您可以選擇覆寫內部 Web 服務名稱。對於內部 Web 服務，您應該使用內部網域名稱 (而非 SIP 網域名稱)，並定義 DNS 主機 A (對於 IPv6 則是 AAAA) 記錄來反映覆寫的名稱。例如，預設的內部 Web 服務 FQDN 可能是 <strong>pool01.contoso.net</strong>。受覆寫的內部 Web 服務 FQDN 可能是 <strong>webpool.contoso.net</strong>。以此方式定義 Web 服務有助於確保遵循服務的內部及外部位置 (而非使用服務之使用者的位置)。<br />
-不過，由於 Web 服務是在 拓撲產生器 中定義，而且可以覆寫內部 Web 服務名稱，因此，只要產生的 Web 服務名稱、驗證該服務的憑證和定義該服務的 DNS 記錄三者保持一致，您就能夠以任何的網域名稱 (包括 SIP 網域名稱) 定義您所需的內部 Web 服務。最後，IP 位址的名稱解析將由 DNS 主機記錄和一致的命名空間所決定。<br />
-對於本主題和範例而言，內部網域名稱是用來說明拓撲和 DNS 定義。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 必須注意的是，您的部署可能包含內部和外部使用的多個不同命名空間。SIP 網域名稱可能與內部部署網域名稱不同。例如，SIP 網域可能是 <strong>contoso.com</strong>，而內部部署可能是 <strong>contoso.net</strong>。登入 Lync Server 的使用者將使用 SIP 網域名稱，例如 <strong>john@contoso.com</strong>。處理外部 Web 服務 (在 拓撲產生器 中定義為 [外部 Web 服務]) 時，網域名稱和 SIP 網域名稱將與 DNS 中定義的名稱一致。處理內部 Web 服務 (在 拓撲產生器 中定義為 [內部 Web 服務]) 時，內部 Web 服務的預設名稱將是 前端伺服器、前端集區、Director 或 Director 集區 的 FQDN。您可以選擇覆寫內部 Web 服務名稱。對於內部 Web 服務，您應該使用內部網域名稱 (而非 SIP 網域名稱)，並定義 DNS 主機 A (對於 IPv6 則是 AAAA) 記錄來反映覆寫的名稱。例如，預設的內部 Web 服務 FQDN 可能是 <strong>pool01.contoso.net</strong>。受覆寫的內部 Web 服務 FQDN 可能是 <strong>webpool.contoso.net</strong>。以此方式定義 Web 服務有助於確保遵循服務的內部及外部位置 (而非使用服務之使用者的位置)。<br />
+> 不過，由於 Web 服務是在 拓撲產生器 中定義，而且可以覆寫內部 Web 服務名稱，因此，只要產生的 Web 服務名稱、驗證該服務的憑證和定義該服務的 DNS 記錄三者保持一致，您就能夠以任何的網域名稱 (包括 SIP 網域名稱) 定義您所需的內部 Web 服務。最後，IP 位址的名稱解析將由 DNS 主機記錄和一致的命名空間所決定。<br />
+> 對於本主題和範例而言，內部網域名稱是用來說明拓撲和 DNS 定義。
+
 
 
 下圖說明使用內部和外部 DNS 設定時，Mobility Service 和自動探索服務的行動應用程式 Web 要求流程。
@@ -80,19 +52,9 @@ Mobility Services Mcx (在 Lync Server 2010 累計更新 (2011 年 11 月) 導�
 
 ![行動要求流程](images/Hh690030.cdb96424-96f2-4abf-88d7-1d32d1010ffd(OCS.15).jpg "行動要求流程")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此圖說明一般 Web 服務。名稱為 Mobility 的虛擬目錄說明 Mobility Services Mcx 及/或 UCWA。如果尚未套用 Lync Server 2013 累計更新 (2013 年 2 月)，您不一定會有內部與外部 Web 服務上定義的虛擬目錄 Ucwa。您會有虛擬目錄自動探索，而且可能有虛擬目錄 Mcx。<br />
-無論您部署的行動服務技術為何，自動探索與服務探索會以相同方式運作。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 此圖說明一般 Web 服務。名稱為 Mobility 的虛擬目錄說明 Mobility Services Mcx 及/或 UCWA。如果尚未套用 Lync Server 2013 累計更新 (2013 年 2 月)，您不一定會有內部與外部 Web 服務上定義的虛擬目錄 Ucwa。您會有虛擬目錄自動探索，而且可能有虛擬目錄 Mcx。<br />
+> 無論您部署的行動服務技術為何，自動探索與服務探索會以相同方式運作。
 
 
 如果不管是來自公司網路內部或外部行動使用者都要支援，則內部和外部 Web FQDN 都必須符合某些先決條件。此外，依據您選擇實作的功能，您可能還需要符合其他需求。
@@ -127,19 +89,9 @@ Mobility Services Mcx (在 Lync Server 2010 累計更新 (2011 年 11 月) 導�
 
 DNS 記錄可以是 CNAME 記錄或 A (主機，對於 IPv6 則為 AAAA) 記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動裝置用戶端不支援來自不同網域的多個 Secure Sockets Layer (SSL) 憑證。因此，不支援透過 HTTPS 將 CNAME 重新導向至不同的網域。例如，不支援透過 HTTPS 將 lyncdiscover.contoso.com 的 DNS CNAME 記錄重新導向至 director.contoso.net 的位址。在這樣的拓撲中，行動裝置用戶端需要使用 HTTP 來進行第一個要求，以透過 HTTP 來解析 CNAME 重新導向。後續的要求則會使用 HTTPS。若要支援此案例，您需要以連接埠 80 的 Web 發行規則來設定反向 Proxy (HTTP)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中設定行動的反向 Proxy</a>＞中的＜建立連接埠 80 的網頁發行規則＞。<br />
-支援透過 HTTPS 將 CNAME 重新導向至相同網域。在此情況下，目的地網域的憑證包含來源網域。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 行動裝置用戶端不支援來自不同網域的多個 Secure Sockets Layer (SSL) 憑證。因此，不支援透過 HTTPS 將 CNAME 重新導向至不同的網域。例如，不支援透過 HTTPS 將 lyncdiscover.contoso.com 的 DNS CNAME 記錄重新導向至 director.contoso.net 的位址。在這樣的拓撲中，行動裝置用戶端需要使用 HTTP 來進行第一個要求，以透過 HTTP 來解析 CNAME 重新導向。後續的要求則會使用 HTTPS。若要支援此案例，您需要以連接埠 80 的 Web 發行規則來設定反向 Proxy (HTTP)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configuring-the-reverse-proxy-for-mobility.md">在 Lync Server 2013 中設定行動的反向 Proxy</a>＞中的＜建立連接埠 80 的網頁發行規則＞。<br />
+> 支援透過 HTTPS 將 CNAME 重新導向至相同網域。在此情況下，目的地網域的憑證包含來源網域。
 
 
 如需案例所需之 DNS 記錄的詳細資訊，請參閱＜ [Lync Server 2013 中的 DNS 摘要 - 自動探索](lync-server-2013-dns-summary-autodiscover.md)＞。
@@ -148,18 +100,8 @@ DNS 記錄可以是 CNAME 記錄或 A (主機，對於 IPv6 則為 AAAA) 記錄�
 
 如果您支援推入通知，並且想要讓 Apple 行動裝置透過 Wi-Fi 網路來接收推入通知，您也需要在企業 Wi-Fi 網路上開啟連接埠 5223。連接埠 5223 是 Apple Push Notification Service (APNS) 使用的輸出 TCP 連接埠。行動裝置會啟動連線。如需詳細資訊，請參閱 [http://support.apple.com/kb/TS1629](http://support.apple.com/kb/ts1629?viewlocale=zh_tw)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 Lync 2013 行動用戶端的 Apple 裝置不需要推入通知。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 使用 Lync 2013 行動用戶端的 Apple 裝置不需要推入通知。
 
 
 請注意，如果使用者隸屬於 Survivable Branch Appliance (SBA)，則需要下列連接埠：

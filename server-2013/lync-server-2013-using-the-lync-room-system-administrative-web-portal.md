@@ -73,29 +73,16 @@ _**上次修改主題的時間：** 2014-11-10_
 
 ## 系統管理 Web 入口網站的其他相關附註
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>基於安全性原因，系統管理 Web 入口網站每 15 分鐘會將您自動登出。</p></li>
-<li><p>設定變更只有在重新啟動 LRS 系統後才會套用。</p></li>
-<li><p>LRS 系統管理 Web 入口網站上的通知是固定的，換言之不會消失。</p></li>
-<li><p>通知只有在重新整理頁面後才會出現。</p></li>
-<li><p>重新整理頁面後會出現 LRS 會議室的狀態。</p></li>
-<li><p>如果 LRSApp 帳戶密碼到期，您就無法看到會議室的狀態。請設定永不到期的 LRSAppuser 帳戶密碼，或務必在密碼即將到期時更新。</p></li>
-<li><p>LRS 系統管理 Web 入口網站僅支援內部部署。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> <ul>
+> <li><p>基於安全性原因，系統管理 Web 入口網站每 15 分鐘會將您自動登出。</p></li>
+> <li><p>設定變更只有在重新啟動 LRS 系統後才會套用。</p></li>
+> <li><p>LRS 系統管理 Web 入口網站上的通知是固定的，換言之不會消失。</p></li>
+> <li><p>通知只有在重新整理頁面後才會出現。</p></li>
+> <li><p>重新整理頁面後會出現 LRS 會議室的狀態。</p></li>
+> <li><p>如果 LRSApp 帳戶密碼到期，您就無法看到會議室的狀態。請設定永不到期的 LRSAppuser 帳戶密碼，或務必在密碼即將到期時更新。</p></li>
+> <li><p>LRS 系統管理 Web 入口網站僅支援內部部署。</p></li>
+> </ul>
 
 
 ## 疑難排解

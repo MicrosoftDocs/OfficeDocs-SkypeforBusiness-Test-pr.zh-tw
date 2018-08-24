@@ -31,5 +31,5 @@ New-CsAddressBookConfiguration Cmdlet 會建立新設定來管理通訊錄的行
 
 #### 其他資源
 
-[New-CsAddressBookConfiguration](new-csaddressbookconfiguration.md)
+[New-CsAddressBookConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsAddressBookConfiguration)
 

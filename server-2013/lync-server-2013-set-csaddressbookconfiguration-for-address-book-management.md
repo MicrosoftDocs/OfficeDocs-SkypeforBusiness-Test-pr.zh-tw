@@ -31,5 +31,5 @@ Set-CsAddressBookConfiguration 類似於 New-CsAddressBookConfiguration Cmdlet�
 
 #### 其他資源
 
-[Set-CsAddressBookConfiguration](set-csaddressbookconfiguration.md)
+[Set-CsAddressBookConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsAddressBookConfiguration)
 

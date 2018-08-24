@@ -31,5 +31,5 @@ Get-CsWebServiceConfiguration 會傳回目前貴組織中使用的 Web 服務組
 
 #### 其他資源
 
-[Get-CsWebServiceConfiguration](get-cswebserviceconfiguration.md)
+[Get-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsWebServiceConfiguration)
 

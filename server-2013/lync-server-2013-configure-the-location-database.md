@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-09-17_
 
 3.  發行更新過的資料庫。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您也可以定義次要位置來源資料庫，該資料庫可用來取代位置資料庫。如需詳細資訊，請參閱＜<a href="lync-server-2013-configure-a-secondary-location-information-service.md">在 Lync Server 2013 中設定次要位置資訊服務</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您也可以定義次要位置來源資料庫，該資料庫可用來取代位置資料庫。如需詳細資訊，請參閱＜<a href="lync-server-2013-configure-a-secondary-location-information-service.md">在 Lync Server 2013 中設定次要位置資訊服務</a>＞。
+
 
 
 ## 本章節內容

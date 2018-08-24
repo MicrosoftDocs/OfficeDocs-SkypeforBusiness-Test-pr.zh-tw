@@ -15,19 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2015-03-09_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些步驟僅適用於移轉在部署 Lync 內部部署前於 Lync Online 中原本為 Lync 啟用的使用者帳戶。若要移動原本為 Lync 內部部署啟用而稍後移至 Lync Online 的使用者，請參閱<a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理 Lync Server 2013 混合部署中的使用者</a>。<br />
-此外，所有要移動的使用者都必須在內部部署的 Active Directory 中擁有帳戶。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 這些步驟僅適用於移轉在部署 Lync 內部部署前於 Lync Online 中原本為 Lync 啟用的使用者帳戶。若要移動原本為 Lync 內部部署啟用而稍後移至 Lync Online 的使用者，請參閱<a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">管理 Lync Server 2013 混合部署中的使用者</a>。<br />
+> 此外，所有要移動的使用者都必須在內部部署的 Active Directory 中擁有帳戶。
 
 
 ## 將原本在 Lync Online 中啟用的使用者帳戶移轉至 Lync 內部部署
@@ -40,9 +30,12 @@ _**上次修改主題的時間：** 2015-03-09_
     
       - 在您的內部部署中，於 Lync Server 管理命令介面輸入下列 Cmdlet，以建立 Lync Online 的主機服務提供者：
         
-            Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
-        
-            New-CSHostingProvider -Identity LyncOnline -Name LyncOnlin -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
+        ```
+        Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting -EnablePartnerDiscovery $true
+        ```
+        ```
+        New-CSHostingProvider -Identity LyncOnline -Name LyncOnlin -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
+        ```
 
 2.  確認您在內部部署的 Edge Server 上有憑證鏈結可讓您連線至 Lync Online (如下表所示)。您可以在下列位置中下載此鏈結： [https://corp.sts.microsoft.com/Onboard/ADFS\_Onboarding\_Pack/corp\_sts\_certs.zip](https://corp.sts.microsoft.com/onboard/adfs_onboarding_pack/corp_sts_certs.zip)。
     
@@ -107,9 +100,12 @@ _**上次修改主題的時間：** 2015-03-09_
     
     若要移動單一使用者，請輸入：
     
-        $cred = Get-Credential
-    
-        Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
+    ```
+    $cred = Get-Credential
+    ```
+    ```
+    Move-CsUser -Identity <username>@contoso.com -Target "<fe-pool>.contoso.com" -Credential $cred -HostedMigrationOverrideURL <URL>
+    ```
     
     若要移動多位使用者，請使用 **Get-CsUSer** Cmdlet 搭配 –Filter 參數，以選取具有特定屬性的使用者。舉例來說，若要選取所有 Lync Online 使用者，請使用下列篩選：{Hosting Provider –eq “sipfed.online.lync.om”}。接著，您可以將傳回的使用者結果輸送至 **Move-CsUSer** Cmdlet，如下所示。
     
@@ -139,18 +135,9 @@ _**上次修改主題的時間：** 2015-03-09_
         
         `https://admin0a.online.lync.com/HostedMigration/hostedmigrationservice.svc`
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>rtcxds 資料庫之交易記錄檔的預設大小上限為 16 GB。如果您要一次移動大量的使用者，特別是有啟用鏡像時，空間可能會不夠。若要因應此問題，請提高檔案大小或定期備份記錄檔。如需詳細資訊，請參閱 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > rtcxds 資料庫之交易記錄檔的預設大小上限為 16 GB。如果您要一次移動大量的使用者，特別是有啟用鏡像時，空間可能會不夠。若要因應此問題，請提高檔案大小或定期備份記錄檔。如需詳細資訊，請參閱 <a href="http://support.microsoft.com/kb/2756725" class="uri">http://support.microsoft.com/kb/2756725</a>。
+    
 
 
 8.  這是選擇性步驟：如果您需要與 Exchange 2013 Online 整合，必須使用額外的主機服務提供者。如需詳細資料，請參閱 [設定內部部署 Lync Server 2013 與 Exchange Online 整合](lync-server-2013-configuring-on-premises-lync-server-integration-with-exchange-online.md)。

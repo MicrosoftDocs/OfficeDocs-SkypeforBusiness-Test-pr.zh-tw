@@ -35,43 +35,20 @@ _**上次修改主題的時間：** 2013-03-25_
 
 5.  在 \[選取組合的伺服器角色\] 中，勾選 \[組合 中繼伺服器\] 選項。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><ul>
-    <li><p>如果您選取的 前端集區類型是 Enterprise Edition，則將會在該 前端集區的所有 前端伺服器上安裝 中繼伺服器元件。</p></li>
-    <li><p>中繼伺服器所使用的 [下一個躍點集區] 將會是已在其中組合 中繼伺服器的 前端集區。</p></li>
-    <li><p>中繼伺服器所使用的 [Edge 集區] 將會是與已在其中組合 中繼伺服器的 前端集區相關聯的相同 Edge 集區。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
-
+    > [!Note]  
+	> <ul>
+    > <li><p>如果您選取的 前端集區類型是 Enterprise Edition，則將會在該 前端集區的所有 前端伺服器上安裝 中繼伺服器元件。</p></li>
+    > <li><p>中繼伺服器所使用的 [下一個躍點集區] 將會是已在其中組合 中繼伺服器的 前端集區。</p></li>
+    > <li><p>中繼伺服器所使用的 [Edge 集區] 將會是與已在其中組合 中繼伺服器的 前端集區相關聯的相同 Edge 集區。</p></li>
+    > </ul>
 
 6.  按一下 \[成為預設\] ，使用這個 前端集區，將通話從 Microsoft Office Communications Server 2007 R2 路由傳送至 PSTN。
 
 7.  將一或多個對等裝置關聯至 前端集區之後，按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在您繼續進行 企業語音部署程序的下一個步驟之前，請確保 中繼伺服器集區 (例如，已與 中繼伺服器元件組合的 前端集區) 會使用您指定的 FQDN。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在您繼續進行 企業語音部署程序的下一個步驟之前，請確保 中繼伺服器集區 (例如，已與 中繼伺服器元件組合的 前端集區) 會使用您指定的 FQDN。
+    
 
 
 8.  接著，遵循＜部署指南＞文件中的 [在 Lync Server 2013 中發行拓撲](lync-server-2013-publish-the-topology.md)中的程序，先將 中繼伺服器新增至您的拓撲，然後視需要繼續進行下一個步驟來修改 中繼伺服器的聆聽連接埠。您必須在每次使用 拓撲產生器來定義或修改拓撲之前，發行您的拓撲。
@@ -82,18 +59,9 @@ _**上次修改主題的時間：** 2013-03-25_
 
 如果您已經在此網站上部署了已與 前端集區組合的 中繼伺服器，則您可以略過本節和 [在 Lync Server 2013 中安裝中繼伺服器的檔案](lync-server-2013-install-the-files-for-mediation-server.md)，繼續進行 [在 Lync Server 2013 中設定主幹](lync-server-2013-configuring-trunks.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節假設您已經依據＜部署指南＞文件中的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定義和設定前端集區或 Standard Edition Server</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>，至少設定了一個 前端集區。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節假設您已經依據＜部署指南＞文件中的 <a href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">在 Lync Server 2013 中定義和設定前端集區或 Standard Edition Server</a>和 <a href="lync-server-2013-publish-the-topology.md">在 Lync Server 2013 中發行拓撲</a>，至少設定了一個 前端集區。
+
 
 
 ## 新增中繼伺服器
@@ -110,18 +78,9 @@ _**上次修改主題的時間：** 2013-03-25_
     
       - 如果您想要在集區中部署多部 中繼伺服器以提供高可用性，則請選取 \[多部電腦集區\] 。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>您必須部署 DNS 負載平衡以支援擁有多部 中繼伺服器的 中繼伺服器集區。如需詳細資訊，請參閱規劃文件中 <a href="lync-server-2013-dns-load-balancing.md">Lync Server 2013 中的 DNS 負載平衡</a>的＜在 中繼伺服器集區上使用 DNS 負載平衡＞一節的說明。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 您必須部署 DNS 負載平衡以支援擁有多部 中繼伺服器的 中繼伺服器集區。如需詳細資訊，請參閱規劃文件中 <a href="lync-server-2013-dns-load-balancing.md">Lync Server 2013 中的 DNS 負載平衡</a>的＜在 中繼伺服器集區上使用 DNS 負載平衡＞一節的說明。
+        
     
       - 如果您因為不需要高可用性而只想在集區裡部署一部 中繼伺服器的話，請選取 **\[單一電腦集區\]** 。略過下列步驟。
 
@@ -151,18 +110,9 @@ _**上次修改主題的時間：** 2013-03-25_
 
 4.  指定 中繼伺服器將用來接受來自 PSTN 閘道之連入連線所需的 TLS 或 TCP 聆聽連接埠範圍。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若未勾選 [啟用 TCP 連接埠] ，則不一定要輸入 TCP 連接埠範圍。此為選用設定。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若未勾選 [啟用 TCP 連接埠] ，則不一定要輸入 TCP 連接埠範圍。此為選用設定。
+    
 
 
 接下來， [在 Lync Server 2013 中於拓撲產生器內定義閘道](lync-server-2013-define-a-gateway-in-topology-builder.md)，並遵循 [在 Lync Server 2013 中安裝中繼伺服器的檔案](lync-server-2013-install-the-files-for-mediation-server.md)中的程序，在集區中的每部 中繼伺服器上安裝檔案。

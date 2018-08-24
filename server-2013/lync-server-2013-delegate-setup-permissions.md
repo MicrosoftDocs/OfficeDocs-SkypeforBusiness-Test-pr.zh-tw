@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2014-02-05_
 
 請記住，這個 Cmdlet 只會將權限授與 RTCUniversalServerAdmins 群組；您無法使用這個 Cmdlet 將權限授與其他安全性群組或個別使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Enable-CsTopology</strong> 是允許 RTCUniversalServerAdmins 群組成員設定及部署 Lync Server 2013 的主要 Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>Enable-CsTopology</strong> 是允許 RTCUniversalServerAdmins 群組成員設定及部署 Lync Server 2013 的主要 Cmdlet。
+
 
 
 ## 若要將執行 Enable-CsTopology 的能力新增至 RTCUniversalServerAdmins 群組
@@ -45,18 +36,9 @@ _**上次修改主題的時間：** 2014-02-05_
     
         Grant-CsSetupPermission -ComputerOU <DN of the OU> -Domain <Domain FQDN>
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 OU 不在頂層，則您必須提供完整網域名稱。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 OU 不在頂層，則您必須提供完整網域名稱。
+    
     
     在以下範例中，OU 為 "Lync Servers" (位於 contoso.com 網域)。
     

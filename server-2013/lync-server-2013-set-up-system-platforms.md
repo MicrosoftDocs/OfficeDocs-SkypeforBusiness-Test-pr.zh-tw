@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 您也可以使用 Lync Server 2013Standard Edition 部署 常設聊天室伺服器 。若如此，則會在 Standard Edition 伺服器 上搭配 **PersistentChatService**前端伺服器，然後您可在本機 SQL Server Express 執行個體上部署 **PersistentChatStore**後端伺服器。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>不支援高可用性的 常設聊天室伺服器Standard Edition。效能及規模均會受到限制。此外，也僅支援 常設聊天室伺服器  Standard Edition 伺服器 部署的升級。但不支援將 Lync Server 2010群組聊天伺服器升級至 Lync Server 2013常設聊天室伺服器Standard Edition。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 不支援高可用性的 常設聊天室伺服器Standard Edition。效能及規模均會受到限制。此外，也僅支援 常設聊天室伺服器  Standard Edition 伺服器 部署的升級。但不支援將 Lync Server 2010群組聊天伺服器升級至 Lync Server 2013常設聊天室伺服器Standard Edition。
+
 
 
 ## 請參閱

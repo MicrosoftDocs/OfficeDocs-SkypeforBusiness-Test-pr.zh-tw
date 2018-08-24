@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如需如何執行這些工作的詳細資訊，請參閱部署文件中的＜ [在 Lync Server 2013 中設定位置資料庫](lync-server-2013-configure-the-location-database.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在使用 Lync Server 管理命令介面 命令發佈位置，並複寫到集區的本機存放區之前，用戶端無法使用新增到中央位置資料庫的位置。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-publish-the-location-database.md">在 Lync Server 2013 中發佈位置資料庫</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在使用 Lync Server 管理命令介面 命令發佈位置，並複寫到集區的本機存放區之前，用戶端無法使用新增到中央位置資料庫的位置。如需詳細資訊，請參閱部署文件中的＜ <a href="lync-server-2013-publish-the-location-database.md">在 Lync Server 2013 中發佈位置資料庫</a>＞。
+
 
 
 本節說明在規劃更新和維護位置資料庫時應要考量的事項。

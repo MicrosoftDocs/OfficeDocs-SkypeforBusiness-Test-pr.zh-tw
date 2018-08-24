@@ -31,18 +31,9 @@ _**上次修改主題的時間：** 2012-09-21_
 
   - 已經針對每一個要啟用 企業語音的使用者指定和正規化唯一的主要電話號碼，並將它複製到 **msRTCSIP-line** 屬性。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 支援 E.164 號碼和非直接向內撥號 (DID) 號碼。非 DID 號碼可以用 <strong>&lt;E.164&gt;;ext=&lt;extension&gt;</strong> 格式或數字字串表示，條件是私人分機號碼在企業中是唯一的。例如，1001 這個私人號碼就可以用 <strong>+1425550100;ext=1001</strong> 或 <strong>1001</strong> 表示。以 <strong>1001</strong> 表示時，此私人號碼在整個企業中應該要是唯一的。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Lync Server 支援 E.164 號碼和非直接向內撥號 (DID) 號碼。非 DID 號碼可以用 <strong>&lt;E.164&gt;;ext=&lt;extension&gt;</strong> 格式或數字字串表示，條件是私人分機號碼在企業中是唯一的。例如，1001 這個私人號碼就可以用 <strong>+1425550100;ext=1001</strong> 或 <strong>1001</strong> 表示。以 <strong>1001</strong> 表示時，此私人號碼在整個企業中應該要是唯一的。
+    
 
 
   - 部署 企業語音的系統管理員應該是 RTCUniversalServerAdmins 群組的成員。
@@ -57,11 +48,9 @@ _**上次修改主題的時間：** 2012-09-21_
     
       - 執行下列其中一個作業系統：
         
-          -   
-            64 位元版本的 Windows Server 2008 Standard 作業系統
+           64 位元版本的 Windows Server 2008 Standard 作業系統
         
-          -   
-            64 位元版本的 Windows Server 2008 Enterprise 作業系統
+           64 位元版本的 Windows Server 2008 Enterprise 作業系統
 
   - 如果公用交換電話網路 (PSTN) 或專用交換機 (PBX) 連線是藉由分時多工 (TDM) 連線而建立，則可以部署一個或多個 PSTN 閘道 (如果連線是藉由 SIP 主幹建立，則不需要 PSTN 閘道)。
 

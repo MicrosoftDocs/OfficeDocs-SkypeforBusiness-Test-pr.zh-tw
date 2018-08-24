@@ -37,5 +37,5 @@ Cmdlet New-CsClientPolicy 會針對 Lync Server 2013 提供的功能，定義用
 
 #### 其他資源
 
-[New-CsClientPolicy](new-csclientpolicy.md)
+[New-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy)
 

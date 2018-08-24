@@ -15,18 +15,9 @@ ms.translationtype: HT
 
 _**上次修改主題的時間：** 2013-11-07_
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您執行 [憑證精靈] 時，請確定您用來登入的帳戶，是具有您要使用之憑證範本類型適當權限的群組成員。根據預設， Lync Server 2013 憑證要求會使用 Web 伺服器憑證範本。如果您要以 RTCUniversalServerAdmins 群組成員的帳戶使用此範本來要求憑證，請確定群組具有使用該範本所需的註冊權限。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 當您執行 [憑證精靈] 時，請確定您用來登入的帳戶，是具有您要使用之憑證範本類型適當權限的群組成員。根據預設， Lync Server 2013 憑證要求會使用 Web 伺服器憑證範本。如果您要以 RTCUniversalServerAdmins 群組成員的帳戶使用此範本來要求憑證，請確定群組具有使用該範本所需的註冊權限。
+
 
 
 每部 Edge Server 的內部介面均需要單一憑證。該內部介面的憑證既可以由內部企業憑證授權單位 (CA) 核發，又可以由公用 CA 核發。若在您的組織內部署了一個內部 CA，則透過使用該內部 CA 為內部介面核發憑證，可以省去使用公用憑證的費用。您可以使用內部 Windows Server 2008 CA 或 Windows Server 2008 R2 CA 建立這些憑證。
@@ -49,20 +40,11 @@ _**上次修改主題的時間：** 2013-11-07_
 
 如果使用 Edge Server 的網站超過一個 (也就是多重網站邊緣拓撲)，或者在不同的負載平衡器後方部署了不同組的 Edge Server，就需要針對具有 Edge Server 的每個網站以及部署在不同的負載平衡器後方的每組 Edge Server 執行這些步驟。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節程序的步驟使用 Windows Server 2008 CA、 Windows Server 2008 R2 CA、 Windows Server 2012 CA，或 Windows Server 2012 R2 CA，來為每部 Edge Server 建立憑證。如需任何其他 CA 的逐步指引，請參閱該 CA 的相關文件。根據預設，所有通過驗證的使用者皆有適當的使用者權限來要求憑證。<br />
-本節中的程序會將在 Edge Server 上建立憑證要求作為 Edge Server 部署程序的一部分。可以使用前端伺服器建立憑證要求。這樣做之後，您可以及早在計劃和部署程序期間完成憑證要求，然後再開始部署 Edge Server。為此，您必須確保您要求的憑證已使用可匯?的私密金鑰來定義。<br />
-本節中的程序描述了對憑證使用 .cer 和 .p7b 檔案。若您使用的是其他類型的檔案，請根據需要修改這些程序。</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 本節程序的步驟使用 Windows Server 2008 CA、 Windows Server 2008 R2 CA、 Windows Server 2012 CA，或 Windows Server 2012 R2 CA，來為每部 Edge Server 建立憑證。如需任何其他 CA 的逐步指引，請參閱該 CA 的相關文件。根據預設，所有通過驗證的使用者皆有適當的使用者權限來要求憑證。<br />
+> 本節中的程序會將在 Edge Server 上建立憑證要求作為 Edge Server 部署程序的一部分。可以使用前端伺服器建立憑證要求。這樣做之後，您可以及早在計劃和部署程序期間完成憑證要求，然後再開始部署 Edge Server。為此，您必須確保您要求的憑證已使用可匯?的私密金鑰來定義。<br />
+> 本節中的程序描述了對憑證使用 .cer 和 .p7b 檔案。若您使用的是其他類型的檔案，請根據需要修改這些程序。
+
 
 
 ## 使用 certsrv 網站為內部介面下載 CA 憑證鏈結
@@ -77,18 +59,9 @@ _**上次修改主題的時間：** 2013-11-07_
     
         https://ca01.contoso.net/certsrv
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若您使用的是 Windows Server 2008 或 Windows Server 2008 R2 企業 CA，則必須使用 https，而非 http。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若您使用的是 Windows Server 2008 或 Windows Server 2008 R2 企業 CA，則必須使用 https，而非 http。
+    
 
 
 3.  在發行 CA 的 certsrv 網頁上，在 \[選取工作\] 下方，按一下 \[下載 CA 憑證、憑證鏈結或 CRL\] 。
@@ -99,18 +72,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
 6.  將 .p7b 檔案儲存到伺服器的硬碟機上，然後將它複製到每一部 Edge Server 上的資料夾。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>.p7b 檔案包含憑證路徑中的所有憑證。如果要檢視憑證路徑，請開啟伺服器憑證，然後按一下憑證路徑。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > .p7b 檔案包含憑證路徑中的所有憑證。如果要檢視憑證路徑，請開啟伺服器憑證，然後按一下憑證路徑。
+    
 
 
 ## 使用 MMC 為內部介面匯出 CA 憑證鏈結
@@ -157,19 +121,9 @@ _**上次修改主題的時間：** 2013-11-07_
 
 1.  在一部 Edge Server 上，開始 \[部署精靈\]，然後前往 **\[步驟 3：要求、安裝或指派憑證\]** ，再按一下 **\[執行\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在集區中的單一位置有多部 Edge Server，則可以在任何一部 Edge Server 上執行「憑證精靈」。<br />
-    首次執行步驟 3 之後，按鈕將變更為 <strong>[再執行一次]</strong> ，要求、安裝並指派了所有的必要憑證之後，才會顯示一個綠色核取記號，表示成功完成工作。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您在集區中的單一位置有多部 Edge Server，則可以在任何一部 Edge Server 上執行「憑證精靈」。<br />
+    > 首次執行步驟 3 之後，按鈕將變更為 <strong>[再執行一次]</strong> ，要求、安裝並指派了所有的必要憑證之後，才會顯示一個綠色核取記號，表示成功完成工作。
 
 
 2.  在 \[可用憑證工作\] 頁面上，按一下 \[建立新憑證要求\] 。
@@ -188,18 +142,9 @@ _**上次修改主題的時間：** 2013-11-07_
     
       - 在 **\[位元長度\]** 中，指定位元長度 (預設值通常是 **2048** )。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>位元長度越長越安全，但是可能會對速度造成負面影響。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!NOTE]  
+        > 位元長度越長越安全，但是可能會對速度造成負面影響。
+        
     
       - 如果憑證需要是可匯?的憑證，則請選取 **\[將憑證私密金鑰標示為可匯出\]** 核取方塊。
 
@@ -255,36 +200,18 @@ _**上次修改主題的時間：** 2013-11-07_
 
 6.  按兩下 \[憑證 (本機電腦)\] 以展開憑證存放區。按兩下 \[個人\] ，然後按兩下 \[憑證\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果本機電腦的憑證個人存放區中沒有憑證，則匯入的憑證就沒有關聯的私密金鑰。請檢閱要求和匯入步驟。如果問題仍持續存在，請與您的憑證授權單位管理員或提供者連絡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果本機電腦的憑證個人存放區中沒有憑證，則匯入的憑證就沒有關聯的私密金鑰。請檢閱要求和匯入步驟。如果問題仍持續存在，請與您的憑證授權單位管理員或提供者連絡。
+    
 
 
 7.  在本機電腦的憑證個人存放區中，用滑鼠右鍵按一下您要匯出的憑證。按一下 \[所有工作\] ，按一下 \[匯出\] 。
 
 8.  在 \[憑證匯出精靈\] 中，按 \[下一步\] 。選取 \[是，匯出私密金鑰\] 。按 \[下一步\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 [是，匯出私密金鑰] 選項無法使用，則與該憑證關聯的私密金鑰就不會標示為可匯出。您需要重新申請憑證，確定憑證標示為允許匯出私密金鑰，才能繼續匯出。請與您的憑證授權單位管理員或提供者連絡。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果 [是，匯出私密金鑰] 選項無法使用，則與該憑證關聯的私密金鑰就不會標示為可匯出。您需要重新申請憑證，確定憑證標示為允許匯出私密金鑰，才能繼續匯出。請與您的憑證授權單位管理員或提供者連絡。
+    
 
 
 9.  在 \[匯出檔案格式\] 對話方塊中，選取 \[個人資訊交換 – PKCS\#12 (.PFX)\]，然後選取下列項目：
@@ -293,18 +220,8 @@ _**上次修改主題的時間：** 2013-11-07_
     
       - 匯出所有延伸內容
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>從 Edge Server 匯出憑證時，不要選取 [如果匯出成功即刪除私密金鑰] 。選取這個選項時，必須將憑證和私密金鑰匯入這個 Edge Server。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> 從 Edge Server 匯出憑證時，不要選取 [如果匯出成功即刪除私密金鑰] 。選取這個選項時，必須將憑證和私密金鑰匯入這個 Edge Server。
     
     按 \[下一步\] 繼續。
 

@@ -106,20 +106,11 @@ _**上次修改主題的時間：** 2015-05-04_
 </table>
 
 
-集區啟動後的後續時間，必須要有 85% 的伺服器啟動 (如先前表格所示)。若無法啟動此數目的伺服器 (但有足夠的伺服器可啟動，讓您不至於面臨仲裁遺失的狀態)，您可以使用 **Reset-CsPoolRegistrarState –ResetType QuorumLossRecovery** cmdlet，讓集區從此路由群組層級仲裁遺失中復原並有所進展。若需更多如何使用 cmdlet 的相關資訊，請參閱[Reset-CsPoolRegistrarState](reset-cspoolregistrarstate.md)。
+集區啟動後的後續時間，必須要有 85% 的伺服器啟動 (如先前表格所示)。若無法啟動此數目的伺服器 (但有足夠的伺服器可啟動，讓您不至於面臨仲裁遺失的狀態)，您可以使用 **Reset-CsPoolRegistrarState –ResetType QuorumLossRecovery** cmdlet，讓集區從此路由群組層級仲裁遺失中復原並有所進展。若需更多如何使用 cmdlet 的相關資訊，請參閱[Reset-CsPoolRegistrarState](https://docs.microsoft.com/en-us/powershell/module/skype/Reset-CsPoolRegistrarState)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於 Lync Server 使用主要 SQL 資料庫作為見證，因此如果您關閉主要資料庫並切換至鏡像複本，然後關閉足夠的 前端伺服器，則根據先前的表格，執行的伺服器會不足，而整個集區將會關閉。如需詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/?linkid=393672">資料庫鏡像見證</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由於 Lync Server 使用主要 SQL 資料庫作為見證，因此如果您關閉主要資料庫並切換至鏡像複本，然後關閉足夠的 前端伺服器，則根據先前的表格，執行的伺服器會不足，而整個集區將會關閉。如需詳細資訊，請參閱<a href="http://go.microsoft.com/fwlink/?linkid=393672">資料庫鏡像見證</a>。
+
 
 
 ## 集區層級仲裁遺失
@@ -201,7 +192,7 @@ _**上次修改主題的時間：** 2015-05-04_
 
   - 如果上個修補升級網域停滯或沒有重新啟動，請不要前往下一個升級網域。如果升級中有任何伺服器無法啟動，也請這樣處理。執行 **Get-CsPoolFabricState** 以確保所有路由群組都擁有主要路由群組，及至少一個次要路由群組；這能確認是否所有使用者都擁有服務。
 
-  - 如果只有部分使用者擁有服務，請搭配 –Verbose 選項執行 **Get-CsPoolFabricState**，檢查出缺少複本的路由群組。請勿將重新啟動整個集區做為疑難排解的第一個步驟。如需更多關於此 cmdlet 的資訊，請參閱[Get-CsPoolFabricState](get-cspoolfabricstate.md)。
+  - 如果只有部分使用者擁有服務，請搭配 –Verbose 選項執行 **Get-CsPoolFabricState**，檢查出缺少複本的路由群組。請勿將重新啟動整個集區做為疑難排解的第一個步驟。如需更多關於此 cmdlet 的資訊，請參閱[Get-CsPoolFabricState](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPoolFabricState)。
 
   - 請確定 \[事件檢視器 \] 或 \[效能監視器\] 視窗的所有執行個體都已關閉，以進行 Windows Fabric 安裝/解除安裝。
 

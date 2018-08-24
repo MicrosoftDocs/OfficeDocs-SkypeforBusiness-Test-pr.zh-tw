@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-07-11_
 
 下節說明如何設定具備累計更新 (2013 年 7 月) 的 Lync Server 2013 支援被動式驗證。啟用後，啟用了雙因素驗證的 Lync 使用者將需要使用實體或虛擬智慧卡和有效的 PIN，透過具備累計更新 (2013 年 7 月) 的 Lync 2013 用戶端登入。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>我們極力建議客戶於服務層級針對登錄器和 Web 服務啟用被動式驗證。如果於全域層級針對登錄器和 Web 服務啟用被動式驗證，可能導致未使用具備累計更新 (2013 年 7 月) 之 Lync 2013 桌面用戶端登入的使用者於整個組織發生驗證失敗情形。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 我們極力建議客戶於服務層級針對登錄器和 Web 服務啟用被動式驗證。如果於全域層級針對登錄器和 Web 服務啟用被動式驗證，可能導致未使用具備累計更新 (2013 年 7 月) 之 Lync 2013 桌面用戶端登入的使用者於整個組織發生驗證失敗情形。
+
 
 
 ## Web 服務組態
@@ -45,18 +36,8 @@ _**上次修改主題的時間：** 2013-07-11_
     
         New-CsWebServiceConfiguration -Identity "Service:WebServer:LyncPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>WsFedPassiveMetadataUri FQDN 的值為 AD FS 2.0 的 Federation Service 名稱。您可以在 AD FS 2.0 管理主控台上，從瀏覽窗格中在 <strong>[服務]</strong> 上按一下滑鼠右鍵，接著選取 <strong>[編輯 Federation Service 內容]</strong>，找出 Federation Service 名稱值。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > WsFedPassiveMetadataUri FQDN 的值為 AD FS 2.0 的 Federation Service 名稱。您可以在 AD FS 2.0 管理主控台上，從瀏覽窗格中在 <strong>[服務]</strong> 上按一下滑鼠右鍵，接著選取 <strong>[編輯 Federation Service 內容]</strong>，找出 Federation Service 名稱值。
 
 
 4.  執行下列命令，確認已正確設定 UseWsFedPassiveAuth 和 WsFedPassiveMetadataUri 值：
@@ -81,11 +62,14 @@ _**上次修改主題的時間：** 2013-07-11_
 
 1.  從 Lync Server 管理命令介面 命令列執行下列命令，為每個將啟用被動式驗證且具備累計更新 (2013 年 7 月) 的 Lync Server 2013 Edge 集區、Enterprise 集區和 Standard Edition 伺服器建立新的 Proxy 組態：
     
-        New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com" 
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
-    
-        New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com" 
-        -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
+    New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com" 
+    -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
+    ```
+    New-CsProxyConfiguration -Identity "Service:Registrar:LyncPool01.contoso.com" 
+    -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False
+    ```
 
 2.  執行下列命令，確認所有其他 Proxy 驗證類型都已成功停用：
     

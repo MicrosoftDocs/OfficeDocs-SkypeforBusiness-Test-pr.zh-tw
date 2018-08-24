@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 您可以使用 Windows PowerShell 和 **New-CsDeviceUpdateConfiguration** Cmdlet 建立裝置更新組態設定 (只在網站範圍)，以及使用 **Set-CsDeviceUpdateConfiguration** Cmdlet 進行修改。可從 Lync Server 2013 管理命令介面或 Windows PowerShell 遠端工作階段執行這些 Cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</a>。
+
 
 
 
@@ -52,5 +43,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         New-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupInterval "21.00:00:00" -LogFlushInterval "00:30:00"
 
-如需修改現有裝置組態設定的詳細資訊，請參閱 [Set-CsDeviceUpdateConfiguration](set-csdeviceupdateconfiguration.md) Cmdlet 的說明主題。如需建立組態設定集合的詳細資訊，請參閱＜[New-CsDeviceUpdateConfiguration](new-csdeviceupdateconfiguration.md)＞ Cmdlet 的說明主題。
+如需修改現有裝置組態設定的詳細資訊，請參閱 [Set-CsDeviceUpdateConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsDeviceUpdateConfiguration) Cmdlet 的說明主題。如需建立組態設定集合的詳細資訊，請參閱＜[New-CsDeviceUpdateConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsDeviceUpdateConfiguration)＞ Cmdlet 的說明主題。
 

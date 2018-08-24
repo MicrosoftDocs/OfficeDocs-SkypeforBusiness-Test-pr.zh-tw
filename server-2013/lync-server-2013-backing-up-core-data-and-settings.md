@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-04-23_
 
 下列程序會使用 Lync Server 管理命令介面 Cmdlet 來建立核心服務之設定和資料的備份檔。如需本節所使用工具的詳細資訊，包括其所在位置，請參閱＜[備份和還原需求：工具和權限](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md)＞。如需備份封存和監控資料的詳細資訊，請參閱＜[備份封存資料庫和監控資料庫](lync-server-2013-backing-up-archiving-and-monitoring-databases.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>本節的步驟主要是備份中央管理存放區，包括封存和監控的設定及組態。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 本節的步驟主要是備份中央管理存放區，包括封存和監控的設定及組態。
+
 
 
 您可以本機或遠端執行本節中說明的 Cmdlet。
@@ -49,18 +40,9 @@ _**上次修改主題的時間：** 2014-04-23_
     
         Export-CsConfiguration -FileName "C:\Config.zip"
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此步驟會將您的 Lync Server 拓撲、原則及組態設定匯出至檔案。在備份拓撲資料部分，無需其他步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 此步驟會將您的 Lync Server 拓撲、原則及組態設定匯出至檔案。在備份拓撲資料部分，無需其他步驟。
+    
 
 
 5.  將中央管理存放區設定檔備份複製到 $Backup\\。

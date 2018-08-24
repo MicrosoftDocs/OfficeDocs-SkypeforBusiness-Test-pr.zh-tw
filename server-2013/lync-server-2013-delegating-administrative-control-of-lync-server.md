@@ -49,7 +49,7 @@ _**上次修改主題的時間：** 2013-02-22_
 
 7.  在 **\[內容\]** 對話方塊中，按一下 **\[確定\]** 。
 
-若要驗證是否已指派 RBAC 角色，請使用 [Get-CsAdminRoleAssignment](get-csadminroleassignment.md) Cmdlet，將使用者的 SamAccountName (Active Directory 登入名稱) 傳遞給此 Cmdlet。例如，從 Lync Server 管理命令介面中執行此命令：
+若要驗證是否已指派 RBAC 角色，請使用 [Get-CsAdminRoleAssignment](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsAdminRoleAssignment) Cmdlet，將使用者的 SamAccountName (Active Directory 登入名稱) 傳遞給此 Cmdlet。例如，從 Lync Server 管理命令介面中執行此命令：
 
     Get-CsAdminRoleAssignment  -Identity "kenmyer"
 

@@ -17,18 +17,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
 執行 Lync Server 以及需要憑證的內部伺服器，包含 Standard Edition Server、Enterprise Edition 前端伺服器、中繼伺服器和 Director。下表顯示這些伺服器的憑證需求。您可以使用 Lync Server 憑證精靈來要求這些憑證。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>與 前端集區、 前端伺服器或 Director 上簡單 URL 相關聯的主體替代名稱支援萬用字元憑證。如需萬用字元憑證支援的詳細資訊，請參閱＜ <a href="lync-server-2013-wildcard-certificate-support.md">Lync Server 2013 中的萬用字元憑證支援</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 與 前端集區、 前端伺服器或 Director 上簡單 URL 相關聯的主體替代名稱支援萬用字元憑證。如需萬用字元憑證支援的詳細資訊，請參閱＜ <a href="lync-server-2013-wildcard-certificate-support.md">Lync Server 2013 中的萬用字元憑證支援</a>＞。
 
 
 雖然建議內部伺服器使用內部企業憑證授權單位 (CA)，但您也可以使用公用 CA。有些公用 CA 提供的憑證符合整合通訊 (UC) 憑證的特定需求，而且也與 Microsoft 合作以確保其憑證適用於 Lync Server 憑證精靈，請參閱 Microsoft 知識庫文章 929395＜Exchange Server 和 Communications Server 的整合通訊憑證合作夥伴＞，網址為 [http://go.microsoft.com/fwlink/?linkid=202834\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=202834%26clcid=0x404)。
@@ -41,32 +31,14 @@ _**上次修改主題的時間：** 2015-03-09_
 
 請注意，當您使用憑證精靈要求憑證時，會自動設定伺服器增強金鑰使用方法 (EKU)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>每個憑證易記名稱在電腦存放區中都必須是唯一的。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 每個憑證易記名稱在電腦存放區中都必須是唯一的。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您已在您的 DNS 中設定 sipinternal.contoso.com 或 sipexternal.contoso.com，則必須將其新增至憑證的主體替代名稱。</td>
-</tr>
-</tbody>
-</table>
+
+> [!NOTE]  
+> 如果您已在您的 DNS 中設定 sipinternal.contoso.com 或 sipexternal.contoso.com，則必須將其新增至憑證的主體替代名稱。
+
 
 
 ### Standard Edition Server 的憑證

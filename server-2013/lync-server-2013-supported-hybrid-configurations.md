@@ -52,37 +52,20 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>根據 Outlook 行事曆的空閒/忙碌資訊發佈狀態</p></li>
 <li><p>連絡人清單 (透過整合連絡人存放區)</p>
 <p>如需詳細資訊，請參閱＜<a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">設定 Microsoft Lync Server 2013 使用整合連絡人存放區</a>＞</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要有 Exchange 2013。<br />
-需要 Lync 2013 桌面用戶端。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要有 Exchange 2013。<br />
+> 需要 Lync 2013 桌面用戶端。
 
 </div></li>
 <li><p>Lync 2013 用戶端和 Lync Web App 中的高解析度連絡人相片。</p>
 <p>如需詳細資訊，請參閱＜<a href="lync-server-2013-configuring-the-use-of-high-resolution-photos.md">設定在 Microsoft Lync Server 2013 中使用高解析度相片</a>＞</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要有 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]    
+> 需要有 Exchange 2013。
+
 
 </div></li>
 <li><p>會議委派</p>
@@ -90,35 +73,19 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>未接交談記錄和通話記錄會寫入使用者的 Exchange 信箱。</p></li>
 <li><p>Exchange 中的封存內容 (IM 和會議)</p>
 <p>如需詳細資訊，請參閱＜<a href="lync-server-2013-deployment-checklist-for-archiving.md">Lync Server 2013 中封存的部署檢查單</a>＞</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要有 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要有 Exchange 2013。
+
 
 </div></li>
 <li><p>搜尋封存的內容</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要有 Exchange 2013。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要有 Exchange 2013。
+
 
 </div></li>
 <li><p>語音信箱</p>
@@ -136,19 +103,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>在行動用戶端中加入線上會議</p></li>
 <li><p>根據 Outlook 行事曆的空閒/忙碌資訊發佈狀態</p></li>
 <li><p>連絡人清單 (透過整合連絡人存放區)。如需詳細資訊，請參閱＜ <a href="lync-server-2013-configuring-lync-server-to-use-the-unified-contact-store.md">設定 Microsoft Lync Server 2013 使用整合連絡人存放區</a>＞</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>僅限 Lync Server 2013。需要 Lync 2013 桌面用戶端。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 僅限 Lync Server 2013。需要 Lync 2013 桌面用戶端。
+
 
 </div></li>
 <li><p>Lync 2013 用戶端和 Lync Web App 中的高解析度連絡人相片。</p>
@@ -170,19 +129,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>行動用戶端中的 IM/目前狀態</p></li>
 <li><p>未接交談記錄和通話記錄會寫入使用者的 Exchange 信箱。</p></li>
 <li><p>Lync 2013 用戶端中的高解析度連絡人相片。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要有 Microsoft Exchange Server 2013。這在使用者位於 商務用 Skype Online 的 Lync Web App 中不受支援。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要有 Microsoft Exchange Server 2013。這在使用者位於 商務用 Skype Online 的 Lync Web App 中不受支援。
+
 
 </div></li>
 <li><p>在行動用戶端中加入線上會議</p></li>
@@ -200,19 +151,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>根據 Outlook 行事曆的空閒/忙碌資訊發佈狀態</p></li>
 <li><p>未接交談記錄和通話記錄會寫入使用者的 Exchange 信箱。</p></li>
 <li><p>連絡人清單 (透過整合連絡人存放區)</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>需要 Lync Server 2013 用戶端</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 需要 Lync Server 2013 用戶端
+
 
 </div></li>
 <li><p>Lync 2013 用戶端和 Lync Web App 中的高解析度連絡人相片。</p></li>

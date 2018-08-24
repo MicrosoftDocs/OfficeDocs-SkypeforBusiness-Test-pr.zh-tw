@@ -55,7 +55,7 @@ To run this check using an actual user account, you must create a Windows PowerS
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsDialInConferencing -TargetFqdn atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsDialInConferencing](test-csdialinconferencing.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsDialInConferencing](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsDialInConferencing) cmdlet.
 
 ## Determining success or failure
 

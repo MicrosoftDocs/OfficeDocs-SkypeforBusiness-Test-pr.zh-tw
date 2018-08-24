@@ -41,26 +41,17 @@ _**上次修改主題的時間：** 2013-01-30_
 
 依工作而定，設定群組來電接聽需要下列任一系統管理角色：
 
-  - **CsVoiceAdministrator：**此系統管理員角色可以建立、設定和管理所有語音相關設定和原則。
+  - **CsVoiceAdministrator：** 此系統管理員角色可以建立、設定和管理所有語音相關設定和原則。
 
-  - **CsUserAdministrator：**此系統管理員角色可以為使用者啟用群組來電接聽。其也具有所有語音設定的唯讀檢視存取權。
+  - **CsUserAdministrator：** 此系統管理員角色可以為使用者啟用群組來電接聽。其也具有所有語音設定的唯讀檢視存取權。
 
-  - **CsServerAdministrator：**此系統管理員角色可以管理、監視和疑難排解伺服器及服務問題。
+  - **CsServerAdministrator：** 此系統管理員角色可以管理、監視和疑難排解伺服器及服務問題。
 
-  - **CsAdministrator：**此系統管理員角色可以執行 CsVoiceAdministrator 、CsServerAdministrator 和 CsUserAdministrator 的所有工作。
+  - **CsAdministrator：** 此系統管理員角色可以執行 CsVoiceAdministrator 、CsServerAdministrator 和 CsUserAdministrator 的所有工作。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需管理權限的詳細資訊，請參閱規劃文件中的＜<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需管理權限的詳細資訊，請參閱規劃文件中的＜<a href="lync-server-2013-planning-for-role-based-access-control.md">在 Lync Server 2013 中規劃角色型存取控制</a>＞。
+
 
 
 ## 請參閱

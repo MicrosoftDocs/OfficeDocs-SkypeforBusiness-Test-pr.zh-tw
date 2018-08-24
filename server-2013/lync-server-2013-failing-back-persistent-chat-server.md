@@ -29,25 +29,12 @@ _**上次修改主題的時間：** 2014-02-05_
 
 1.  透過 Lync Server 管理命令介面使用 `Set-CsPersistentChatActiveServer` Cmdlet，從 常設聊天室伺服器 動態伺服器清單清除所有伺服器。這樣會在容錯回復期間讓所有 常設聊天室伺服器 停止連線至 MGC 資料庫和 Mgccomp 資料庫。
     
-    <table>
-    <colgroup>
-    <col style="width: 100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>次要 常設聊天室伺服器 後端伺服器上的 SQL Server 代理程式應當在權限帳戶下執行。具體來說，帳戶必須包括：
-    <ul>
-    <li><p>對備份所在位置之網路共用的讀取存取權。</p></li>
-    <li><p>對備份複製目的位置之特定本機目錄的寫入存取權。</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+	> 次要 常設聊天室伺服器 後端伺服器上的 SQL Server 代理程式應當在權限帳戶下執行。具體來說，帳戶必須包括：
+    > <ul>
+    > <li><p>對備份所在位置之網路共用的讀取存取權。</p></li>
+    > <li><p>對備份複製目的位置之特定本機目錄的寫入存取權。</p></li>
+    > </ul>
 
 
 2.  停用備份 MGC 資料庫上的鏡像：
@@ -106,23 +93,14 @@ _**上次修改主題的時間：** 2014-02-05_
 
 6.  設定 常設聊天室伺服器 作用中的伺服器。在 Lync Server 管理命令介面使用 **Set-CsPersistentChatActiveServer** Cmdlet 來設定作用中伺服器的清單。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所有作用中的伺服器必須位於與新主要資料庫相同的資料中心，或位於具有低延遲/高頻寬資料庫連線的資料中心內。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 所有作用中的伺服器必須位於與新主要資料庫相同的資料中心，或位於具有低延遲/高頻寬資料庫連線的資料中心內。
+    
 
 
 若樣將集區還原至其正常狀態，請執行下列 Windows PowerShell 命令：
 
     Set-CsPersistentChatState -Identity "service: lyncpc.dci.discovery.com" -PoolState Normal
 
-如需詳細資訊，請參閱 [Set-CsPersistentChatState](set-cspersistentchatstate.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Set-CsPersistentChatState](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPersistentChatState) Cmdlet 的說明主題。
 

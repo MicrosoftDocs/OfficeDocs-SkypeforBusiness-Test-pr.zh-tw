@@ -106,5 +106,5 @@ At that point, you check the value of the Pattern property (which is a [regular 
 
 #### 其他資源
 
-[Test-CsTrunkConfiguration](test-cstrunkconfiguration.md)
+[Test-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsTrunkConfiguration)
 

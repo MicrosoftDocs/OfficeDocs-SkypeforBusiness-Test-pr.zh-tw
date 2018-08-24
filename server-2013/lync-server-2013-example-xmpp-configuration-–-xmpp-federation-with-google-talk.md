@@ -37,18 +37,8 @@ _**上次修改主題的時間：** 2014-04-22_
 
 7.  在 Edge Server 的 \[ Lync Server 部署精靈\] 中，按一下 **\[步驟3: 要求、安裝或指派憑證\]** 旁的 **\[再執行一次\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您是第一次部署 Edge Server，則會顯示 [執行]，而非 [再執行一次]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您是第一次部署 Edge Server，則會顯示 [執行]，而非 [再執行一次]。
 
 
 8.  在 \[可用憑證工作\] 頁面上，按一下 \[建立新憑證要求\] 。
@@ -79,18 +69,8 @@ _**上次修改主題的時間：** 2014-04-22_
 
 18. 在 \[設定其他主體別名\] 頁面上，指定任何需要的其他主體別名。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有安裝 XMPP Proxy，預設會在 SAN 項目中填入網域名稱 (如 contoso.com)。如果您需要其他項目，請在此步驟中新增。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果有安裝 XMPP Proxy，預設會在 SAN 項目中填入網域名稱 (如 contoso.com)。如果您需要其他項目，請在此步驟中新增。
 
 
 19. 在 \[要求摘要\] 頁面上，檢閱要用來產生要求的憑證資訊。
@@ -103,9 +83,12 @@ _**上次修改主題的時間：** 2014-04-22_
 
 23. 接收、匯入和指派公用憑證之後，您必須停止並重新啟動 Edge Server 服務。 啟動 Lync Server 管理命令介面：依序按一下 \[開始\]、\[所有程式\]、\[Microsoft Lync Server 2013\] 和 \[Lync Server 管理命令介面\]。。在 Lync Server 管理命令介面 中輸入：
     
-        Stop-CsWindowsService
-    
-        Start-CsWindowsService
+    ```
+    Stop-CsWindowsService
+    ```
+    ```
+    Start-CsWindowsService
+    ```
 
 24. 若要設定 DNS 以用於 XMPP 同盟，您可以將下列 SRV 記錄新增至外部 DNS:\_xmpp-server.\_tcp.*\<domain name\>* SRV 記錄將解析至 Edge Server 的 Access Edge FQDN，且連接埠值為 5269
 

@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2013-02-20_
 
 3.  在 SIP 網域的主控台樹狀目錄中，展開 \[正向對應區域\] ，然後選取要安裝 Lync Server 2013 的 SIP 網域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您必須在已安裝或將要安裝 Lync Server 的 SIP 網域中，建立 DNS SRV 記錄。當您建立 SRV 記錄時，用於提供此服務欄位之主機的 FQDN，必須是 Edge 集區的外部 FQDN。例如，如果 Edge 集區的外部 FQDN 是 edge01.contoso.net，則輸入該值。這也必須在與 DNS 主機 (A) 記錄相同的網域中。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 您必須在已安裝或將要安裝 Lync Server 的 SIP 網域中，建立 DNS SRV 記錄。當您建立 SRV 記錄時，用於提供此服務欄位之主機的 FQDN，必須是 Edge 集區的外部 FQDN。例如，如果 Edge 集區的外部 FQDN 是 edge01.contoso.net，則輸入該值。這也必須在與 DNS 主機 (A) 記錄相同的網域中。
+    
 
 
 4.  用滑鼠右鍵按一下選取的網域，然後按一下 \[新增其他記錄\] 。
@@ -51,18 +42,9 @@ _**上次修改主題的時間：** 2013-02-20_
 
 9.  按一下 \[提供這項服務的主機\] ，然後輸入為信任的外部用戶端提供 Lync Server 2013 系統存取權之 Lync Server 2013  Edge 集區的完整網域名稱 (FQDN)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>網域也必須在您的 Exchange Online 設定中，設定為系統授權、接受的網域。如需詳細資訊，請參閱＜建立公認的網域＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=229762%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=229762&amp;clcid=0x404</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 網域也必須在您的 Exchange Online 設定中，設定為系統授權、接受的網域。如需詳細資訊，請參閱＜建立公認的網域＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=229762%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=229762&amp;clcid=0x404</a>。
+    
 
 
 10. 按一下 \[確定\] ，然後再按一下 \[完成\] 。

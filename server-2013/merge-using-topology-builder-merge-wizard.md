@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2012-10-02_
 
 5.  在 \[指定 Edge 類型\] 中，輸入 Edge Server 設定類型，然後按 \[下一步\] 。此範例使用 \[單一 Edge Server\] 選項。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>[擴充的 Edge 部署] 不是支援的設定。[擴充的 Edge Server] 必須先轉換為 [單一 Edge Server] 或 [負載平衡合併的 Edge] Server。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > [擴充的 Edge 部署] 不是支援的設定。[擴充的 Edge Server] 必須先轉換為 [單一 Edge Server] 或 [負載平衡合併的 Edge] Server。
+    
 
 
 6.  在 \[指定內部 Edge 設定\] 中，視需要輸入您 Edge 集區的內部 FQDN 與連接埠相關資訊，然後按 \[下一步\] 。
@@ -47,18 +38,9 @@ _**上次修改主題的時間：** 2012-10-02_
 
 7.  在 \[指定外部 Edge\] 中，為您的 Edge Server 輸入 Web 會議 FQDN 資訊。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在您按 [下一步] 之前，請先執行本程序的下一個步驟。請務必注意不要遺漏此步驟。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在您按 [下一步] 之前，請先執行本程序的下一個步驟。請務必注意不要遺漏此步驟。
+    
 
 
 8.  如果您打算使用舊版 Office Communications Server 2007 R2 Edge Server 進行同盟，請勾選 \[此 Edge 集區是用於同盟和公用 IM 連線\] 核取方塊。如果您已部署多部 Edge Server，當中只有一部會啟用同盟功能。如果您並未勾選此方塊，而是決定稍後再啟用同盟，則您必須再次執行 \[拓撲產生器合併精靈\] 並發行拓撲。
@@ -87,16 +69,7 @@ _**上次修改主題的時間：** 2012-10-02_
 
 17. 當 \[發行精靈\] 完成之後，按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請務必完成下一個主題： <a href="import-policies-and-settings.md">匯入原則與設定</a>，以確保舊版原則設定都已匯入至 Lync Server 2013。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 請務必完成下一個主題： <a href="import-policies-and-settings.md">匯入原則與設定</a>，以確保舊版原則設定都已匯入至 Lync Server 2013。
+    
 

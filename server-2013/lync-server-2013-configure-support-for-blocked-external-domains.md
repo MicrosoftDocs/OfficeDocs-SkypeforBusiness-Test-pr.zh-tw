@@ -33,20 +33,11 @@ _**上次修改主題的時間：** 2012-09-08_
     
       - 在 **\[網域名稱 (或 FQDN)\]** 中，輸入您要封鎖的同盟協力廠商網域名稱。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>名稱長度不可超過 256 個字元。<br />
-        搜尋同盟協力廠商網域名稱時會執行尾碼比對。例如，如果輸入 <strong>contoso.com</strong> ，搜尋也會傳回網域 <strong>it.contoso.com</strong> 。<br />
-        不能同時封鎖又允許同一個同盟協力廠商網域。 Lync Server 2013 會防止這種狀況發生，所以您不必讓清單維持同步。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!Note]  
+        > 名稱長度不可超過 256 個字元。<br />
+        > 搜尋同盟協力廠商網域名稱時會執行尾碼比對。例如，如果輸入 <strong>contoso.com</strong> ，搜尋也會傳回網域 <strong>it.contoso.com</strong> 。<br />
+        > 不能同時封鎖又允許同一個同盟協力廠商網域。 Lync Server 2013 會防止這種狀況發生，所以您不必讓清單維持同步。
+
     
       - (選用) 在 **\[註解\]** 中，輸入您想與其他系統管理員分享的此設定相關資訊。
 

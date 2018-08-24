@@ -66,19 +66,11 @@ _**上次修改主題的時間：** 2015-03-09_
 </ol></li>
 <li><p>您可以選擇性使用 Lync Server 管理命令介面來建立預先定義的回應群組營業時間與假日。</p></li>
 <li><p>使用 回應群組設定工具或 Lync Server 管理命令介面來建立工作流程 (群組搜尋或互動語音回應 (IVR) 通話流程)，包括自訂的回應群組營業時間與假日。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以透過 Lync Server 控制台來存取 回應群組設定工具。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 您可以透過 Lync Server 控制台來存取 回應群組設定工具。
+
 
 </div></li>
 </ol></td>

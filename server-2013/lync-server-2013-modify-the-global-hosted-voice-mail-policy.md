@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2012-09-24_
 
 *全域*裝載語音信箱原則會隨 Lync Server 2013 一起安裝。您可以修改該原則以符合您的需求，但無法將它重新命名或刪除。若要修改全域原則，請使用 Set-CsHostedVoicemailPolicy Cmdlet，將參數設為適合您的特定部署的值。
 
-如需[Set-CsHostedVoicemailPolicy](set-cshostedvoicemailpolicy.md) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
+如需[Set-CsHostedVoicemailPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsHostedVoicemailPolicy) Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面文件。
 
 ## 修改全域裝載語音信箱原則
 
@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2012-09-24_
     
       - **Organization** 指定 Lync Server 使用者隸屬之 Exchange 承租人的逗號分隔清單。必須以主控之 Exchange UM 服務上的承租人的 FQDN 來指定每一個承租人。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在先前的範例 Cmdlet 中，“corp1.litwareinc.com” 值會取代可能已存在於 Organization 參數中的任何值。例如，如果原則已經包含組織的逗號分隔清單，則會取代完整清單。如果您要將某個組織新增至清單中，而非取代整個清單，請執行類似以下的命令。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 在先前的範例 Cmdlet 中，“corp1.litwareinc.com” 值會取代可能已存在於 Organization 參數中的任何值。例如，如果原則已經包含組織的逗號分隔清單，則會取代完整清單。如果您要將某個組織新增至清單中，而非取代整個清單，請執行類似以下的命令。
+    
     
         $a = Get-CsHostedVoicemailPolicy
         $a.Organization += ",corp3.litwareinc.com"

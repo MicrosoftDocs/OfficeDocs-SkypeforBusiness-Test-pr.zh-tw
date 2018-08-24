@@ -45,18 +45,9 @@ Your client computer must meet the following software requirements:
 
   - A fully configured Lync Server 2013 deployment.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Unified Communications Managed API (UCMA) 4.0 libraries are included in the installation package, so UCMA is not required and should not be installed on client computers.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft Unified Communications Managed API (UCMA) 4.0 libraries are included in the installation package, so UCMA is not required and should not be installed on client computers.
+
 
 
 ## Configuration Requirements

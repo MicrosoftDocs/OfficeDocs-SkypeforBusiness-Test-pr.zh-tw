@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 遵循下列步驟，可刪除個人識別碼 (PIN) 原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您無法刪除全域 PIN 原則。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您無法刪除全域 PIN 原則。
+
 
 
 ## 在 Lync Server 2013 控制台中刪除 PIN 原則
@@ -67,5 +58,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         et-CsPinPolicy | Where-Object {$_.AllowCommonPatterns -eq $True} | Remove-CsPinPolicy
 
-如需詳細資訊，請參閱 [Remove-CsPinPolicy](remove-cspinpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Remove-CsPinPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsPinPolicy) Cmdlet 的說明主題。
 

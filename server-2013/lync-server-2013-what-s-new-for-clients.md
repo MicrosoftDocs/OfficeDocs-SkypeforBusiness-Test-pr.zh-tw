@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-19_
 
 Microsoft Lync 2013 重新設計了使用者介面並新增了重要功能。對於管理者而言，用戶端現在包含於 Office 安裝程式中，在組織中部署 Office 及自訂用戶端時提供了更簡化的方法。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需 Lync 2013 使用者介面更新的圖示，請參閱＜ Lync 2013 的新功能＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=273885" class="uri">http://go.microsoft.com/fwlink/?linkid=273885</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需 Lync 2013 使用者介面更新的圖示，請參閱＜ Lync 2013 的新功能＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=273885" class="uri">http://go.microsoft.com/fwlink/?linkid=273885</a>。
+
 
 
 ## 與 Office 安裝程式整合
@@ -43,18 +34,9 @@ Lync 2013 用戶端及 Lync 2013 的線上會議增益集 (支援從 Outlook 訊
 
   - 使用安裝程式命令列選項
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 安裝程式不會解除安裝舊版的 Lync 或 Office Communicator。 Lync 2013 用戶端會與其他 Lync 或 Office Communicator 用戶端並存安裝。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Lync 2013 安裝程式不會解除安裝舊版的 Lync 或 Office Communicator。 Lync 2013 用戶端會與其他 Lync 或 Office Communicator 用戶端並存安裝。
+
 
 
 如需詳細資訊，請參閱＜[在 Lync Server 2013 中部署 Lync 用戶端](lync-server-2013-deploying-lync-clients.md)＞。

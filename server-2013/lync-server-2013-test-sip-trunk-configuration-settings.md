@@ -25,7 +25,7 @@ SIP 主幹組態設定定義了中繼伺服器與公用交換電話網路 (PSTN)
 
 當您安裝 Microsoft Lync Server 2013 時，系統會為您建立一組全域 SIP 主幹組態設定集合。此外，系統管理員可建立網站範圍或服務範圍 (僅針對 PSTN 閘道服務) 的自訂設定集合。系統管理員也可以使用 Test-CsTrunkConfiguration Cmdlet，確認主幹可以將使用者撥打的號碼轉換成閘道能夠處理的數字。
 
-若要測試主幹組態設定，只能以 Windows PowerShell 和 [Test-CsTrunkConfiguration](test-cstrunkconfiguration.md) Cmdlet 進行。此 Cmdlet 可以從 Lync Server 2013 管理命令介面或從 Windows PowerShell 的遠端工作階段執行。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
+若要測試主幹組態設定，只能以 Windows PowerShell 和 [Test-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsTrunkConfiguration) Cmdlet 進行。此 Cmdlet 可以從 Lync Server 2013 管理命令介面或從 Windows PowerShell 的遠端工作階段執行。如需使用遠端 Windows PowerShell 連線至 Lync Server 的詳細資料，請參閱 Lync Server Windows PowerShell 部落格的＜快速入門：使用遠端 PowerShell 管理 Microsoft Lync Server 2010＞(英文) 一文，網址為：[http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)。
 
 ## 測試主幹組態設定
 

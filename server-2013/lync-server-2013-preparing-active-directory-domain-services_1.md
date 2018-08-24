@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 Lync Server 部署精靈會引導您完成每項 Active Directory 準備工作。\[部署精靈\] 會執行 Lync Server 管理命令介面 Cmdlet。這項工具對於具有單一網域和單一樹系拓撲的環境，或是其他相似拓撲的環境，都很有用，
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以將 Lync Server 部署在網域控制站執行某些 32 位元版本作業系統的樹系或網域中 (如需詳細資訊，請參閱 <a href="lync-server-2013-active-directory-infrastructure-requirements.md">Lync Server 2013 的 Active Directory 基礎結構需求</a>)。不過，您無法在這些環境中以 Lync Server 部署精靈來執行架構、樹系與網域準備工作，因為 [部署精靈] 與支援檔案都只適用於 64 位元。但您可以在 32 位元的網域控制站上使用 ldifde.exe 與相關聯的 .ldf 檔案，進行架構、樹系與網域的準備工作。請參閱本主題稍後的＜使用 Cmdlet 和 Ldifde.exe＞一節。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您可以將 Lync Server 部署在網域控制站執行某些 32 位元版本作業系統的樹系或網域中 (如需詳細資訊，請參閱 <a href="lync-server-2013-active-directory-infrastructure-requirements.md">Lync Server 2013 的 Active Directory 基礎結構需求</a>)。不過，您無法在這些環境中以 Lync Server 部署精靈來執行架構、樹系與網域準備工作，因為 [部署精靈] 與支援檔案都只適用於 64 位元。但您可以在 32 位元的網域控制站上使用 ldifde.exe 與相關聯的 .ldf 檔案，進行架構、樹系與網域的準備工作。請參閱本主題稍後的＜使用 Cmdlet 和 Ldifde.exe＞一節。
+
 
 
 您可以使用 Lync Server 管理命令介面 Cmdlet，從遠端或在較複雜的環境執行工作。
@@ -43,66 +34,30 @@ Lync Server 部署精靈會引導您完成每項 Active Directory 準備工作�
 
   - Lync Server 核心元件 (OCScore.msi)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您打算使用 Lync Server 管理命令介面進行 Active Directory 準備工作，則必須先執行 Lync Server 部署精靈以安裝核心元件。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您打算使用 Lync Server 管理命令介面進行 Active Directory 準備工作，則必須先執行 Lync Server 部署精靈以安裝核心元件。
+    
 
 
   - Microsoft .NET Framework 4.5
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若為 Windows Server 2012 和 Windows Server 2012 R2，您可以使用 Server Manager 安裝並啟動 .NET Framework 4.5。如需詳細資訊，請參閱 <a href="lync-server-2013-additional-software-requirements.md">Lync Server 2013 的其他軟體需求</a>中的＜Microsoft .NET Framework 4.5＞。若為 Windows Server 2008 R2，請從 Microsoft 網站下載及安裝 <a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653">.Net Framework 4.5</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若為 Windows Server 2012 和 Windows Server 2012 R2，您可以使用 Server Manager 安裝並啟動 .NET Framework 4.5。如需詳細資訊，請參閱 <a href="lync-server-2013-additional-software-requirements.md">Lync Server 2013 的其他軟體需求</a>中的＜Microsoft .NET Framework 4.5＞。若為 Windows Server 2008 R2，請從 Microsoft 網站下載及安裝 <a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653">.Net Framework 4.5</a>。
+    
 
 
   - 遠端伺服器管理工具 (RSAT)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您在網域控制站以外的成員伺服器上執行 Active Directory 準備步驟，則需要某些 RSAT 工具。若為 Windows PowerShell，請從 Server Manager 中的 [AD DS] 和 [AD LDS 工具] 節點安裝 AD DS 嵌入式管理單元與命令列工具及 Active Directory 模組。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您在網域控制站以外的成員伺服器上執行 Active Directory 準備步驟，則需要某些 RSAT 工具。若為 Windows PowerShell，請從 Server Manager 中的 [AD DS] 和 [AD LDS 工具] 節點安裝 AD DS 嵌入式管理單元與命令列工具及 Active Directory 模組。
+    
 
 
   - Microsoft Visual C++ 11 可轉散發套件
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果電腦尚未安裝此必要套件，安裝程式會提示您加以安裝。此套件會隨附給您，您不需另行取得。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果電腦尚未安裝此必要套件，安裝程式會提示您加以安裝。此套件會隨附給您，您不需另行取得。
+    
 
 
   - Windows PowerShell 3.0 (64 位元)
@@ -219,18 +174,9 @@ Lync Server 部署精靈和 **Install-CsAdServerSchema** Cmdlet 中的 **\[準�
 
 4.  VersionSchema.ldf
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這四個 .ldf 檔案皆位於安裝媒體或下載位置的 \Support\Schema 目錄中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這四個 .ldf 檔案皆位於安裝媒體或下載位置的 \Support\Schema 目錄中。
+
 
 
 若要使用 Ldifde.exe 在作為架構主機的網域控制站上匯入這四個架構檔案，請使用下列格式：
@@ -241,18 +187,9 @@ Lync Server 部署精靈和 **Install-CsAdServerSchema** Cmdlet 中的 **\[準�
 
     ldifde -i -v -k -s DC1 -f ServerSchema.ldf -c DC=X "DC=contoso,DC=com" -j C:\BatchImportLogFile -b Administrator contoso password
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>只有當您以不同的使用者身分登入時，才應使用 b 參數。如需必要使用者權限的詳細資訊，請參閱本主題稍早的＜系統管理員的權限與角色＞一節。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 只有當您以不同的使用者身分登入時，才應使用 b 參數。如需必要使用者權限的詳細資訊，請參閱本主題稍早的＜系統管理員的權限與角色＞一節。
+
 
 
 若要使用 Ldifde.exe 在不是架構主機的網域控制站上匯入這四個架構檔案，請使用下列格式：

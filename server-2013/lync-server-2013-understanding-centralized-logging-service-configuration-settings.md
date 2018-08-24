@@ -25,18 +25,8 @@ _**上次修改主題的時間：** 2015-03-09_
 
     Get-CsClsConfiguration
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以定義 <code>-Identity</code> 與範圍來縮小或擴大組態設定的範圍，例如 &quot;Site:Redmond&quot; 只傳回網站 Redmond 的 CsClsConfiguration。如果要組態指定部分的詳細資料，可以將輸出輸送到另一個 Windows PowerShell Cmdlet。例如，要取得網站 &quot;Redmond&quot; 組態中定義之案例的詳細資訊，請輸入：<code>Get-CsClsConfiguration -Identity &quot;site:Redmond&quot; | Select-Object -ExpandPropery Scenarios</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 您可以定義 <code>-Identity</code> 與範圍來縮小或擴大組態設定的範圍，例如 &quot;Site:Redmond&quot; 只傳回網站 Redmond 的 CsClsConfiguration。如果要組態指定部分的詳細資料，可以將輸出輸送到另一個 Windows PowerShell Cmdlet。例如，要取得網站 &quot;Redmond&quot; 組態中定義之案例的詳細資訊，請輸入：<code>Get-CsClsConfiguration -Identity &quot;site:Redmond&quot; | Select-Object -ExpandPropery Scenarios</code>
 
 
 ![Get-CsClsConfiguration 輸出範例。](images/JJ688029.23f98ddc-fc48-499a-b6c5-752611f2a0b0(OCS.15).jpg "Get-CsClsConfiguration 輸出範例。")
@@ -132,8 +122,8 @@ Cmdlet 的結果會顯示集中記錄服務目前的組態。
 
 #### 其他資源
 
-[Set-CsClsConfiguration](set-csclsconfiguration.md)  
-[Remove-CsClsConfiguration](remove-csclsconfiguration.md)  
-[New-CsClsConfiguration](new-csclsconfiguration.md)  
-[Get-CsClsConfiguration](get-csclsconfiguration.md)
+[Set-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClsConfiguration)  
+[Remove-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsClsConfiguration)  
+[New-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClsConfiguration)  
+[Get-CsClsConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsClsConfiguration)
 

@@ -25,18 +25,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 2.  安裝 Lync Server 2013Persistent Chat Server 集區。它會是空的 (沒有類別、聊天室或增益集)。在您移轉舊版類別、聊天室或增益集之前，可以在 Lync Server 2013常設聊天室伺服器 部署中建立聊天室、類別或增益集。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請注意，這些新建立的項目可能會與您移轉的舊版項目衝突。請避免任何命名衝突，否則它們會在移轉舊版資料時遭到覆寫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請注意，這些新建立的項目可能會與您移轉的舊版項目衝突。請避免任何命名衝突，否則它們會在移轉舊版資料時遭到覆寫。
+    
 
 
 ## 準備要移轉的來源資料
@@ -45,34 +36,15 @@ _**上次修改主題的時間：** 2012-10-19_
 
 1.  備份 Lync Server 2010 群組聊天或 Office Communications Server 2007 R2  群組聊天的來源資料庫。如需關於備份 SQL Server 的詳細資訊，請參閱＜備份概觀 (SQL Server)＞，網址為 [http://go.microsoft.com/fwlink/?linkid=254851\&clcid=0x404](http://go.microsoft.com/fwlink/?linkid=254851%26clcid=0x404)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Active Directory 網域服務 應該相同。移轉的一項條件是，您不能移轉至位於不同部署 (更明確地說，就是位於不同 Active Directory 樹系) 的集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Active Directory 網域服務 應該相同。移轉的一項條件是，您不能移轉至位於不同部署 (更明確地說，就是位於不同 Active Directory 樹系) 的集區。
+    
 
 
 2.  檢查您的 Lync Server 2010 群組聊天 或 Office Communications Server 2007 R2  群組聊天聊天室和類別組態。對您現有舊版部署中之類別、聊天室或增益集進行的任何變更，將是以 群組聊天管理工具執行。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>對您 Lync Server 2013常設聊天室伺服器 部署中之類別、聊天室或增益集所做的任何變更，是以 Lync Server 控制台 或 Windows PowerShell Cmdlet 執行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 對您 Lync Server 2013常設聊天室伺服器 部署中之類別、聊天室或增益集所做的任何變更，是以 Lync Server 控制台 或 Windows PowerShell Cmdlet 執行。
     
     請遵循這些步驟，準備要移轉的舊版系統。
     
@@ -112,18 +84,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
 7.  您必須將所有上傳的檔案 (整個資料夾) XCOPY 到新的 Lync Server 2013常設聊天室檔案存放區。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync 2013 (用戶端) 不支援在聊天室裡上傳或檢視檔案。您仍然可以使用舊版用戶端在聊天室裡張貼及檢視檔案。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync 2013 (用戶端) 不支援在聊天室裡上傳或檢視檔案。您仍然可以使用舊版用戶端在聊天室裡張貼及檢視檔案。
+    
 
 
 8.  將 Lync Server 2010 群組聊天或 Office Communications Server 2007 R2  群組聊天查閱伺服器 URI 移植到 Lync Server 2013常設聊天室伺服器 連絡人物件。如果您的 Lync 2010 群組聊天或 Office Communicator 2007 R2  群組聊天 用戶端需要在移轉之後連線到最新的 Lync 2013常設聊天室 (用戶端)，而不進行任何用戶端組態變更，則需要執行下列步驟：
@@ -146,16 +109,7 @@ _**上次修改主題的時間：** 2012-10-19_
 
 13. 您現在可以開始透過新用戶端啟用 常設聊天室伺服器 功能。如需關於啟用 常設聊天室伺服器 的詳細資訊，請參閱 [在 Lync Server 2013 中部署常設聊天室伺服器](lync-server-2013-deploying-persistent-chat-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Lync Server 2013 可支援多個 Persistent Chat Server 集區。不過，我們支援移轉 Lync 2010 群組聊天或 Office Communications Server 2007 R2  群組聊天集區到單一 Lync Server 2013Persistent Chat Server 集區。您可以在部署中加入其他新的 Persistent Chat Server 集區，以滿足法規需要 (例如，將資料保存在特定地區內)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > Lync Server 2013 可支援多個 Persistent Chat Server 集區。不過，我們支援移轉 Lync 2010 群組聊天或 Office Communications Server 2007 R2  群組聊天集區到單一 Lync Server 2013Persistent Chat Server 集區。您可以在部署中加入其他新的 Persistent Chat Server 集區，以滿足法規需要 (例如，將資料保存在特定地區內)。
+    
 

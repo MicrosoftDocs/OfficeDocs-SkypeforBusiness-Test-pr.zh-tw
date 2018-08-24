@@ -49,7 +49,7 @@ _**上次修改主題的時間：** 2012-06-19_
 
   - [Lync Server 2013 中的網域準備所進行的變更](lync-server-2013-changes-made-by-domain-preparation.md)
 
-  - [Lync Server 2013 中 Grant-CsSetupPermission 進行的變更](lync-server-2013-changes-made-by-grant-cssetuppermission.md)
+  - [Lync Server 2013 中 Grant-CsSetupPermission 進行的變更](lync-server-2013-changes-made-by-https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsSetupPermission)
 
-  - [Lync Server 2013 中 Grant-CsOUPermission 進行的變更](lync-server-2013-changes-made-by-grant-csoupermission.md)
+  - [Lync Server 2013 中 Grant-CsOUPermission 進行的變更](lync-server-2013-changes-made-by-https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsOUPermission)
 

@@ -21,9 +21,12 @@ _**上次修改主題的時間：** 2015-08-19_
 
 同盟可讓內部部署的使用者與組織中的 Office 365 使用者通訊。若要設定同盟，請執行下列 Cmdlet：
 
-    Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting
-
-    New-CSHostingProvider -Identity LyncOnline -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
+  ```
+  Set-CSAccessEdgeConfiguration -AllowOutsideUsers 1 -AllowFederatedUsers 1 -UseDnsSrvRouting
+  ```
+  ```
+  New-CSHostingProvider -Identity LyncOnline -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root
+  ```
 
 ## 為共用 SIP 位址空間設定您的 商務用 Skype Online 租用戶
 
@@ -39,21 +42,26 @@ Move-CsUser : HostedMigration 錯誤: 錯誤=(510)，描述=(為針對共用 sip
 
 安裝模組之後，您便可使用下列 Cmdlet 建立遠端工作階段：
 
-    Import-Module LyncOnlineConnector
+  ```
+  Import-Module LyncOnlineConnector
+  ```
+  ```
+  $cred = Get-Credential
+  ```
+  ```
+  $CSSession = New-CsOnlineSession -Credential $cred
+  ```
+  ```
+  Import-PSSession $CSSession -AllowClobber
+  ```
 
-    $cred = Get-Credential
+如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱 [使用 Windows PowerShell 連線至 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
-    $CSSession = New-CsOnlineSession -Credential $cred
-
-    Import-PSSession $CSSession -AllowClobber
-
-如需有關如何使用 商務用 Skype Online 建立遠端 PowerShell 工作階段的詳細資訊，請參閱 [使用 Windows PowerShell 連線至 Lync Online](connecting-to-skype-for-business-online-by-using-windows-powershell.md)。
-
-如需有關使用 商務用 Skype Online PowerShell 模組的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Lync Online](skype-for-business-online-using-windows-powershell-to-manage-your-tenant.md)。
+如需有關使用 商務用 Skype Online PowerShell 模組的詳細資訊，請參閱 [使用 Windows PowerShell 管理 Lync Online](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)。
 
 ## 請參閱
 
 #### 其他資源
 
-[New-CsHostingProvider](new-cshostingprovider.md)
+[New-CsHostingProvider](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsHostingProvider)
 

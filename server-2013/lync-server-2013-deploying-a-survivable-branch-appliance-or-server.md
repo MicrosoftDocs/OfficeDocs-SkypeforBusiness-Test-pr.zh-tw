@@ -21,19 +21,9 @@ _**上次修改主題的時間：** 2014-12-10_
 
 針對擁有 1,000 到 5,000 個使用者且沒有可恢復之 WAN 的分支網站，我們建議使用連線到 PSTN 閘道或 SIP 主幹 (連至電話服務提供者) 的 Survivable Branch 伺服器。 Survivable Branch 伺服器 是 Windows Server 電腦，其中安裝了登錄器和 中繼伺服器軟體。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於擁有超過 5,000 個使用者及專屬 Lync Server 系統管理員的分支網站，我們建議使用完整的 Lync Server 2013 部署，並與中央網站的部署分開。<br />
-如需關於為貴組織中的分支網站選擇最佳恢復解決方案的詳細資訊，包括先決條件和規劃考量，請參閱規劃文件中的 <a href="lync-server-2013-branch-site-resiliency-requirements.md">Lync Server 2013 的分支網站復原需求</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 對於擁有超過 5,000 個使用者及專屬 Lync Server 系統管理員的分支網站，我們建議使用完整的 Lync Server 2013 部署，並與中央網站的部署分開。<br />
+> 如需關於為貴組織中的分支網站選擇最佳恢復解決方案的詳細資訊，包括先決條件和規劃考量，請參閱規劃文件中的 <a href="lync-server-2013-branch-site-resiliency-requirements.md">Lync Server 2013 的分支網站復原需求</a>。
 
 
 ## 本章節內容

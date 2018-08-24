@@ -19,32 +19,14 @@ _**上次修改主題的時間：** 2012-10-09_
 
 如需有關封存設定如何運作 (包含全域、網站及集區設定的階層) 的詳細資訊，請參閱規劃文件、部署文件或作業文件中的[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您應該先在封存設定中指定所有適當的選項，才能啟用封存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 您應該先在封存設定中指定所有適當的選項，才能啟用封存。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要啟用封存，必須指定封存原則，控制全域層級及網站與使用者層級 (如其適用) 之內部及外部通訊的封存。如有設定使用者層級原則，還必須將使用者原則指派給特定使用者。如需建立及設定封存原則的詳細資料，請參閱作業文件中的<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理內部與外部通訊的封存</a>。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 若要啟用封存，必須指定封存原則，控制全域層級及網站與使用者層級 (如其適用) 之內部及外部通訊的封存。如有設定使用者層級原則，還必須將使用者原則指派給特定使用者。如需建立及設定封存原則的詳細資料，請參閱作業文件中的<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理內部與外部通訊的封存</a>。
+
 
 
 ## 在網站層級設定封存選項

@@ -19,27 +19,13 @@ _**上次修改主題的時間：** 2013-02-21_
 
     New-CsPersistentChatRoom -Name Foo1 -PersistentChatPoolFqdn client.contoso.com -Category client.contoso.com\Foo [other parameters]
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>-如果下列其中一項條件為真，就不需要 PersistentChatPoolFqdn：
-<ul>
-<li><p>只有一個 Persistent Chat Server 集區。</p></li>
-<li><p>您對類別提供一個集區 FQDN。</p></li>
-<li><p>您提供集區 FQDN 來新增聊天室。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]  
+> -如果下列其中一項條件為真，就不需要 PersistentChatPoolFqdn：
+> <ul>
+> <li><p>只有一個 Persistent Chat Server 集區。</p></li>
+> <li><p>您對類別提供一個集區 FQDN。</p></li>
+> <li><p>您提供集區 FQDN 來新增聊天室。</p></li>
+> </ul>
 
 對現有 常設聊天室伺服器 聊天室做出變更
 

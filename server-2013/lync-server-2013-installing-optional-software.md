@@ -41,18 +41,9 @@ Microsoft Lync Server 2013 規劃工具設計為匯出至 Microsoft Excel 和 Mi
 
 將您的設計匯出至 Microsoft Visio 會建立一個圖表，可用於您所設定拓撲和基礎結構的文件。匯入的圖表可以依照您的文件需要加以編輯和重新排列。一般 Visio 圖表包括：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的設計規模夠大，需要超過三部前端伺服器，則會針對 前端集區、 前端伺服器以及執行 SQL Server、IP 位址和 FQDN 的電腦另外建立一個頁面。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您的設計規模夠大，需要超過三部前端伺服器，則會針對 前端集區、 前端伺服器以及執行 SQL Server、IP 位址和 FQDN 的電腦另外建立一個頁面。
+
 
 
   - 通用拓撲 – 已設定 Lync Server 2013 網站的圖表。

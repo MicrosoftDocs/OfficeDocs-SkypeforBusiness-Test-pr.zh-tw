@@ -27,9 +27,13 @@ _**上次修改主題的時間：** 2014-05-29_
 
 若要將內部部署使用者移至 商務用 Skype Online 租用戶，請使用 Microsoft Office 365 租用戶的管理員認證，在 Lync Server 管理命令介面中執行下列 Cmdlet。利用您想要移動的使用者資訊取代 "username@contoso.com"。
 
-    $creds=Get-Credential
+```
+$creds=Get-Credential
+```
 
-    Move-CsUser -Identity username@contoso.com -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
+```
+Move-CsUser -Identity username@contoso.com -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
+```
 
 為 **HostedMigrationOverrideUrl** 參數指定的 URL 格式必須是正在執行裝載移轉服務之集區的 URL，格式如下：*Https://\<Pool FQDN\>/HostedMigration/hostedmigrationService.svc*。
 
@@ -57,7 +61,7 @@ _**上次修改主題的時間：** 2014-05-29_
 
 ## 將使用者移至 Lync Online
 
-若要移動多位使用者，請使用 [Get-CsUser](get-csuser.md) Cmdlet 搭配 –Filter 參數，以選取使用者帳戶有獲指派特定屬性的使用者，例如 RegistrarPool。接著，您可以將傳回的使用者結果輸送至 [Move-CsUser](move-csuser.md) Cmdlet，如以下範例所示。
+若要移動多位使用者，請使用 [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) Cmdlet 搭配 –Filter 參數，以選取使用者帳戶有獲指派特定屬性的使用者，例如 RegistrarPool。接著，您可以將傳回的使用者結果輸送至 [Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsUser) Cmdlet，如以下範例所示。
 
     Get-CsUser -Filter {UserProperty -eq "UserPropertyValue"} | Move-CsUser -Target sipfed.online.lync.com -Credential $creds -HostedMigrationOverrideUrl <URL>
 

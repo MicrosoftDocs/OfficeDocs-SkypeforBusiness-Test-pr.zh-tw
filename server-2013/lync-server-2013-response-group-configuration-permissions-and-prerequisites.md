@@ -110,18 +110,9 @@ _**上次修改主題的時間：** 2015-03-09_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>(1)</strong> Active Directory 網域服務 使用者物件必須是列出的指定 Active Directory 安全性群組成員。系統管理員或擁有適當權限可新增使用者至安全性群組 (例如系統管理員、帳戶操作員) 的其他委派的 Active Directory 群組成員，必須新增使用者物件至列出的安全性群組，或是能夠讓使用者執行所列功能的群組。 <strong>(2)</strong> 僅適用 CsResponseGroupAdministrator 已指派至 CsResponseGroupManager 的工作流程。 <strong>(3)</strong> 回應群組管理員可指派 CsResponseGroupManager 的其他成員至目前管理員所管理的工作流程。 <strong>(4)</strong> CsViewOnlyAdministrator 僅可執行動詞 &quot;Get&quot; Lync Server 管理命令介面 Cmdlet。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> <strong>(1)</strong> Active Directory 網域服務 使用者物件必須是列出的指定 Active Directory 安全性群組成員。系統管理員或擁有適當權限可新增使用者至安全性群組 (例如系統管理員、帳戶操作員) 的其他委派的 Active Directory 群組成員，必須新增使用者物件至列出的安全性群組，或是能夠讓使用者執行所列功能的群組。 <strong>(2)</strong> 僅適用 CsResponseGroupAdministrator 已指派至 CsResponseGroupManager 的工作流程。 <strong>(3)</strong> 回應群組管理員可指派 CsResponseGroupManager 的其他成員至目前管理員所管理的工作流程。 <strong>(4)</strong> CsViewOnlyAdministrator 僅可執行動詞 &quot;Get&quot; Lync Server 管理命令介面 Cmdlet。
+
 
 
 ## 回應群組組態先決條件
@@ -178,18 +169,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 只有在您的組織需要支援 Yi、Meng 或 Zang 字元時，才適用本節內容。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需什麼是 Yi、Meng 及 Zang 字元，以及這些字元對部署如此重要的原因等詳細資訊，請參閱 GB18030 字元集的資訊 <a href="http://go.microsoft.com/fwlink/?linkid=240223%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=240223&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如需什麼是 Yi、Meng 及 Zang 字元，以及這些字元對部署如此重要的原因等詳細資訊，請參閱 GB18030 字元集的資訊 <a href="http://go.microsoft.com/fwlink/?linkid=240223%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=240223&amp;clcid=0x404</a>。
+
 
 
 若要支援 Yi、Meng 或 Zang 字元，您需要修改 Rgsconfig 資料庫的定序。請變更每個 Rgsconfig 資料庫中下列各資料表內 **\[名稱\]** 資料行的定序：

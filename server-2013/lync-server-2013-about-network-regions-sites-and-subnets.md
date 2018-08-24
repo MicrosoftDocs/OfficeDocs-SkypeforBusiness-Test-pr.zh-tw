@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-24_
 
 本節所說明的進階 Enterprise Voice 功能共用網路地區、網站及子網路的特定設定需求。例如，這三個進階功能都需要拓撲中的每個子網路與特定 *「網站」* 相關聯，而且每個網站都必須與 *「網路地區」* 相關聯。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>開始通話許可控制、E9-1-1 或媒體旁路的網路設定之前，請確定已檢閱過規劃文件之＜<a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中的進階企業語音功能的網路設定</a>＞主題中的網路設定相關資訊。如需通話許可控制主要網路設定的詳細資訊，也請參閱規劃文件中的＜<a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">在 Lync Server 2013 中定義通話許可控制需求</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 開始通話許可控制、E9-1-1 或媒體旁路的網路設定之前，請確定已檢閱過規劃文件之＜<a href="lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md">Lync Server 2013 中的進階企業語音功能的網路設定</a>＞主題中的網路設定相關資訊。如需通話許可控制主要網路設定的詳細資訊，也請參閱規劃文件中的＜<a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">在 Lync Server 2013 中定義通話許可控制需求</a>＞。
+
 
 
 通話許可控制及 E9-1-1 具有其他的網站設定需求：

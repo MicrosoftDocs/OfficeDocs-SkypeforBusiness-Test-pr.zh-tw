@@ -21,7 +21,7 @@ Lync Server 提供多個 Windows PowerShell 命令列介面 Cmdlet，以管理�
 
 ## 本章節內容
 
-  - [用於通訊錄管理的 New-CsAddressBookConfiguration](lync-server-2013-new-csaddressbookconfiguration-for-address-book-management.md)
+  - [用於通訊錄管理的 New-CsAddressBookConfiguration](lync-server-2013-New-CsAddressBookConfiguration-for-address-book-management.md)
 
   - [適用於通訊錄管理的 Set-CsAddressBookConfiguration](lync-server-2013-set-csaddressbookconfiguration-for-address-book-management.md)
 
@@ -41,7 +41,7 @@ Lync Server 提供多個 Windows PowerShell 命令列介面 Cmdlet，以管理�
 
   - [適用於通訊錄管理的 Get-CsService](lync-server-2013-get-csservice-for-address-book-management.md)
 
-  - [適用於通訊錄管理的 New-CsWebServiceConfiguration](lync-server-2013-new-cswebserviceconfiguration-for-address-book-management.md)
+  - [適用於通訊錄管理的 New-CsWebServiceConfiguration](lync-server-2013-New-CsWebServiceConfiguration-for-address-book-management.md)
 
   - [適用於通訊錄管理的 Get-CsWebServiceConfiguration](lync-server-2013-get-cswebserviceconfiguration-for-address-book-management.md)
 

@@ -17,42 +17,25 @@ _**上次修改主題的時間：** 2013-03-21_
 
 Lync Server 2013 使用憑證來提供通訊加密以及伺服器身分識別驗證。某些情況下，例如透過反向 Proxy 的 Web 發佈，不需要與代表服務之伺服器完整網域名稱 (FQDN) 相符的強式主體替代名稱 (SAN) 項目。在這些情況下，您可以使用含萬用字元 SAN 項目的憑證 (一般稱為「萬用字元憑證」) 來降低從公用憑證授權單位要求憑證的成本，並能降低憑證的規劃程序複雜度。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要保留整合通訊 (UC) 裝置 (例如，電話機) 的功能，您應該仔細測試部署的憑證，確定實作萬用字元憑證之後，裝置的功能正常運作。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 若要保留整合通訊 (UC) 裝置 (例如，電話機) 的功能，您應該仔細測試部署的憑證，確定實作萬用字元憑證之後，裝置的功能正常運作。
 
 
 不支援將萬用字元項目做為任何角色的主體名稱 (又稱為一般名稱或 CN)。在 SAN 中使用萬用字元項目時，支援下列伺服器角色：
 
-  -   
-    **反向 Proxy。**   簡單 URL (Meet 和 Dial-in) 發行憑證支援萬用字元 SAN 項目。
+   **反向 Proxy。**   簡單 URL (Meet 和 Dial-in) 發行憑證支援萬用字元 SAN 項目。
 
-  -   
-    **反向 Proxy。**   發行憑證上的 LyncDiscover SAN 項目支援萬用字元 SAN 項目。 .
+   **反向 Proxy。**   發行憑證上的 LyncDiscover SAN 項目支援萬用字元 SAN 項目。 .
 
-  -   
-    **Director。**   簡單 URL (Meet 和 Dial-in) 和 Director Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
+   **Director。**   簡單 URL (Meet 和 Dial-in) 和 Director Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
 
-  -   
-    **前端伺服器 ( Standard Edition) 及 前端集區 ( Enterprise Edition)。**簡單 URL (Meet 和 Dial-in) 和前端 Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
+   **前端伺服器 ( Standard Edition) 及 前端集區 ( Enterprise Edition)。**簡單 URL (Meet 和 Dial-in) 和前端 Web 元件的 LyncDiscover 與 LyncDiscoverInternal SAN 項目支援萬用字元 SAN 項目。
 
-  -   
-    **Exchange 整合通訊 (UM)。**   伺服器部署為獨立伺服器時，不使用 SAN 項目。
+   **Exchange 整合通訊 (UM)。**   伺服器部署為獨立伺服器時，不使用 SAN 項目。
 
-  -   
-    **Microsoft Exchange Server Client Access Server。**   內部和外部用戶端支援 SAN 中的萬用字元項目。
+   **Microsoft Exchange Server Client Access Server。**   內部和外部用戶端支援 SAN 中的萬用字元項目。
 
-  -   
-    **相同伺服器上的 Exchange 整合通訊 (UM) 和 Microsoft Exchange Server Client Access Server。**   支援萬用字元 SAN 項目。
+   **相同伺服器上的 Exchange 整合通訊 (UM) 和 Microsoft Exchange Server Client Access Server。**   支援萬用字元 SAN 項目。
 
 本主題中未介紹的伺服器角色：
 
@@ -62,18 +45,9 @@ Lync Server 2013 使用憑證來提供通訊加密以及伺服器身分識別驗
 
   - 內部 Edge Server
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>至於內部 Edge Server 介面，可以將萬用字元項目指派給 SAN，而且可受支援。不會查詢內部 Edge Server 上的 SAN，而且萬用字元 SAN 項目的值會受到限制。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 至於內部 Edge Server 介面，可以將萬用字元項目指派給 SAN，而且可受支援。不會查詢內部 Edge Server 上的 SAN，而且萬用字元 SAN 項目的值會受到限制。
+    
 
 
 如需憑證設定的詳細資訊，包括在憑證中使用萬用字元，請參閱下列主題：

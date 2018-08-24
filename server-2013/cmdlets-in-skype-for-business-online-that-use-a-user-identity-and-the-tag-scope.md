@@ -25,19 +25,9 @@ _**上次修改主題的時間：** 2015-06-22_
 
 此命令失敗的原因在於全域原則無需指派。若要使用全域原則管理使用者，只要確定並未將個別使用者原則指派給該使用者即可。若未將任何個別使用者原則指派給使用者，系統將自動使用全域原則管理該使用者。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是使用者先前已有指派個別使用者原則，而要取消指派該原則並改為以全域原則管理該使用者時，該如何處理呢？在此情況下，首先必須使用下列語法，授予 Null 原則給該使用者，以取消指派個別使用者原則：<br />
-Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若是使用者先前已有指派個別使用者原則，而要取消指派該原則並改為以全域原則管理該使用者時，該如何處理呢？在此情況下，首先必須使用下列語法，授予 Null 原則給該使用者，以取消指派個別使用者原則：<br />
+> Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null
 
 
 再者，請記住個別使用者原則是建立於標記範圍。然而，指定原則名稱時可忽略前置詞 tag。以下兩個命令作用相同：
@@ -51,22 +41,22 @@ Grant-CsVoicePolicy –Identity &quot;Ken Myer&quot; –PolicyName $Null</td>
 
 下列 Cmdlet 同時使用使用者身分識別與標記範圍：
 
-  - [Grant-CsClientPolicy](grant-csclientpolicy.md)
+  - [Grant-CsClientPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsClientPolicy)
 
-  - [Grant-CsConferencingPolicy](grant-csconferencingpolicy.md)
+  - [Grant-CsConferencingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsConferencingPolicy)
 
-  - [Grant-CsDialPlan](grant-csdialplan.md)
+  - [Grant-CsDialPlan](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsDialPlan)
 
-  - [Grant-CsExternalAccessPolicy](grant-csexternalaccesspolicy.md)
+  - [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy)
 
-  - [Grant-CsHostedVoicemailPolicy](grant-cshostedvoicemailpolicy.md)
+  - [Grant-CsHostedVoicemailPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsHostedVoicemailPolicy)
 
-  - [Grant-CsVoicePolicy](grant-csvoicepolicy.md)
+  - [Grant-CsVoicePolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsVoicePolicy)
 
 ## 請參閱
 
 #### 概念
 
 [身分識別、範圍，以及租用戶](identities-scopes-and-tenants-in-skype-for-business-online.md)  
-[Lync Online Cmdlet](the-skype-for-business-online-cmdlets.md)
+[Lync Online Cmdlet](https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 

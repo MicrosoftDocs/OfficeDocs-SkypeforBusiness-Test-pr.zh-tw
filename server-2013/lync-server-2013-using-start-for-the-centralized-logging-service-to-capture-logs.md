@@ -23,18 +23,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 集中記錄服務提供兩種發出命令的方式。目前有一些主題是關於如何透過 Lync Server 管理命令介面使用 Windows PowerShell。集中記錄服務偏好使用 Windows PowerShell 的原因，是因為能夠使用許多複雜的設定和命令。由於透過 Lync Server 管理命令介面使用 Windows PowerShell 幾乎會用到 Lync Server的所有功能，因此將只討論 Windows PowerShell 命令。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果決定從命令列使用一組有限的可用命令，可輸入 <code>ClsController.exe</code> 取得 CLSController.exe 的協助。預設會將 <strong>ClsController.exe</strong> 安裝在下列目錄： C:\Program Files\Microsoft Lync Server 2013\ClsAgent。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果決定從命令列使用一組有限的可用命令，可輸入 <code>ClsController.exe</code> 取得 CLSController.exe 的協助。預設會將 <strong>ClsController.exe</strong> 安裝在下列目錄： C:\Program Files\Microsoft Lync Server 2013\ClsAgent。
+
 
 
 ## 使用 Windows PowerShell 搭配基本命令執行 Start-CsClsLogging
@@ -49,34 +40,16 @@ _**上次修改主題的時間：** 2013-02-21_
     
         Start-CsClsLogging -Scenario AlwaysOn
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>AlwaysOn 案例沒有預設期間。此案例會一直執行，直到您使用 <strong>Stop-CsClsLogging</strong> Cmdlet 明確加以停止。如需詳細資訊，請參閱＜<a href="stop-csclslogging.md">Stop-CsClsLogging</a>＞。其他所有案例的預設期間為 4 小時。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > AlwaysOn 案例沒有預設期間。此案例會一直執行，直到您使用 <strong>Stop-CsClsLogging</strong> Cmdlet 明確加以停止。如需詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging">Stop-CsClsLogging</a>＞。其他所有案例的預設期間為 4 小時。
+    
 
 
 3.  按 Enter 鍵執行命令。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>可能需要一點時間 (30 到 60 秒) 才能執行命令，並接收部署中的電腦傳回的狀態。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 可能需要一點時間 (30 到 60 秒) 才能執行命令，並接收部署中的電腦傳回的狀態。
+    
     
     ![執行 Start-CsClsLogging。](images/JJ687958.c5be7413-8cef-4de7-9712-944d20cc2fa4(OCS.15).jpg "執行 Start-CsClsLogging。")
 
@@ -84,18 +57,9 @@ _**上次修改主題的時間：** 2013-02-21_
     
         Start-CsClsLogging -Scenario Authentication
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在任何時候，最多可以在任何指定的電腦上執行兩個案例。如果命令的範圍為全域，部署中的所有電腦都會執行這些案例。若要啟動第三個案例，您必須從要執行新案例的電腦、集區、網站或全域範圍停止記錄。如果已啟動全域範圍，您可以在一或多部電腦和集區上停止記錄一或兩個案例。如需管理執行案例的詳細資訊，請參閱＜<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">將 Stop 用於集中式記錄服務</a>＞及＜<a href="stop-csclslogging.md">Stop-CsClsLogging</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在任何時候，最多可以在任何指定的電腦上執行兩個案例。如果命令的範圍為全域，部署中的所有電腦都會執行這些案例。若要啟動第三個案例，您必須從要執行新案例的電腦、集區、網站或全域範圍停止記錄。如果已啟動全域範圍，您可以在一或多部電腦和集區上停止記錄一或兩個案例。如需管理執行案例的詳細資訊，請參閱＜<a href="lync-server-2013-using-stop-for-the-centralized-logging-service.md">將 Stop 用於集中式記錄服務</a>＞及＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/Stop-CsClsLogging">Stop-CsClsLogging</a>＞。
+    
 
 
 ## 使用 Windows PowerShell 搭配進階命令執行 Start-CsClsLogging

@@ -55,46 +55,28 @@ Microsoft Lync Server 2013 會整合 Edge Server 上的 Extensible Messaging and
     
       - **TLS 交涉**。定義 TLS 交涉規則。XMPP 服務可要求 TLS、將 TLS 設為選用，您也可以定義不支援 TLS。選擇 \[選用\] 可讓 XMPP 服務決定是否必須強制交涉。若要檢視 SASL、TLS 及回撥交涉的所有可能設定和詳細資料 (包含無效及未知錯誤設定)，請參閱＜[Lync Server 2013 中 XMPP 同盟夥伴的交涉設定](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md)＞。
         
-          -   
-            **需要**。XMPP 服務需要 TLS 交涉。
+           **需要**。XMPP 服務需要 TLS 交涉。
         
-          -   
-            **選擇性**。XMPP 服務指出必須交涉 TLS。
+           **選擇性**。XMPP 服務指出必須交涉 TLS。
         
-          -   
-            **不支援**。XMPP 服務不支援 TLS。
+           **不支援**。XMPP 服務不支援 TLS。
     
       - **SASL 交涉** 。定義 SASL 交涉規則。XMPP 服務可以將 SASL 視為必要或選用，或者由您將 SASL 定義為不支援。選擇 \[選擇性\] 會將此需求留給協力廠商 XMPP 服務進行必須交涉的決定。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>SASL 要求 TLS。若要使用 SASL，TLS 必須是必要項目或選用項目。任何將 SASL 定義為必要或選用的設定都必須受到 TLS 支援。按一下 <strong>[認可]</strong> 以儲存您的變更時，如果您尚未將 TLS 設定為必要或選用，系統將會警告您，SASL 必須受到 TLS 支援，而您的變更將不會儲存。若要解決此錯誤，請將 TLS 設定為 <strong>[必要]</strong> 或 <strong>[選用]</strong> 。如果 SASL 的用法為選用且無法支援 TLS 交涉，則您必須將 SASL 交涉設定為 <strong>[不支援]</strong> 。利用 XMPP 服務來確認適用於 TLS 和 SASL 的正確交涉資料流必須是何種類型，或者將會發生服務中斷。</td>
-        </tr>
-        </tbody>
-        </table>
+        > [!WARNING]  
+		> SASL 要求 TLS。若要使用 SASL，TLS 必須是必要項目或選用項目。任何將 SASL 定義為必要或選用的設定都必須受到 TLS 支援。按一下 <strong>[認可]</strong> 以儲存您的變更時，如果您尚未將 TLS 設定為必要或選用，系統將會警告您，SASL 必須受到 TLS 支援，而您的變更將不會儲存。若要解決此錯誤，請將 TLS 設定為 <strong>[必要]</strong> 或 <strong>[選用]</strong> 。如果 SASL 的用法為選用且無法支援 TLS 交涉，則您必須將 SASL 交涉設定為 <strong>[不支援]</strong> 。利用 XMPP 服務來確認適用於 TLS 和 SASL 的正確交涉資料流必須是何種類型，或者將會發生服務中斷。
         
-          -   
-            **必要**。XMPP 服務需要 SASL 交涉。
+           **必要**。XMPP 服務需要 SASL 交涉。
         
-          -   
-            **選擇性**。XMPP 服務指出必須交涉 SASL。
+           **選擇性**。XMPP 服務指出必須交涉 SASL。
         
-          -   
-            **不支援**。XMPP 服務不支援 SASL。
+           **不支援**。XMPP 服務不支援 SASL。
     
       - **回撥交涉**。回撥交涉是由文件＜**XEP-220：伺服器回撥**＞[http://xmpp.org/extensions/xep-0220.htm](http://xmpp.org/extensions/xep-0220.html) 中的 XSF 所定義。伺服器回撥程序會使用網域名稱系統 (DNS) 和主伺服器，來確認要求是來自有效的 XMPP 協力廠商。若要執行此動作，原始伺服器會建立含有已產生回撥金鑰的特定類型訊息，並查閱 DNS 中的接收伺服器。原始伺服器會在 XML 資料流中將金鑰傳送給結果 DNS 查閱 (可能是接收伺服器)。透過 XML 資料流接收到金鑰時，接收伺服器不會回應原始伺服器，但會將該金鑰傳送到已知的主伺服器。主伺服器會確認金鑰是否有效。如果無效，接收伺服器便不會回應原始伺服器。如果金鑰有效，則接收伺服器會通知原始伺服器，身分識別與金鑰是有效的且可開始進行交談。
         
         **回撥交涉**有兩種有效狀態：
         
-          -   
-            **True**。如果必須接收來自原始伺服器的要求，則將 XMPP 伺服器設定為使用回撥交涉
+           **True**。如果必須接收來自原始伺服器的要求，則將 XMPP 伺服器設定為使用回撥交涉
         
-          -   
-            **False**。XMPP 伺服器不設定為使用回撥交涉；萬一從來源伺服器收到要求，將會忽略該要求
+           **False**。XMPP 伺服器不設定為使用回撥交涉；萬一從來源伺服器收到要求，將會忽略該要求
 

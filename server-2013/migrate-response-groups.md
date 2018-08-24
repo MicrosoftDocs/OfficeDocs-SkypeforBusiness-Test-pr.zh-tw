@@ -17,82 +17,36 @@ _**上次修改主題的時間：** 2013-09-23_
 
 當使用者移動到 Lync Server 2013 集區後，便可移轉回應群組。移轉回應群組包括複製代理人群組、佇列、工作流程、音訊檔案，並將舊版部署的 回應群組 連絡人物件移動到 Lync Server 2013 集區。移轉舊版回應群組後， Lync Server 2013 集區中的 回應群組應用程式會處理回應群組的呼叫，而不再由舊版集區處理。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>雖然可以先移轉回應群組後再將所有使用者移動至 Lync Server 2013 集區，但仍建議先移動所有使用者。尤其是屬於回應群組代理人的使用者必須移動至 Lync Server 2013 集區後才能完整運用全新功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 雖然可以先移轉回應群組後再將所有使用者移動至 Lync Server 2013 集區，但仍建議先移動所有使用者。尤其是屬於回應群組代理人的使用者必須移動至 Lync Server 2013 集區後才能完整運用全新功能。
+
 
 
 您移轉回應群組前，必須已部署 Lync Server 2013 集區，並且其中內含 回應群組應用程式。回應群組應用程式 預設在您部署企業語音時已安裝且啟動。您可以執行 **Get-CsService –ApplicationServer** Cmdlet，確保有安裝 回應群組應用程式。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>移轉舊版回應群組前，可以先在 Lync Server 2013 集區建立新的 Lync Server 2013 回應群組。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 移轉舊版回應群組前，可以先在 Lync Server 2013 集區建立新的 Lync Server 2013 回應群組。
+
 
 
 若要從舊版集區將回應群組移轉至 Lync Server 2013，可以執行 **Move-CsRgsConfiguration** Cmdlet。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>回應群組移轉 Cmdlet 會移動整個集區的 回應群組設定。您無法選取要移轉的特定群組、佇列或工作流程。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 回應群組移轉 Cmdlet 會移動整個集區的 回應群組設定。您無法選取要移轉的特定群組、佇列或工作流程。
+
 
 
 在移轉回應群組之後，必須使用 Lync Server 控制台或 Lync Server 管理命令介面 Cmdlet 驗證所有代理人群組、佇列及工作流程都已順利移動。
 
 移轉回應群組時，不會刪除 Lync Server 2010 回應群組。移轉後使用When you manage response groups after migration by using either Lync Server 控制台或 Lync Server 管理命令介面管理回應群組時，會看到 Lync Server 2010 回應群組和 Lync Server 2013 回應群組，但只應該將更新套用到 Lync Server 2013 回應群組。 Lync Server 2010 回應群組會保留，僅供復原之用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>完成移轉並建立新的回應群組後，Lync Server 控制台和 Lync Server 管理命令介面命令將顯示每個回應群組的 Lync Server 2010 和 Lync Server 2013 版本。請勿使用 Lync Server 控制台 或 Lync Server 管理命令介面 來移除 Lync Server 2010 回應群組。如果您移除一個回應群組，在移轉期間建立的對應回應群組將停止運作。淘汰 Lync Server 2010 集區時將移除 Lync Server 2010 回應群組。</td>
-</tr>
-</tbody>
-</table>
+> [!CAUTION]
+> 完成移轉並建立新的回應群組後，Lync Server 控制台和 Lync Server 管理命令介面命令將顯示每個回應群組的 Lync Server 2010 和 Lync Server 2013 版本。請勿使用 Lync Server 控制台 或 Lync Server 管理命令介面 來移除 Lync Server 2010 回應群組。如果您移除一個回應群組，在移轉期間建立的對應回應群組將停止運作。淘汰 Lync Server 2010 集區時將移除 Lync Server 2010 回應群組。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>建議集區解除委任之後，再移除先前部署的各項資料。此外，強烈建議移轉後立即匯出回應群組。若不慎移除 Lync Server 2010 回應群組，可利用此項備份還原回應群組，即可重新執行 Lync Server 2013 回應群組。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 建議集區解除委任之後，再移除先前部署的各項資料。此外，強烈建議移轉後立即匯出回應群組。若不慎移除 Lync Server 2010 回應群組，可利用此項備份還原回應群組，即可重新執行 Lync Server 2013 回應群組。
+
 
 
 Lync Server 2013 配備一項全新 回應群組功能，稱為 **\[工作流程類型\]** 。 **\[工作流程類型\]** 可以是 **\[已管理\]** 或 **\[未管理\]** 。移轉後的所有回應群組 **\[工作流程類型\]** 都會設為 **\[未管理\]** ，並附有一份空白的管理員清單。

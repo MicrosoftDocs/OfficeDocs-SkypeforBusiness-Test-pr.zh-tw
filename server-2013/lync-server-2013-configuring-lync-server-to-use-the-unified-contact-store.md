@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-07_
 
 整合連絡人存放區可讓使用者保有單一連絡人清單，然後讓那些連絡人可於多個應用程式中使用，包括 Microsoft Lync 2013、Microsoft Outlook 2013 和 Microsoft Outlook Web App 2013。當您啟用使用者的整合連絡人存放區時，該使用者的連絡人並非儲存於 Microsoft Lync Server 2013 並使用 SIP 通訊協定來擷取。實際上，其連絡人會儲存於 Microsoft Exchange Server 2013 並使用 Exchange Web 服務來擷取。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在技術上，連絡人資訊儲存於一組資料夾，這些資料夾位於使用者的 Exchange 2013 信箱中。連絡人本身儲存在名為 Lync Contacts 的資料夾中，使用者可看到該資料夾；有關連絡人的中繼資料則儲存在使用者無法看到的子資料夾。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在技術上，連絡人資訊儲存於一組資料夾，這些資料夾位於使用者的 Exchange 2013 信箱中。連絡人本身儲存在名為 Lync Contacts 的資料夾中，使用者可看到該資料夾；有關連絡人的中繼資料則儲存在使用者無法看到的子資料夾。
+
 
 
 ## 針對使用者啟用整合連絡人存放區
@@ -53,7 +44,7 @@ _**上次修改主題的時間：** 2014-02-07_
 
 指派原則之後，Lync Server 會開始將使用者的連絡人移轉至整合連絡人存放區。完成移轉後，使用者的連絡人就會儲存在 Exchange，而非 Lync Server 中。如果使用者碰巧在移轉正在完成時登入 Lync 2013，就會顯示訊息方塊並要求使用者登出 Lync，然後重新登入以完成程序。尚未獲指派此個別使用者原則的使用者不會將其連絡人移轉至統一連絡人存放區。這是因為這些使用者受全域原則管理，而全域原則中已停用對於統一連絡人存放區的使用。
 
-您可以從Lync Server 管理命令介面內部執行 [Test-CsUnifiedContactStore](test-csunifiedcontactstore.md) Cmdlet 以確認使用者的連絡人是否已成功移轉至整合連絡人存放區。
+您可以從Lync Server 管理命令介面內部執行 [Test-CsUnifiedContactStore](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUnifiedContactStore) Cmdlet 以確認使用者的連絡人是否已成功移轉至整合連絡人存放區。
 
     Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 
@@ -71,25 +62,16 @@ _**上次修改主題的時間：** 2014-02-07_
 
 上述命令會將新原則指派給使用者 Ken Myer，同時也會防止 Ken 的連絡人移轉至整合連絡人存放區。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在某些情況下，您可以單單解除指派使用者的目前使用者服務原則達到相同的整體效果。例如，假設 Ken Myer 擁有個別使用者的使用者服務原則，該原則可啟用整合連絡人存放區，但是您的全域原則禁止整合連絡人存放區的使用。在該情況下，您可以解除指派 Ken 的個別使用者服務原則。當您那樣做時，Ken 會自動受全域原則管理，因此不再有整合連絡人存放區的存取權。<br />
-若要解除指派先前所指派的個別使用者原則，請使用如前所示的相同命令，但這次需將 PolicyName 參數設為 Null 值：<br />
-Grant-CsUserServicesPolicy –識別 &quot;Ken Myer&quot; –PolicyName $Null</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> 在某些情況下，您可以單單解除指派使用者的目前使用者服務原則達到相同的整體效果。例如，假設 Ken Myer 擁有個別使用者的使用者服務原則，該原則可啟用整合連絡人存放區，但是您的全域原則禁止整合連絡人存放區的使用。在該情況下，您可以解除指派 Ken 的個別使用者服務原則。當您那樣做時，Ken 會自動受全域原則管理，因此不再有整合連絡人存放區的存取權。<br />
+> 若要解除指派先前所指派的個別使用者原則，請使用如前所示的相同命令，但這次需將 PolicyName 參數設為 Null 值：<br />
+> Grant-CsUserServicesPolicy –識別 &quot;Ken Myer&quot; –PolicyName $Null
+
 
 
 在處理整合連絡人存放區時，須牢記「防止 Ken 的連絡人移轉至整合連絡人存放區」這個術語。單單將新的使用者服務原則指派給 Ken 並不會將其連絡人從整合連絡人存放區移出。當使用者登入 Lync Server 2013 時，系統會檢查使用者的使用者服務原則，以決定是否應將其連絡人保存於整合連絡人存放區中。如果結果為肯定 (也就是說，如果 UcsAllowed 屬性設為 $True)，那些連絡人就會移轉至整合連絡人存放區 (假設那些連絡人尚未存放在整合連絡人存放區)。如果結果為否定，Lync Server 就會忽略使用者的連絡人並移至下一個工作。這表示無論 UcsAllowed 屬性的值為何，Lync Server 皆不會從整合連絡人存放區之外移動使用者的連絡人。
 
-這也表示，在將新的使用者服務原則指派給使用者後，接著您必須執行 [Invoke-CsUcsRollback](invoke-csucsrollback.md) Cmdlet 才能將使用者的連絡人移出 Exchange 2013 ，然後再移回 Lync Server 2013。例如，在將新的使用者服務原則指派給 Ken Myer 之後，您就可以使用下列命令將其連絡人移出整合連絡人存放區：
+這也表示，在將新的使用者服務原則指派給使用者後，接著您必須執行 [Invoke-CsUcsRollback](https://docs.microsoft.com/en-us/powershell/module/skype/Invoke-CsUcsRollback) Cmdlet 才能將使用者的連絡人移出 Exchange 2013 ，然後再移回 Lync Server 2013。例如，在將新的使用者服務原則指派給 Ken Myer 之後，您就可以使用下列命令將其連絡人移出整合連絡人存放區：
 
     Invoke-CsUcsRollback -Identity "Ken Myer"
 

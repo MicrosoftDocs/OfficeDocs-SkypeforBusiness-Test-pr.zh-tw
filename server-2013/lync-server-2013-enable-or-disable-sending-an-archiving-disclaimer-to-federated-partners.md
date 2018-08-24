@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 您部署 Edge Server 並啟用組織的同盟時，應該已經指定是否自動將封存免責聲明傳送給同盟協力廠商。如果您封存外部通訊，則應該啟用傳送封存免責聲明。您可以使用本主題中的程序來變更該項設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下程序假設您已為組織啟用同盟。如需啟用同盟關係的詳細資訊，請參閱部署或作業文件中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 以下程序假設您已為組織啟用同盟。如需啟用同盟關係的詳細資訊，請參閱部署或作業文件中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>。
+
 
 
 ## 啟用或停用將封存免責聲明傳送給同盟協力廠商

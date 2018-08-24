@@ -33,18 +33,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 6.  依序按一下 **\[認可\]** 和 **\[全部認可\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>每當您匯入語音設定檔時，您必須執行 <strong>[全部認可]</strong> 命令來發佈設定變更。如需詳細資訊，請參閱作業文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a></td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 每當您匯入語音設定檔時，您必須執行 <strong>[全部認可]</strong> 命令來發佈設定變更。如需詳細資訊，請參閱作業文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>
+    
 
 
 ## 請參閱

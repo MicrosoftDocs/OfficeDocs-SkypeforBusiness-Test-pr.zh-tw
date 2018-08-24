@@ -21,18 +21,9 @@ The tools included in the Lync Server 2013 Stress and Performance Tool package e
 
 To configure user profiles, run the Lync Server 2013 Load Configuration Tool (UserProfileGenerator.exe) and fill out each of the tabs. UserProfileGenerator.exe generates a directory for each of the client computers that you need to run the simulation. Each client directory also comes with a script to start all of the instances of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool.exe).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945592.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>The user-specific values specified in UserProfileGenerator must match the values specified in the Lync Server 2013 User Creation Tool (UserProvisioningTool) for the pool.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> The user-specific values specified in UserProfileGenerator must match the values specified in the Lync Server 2013 User Creation Tool (UserProvisioningTool) for the pool.
+
 
 
 Fill in the fields on each tab of the Lync Server 2013 Load Configuration Tool, as described in the following sections.
@@ -75,18 +66,9 @@ Configure the load levels and parameters for each of the general scenarios that 
 
 1.  In **Instant Messaging**, which includes peer-to-peer and conferencing, specify the appropriate value for the Load Level.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Load level values for all fields (except Location Information Services) are <strong>Disabled</strong>, <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong>, and <strong>Custom</strong>. When Low, Medium, High, or Custom is selected, configurations will be generated for each modality and client. High will result in the maximum supported load to be generated for the server, Medium corresponds to 60 percent of the load, and Low corresponds to 30 percent of the load.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > Load level values for all fields (except Location Information Services) are <strong>Disabled</strong>, <strong>Low</strong>, <strong>Medium</strong>, <strong>High</strong>, and <strong>Custom</strong>. When Low, Medium, High, or Custom is selected, configurations will be generated for each modality and client. High will result in the maximum supported load to be generated for the server, Medium corresponds to 60 percent of the load, and Low corresponds to 30 percent of the load.
+    
 
 
 2.  In **Audio Conferencing**, which is audio conferencing only, specify the appropriate value for Load Level. Peer-to-peer calls are covered in the Voice Scenarios section later in this topic. To enable MultiView, open the **Advanced** tab for that modality.
@@ -103,20 +85,11 @@ Configure the load levels and parameters for each of the general scenarios that 
 
 8.  In **Location Information Services**, select the appropriate value for Load Level. The load level for Location Information Services must be **Enabled** or **Disabled**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Each of the scenarios has an <strong>Advanced</strong> button located next to it, and a set of check boxes that enable variations of the scenarios. <strong>Ad-hoc</strong> means to generate simulation of conferences that will be created throughout the hour. <strong>Large Conf</strong> means that Large Conference Scenario will be simulated. <strong>External</strong> means to also simulate external users.<br />
-These buttons and check boxes allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and make customization possible. For each scenario on the <strong>General Scenarios</strong> tab (except for Location Information Services), if the value of Load Level is <strong>Custom</strong>, then the conversation rate will be calculated using the corresponding field in the <strong>Advanced</strong> dialog box. The field name differs, depending on the scenario, but the field description will state, &quot;NOTE: This number will only be used if Custom is selected from the drop-down menu.&quot; In general, the values <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> will alter the conversation rates per modality in line with the User Model that is a balance of all the scenarios. If there is a need to change the load level per modality due to a difference in expected usage, we recommend using a <strong>Custom</strong> conversation rate.<br />
-</td>
-</tr>
-</tbody>
-</table>
+> [!Note]  
+> Each of the scenarios has an <strong>Advanced</strong> button located next to it, and a set of check boxes that enable variations of the scenarios. <strong>Ad-hoc</strong> means to generate simulation of conferences that will be created throughout the hour. <strong>Large Conf</strong> means that Large Conference Scenario will be simulated. <strong>External</strong> means to also simulate external users.<br />
+> These buttons and check boxes allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and make customization possible. For each scenario on the <strong>General Scenarios</strong> tab (except for Location Information Services), if the value of Load Level is <strong>Custom</strong>, then the conversation rate will be calculated using the corresponding field in the <strong>Advanced</strong> dialog box. The field name differs, depending on the scenario, but the field description will state, &quot;NOTE: This number will only be used if Custom is selected from the drop-down menu.&quot; In general, the values <strong>High</strong>, <strong>Medium</strong>, and <strong>Low</strong> will alter the conversation rates per modality in line with the User Model that is a balance of all the scenarios. If there is a need to change the load level per modality due to a difference in expected usage, we recommend using a <strong>Custom</strong> conversation rate.<br />
+> 
+
 
 
 ## Voice Scenarios
@@ -131,18 +104,9 @@ Use the **Voice Scenarios** tab to configure all of the voice-related scenarios.
 
 2.  In **UC/PSTN Gateway**, specify a value for Load Level. If you select a load level other than **Disabled**, you must supply a value for **PSTN Area Code** by clicking the **Add** button under Mediation Server and PSTN. Verify that you have a route configured for that area code.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>You can use either the Lync Server 控制台 or the Lync Server 管理命令介面 to verify voice route configuration.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > You can use either the Lync Server 控制台 or the Lync Server 管理命令介面 to verify voice route configuration.
+    
 
 
 3.  In **Conferencing Attendant**, specify a value for Load Level. Selecting a load level (other than **Disabled**) will enable the **Telephone Number** field. Enter the telephone number of the Auto Attendant that you want to use. Also, click the **Advanced** button, and then specify a value for the **LocationProfile** field.
@@ -151,18 +115,9 @@ Use the **Voice Scenarios** tab to configure all of the voice-related scenarios.
 
 5.  In **Mediation Server and PSTN**, for each Mediation Server that you want to use, you must have a separate PSTN simulator. After you have determined which client you are going to use as the simulator, you need to configure your Mediation Server to route calls to that computer on the PSTN Simulator port that you configured. Click **Add** to configure the value for the Mediation Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Each of the scenarios has an <strong>Advanced</strong> button located next to it. These buttons allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and enable customization. For each scenario on the <strong>Voice Scenarios</strong> tab, if the value of <strong>Load Level</strong> is <strong>Custom</strong>, then the conversation rate will be calculated by using the corresponding field in the <strong>Advanced</strong> dialog box. The field name differs, depending on the scenario, but the field description will state, &quot;NOTE: This number will only be used if Custom is selected from the drop-down menu.&quot;</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Each of the scenarios has an <strong>Advanced</strong> button located next to it. These buttons allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and enable customization. For each scenario on the <strong>Voice Scenarios</strong> tab, if the value of <strong>Load Level</strong> is <strong>Custom</strong>, then the conversation rate will be calculated by using the corresponding field in the <strong>Advanced</strong> dialog box. The field name differs, depending on the scenario, but the field description will state, &quot;NOTE: This number will only be used if Custom is selected from the drop-down menu.&quot;
+
 
 
 ## Reach
@@ -177,18 +132,9 @@ Use the **Reach** tab to configure all of the reach-related scenarios.
 
 2.  In **Application Sharing**, **Data Collaboration**, and **IM**, select the appropriate value for **Load Level**.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Each of the scenarios has an <strong>Advanced</strong> button located next to it. These buttons allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and enable customization. For each of the Reach scenarios, if the <strong>Load Level</strong> is <strong>Custom</strong>, then the value specified in the <strong>ConversationsPerHour</strong> field is used instead of the default</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Each of the scenarios has an <strong>Advanced</strong> button located next to it. These buttons allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and enable customization. For each of the Reach scenarios, if the <strong>Load Level</strong> is <strong>Custom</strong>, then the value specified in the <strong>ConversationsPerHour</strong> field is used instead of the default
+
 
 
 Use the **Mobility** tab to configure all of the mobility-related scenarios.
@@ -199,18 +145,9 @@ Use the **Mobility** tab to configure all of the mobility-related scenarios.
 
 2.  In **Presence and P2P Instant Messaging\\Audio**, select the appropriate value for **Load Level** to enable Mobility Scenario simulation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ945612.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Each of the scenarios has an <strong>Advanced</strong> button located next to it. These buttons allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and enable customization. For each of the Reach scenarios, if the <strong>Load Level</strong> is <strong>Custom</strong>, then the value specified in the <strong>ConversationsPerHour</strong> field is used instead of the default.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Each of the scenarios has an <strong>Advanced</strong> button located next to it. These buttons allow access to values specific to each scenario that will change the behavior of the Lync Server 2013 Stress and Performance Tool (LyncPerfTool) and enable customization. For each of the Reach scenarios, if the <strong>Load Level</strong> is <strong>Custom</strong>, then the value specified in the <strong>ConversationsPerHour</strong> field is used instead of the default.
+
 
 
 ## Summary

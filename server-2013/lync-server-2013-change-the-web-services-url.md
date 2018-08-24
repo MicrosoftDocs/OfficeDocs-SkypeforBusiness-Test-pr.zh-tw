@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-02-07_
 
 當您設定前端集區和 Standard Edition Server 時，可以選擇設定外部 Web 伺服器陣列完整網域名稱 (FQDN) 和相關聯的連接埠。如果您在執行 Lync Server 部署精靈時未設定此 URL，則需要手動設定這些設定。系統管理員通常不需要修改這些設定，因為這些是建議值和預設連接埠。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列螢幕擷取畫面是在設定 Standard Edition Server 時擷取的，因此 [覆寫 FQDN] 選項已停用。該選項會在設定前端集區中的 Enterprise Edition Server 時啟用。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下列螢幕擷取畫面是在設定 Standard Edition Server 時擷取的，因此 [覆寫 FQDN] 選項已停用。該選項會在設定前端集區中的 Enterprise Edition Server 時啟用。
+
 
 
 ![編輯 Web 服務集區設定](images/Gg520992.fbdf5cc9-479a-463f-bb1d-53575ecdfc9d(OCS.15).jpg "編輯 Web 服務集區設定")
@@ -43,18 +34,8 @@ _**上次修改主題的時間：** 2014-02-07_
 
 4.  新增或編輯 **\[外部 Web 服務 FQDN\]**，然後按一下 **\[確定\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您有多個前端集區或前端伺服器，外部 Web 服務 FQDN 必須是唯一的。例如，如果您將前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，就無法將 <strong>pool01.contoso.com</strong> 用於另一個前端集區或前端伺服器。如果您也部署 Director，則為任何 Director 或 Director 集區定義的外部 Web 服務 FQDN 必須是唯一的，用於區分其他的 Director 或 Director 集區以及任何的前端集區或前端伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果您有多個前端集區或前端伺服器，外部 Web 服務 FQDN 必須是唯一的。例如，如果您將前端伺服器的外部 Web 服務 FQDN 定義為 <strong>pool01.contoso.com</strong>，就無法將 <strong>pool01.contoso.com</strong> 用於另一個前端集區或前端伺服器。如果您也部署 Director，則為任何 Director 或 Director 集區定義的外部 Web 服務 FQDN 必須是唯一的，用於區分其他的 Director 或 Director 集區以及任何的前端集區或前端伺服器。
 
 
 5.  確認環境中已正確設定聆聽和發行的連接埠。
@@ -71,18 +52,8 @@ _**上次修改主題的時間：** 2014-02-07_
 
   - 您可以覆寫 前端集區、Director 或 Director 集區上的內部 Web 服務，並定義您自己的 FQDN。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、Director 或 Director 集區。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果決定使用自行定義的 FQDN 來覆寫內部 Web 服務，每個 FQDN 都必須是唯一的，用於區分其他的 前端集區、Director 或 Director 集區。
 
 
   - 在反向 Proxy 或硬體負載平衡器上，必須設定發行的連接埠作為聆聽連接埠。

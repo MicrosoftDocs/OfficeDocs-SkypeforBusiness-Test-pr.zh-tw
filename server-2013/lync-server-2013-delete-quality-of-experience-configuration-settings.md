@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2013-02-23_
 
 請注意，您也可以「刪除」全域設定。但是，實際上並不會移除全域設定，而是將該集合中的所有屬性重設為預設值。例如，根據預設，是在 QoE 組態設定的集合中啟用永久刪除。假設您修改全域集合以停用永久刪除，則會將所有屬性重設回預設值。在此案例中這表示會再次啟用永久刪除。
 
-您可使用 Lync Server 控制台 或 [Remove-CsQoEConfiguration](remove-csqoeconfiguration.md) Cmdlet 移除 QoE 組態設定。
+您可使用 Lync Server 控制台 或 [Remove-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsQoEConfiguration) Cmdlet 移除 QoE 組態設定。
 
 ## 使用 Lync Server 控制台 刪除 QoE 組態設定
 
@@ -57,5 +57,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsQoEConfiguration | Where-Object {$_.EnableQoE -eq $False} | Remove-CsQoEConfiguration
 
-如需詳細資訊，請參閱[Remove-CsQoEConfiguration](remove-csqoeconfiguration.md)。
+如需詳細資訊，請參閱[Remove-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsQoEConfiguration)。
 

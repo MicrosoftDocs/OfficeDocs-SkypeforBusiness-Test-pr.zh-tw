@@ -31,5 +31,5 @@ New-CsWebServiceConfiguration 這個 Cmdlet 會為組織中的 Web 服務定義�
 
 #### 其他資源
 
-[New-CsWebServiceConfiguration](new-cswebserviceconfiguration.md)
+[New-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsWebServiceConfiguration)
 

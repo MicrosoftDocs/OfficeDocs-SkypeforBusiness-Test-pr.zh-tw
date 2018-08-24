@@ -53,7 +53,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsWebServiceConfiguration | Where-Object {$_.UseCertificateAuth -eq $True} | Remove-CsWebServiceConfiguration
 
-如需詳細資訊，請參閱 [Remove-CsWebServiceConfiguration](remove-cswebserviceconfiguration.md)。
+如需詳細資訊，請參閱 [Remove-CsWebServiceConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsWebServiceConfiguration)。
 
 ## 請參閱
 

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2012-09-05_
 
 PBX 與 Lync Server 2013 的整合可讓已啟用遠端呼叫控制的使用者使用 Lync 2013 使用者介面 (UI)，透過下列方式控制 PBX 電話上的通話：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>最終，主控使用者之 PBX 電話的 PBX 功能可決定該使用者可使用的遠端呼叫控制功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 最終，主控使用者之 PBX 電話的 PBX 功能可決定該使用者可使用的遠端呼叫控制功能。
+
 
 
   - 撥出電話
@@ -39,18 +30,9 @@ PBX 與 Lync Server 2013 的整合可讓已啟用遠端呼叫控制的使用者�
 
   - 使用立即訊息接聽來電
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>亦即，當來電者的電話號碼可以與您組織之全域通訊清單 (GAL)、被呼叫者之 Lync 連絡人清單或同盟協力廠商之組織中的立即訊息位址相關聯時。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 亦即，當來電者的電話號碼可以與您組織之全域通訊清單 (GAL)、被呼叫者之 Lync 連絡人清單或同盟協力廠商之組織中的立即訊息位址相關聯時。
+    
 
 
   - 轉接電話

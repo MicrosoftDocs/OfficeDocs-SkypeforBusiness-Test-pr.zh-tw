@@ -138,50 +138,27 @@ _**上次修改主題的時間：** 2015-03-09_
 
 您不需要為了使用 System Center Operations Manager 而安裝監看員節點。如果未安裝這些節點，當問題發生時，還是可以從 Lync Server 2013 元件取得即時警示。(「元件和使用者管理套件」不使用監看員節點。) 不過，如果要使用「主動式監控管理套件」監控端對端案例，就需要監看員節點。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>系統管理員也不需要使用或安裝 Operations Manager，就可以手動執行綜合交易。如需有關各個 Test-Cs Cmdlet 的詳細資訊，請參閱＜<a href="lync-server-2013-cmdlets-index.md">Lync Server 2013 Cmdlet 索引</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 系統管理員也不需要使用或安裝 Operations Manager，就可以手動執行綜合交易。如需有關各個 Test-Cs Cmdlet 的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/en-us/powershell/module/skype/?view=skype-ps">Lync Server 2013 Cmdlet 索引</a>＞。
+
 
 
 視部署大小而定，綜合交易可能會佔用大量電腦記憶體及處理器時間。因此，建議您使用專用電腦作為監看員節點。舉例來說，您不應設定前端伺服器作為監看員節點。監看員節點應符合下列硬體規格：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>舊版 Microsoft Lync Server 2010 監看員節點無法與 Lync Server 2013 監看員節點組合在相同機器上。這是因為 Lync Server 2010 及 Lync Server 2013 的核心系統檔案無法安裝在相同電腦上。<br />
-然而，Lync Server 2013 監看員節點可以同時監控 Lync Server 2013 及 Lync Server 2010。兩個產品版本都支援預設綜合交易。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 舊版 Microsoft Lync Server 2010 監看員節點無法與 Lync Server 2013 監看員節點組合在相同機器上。這是因為 Lync Server 2010 及 Lync Server 2013 的核心系統檔案無法安裝在相同電腦上。<br />
+> 然而，Lync Server 2013 監看員節點可以同時監控 Lync Server 2013 及 Lync Server 2010。兩個產品版本都支援預設綜合交易。
 
 
 可以在企業內或企業外部署 Lync Server 2013 監看員節點，以協助驗證下列事項：
 
-  -   
-    企業內使用者對集區的連線。
+   企業內使用者對集區的連線。
 
-  -   
-    於企業外工作的遠端使用者透過周邊網路的連線。
+   於企業外工作的遠端使用者透過周邊網路的連線。
 
-  -   
-    對分公司設備的連線。
+   對分公司設備的連線。
 
-  -   
-    對企業內及透過周邊網路對 Lync Server 2010 的連線。
+   對企業內及透過周邊網路對 Lync Server 2010 的連線。
 
 對於簡化管理，企業內外有不同的驗證選項。如需詳細資訊，請參閱＜[設定監看員節點以執行綜合交易](lync-server-2013-configuring-a-watcher-node-to-run-synthetic-transactions.md)＞。
 

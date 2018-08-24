@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 利用下列程序可啟用整個組織或組織中各網站的 QoE。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要啟用 QoE，您必須先設定監控與監控後端資料庫。如需詳細資訊，請參閱<a href="lync-server-2013-deploying-monitoring.md">在 Lync Server 2013 中部署監控</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要啟用 QoE，您必須先設定監控與監控後端資料庫。如需詳細資訊，請參閱<a href="lync-server-2013-deploying-monitoring.md">在 Lync Server 2013 中部署監控</a>。
+
 
 
 ## 使用 Lync Server 控制台啟用 QoE
@@ -65,7 +56,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsQoEConfiguration | Set-CsQoEConfiguration "site:Redmond" -EnableQoE $True
 
-如需詳細資訊，請參閱 [Set-CsQoEConfiguration](set-csqoeconfiguration.md)。
+如需詳細資訊，請參閱 [Set-CsQoEConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsQoEConfiguration)。
 
 ## 請參閱
 

@@ -19,18 +19,9 @@ Lync Server 2013 引進的新 Cmdlet 支援在集區之間移動回應群組，�
 
 使用下列程序中的步驟，可將回應群組從一個前端集區移動到有不同 FQDN 的另一個前端集區。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在共存環境中，只能在 Lync Server 2013前端集區之間移動回應群組。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在共存環境中，只能在 Lync Server 2013前端集區之間移動回應群組。
+
 
 
 ## 將回應群組移動到有不同 FQDN 的集區
@@ -59,18 +50,9 @@ Lync Server 2013 引進的新 Cmdlet 支援在集區之間移動回應群組，�
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:destination.contoso.com" -FileName "C:\RgsExportSource.zip" -OverwriteOwner -ReplaceExistingSettings
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>應用程式層級設定包含預設的保留音樂設定、預設的保留音樂音訊檔、代理人回電寬限期及來電內容設定。若要檢視這些組態設定，請執行 <strong>Get-CsRgsConfiguration</strong> Cmdlet。如需此 Cmdlet 的詳細資訊，請參閱＜<a href="get-csrgsconfiguration.md">Get-CsRgsConfiguration</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 應用程式層級設定包含預設的保留音樂設定、預設的保留音樂音訊檔、代理人回電寬限期及來電內容設定。若要檢視這些組態設定，請執行 <strong>Get-CsRgsConfiguration</strong> Cmdlet。如需此 Cmdlet 的詳細資訊，請參閱＜<a href="https://docs.microsoft.com/powershell/module/skype/Get-CsRgsConfiguration">Get-CsRgsConfiguration</a>＞。
+    
 
 
 4.  執行下列動作來顯示匯入的回應群組設定，確認匯入成功：

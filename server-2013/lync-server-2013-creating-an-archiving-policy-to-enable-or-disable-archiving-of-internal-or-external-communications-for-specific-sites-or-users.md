@@ -25,19 +25,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 如需有關如何實作原則 (包含原則的階層) 的詳細資訊，請參閱規劃文件、部署文件或作業文件中的[在 Lync Server 2013 中封存的運作方式](lync-server-2013-how-archiving-works.md)。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要控制封存的實作，您必須在封存設定中指定選項，例如，是否要封存 IM 或會議、使用關鍵模式及清除選項。依預設，不會在全域封存設定或是任何網站或集區封存設定中啟用任何選項。您應該先在封存設定中指定所有適當的選項，然後才能在封存原則中啟用對內部或外部通訊的封存。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理組織、網站及集區的封存設定選項</a>。<br />
-如果您針對部署啟用 Microsoft Exchange 整合，Exchange 原則便會控制是否要針對位於 Exchange 2013 且其信箱狀態為 [就地保留] 的使用者啟用封存。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> 若要控制封存的實作，您必須在封存設定中指定選項，例如，是否要封存 IM 或會議、使用關鍵模式及清除選項。依預設，不會在全域封存設定或是任何網站或集區封存設定中啟用任何選項。您應該先在封存設定中指定所有適當的選項，然後才能在封存原則中啟用對內部或外部通訊的封存。如需詳細資訊，請參閱作業文件中的<a href="lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md">在 Lync Server 2013 中管理組織、網站及集區的封存設定選項</a>。<br />
+> 如果您針對部署啟用 Microsoft Exchange 整合，Exchange 原則便會控制是否要針對位於 Exchange 2013 且其信箱狀態為 [就地保留] 的使用者啟用封存。如需詳細資訊，請參閱部署文件中的<a href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">設定使用 Exchange Server 整合時的封存原則</a>。
 
 
 ## 建立網站或使用者的封存原則
@@ -66,18 +56,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 6.  按一下 **\[認可\]**。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>使用者原則的設定僅能套用至您套用該原則的特定使用者和使用者群組。如需詳細資訊，請參閱＜<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">將封存原則套用到使用者</a>＞</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 使用者原則的設定僅能套用至您套用該原則的特定使用者和使用者群組。如需詳細資訊，請參閱＜<a href="lync-server-2013-applying-an-archiving-policy-to-users.md">將封存原則套用到使用者</a>＞
+    
 
 
 ## 使用 Lync Server 管理命令介面 Cmdlet 建立封存原則
@@ -108,7 +89,7 @@ _**上次修改主題的時間：** 2013-02-23_
     
         New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True -ArchiveExternal $True
 
-如需詳細資訊，請參閱 [New-CsArchivingPolicy](new-csarchivingpolicy.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [New-CsArchivingPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsArchivingPolicy) Cmdlet 的說明主題。
 
 ## 請參閱
 

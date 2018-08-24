@@ -19,46 +19,18 @@ _**上次修改主題的時間：** 2012-11-01_
 
 營業時間設定會定義工作流程能夠接聽來電的時間，以及指定對營業時間以外的來電採取的動作。回應群組系統管理員可以使用 **New-CsRgsHoursOfBusiness** Cmdlet 建立預先定義的排程，這些排程可用於任意數目的回應群組。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>當您建立或修改工作流程時，您可以指定只限該工作流程套用的自訂排程。如需詳細資訊，請參閱＜ <a href="lync-server-2013-create-or-modify-a-hunt-group-workflow.md">在 Lync Server 2013 中建立或修改群組搜尋工作流程</a>＞或＜ <a href="lync-server-2013-create-or-modify-an-interactive-workflow.md">在 Lync Server 2013 中建立或修改互動式工作流程</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 當您建立或修改工作流程時，您可以指定只限該工作流程套用的自訂排程。如需詳細資訊，請參閱＜ <a href="lync-server-2013-create-or-modify-a-hunt-group-workflow.md">在 Lync Server 2013 中建立或修改群組搜尋工作流程</a>＞或＜ <a href="lync-server-2013-create-or-modify-an-interactive-workflow.md">在 Lync Server 2013 中建立或修改互動式工作流程</a>＞。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果工作流程定義為受管理工作流程，指派為 CsResponseGroupManager 角色的任何使用者都可以針對其管理的工作流程設定和修改自訂營業時間。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果工作流程定義為受管理工作流程，指派為 CsResponseGroupManager 角色的任何使用者都可以針對其管理的工作流程設定和修改自訂營業時間。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於下列 Cmdlet 中的參數，請使用 24 小時制的標記法 (例如，20:00=8:00 P.M.)。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> 對於下列 Cmdlet 中的參數，請使用 24 小時制的標記法 (例如，20:00=8:00 P.M.)。
+
 
 
 ## 建立預先定義的營業時間集合
@@ -91,6 +63,6 @@ _**上次修改主題的時間：** 2012-11-01_
 
 #### 其他資源
 
-[New-CsRgsTimeRange](new-csrgstimerange.md)  
-[New-CsRgsHoursOfBusiness](new-csrgshoursofbusiness.md)
+[New-CsRgsTimeRange](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsTimeRange)  
+[New-CsRgsHoursOfBusiness](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsRgsHoursOfBusiness)
 

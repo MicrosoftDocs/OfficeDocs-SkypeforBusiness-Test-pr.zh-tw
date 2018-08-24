@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2014-06-24_
 
 Microsoft Lync Server 2013 可提供系統管理員選項，以將立即訊息和 Web 會議記錄封存至使用者的 Microsoft Exchange Server 2013 信箱，而非 SQL Server 資料庫。若您啟用了此選項，系統就會將記錄寫入使用者信箱的「清理」資料夾。「清理」資料夾是「可復原項目」資料夾中的隱藏資料夾。雖然使用者看不到這個資料夾，但該資料夾是透過 Exchange 搜尋引擎來編制索引，因此可使用 Exchange 信箱搜尋及/或 Microsoft SharePoint Server 2013 來探索此資料夾。由於這些資訊是儲存在 Exchange 就地保留功能 (用於封存電子郵件和其他 Exchange 通訊) 所使用的相同資料夾中，系統管理員即可使用單一工具來搜尋針對某使用者所封存的所有電子通訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要完全停用 Lync 交談的封存，您必須同時停用 Lync 交談記錄。如需詳細資訊，請參閱下列主題：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理內部與外部通訊的封存</a>、<a href="new-csclientpolicy.md">New-CsClientPolicy</a> 和 <a href="set-csclientpolicy.md">Set-CsClientPolicy</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 若要完全停用 Lync 交談的封存，您必須同時停用 Lync 交談記錄。如需詳細資訊，請參閱下列主題：<a href="lync-server-2013-managing-the-archiving-of-internal-and-external-communications.md">在 Lync Server 2013 中管理內部與外部通訊的封存</a>、<a href="https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientPolicy">New-CsClientPolicy</a> 和 <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientPolicy">Set-CsClientPolicy</a>。
+
 
 
 若要將記錄封存到 Exchange 2013，您必須先設定好兩部伺服器間的伺服器對伺服器驗證。設定好伺服器對伺服器驗證後，即可在 Microsoft Lync Server 2013 中執行下列作業 (請注意，依據您的設定和組態而定，您可能並不需要完成下列所有作業)：
@@ -57,18 +48,9 @@ EnableExchangeArchiving 屬性為布林值：將 EnableExchangeArchiving 設為 
 
     Set-CsArchivingConfiguration -Identity "global" -EnableArchiving ImOnly -EnableExchangeArchiving $False
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若 EnableArchiving 屬性是設為 None， Lync Server 就完全不會封存立即訊息和 Web 會議。在這種情況下，伺服器會忽略 EnableExchangeArchiving 所設定的值。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若 EnableArchiving 屬性是設為 None， Lync Server 就完全不會封存立即訊息和 Web 會議。在這種情況下，伺服器會忽略 EnableExchangeArchiving 所設定的值。
+
 
 
 您也可使用 Lync Server 控制台來啟用或停用 Exchange 封存。若要執行這項作業，請完成下列程序：
@@ -81,18 +63,9 @@ EnableExchangeArchiving 屬性為布林值：將 EnableExchangeArchiving 設為 
 
 4.  選擇好要封存的項目之後，選取 \[Exchange 伺服器整合\] 核取方塊，以啟用 Exchange 封存。若要停用 Exchange 封存，則清除此核取方塊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若 [封存設定] 是設為 [停用封存] ，就無法使用 [Exchange 伺服器整合] 核取方塊。您必須先啟用封存，然後再啟用 Exchange 封存。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若 [封存設定] 是設為 [停用封存] ，就無法使用 [Exchange 伺服器整合] 核取方塊。您必須先啟用封存，然後再啟用 Exchange 封存。
+
 
 
 若 Lync Server 2013 和 Exchange 2013 是位於相同的樹系中，則個別使用者的封存 (或至少具備 Exchange 2013 電子郵件帳號的使用者) 是使用 Exchange 就地保留原則來加以管理。若您的使用者是位於舊版的 Exchange，這些使用者的封存是使用 Lync Server 封存原則來管理。請注意，僅有具備 Exchange 2013 帳戶的使用者可以將 Lync 記錄封存至 Exchange。

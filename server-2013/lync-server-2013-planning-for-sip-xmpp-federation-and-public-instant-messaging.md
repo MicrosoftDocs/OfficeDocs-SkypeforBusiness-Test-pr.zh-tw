@@ -57,50 +57,20 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
 
   - 判斷您的同盟網域探索需求：
     
-      -   
-        如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> **\[同盟及外部存取\]** \> **\[SIP 同盟網域\]** 。請建立 **\[新增\]** 原則或 **\[編輯\]** 現有的原則，以依 FQDN 來允許或封鎖網域。
+       如需手動設定同盟，您必須具備合作夥伴的 Edge Server 完整網域名稱 (FQDN) 和網域名稱，或線上網域名稱 (這輸入於 Lync Server 控制台 \> **\[同盟及外部存取\]** \> **\[SIP 同盟網域\]** 。請建立 **\[新增\]** 原則或 **\[編輯\]** 現有的原則，以依 FQDN 來允許或封鎖網域。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。</td>
-        </tr>
-        </tbody>
-        </table>
+      > [!WARNING]  
+	  > 手動設定同盟合作夥伴的 Edge Server 很容易會因為合作夥伴變更了 Edge Server IP 位址而失敗。
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>若是 <strong>[新的 SIP 同盟網域]</strong>，您必須為 Microsoft Lync Online、Microsoft Office 365 提供 <strong>[網域名稱 (或 FQDN)]</strong>。若是 Microsoft Lync Server 2013、Lync Server 2010 及 Office Communications Server，您也必須提供 <strong>[Access Edge Service (FQDN)]</strong></td>
-        </tr>
-        </tbody>
-        </table>
+      > [!NOTE]  
+      > 若是 <strong>[新的 SIP 同盟網域]</strong>，您必須為 Microsoft Lync Online、Microsoft Office 365 提供 <strong>[網域名稱 (或 FQDN)]</strong>。若是 Microsoft Lync Server 2013、Lync Server 2010 及 Office Communications Server，您也必須提供 <strong>[Access Edge Service (FQDN)]</strong>
+        
     
-      -   
-        若是探索到的協力廠商同盟 (合作夥伴可以探索您的 Edge Server)，您需在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中建立一筆指向連接埠 5061 的 SRV 記錄以及您 Edge Server 的主機 (A) 記錄
+      若是探索到的協力廠商同盟 (合作夥伴可以探索您的 Edge Server)，您需在外部 DNS (\_sipfederationtls.\_tcp.contoso.com) 中建立一筆指向連接埠 5061 的 SRV 記錄以及您 Edge Server 的主機 (A) 記錄
         
-        <table>
-        <thead>
-        <tr class="header">
-        <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="odd">
-        <td>如果您正支援 Windows Phone、Apple iPhone、iPad 或其他 Apple 裝置上的 Microsoft Lync Mobile 用戶端，且使用 推播通知服務或 推播通知服務，您必須針對您每個有 Lync Mobile 用戶端的 SIP 網域來規劃 _sipfederationtls._tcp. <em>&lt;SIP 網域&gt;</em> SRV 記錄。Android 和 Nokia Symbian Lync Mobile 並不使用推入通知，因此不受此條件限制。</td>
-        </tr>
-        </tbody>
-        </table>
+      > [!IMPORTANT]  
+      > 如果您正支援 Windows Phone、Apple iPhone、iPad 或其他 Apple 裝置上的 Microsoft Lync Mobile 用戶端，且使用 推播通知服務或 推播通知服務，您必須針對您每個有 Lync Mobile 用戶端的 SIP 網域來規劃 _sipfederationtls._tcp. <em>&lt;SIP 網域&gt;</em> SRV 記錄。Android 和 Nokia Symbian Lync Mobile 並不使用推入通知，因此不受此條件限制。
+        
 
 
   - 設定外部使用者存取原則來支援同盟網域
@@ -111,18 +81,9 @@ Microsoft Lync Server 2010 中對「裝載提供者」引進更狹義的名稱�
 
 如果您已進行 Microsoft Lync Server 2013  Edge Server 的規劃或部署，規劃憑證、防火牆與連接埠/通訊協定需求和 DNS 需求，通常會是很直觀的程序。由於同盟是一項使用到現有 Edge Server 的額外功能，因此這些規劃需求通常已在規劃與部署 Edge Server 的過程中獲得滿足。您應該使用下列表格來判斷您的需求是否已獲得滿足，並據此變更連接埠/通訊協定和 DNS。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您有 Edge Server 的集區，且正在與 Lync Server 2013 或 Lync Server 2010 合作夥伴進行同盟，您便可以在 Edge Server 的對內與對外處，使用 DNS 負載平衡或硬體負載平衡器。如果您正在與 Office Communications Server 2007 或 Office Communications Server 2007 R2 進行同盟，則硬體負載平衡將能在 Edge Server、 Office Communications Server 2007 和 Office Communications Server 2007 R2 感測不到 DNS 負載平衡時提供容錯移轉支援。合作夥伴的 Edge Server 將與您集區中第一個回應的 Edge Server 建立通訊。如果該 Edge Server 失敗，通訊不會自動進行容錯移轉。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您有 Edge Server 的集區，且正在與 Lync Server 2013 或 Lync Server 2010 合作夥伴進行同盟，您便可以在 Edge Server 的對內與對外處，使用 DNS 負載平衡或硬體負載平衡器。如果您正在與 Office Communications Server 2007 或 Office Communications Server 2007 R2 進行同盟，則硬體負載平衡將能在 Edge Server、 Office Communications Server 2007 和 Office Communications Server 2007 R2 感測不到 DNS 負載平衡時提供容錯移轉支援。合作夥伴的 Edge Server 將與您集區中第一個回應的 Edge Server 建立通訊。如果該 Edge Server 失敗，通訊不會自動進行容錯移轉。
+
 
 
 憑證需求通常是透過規劃您所選 Edge Server 或集區 Edge Server 計畫的憑證而獲得滿足。
@@ -137,25 +98,11 @@ Public Instant Messaging Connectivity 是一種同盟等級，此設定可讓您
 
   - America Online (AOL) 連絡人
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>自 2012 年 9 月 1 日起，Microsoft Lync Public IM Connectivity User Subscription License (&quot;PIC USL&quot; ) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 同盟，直到服務終止日為止 (確切日期尚未決定，但不會早於 2013 年 6 月)。</p></li>
-<li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將不再續約。</p></li>
-<li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> <li><p>自 2012 年 9 月 1 日起，Microsoft Lync Public IM Connectivity User Subscription License (&quot;PIC USL&quot; ) 無法再以新合約或續約的方式購買。持有使用中授權的客戶將可繼續與 Yahoo! Messenger 同盟，直到服務終止日為止 (確切日期尚未決定，但不會早於 2013 年 6 月)。</p></li>
+> <li><p>PIC USL 是針對每位使用者的每月訂閱授權，為 Lync Server 或 Office Communications Server 與 Yahoo! Messenger 同盟的必要授權。Microsoft 是否提供此項服務視 Yahoo! 的支援而定，而此基礎合約將不再續約。</p></li>
+> <li><p>更勝以往，Lync 成為連接全世界組織之間以及個人之間的強大工具。除了 Lync Standard CAL 之外，與 Windows Live Messenger 同盟不需要其他使用者/裝置授權。此清單更將加入 Skype 同盟，讓 Lync 使用者可透過 IM 和語音觸及數億位使用者。</p></li>
+> </ul>
 
 
 使用此同盟等級必須考量下列規劃：
@@ -172,44 +119,23 @@ Public Instant Messaging Connectivity 是一種同盟等級，此設定可讓您
 
 XMPP 的部署與設定涵蓋於＜[在 Lync Server 2013 中部署外部使用者存取](lync-server-2013-deploying-external-user-access.md)＞中。您可以藉由在防火牆上定義連接埠和通訊協定規則、設定憑證及新增 DNS 記錄，來規劃在組織中支援 XMPP。本節中的下列主題摘要說明您為部署成功規劃 XMPP 同盟所需的資訊。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>XMPP 同盟不支援 Survivable Branch Appliance 上的使用者。這個限制適用於檢視目前狀態資訊及交換 IM 訊息。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> XMPP 同盟不支援 Survivable Branch Appliance 上的使用者。這個限制適用於檢視目前狀態資訊及交換 IM 訊息。
+
 
 
 下列主題包含為支援之同盟案例類型定義憑證、防火牆連接埠和 DNS 項目的指引。
 
-  -   
-    [憑證摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+   [憑證摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-certificate-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
-  -   
-    [連接埠摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+   [連接埠摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-port-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
-  -   
-    [DNS 摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+   [DNS 摘要 - SIP、XMPP 同盟和公用立即訊息](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
 ## 請參閱
 

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-02-24_
 
 本節也會假設您至少已定義一個閘道對等實體來提供 PSTN 連線，如[在 Lync Server 2013 中於拓撲產生器內定義閘道](lync-server-2013-define-a-gateway-in-topology-builder.md)中所述。如果您連接的對等實體為 SIP 主幹連線提供者的 SBC，請確定該提供者為合格的提供者，而且該提供者支援媒體旁路。例如，許多 SIP 主幹連線提供者只允許其 SBC 接收來自中繼伺服器的流量。若是如此，就不得啟用所述主幹的旁路。另外，除非您的組織對 SIP 主幹連線提供者透露內部網路 IP 位址，否則您無法啟用媒體旁路。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>媒體旁路不會與每個 PSTN 閘道、IP-PBX 以及 SBC 相互溝通。Microsoft 已經與認證的合作夥伴測試了一組 PSTN 閘道和 SBC，並用 Cisco IP-PBX 完成部分測試。只有列在 Unified Communications Open Interoperability Program – Lync Server 中的產品和版本支援媒體旁路，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 媒體旁路不會與每個 PSTN 閘道、IP-PBX 以及 SBC 相互溝通。Microsoft 已經與認證的合作夥伴測試了一組 PSTN 閘道和 SBC，並用 Cisco IP-PBX 完成部分測試。只有列在 Unified Communications Open Interoperability Program – Lync Server 中的產品和版本支援媒體旁路，網址為：<a href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</a>。
+
 
 
 本節說明如何啟用媒體旁路來減少中繼伺服器所需進行的處理。在您啟用媒體旁路前，請確定您的環境符合支援媒體旁路所需的條件，如規劃文件中的[在 Lync Server 2013 中規劃媒體旁路](lync-server-2013-planning-for-media-bypass.md)所述。另外，務必使用[在 Lync Server 2013 中規劃媒體旁路](lync-server-2013-planning-for-media-bypass.md)中的資訊決定是否啟用媒體旁路全域設定以便永遠略過中繼伺服器，或是使用網站和區域資訊決定是否略過中繼伺服器。

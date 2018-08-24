@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 DNS 記錄摘要表格會說明針對開放或可公開同盟的必要輸入。若您不想實作「同盟探索」，則可不設定 \_sipfederationtls.\_tcp. *\<SIP 網域名稱\>* 記錄。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在某些特定案例中，您可能並不想使用可公開的同盟，卻仍必須使用 _sipfederationtls._tcp. <em>&lt;SIP 網域名稱&gt;</em> SRV 記錄，例如，當您已為使用者部署了行動性時。行動性推播通知結算所 (PNCH) 是一種特殊的同盟類型，主要供使用 Lync 2010 Mobile 用戶端之 Apple iPhone 或 iPad，或是使用 Lync 2010 Mobile 或 Lync 2013 Mobile 用戶端之 Windows Phone 上的 Microsoft Lync Mobile 用戶端使用。行動性和推播通知都需要使用 _sipfederationtls._tcp. <em>&lt;SIP 網域名稱&gt;</em> SRV 記錄。若要減輕此問題的影響，並控制可探索性，請清除 <strong>[啟用協力廠商網域探索]</strong> 設定以關閉探索。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在某些特定案例中，您可能並不想使用可公開的同盟，卻仍必須使用 _sipfederationtls._tcp. <em>&lt;SIP 網域名稱&gt;</em> SRV 記錄，例如，當您已為使用者部署了行動性時。行動性推播通知結算所 (PNCH) 是一種特殊的同盟類型，主要供使用 Lync 2010 Mobile 用戶端之 Apple iPhone 或 iPad，或是使用 Lync 2010 Mobile 或 Lync 2013 Mobile 用戶端之 Windows Phone 上的 Microsoft Lync Mobile 用戶端使用。行動性和推播通知都需要使用 _sipfederationtls._tcp. <em>&lt;SIP 網域名稱&gt;</em> SRV 記錄。若要減輕此問題的影響，並控制可探索性，請清除 <strong>[啟用協力廠商網域探索]</strong> 設定以關閉探索。
+
 
 
 若要為您的部署設定可延伸訊息和目前狀態通訊協定 (XMPP)，請在外部 DNS 伺服器中建立兩個網域名稱系統 (DNS) 記錄，該伺服器會將記錄解析至 Edge Server 或 Edge 集區的 Access Edge Service。
@@ -61,19 +52,11 @@ DNS 記錄摘要表格會說明針對開放或可公開同盟的必要輸入。�
 <td><p>_sipfederationtls._tcp.contoso.com</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>您的同盟和其他潛在同盟協力廠商之自動 DNS 探索的必要 Access Edge Service 外部介面，其亦稱為「允許的 SIP 網域」(舊版則稱為增強型同盟)。您可視需要，針對啟用了 Lync 之使用者的所有 SIP 網域重複此項目。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動性和推播通知結算所都必須使用此 SRV 記錄。若您有一個以上的 SIP 網域，請針對將服務 Lync Mobile 用戶端的每個網域建立並發行 SRV 記錄。若不是每個部署支援的 SIP 網域都具備明確的 SRV 記錄，則推播通知服務和 Apple 推播通知服務可能無法如預期般運作。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!IMPORTANT]    
+> 行動性和推播通知結算所都必須使用此 SRV 記錄。若您有一個以上的 SIP 網域，請針對將服務 Lync Mobile 用戶端的每個網域建立並發行 SRV 記錄。若不是每個部署支援的 SIP 網域都具備明確的 SRV 記錄，則推播通知服務和 Apple 推播通知服務可能無法如預期般運作。
+
 
 </div></td>
 </tr>

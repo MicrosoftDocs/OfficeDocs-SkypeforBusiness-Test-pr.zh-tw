@@ -17,29 +17,20 @@ _**上次修改主題的時間：** 2012-10-19_
 
 「網路地區」 是用於通話許可控制服務、E9-1-1 及媒體旁路設定的網路集線器或骨幹。使用下列程序可以建立或修改網路地區。例如，您已為一個語音功能建立網路地區，便不需要建立新的網路地區；其他的進階 Enterprise Voice 功能會使用那些相同的網路地區。不過，您必須修改現有的網路地區定義，以套用功能專用的設定。例如，您已為 E9-1-1 (其不需要相關的中央網站) 建立網路地區，而您接著要部署通話許可控制服務，您便必須修改網路地區定義來指定中央網站。如需詳細資訊，請參閱＜ [在 Lync Server 2013 中設定 CAC 的網路區域](lync-server-2013-configure-network-regions-for-cac.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>網路地區定義的任何功能特定需求都記載在功能的部署主題中。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 網路地區定義的任何功能特定需求都記載在功能的部署主題中。
+
 
 
 如需使用網路地區的詳細資訊，請參閱 Lync Server 管理命令介面文件中的下列 Cmdlet：
 
-  - [New-CsNetworkRegion](new-csnetworkregion.md)
+  - [New-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkRegion)
 
-  - [Get-CsNetworkRegion](get-csnetworkregion.md)
+  - [Get-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink)
 
-  - [Set-CsNetworkRegion](set-csnetworkregion.md)
+  - [Set-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkRegion)
 
-  - [Remove-CsNetworkRegion](remove-csnetworkregion.md)
+  - [Remove-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkRegion)
 
 ## 建立網路地區
 

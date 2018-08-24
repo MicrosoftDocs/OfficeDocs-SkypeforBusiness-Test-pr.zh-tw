@@ -29,29 +29,11 @@ _**上次修改主題的時間：** 2012-10-02_
 
 2.  安裝 OCSWMIBC.MSI。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>OCSWMIBC.msi 必須安裝在執行 [拓撲產生器合併精靈] 的電腦上。然而，建議將 OCSWMIBC.msi 安裝在拓撲中的所有前端伺服器上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > OCSWMIBC.msi 必須安裝在執行 [拓撲產生器合併精靈] 的電腦上。然而，建議將 OCSWMIBC.msi 安裝在拓撲中的所有前端伺服器上。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>凡位於安裝有 Lync Server 2013 核心元件及 Lync Server 2013 管理命令介面的網域中，並有權存取 Office Communications Server 2007 R2 拓撲 (WMI 提供者至 Active Directory 網域服務 (AD DS) 及 SQL Server) 的電腦，皆可安裝 OCSWMIBC.msi。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 凡位於安裝有 Lync Server 2013 核心元件及 Lync Server 2013 管理命令介面的網域中，並有權存取 Office Communications Server 2007 R2 拓撲 (WMI 提供者至 Active Directory 網域服務 (AD DS) 及 SQL Server) 的電腦，皆可安裝 OCSWMIBC.msi。
+    
 

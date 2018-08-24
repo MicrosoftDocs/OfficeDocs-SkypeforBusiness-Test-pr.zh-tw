@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2015-03-09_
 
 如果您在一個前端集區或 Standard Edition Server 啟用封存，則應在部署中針對所有其他前端集區和 Standard Edition Server 一併啟用。這是因為，需要將通訊封存的使用者可受邀至由其他集區所主控的群組 IM 交談或會議。如果封存未在主控交談或會議的所在集區啟用，可能無法封存完整的工作階段。在此情況下，包含已啟用封存之使用者的 IM 仍可進行封存，但不包含會議內容檔案以及會議加入或離開事件。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果組織基於規範理由而極重視封存作業，請務必在啟用這些 Lync Server 2013 的使用者之前部署封存、設定原則與其他適當等級的選項，以及針對所有適當的使用者啟用封存。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果組織基於規範理由而極重視封存作業，請務必在啟用這些 Lync Server 2013 的使用者之前部署封存、設定原則與其他適當等級的選項，以及針對所有適當的使用者啟用封存。
+
 
 
 ## 封存部署程序
@@ -68,19 +59,11 @@ _**上次修改主題的時間：** 2015-03-09_
 <li><p>若要使用 Microsoft Exchange 整合 (針對部分或所有使用者使用 Exchange 2013 封存存放區)，您需要現有 Exchange 2013 部署。</p></li>
 <li><p>若針對部分或所有使用者使用個別封存資料庫 (使用 SQL Server 資料庫) 封存存放區，伺服器上的 SQL Server 將會儲存封存資料。</p></li>
 </ul>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>封存會在 Enterprise Pool 前端伺服器與 Standard Edition Server 上執行。安裝這些伺服器除必條件外，沒有額外的硬體或軟體需求。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 封存會在 Enterprise Pool 前端伺服器與 Standard Edition Server 上執行。安裝這些伺服器除必條件外，沒有額外的硬體或軟體需求。
+
 
 </div></td>
 <td><p>身為本機系統管理員群組成員的網域使用者。</p></td>

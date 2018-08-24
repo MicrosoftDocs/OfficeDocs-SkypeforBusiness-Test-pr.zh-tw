@@ -55,18 +55,9 @@ Microsoft Lync Server 2013 提供角色型存取控制 (RBAC)，可讓您委派�
 
 Lync Server 2013 並不支援在 Edge Server 的內部介面上使用網路位址轉譯 (NAT)，但支援將 Access Edge Service、Web Conferencing Edge Service 以及 A/V Edge Service 的外部介面置於針對單一與調整式合併 Edge Server 拓撲執行網路位址解析 (NAT) 的路由器或防火牆後面。硬體負載平衡器後方的多個 Edge Server 無法使用 NAT。如有多個 Edge Server 在其外部介面上使用 NAT，則需要網域名稱系統 (DNS) 負載平衡作業。使用 DNS 負載平衡可讓您減少 Edge Server 集區中各個 Edge Server 的公用 IP 位址數。如需詳細資訊，請參閱＜[在 Lync Server 2013 中規劃外部使用者存取](lync-server-2013-planning-for-external-user-access.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若是您與部署 Microsoft Office Communications Server 2007 的企業建立同盟，並需要在企業和同盟企業之間使用音訊/視訊功能，則連接埠需求與所部署的舊版 Edge Server 相同。例如，在同盟夥伴將其 Edge Server 升級為 Lync Server 2013 之前，兩家企業皆必須開啟舊版所需的連接埠範圍。待同盟夥伴完成升級之後，即可根據新的設定重新檢視連接埠需求並予以減少。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若是您與部署 Microsoft Office Communications Server 2007 的企業建立同盟，並需要在企業和同盟企業之間使用音訊/視訊功能，則連接埠需求與所部署的舊版 Edge Server 相同。例如，在同盟夥伴將其 Edge Server 升級為 Lync Server 2013 之前，兩家企業皆必須開啟舊版所需的連接埠範圍。待同盟夥伴完成升級之後，即可根據新的設定重新檢視連接埠需求並予以減少。
+
 
 
 ## Edge Server 的簡化憑證

@@ -21,18 +21,9 @@ _**上次修改主題的時間：** 2012-10-19_
 
   - 將其新增至整合通訊群組搜尋。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要使用 <strong>Get-CsExUmContact</strong> 和 <strong>Move-CsExUmContact</strong> Cmdlet，您必須是 RTCUniversalUserAdmins 群組的成員，且具備連絡人物件存放所在的組織單位 (OU) 權限。使用 <strong>Grant-OUPermission</strong> Cmdlet，即可授與此 OU 權限。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 若要使用 <strong>Get-CsExUmContact</strong> 和 <strong>Move-CsExUmContact</strong> Cmdlet，您必須是 RTCUniversalUserAdmins 群組的成員，且具備連絡人物件存放所在的組織單位 (OU) 權限。使用 <strong>Grant-OUPermission</strong> Cmdlet，即可授與此 OU 權限。
+
 
 
 ## 使用 Lync Server 管理命令介面移動連絡人物件
@@ -65,16 +56,7 @@ _**上次修改主題的時間：** 2012-10-19_
     
     其中 *forest FQDN* 是指已部署 Lync Server 2013 的樹系。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請務必在執行 exchucutil.ps1 之後 ，重新啟動 <strong>[Lync Server 前端]</strong> 服務 (rtcsrv.exe)。 否則， Lync Server 2013 將偵測不到拓撲中的整合通訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 請務必在執行 exchucutil.ps1 之後 ，重新啟動 <strong>[Lync Server 前端]</strong> 服務 (rtcsrv.exe)。 否則， Lync Server 2013 將偵測不到拓撲中的整合通訊。
+    
 

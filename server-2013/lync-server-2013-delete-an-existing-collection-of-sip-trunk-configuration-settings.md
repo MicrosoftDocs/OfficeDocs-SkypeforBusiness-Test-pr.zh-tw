@@ -23,7 +23,7 @@ SIP 主幹組態設定用於定義中繼伺服器與服務提供者的公用交�
 
   - 每個主幹是否需要安全即時通訊協定 (SRTP) 加密。
 
-安裝 Microsoft Lync Server 2013 時即會建立 SIP 主幹組態設定的全域集合。此設定的全域集合無法刪除。不過可以使用 Lync Server 控制台或 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md) Cmdlet，將全域集合中的屬性「重設」為預設值。例如，如果已將 Enable3pccRefer 屬性設為 True，則在重設全域集合時，Enable3pccRefer 屬性會還原為預設值 False。
+安裝 Microsoft Lync Server 2013 時即會建立 SIP 主幹組態設定的全域集合。此設定的全域集合無法刪除。不過可以使用 Lync Server 控制台或 [Remove-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrunkConfiguration) Cmdlet，將全域集合中的屬性「重設」為預設值。例如，如果已將 Enable3pccRefer 屬性設為 True，則在重設全域集合時，Enable3pccRefer 屬性會還原為預設值 False。
 
 管理員也可建立網站範圍或服務範圍 (針對個別 PSTN 閘道) 的自訂主幹組態設定；這些自訂設定是可移除的。移除這些自訂設定時，請注意下列事項：
 
@@ -67,5 +67,5 @@ SIP 主幹組態設定用於定義中繼伺服器與服務提供者的公用交�
     
         Get-CsTrunkConfiguration | Where-Object {$_.EnableBypass -eq $True} | Remove-CsTrunkConfiguration
 
-如需詳細資訊，請參閱 [Remove-CsTrunkConfiguration](remove-cstrunkconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Remove-CsTrunkConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsTrunkConfiguration) Cmdlet 的說明主題。
 

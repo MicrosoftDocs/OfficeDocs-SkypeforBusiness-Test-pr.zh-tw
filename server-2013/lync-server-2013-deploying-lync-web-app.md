@@ -19,45 +19,23 @@ Lync Web App 是隨 Lync Server 2013 安裝的網際網路資訊服務 (IIS) Web
 
 Lync Web App 中的語音、視訊與共用功能需要 Microsoft ActiveX 控制項。您可事先安裝 ActiveX 控制項，或讓使用者在系統提示時進行安裝。當使用者第一次使用 Lync Web App 或第一次存取需要 ActiveX 控制項的功能時，即會出現提示。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在 Lync Server 2013 Edge Server 部署中，周邊網路中需要有 HTTPS 反向 Proxy 才能進行 Lync Web App 用戶端存取。您也必須發行簡單 URL。如需詳細資訊，請參閱<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>與<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中規劃簡單 URL</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在 Lync Server 2013 Edge Server 部署中，周邊網路中需要有 HTTPS 反向 Proxy 才能進行 Lync Web App 用戶端存取。您也必須發行簡單 URL。如需詳細資訊，請參閱<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>與<a href="lync-server-2013-planning-for-simple-urls.md">在 Lync Server 2013 中規劃簡單 URL</a>。
+
 
 
 ## 啟用 Lync Web App 的多重因素驗證
 
 Lync Web App 的 Lync Server 2013 版本支援多重因素驗證。除了使用者名稱與密碼之外，您可使用其他的驗證方法 (例如智慧卡或 PIN)，在從外部網路加入的使用者登入 Lync 會議時進行驗證。您可在 Lync Server 2013 中部署 Active Directory Federation Service (AD FS) 同盟伺服器並啟用被動驗證來啟用多重因素驗證。AD FS 設定之後，嘗試加入 Lync 會議的外部使用者會看見 AD FS 多重因素驗證網頁，當中包含使用者名稱與密碼挑戰，以及您已設定的其他驗證方法。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您計劃設定 AD FS 來進行多重因素驗證，下列為重要的考量事項：
-<ul>
-<li><p>如果會議參與者和召集人位於相同組織，或同樣來自 AD FS 同盟組織，則多重因素 ADFS 驗證可以正常運作。多重因素 ADFS 驗證無法用於 Lync 同盟使用者，因為 Lync 伺服器 Web 基礎結構目前並不支援它。</p></li>
-<li><p>若您使用硬體負載平衡器，請在負載平衡器上啟用 Cookie 持續性，這樣來自 Lync Web App 用戶端的所有要求才能由相同的前端伺服器處理。</p></li>
-<li><p>當您在 Lync Server 與 AD FS 伺服器之間建立信賴憑證者信任時，請指定長度足夠的 Token 檔案，以擴展您 Lync 會議的長度上限。一般來說，240 分鐘的 Token 檔案即足夠。</p></li>
-<li><p>此設定並不會套用至 Lync 行動用戶端。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您計劃設定 AD FS 來進行多重因素驗證，下列為重要的考量事項：
+> <ul>
+> <li><p>如果會議參與者和召集人位於相同組織，或同樣來自 AD FS 同盟組織，則多重因素 ADFS 驗證可以正常運作。多重因素 ADFS 驗證無法用於 Lync 同盟使用者，因為 Lync 伺服器 Web > 基礎結構目前並不支援它。</p></li>
+> <li><p>若您使用硬體負載平衡器，請在負載平衡器上啟用 Cookie 持續性，這樣來自 Lync Web App 用戶端的所有要求才能由相同的前端伺服器處理。</p></li>
+> <li><p>當您在 Lync Server 與 AD FS 伺服器之間建立信賴憑證者信任時，請指定長度足夠的 Token 檔案，以擴展您 Lync 會議的長度上限。一般來說，240 分鐘的 Token 檔案即足夠。</p></li>
+> <li><p>此設定並不會套用至 Lync 行動用戶端。</p></li>
+> </ul>
 
 
 **設定多重因素驗證**
@@ -76,12 +54,17 @@ Lync Web App 的 Lync Server 2013 版本支援多重因素驗證。除了使用�
 
 5.  設定下列信賴憑證者規則：
     
-        $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'
-        $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
+      ```
+      $IssuanceAuthorizationRules = '@RuleTemplate = "AllowAllAuthzRule" => issue(Type = "http://schemas.contoso.com/authorization/claims/permit", Value = "true");'$IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "http://schemas.contoso.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
+      ```
     
-        Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
+      ```
+      Set-ADFSRelyingPartyTrust -TargetName ContosoApp -IssuanceAuthorizationRules $IssuanceAuthorizationRules -IssuanceTransformRules $IssuanceTransformRules
+      ```
     
-        Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
+      ```
+      Set-CsWebServiceConfiguration -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
+      ```
 
 ## BranchCache 設定
 
@@ -91,7 +74,7 @@ Windows 7 與 Windows Server 2008 R2 中的 BranchCache 功能可能會干擾 
 
 ## 驗證 Lync Web App 部署
 
-您可使用 Test-CsUcwaConference Cmdlet 來驗證某組測試使用者是否可使用 Unified Communications Web API (UCWA) 參與會議。如需關於此 Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面 文件中的 [Test-CsUcwaConference](test-csucwaconference.md)。
+您可使用 Test-CsUcwaConference Cmdlet 來驗證某組測試使用者是否可使用 Unified Communications Web API (UCWA) 參與會議。如需關於此 Cmdlet 的詳細資訊，請參閱 Lync Server 管理命令介面 文件中的 [Test-CsUcwaConference](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsUcwaConference)。
 
 ## 疑難排解 Windows Server 2008 R2 上的外掛程式安裝
 
@@ -107,18 +90,9 @@ Windows 7 與 Windows Server 2008 R2 中的 BranchCache 功能可能會干擾 
 
 4.  清除 \[不要將加密的網頁存到磁碟\]，然後按一下 \[確定\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若選取此設定，當嘗試從 Lync Web App 下載附件時，也會造成錯誤。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若選取此設定，當嘗試從 Lync Web App 下載附件時，也會造成錯誤。
+    
 
 
 5.  重新加入會議。應該可正確下載外掛程式。

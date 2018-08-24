@@ -27,18 +27,9 @@ Lync Server 2013拓撲產生器 支援在設定 Lync Server 2013 時，使用 SQ
 
 為了成功判斷 Lync Server 2013 用來與 SQL Server 進行通訊的連接埠，攻擊者必須掃描所有連接埠，才能取得連接埠資訊。攻擊者掃描連接埠的動作提高了安全性保護的偵測機率，進而停止掃描指示。此外，為提高非標準連接埠的安全性，您也可以使用 SQL Server 別名以提供彈性的部署。在必須變更 SQL Server 名稱的情況下，此功能對減少組態變更尤為重要。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>SQL Server 提供二種容錯方法 (容錯叢集和鏡像)。這兩種 SQL Server 容錯方法都支援搭配 Lync Server 2013 使用 SQL Server 非標準連接埠和別名。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> SQL Server 提供二種容錯方法 (容錯叢集和鏡像)。這兩種 SQL Server 容錯方法都支援搭配 Lync Server 2013 使用 SQL Server 非標準連接埠和別名。
+
 
 
 從 拓撲產生器 當中設定 SQL Server 資料庫連接或使用 Install-CsDatabase Cmdlet 時，您無法明確定義 SQL Server 非標準連接埠號碼，並將其與 SQL 執行個體建立關聯。要設定非標準連接埠，您需要使用 SQL Server 和 Windows Server 公用程式。
@@ -99,18 +90,9 @@ SQL Server 非標準連接埠和別名必須先在資料庫上完成設定，才
     
     ![針對執行個體重設 SQL Server 服務。](images/Dn776290.a965c8cf-f769-4b52-bb38-c48a438cf491(OCS.15).jpg "針對執行個體重設 SQL Server 服務。")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>確定您更新了防火牆設定，以配合新的 SQL Server 連接埠。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 確定您更新了防火牆設定，以配合新的 SQL Server 連接埠。
+
 
 
 **建立及設定 SQL Server 別名**
@@ -129,18 +111,8 @@ SQL Server 非標準連接埠和別名必須先在資料庫上完成設定，才
     
     ![建立新別名](images/Dn776290.03653588-aecf-4fdd-b58a-95f5b372d478(OCS.15).jpg "建立新別名")
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205186.Caution(OCS.15).gif" title="Caution" alt="Caution" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>確定輸入您在上一個步驟使用的同一個非標準連接埠，因為這是 SQL Server 將會聆聽的連接埠。如果設定的別名連接到錯誤的 SQL Server FQDN 或執行個體，請停用後重新啟用相關的網路通訊協定。如此可以清除任何快取連接資訊，允許用戶端正常連接。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!CAUTION]
+    > 確定輸入您在上一個步驟使用的同一個非標準連接埠，因為這是 SQL Server 將會聆聽的連接埠。如果設定的別名連接到錯誤的 SQL Server FQDN 或執行個體，請停用後重新啟用相關的網路通訊協定。如此可以清除任何快取連接資訊，允許用戶端正常連接。
 
 
 **建立 DNS CNAME 資源記錄**
@@ -171,18 +143,9 @@ SQL Server 非標準連接埠和別名必須先在資料庫上完成設定，才
 
 有許多不同的方式能夠確認其運作正確無誤。建議您確認 SQL Server 伺服器正在聆聽使用別名的指定連接埠。如果要進行快速檢查，請使用 **netstat** 和 **telnet** 命令。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Telnet 用戶端功能隨附於 Windows Server 中，但必須先進行安裝。如果要安裝 Windows Server 功能，請開啟「伺服器管理員」，然後從 [管理] 功能表中選取 [新增角色及功能]。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Telnet 用戶端功能隨附於 Windows Server 中，但必須先進行安裝。如果要安裝 Windows Server 功能，請開啟「伺服器管理員」，然後從 [管理] 功能表中選取 [新增角色及功能]。
+
 
 
 **使用 netstat 和 telnet 驗證資料庫連線**

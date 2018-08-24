@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 安裝一部或多部中繼伺服器的檔案、設定撥出電話路由，以及選擇性地部署一項或多項進階 企業語音 功能之後，使用下列程序讓使用者使用 企業語音 撥打電話：
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>下列程序中，只有第一項程序可以使用 Lync Server 控制台 執行。其餘程序只能使用 Lync Server 管理命令介面。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 下列程序中，只有第一項程序可以使用 Lync Server 控制台 執行。其餘程序只能使用 Lync Server 管理命令介面。
+
 
 
   - 啟用 企業語音 的使用者帳戶。

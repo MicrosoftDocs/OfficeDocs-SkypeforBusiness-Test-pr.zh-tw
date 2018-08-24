@@ -19,35 +19,21 @@ _**上次修改主題的時間：** 2013-02-24_
 
 使用下列程序可建立或修改網站。例如，如果您已為一個語音功能建立網站，就不需要再建立新的網站，其他語音功能會使用這些相同的網站。不過，您可能需要修改現有網站定義，以便套用特定的功能設定。例如，如果已為 E9-1-1 建立了網站，在部署通話許可控制期間需要修改網站，以便套用頻寬原則設定檔。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可在部署文件中，找到與每個進階語音功能相關之網站的特定範例與需求：
-<ul>
-<li><p><a href="lync-server-2013-configure-network-sites-for-cac.md">在 Lync Server 2013 中設定 CAC 的網站</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!Note]  
+> 您可在部署文件中，找到與每個進階語音功能相關之網站的特定範例與需求：
+> <ul>
+> <li><p><a href="lync-server-2013-configure-network-sites-for-cac.md">在 Lync Server 2013 中設定 CAC 的網站</a></p></li>
+> </ul>
 
 如需使用網路網站的詳細資訊，請參閱 Lync Server 管理命令介面文件中關於下列 Cmdlet 的部分：
 
-  - [New-CsNetworkSite](new-csnetworksite.md)
+  - [New-CsNetworkSite](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsNetworkSite)
 
-  - [Get-CsNetworkSite](get-csnetworksite.md)
+  - [Get-CsNetworkSite](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkSite)
 
-  - [Set-CsNetworkSite](set-csnetworksite.md)
+  - [Set-CsNetworkSite](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsNetworkSite)
 
-  - [Remove-CsNetworkSite](remove-csnetworksite.md)
+  - [Remove-CsNetworkSite](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsNetworkSite)
 
 ## 建立網站
 
@@ -67,18 +53,9 @@ _**上次修改主題的時間：** 2013-02-24_
     
     此範例會建立一個稱為「芝加哥」的網站，位於「北美地區」網路地區中。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>「北美地區」網路地區必須已經存在，此命令才能成功執行。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 「北美地區」網路地區必須已經存在，此命令才能成功執行。
+    
 
 
 3.  使用其他網站的設定重複執行步驟 2，完成建立拓撲的網站。
@@ -99,34 +76,16 @@ _**上次修改主題的時間：** 2013-02-24_
 
 7.  (選用) 按一下 **\[頻寬原則\]** ，然後按一下清單中的頻寬原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您要在網站部署通話許可控制，才需要頻寬原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您要在網站部署通話許可控制，才需要頻寬原則。
+    
 
 
 8.  (選用) 按一下 **\[位置原則\]** ，然後按一下清單中的位置原則。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您要在網站部署 E9-1-1，才需要位置原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您要在網站部署 E9-1-1，才需要位置原則。
+    
 
 
 9.  (選用) 按一下 **\[描述\]** ，然後輸入用來描述此網站的其他資訊。
@@ -153,18 +112,9 @@ _**上次修改主題的時間：** 2013-02-24_
     
     此範例會將稱為「阿布奎基」的網站移至「北美地區」網路地區。若要修改網站設定以便部署通話許可控制、E9-1-1 或媒體旁路，請執行 Set-CsNetworkSite Cmdlet 並分別搭配 BWPolicyProfileID 或 LocationPolicy 參數，修改網站設定。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>媒體旁路還有一個 BypassID 參數，但強烈建議您不要覆寫自動產生的旁路 ID。為媒體旁路設定網站時，不需要指定其他參數。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 媒體旁路還有一個 BypassID 參數，但強烈建議您不要覆寫自動產生的旁路 ID。為媒體旁路設定網站時，不需要指定其他參數。
+    
 
 
 3.  使用其他網站的設定重複執行步驟 2，完成修改拓撲的網站。

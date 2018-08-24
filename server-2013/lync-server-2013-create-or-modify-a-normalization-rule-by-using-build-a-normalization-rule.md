@@ -9,8 +9,7 @@ mtps_version: v=OCS.15
 ms.translationtype: HT
 ---
 
-# 在 Lync Server 2013 中使用 建立或修改正規化規則
-
+# 在 Lync Server 2013 中使用 [建置正規化規則] 建立或修改正規化規則
  
 
 _**上次修改主題的時間：** 2012-11-01_
@@ -55,18 +54,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 9.  (選用) 輸入一個號碼來測試正規化規則，然後按一下 \[執行\] 。測試結果將顯示在 \[輸入測試號碼\] 下。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您可以儲存尚未通過測試的正規化規則，並於之後將它重新設定。如需詳細資訊，請參閱＜ <a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>＞。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您可以儲存尚未通過測試的正規化規則，並於之後將它重新設定。如需詳細資訊，請參閱＜ <a href="lync-server-2013-test-voice-routing.md">在 Lync Server 2013 中測試語音路由</a>＞。
+    
 
 
 10. 按一下 \[確定\] 儲存正規化規則。
@@ -75,18 +65,9 @@ _**上次修改主題的時間：** 2012-11-01_
 
 12. 在 \[撥號對應表\] 頁面上，依序按一下 \[認可\] 和 \[全部認可\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>只要您建立或變更正規化規則，就必須執行 [全部認可] 命令發佈組態變更。如需詳細資訊，請參閱操作文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 只要您建立或變更正規化規則，就必須執行 [全部認可] 命令發佈組態變更。如需詳細資訊，請參閱操作文件中的 <a href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">在 Lync Server 2013 中發佈擱置變更至語音路由設定</a>。
+    
 
 
 ## 請參閱

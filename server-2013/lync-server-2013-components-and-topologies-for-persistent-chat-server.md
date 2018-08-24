@@ -27,35 +27,16 @@ _**上次修改主題的時間：** 2012-10-05_
     
       - 規範服務，會在啟用規範時開啟
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在 Lync Server 2013 中，用於檔案上傳/下載的 常設聊天室 Web 服務，現在與 Lync Server 2013前端伺服器組合。<br />
-    聊天室管理的 常設聊天室 Web 服務也與 Lync Server 2013前端伺服器組合。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 在 Lync Server 2013 中，用於檔案上傳/下載的 常設聊天室 Web 服務，現在與 Lync Server 2013前端伺服器組合。<br />
+    > 聊天室管理的 常設聊天室 Web 服務也與 Lync Server 2013前端伺服器組合。
 
 
   - 伺服器 (使用鏡像時會有多部伺服器) 會裝載 SQL Server 後端資料庫，以裝載儲存聊天室內容、房間和類別的 常設聊天室內容資料庫。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>後端資料庫可儲存交談記錄資料，包括類別和所建立 常設聊天室空間的相關資訊。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 後端資料庫可儲存交談記錄資料，包括類別和所建立 常設聊天室空間的相關資訊。
+    
 
 
   - 如果啟用規範，伺服器 (使用鏡像時會有多部伺服器) 會裝載 SQL Server 後端資料庫，以裝載 常設聊天室規範資料庫，也就是基於法規遵循目的而儲存規範事件與交談內容的規範資料庫。
@@ -74,18 +55,9 @@ Lync Server 2013 支援各種組合案例，可在單一伺服器上執行多個
 
 對於 Lync Server 2013Enterprise Edition， 常設聊天室伺服器 無法在 Enterprise Edition Server 進行組合。 常設聊天室伺服器 的 SQL Server 資料庫可與 Enterprise Edition前端集區的 後端伺服器資料庫組合。 常設聊天室規範的 SQL Server 資料庫也可與 Enterprise Edition 集區的 後端伺服器資料庫組合。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>裝載 常設聊天室資料庫的伺服器也可裝載其他資料庫。不過，當您考慮將 常設聊天室資料庫與其他資料庫組合時，請留意您是否需儲存許多使用者的訊息， 常設聊天室資料庫所需的磁碟空間會大幅增加。基於此原因，我們建議不要將 常設聊天室資料庫與後端資料庫組合。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 裝載 常設聊天室資料庫的伺服器也可裝載其他資料庫。不過，當您考慮將 常設聊天室資料庫與其他資料庫組合時，請留意您是否需儲存許多使用者的訊息， 常設聊天室資料庫所需的磁碟空間會大幅增加。基於此原因，我們建議不要將 常設聊天室資料庫與後端資料庫組合。
+
 
 
 如果將 常設聊天室資料庫與後端資料庫組合，您可以針對任一或所有資料庫使用 SQL Server 的單一執行個體，也可以針對每個資料庫使用 SQL Server 的個別執行個體，但有以下限制：
@@ -108,36 +80,18 @@ Lync Server 2013 支援各種組合案例，可在單一伺服器上執行多個
 
 您可使用 拓撲產生器將 常設聊天室伺服器 新增至 Lync Server 2013 部署，也可以將單一伺服器或多伺服器 Persistent Chat Server 集區新增至拓撲。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在您使用 拓撲產生器建立帶有單一伺服器的 Persistent Chat Server 集區後，就無法新增其他伺服器至集區。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 在您使用 拓撲產生器建立帶有單一伺服器的 Persistent Chat Server 集區後，就無法新增其他伺服器至集區。
+
 
 
 ## 單一伺服器拓撲
 
 常設聊天室伺服器 的最基本組態和最簡單部署為單一 常設聊天室伺服器前端伺服器拓撲。此部署需要一部執行 常設聊天室伺服器 的伺服器 (如果已啟用規範，則可選擇性地執行 Compliance Service)、一部裝載這兩個 SQL Server 資料庫的伺服器，而且如果需要規範，則需要使用 SQL Server 資料庫來儲存規範資料。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Persistent Chat Server 集區若以單一伺服器部署在 拓撲產生器中啟動，您就無法新增其他伺服器。即使您正在使用單一伺服器，我們仍建議您使用多伺服器集區拓撲，這樣您就可以在日後視需要新增更多的伺服器。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Persistent Chat Server 集區若以單一伺服器部署在 拓撲產生器中啟動，您就無法新增其他伺服器。即使您正在使用單一伺服器，我們仍建議您使用多伺服器集區拓撲，這樣您就可以在日後視需要新增更多的伺服器。
+
 
 
 下圖會針對含規範的單一 常設聊天室伺服器前端伺服器顯示拓撲的所有必要和選項元件。

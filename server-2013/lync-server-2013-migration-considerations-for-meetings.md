@@ -72,7 +72,7 @@ _**上次修改主題的時間：** 2014-02-10_
 
   - 會議內容，例如 PowerPoint 簡報、白板內容與輪詢資料
 
-若要移動已在會議中共用的內容，請使用 Move-CsUser Cmdlet 的 MoveMeetingContent 參數。如需有關使用此 Cmdlet 的詳細資訊，請參閱 Lync Server 2013 Cmdlet 文件中的 [Move-CsUser](move-csuser.md)。
+若要移動已在會議中共用的內容，請使用 Move-CsUser Cmdlet 的 MoveMeetingContent 參數。如需有關使用此 Cmdlet 的詳細資訊，請參閱 Lync Server 2013 Cmdlet 文件中的 [Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Move-CsUser)。
 
 ## 從 Office Communications Server 2007 R2 移轉會議
 

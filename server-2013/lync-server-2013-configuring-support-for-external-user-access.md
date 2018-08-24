@@ -21,7 +21,7 @@ _**上次修改主題的時間：** 2013-02-21_
 
 若要支援外部使用者存取，您必須執行下列兩項作業：
 
-  - **啟用組織的支援**   若要為部署中的外部使用者存取啟用支援，必須啟用所要支援的每個外部使用者存取類型。您可以在 Lync Server 控制台 之 \[同盟與外部存取\] 群組中的 \[外部存取原則\] 頁面上編輯全域設定、建立設定網站或使用者原則，或使用 Lync Server 管理命令介面 與相關聯的 Cmdlet 來啟用或停用對外部使用者存取的支援。管理 **External Access Policy** 的 Cmdlet 可從主題 [Lync Server 2013 中的同盟和外部存取 Cmdlet](lync-server-2013-federation-and-external-access-cmdlets.md)中找到。啟用外部存取支援即表示伺服器正在執行與外部使用者和伺服器之間的 Lync Server  Access Edge Service 支援通訊 。停用外部使用者存取，或尚未設定支援外部使用者存取的原則時，內部和外部使用者無法通訊。
+  - **啟用組織的支援**   若要為部署中的外部使用者存取啟用支援，必須啟用所要支援的每個外部使用者存取類型。您可以在 Lync Server 控制台 之 \[同盟與外部存取\] 群組中的 \[外部存取原則\] 頁面上編輯全域設定、建立設定網站或使用者原則，或使用 Lync Server 管理命令介面 與相關聯的 Cmdlet 來啟用或停用對外部使用者存取的支援。管理 **External Access Policy** 的 Cmdlet 可從主題 [Lync Server 2013 中的同盟和外部存取 Cmdlet](https://docs.microsoft.com/en-us/powershell/module/skype/)中找到。啟用外部存取支援即表示伺服器正在執行與外部使用者和伺服器之間的 Lync Server  Access Edge Service 支援通訊 。停用外部使用者存取，或尚未設定支援外部使用者存取的原則時，內部和外部使用者無法通訊。
 
   - **設定並指派一或多項原則**   若要支援外部使用者存取，可設定以滿足需求的原則包含：
     

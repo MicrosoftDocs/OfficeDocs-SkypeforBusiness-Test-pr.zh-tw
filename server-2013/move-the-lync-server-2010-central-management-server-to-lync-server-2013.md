@@ -49,18 +49,9 @@ _**上次修改主題的時間：** 2013-11-25_
 
 4.  在 \[執行命令\] 頁面上， SQL Server Express已安裝為 中央管理伺服器。已建立所需的防火牆規則。在完成資料庫和必要軟體的安裝時，請按一下 \[完成\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果命令輸出摘要畫面沒有可見的更新，則初始安裝可能需要一些時間。這是由於安裝 SQL Server Express 的緣故。如果您需要監控資料庫的安裝，請使用 [工作管理員] 來監控安裝程式。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果命令輸出摘要畫面沒有可見的更新，則初始安裝可能需要一些時間。這是由於安裝 SQL Server Express 的緣故。如果您需要監控資料庫的安裝，請使用 [工作管理員] 來監控安裝程式。
+    
 
 
 5.  若要在 Lync Server 2013 Standard Edition 前端伺服器中建立新 中央管理存放區，請在 Lync Server 管理命令介面中輸入：
@@ -79,18 +70,8 @@ _**上次修改主題的時間：** 2013-11-25_
     
         Enable-CsTopology
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果 <code>Enable-CsTopology</code> 沒有成功，請先阻止命令完成並解決問題之後再繼續。如果 <strong>Enable-CsTopology</strong> 沒有成功，移動就會失敗，且可能會導致您的拓撲處於沒有 中央管理存放區的狀態。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 如果 <code>Enable-CsTopology</code> 沒有成功，請先阻止命令完成並解決問題之後再繼續。如果 <strong>Enable-CsTopology</strong> 沒有成功，移動就會失敗，且可能會導致您的拓撲處於沒有 中央管理存放區的狀態。
 
 
 4.  在 Lync Server 2013前端伺服器或 前端集區上，於 Lync Server 管理命令介面中輸入：
@@ -115,18 +96,9 @@ _**上次修改主題的時間：** 2013-11-25_
     
         Get-CsManagementStoreReplicationStatus
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>複寫可能要花一些時間來更新所有目前的複本。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 複寫可能要花一些時間來更新所有目前的複本。
+    
 
 
 ## 在移動後移除 Lync Server 2010中央管理存放區檔案
@@ -135,18 +107,8 @@ _**上次修改主題的時間：** 2013-11-25_
 
 2.  開啟 Lync Server 管理命令介面
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>請先確認複寫已完成且狀態穩定後，再繼續移除之前的資料庫檔案。如果您在複寫完成前就移除檔案，會中斷複寫程序，並導致剛移動的 中央管理伺服器處於未知狀態。請使用 <strong>Get-CsManagementStoreReplicationStatus</strong> Cmdlet 來確認複寫狀態。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!WARNING]
+    > 請先確認複寫已完成且狀態穩定後，再繼續移除之前的資料庫檔案。如果您在複寫完成前就移除檔案，會中斷複寫程序，並導致剛移動的 中央管理伺服器處於未知狀態。請使用 <strong>Get-CsManagementStoreReplicationStatus</strong> Cmdlet 來確認複寫狀態。
 
 
 3.  若要移除來自 Lync Server 2010中央管理伺服器的 中央管理存放區資料庫檔案，請輸入：

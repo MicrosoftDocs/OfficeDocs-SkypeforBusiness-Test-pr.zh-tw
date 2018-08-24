@@ -17,7 +17,7 @@ _**上次修改主題的時間：** 2013-07-29_
 
 設定將作為監看員節點的電腦之後您必須進行下列動作：
 
-1.  建立監看員節點使用的測試帳戶。如果您使用 Negotiate 驗證方法，您也必須使用 [Set-CsTestUserCredential](set-cstestusercredential.md) Cmdlet 來啟用要在監看員節點上使用的這些測試帳戶。
+1.  建立監看員節點使用的測試帳戶。如果您使用 Negotiate 驗證方法，您也必須使用 [Set-CsTestUserCredential](https://docs.microsoft.com/en-us/powershell/module/skype/) Cmdlet 來啟用要在監看員節點上使用的這些測試帳戶。
 
 2.  更新監看員節點設定。
 
@@ -166,19 +166,9 @@ _**上次修改主題的時間：** 2013-07-29_
     PersistentChatMessage
     DataConference
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>若要以字母順序檢視綜合交易，請改用以下命令：<br />
-Get-CsWatcherNodeConfiguration –Identity &quot;atl-cs-001.litwareinc.com&quot; | Select-Object –ExpandProperty Tests | Sort-Object</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]  
+> 若要以字母順序檢視綜合交易，請改用以下命令：<br />
+Get-CsWatcherNodeConfiguration –Identity &quot;atl-cs-001.litwareinc.com&quot; | Select-Object –ExpandProperty Tests | Sort-Object
 
 
 若要確認監看員節點已建立，請從 Lync Server 管理命令介面輸入下列命令：

@@ -17,34 +17,16 @@ _**上次修改主題的時間：** 2012-10-18_
 
 您可以設定一或多個外部使用者存取原則，來控制遠端使用者是否能與內部 Lync Server 使用者共同作業。若要控制遠端使用者存取權，您可以設定全域、網站和使用者層級的原則。網站原則可覆寫全域原則，而使用者原則可覆寫網站和全域原則。如需關於可設定之原則類型的詳細資訊，請參閱＜ [管理 Lync Server 2013 的同盟與外部存取](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)＞。 套用到某原則層級的 Lync Server 原則設定，可能會覆寫套用到其他原則層級的設定。Lync Server 原則的優先順序是使用者原則 (影響力最大) 會覆寫網站原則，網站原則則會覆寫全域原則 (影響力最小)。亦即，愈接近原則所影響之物件的原則設定，對物件的影響力愈大。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>即便您並未對所屬組織啟用遠端使用者存取，仍舊可以設定相關原則來控制遠端使用者存取。但是，唯有在組織啟用遠端使用者存取時，您設定的原則才會生效。如需關於啟用遠端使用者存取的詳細資訊，請參閱＜ <a href="lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md">在 Lync Server 2013 中啟用或停用同盟與公用 IM 連線</a>＞。此外，如果您指定使用者原則來控制遠端使用者存取，則該原則僅適用已啟用 Lync Server 且設為使用該原則的使用者。如需關於指定可從遠端位置登入 Lync Server 之使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中將外部使用者存取原則指派給擁有 Lync 功能的使用者</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 即便您並未對所屬組織啟用遠端使用者存取，仍舊可以設定相關原則來控制遠端使用者存取。但是，唯有在組織啟用遠端使用者存取時，您設定的原則才會生效。如需關於啟用遠端使用者存取的詳細資訊，請參閱＜ <a href="lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md">在 Lync Server 2013 中啟用或停用同盟與公用 IM 連線</a>＞。此外，如果您指定使用者原則來控制遠端使用者存取，則該原則僅適用已啟用 Lync Server 且設為使用該原則的使用者。如需關於指定可從遠端位置登入 Lync Server 之使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user.md">在 Lync Server 2013 中將外部使用者存取原則指派給擁有 Lync 功能的使用者</a>＞。
+
 
 
 請遵循以下程序來設定每個要用來控制遠端使用者存取的外部存取原則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此程序只會說明如何設定原則以允許與遠端使用者通訊，不過，每個設定來支援遠端使用者存取的原則亦可設定同盟使用者存取和公用使用者存取。如需關於設定原則以支援同盟使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-policies-to-control-federated-user-access.md">在 Lync Server 2013 中設定控制同盟使用者存取的原則</a>＞。如需設定原則以支援公用使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-create-or-edit-public-sip-federated-providers.md">在 Lync Server 2013 中建立或編輯公用 SIP 同盟提供者</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此程序只會說明如何設定原則以允許與遠端使用者通訊，不過，每個設定來支援遠端使用者存取的原則亦可設定同盟使用者存取和公用使用者存取。如需關於設定原則以支援同盟使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-configure-policies-to-control-federated-user-access.md">在 Lync Server 2013 中設定控制同盟使用者存取的原則</a>＞。如需設定原則以支援公用使用者的詳細資訊，請參閱＜ <a href="lync-server-2013-create-or-edit-public-sip-federated-providers.md">在 Lync Server 2013 中建立或編輯公用 SIP 同盟提供者</a>＞。
+
 
 
 ## 若要設定外部存取原則以支援遠端使用者存取

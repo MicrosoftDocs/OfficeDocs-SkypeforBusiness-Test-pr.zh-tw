@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 4.  在 **\[地區\]** 頁面上，按一下您要檢視的區域。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>您一次僅可檢視一個區域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 您一次僅可檢視一個區域。
+    
 
 
 5.  在 **\[編輯\]** 功能表上，按一下 **\[顯示詳細資料\]**。
@@ -63,7 +54,7 @@ _**上次修改主題的時間：** 2013-02-23_
                            BWPolicyModality=Video;AlternatePath=True}
         NetworkRegionID  : Pacific Northwest
 
-如需詳細資訊，請參閱 [Get-CsNetworkRegion](get-csnetworkregion.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Get-CsNetworkRegion](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsNetworkRegionLink) Cmdlet 的說明主題。
 
 ## 請參閱
 

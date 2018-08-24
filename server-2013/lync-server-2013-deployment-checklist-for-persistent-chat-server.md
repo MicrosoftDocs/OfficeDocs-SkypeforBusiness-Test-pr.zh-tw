@@ -116,16 +116,7 @@ Lync Server 2013常設聊天室伺服器 的部署必須依照正確的順序進
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>您可以部署一或多個 Persistent Chat Server 集區。我們支援多個 Persistent Chat Server 集區，然而因法規的規範，指定區域產生的資料必須留在該區域中。例如，如果您在芝加哥部署一個 Persistent Chat Server 集區，在蘇黎世部署另一個以符合瑞士對資料的規範，使用者若有存取權，則可連線至這兩個 Persistent Chat Server 集區中的聊天室。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 您可以部署一或多個 Persistent Chat Server 集區。我們支援多個 Persistent Chat Server 集區，然而因法規的規範，指定區域產生的資料必須留在該區域中。例如，如果您在芝加哥部署一個 Persistent Chat Server 集區，在蘇黎世部署另一個以符合瑞士對資料的規範，使用者若有存取權，則可連線至這兩個 Persistent Chat Server 集區中的聊天室。
+
 

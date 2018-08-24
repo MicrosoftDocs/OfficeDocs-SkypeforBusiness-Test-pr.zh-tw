@@ -21,34 +21,16 @@ _**上次修改主題的時間：** 2013-11-07_
 
   - 內部介面所需的憑證可以由公用 CA 或內部企業 CA 發出。建議使用內部 Windows Server 2008 CA、 Windows Server 2008 R2 CA、 Windows Server 2012 CA 或 Windows Server 2012 R2 CA 來建立這些憑證，以節省使用公用憑證的費用。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>處理憑證要求 (特別是公用 CA 的要求) 需要一些時間，因此應該及早要求 Edge Server 的憑證，以確保在您啟動 Edge Server 元件的部署時有憑證可用。如需 Edge Server 的憑證需求摘要，請參閱＜ <a href="lync-server-2013-certificate-requirements-for-external-user-access.md">Lync Server 2013 中的外部使用者存取的憑證需求</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 處理憑證要求 (特別是公用 CA 的要求) 需要一些時間，因此應該及早要求 Edge Server 的憑證，以確保在您啟動 Edge Server 元件的部署時有憑證可用。如需 Edge Server 的憑證需求摘要，請參閱＜ <a href="lync-server-2013-certificate-requirements-for-external-user-access.md">Lync Server 2013 中的外部使用者存取的憑證需求</a>＞。
+
 
 
 儘管您可以選擇將公用 CA 用於內部邊緣介面，不過我們還是建議您改將內部企業 CA 用於其他憑證，以將憑證的成本降到最低。如需 Edge Server 的憑證需求摘要，請參閱＜ [Lync Server 2013 中的外部使用者存取的憑證需求](lync-server-2013-certificate-requirements-for-external-user-access.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在安裝 Edge Server 時，安裝程式包含的憑證精靈可簡化要求、指派及安裝憑證等工作，如 <a href="lync-server-2013-set-up-edge-certificates.md">針對 Lync Server 2013 設定 Edge 憑證</a>一節所述。如果您想要在安裝 Edge Server 之前要求憑證 (以便節省實際部署 Edge Server 元件的時間)，只要確定憑證可匯出且含有所有必要的主體別名，即可使用內部伺服器要求憑證。本文件未提供使用內部伺服器要求憑證的程序。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 在安裝 Edge Server 時，安裝程式包含的憑證精靈可簡化要求、指派及安裝憑證等工作，如 <a href="lync-server-2013-set-up-edge-certificates.md">針對 Lync Server 2013 設定 Edge 憑證</a>一節所述。如果您想要在安裝 Edge Server 之前要求憑證 (以便節省實際部署 Edge Server 元件的時間)，只要確定憑證可匯出且含有所有必要的主體別名，即可使用內部伺服器要求憑證。本文件未提供使用內部伺服器要求憑證的程序。
+
 
 
 ## 從公用 CA 要求憑證

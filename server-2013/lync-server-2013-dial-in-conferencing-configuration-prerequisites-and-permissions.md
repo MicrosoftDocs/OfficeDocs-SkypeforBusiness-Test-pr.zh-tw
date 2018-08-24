@@ -35,18 +35,9 @@ _**上次修改主題的時間：** 2012-06-20_
 
 您會在使用 拓撲產生器時部署這些元件，以定義並發行您的拓撲，然後部署前端集區或 Standard Edition 伺服器。如果您要部署 企業語音，應該在設定電話撥入式會議之前部署它。如果不要部署 企業語音，您可以在部署前端集區或 Standard Edition 伺服器之前，部署中繼伺服器和公用交換電話網路 (PSTN) 閘道。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要從 Office Communications Server 2007 R2 升級至 Lync Server 2013，請在您計劃用來裝載 Lync Server 2013 會議的每個集區中部署電話撥入式會議。如需關於移轉電話撥入式會議的詳細資訊，請參閱 <a href="migration-from-office-communications-server-2007-r2-to-lync-server-2013.md">從 Office Communications Server 2007 R2 移轉至 Lync Server 2013</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要從 Office Communications Server 2007 R2 升級至 Lync Server 2013，請在您計劃用來裝載 Lync Server 2013 會議的每個集區中部署電話撥入式會議。如需關於移轉電話撥入式會議的詳細資訊，請參閱 <a href="migration-from-office-communications-server-2007-r2-to-lync-server-2013.md">從 Office Communications Server 2007 R2 移轉至 Lync Server 2013</a>。
+
 
 
 本節假設您已執行下列作業：
@@ -57,31 +48,13 @@ _**上次修改主題的時間：** 2012-06-20_
 
   - 已發行您的拓撲，並設定前端集區或 Standard Edition 伺服器。如需發行拓撲及安裝 Lync Server 2013 的詳細資訊，請參閱部署文件中的 [部署 Lync Server 2013](lync-server-2013-deploying-lync-server.md)。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>當您安裝已發行的拓撲時，電話撥入式會議設定網頁會當做 Web 服務的一部分，安裝在前端伺服器或 Standard Edition 伺服器上。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 當您安裝已發行的拓撲時，電話撥入式會議設定網頁會當做 Web 服務的一部分，安裝在前端伺服器或 Standard Edition 伺服器上。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>在部署 Lync Server 2013 之後，如果您變更 拓撲產生器中的檔案存放區路徑，則需要重新啟動會議服務員和會議宣告服務應用程式，才能使用新的路徑。</td>
-    </tr>
-    </tbody>
-    </table>
+    
+    > [!IMPORTANT]  
+    > 在部署 Lync Server 2013 之後，如果您變更 拓撲產生器中的檔案存放區路徑，則需要重新啟動會議服務員和會議宣告服務應用程式，才能使用新的路徑。
+    
 
 
   - 已部署 企業語音。如果您沒有部署 企業語音，您可能是在 Enterprise Edition 前端伺服器或 Standard Edition 伺服器上配置了中繼伺服器，或者您部署了獨立的中繼伺服器，以及 PSTN 閘道。如需部署 企業語音的詳細資訊，請參閱部署文件中的 [在 Lync Server 2013 中部署企業語音](lync-server-2013-deploying-enterprise-voice.md)。 如需安裝獨立中繼伺服器和 PSTN 閘道的詳細資訊，請參閱部署文件中的 [在 Lync Server 2013 中部署中繼伺服器並定義對等項目](lync-server-2013-deploying-mediation-servers-and-defining-peers.md)。

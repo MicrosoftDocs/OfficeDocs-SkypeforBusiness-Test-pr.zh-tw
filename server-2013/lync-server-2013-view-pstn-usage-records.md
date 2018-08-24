@@ -27,18 +27,9 @@ _**上次修改主題的時間：** 2013-02-22_
 
 4.  在 **\[PSTN 使用方式\]** 頁面上，反白想要檢視的 PSTN 使用方式記錄，並按一下 **\[編輯\]** ，然後按一下 **\[顯示詳細資料\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>所選取 PSTN 使用方式記錄的唯讀頁面顯示相關聯的路由及相關聯的語音原則。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 所選取 PSTN 使用方式記錄的唯讀頁面顯示相關聯的路由及相關聯的語音原則。
+    
 
 
 ## 使用 Windows PowerShell Cmdlet 檢視 PSTN 使用資訊
@@ -56,7 +47,7 @@ _**上次修改主題的時間：** 2013-02-22_
         Identity : Global
         Usage    : {Internal, Local, Long Distance}
 
-如需詳細資訊，請參閱＜[Get-CsPstnUsage](get-cspstnusage.md)＞。
+如需詳細資訊，請參閱＜[Get-CsPstnUsage](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsPstnUsage)＞。
 
 ## 請參閱
 

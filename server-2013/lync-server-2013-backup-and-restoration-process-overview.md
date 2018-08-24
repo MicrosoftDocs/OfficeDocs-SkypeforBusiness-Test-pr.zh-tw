@@ -29,18 +29,9 @@ _**上次修改主題的時間：** 2013-03-26_
 
   - 發生失敗或中斷時，請將 **$Backup** 所參照之位置內的資料，還原至全新或乾淨的電腦。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>此還原處理作業並不會將資料還原至現有的伺服器狀態。也就是說，此處理作業需要伺服器是乾淨或新的伺服器。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 此還原處理作業並不會將資料還原至現有的伺服器狀態。也就是說，此處理作業需要伺服器是乾淨或新的伺服器。
+    
 
 
   - 若要讓您的使用者和會議資訊可復原至失敗點，您可以在配對前端集區實作災難復原拓撲，如＜[在 Lync Server 2013 中規劃高可用性和災害復原](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)＞中所述。除此之外，Lync Server 僅可對其資料庫支援簡單復原模式。透過簡單復原模式，可將資料庫復原至上次的完整備份點，表示您無法將資料庫還原至失敗點或特定時間點。對許多組織而言，簡單復原模式是最佳選擇，因為 Lync Server 後端資料庫 (RTCXDS.mdf) 實際上比交易記錄檔更小，而且比一般企業營運資料庫應用程式明顯較小。
@@ -59,18 +50,9 @@ _**上次修改主題的時間：** 2013-03-26_
 
   - 一般來說，若該伺服器主控伺服器角色，請執行 Lync Server 部署精靈的步驟 1 到步驟 4，安裝本機設定檔、安裝伺服器角色元件，指派憑證，並啟動服務。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>若該伺服器主控組合有伺服器角色的資料庫，請執行 Lync Server 部署精靈的步驟 2，重建資料庫。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 若該伺服器主控組合有伺服器角色的資料庫，請執行 Lync Server 部署精靈的步驟 2，重建資料庫。
+    
 
 
   - 若該伺服器主控資料庫，請還原備份資料。

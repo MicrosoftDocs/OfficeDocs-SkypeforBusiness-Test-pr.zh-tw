@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-10-29_
 
 您可以使用安裝程式或 Lync Server 管理命令介面 Cmdlet 來準備 Active Directory 架構。用來擴充 Active Directory 架構的 Cmdlet 是 **Install-CsAdServerSchema**。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>此架構準備 Cmdlet ( <strong>Install-CsAdServerSchema</strong>) 必須存取架構主機，這將需要同時執行遠端登錄服務，並啟用遠端登錄機碼。如果無法在架構主機上啟用遠端登錄服務，您可以在架構主機上，以本機方式執行 Cmdlet。如需關於遠端存取登錄的詳細資訊，請參閱 Microsoft 知識庫文件 314837＜如何管理遠端登錄存取權＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=125769%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=125769&amp;clcid=0x404</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 此架構準備 Cmdlet ( <strong>Install-CsAdServerSchema</strong>) 必須存取架構主機，這將需要同時執行遠端登錄服務，並啟用遠端登錄機碼。如果無法在架構主機上啟用遠端登錄服務，您可以在架構主機上，以本機方式執行 Cmdlet。如需關於遠端存取登錄的詳細資訊，請參閱 Microsoft 知識庫文件 314837＜如何管理遠端登錄存取權＞，網址為 <a href="http://go.microsoft.com/fwlink/?linkid=125769%26clcid=0x404" class="uri">http://go.microsoft.com/fwlink/?linkid=125769&amp;clcid=0x404</a>。
+
 
 
 在完成架構準備之後，請手動驗證架構分割已複寫，再繼續進行樹系準備。如需詳細資訊，請參閱＜ [在 Lync Server 2013 中驗證 Active Directory 結構描述複寫](lync-server-2013-verifying-schema-replication.md)＞。

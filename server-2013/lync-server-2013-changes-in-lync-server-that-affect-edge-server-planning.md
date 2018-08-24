@@ -27,32 +27,14 @@ Lync Server 2013 支援所有 Edge Server 服務的 IPv6 定址。如果已透�
 
 Edge Server 引進完全整合的 XMPP Proxy (部署於 Edge Server) 及 XMPP 閘道 (部署於前端伺服器)。您可部署 XMPP 同盟作為選用元件。透過新增及設定 XMPP Proxy 和 XMPP 閘道，可讓 Microsoft Lync 2013 使用者新增以 XMPP 為基礎之協力廠商的連絡人，進行立即訊息 (IM) 和顯示狀態。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Edge Server 中的 XMPP 服務目前僅提供 Lync Server 用戶端及以 XMPP 為基礎的連絡人之間的 IM 和顯示狀態。此外，XMPP 僅裝載在單一網站。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Edge Server 中的 XMPP 服務目前僅提供 Lync Server 用戶端及以 XMPP 為基礎的連絡人之間的 IM 和顯示狀態。此外，XMPP 僅裝載在單一網站。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。</td>
-</tr>
-</tbody>
-</table>
+
+> [!IMPORTANT]  
+> Microsoft 已測試過 Lync Server 2013 的 XMPP 功能，確定其可與 Google Talk 建立立即訊息同盟，而 Microsoft 也會負責這項功能的支援工作。對於其他 XMPP 系統，請連絡第三方廠商，確認其系統是否能與 Lync Server 2013 建立同盟，以及其是否有任何部署或疑難排解方面的建議。
+
 
 
 ## 支援輪流 Audio/Video 驗證及伺服器對伺服器驗證憑證
@@ -63,24 +45,14 @@ Edge Server 引進完全整合的 XMPP Proxy (部署於 Edge Server) 及 XMPP �
 
 伺服器對伺服器驗證由全域憑證管理，並適用於部署中的所有伺服器。該憑證負責驗證 Lync Server 2013 中的伺服器，以及對 Exchange 2013 和 Microsoft SharePoint Server 2013 進行驗證。如需伺服器對伺服器驗證如何運作的詳細資訊，請參閱＜ [在 Lync Server 2013 中管理伺服器對伺服器驗證 (Oauth) 與夥伴應用程式](lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md)＞。Audio/Video 驗證程序和伺服器對伺服器驗證程序之間一個非常重要的差別是，驗證的存留期 (或權杖)。對於 Audio/Video 驗證，驗證在 8 小時後過期。伺服器對伺服器驗證則有 24 小時的存留期。您必須針對每個憑證類型加以規劃。
 
-Lync Server 2013 的新功能是能夠在目前的憑證過期之前，籌備好取代的 Audio/Video 驗證憑證和伺服器對伺服器驗證憑證。新的憑證會接著用於產生新的權杖或新的驗證要求，但會保留舊的憑證用於驗證目前的工作階段和驗證。這將幾乎可以有效地完全避免因為權杖和憑證過期造成的失敗。如需此功能及如何設定的詳細資訊，請參閱＜ [於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-set-cscertificate.md)＞。
+Lync Server 2013 的新功能是能夠在目前的憑證過期之前，籌備好取代的 Audio/Video 驗證憑證和伺服器對伺服器驗證憑證。新的憑證會接著用於產生新的權杖或新的驗證要求，但會保留舊的憑證用於驗證目前的工作階段和驗證。這將幾乎可以有效地完全避免因為權杖和憑證過期造成的失敗。如需此功能及如何設定的詳細資訊，請參閱＜ [於 Set-CsCertificate 使用 -Roll 以預備 Lync Server 2013 中的 AV 與 OAuth 憑證](lync-server-2013-staging-av-and-oauth-certificates-using-roll-in-https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsCertificate)＞。
 
 ## 降低對 Cookie 為主親和性的依賴
 
 在舊版的 Lync Server 及 Office Communications Server 中，Web 服務會使用 Cookie 為主的親和性，來確保用戶端和 Web 服務工作階段狀態能夠保持。 Lync Server 2013 Web 服務使用內建的親和性機制，消除了大多數對 Cookie 為主親和性的需求。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Hh202161.warning(OCS.15).gif" title="warning" alt="warning" />注意：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在移轉所有用戶端至即將推出的 Microsoft Lync Mobile 用戶端之前 (發行日期未定)， Microsoft Lync 2010 Mobile 用戶端仍舊必須使用 Cookie 為主的親和性，而且需要設定 Cookie 為主的親和性。</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> 在移轉所有用戶端至即將推出的 Microsoft Lync Mobile 用戶端之前 (發行日期未定)， Microsoft Lync 2010 Mobile 用戶端仍舊必須使用 Cookie 為主的親和性，而且需要設定 Cookie 為主的親和性。
 
 
 如需 Lync Server 2013 中 Cookie 為主親和性的詳細資訊，請參閱＜ [外部使用者在 Lync Server 2013 中存取時所需的元件](lync-server-2013-components-required-for-external-user-access.md)＞。
@@ -93,18 +65,9 @@ Lync Server 2013 中的自動探索功能讓用戶端能夠找到通訊可用的
 
 由 Lync Server 2010 累計更新：2011 年 11 月引進， Lync Server 2013 中的行動性服務讓執行 Lync Mobile 的行動電話、使用支援的 Apple iOS、Android、Windows Phone 的平板裝置或是 Nokia 行動裝置，都可以執行如傳送和接收立即訊息、檢視連絡人以及檢視顯示狀態等活動。此外，行動裝置也支援部分 企業語音功能，例如按一下以加入會議、從公司撥號、單一號碼連絡、語音信箱以及未接來電通知。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>行動性服務使用前端伺服器中部署的反向 Proxy 和發佈的服務。Edge Server 不需要進行任何變更。最低需求為執行 Lync Server Access Edge Service 之伺服器的輸出 SIP/TCP/5061。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 行動性服務使用前端伺服器中部署的反向 Proxy 和發佈的服務。Edge Server 不需要進行任何變更。最低需求為執行 Lync Server Access Edge Service 之伺服器的輸出 SIP/TCP/5061。
+
 
 
 ## Director 角色為選用

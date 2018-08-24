@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 用戶端版本組態設定可用來開啟或關閉用戶端版本控制。全域用戶端版本設定會隨 Lync Server 一併安裝，並用於啟用或停用整個伺服器部署的用戶端版本控制。您也可以針對個別網站設定用戶端版本組態設定。您可以從 Lync Server 2013 控制台或 Lync Server 2013 管理命令介面，建立或修改用戶端版本組態設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>由於匿名使用者不會與使用者、網站或服務相關聯，因此匿名使用者只會受全域層級原則的影響。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 由於匿名使用者不會與使用者、網站或服務相關聯，因此匿名使用者只會受全域層級原則的影響。
+
 
 
 ## 使用 Lync Server 控制台建立或修改用戶端版本組態設定
@@ -67,5 +58,5 @@ _**上次修改主題的時間：** 2013-02-23_
     
         Get-CsClientVersionConfiguration | Set-CsClientVersionConfiguration  -Enabled $False
 
-如需詳細資訊，請參閱＜[New-CsClientVersionConfiguration](new-csclientversionconfiguration.md)＞和＜[Set-CsClientVersionConfiguration](set-csclientversionconfiguration.md)＞ Cmdlet 的說明主題。
+如需詳細資訊，請參閱＜[New-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsClientVersionConfiguration)＞和＜[Set-CsClientVersionConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsClientVersionConfiguration)＞ Cmdlet 的說明主題。
 

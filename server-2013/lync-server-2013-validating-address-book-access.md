@@ -55,7 +55,7 @@ To run this check using an actual user account, you must first create a Windows 
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsAddressBookService -TargetFqdn "atl-cs-001.litwareinc.com"-UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-For more information, see the Help documentation for the [Test-CsAddressBookService](test-csaddressbookservice.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsAddressBookService](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAddressBookService) cmdlet.
 
 ## Determining success or failure
 
@@ -129,5 +129,5 @@ Here are some common reasons why Test-CsAddressBookService might fail:
 
 #### 其他資源
 
-[Test-CsAddressBookService](test-csaddressbookservice.md)
+[Test-CsAddressBookService](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAddressBookService)
 

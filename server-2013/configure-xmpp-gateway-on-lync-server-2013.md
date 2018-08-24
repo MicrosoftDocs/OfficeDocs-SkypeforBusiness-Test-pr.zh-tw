@@ -17,36 +17,17 @@ _**上次修改主題的時間：** 2013-10-28_
 
 移轉 XMPP 閘道的最後幾個步驟，是設定 Lync Server 2013 Edge Server 的憑證、部署 Lync Server 2013 XMPP 閘道，以及更新 XMPP 閘道的 DNS 記錄。這些步驟應同時執行，以降低 XMPP 閘道的停機時間。在執行這些步驟前，必須先將所有使用者都移至 Microsoft Lync Server 2013 部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對位於 Survivable Branch Appliance 的使用者不支援 XMPP 同盟。這適用於查看目前狀態資訊與交換 IM 訊息。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 對位於 Survivable Branch Appliance 的使用者不支援 XMPP 同盟。這適用於查看目前狀態資訊與交換 IM 訊息。
+
 
 
 ## 在 Lync Server 2013 Edge Server 上設定 XMPP 閘道憑證
 
 1.  在 Edge Server 的 \[部署精靈\] 中，按一下 \[步驟 3: 要求、安裝或指派憑證\] 旁邊的 \[再執行一次\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您是第一次部署 Edge Server，則會顯示 [執行]，而非 [再執行一次]。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果您是第一次部署 Edge Server，則會顯示 [執行]，而非 [再執行一次]。
 
 
 2.  在 \[可用憑證工作\] 頁面上，按一下 \[建立新憑證要求\] 。
@@ -77,18 +58,8 @@ _**上次修改主題的時間：** 2013-10-28_
 
 12. 在 \[設定其他主體別名\] 頁面上，指定任何需要的其他主體別名。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果有安裝 XMPP Proxy，預設會在 SAN 項目中填入網域名稱 (如 contoso.com)。如果您需要其他項目，請在此步驟中新增。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!TIP]
+    > 如果有安裝 XMPP Proxy，預設會在 SAN 項目中填入網域名稱 (如 contoso.com)。如果您需要其他項目，請在此步驟中新增。
 
 
 13. 在 \[要求摘要\] 頁面上，檢閱要用來產生要求的憑證資訊。
@@ -101,9 +72,12 @@ _**上次修改主題的時間：** 2013-10-28_
 
 17. 在收到、匯入並指派公用憑證後，您必須停止再重新啟動 Edge Server 服務。若要執行此動作，請在 Lync Server 管理主控台輸入下列命令：
     
-        Stop-CsWindowsService
-    
-        Start-CsWindowsService
+    ```
+    Stop-CsWindowsService
+    ```    
+    ```
+    Start-CsWindowsService
+    ```
 
 ## 設定新的 Lync Server 2013 XMPP 閘道
 
@@ -139,35 +113,27 @@ _**上次修改主題的時間：** 2013-10-28_
     
       - **TLS 交涉**    定義 TLS 交涉規則。XMPP 服務可以將 TLS 視為必要或選用，或者由您將 TLS 定義為不支援。選擇 \[選擇性\] 會將此需求留給 XMPP 服務進行必須交涉的決定。若要檢視所有可用設定以及 SASL、TLS 與回撥交涉的詳細資訊，包括無效及已知的錯誤組態，請參閱 [Lync Server 2013 中 XMPP 同盟夥伴的交涉設定](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md)。
         
-          -   
-            **需要**    XMPP 服務需要 TLS 交涉。
+           **需要**    XMPP 服務需要 TLS 交涉。
         
-          -   
-            **選擇性**    XMPP 服務指出必須交涉 TLS。
+           **選擇性**    XMPP 服務指出必須交涉 TLS。
         
-          -   
-            **不支援**    XMPP 服務不支援 TLS。
+           **不支援**    XMPP 服務不支援 TLS。
     
       - **SASL 交涉**    定義 SASL 交涉規則。XMPP 服務可以將 SASL 視為必要或選用，或者由您將 SASL 定義為不支援。選擇 \[選擇性\] 會將此需求留給協力廠商 XMPP 服務進行必須交涉的決定。
         
-          -   
-            **必要**    XMPP 服務需要 SASL 交涉。
+           **必要**    XMPP 服務需要 SASL 交涉。
         
-          -   
-            **選擇性**    XMPP 服務指出必須交涉 SASL。
+           **選擇性**    XMPP 服務指出必須交涉 SASL。
         
-          -   
-            **不支援**    XMPP 服務不支援 SASL。
+           **不支援**    XMPP 服務不支援 SASL。
     
       - **支援伺服器回撥交涉** 支援伺服器回撥交涉程序會使用網域名稱系統 (DNS) 和系統授權的伺服器，確認要求是否來自有效的 XMPP 協力廠商。其中過程是，來源伺服器會建立內含產生之回撥金鑰的特種訊息，並在 DNS 中查閱接收伺服器。來源伺服器以 XML 資料流傳送金鑰給產生的 DNS 查閱 (假定就是接收伺服器)。透過 XML 資料流收到金鑰後，接收伺服器不會回應發出來源伺服器，而是將金鑰傳送給已知的系統授權伺服器。系統授權伺服器接著確認該金鑰是否有效。如果無效，則接收伺服器不會回應來源伺服器。如果金鑰有效，則接收伺服器會通知來源伺服器該身分和金鑰有效，可以開始交談。
         
         **回撥交涉**有兩種有效狀態：
         
-          -   
-            **True**    XMPP 伺服器被設定為萬一從來源伺服器收到要求，則使用回撥交涉。
+           **True**    XMPP 伺服器被設定為萬一從來源伺服器收到要求，則使用回撥交涉。
         
-          -   
-            **False**    XMPP 伺服器不被設定為使用回撥交涉；萬一從來源伺服器收到要求，將會忽略該要求。
+           **False**    XMPP 伺服器不被設定為使用回撥交涉；萬一從來源伺服器收到要求，將會忽略該要求。
 
 10. 按一下 \[認可\] 將變更儲存至網站或使用者原則。
 

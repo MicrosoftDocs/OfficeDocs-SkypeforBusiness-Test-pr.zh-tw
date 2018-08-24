@@ -21,7 +21,7 @@ A/V Edge Service 為內部使用者 (登入組織網路的使用者) 提供了�
 
 然而，使用 Remove-CsAVEdgeConfiguration Cmdlet 可刪除在網站範圍或服務範圍建立的自訂設定集合。如果刪除網站設定，則該網站中的 A/V Edge Server 會由全域設定進行管理。如果刪除服務範圍設定，該伺服器就會由網站設定 (若存在) 或全域設定 (若無網站設定) 進行管理。
 
-如需詳細資訊，請參閱 [Remove-CsAVEdgeConfiguration](remove-csavedgeconfiguration.md) Cmdlet 的說明主題。
+如需詳細資訊，請參閱 [Remove-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAVEdgeConfiguration) Cmdlet 的說明主題。
 
 ## 重設全域集合
 
@@ -51,5 +51,5 @@ A/V Edge Service 為內部使用者 (登入組織網路的使用者) 提供了�
 #### 其他資源
 
 [Lync Server 2013 中的音訊/視訊 (A/V) Edge Server](lync-server-2013-audio-video-a-v-edge-servers.md)  
-[Remove-CsAVEdgeConfiguration](remove-csavedgeconfiguration.md)
+[Remove-CsAVEdgeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsAVEdgeConfiguration)
 

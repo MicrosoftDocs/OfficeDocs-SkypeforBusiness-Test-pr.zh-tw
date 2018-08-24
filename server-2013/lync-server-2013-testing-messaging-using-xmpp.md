@@ -124,5 +124,5 @@ Here are some common reasons why **Test-CsXmppIM** might fail:
 
 #### 其他資源
 
-[Set-CsXmppGatewayConfiguration](set-csxmppgatewayconfiguration.md)
+[Set-CsXmppGatewayConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsXmppGatewayConfiguration)
 

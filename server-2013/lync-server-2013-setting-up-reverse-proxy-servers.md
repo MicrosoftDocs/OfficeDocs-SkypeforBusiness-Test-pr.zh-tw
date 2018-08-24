@@ -39,18 +39,9 @@ _**上次修改主題的時間：** 2014-05-08_
 
 您可以使用 Microsoft Forefront Threat Management Gateway 2010、 Microsoft Internet Security and Acceleration (ISA) Server 2006 SP1 或具有 Application Request Routing (IIS ARR) 的 Internet Information Server 7.0、7.5 或 8.0 作為反向 Proxy。這一節中的詳細步驟說明如何設定 Forefront Threat Management Gateway 2010，而且用於設定 ISA Server 2006 的步驟幾乎相同。此外，也提供了 IIS ARR 的指引。如果您使用其他的反向 Proxy，請參閱該產品的文件，並將此處定義的需求對應至其他反向 Proxy 中的關聯功能。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Internet Information Server 應用程式要求路由 (IIS ARR) 是經完整測試並獲完整支援的 Lync Server 2010 和 Lync Server 2013 反向 Proxy 實作選項。Microsoft 已於 2012 年 11 月停止銷售 ForeFront Threat Management Gateway 2010 (又稱為 TMG) 的授權。TMG 仍是具備完整支援的產品，且仍可搭配協力廠商所售之應用裝置銷售。此外，多種協力廠商硬體負載平衡器與防火牆也提供反向 Proxy 支援。如需提供反向 Proxy 功能之硬體負載平衡器與防火牆的相關資訊，請洽詢廠商以取得有關如何設定產品以針對 Lync Server 提供反向 Proxy 支援的特定指示。您也可以查看已提交產品文件給 Microsoft 的協力廠商。協力廠商會針對本身的解決方案提供支援。若要查看目前提供解決方案的協力廠商，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268730">Microsoft Lync 適用的基礎結構</a> (英文)。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> Internet Information Server 應用程式要求路由 (IIS ARR) 是經完整測試並獲完整支援的 Lync Server 2010 和 Lync Server 2013 反向 Proxy 實作選項。Microsoft 已於 2012 年 11 月停止銷售 ForeFront Threat Management Gateway 2010 (又稱為 TMG) 的授權。TMG 仍是具備完整支援的產品，且仍可搭配協力廠商所售之應用裝置銷售。此外，多種協力廠商硬體負載平衡器與防火牆也提供反向 Proxy 支援。如需提供反向 Proxy 功能之硬體負載平衡器與防火牆的相關資訊，請洽詢廠商以取得有關如何設定產品以針對 Lync Server 提供反向 Proxy 支援的特定指示。您也可以查看已提交產品文件給 Microsoft 的協力廠商。協力廠商會針對本身的解決方案提供支援。若要查看目前提供解決方案的協力廠商，請參閱 <a href="http://go.microsoft.com/fwlink/?linkid=268730">Microsoft Lync 適用的基礎結構</a> (英文)。
+
 
 
 下列主題和程序使用 Forefront Threat Management Gateway 2010 和 IIS ARR 作為部署和設定程序的基礎。
@@ -73,39 +64,23 @@ _**上次修改主題的時間：** 2014-05-08_
 
 若要順利將 Forefront Threat Management Gateway 2010 部署成您的反向 Proxy，您必須安裝及設定伺服器，並使用 Forefront Threat Management Gateway 2010 文件中定義的先決條件和硬體需求。請參閱下列主題集以在伺服器上適當設定硬體並安裝 Forefront Threat Management Gateway 2010，再繼續進行。
 
-  -   
-    [Forefront Threat Management Gateway (TMG) 2010](http://technet.microsoft.com/zh-tw/library/ff355324.aspx)
+  [Forefront Threat Management Gateway (TMG) 2010](http://technet.microsoft.com/zh-tw/library/ff355324.aspx)
 
-  -   
-    [Forefront TMG 2010 硬體建議事項](http://technet.microsoft.com/library/ff382651.aspx)
+  [Forefront TMG 2010 硬體建議事項](http://technet.microsoft.com/library/ff382651.aspx)
 
 若要將 IIS ARR 順利部署為您的反向 Proxy，請檢視下列主題以設定硬體和必要軟體。
 
-  -   
-    若要在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS，請參閱＜ [在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS 7](http://go.microsoft.com/fwlink/?linkid=291296)＞(英文)
+  若要在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS，請參閱＜ [在 Windows Server 2008 或 Windows Server 2008 R2 上安裝 IIS 7](http://go.microsoft.com/fwlink/?linkid=291296)＞(英文)
 
-  -   
-    若要在 Windows Server 2012 上安裝 IIS，請參閱＜ [在 Windows Server 2012 上安裝 IIS 8](http://go.microsoft.com/fwlink/?linkid=291297)＞(英文)
+  若要在 Windows Server 2012 上安裝 IIS，請參閱＜ [在 Windows Server 2012 上安裝 IIS 8](http://go.microsoft.com/fwlink/?linkid=291297)＞(英文)
 
-  -   
-    如要在 Windows Server 2012 R2 上安裝 IIS，請參閱 [在 Windows Server 2012 R2 上安裝 IIS 8.5](http://go.microsoft.com/fwlink/?linkid=330687)
+  如要在 Windows Server 2012 R2 上安裝 IIS，請參閱 [在 Windows Server 2012 R2 上安裝 IIS 8.5](http://go.microsoft.com/fwlink/?linkid=330687)
 
-  -   
-    若要下載 IIS Application Request Routing 延伸模組，請依照＜ [Application Request Routing v2.5 下載](http://go.microsoft.com/fwlink/?linkid=291298)＞(英文) 中的指示進行
+  若要下載 IIS Application Request Routing 延伸模組，請依照＜ [Application Request Routing v2.5 下載](http://go.microsoft.com/fwlink/?linkid=291298)＞(英文) 中的指示進行
 
-  -   
-    若要安裝 ARR，請於＜ [安裝 Application Request Routing V2](http://go.microsoft.com/fwlink/?linkid=291299)＞(英文) 取得相關指示
+  若要安裝 ARR，請於＜ [安裝 Application Request Routing V2](http://go.microsoft.com/fwlink/?linkid=291299)＞(英文) 取得相關指示
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>目前發佈的指示適用於 ARR 2.0。在延伸模組安裝方面，兩個版本間並沒有差異。</td>
-    </tr>
-    </tbody>
-    </table>
+  > [!NOTE]  
+  > 目前發佈的指示適用於 ARR 2.0。在延伸模組安裝方面，兩個版本間並沒有差異。
+    
 

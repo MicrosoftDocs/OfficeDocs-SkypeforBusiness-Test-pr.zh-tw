@@ -31,5 +31,5 @@ Test-CsAddressBookWebQuery 和 Test-CsAddressBookService 綜合交易相似，�
 
 #### 其他資源
 
-[Test-CsAddressBookWebQuery](test-csaddressbookwebquery.md)
+[Test-CsAddressBookWebQuery](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsAddressBookWebQuery)
 

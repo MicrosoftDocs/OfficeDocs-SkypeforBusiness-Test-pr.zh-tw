@@ -108,8 +108,8 @@ Here are some common reasons why **Test-CsWatcherNodeConfiguration** might fail:
 
 #### 其他資源
 
-[Get-CsWatcherNodeConfiguration](get-cswatchernodeconfiguration.md)  
-[New-CsWatcherNodeConfiguration](new-cswatchernodeconfiguration.md)  
-[Remove-CsWatcherNodeConfiguration](remove-cswatchernodeconfiguration.md)  
-[Set-CsWatcherNodeConfiguration](set-cswatchernodeconfiguration.md)
+[Get-CsWatcherNodeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsWatcherNodeConfiguration)  
+[New-CsWatcherNodeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/New-CsWatcherNodeConfiguration)  
+[Remove-CsWatcherNodeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Remove-CsWatcherNodeConfiguration)  
+[Set-CsWatcherNodeConfiguration](https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsWatcherNodeConfiguration)
 

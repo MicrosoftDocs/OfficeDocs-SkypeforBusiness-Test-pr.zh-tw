@@ -31,16 +31,7 @@ _**上次修改主題的時間：** 2012-10-01_
 
 5.  在 **\[發行精靈完成\]** 頁面上，確認拓撲已成功發行，然後按一下 **\[完成\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>發行拓撲之後，您必須先設定對 常設聊天室伺服器 的支援，才能封存任何內容。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 發行拓撲之後，您必須先設定對 常設聊天室伺服器 的支援，才能封存任何內容。
+    
 

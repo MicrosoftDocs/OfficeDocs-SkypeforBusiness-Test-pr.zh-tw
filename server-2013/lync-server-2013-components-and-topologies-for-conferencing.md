@@ -41,18 +41,9 @@ Lync Server 2013 使用 Office Web Apps 與 Office Web Apps Server 處理 PowerP
     
       - 工作階段界限控制器 (SBC) (適用於藉由設定 SIP 主幹而連接的網際網路電話語音服務提供者)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您同時部署了 企業語音、 中繼伺服器與 PSTN 閘道均包含在 企業語音部署中。如果您未部署 企業語音，您必須至少部署一部 中繼伺服器，以及至少一個 PSTN 閘道、IP-PBX 或 SBC 才能進行電話撥入式會議。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 如果您同時部署了 企業語音、 中繼伺服器與 PSTN 閘道均包含在 企業語音部署中。如果您未部署 企業語音，您必須至少部署一部 中繼伺服器，以及至少一個 PSTN 閘道、IP-PBX 或 SBC 才能進行電話撥入式會議。
+    
 
 
   - **檔案存放區**   檔案存放區適用於記錄名稱音訊檔案。檔案存放區是每個 Enterprise Edition 或 Standard Edition 部署的標準元件。
@@ -79,18 +70,9 @@ Lync Server 2013 使用 Office Web Apps 與 Office Web Apps Server 處理 PowerP
 
 您可以在中央網站部署 應用程式服務、 會議服務員應用程式和 會議宣告應用程式，但是不能在分支網站中部署。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您要部署電話撥入式會議，則在部署 Lync Server 2013 會議的每個集區中都要部署。您不需要在每個集區中指派存取號碼，但是必須在每個集區中部署電話撥入式會議功能。此需求的存在，是為了在使用者從其中一個集區撥打存取號碼以加入不同集區中的 Lync Server 2013 會議時，能夠支援記錄名稱功能。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 如果您要部署電話撥入式會議，則在部署 Lync Server 2013 會議的每個集區中都要部署。您不需要在每個集區中指派存取號碼，但是必須在每個集區中部署電話撥入式會議功能。此需求的存在，是為了在使用者從其中一個集區撥打存取號碼以加入不同集區中的 Lync Server 2013 會議時，能夠支援記錄名稱功能。
+
 
 
 ## 支援 Lync Server 2013 與 Office Web Apps 的拓撲
@@ -111,16 +93,7 @@ Lync Server 2013 提供下列方式來設定 Office Web Apps Server。視需求�
 
 不管選取的拓撲為何，重點是要開啟正確的防火牆連接埠。您必須確認 DNS 名稱、IP 位址與連接埠未被 Office Web Apps Server、負載平衡器或 Lync Server 的防火牆阻擋。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>從外部存取 Office Web Apps Server 的其他選項，是在周邊網路部署伺服器。若您選取該選項，請記住，要安裝 Office Web Apps Server，伺服器電腦必須是 Active Directory 網域的成員。除非網路原則允許周邊網路的電腦成為 Active Directory 網域的成員，否則建議您不要在周邊網路安裝 Office Web Apps Server。請改在內部網路安裝 Office Web Apps Server，並讓外部使用者透過反向 Proxy 伺服器存取。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 從外部存取 Office Web Apps Server 的其他選項，是在周邊網路部署伺服器。若您選取該選項，請記住，要安裝 Office Web Apps Server，伺服器電腦必須是 Active Directory 網域的成員。除非網路原則允許周邊網路的電腦成為 Active Directory 網域的成員，否則建議您不要在周邊網路安裝 Office Web Apps Server。請改在內部網路安裝 Office Web Apps Server，並讓外部使用者透過反向 Proxy 伺服器存取。
+
 

@@ -19,36 +19,18 @@ _**上次修改主題的時間：** 2012-12-12_
 
 如果決定使用 HTTPS 來進行初始 Lync Server 2013 自動探索服務要求，並更新反向 Proxy 憑證的主體替代名稱清單，則需要將更新的公用憑證指派給反向 Proxy 的安全通訊端層 (SSL) 接聽程式。外部 (公用) 憑證需要更新的項目會包括 lyncdiscover.\<網域名稱\> 的主體替代名稱 (SAN) 項目。接著需要修改外部 Web 服務現有的接聽程式，或為外部自動探索服務 URL (例如 **lyncdiscover.contoso.com**) 建立新的 Web 發行規則。如果前端集區和 Director 集區 (若部署 Director) 的外部 Lync Server 2013 Web 服務 URL 還沒有 Web 發行規則，則還需要為其發行規則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>反向 Proxy 發行規則與接聽程式可服務外部 Web 服務及自動探索服務，只要指派給接聽程式的憑證包含兩服務所需的主體名稱和主體替代名稱。如需 Web 接聽程式及發行規則之預設設定的詳細資訊，請參閱＜<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 反向 Proxy 發行規則與接聽程式可服務外部 Web 服務及自動探索服務，只要指派給接聽程式的憑證包含兩服務所需的主體名稱和主體替代名稱。如需 Web 接聽程式及發行規則之預設設定的詳細資訊，請參閱＜<a href="lync-server-2013-setting-up-reverse-proxy-servers.md">設定 Lync Server 2013 的反向 Proxy 伺服器</a>＞。
+
 
 
 如果決定使用 HTTP 來進行初始自動探索服務要求，即不需要更新反向 Proxy 的主體替代名稱，則需要建立或修改連接埠 80 的 Web 發行規則。
 
 本節中的程序說明如何在 Microsoft Forefront Threat Management Gateway 2010 中，針對自動探索建立或修改 Web 發行規則。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這些程序假設您已安裝 Forefront Threat Management Gateway (TMG) 2010 Standard Edition。如果您使用其他的反向 Proxy，程序還是類似，但需要對應協力廠商產品的文件。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 這些程序假設您已安裝 Forefront Threat Management Gateway (TMG) 2010 Standard Edition。如果您使用其他的反向 Proxy，程序還是類似，但需要對應協力廠商產品的文件。
+
 
 
 ## 為外部自動探索 URL 建立 Web 發行規則
@@ -111,18 +93,9 @@ _**上次修改主題的時間：** 2012-12-12_
 
 1.  按一下 \[開始\]，依序指向 \[程式集\] 和 \[Microsoft Forefront TMG\]，然後按一下 \[Forefront TMG 管理\]。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>將為每個現有的發行規則及接聽程式重複此修改程序。通常會有一個規則及接聽程式針對前端集區，一個針對選用的 Director 或 Director 集區 (如果有部署的話)。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 將為每個現有的發行規則及接聽程式重複此修改程序。通常會有一個規則及接聽程式針對前端集區，一個針對選用的 Director 或 Director 集區 (如果有部署的話)。
+    
 
 
 2.  在左窗格中，展開 \[伺服器名稱\]，在 \[防火牆原則\] 上按右鍵，按一下適用的規則。在 \[工作\] 索引標籤上，按一下 \[編輯選取的規則\] 。

@@ -19,18 +19,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 安裝或使用 Lync Server 2013 系統管理工具之前，請先仔細閱讀基礎結構、作業系統、軟體以及系統管理員權限需求。如需基礎結構需求的詳細資訊，請參閱＜[Lync Server 2013 中的系統管理工具基礎結構需求](lync-server-2013-administrative-tools-infrastructure-requirements.md)＞。如需安裝 Lync Server 2013 系統管理工具的作業系統和軟體需求的詳細資訊，請參閱＜[Lync Server 2013 中的伺服器及工具作業系統支援](lync-server-2013-server-and-tools-operating-system-support.md)＞、＜[Lync Server 2013 的其他軟體需求](lync-server-2013-additional-software-requirements.md)＞以及＜[Lync Server 2013 中的其他伺服器支援和需求](lync-server-2013-additional-server-support-and-requirements.md)＞。如需關於安裝和使用該工具所需的使用者權限的詳細資訊，請參閱＜[設定和管理 Lync Server 2013 所需的系統管理員權限](lync-server-2013-administrator-rights-and-permissions-required-for-setup-and-administration.md)＞。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如果您的組織需要將 Internet Information Services (IIS) 和所有 Web 服務安裝在非系統磁碟機的磁碟機中，應在 [安裝] 對話方塊中變更 Lync Server 檔案的安裝位置路徑。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，其餘的 Lync Server 2013 檔案也會部署到此磁碟機。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 如果您的組織需要將 Internet Information Services (IIS) 和所有 Web 服務安裝在非系統磁碟機的磁碟機中，應在 [安裝] 對話方塊中變更 Lync Server 檔案的安裝位置路徑。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，其餘的 Lync Server 2013 檔案也會部署到此磁碟機。
+
 
 
 ## 安裝 Lync Server 2013 系統管理工具
@@ -43,18 +34,9 @@ _**上次修改主題的時間：** 2013-02-21_
 
 4.  在 \[ Microsoft Lync Server 2013 安裝位置\] 頁面上，按一下 \[確定\] 。如果您需要將檔案安裝至其他位置，請將此路徑變更為其他位置或磁碟機。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>如果您的組織需要將 Internet Information Services (IIS) 和所有 Web 服務安裝在非系統磁碟機的磁碟機中，應在 [安裝] 對話方塊中變更 Lync Server 2013 檔案的安裝位置路徑。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，也會將其餘的 Lync Server 2013 檔案部署到此磁碟機。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!IMPORTANT]  
+    > 如果您的組織需要將 Internet Information Services (IIS) 和所有 Web 服務安裝在非系統磁碟機的磁碟機中，應在 [安裝] 對話方塊中變更 Lync Server 2013 檔案的安裝位置路徑。如果您將安裝檔案 (包括 OCSCore.msi) 安裝到此路徑，也會將其餘的 Lync Server 2013 檔案部署到此磁碟機。
+    
 
 
 5.  在 \[使用者授權合約\] 頁面上檢閱授權條款，然後依序按一下 \[我接受\] 和 \[確定\] 。需要完成此步驟才能繼續。

@@ -56,7 +56,7 @@ The following sample command runs Test-CsTopology and saves the output to a file
 
     Test-CsTopology -Report "C:\Logs\ComputerTest.html" -Verbose
 
-For more information, see the Help documentation for the [Test-CsTopology](test-cstopology.md) cmdlet.
+For more information, see the Help documentation for the [Test-CsTopology](https://docs.microsoft.com/en-us/powershell/module/skype/Test-CsTopology) cmdlet.
 
 ## Determining success or failure
 

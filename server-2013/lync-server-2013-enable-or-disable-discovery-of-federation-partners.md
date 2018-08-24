@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2013-02-23_
 
 當您部署 Edge Server 並為組織啟用同盟時，應已指定是否要支援自動探索同盟協力廠商網域。您可以使用本主題中的程序來變更該項設定。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>以下程序假設您已為組織啟用同盟。如需啟用同盟關係的詳細資訊，請參閱部署或作業文件中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 以下程序假設您已為組織啟用同盟。如需啟用同盟關係的詳細資訊，請參閱部署或作業文件中的 <a href="lync-server-2013-enable-or-disable-remote-user-access.md">在 Lync Server 2013 中啟用或停用遠端使用者存取</a>。
+
 
 
 ## 若要為組織啟用或停用自動探索同盟網域

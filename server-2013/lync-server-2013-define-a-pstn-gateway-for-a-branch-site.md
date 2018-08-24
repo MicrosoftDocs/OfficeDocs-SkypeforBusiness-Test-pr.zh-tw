@@ -17,25 +17,12 @@ _**上次修改主題的時間：** 2012-09-21_
 
 請在中央網站執行這項程序，其中至少包含一個 前端集區或 Standard Edition 伺服器。
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>在執行此程序之前，必須符合下列條件：
-<ul>
-<li><p>必須在中央網站設定 Lync Server 2013  通訊軟體。</p></li>
-<li><p>必須將 中繼伺服器部署於中央網站。</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!Important]  
+> 在執行此程序之前，必須符合下列條件：
+> <ul>
+> <li><p>必須在中央網站設定 Lync Server 2013  通訊軟體。</p></li>
+> <li><p>必須將 中繼伺服器部署於中央網站。</p></li>
+> </ul>
 
 
 ## 定義 PSTN 閘道
@@ -52,32 +39,13 @@ _**上次修改主題的時間：** 2012-09-21_
 
 6.  在 **\[SIP 傳輸通訊協定\]** 清單中按一下閘道使用的傳輸通訊協定，然後按一下 \[確定\] 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>基於安全性考量，我們強烈建議您使用支援傳輸層安全性 (TLS) 的 PSTN 閘道。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 基於安全性考量，我們強烈建議您使用支援傳輸層安全性 (TLS) 的 PSTN 閘道。
+    
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ205025.tip(OCS.15).gif" title="tip" alt="tip" />提示：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>使用 <strong>Set-CsPstnGateway</strong> Cmdlet 修改 PSTN 閘道的屬性。如需詳細資訊，請參閱＜ Lync Server 管理命令介面 說明＞中的＜ <a href="set-cspstngateway.md">Set-CsPstnGateway</a>＞。</td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> 使用 <strong>Set-CsPstnGateway</strong> Cmdlet 修改 PSTN 閘道的屬性。如需詳細資訊，請參閱＜ Lync Server 管理命令介面 說明＞中的＜ <a href="https://docs.microsoft.com/en-us/powershell/module/skype/Set-CsPstnGateway">Set-CsPstnGateway</a>＞。
 
 
 設定分支網站恢復的 \[下一個步驟\] ： [在 Lync Server 2013 中為分支網站恢復設定使用者](lync-server-2013-configuring-users-for-branch-site-resiliency.md)

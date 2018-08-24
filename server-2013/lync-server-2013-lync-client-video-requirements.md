@@ -42,19 +42,11 @@ Lync 2013 引進了硬體加速，可以根據 H.264/MPEG-4 Part 10 進階音訊
 <li><p>圖形卡必須支援 DirectX 9.0，而且必須公開 DXVA2_ModeH264_VLD_NoFGT 解碼模式。</p></li>
 <li><p>必須安裝最新的圖形卡驅動程式。</p></li>
 </ul>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需關於解碼模式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</a> (可能為英文網頁)。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如需關於解碼模式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</a> (可能為英文網頁)。
+
 
 </div></td>
 </tr>
@@ -76,19 +68,11 @@ Lync 2013 引進了硬體加速，可以根據 H.264/MPEG-4 Part 10 進階音訊
 <tr class="odd">
 <td><p>硬體加速的 H.264 編碼：相機需求</p></td>
 <td><p>含有整合之 H.264 硬體編碼器的 USB 攝影機，該編碼器符合 USB 視訊類別 (UVC) 規格版本 1.5。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 在 Windows 8 或 Windows 8.1 支援 UVC 1.5 相機，其中包含對 UVC 1.5 的支援。因為 Windows 7 未包含對 UVC 1.5 的支援，所以 Lync 2013 會將 UVC 1.5 相機視為未包含硬體編碼支援的一般相機。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> Lync 2013 在 Windows 8 或 Windows 8.1 支援 UVC 1.5 相機，其中包含對 UVC 1.5 的支援。因為 Windows 7 未包含對 UVC 1.5 的支援，所以 Lync 2013 會將 UVC 1.5 相機視為未包含硬體編碼支援的一般相機。
+
 
 </div></td>
 </tr>
@@ -98,19 +82,11 @@ Lync 2013 引進了硬體加速，可以根據 H.264/MPEG-4 Part 10 進階音訊
 <li><p>圖形卡必須支援 DirectX 9.0，而且必須公開 DXVA2_ModeH264_VLD_NoFGT 解碼模式。</p></li>
 <li><p>必須安裝最新的圖形卡驅動程式。</p></li>
 </ul>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>如需關於解碼模式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</a> (可能為英文網頁)。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> 如需關於解碼模式的詳細資訊，請參閱 <a href="http://go.microsoft.com/fwlink/p/?linkid=268530">http://go.microsoft.com/fwlink/p/?LinkId=268530</a> (可能為英文網頁)。
+
 
 </div></td>
 </tr>
@@ -132,19 +108,11 @@ Lync 2013 引進了硬體加速，可以根據 H.264/MPEG-4 Part 10 進階音訊
 <tr class="even">
 <td><p>硬體加速的 H.264 編碼：相機需求</p></td>
 <td><p>含有整合之 H.264 硬體編碼器的 USB 攝影機，該編碼器符合 USB 視訊類別 (UVC) 規格版本 1.5。</p>
-<div class="alert">
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lync 2013 在 Windows 8 或 Windows 8.1 支援 UVC 1.5 相機，其中包含對 UVC 1.5 的支援。因為 Windows 7 未包含對 UVC 1.5 的支援，所以 Lync 2013 會將 UVC 1.5 相機視為未包含硬體編碼支援的一般相機。</td>
-</tr>
-</tbody>
-</table>
+<div>
+
+> [!NOTE]  
+> Lync 2013 在 Windows 8 或 Windows 8.1 支援 UVC 1.5 相機，其中包含對 UVC 1.5 的支援。因為 Windows 7 未包含對 UVC 1.5 的支援，所以 Lync 2013 會將 UVC 1.5 相機視為未包含硬體編碼支援的一般相機。
+
 
 </div></td>
 </tr>
@@ -332,18 +300,9 @@ Windows 系統評定工具 (WinSAT) 會判斷 WEI。當您執行 WinSAT 工具�
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows 7 上的 WinSAT 分數最高為 7.9。因此，不含硬體加速編碼器之電腦的編碼功能僅可在 Windows 8 或 Windows 8.1 上達成，其 WinSAT 分數最高為 9.9。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> Windows 7 上的 WinSAT 分數最高為 7.9。因此，不含硬體加速編碼器之電腦的編碼功能僅可在 Windows 8 或 Windows 8.1 上達成，其 WinSAT 分數最高為 9.9。
+
 
 
 ### 含 DXVA 且含 Intel HD Graphics 硬體加速解碼器的電腦

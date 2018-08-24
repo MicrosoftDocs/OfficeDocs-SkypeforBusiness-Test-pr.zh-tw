@@ -23,33 +23,14 @@ _**上次修改主題的時間：** 2012-09-21_
 
 如圖所示，企業網路和公用交換電話網路 (PSTN) 服務提供者之間是使用 IP 虛擬私人網路 (VPN) 進行連線。這個私人網路的作用在於提供 IP 連線、提升安全性，以及 (選用) 取得服務品質 (QoS) 保證。由於 VPN 的性質所致，您不需要將傳輸層安全性 (TLS) 用於 SIP 訊號流量，或是將安全即時傳輸通訊協定 (SRTP) 用於媒體流量。因此企業和服務提供者之間的連線是由一般 TCP 連線和一般即時傳輸通訊協定 (RTP) (透過 UDP) 所組成，前者用於 SIP 作業，後者用於傳送透過 IP VPN 穿隧而來的媒體。請確定 VPN 路由器之間的所有防火牆都已開啟連接埠，以允許 VPN 路由器進行通訊，而且 VPN 路由器外部邊緣上的 IP 位址可公開進行路由傳送。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>請連絡服務提供者以判斷其是否可提供高可用性支援 (包括容錯移轉)。如果可以，您便需要判斷設定的程序。例如，是否只需要在每部 中繼伺服器上設定一個 IP 位址和一個 SIP 主幹，還是需要在每部 中繼伺服器上設定多個 SIP 主幹？<br />
-如果您有多個 中央網站，另請詢問服務提供者是否有能力啟用與另一個 中央網站間的雙向連線。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> 請連絡服務提供者以判斷其是否可提供高可用性支援 (包括容錯移轉)。如果可以，您便需要判斷設定的程序。例如，是否只需要在每部 中繼伺服器上設定一個 IP 位址和一個 SIP 主幹，還是需要在每部 中繼伺服器上設定多個 SIP 主幹？<br />
+> 如果您有多個 中央網站，另請詢問服務提供者是否有能力啟用與另一個 中央網站間的雙向連線。
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>對於 SIP 主幹，我們強烈建議您部署獨立 中繼伺服器。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">在 Lync Server 2013 中部署中繼伺服器並定義對等項目</a>。</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]  
+> 對於 SIP 主幹，我們強烈建議您部署獨立 中繼伺服器。如需詳細資訊，請參閱部署文件中的 <a href="lync-server-2013-deploying-mediation-servers-and-defining-peers.md">在 Lync Server 2013 中部署中繼伺服器並定義對等項目</a>。
+
 
 
 ## 保護用於 SIP 主幹的中繼伺服器

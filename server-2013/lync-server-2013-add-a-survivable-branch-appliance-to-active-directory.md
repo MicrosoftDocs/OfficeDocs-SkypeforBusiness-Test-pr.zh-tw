@@ -17,18 +17,9 @@ _**上次修改主題的時間：** 2012-09-23_
 
 如果您打算部署 Survivable Branch Appliance，則必須將 Survivable Branch Appliance 新增至 Active Directory 網域服務。請在中央網站執行這項程序。
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Gg412908.important(OCS.15).gif" title="important" alt="important" />重要事項：</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>這項程序僅適用於部署 Survivable Branch Appliance。如果您部署的是 Survivable Branch 伺服器，請勿執行此程序。</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]  
+> 這項程序僅適用於部署 Survivable Branch Appliance。如果您部署的是 Survivable Branch 伺服器，請勿執行此程序。
+
 
 
 ## 若要將 Survivable Branch Appliance 新增至 Active Directory 網域服務
@@ -43,18 +34,9 @@ _**上次修改主題的時間：** 2012-09-23_
 
 5.  在 **\[選取使用者或群組\]** 對話方塊中，新增 RTCUniversalSBATechnicians 群組，然後按一下 **\[確定\]** 。
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/Gg398811.note(OCS.15).gif" title="note" alt="note" />附註：</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>稍後會由分支網站的 RTCUniversalSBATechnicians 群組成員將此裝置新增至網域。</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]  
+    > 稍後會由分支網站的 RTCUniversalSBATechnicians 群組成員將此裝置新增至網域。
+    
 
 
 6.  按一下 **\[確定\]** 儲存 Survivable Branch Appliance 電腦物件。
