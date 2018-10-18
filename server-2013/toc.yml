@@ -4838,9 +4838,9 @@
       - name: Lync Server 2013 中的網域準備所進行的變更
         href: lync-server-2013-changes-made-by-domain-preparation.md
       - name: Lync Server 2013 中 Grant-CsSetupPermission 進行的變更
-        href: lync-server-2013-changes-made-by-grant-cssetuppermission.md
+        href: https://technet.microsoft.com/zh-tw/library/Gg398569(v=OCS.15)
       - name: Lync Server 2013 中 Grant-CsOUPermission 進行的變更
-        href: lync-server-2013-changes-made-by-grant-csoupermission.md
+        href: https://technet.microsoft.com/zh-tw/library/Gg425739(v=OCS.15)
   - name: Lync Server 管理命令介面
     href: lync-server-2013-lync-server-management-shell.md
   - name: 字彙
