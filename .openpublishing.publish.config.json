@@ -10,17 +10,6 @@
       "open_to_public_contributors": false,
       "build_entry_point": "docs",
       "template_folder": "_themes"
-    },
-    {
-      "docset_name": "OfficeDocs-Lync-Server-2013-Tools",
-      "build_source_folder": "server-2013-tools",
-      "build_output_subfolder": "server-2013-tools",
-      "locale": "zh-tw",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
